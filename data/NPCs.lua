@@ -1333,6 +1333,28 @@ IMAGOdb.npcs["riftblade_maella"] = {
     },
 }
 
+IMAGOdb.npcs["test-npc"] = {
+    displayName_deDE = "Test NPC",
+    displayName_enUS = "Test NPC",
+    race_deDE = "Leerenelf",
+    race_enUS = "Void Elf",
+    displayID = 254513,
+    zones_deDE = {"Die Leerenspitze", "Leerensturm", "Silbermond"},
+    zones_enUS = {"The Voidspire", "Voidstorm", "Silvermoon City"},
+    ids = {
+        238531, 239349, 239418, 239517, 239618, 239659, 239686, 239802,
+        240116, 240538, 241076, 242930, 247595, 252949, 254427, 254512,
+        254513
+    },
+    category = "CAT_QUELTHALAS",
+    lore_deDE = "This is a test NPC.",
+    lore_enUS = "This is a test NPC.",
+    timeline = {
+        {era = "BfA",      text_deDE = "Wurde in den Geisterlanden transformiert und im Telogrusriss zur Rissklinge ausgebildet, um die Leere auf dem Schlachtfeld zu meistern.", text_enUS = "Was transformed in the Ghostlands and trained as a Riftblade in the Telogrus Rift to master the Void on the battlefield.", source = "Quest: Der Telogrusriss"},
+        {era = "Midnight", text_deDE = "Führt die Nahkampf-Vorhut der Ren'dorei im Leerensturm und in der Leerenspitze an, um den Sonnenbrunnen zu schützen.", text_enUS = "Leads the melee vanguard of the ren'dorei in the Voidstorm and the Voidspire to protect the Sunwell.", source = "warcraft.wiki.gg/wiki/Riftblade_Maella"},
+    },
+}
+
 IMAGOdb.npcs["astalor_bloodsworn"] = {
     displayName_deDE = "Astalor Blutschwur",
     displayName_enUS = "Astalor Bloodsworn",
