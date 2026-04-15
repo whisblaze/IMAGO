@@ -1,0 +1,16 @@
+## Interface: 120005, 120001
+## Title: IMAGO
+## Notes: The world has a story. IMAGO preserves it.
+## Notes-deDE: Die Welt hat eine Geschichte. IMAGO bewahrt sie.
+## Author: Whisblaze
+## Version: 1.1.1
+## SavedVariables: IMAGOSaved
+
+IMAGO.lua
+core/Locale.lua
+core/Options.lua
+core/Chronicle.lua
+core/Display.lua
+core/UnitContextMenu.lua
+data/NPCs.lua
+data/zones.lua
