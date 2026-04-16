@@ -248,6 +248,80 @@ IMAGOdb.npcs["decimus"] = {
     },
 }
 
+IMAGOdb.npcs["king_mrgl-mrgl"] = {
+    displayName_deDE = "König Mrgl-Mrgl",
+    displayName_enUS = "King Mrgl-Mrgl",
+    race_deDE = "Murloc",
+    race_enUS = "Murloc",
+    displayID = 250196,
+    zones_deDE = {"Zul'Aman"},
+    zones_enUS = {"Zul'Aman"},
+    ids = {
+        250196
+    },
+    category = "CAT_NEUTRAL",
+    lore_deDE = "Hinter der großartigen Murloc-Fassade von König Mrgl-Mrgl verbirgt sich ein einfacher Nachtelfenforscher. Ursprünglich Teil einer druidischen Forschungsgruppe, ist König Mrgl-Mrgl weit über seine bescheidenen Anfänge hinausgewachsen. Nachdem er sich als Murloc verkleidet hatte, um ihre Populationen in Nordend zu beobachten, wurde Mrgl-Mrgl von den Kreaturen verehrt und zu ihrem König erwählt. Obwohl er anfangs zögerte, nahm er die Rolle an und blickte nie zurück. Seitdem wird König Mrgl-Mrgl dabei gesehen, wie er den Murlocs Azeroths hilft und sie vor äußeren Bedrohungen schützt.",
+    lore_enUS = "Behind King Mrgl-Mrgl’s grand murloc facade lies a simple night elf researcher. Originally a part of a druidic research group, King Mrgl-Mrgl has grown far beyond his humble beginnings. After disguising himself as a murloc to observe their populations in Northrend, Mrgl-Mrgl was revered by the creatures and chosen as their king. Though originally reluctant, he accepted the role and never looked back. Ever since, King Mrgl-Mrgl has been found aiding the murlocs of Azeroth and protecting them from outside threats.",
+    timeline = {
+        {
+            era = "WotLK",
+            text_deDE = "Schloss sich der Expeditionstruppe von D.E.H.T.A. in der Boreanischen Tundra an und begann mithilfe seiner unorthodoxen Verkleidung seine Forschungen über Murlocs. In einer Zeit der Not wählten die Murlocs ihn zu ihrem König; König Mrgl-Mrgl verteidigte den hilflosen Stamm und festigte seinen Platz als König.",
+            text_enUS = "Joined the D.E.H.T.A. expedition group in the Borean Tundra and began his research into murlocs using his unorthodox disguise. The murlocs chose him to be their king in a time of strife; King Mrgl-Mrgl defended the helpless tribe and cemented his place as king.",
+            source = "austin - IMAGO Community"
+        },
+        {
+            era = "Legion",
+            text_deDE = "An der Seite des jungen Murloc-Helden Murky versuchte König Mrgl-Mrgl, die Swamprock-Murlocs in Hochberg von ihren gewalttätigen Wegen abzubringen. Mit der Hilfe des Königs konnte Murky sich als friedlicherer Anführer seines neuen „Murkloc“-Stammes etablieren.",
+            text_enUS = "Alongside the young murloc hero Murky, King Mrgl-Mrgl attempted to turn the Swamprock murlocs of Highmountain from their violent ways. With the king’s help, Murky was able to establish himself as the more peaceful leader of his new “Murkloc” tribe.",
+            source = "austin - IMAGO Community"
+        },
+        {
+            era = "BfA",
+            text_deDE = "In Nazjatar ist König Mrgl-Mrgl als Betreiber von Mrgl’s Bar and Grill anzutreffen, einem Etablissement, das ausschließlich die Murlocs der Gegend bewirtet.",
+            text_enUS = "King Mrgl-Mrgl can be found in Nazjatar as the proprietor of Mrgl’s Bar and Grill, an establishment catering exclusively to the murlocs of the area.",
+            source = "austin - IMAGO Community"
+        },
+        {
+            era = "Midnight",
+            text_deDE = "Nachdem er die Murlocs von Zul'Aman gegen einen angreifenden Stamm von Tiefsee-Murlocs verteidigt hatte, wurde König Mrgl-Mrgl zum Loa der Murlocs erklärt. Seine Verehrer hielten ihn in ihrem sumpfgebundenen Tempel gefangen — als ihren Gott und Retter.",
+            text_enUS = "After defending the murlocs of Zul’Aman from an attacking tribe of deep sea murlocs, King Mrgl-Mrgl was declared the Loa of Murlocs. His worshippers kept him trapped in their swamp-bound temple as their god and savior.",
+            source = "austin - IMAGO Community"
+        },
+    },
+}
+
+IMAGOdb.npcs["darion_mograine"] = {
+    displayName_deDE = "Hochlord Darion Mograine",
+    displayName_enUS = "Highlord Darion Mograine",
+    race_deDE = "Mensch",
+    race_enUS = "Human",
+    displayID = 244955,
+    zones_deDE = {"Östliche Pestländer"},
+    zones_enUS = {"Eastern Plaguelands"},
+    ids = {
+        244955
+    },
+    category = "CAT_EBON_BLADE",
+    lore_deDE =
+[[Darion Mograine war ein Paladin der Argentumdämmerung, der, nachdem er sein Leben geopfert hatte, um die Seele seines Vaters zu retten, als Todesritter wiedererweckt wurde, um als einer der mächtigsten Kommandanten des Lichkönigs zu dienen. Nachdem er sich in der Schlacht um die Kapelle des hoffnungsvollen Lichts aus der Kontrolle des Lichkönigs befreit hatte, gründete er die Schwarze Klinge, eine Gruppe von Todesrittern, die sich dem Schutz Azeroths vor allen Bedrohungen verschrieben hat, die ihm begegnen.
+
+Nun, an der Spitze der Vier Reiter, verteidigt Darion die Heimat des Argentumkreuzzugs gegen die Geißel, während sie Azeroths Champion bei der Zerstörung der Verschlingenden Brut unterstützen.]],
+    lore_enUS =
+[[Darion Mograine was a paladin of the Argent Dawn who, after sacrificing his life to save the soul of his father, was resurrected as a Death Knight to serve as one of the Lich King’s most powerful commanders. Breaking free from the Lich King’s control at the Battle for Light’s Hope Chapel, he founded the Ebon Blade, a band of Death Knights committed to protecting Azeroth from any threats that come her way.
+
+Now leading the Four Horsemen, Darion defends the home of the Argent Crusade from the Scourge whilst they assist Azeroth’s champion with the destruction of the Devouring Host.]],
+    timeline = {
+        {era = "Warcraft 3", text_deDE = "Schloss sich der Silbernen Hand an und half im Kampf gegen die Geißel.", text_enUS = "Joined the Silver Hand and assisted with fighting the Scourge.", source = "Nebb - IMAGO Community"},
+        {era = "Classic", text_deDE = "Rief die Hilfe der Argentumdämmerung für einen Angriff auf Naxxramas an, eroberte den Aschenbringer von seinem untoten Vater zurück, nachdem er die Vier Reiter besiegt hatte. Opferte sich, um die Argentumdämmerung zu retten, und wurde als Todesritter wiedererweckt.", text_enUS = "Enlisted the aid of the Argent Dawn to attack Naxxramas, reclaiming the Ashbringer from his undead Father after defeating the Four Horsemen. Sacrificed himself to save the Argent Dawn, and was resurrected as a Death Knight.", source = "Nebb - IMAGO Community"},
+        {era = "WotLK", text_deDE = "Wurde zum Anführer der Todesritter von Acherus ernannt. Befreite sich aus der Kontrolle des Lichkönigs und gründete die Schwarze Klinge. Unterstützte den Krieg gegen die Geißel in Eiskrone und Zul'Drak. Half dabei, den Lichkönig in der Eiskronenzitadelle zu besiegen. Erfuhr, dass Bolvar Fordragon zum neuen Lichkönig gekrönt wurde.", text_enUS = "Made the ruler of the Death Knights of Acherus. Broke free from the Lich King’s control and started the Ebon Blade. Assisted in the war against the scourge in Icecrown and Zul’Drak. Helped to defeat the Lich King at Icecrown Citadel. Found that Bolvar Fordragon has been crowned the new Lich King.", source = "Nebb - IMAGO Community"},
+        {era = "WoD", text_deDE = "Reiste nach alternativem Draenor, um Ner'zhuls Geheimnisse zu entdecken — in dem Versuch, Bolvar zu retten.", text_enUS = "Journeyed to alternate Draenor to attempt to discover Ner’zhul’s secrets in an attempt to save Bolvar.", source = "Nebb - IMAGO Community"},
+        {era = "Legion", text_deDE = "Half Bolvar und dem auserwählten Todesritter dabei, die neuen Vier Reiter zu erwecken. Wurde tödlich verwundet, als er versuchte, Tirion Fordring wiederzubeleben, wurde jedoch von Bolvar erhoben, um die Reiter anzuführen.", text_enUS = "Aided Bolvar and the chosen Death Knight in resurrecting the new Four Horsemen. Was fatally wounded when attempting to resurrect Tirion Fordring, but was raised by Bolvar to lead the horsemen.", source = "Nebb - IMAGO Community"},
+        {era = "BfA", text_deDE = "Sammelte gefallene Champions der Horde und der Allianz, um sie als nächste Generation von Todesrittern zu erheben. Entsandte die neue Generation persönlich in die Hauptstädte ihrer Fraktionen.", text_enUS = "Gathered fallen champions of the Horde and Alliance to be raised as the next generation of Death Knights. Personally sent the new generation to their faction’s capitals.", source = "Nebb - IMAGO Community"},
+        {era = "SL", text_deDE = "Trat als Anführer der Schwarzen Klinge zurück und übergab den Titel nach der Zerstörung des Helms der Herrschaft an Bolvar. Rief die Champions Azeroths zusammen, um sich mit Bolvar zu treffen und in den Schlund vorzudringen. Half beim Angriff auf das Sanktum der Herrschaft. Kehrte nach dem Sieg über den Kerkermeister nach Azeroth zurück, um die Geißel zurückzuhalten.", text_enUS = "Stepped down as leader of the Ebon Blade, relinquishing title to Bolvar following the destruction of the Helm of Domination. Summoned the champions of Azeroth to meet with Bolvar and adventure into the Maw. Helped attack the Sanctum of Domination. Returned to Azeroth following the Jailer’s defeat to hold back the Scourge.", source = "Nebb - IMAGO Community"},
+        {era = "Midnight", text_deDE = "Verteidigte gemeinsam mit den übrigen Vier Reitern die Kapelle des hoffnungsvollen Lichts gegen die Geißel.", text_enUS = "Defended Light’s Hope Chapel from the Scourge along with the rest of the Four Horsemen.", source = "Nebb - IMAGO Community"},
+    },
+}
+
 IMAGOdb.npcs["nexuskoenig_salhadaar"] = {
     displayName_deDE = "Nexuskönig Salhadaar",
     displayName_enUS = "Nexus-King Salhadaar",
@@ -286,10 +360,25 @@ IMAGOdb.npcs["zaljarra"] = {
         245246, 240034, 249492, 245468, 253528, 241281, 241347, 236157, 253980
     },
     category = "CAT_AMANI",
-    lore_deDE = "Als neue Anführerin des stolzen Amani-Stammes trägt Zul'jarra eine gewaltige Bürde. Nach den verheerenden historischen Niederlagen unter Zul'jin und Daakara muss sie ihr Volk durch seine größte existenzielle Krise führen. Sie steht vor der monumentalen Aufgabe, den uralten, blutigen Hass auf die Elfen von Quel'Thalas zu überwinden, um eine zähneknirschende Allianz gegen die alles verschlingende Leere zu schmieden. Ihr unermüdlicher Einsatz an unzähligen Fronten macht sie zur unbestrittenen Hauptfigur der Amani in Midnight.",
-    lore_enUS = "As the new leader of the proud Amani tribe, Zul'jarra carries a massive burden. Following the devastating historical defeats under Zul'jin and Daakara, she must guide her people through their greatest existential crisis. She faces the monumental task of overcoming the ancient, bloody hatred for the elves of Quel'Thalas to forge a grudging alliance against the all-consuming Void. Her tireless presence across countless fronts makes her the undisputed central figure of the Amani in Midnight.",
+    lore_deDE = [[Als Älteste von zwei Geschwistern wurde Zul'jarra als Kriegerin erzogen. Als Enkelin des berüchtigten Zul'jin wurde sie in den traditionellen Bräuchen unterwiesen, die Loa zu verehren und ihren künftigen Stamm mit Ehre zu führen. Die Zeit zu führen kam früher, als irgendjemand erwartet hätte, denn sie war noch ein Kind, als sowohl ihr Großvater als auch ihr Vater in der Tempelstadt Zul-Aman erschlagen wurden. Da man sie für zu jung zum Herrschen hielt, regierte ihre Mutter, Zarama, die Amani jahrzehntelang. Als die verkrüppelte Zarama schließlich versuchte, den Titel an ihre Tochter zu übergeben, focht ein rivalisierender Häuptling Zul'jarras Recht zu herrschen an. Weil sie verspätet zum Duell zurückkehrte, traf Zul'jarra nur ein, um zu sehen, wie ihre Mutter an ihrer Stelle fiel, was sie zwang, Zarama zu rächen und ihr Geburtsrecht im Blut zu beanspruchen.
+
+Nun, Jahre später, versucht sie, die Stämme von Zul'Aman endlich wieder mit den Loa-Göttern zu verbinden — unterstützt, wenn auch gelegentlich bekämpft, von ihrem Bruder, Zul'jan.]],
+    lore_enUS = [[The eldest of two siblings, Zul'jarra was raised a warrior. The grand-daughter of the infamous Zul'jin, she was taught the traditional ways to revere the loa and to lead her future clan with honor. The time to lead came sooner than anyone would have expected, for she was merely a child when both her grandfather and her father were slain in the temple city of Zul-Aman. Deemed too young to rule, this left her mother, Zarama, to rule the Amani for decades. When a crippled Zarama eventually tried to pass the title to her daughter, a rival chieftain challenged Zul'jarra's right to rule. Delayed in her return to the duel, Zul'jarra arrived only to watch her mother fall in her place, forcing her to avenge Zarama and claim her birthright in blood.
+
+Now years later, she attempts to finally reconnect the tribes of Zul'Aman to the loa gods, supported, though occasionally opposed, by her brother, Zul'jan.]],
     timeline = {
-        {era = "Midnight", text_deDE = "Übernimmt die Führung des zersplitterten Amani-Imperiums und steht vor der historischen Entscheidung, sich mit den Elfen gegen Xal'atath zu verbünden.", text_enUS = "Takes leadership of the splintered Amani Empire and faces the historic decision to ally with the elves against Xal'atath.", source = "warcraft.wiki.gg/wiki/Zul'jarra"},
+        {
+            era = "TBC",
+            text_deDE = "Verlor ihren Vater Man'ye und ihren Großvater Zul'jin, als sie noch ein kleines Kind war. Später wurde ihre Mutter in einem rituellen Kampf getötet. Nachdem sie sie gerächt hatte, nahm Zul'jarra ihren rechtmäßigen Platz als neue Anführerin ein.",
+            text_enUS = "Lost her father Man'ye and grandfather Zul'jin when she was just a young child. Later, her mother was killed in ritual combat. After avenging her, Zul'jarra took her rightful place as the new leader.",
+            source = "Cadash - IMAGO Community"
+        },
+        {
+            era = "Midnight",
+            text_deDE = "Entschied sich, sich Lady Liadrin anzuschließen und ihre Hilfe anzunehmen, um hash'ey zu werden. Zul'jarra vereinte die Stämme von Zul'Aman und gewann das Vertrauen der Loa zurück. Danach führte sie die Schlacht gegen die Klinge der Dämmerung an und verteidigte ihr Volk erfolgreich gegen die Leere.",
+            text_enUS = "Chose to ally with Lady Liadrin and accept her help in becoming hash'ey. Zul'jarra united the tribes of Zul'Aman and regained the trust of the loa. Afterwards she led the battle against the Twilight's Blade, successfully defending her people from the Void.",
+            source = "Cadash - IMAGO Community"
+        },
     },
 }
 

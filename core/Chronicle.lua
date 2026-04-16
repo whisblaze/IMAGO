@@ -176,14 +176,21 @@ function IMAGO.Chronicle.CreateFrame()
     f:SetScript("OnDragStop", f.StopMovingOrSizing)
     f:Hide()
 
-    f:SetBackdrop({
+    local backdropDefault = {
         bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-        edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", 
+        edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
         tile = true, tileSize = 16, edgeSize = 16,
         insets = { left = 4, right = 4, top = 4, bottom = 4 }
-    })
-    f:SetBackdropColor(0.05, 0.05, 0.05, 0.95) 
-    f:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+    }
+    local backdropOpaque = {
+        bgFile = "Interface\\Buttons\\WHITE8X8",
+        edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+        tile = true, tileSize = 16, edgeSize = 16,
+        insets = { left = 4, right = 4, top = 4, bottom = 4 }
+    }
+    f:SetBackdrop((IMAGOSaved and IMAGOSaved.opaqueUI) and backdropOpaque or backdropDefault)
+    f:SetBackdropColor(0.05, 0.05, 0.05, (IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.95)
+    f:SetBackdropBorderColor(1.0, 0.85, 0.1, 0.9)
 
     f.closeBtn = CreateFrame("Button", nil, f, "UIPanelCloseButton")
     f.closeBtn:SetPoint("TOPRIGHT", f, "TOPRIGHT", -4, -4)
@@ -194,7 +201,11 @@ function IMAGO.Chronicle.CreateFrame()
     f.headerBg:SetPoint("TOPRIGHT", f, "TOPRIGHT", -4, -4)
     f.headerBg:SetHeight(45)
     f.headerBg:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-    f.headerBg:SetGradient("VERTICAL", CreateColor(0, 0, 0, 0.7), CreateColor(0, 0, 0, 0))
+    if IMAGOSaved and IMAGOSaved.opaqueUI then
+        f.headerBg:SetGradient("VERTICAL", CreateColor(0, 0, 0, 1), CreateColor(0, 0, 0, 1))
+    else
+        f.headerBg:SetGradient("VERTICAL", CreateColor(0, 0, 0, 0.7), CreateColor(0, 0, 0, 0))
+    end
 
     -- 2. NEU: Trennlinie unter dem Titel (Schneidet Header vom Inhalt ab)
     f.headerLine = f:CreateTexture(nil, "ARTWORK")
@@ -212,6 +223,19 @@ function IMAGO.Chronicle.CreateFrame()
     f.title:SetShadowColor(0, 0, 0, 1) -- NEU: Der Drop-Shadow
     f.title:SetShadowOffset(2, -2)
     f.title:SetText("IMAGO — " .. (IMAGO.L["WINDOW_TITLE"] or "Chronik der Unvergessenen"))
+
+    f.settingsBtn = CreateFrame("Button", nil, f)
+    f.settingsBtn:SetSize(18, 18)
+    f.settingsBtn:SetPoint("TOPLEFT", f, "TOPLEFT", 10, -12)
+    f.settingsBtn:SetNormalTexture("Interface\\Buttons\\UI-OptionsButton")
+    f.settingsBtn:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
+    f.settingsBtn:SetScript("OnClick", function()
+        if Settings and Settings.OpenToCategory and IMAGO.settingsCategory then
+            Settings.OpenToCategory(IMAGO.settingsCategory:GetID())
+        elseif InterfaceOptionsFrame_OpenToCategory then
+            InterfaceOptionsFrame_OpenToCategory("IMAGO")
+        end
+    end)
 
     f.activeFilter = "ALL"
     
@@ -245,12 +269,12 @@ function IMAGO.Chronicle.CreateFrame()
     f.filterMenu:SetFrameLevel(f:GetFrameLevel() + 10)
     f.filterMenu:Hide()
     f.filterMenu:SetBackdrop({
-        bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+        bgFile = ((IMAGOSaved and IMAGOSaved.opaqueUI) and "Interface\\Buttons\\WHITE8X8") or "Interface\\Tooltips\\UI-Tooltip-Background",
         edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", 
         tile = true, tileSize = 16, edgeSize = 16,
         insets = { left = 4, right = 4, top = 4, bottom = 4 }
     })
-    f.filterMenu:SetBackdropColor(0.05, 0.05, 0.05, 0.98)
+    f.filterMenu:SetBackdropColor(0.05, 0.05, 0.05, (IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.98)
     f.filterMenu:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
 
     local filters = {
@@ -262,6 +286,7 @@ function IMAGO.Chronicle.CreateFrame()
         {id = "CAT_AMANI",      name = IMAGO.L["CAT_AMANI"] or "Der Amani-Stamm"},
         {id = "CAT_HARATI",     name = IMAGO.L["CAT_HARATI"] or "Die Hara'ti"},
         {id = "CAT_VOID",       name = IMAGO.L["CAT_VOID"] or "Die Leereninvasion"},
+        {id = "CAT_EBON_BLADE", name = IMAGO.L["CAT_EBON_BLADE"] or "Ritter der Schwarzen Klinge"},
         {id = "CAT_NEUTRAL",    name = IMAGO.L["CAT_NEUTRAL"] or "Unabhängig & Rätselhaft"}
     }
     
@@ -321,12 +346,12 @@ function IMAGO.Chronicle.CreateFrame()
     f.detailFrame:SetPoint("TOPLEFT", f.vLine, "TOPRIGHT", 15, 0)
     f.detailFrame:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -20, 20)
     f.detailFrame:SetBackdrop({
-        bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+        bgFile = ((IMAGOSaved and IMAGOSaved.opaqueUI) and "Interface\\Buttons\\WHITE8X8") or "Interface\\Tooltips\\UI-Tooltip-Background",
         edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", 
         tile = true, tileSize = 16, edgeSize = 16,
         insets = { left = 4, right = 4, top = 4, bottom = 4 }
     })
-    f.detailFrame:SetBackdropColor(0.05, 0.05, 0.05, 0.95)
+    f.detailFrame:SetBackdropColor(0.05, 0.05, 0.05, (IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.95)
     f.detailFrame:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
 
     -- NEU: Das Fraktions-Icon (Fix für den aktuellen Fehler!)
@@ -894,6 +919,32 @@ function IMAGO.Chronicle.CreateFrame()
             f.creditsPage:Show()
         end
     end
+
+    local function ApplyOpaqueUI()
+        local opaque = IMAGOSaved and IMAGOSaved.opaqueUI
+        f:SetBackdrop(opaque and backdropOpaque or backdropDefault)
+        f:SetBackdropColor(0.05, 0.05, 0.05, opaque and 1.0 or 0.95)
+        f:SetBackdropBorderColor(1.0, 0.85, 0.1, 0.9)
+        if f.headerBg then
+            if opaque then
+                f.headerBg:SetGradient("VERTICAL", CreateColor(0, 0, 0, 1), CreateColor(0, 0, 0, 1))
+            else
+                f.headerBg:SetGradient("VERTICAL", CreateColor(0, 0, 0, 0.7), CreateColor(0, 0, 0, 0))
+            end
+        end
+        if f.filterMenu then
+            f.filterMenu:SetBackdrop(opaque and backdropOpaque or backdropDefault)
+            f.filterMenu:SetBackdropColor(0.05, 0.05, 0.05, opaque and 1.0 or 0.98)
+            f.filterMenu:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+        end
+        if f.detailFrame then
+            f.detailFrame:SetBackdrop(opaque and backdropOpaque or backdropDefault)
+            f.detailFrame:SetBackdropColor(0.05, 0.05, 0.05, opaque and 1.0 or 0.95)
+            f.detailFrame:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+        end
+    end
+
+    f:SetScript("OnShow", ApplyOpaqueUI)
 
     IMAGO.Chronicle.frame = f
     IMAGO.Chronicle.buttons = {}

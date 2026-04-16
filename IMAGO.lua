@@ -6,6 +6,8 @@
 IMAGO = {}
 IMAGO.VERSION = "1.0.0" 
 
+IMAGO.UI = IMAGO.UI or {}
+
 local defaults = {
     enabled       = true,
     seenZones     = {},
@@ -14,8 +16,13 @@ local defaults = {
     viewedNPCs    = {},
     favorites     = {},
     history       = {},
-    showOnceOnly  = false,
-    noTimerClose  = false,
+    showOnceOnlyNPC = false,
+    showOnceOnlyZone = true,
+    noMainLoreTimerClose = false,
+    enableIdleFlashcards = true,
+    keepSnippetOpen = false,
+    enableMotD = true,
+    opaqueUI = false,
     minimapPos    = 220, 
     hideMinimap   = false,
     -- Debug: Chat-Ausgabe bei Zonen-Checks (raw vs. aufgelöste uiMapID)
@@ -25,6 +32,22 @@ local defaults = {
 -- ============================================================
 -- HILFSFUNKTIONEN
 -- ============================================================
+
+local DEV_PLAYERS = {
+    ["lyvienne"] = true,
+}
+
+function IMAGO.IsDeveloper()
+    local name, realm = UnitName("player")
+    if not name then return false end
+    name = tostring(name):lower()
+    if DEV_PLAYERS[name] then return true end
+    if realm and realm ~= "" then
+        local full = name .. "-" .. tostring(realm):lower()
+        if DEV_PLAYERS[full] then return true end
+    end
+    return false
+end
 
 --- Liefert den lokalisierten Wert eines Feldes aus einem Datensatz.
 function IMAGO.GetLocalizedData(data, fieldName)
@@ -99,7 +122,7 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
             local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
             print(msgKnown)
             
-            if not IMAGO.Scanner.IsShowOnceOnlyEnabled() then
+            if not IMAGO.Scanner.IsShowOnceOnlyEnabled("npc") then
                 if IMAGO.Display and IMAGO.Display.Show then
                     IMAGO.Display.Show(name, lore, "npc", false)
                 end
@@ -145,9 +168,16 @@ function IMAGO.Scanner.EnsureZoneProgressTables()
 end
 
 --- WoW-Checkbuttons liefern oft 1/nil statt true/false — für zuverlässige Logik normalisieren.
-function IMAGO.Scanner.IsShowOnceOnlyEnabled()
+function IMAGO.Scanner.IsShowOnceOnlyEnabled(type)
     if not IMAGOSaved then return false end
-    local v = IMAGOSaved.showOnceOnly
+    local v
+    if type == "npc" then
+        v = IMAGOSaved.showOnceOnlyNPC
+    elseif type == "zone" then
+        v = IMAGOSaved.showOnceOnlyZone
+    else
+        return false
+    end
     return v == true or v == 1
 end
 
@@ -232,12 +262,12 @@ function IMAGO.Scanner.CheckZone()
     -- Nach /reload ist lastZoneKey nil: ohne Seeding würde DiscoverZone erneut laufen.
     -- Wenn die Zone schon in seenZones steht und „nur einmal“ aktiv ist, Zustand angleichen
     -- und kein redundantes Popup auslösen.
-    if lastZoneKey == nil and canonicalMapID and IMAGO.Scanner.IsShowOnceOnlyEnabled()
+    if lastZoneKey == nil and canonicalMapID and IMAGO.Scanner.IsShowOnceOnlyEnabled("zone")
         and IMAGO.Scanner.IsZoneMarkedSeen(canonicalMapID) then
         lastZoneKey = key
     end
 
-    if IMAGOSaved.debugMap then
+    if IMAGOSaved.debugMap and IMAGO.isDeveloper then
         local rawInfo = C_Map.GetMapInfo(rawMapID)
         local rawName = rawInfo and rawInfo.name or "?"
         if canonicalMapID then
@@ -297,7 +327,7 @@ function IMAGO.Scanner.DiscoverZone(mapID)
         print("|cFF9370DB[IMAGO]|r Neue Region betreten: |cFFFFD700" .. name .. "|r")
     end
 
-    local showOnceOnly = IMAGO.Scanner.IsShowOnceOnlyEnabled()
+    local showOnceOnly = IMAGO.Scanner.IsShowOnceOnlyEnabled("zone")
     if IMAGO.Display and IMAGO.Display.Show then
         if isNew or not showOnceOnly then
             IMAGO.Display.Show(name, lore, "zone", isNew)
@@ -344,6 +374,10 @@ function IMAGO.CreateMinimapButton()
     dragFrame:SetScript("OnClick", function(self, button)
         if button == "LeftButton" then
             if IMAGO.Chronicle then IMAGO.Chronicle.Toggle() end
+        elseif button == "RightButton" then
+            if IMAGO.Snippets and IMAGO.Snippets.ShowRandom then
+                IMAGO.Snippets.ShowRandom(true)
+            end
         end
     end)
     
@@ -374,6 +408,7 @@ end
 -- ============================================================
 local function ShowLoginFact()
     if not IMAGOSaved.enabled then return end
+    if not IMAGOSaved.enableMotD then return end
     
     local discovered = {}
     for slug, isSeen in pairs(IMAGOSaved.seenNPCs) do
@@ -403,14 +438,20 @@ initFrame:RegisterEvent("ADDON_LOADED")
 initFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
 initFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 initFrame:RegisterEvent("PLAYER_TARGET_CHANGED")
+initFrame:RegisterEvent("PLAYER_DEAD")
+initFrame:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START")
+initFrame:RegisterEvent("PLAYER_CONTROL_LOST")
 
 initFrame:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" then
         local addonName = ...
         if addonName == "IMAGO" then IMAGO.Init() end
     elseif event == "PLAYER_ENTERING_WORLD" then
+        local isInitialLogin, isReloadingUi = ...
         IMAGO.Scanner.EnsureZoneProgressTables()
-        C_Timer.After(4, ShowLoginFact)
+        if isInitialLogin and IMAGOSaved and IMAGOSaved.enableMotD then
+            C_Timer.After(4, ShowLoginFact)
+        end
         C_Timer.After(0.5, function()
             IMAGO.Scanner.CheckZone()
         end)
@@ -422,11 +463,24 @@ initFrame:SetScript("OnEvent", function(self, event, ...)
         C_Timer.After(1, function() IMAGO.Scanner.CheckZone() end)
     elseif event == "PLAYER_TARGET_CHANGED" then
         IMAGO.Scanner.CheckNPC()
+    elseif event == "PLAYER_DEAD" or event == "UNIT_SPELLCAST_CHANNEL_START" or event == "PLAYER_CONTROL_LOST" then
+        if IMAGO.Snippets and IMAGO.Snippets.HandleEvent then
+            IMAGO.Snippets.HandleEvent(event, ...)
+        end
     end
 end)
 
 function IMAGO.Init()
     IMAGOSaved = IMAGOSaved or {}
+
+    if IMAGOSaved.showOnceOnly ~= nil then
+        if IMAGOSaved.showOnceOnlyNPC == nil then IMAGOSaved.showOnceOnlyNPC = IMAGOSaved.showOnceOnly end
+        if IMAGOSaved.showOnceOnlyZone == nil then IMAGOSaved.showOnceOnlyZone = IMAGOSaved.showOnceOnly end
+    end
+    if IMAGOSaved.noTimerClose ~= nil and IMAGOSaved.noMainLoreTimerClose == nil then
+        IMAGOSaved.noMainLoreTimerClose = IMAGOSaved.noTimerClose
+    end
+
     for key, value in pairs(defaults) do
         if IMAGOSaved[key] == nil then IMAGOSaved[key] = value end
     end
@@ -434,10 +488,20 @@ function IMAGO.Init()
     
     -- Normalisierung der Booleans
     IMAGOSaved.enabled = (IMAGOSaved.enabled == true or IMAGOSaved.enabled == 1)
-    IMAGOSaved.showOnceOnly = (IMAGOSaved.showOnceOnly == true or IMAGOSaved.showOnceOnly == 1)
-    IMAGOSaved.noTimerClose = (IMAGOSaved.noTimerClose == true or IMAGOSaved.noTimerClose == 1)
+    IMAGOSaved.showOnceOnlyNPC = (IMAGOSaved.showOnceOnlyNPC == true or IMAGOSaved.showOnceOnlyNPC == 1)
+    IMAGOSaved.showOnceOnlyZone = (IMAGOSaved.showOnceOnlyZone == true or IMAGOSaved.showOnceOnlyZone == 1)
+    IMAGOSaved.noMainLoreTimerClose = (IMAGOSaved.noMainLoreTimerClose == true or IMAGOSaved.noMainLoreTimerClose == 1)
+    IMAGOSaved.enableIdleFlashcards = (IMAGOSaved.enableIdleFlashcards == true or IMAGOSaved.enableIdleFlashcards == 1)
+    IMAGOSaved.keepSnippetOpen = (IMAGOSaved.keepSnippetOpen == true or IMAGOSaved.keepSnippetOpen == 1)
+    IMAGOSaved.enableMotD = (IMAGOSaved.enableMotD == true or IMAGOSaved.enableMotD == 1)
+    IMAGOSaved.opaqueUI = (IMAGOSaved.opaqueUI == true or IMAGOSaved.opaqueUI == 1)
     IMAGOSaved.hideMinimap = (IMAGOSaved.hideMinimap == true or IMAGOSaved.hideMinimap == 1)
     IMAGOSaved.debugMap = (IMAGOSaved.debugMap == true or IMAGOSaved.debugMap == 1)
+
+    IMAGO.isDeveloper = IMAGO.IsDeveloper()
+    if not IMAGO.isDeveloper then
+        IMAGOSaved.debugMap = false
+    end
 
     IMAGO.Scanner.EnsureZoneProgressTables()
 
@@ -485,6 +549,7 @@ function IMAGO.Init()
     SLASH_IMAGO1 = "/imago"
     SlashCmdList["IMAGO"] = function(msg)
         msg = msg:lower():trim()
+        local isDev = IMAGO.isDeveloper
         
         if msg == "" then
             if IMAGO.Chronicle then IMAGO.Chronicle.Toggle() end
@@ -492,12 +557,25 @@ function IMAGO.Init()
             if Settings and Settings.OpenToCategory and IMAGO.settingsCategory then
                 Settings.OpenToCategory(IMAGO.settingsCategory:GetID())
             end
+        elseif msg == "idle" then
+            if IMAGO.Snippets and IMAGO.Snippets.ShowRandom then
+                IMAGO.Snippets.ShowRandom(true)
+            end
         elseif msg == "help" then
             print("|cFF9370DBIMAGO Slash Commands:|r")
             print("|cFFFFD700/imago|r - " .. (IMAGO.L["CMD_HELP_OPEN_DESC"] or "Öffnet oder schließt die Chronik"))
             print("|cFFFFD700/imago settings|r - " .. (IMAGO.L["CMD_HELP_SETTINGS_DESC"] or "Öffnet die Addon-Einstellungen"))
             print("|cFFFFD700/imago help|r - " .. (IMAGO.L["CMD_HELP_HELP_DESC"] or "Zeigt diese Hilfe an"))
+        elseif msg == "dev" then
+            if not isDev then return end
+            print("|cFFFFD700[IMAGO DEV]|r Befehle:")
+            print("|cFFFFD700/imago debugmap|r - Zonen-Debug an/aus (Chat-Ausgabe)")
+            print("|cFFFFD700/imago map|r - Aktuelle uiMapID anzeigen (für zones.lua)")
+            print("|cFFFFD700/imago validate|r - Datenbank-Validierung (IDs/Lore)")
+            print("|cFFFFD700/imago unlockall|r - Alles freischalten (Test)")
+            print("|cFFFFD700/imago scan <id>|r - NPC per ID testen/anzeigen")
         elseif msg == "debugmap" then
+            if not isDev then return end
             IMAGOSaved.debugMap = not IMAGOSaved.debugMap
             print(string.format(
                 "|cFFFFD700IMAGO:|r Zonen-Debug %s (/imago debugmap zum Umschalten)",
@@ -517,6 +595,7 @@ function IMAGO.Init()
             end
             
         elseif msg == "map" then
+            if not isDev then return end
             -- DAS ULTIMATIVE DEV-TOOL FÜR ZONEN-IDS
             local mapID = C_Map.GetBestMapForUnit("player")
             if mapID then
@@ -529,6 +608,7 @@ function IMAGO.Init()
             end
             
         elseif msg == "validate" then
+            if not isDev then return end
             print(IMAGO.L["VAL_START"] or "|cFFFFD700[IMAGO]|r Starte Datenbank-Validierung...")
             local count, missingIDs, missingLore = 0, 0, 0
             for slug, data in pairs(IMAGOdb.npcs) do
@@ -546,6 +626,7 @@ function IMAGO.Init()
             print(string.format(IMAGO.L["VAL_DONE"] or "Validierung beendet. %d NPCs geprüft. %d kritische Fehler, %d Warnungen.", count, missingIDs, missingLore))
         
         elseif msg == "unlockall" then
+            if not isDev then return end
             local count = 0
             
             -- 1. NPCs freischalten
@@ -575,6 +656,7 @@ function IMAGO.Init()
             end
 
         elseif msg:match("^scan %d+") then
+            if not isDev then return end
             local id = tonumber(msg:match("^scan (%d+)"))
             local isRelevant = IMAGO.Scanner.DiscoverNPC(id)
             if not isRelevant then print("|cFFFF0000IMAGO:|r ID " .. id .. " ist nicht in der Datenbank.") end

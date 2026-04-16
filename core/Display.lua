@@ -24,6 +24,27 @@ local LABELS = {
     encounter = "☠  ",
 }
 
+local BACKDROP_DEFAULT = {
+    bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
+    edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+    tile = true, tileSize = 16, edgeSize = 16,
+    insets = { left = 4, right = 4, top = 4, bottom = 4 }
+}
+
+local BACKDROP_OPAQUE = {
+    bgFile = "Interface\\Buttons\\WHITE8X8",
+    edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
+    tile = true, tileSize = 16, edgeSize = 16,
+    insets = { left = 4, right = 4, top = 4, bottom = 4 }
+}
+
+local function ApplyBackdrop(f, alpha)
+    local opaque = IMAGOSaved and IMAGOSaved.opaqueUI
+    f:SetBackdrop(opaque and BACKDROP_OPAQUE or BACKDROP_DEFAULT)
+    f:SetBackdropColor(0.05, 0.05, 0.05, opaque and 1.0 or alpha)
+    f:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+end
+
 local function countKeys(t)
     if type(t) ~= "table" then return 0 end
     local n = 0
@@ -106,14 +127,7 @@ function IMAGO.Display.CreateFrame()
     f:SetAlpha(0)
     f:Hide()
 
-    f:SetBackdrop({
-        bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
-        edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", 
-        tile = true, tileSize = 16, edgeSize = 16,
-        insets = { left = 4, right = 4, top = 4, bottom = 4 }
-    })
-    f:SetBackdropColor(0.05, 0.05, 0.05, 0.75)
-    f:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+    ApplyBackdrop(f, 0.75)
 
     f.newBadge = f:CreateFontString(nil, "OVERLAY")
     f.newBadge:SetFont(FONT_TITLE, 20, "OUTLINE")
@@ -211,6 +225,7 @@ function IMAGO.Display.Show(title, bodyText, category, isNew)
 
     local f = IMAGO.Display.frame
     attachProgressFontString(f)
+    ApplyBackdrop(f, 0.75)
     local color = COLORS[category] or COLORS.zone
     local label = LABELS[category] or ""
 
@@ -272,7 +287,7 @@ function IMAGO.Display.Show(title, bodyText, category, isNew)
 
     -- Timer-Logik für automatisches Schließen
     if closeTimer then closeTimer:Cancel(); closeTimer = nil end
-    if not IMAGOSaved.noTimerClose then
+    if not IMAGOSaved.noMainLoreTimerClose then
         closeTimer = C_Timer.After(30, function()
             IMAGO.Display.HideLorePanel()
         end)
