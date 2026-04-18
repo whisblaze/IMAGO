@@ -1448,6 +1448,77 @@ With the threat of the Voidstorm looming over Silvermoon, Astalor once again thi
     },
 }
 
+IMAGOdb.npcs["sunwalker_dezco"] = {
+    displayName_deDE = "Sonnenläufer Dezco",
+    displayName_enUS = "Sunwalker Dezco",
+    race_deDE = "Tauren",
+    race_enUS = "Tauren",
+    displayID = 247299,
+    zones_deDE = {"Arathihochland"},
+    zones_enUS = {"Arathi Highlands"},
+    ids = {
+        247299, 245186, 238072
+    },
+    category = "CAT_LIGHT",
+    lore_deDE = 
+    [[Als Häuptling des Stammes der Morgenwandler ist der standhafte Taure Sonnenläufer Dezco ein Verehrer von An'she, der Sonne, und schöpft seine gewaltige Macht aus ihrem Licht. Nachdem er unvorstellbare persönliche Tragödien erlitten hatte, die einen schwächeren Geist gebrochen hätten, reiste Dezco auf der Suche nach seiner Bestimmung in ferne Länder. Obwohl ihn seine Reisen über ferne Kontinente und sogar in die Reiche des Jenseits führten, fühlte er sich unter dem einfachen Volk von Azeroth am wohlsten.
+
+Dezco, der sich dem Dienst verschrieben hat, gilt unter den Sonnenläufern als erfahrener Veteran und weiser Ältester. Da sich erneut ein Konflikt anbahnt, übernimmt er die Rolle des anleitenden Mentors und lehrt seine Verbündeten, dass das Beschreiten des Pfades des Lichts nicht nur inbrünstigen Eifer, sondern auch tiefes Mitgefühl erfordert.]],
+    lore_enUS = 
+    [[Chieftain of the Dawnchaser tribe, Sunwalker Dezco is a steadfast tauren who reveres An'she, the sun, drawing his formidable power from her light. Having endured unimaginable personal tragedies that would break a lesser spirit, Dezco journeyed to distant lands in search of purpose. Though his travels have taken him across distant continents and even into the realms of the afterlife, the place he felt most at home was with the common people of Azeroth. 
+    
+Dedicated to service, Dezco stands as a seasoned veteran and wise elder among the Sunwalkers. As conflict brews anew, he serves as a guiding mentor, teaching allies that walking the path of the Light requires not only fervent zeal, but deep compassion as well.]],
+    timeline = {
+        {
+            era = "Pre-MoP",
+            text_deDE = "Kämpfte auf mehreren Hordenmissionen über verschiedene Kontinente hinweg an der Seite seiner engsten Verbündeten gegen Drachen, Untote und Streitkräfte der Allianz.",
+            text_enUS = "Fought against dragons, the undead, and Alliance forces on several Horde missions across multiple continents alongside his closest allies.",
+            source = "Lewi - IMAGO Community"
+        },
+        {
+            era = "MoP",
+            text_deDE = "Führte den Stamm der Morgenwandler nach Pandaria und durchlebte den tragischen Tod seiner Frau und eines seiner neugeborenen Söhne. Er wurde zu einem unerbittlichen Verteidiger des Tals der Ewigen Blüten und half letztendlich dabei, Garrosh Höllschrei zu stürzen, um dessen Entweihung des heiligen Landes zu stoppen.",
+            text_enUS = "Led the Dawnchaser tribe to Pandaria, enduring the tragic deaths of his wife and one of his infant sons. He became a staunch defender of the Vale of Eternal Blossoms and ultimately helped overthrow Garrosh Hellscream to stop his desecration of the sacred land.",
+            source = "Lewi - IMAGO Community"
+        },
+        {
+            era = "WoD",
+            text_deDE = "Reiste auf der Suche nach Frieden nach Draenor, wo er vorübergehend mit einer Sucht nach dem beruhigenden, warmen Licht eines Sonnenkristalls der Arakkoa kämpfte, um seine immense Trauer zu bewältigen.",
+            text_enUS = "Traveled to Draenor in search of peace, temporarily struggling with an addiction to the soothing, warm light of an arakkoan Sun Crystal to cope with his immense grief.",
+            source = "Lewi - IMAGO Community"
+        },
+        {
+            era = "Legion",
+            text_deDE = "Schloss sich den Reihen der Silbernen Hand an und unterstützte die Verteidigungsbemühungen des Paladinordens vom Sanktum des Lichts aus.",
+            text_enUS = "Joined the ranks of the Silver Hand, aiding the paladin order's defensive efforts from within the Sanctum of Light.",
+            source = "Lewi - IMAGO Community"
+        },
+        {
+            era = "BfA",
+            text_deDE = "Verließ die Silberne Hand infolge der gespaltenen Loyalitäten und politischen Unruhen des Vierten Krieges.",
+            text_enUS = "Departed from the Silver Hand following the fractured loyalties and political turmoil of the Fourth War.",
+            source = "Lewi - IMAGO Community"
+        },
+        {
+            era = "SL",
+            text_deDE = "Durchschritt den Schleier in die Schattenlande und kam in Oribos an, in der Hoffnung, die Seelen seiner verstorbenen Frau und seines Sohnes zu finden, um ihnen eine letzte Botschaft der Liebe zu überbringen.",
+            text_enUS = "Crossed the veil into the Shadowlands and arrived in Oribos, hoping to find the souls of his departed wife and son to deliver a final message of love.",
+            source = "Lewi - IMAGO Community"
+        },
+        {
+            era = "TWW",
+            text_deDE = "Reiste an der Seite anderer prominenter Tauren an die Küsten von Khaz Algar und überwachte voller Stolz das Kampftraining seines nun erwachsenen Sohnes Kor.",
+            text_enUS = "Traveled to the shores of Khaz Algar alongside other prominent tauren, proudly overseeing the martial training of his now-grown son, Kor.",
+            source = "Lewi - IMAGO Community"
+        },
+        {
+            era = "Midnight", 
+            text_deDE = "Fungiert als anleitender Mentor für die Sonnenläufer und ihre Verbündeten und lehrt eine neue Generation, dass das Führen des Lichts viel mehr bedeutet als bloße Gewalt.",
+            text_enUS = "Acts as a guiding mentor for the Sunwalkers and their allies, teaching a new generation that wielding the Light is about much more than mere violence.", 
+            source = "Lewi - IMAGO Community"
+        },
+    },
+}
 
 -- ============================================================
 -- REVERSE-LOOKUP AUFBAUEN
@@ -1466,5 +1537,3 @@ function IMAGO.BuildReverseLookup()
          end
      end
  end
-
- -- ,, , , , , Magister Umbric, die ersten 4 nochmal IDs überarbeiten

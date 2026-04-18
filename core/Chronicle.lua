@@ -533,7 +533,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.startPage.logo:SetPoint("TOP", f.startPage, "TOP", 0, -20)
     f.startPage.logo:SetTexture("Interface\\AddOns\\IMAGO\\Media\\Logo.tga")
 
-    -- NEU: Horizontale Trennlinie, um das Logo vom Rest der Daten abzuschneiden
+    -- Horizontale Trennlinie, um das Logo vom Rest der Daten abzuschneiden
     f.startPage.logoLine = f.startPage:CreateTexture(nil, "ARTWORK")
     f.startPage.logoLine:SetSize(400, 1)
     f.startPage.logoLine:SetPoint("TOP", f.startPage.logo, "BOTTOM", 0, -5)
