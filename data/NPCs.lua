@@ -144,14 +144,69 @@ IMAGOdb.npcs["halduron_brightwing"] = {
         256210, 241176, 251587, 260416
     },
     category = "CAT_QUELTHALAS",
-    lore_deDE = "Als Waldläufergeneral der Weltenwanderer (Farstriders) ist Halduron der direkte Nachfolger von Sylvanas Windläufer und einer von Lor'themar Therons treuesten Freunden. Als pragmatischer Mann der Wälder verabscheut er die Ränkespiele der Politik und verlässt sich lieber auf seinen Bogen als auf Magie. Mit unerschütterlicher Loyalität verteidigt er die Grenzen von Quel'Thalas. In Midnight spannt er ein weitreichendes Späher-Netzwerk von den Wäldern Silbermonds bis in die tiefen Höhlen von Harandar, um die Vorhut der Leere abzufangen.",
-    lore_enUS = "As the Ranger-General of the Farstriders, Halduron is the direct successor to Sylvanas Windrunner and one of Lor'themar Theron's most loyal friends. A pragmatic man of the woods, he despises the machinations of politics and relies on his bow rather than magic. With unwavering loyalty, he defends the borders of Quel'Thalas. In Midnight, he casts a vast scouting network from the forests of Silvermoon to the deep dens of Harandar to intercept the vanguard of the Void.",
+    lore_deDE = 
+    [[Halduron Wolkenglanz ist der amtierende Waldläufergeneral von Silbermond, der beste Freund von Lor'themar Theron und Schützer der Grenzen seiner Heimat. Er dient seinem Volk seit Jahrzehnten und stellt sich jeder Bedrohung mit unerschütterlichem Mut entgegen – von einfallenden Amani-Trollen bis hin zu den grauenvollen Untoten der Geißel.
+    
+Trotz seines tödlichen Eifers, den er seinen Feinden auf dem Schlachtfeld entgegenbringt, ist Halduron bei seinen Freunden als toleranter und lebensfroher Mann mit einem guten Auge für Details bekannt.]],
+    lore_enUS = 
+    [[The current Ranger-General of Silvermoon and best friend of Lor'themar Theron, Halduron Brightwing keeps the borders of his homeland safe. He has served his people for decades, standing against every threat thrown at him with unwavering courage – from Amani troll invaders to the horrifying undead of the Scourge.
+    
+Despite the deadly fervor he shows his enemies on the field of battle, Halduron is known to his friends as a tolerant and bright-spirited man with a good eye for detail.]],
     timeline = {
-        {era = "Pre-TBC",  text_deDE = "Übernahm das Amt des Waldläufergenerals nach dem verheerenden Fall von Quel'Thalas und dem Tod von Sylvanas.", text_enUS = "Took the mantle of Ranger-General after the devastating fall of Quel'Thalas and the death of Sylvanas.", source = "warcraft.wiki.gg/wiki/Halduron_Brightwing"},
-        {era = "Cata",     text_deDE = "Verbündete sich mit Vereesa Windläufer und Vol'jin, um den Aufstieg der Zandalari in Zul'Aman zu stoppen.", text_enUS = "Allied with Vereesa Windrunner and Vol'jin to stop the rise of the Zandalari in Zul'Aman.", source = "warcraft.wiki.gg/wiki/Halduron_Brightwing"},
-        {era = "MoP",      text_deDE = "Befehligte die Einheiten der Sonnenhäscher-Offensive während der Kampagne auf der Insel des Donners.", text_enUS = "Commanded the Sunreaver Onslaught forces during the Isle of Thunder campaign.", source = "warcraft.wiki.gg/wiki/Halduron_Brightwing"},
-        {era = "Legion",   text_deDE = "Schloss sich dem Verborgenen Pfad an und half, die Jäger Azeroths in der Volltrefferhütte zu vereinen.", text_enUS = "Joined the Unseen Path and helped unite the hunters of Azeroth in the Trueshot Lodge.", source = "warcraft.wiki.gg/wiki/Halduron_Brightwing"},
-        {era = "Midnight", text_deDE = "Leitet ein weitreichendes Späher-Netzwerk von Silbermond bis Harandar gegen die Leerenstreitkräfte.", text_enUS = "Directs an extensive scouting network from Silvermoon to Harandar against the Void forces.", source = "warcraft.wiki.gg/wiki/Halduron_Brightwing"},
+        {
+            era = "WC2",
+            text_deDE = "Kämpfte gegen die Amani-Trolle und schaffte es, ihren Anführer Zul'jin gefangen zu nehmen.",
+            text_enUS = "Fought against the Amani trolls, and managed to capture their leader, Zul'jin.",
+            source = "Cadash"
+        },
+        {
+            era = "WC3",
+            text_deDE = "Überlebte den Angriff der Geißel und wurde nach Sylvanas' Tod zum Waldläufergeneral ernannt. Begann damit, die verbliebenen Streitkräfte der Geißel aus der zerstörten Stadt Silbermond zu vertreiben.",
+            text_enUS = "Survived the Scourge attack and was named Ranger-general after Sylvanas' death. Began to drive out the remaining Scourge forces from the ruined Silvermoon City.",
+            source = "Cadash"
+        },
+        {
+            era = "TBC",
+            text_deDE = "Stellte sich entschieden gegen die Gründung der Blutritter. Verhandelte als Gesandter in Orgrimmar erfolgreich die Aufnahme der Blutelfen in die Horde.",
+            text_enUS = "Strongly opposed the creation of the Blood Knights. Successfully negotiated the admittance of the Blood Elves into the Horde as an envoy in Orgrimmar.",
+            source = "Cadash"
+        },
+        {
+            era = "WotLK",
+            text_deDE = "Beaufsichtigte den Aufbau der Verteidigungsanlagen für den erneuerten Sonnenbrunnen.",
+            text_enUS = "Oversaw the construction of defenses for the renewed Sunwell.",
+            source = "Cadash"
+        },
+        {
+            era = "Cata",
+            text_deDE = "Merzte eine sich neu formierende Streitmacht der Amani aus und ging dabei ein kurzes Bündnis mit Vereesa Windläufer ein.",
+            text_enUS = "Rooted out a reforming Amani force, forming a brief alliance with Vereesa Windrunner in the process.",
+            source = "Cadash"
+        },
+        {
+            era = "MoP",
+            text_deDE = "Bekämpfte die wachsende Bedrohung durch die Zandalari auf der Insel des Donners.",
+            text_enUS = "Fought the rising Zandalari threat on the Isle of Thunder.",
+            source = "Cadash"
+        },
+        {
+            era = "Legion",
+            text_deDE = "Schloss sich dem Verborgenen Pfad an und half dabei, Hakkar den Hundemeister zu besiegen.",
+            text_enUS = "Joined the Unseen Path and helped to defeat Hakkar the Houndmaster.",
+            source = "Cadash"
+        },
+        {
+            era = "Pre-DF",
+            text_deDE = "Nahm als Trauzeuge an der Hochzeit von Lor'themar und Thalyssra teil.",
+            text_enUS = "Attended Lor'themar and Thalyssra's wedding as groomsman.",
+            source = "Cadash"
+        },
+        {
+            era = "Midnight",
+            text_deDE = "Halduron war der Erste, der die Bedrohung durch die Lichtblüte bemerkte und sich mit Orweyna auf die Reise nach Harandar begab. Durch ein vorläufiges Bündnis mit den Haranir gelang es Halduron, die Lichtblüte in Schach zu halten und die Verteidigung von Silbermond zu stärken.",
+            text_enUS = "Halduron was the first to notice the threat of the Lightbloom and ventured into Harandar with Orweyna. Securing a tentative alliance with the Haranir, Halduron managed to keep the Lightbloom in check and strengthened Silvermoon's defenses.",
+            source = "Cadash"
+        },
     },
 }
 
@@ -1053,31 +1108,68 @@ IMAGOdb.npcs["arator"] = {
     displayName_enUS = "Arator the Redeemer",
     race_deDE = "Halbelf",
     race_enUS = "Half-Elf",
-    displayID = 236734, -- Strikt die erste ID der neuen Liste
-    zones_deDE = {"Amirdrassil", "Brennende Steppe", "Das Arathihochland", "Die Leerenspitze", "Harandar", "Hort der Meister", "Immersangwald", "Insel von Quel'Danas", "Leerensturm", "Östliche Pestländer", "Parhelionplaza", "Silbermond", "Zul'Aman"},
-    zones_enUS = {"Amirdrassil", "Burning Steppes", "Arathi Highlands", "The Void Spire", "Harandar", "Den of Masters", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Eastern Plaguelands", "Parhelion Plaza", "Silvermoon City", "Zul'Aman"},
+    displayID = 236734,
+    zones_deDE = {"Amirdrassil", "Arcantina", "Brennende Steppe", "Das Arathihochland", "Die Leerenspitze", "Harandar", "Hort der Meister", "Immersangwald", "Insel von Quel'Danas", "Leerensturm", "Östliche Pestländer", "Parhelionplaza", "Silbermond", "Zul'Aman"},
+    zones_enUS = {"Amirdrassil", "Arcantina", "Burning Steppes", "Arathi Highlands", "The Void Spire", "Harandar", "Den of Masters", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Eastern Plaguelands", "Parhelion Plaza", "Silvermoon City", "Zul'Aman"},
     ids = {
-        236734, 240267, 244644, 237510, 235479, 253055, 251943, 236964, 
-        236959, 241255, 253603, 235469, 235724, 236944, 235503, 235537, 
-        235721, 239827, 235533, 235776, 240394, 250434, 235523, 235602, 
-        235792, 254884, 240231, 240377, 240454, 235608, 239575, 239979, 
-        235393, 235714, 235719, 241109, 242532, 259261, 235485, 245061, 
-        243824, 243091, 237273, 243903, 243323, 246135, 248348, 237218, 
-        244557, 241470, 244001, 242494, 240284, 242433, 236716, 236567, 
-        240296, 241205, 236132, 236686, 236391, 236568, 244982, 236611, 
-        243984, 237288, 241148, 251871, 236737, 236736, 236100, 245421, 
-        245422, 252283, 241390, 240126, 245420, 244551, 245419, 244297, 
-        240694, 241428, 237503, 237508, 251335
+        235393, 235469, 235479, 235485, 235503, 235523, 235533, 235537, 
+        235602, 235608, 235714, 235719, 235721, 235724, 235776, 235792, 
+        236100, 236132, 236391, 236567, 236568, 236611, 236686, 236716, 
+        236734, 236736, 236737, 236944, 236959, 236964, 237218, 237273, 
+        237288, 237502, 237503, 237508, 237510, 239575, 239827, 239979, 
+        240126, 240231, 240267, 240284, 240296, 240377, 240394, 240454, 
+        240694, 241109, 241148, 241205, 241255, 241390, 241428, 241470, 
+        242433, 242494, 242532, 243091, 243323, 243824, 243903, 243984, 
+        244001, 244297, 244551, 244557, 244644, 244982, 245061, 245419, 
+        245420, 245421, 245422, 246135, 246789, 248348, 250434, 251335, 
+        251871, 251943, 252283, 253055, 253603, 254884, 259261
     },
     category = "CAT_LIGHT",
-    lore_deDE = "Arator der Retter ist das einzige Kind von Hochexarch Turalyon und Alleria Windläufer, den legendären Helden der Zweiten Krieges. Er wuchs als Waise in der Obhut der Söhne Lothars auf, nachdem seine Eltern auf Draenor verschollen waren. Als er dem Orden der Silbernen Hand beitrat, wurde er zu einem standhaften Paladin des Lichts. Doch seine Familienverhältnisse sind hochgradig komplex: Während sein Vater der oberste Kommandant des Lichts ist, hat seine Mutter die Leere gemeistert. Arator wird oft von Visionen geplagt, in denen die Leere seine Mutter verschlingt. In Midnight rückt der Halbelf in das absolute Zentrum des Krieges. Er bereist ganz Azeroth, um Verbündete zu sammeln, und kämpft schließlich an vorderster Front, um Quel'Thalas – die Heimat seiner Mutter – vor eben jener Dunkelheit zu bewahren, die er zeitlebens gefürchtet hat.",
-    lore_enUS = "Arator the Redeemer is the only child of High Exarch Turalyon and Alleria Windrunner, legendary heroes of the Second War. He grew up as an orphan under the care of the Sons of Lothar after his parents went missing on Draenor. Upon joining the Order of the Silver Hand, he became a steadfast paladin of the Light. However, his family dynamics are highly complex: while his father is the supreme commander of the Light, his mother has mastered the Void. Arator is often plagued by visions in which the Void consumes his mother. In Midnight, the half-elf steps into the absolute center of the war. He travels all across Azeroth to rally allies and ultimately fights on the front lines to save Quel'Thalas—his mother's homeland—from the very darkness he has feared his entire life.",
+    lore_deDE = 
+    [[Als Alleria Windläufer und Turalyon nach Draenor aufbrachen, um Azeroth zu retten, ließen sie ihr neugeborenes Kind zurück. Arator wuchs bei Verwandten auf und kannte seine Eltern nur aus Legenden. Als Sohn zweier der berühmtesten Kriegshelden der Allianz hatte er stets damit zu kämpfen, aus ihrem Schatten herauszutreten und seine eigene Bestimmung zu finden. 
+    
+In dem Entschluss seinem Vater nachzueifern, wurde er Paladin der Allianz und stieg in den Rängen auf, indem er wahre Stärke und Glauben an das Licht bewies. Nun, da er wieder mit seinen Eltern vereint ist, kämpft Arator darum, seine Familie zusammenzuhalten, während sie in verschiedene Richtungen gezogen werden.]],
+    lore_enUS = 
+    [[When his parents Alleria Windrunner and Turalyon left for Draenor to save Azeroth, they left their newborn behind. Raised by family, Arator only knew his parents through legend. As the child of two of the Alliance's most famous war heroes, Arator has always struggled to step out of their shadows and find his own destiny. 
+    
+Choosing to emulate his father, he became a paladin for the Alliance and rose up in the ranks by showing true strength and faith in the Light. Now reunited with his parents, Arator struggles to hold his family together as they are pulled in different directions.]],
     timeline = {
-        {era = "TBC",      text_deDE = "Verbrachte Jahre in der Ehrenfeste auf der Scherbenwelt (Outland) auf der unermüdlichen Suche nach Hinweisen auf den Verbleib seiner Eltern.", text_enUS = "Spent years in Honor Hold in Outland relentlessly searching for clues regarding his parents' whereabouts.", source = "warcraft.wiki.gg/wiki/Arator_the_Redeemer"},
-        {era = "Legion",   text_deDE = "Trat der Silbernen Hand im Sanktum des Lichts bei und wurde auf Argus nach Jahrzehnten der Trennung endlich wieder mit Turalyon und Alleria vereint.", text_enUS = "Joined the Silver Hand in the Sanctum of Light and was finally reunited with Turalyon and Alleria on Argus after decades of separation.", source = "warcraft.wiki.gg/wiki/Arator_the_Redeemer"},
-        {era = "BfA",      text_deDE = "Kämpfte in der Schlacht um Stromgarde an der Seite seines Vaters für die Allianz.", text_enUS = "Fought for the Alliance alongside his father in the Battle for Stromgarde.", source = "warcraft.wiki.gg/wiki/Arator_the_Redeemer"},
-        {era = "TWW",      text_deDE = "Überlebte die Zerstörung Dalarans und schloss sich der Expedition in Khaz Algar an, um den Spuren seiner Mutter und Xal'ataths zu folgen.", text_enUS = "Survived the destruction of Dalaran and joined the expedition in Khaz Algar to follow the trail of his mother and Xal'atath.", source = "warcraft.wiki.gg/wiki/Arator_the_Redeemer"},
-        {era = "Midnight", text_deDE = "Operiert in unzähligen Zonen von Quel'Thalas, dem Leerensturm und ganz Azeroth als treibende militärische Kraft im Krieg gegen die Leere.", text_enUS = "Operates across countless zones in Quel'Thalas, the Voidstorm, and all of Azeroth as a driving military force in the war against the Void.", source = "warcraft.wiki.gg/wiki/Arator_the_Redeemer"},
+        {
+            era = "WC2", 
+            text_deDE = "Wurde während des Zweiten Krieges geboren und auf Azeroth zurückgelassen, um von seiner Tante Vereesa Windläufer aufgezogen zu werden.", 
+            text_enUS = "Born during the Second War and left behind on Azeroth to be raised by his aunt, Vereesa Windrunner.", 
+            source = "Cadash"
+        },
+        {
+            era = "WC3", 
+            text_deDE = "Nachdem er den Dritten Krieg überlebt hatte, brachte Vereesa ihn nach Silbermond, wo er von Lor'themar und Liadrin in den Lehren des Lichts unterwiesen wurde.", 
+            text_enUS = "After surviving the Third War, Vereesa brought him to Silvermoon where he was trained by Lor'themar and Liadrin in the ways of the Light.", 
+            source = "Cadash"
+        },
+        {
+            era = "TBC", 
+            text_deDE = "Schloss sich der Expedition in die Scherbenwelt an, um nach seinen Eltern zu suchen. Diente unter dem Banner der Allianz als Paladin. Er erhielt den Beinamen \"Arator der Retter\".", 
+            text_enUS = "Joined the expedition to Outland to look for his parents. Served under the banner Alliance as a paladin. He was dubbed \"Arator the Redeemer\".", 
+            source = "Cadash"
+        },
+        {
+            era = "Legion", 
+            text_deDE = "Trat dem Orden der Silbernen Hand bei und verteidigte den Netherlichttempel. Kämpfte auf Argus gegen die Brennende Legion und war endlich wieder mit seinen Eltern vereint.", 
+            text_enUS = "Joined the Order of the Silver Hand and defended the Netherlight Temple. Fought the Burning Legion on Argus and was finally reunited with his parents.", 
+            source = "Cadash"
+        },
+        {
+            era = "TWW", 
+            text_deDE = "Versuchte Alleria und Sylvanas Windläufer für die bevorstehende Verteidigung von Silbermond zu mobilisieren.", 
+            text_enUS = "Tried to rally Alleria and Sylvanas Windrunner to the imminent defense of Silvermoon.", 
+            source = "Cadash"
+        },
+        {
+            era = "Midnight", 
+            text_deDE = "Nachdem er vom Sonnenbrunnen gerufen wurde, kämpfte Arator an vorderster Front gegen die Leere. Er organisierte die Wiedervereinigung der Elfenmächte Azeroths, um einen gemeinsamen Feind zu bekämpfen.", 
+            text_enUS = "After being summoned by the Sunwell, Arator fought on the front lines against the Void. He organized the reunification of the elven nations of Azeroth to fight a common foe.", 
+            source = "Cadash"
+        },
     },
 }
 
@@ -1302,19 +1394,43 @@ IMAGOdb.npcs["orweyna"] = {
     race_deDE = "Haran'ir",
     race_enUS = "Haran'ir",
     displayID = 241742,
-    zones_deDE = {"Die Höhle", "Harandar", "Immersangwald", "Silbermond"},
-    zones_enUS = {"The Den", "Harandar", "Eversong Woods", "Silvermoon City"},
+    zones_deDE = {"Das Blendende Tal", "Die Höhle", "Harandar", "Immersangwald", "Insel von Quel'Danas", "Silbermond"},
+    zones_enUS = {"The Blinding Vale", "The Den", "Harandar", "Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"},
     ids = {
-        241742, 236743, 236903, 237234, 237325, 237356, 237361, 237860, 
-        240962, 241070, 241331, 241704, 242592, 242694, 242882, 243761, 
-        255822, 255828
+        236704, 236743, 236903, 237210, 237234, 237325, 237333, 237346, 
+        237356, 237361, 237480, 237483, 237786, 237860, 239522, 240533, 
+        240962, 241070, 241331, 241704, 241742, 241795, 242592, 242694, 
+        242882, 243761, 243795, 245099, 245247, 245879, 245881, 246007, 
+        246485, 246722, 249068, 249151, 253343, 255822, 255828
     },
     category = "CAT_HARATI",
-    lore_deDE = "Orweyna ist eine prominente Beschützerin der geheimnisvollen Haran'ir, eines uralten Volkes, das sich der Verteidigung der planetaren Weltenbaumwurzeln verschrieben hat. Erstmals trat sie tief im Untergrund von Azj-Kahet in Erscheinung, um heldenhaft gegen das korrumpierende Schwarze Blut vorzugehen. In Midnight zwingt der beispiellose Angriff auf den Sonnenbrunnen sie und ihre Streitkräfte jedoch an die Oberfläche. Mit der Etablierung der neuen Fraktion der Hara'ti führt Orweyna ihre Späher und Druiden nun direkt in Harandar und im Immersangwald in den Kampf. Ihr unumstößliches Ziel: Xal'atath und die Streitkräfte der Leere daran zu hindern, die tiefen, magischen Wurzeln unterhalb von Quel'Thalas zu vergiften.",
-    lore_enUS = "Orweyna is a prominent guardian of the mysterious Haran'ir, an ancient people dedicated to defending the planetary roots of the world trees. She first appeared deep underground in Azj-Kahet to heroically combat the corrupting Black Blood. In Midnight, however, the unprecedented attack on the Sunwell forces her and her forces to the surface. With the establishment of the new Hara'ti faction, Orweyna now leads her scouts and druids directly into battle in Harandar and Eversong Woods. Her unwavering goal: to prevent Xal'atath and the forces of the Void from poisoning the deep, magical roots beneath Quel'Thalas.",
+    lore_deDE = 
+    [[    Als Späherin des geheimnisvollen Volkes der Haranir unterscheidet sich Orweyna stark von den meisten ihrer Artgenossen. Fasziniert von der Welt und ihren Bewohnern außerhalb ihrer Heimat widersetzte sie sich den Eiden der Geheimhaltung und Isolation. Zunächst nahm sie Kontakt mit dem Champion von Azeroth in Azj-Kahet auf, nun bittet sie die Elfen von Quel'Thalas um Hilfe.
+    
+Sie hat eine besondere Verbindung zu ihrer Göttin Aln'hara, von der sie Visionen drohender Gefahren erhält, die dem „Strahlenden Gesang” ähneln. Sie weiß, dass es mehr als nur die Streitkräfte der Haranir brauchen wird, um die Leere zu besiegen, die Aln'hara bedroht.]],
+    lore_enUS = 
+    [[A scout of the mysterious race called Haranir, Orweyna is quite different from most of her kind. Fascinated with the world and its people outside of her homeland, she went against her oaths of secrecy and seclusion and made contact first with the champion of Azeroth in Azj-Kahet, and now with the elves of Quel'Thalas to petition their aid.
+    
+She has a special connection to her goddess, Aln'hara, receiving visions of impending dangers from her that resemble the Radiant Song, and she knows that the Void that threatens Aln'hara will require more than the forces of the Haranir to vanquish.]],
     timeline = {
-        {era = "TWW", text_deDE = "Führte Abenteurer tief in Azj-Kahet im Kampf gegen die Ausbreitung des Schwarzen Blutes und zum Schutz der Weltenwurzeln an.", text_enUS = "Guided adventurers deep in Azj-Kahet in the fight against the spread of Black Blood and the protection of the world roots.", source = "Quest: Schallen in den Tiefen"},
-        {era = "Midnight", text_deDE = "Tritt an die Oberfläche und führt die Fraktion der Hara'ti in Harandar an, um die Leereninvasion von den Wurzeln Quel'Thalas' fernzuhalten.", text_enUS = "Surfaces and leads the Hara'ti faction in Harandar to keep the Void invasion away from the roots of Quel'Thalas.", source = "warcraft.wiki.gg/wiki/Orweyna"},
+        {
+            era = "Pre-BfA", 
+            text_deDE = "Bemerkte die Bedrohung durch das Schwarze Blut in Azj-Kahet und wagte sich zum ersten Mal aus Harandar heraus, um dessen Ausbreitung zu bekämpfen.", 
+            text_enUS = "Noticed the threat of the Black blood in Azj-Kahet and ventured outside of Harandar for the first time to combat the spread.", 
+            source = "Cadash - IMAGO Community"
+        },
+        {
+            era = "TWW", 
+            text_deDE = "Rettete die Expedition von Alleria und Faerin in Azj-Kahet vor den Nerubern. Setzte ihre Untersuchung des Schwarzen Blutes fort, folgte ihm nach Undermine und half folglich Gazlowe bei seiner Rebellion gegen Gallywix.", 
+            text_enUS = "Rescued Alleria's and Faerin's expedition in Azj-Kahet from the Nerubians. Kept investigating the Black Blood, following it to Undermine and consequently aided Gazlowe in his rebellion against Gallywix.", 
+            source = "Cadash - IMAGO Community"
+        },
+        {
+            era = "Midnight", 
+            text_deDE = "Half dabei, die Lichtblüte sowohl in Harandar als auch in Quel'Thalas einzudämmen. Verhandelte ein vorläufiges Bündnis zwischen ihrem Volk und den Elfen von Quel'Thalas, was dazu führte, dass die Haranir zum ersten Mal die Außenwelt erkundeten.", 
+            text_enUS = "Helped to contain the Lightbloom in both Harandar and Quel'Thalas. Negotiated a tentative Alliance between her people and the elves of Quel'Thalas, leading the Haranir to explore the outside world for the first time.", 
+            source = "Cadash - IMAGO Community"
+        },
     },
 }
 
