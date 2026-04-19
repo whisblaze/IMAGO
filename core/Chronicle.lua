@@ -46,8 +46,8 @@ IMAGO.Chronicle.ranks = {
     {perc = 25,  title_deDE = "Schreiber der Echos",            title_enUS = "Scribe of Echoes"},
     {perc = 40,  title_deDE = "Chronist der Unvergessenen",     title_enUS = "Chronicler of the Unforgotten"},
     {perc = 60,  title_deDE = "Hüter des Vermächtnisses",       title_enUS = "Keeper of Legacy"},
-    {perc = 80,  title_deDE = "Wahrer der Historie",            title_enUS = "Warden of History"},
-    {perc = 95,  title_deDE = "Großarchivar des Kanons",        title_enUS = "Grand Archivist of the Canon"},
+    {perc = 80,  title_deDE = "Hüter der Weltenseele",          title_enUS = "Keeper of the Worldsoul"},
+    {perc = 95,  title_deDE = "Das Gedächtnis von Azeroth",     title_enUS = "Grand Archivist of the Canon"},
     {perc = 100, title_deDE = "Vollendetes Imago",              title_enUS = "Perfected Imago"},
 }
 
