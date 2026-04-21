@@ -30,11 +30,7 @@ local function GetLocalizedSnippetText(entry)
     if type(entry) == "string" then return entry end
     if type(entry) ~= "table" then return nil end
 
-    if IMAGO.GetLocalizedData then
-        return IMAGO.GetLocalizedData(entry, "text")
-    end
-
-    return entry.text_enUS
+    return entry.text
 end
 
 local function PickRandom()

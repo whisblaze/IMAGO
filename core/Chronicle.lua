@@ -3,16 +3,20 @@
 -- Die Chronik: 10/10 Cinematic UI, Dashboard, Search & Filter
 -- ============================================================
 
-IMAGO.Chronicle = {}
+IMAGO.Chronicle = IMAGO.Chronicle or {}
 
 local FONT_TITLE = "Fonts\\MORPHEUS.TTF"
 local FONT_BODY  = "Fonts\\FRIZQT__.TTF"
 
 local eraColors = {
     ["Ancient"]   = {0.85, 0.65, 0.13},     -- Titanen-Bronze (Schöpfung/Alte Götter)
+    ["Pre-WC1"]   = {0.60, 0.10, 0.10},     -- Blut-Rot (Orc-Invasion/Erster Krieg)
     ["WC1"]       = {0.60, 0.10, 0.10},     -- Blut-Rot (Orc-Invasion/Erster Krieg)
+    ["Pre-WC2"]   = {0.10, 0.30, 0.80},     -- Lordaeron-Blau (Allianz/Zweiter Krieg)
     ["WC2"]       = {0.10, 0.30, 0.80},     -- Lordaeron-Blau (Allianz/Zweiter Krieg)
+    ["Pre-WC3"]   = {0.45, 0.80, 0.20},     -- Seuchen-Grün (Die Geißel/Dritter Krieg)
     ["WC3"]       = {0.45, 0.80, 0.20},     -- Seuchen-Grün (Die Geißel/Dritter Krieg)
+    ["Pre-Classic"]   = {0.7, 0.7, 0.7},        -- Neutrales Stein-Grau (Alte Welt)
     ["Classic"]   = {0.7, 0.7, 0.7},        -- Neutrales Stein-Grau (Alte Welt)
     ["Pre-TBC"]   = {0.12, 1.0, 0.0},       -- Dunkleres Wald/Teufelsgrün (Scherbenwelt)
     ["TBC"]       = {0.12, 1.0, 0.0},       -- Dunkleres Wald/Teufelsgrün (Scherbenwelt)
@@ -38,27 +42,8 @@ local eraColors = {
     ["Midnight"]  = {0.42, 0.0, 0.8},       -- Tiefes Leeren-Violett (Xal'atath)
 }
 
-local DB_LOCALE = (GetLocale() == "deDE") and "deDE" or "enUS"
-
-IMAGO.Chronicle.ranks = {
-    {perc = 0,   title_deDE = "Stiller Beobachter",             title_enUS = "Silent Observer"},
-    {perc = 10,  title_deDE = "Sammler der Fragmente",          title_enUS = "Collector of Fragments"},
-    {perc = 25,  title_deDE = "Schreiber der Echos",            title_enUS = "Scribe of Echoes"},
-    {perc = 40,  title_deDE = "Chronist der Unvergessenen",     title_enUS = "Chronicler of the Unforgotten"},
-    {perc = 60,  title_deDE = "Hüter des Vermächtnisses",       title_enUS = "Keeper of Legacy"},
-    {perc = 80,  title_deDE = "Hüter der Weltenseele",          title_enUS = "Keeper of the Worldsoul"},
-    {perc = 95,  title_deDE = "Das Gedächtnis von Azeroth",     title_enUS = "Grand Archivist of the Canon"},
-    {perc = 100, title_deDE = "Vollendetes Imago",              title_enUS = "Perfected Imago"},
-}
-
-IMAGO.Chronicle.zoneRanks = {
-    {perc = 0,   title_deDE = "Wanderer",          title_enUS = "Wanderer"},
-    {perc = 20,  title_deDE = "Späher",            title_enUS = "Scout"},
-    {perc = 40,  title_deDE = "Kartograph",        title_enUS = "Cartographer"},
-    {perc = 60,  title_deDE = "Pfadfinder",        title_enUS = "Pathfinder"},
-    {perc = 80,  title_deDE = "Entdecker",          title_enUS = "Explorer"},
-    {perc = 100, title_deDE = "Weltenwanderer",    title_enUS = "Worldwalker"},
-}
+IMAGO.Chronicle.ranks = IMAGO.Chronicle.ranks or {}
+IMAGO.Chronicle.zoneRanks = IMAGO.Chronicle.zoneRanks or {}
 
 local function GetCrypticName(name)
     local crypt = ""
@@ -132,7 +117,7 @@ function IMAGO.Chronicle.ShowCinematic(npcData, callback)
     end
 
     local cf = IMAGO.Chronicle.cinematicFrame
-    cf.name:SetText(IMAGO.GetLocalizedData(npcData, "displayName"))
+    cf.name:SetText(npcData and npcData.name or "")
     cf.sub:SetText(IMAGO.L["CINEMATIC_CONTINUE"])
 
     -- FIX: Wieder SetCreature mit sicherem Cache-Reload Timer
@@ -1059,7 +1044,7 @@ function IMAGO.Chronicle.RenderTimeline()
         end
         
         txt:SetPoint("TOPLEFT", 80, -y)
-        txt:SetText(entry["text_" .. DB_LOCALE])
+        txt:SetText(entry.text or "")
         txt:Show()
         
         local textHeight = txt:GetStringHeight()
@@ -1101,15 +1086,19 @@ function IMAGO.Chronicle.UpdateList()
         local activeFilter = f.activeFilter or "ALL"
         
         local total, seen = 0, 0
-        for slug, data in pairs(IMAGOdb.npcs) do
-            total = total + 1
-            if IMAGOSaved.seenNPCs[slug] then seen = seen + 1 end
+        for _, entries in pairs(IMAGOdb.npcs) do
+            if type(entries) == "table" then
+                for slug, _ in pairs(entries) do
+                    total = total + 1
+                    if IMAGOSaved.seenNPCs[slug] then seen = seen + 1 end
+                end
+            end
         end
 
         local perc = total > 0 and (seen / total) * 100 or 0
-        local rankTitle = IMAGO.Chronicle.ranks[1]["title_" .. DB_LOCALE]
+        local rankTitle = IMAGO.Chronicle.ranks[1] and IMAGO.Chronicle.ranks[1].title or ""
         for _, r in ipairs(IMAGO.Chronicle.ranks) do 
-            if perc >= r.perc then rankTitle = r["title_" .. DB_LOCALE] end 
+            if perc >= r.perc then rankTitle = r.title end 
         end
 
         f.footer.bar:SetValue(perc)
@@ -1124,7 +1113,7 @@ function IMAGO.Chronicle.UpdateList()
         local completedRanksStr, nextRanksStr = "", ""
         
         for _, r in ipairs(IMAGO.Chronicle.ranks) do
-            local rTitle = r["title_" .. DB_LOCALE]
+            local rTitle = r.title or ""
             if r.perc <= perc then
                 completedRanksStr = completedRanksStr .. string.format("|cFFFFD700%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
             else
@@ -1140,9 +1129,9 @@ function IMAGO.Chronicle.UpdateList()
         if activeFilter == "HIST" then
             local histCat = { list = {}, totalCat = 0, seenCat = 0 }
             for _, slug in ipairs(IMAGOSaved.history) do
-                local data = IMAGOdb.npcs[slug]
+                local data = IMAGO.GetNPCData(slug)
                 if data then
-                    local name = data["displayName_" .. DB_LOCALE]
+                    local name = data.name or ""
                     if searchString == "" or name:lower():find(searchString) then
                         table.insert(histCat.list, {slug = slug, data = data})
                         histCat.seenCat = histCat.seenCat + 1
@@ -1155,32 +1144,35 @@ function IMAGO.Chronicle.UpdateList()
                 categories[histTitle] = histCat
             end
         else
-            for slug, data in pairs(IMAGOdb.npcs) do
-                local isSeen = IMAGOSaved.seenNPCs[slug]
-                local name = data["displayName_" .. DB_LOCALE]
-                
-                local matchesSearch = true
-                if searchString ~= "" then
-                    if isSeen then
-                        if not name:lower():find(searchString) then matchesSearch = false end
-                    else
-                        local undiscoveredText = (IMAGO.L["UNDISCOVERED"] or "unentdeckt"):lower()
-                        if not undiscoveredText:find(searchString) then matchesSearch = false end
+            for catKey, entries in pairs(IMAGOdb.npcs) do
+                if type(entries) == "table" then
+                    for slug, data in pairs(entries) do
+                        local isSeen = IMAGOSaved.seenNPCs[slug]
+                        local name = data.name or ""
+                        
+                        local matchesSearch = true
+                        if searchString ~= "" then
+                            if isSeen then
+                                if not name:lower():find(searchString) then matchesSearch = false end
+                            else
+                                local undiscoveredText = (IMAGO.L["UNDISCOVERED"] or "unentdeckt"):lower()
+                                if not undiscoveredText:find(searchString) then matchesSearch = false end
+                            end
+                        end
+                        
+                        local matchesFilter = true
+                        if activeFilter == "FAV" and not IMAGOSaved.favorites[slug] then matchesFilter = false end
+                        if activeFilter:find("CAT_") and catKey ~= activeFilter then matchesFilter = false end
+                        
+                        if matchesSearch and matchesFilter then
+                            if not categories[catKey] then 
+                                categories[catKey] = { list = {}, totalCat = 0, seenCat = 0 } 
+                            end
+                            table.insert(categories[catKey].list, {slug = slug, data = data})
+                            categories[catKey].totalCat = categories[catKey].totalCat + 1
+                            if isSeen then categories[catKey].seenCat = categories[catKey].seenCat + 1 end
+                        end
                     end
-                end
-                
-                local matchesFilter = true
-                if activeFilter == "FAV" and not IMAGOSaved.favorites[slug] then matchesFilter = false end
-                if activeFilter:find("CAT_") and data.category ~= activeFilter then matchesFilter = false end
-                
-                if matchesSearch and matchesFilter then
-                    local cat = data.category or "CAT_ENIGMATIC"
-                    if not categories[cat] then 
-                        categories[cat] = { list = {}, totalCat = 0, seenCat = 0 } 
-                    end
-                    table.insert(categories[cat].list, {slug = slug, data = data})
-                    categories[cat].totalCat = categories[cat].totalCat + 1
-                    if isSeen then categories[cat].seenCat = categories[cat].seenCat + 1 end
                 end
             end
         end
@@ -1297,7 +1289,7 @@ function IMAGO.Chronicle.UpdateList()
             if IMAGO.Chronicle.expandedCats[catKey] then
                 if activeFilter ~= "HIST" then
                     table.sort(npcs, function(a, b) 
-                        return a.data["displayName_" .. DB_LOCALE] < b.data["displayName_" .. DB_LOCALE]
+                        return (a.data.name or "") < (b.data.name or "")
                     end)
                 end
 
@@ -1377,7 +1369,7 @@ function IMAGO.Chronicle.UpdateList()
                         btn.fav:Hide()
                     end
 
-                    local name = npc.data["displayName_" .. DB_LOCALE]
+                    local name = npc.data.name or ""
                     btn.t:SetText(isSeen and name or IMAGO.L["UNDISCOVERED"])
                     btn.t:SetTextColor(isSeen and 1 or 0.35, isSeen and 0.82 or 0.35, isSeen and 0 or 0.35)
                     
@@ -1441,7 +1433,7 @@ function IMAGO.Chronicle.UpdateList()
                                 f.detailTitle:SetShadowColor(0, 0, 0, 1)
                                 f.detailTitle:SetShadowOffset(2, -2)
 
-                                f.loreBody:SetText(npc.data["lore_" .. DB_LOCALE])
+                                f.loreBody:SetText(npc.data.lore or "")
                                 
                                 f.detailModel:ClearModel()
                                 local modelID = GetValidModelID(npc.data)
@@ -1499,7 +1491,7 @@ function IMAGO.Chronicle.UpdateList()
                             f.detailTitle:SetText(GetCrypticName(name))
                             f.detailTitle:SetTextColor(0.4, 0.3, 0.5, 0.9) 
                             
-                            local localZones = npc.data["zones_" .. DB_LOCALE]
+                            local localZones = npc.data.zones
                             if localZones and #localZones > 0 then
                                 local zoneStr = table.concat(localZones, ", ")
                                 f.hintPage.desc:SetText(string.format(IMAGO.L["HINT_SCOUTS"], zoneStr))
@@ -1530,9 +1522,9 @@ elseif activeTab == 2 then
 
     local perc = totalZones > 0 and (seenZones / totalZones) * 100 or 0
 
-    local rankTitle = IMAGO.Chronicle.zoneRanks[1]["title_" .. DB_LOCALE]
+    local rankTitle = IMAGO.Chronicle.zoneRanks[1] and IMAGO.Chronicle.zoneRanks[1].title or ""
     for _, r in ipairs(IMAGO.Chronicle.zoneRanks) do 
-        if perc >= r.perc then rankTitle = r["title_" .. DB_LOCALE] end 
+        if perc >= r.perc then rankTitle = r.title end 
     end
 
     f.footer.bar:SetValue(perc)
@@ -1547,7 +1539,7 @@ elseif activeTab == 2 then
     local completedRanksStr, nextRanksStr = "", ""
             
     for _, r in ipairs(IMAGO.Chronicle.zoneRanks) do
-        local rTitle = r["title_" .. DB_LOCALE]
+        local rTitle = r.title or ""
         if r.perc <= perc then
             completedRanksStr = completedRanksStr .. string.format("|cFFFFD700%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
         else
@@ -1616,8 +1608,8 @@ elseif activeTab == 2 then
         local mapID = zoneObj.id
         local zoneData = zoneObj.data
         local isSeen = IMAGOSaved.seenZones[mapID]
-        local name = (locale == "deDE") and zoneData.name_deDE or zoneData.name_enUS
-        local lore = (locale == "deDE") and zoneData.lore_deDE or zoneData.lore_enUS
+        local name = zoneData.name or ""
+        local lore = zoneData.lore or ""
 
         local btn = IMAGO.Chronicle.zoneButtons[zIdx]
         if not btn then
@@ -1688,8 +1680,8 @@ elseif activeTab == 2 then
                 if zoneData.pointsOfInterest then
                     formattedLore = formattedLore .. "|cffffd700" .. (IMAGO.L["ZONE_POI_HEADER"] or "INTERESSANTE ORTE") .. "|r\n_________________________________\n\n"
                     for _, poi in ipairs(zoneData.pointsOfInterest) do
-                        local pName = (locale == "deDE") and poi.name_deDE or poi.name_enUS
-                        local pLore = (locale == "deDE") and poi.lore_deDE or poi.lore_enUS
+                        local pName = poi.name or ""
+                        local pLore = poi.lore or ""
                         formattedLore = formattedLore .. "|cff9370db > " .. pName .. "|r\n" .. pLore .. "\n\n"
                     end
                 end

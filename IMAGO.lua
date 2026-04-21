@@ -49,12 +49,35 @@ function IMAGO.IsDeveloper()
     return false
 end
 
---- Liefert den lokalisierten Wert eines Feldes aus einem Datensatz.
-function IMAGO.GetLocalizedData(data, fieldName)
-    if not data then return nil end
-    local locale = GetLocale()
-    local suffix = (locale == "deDE") and "_deDE" or "_enUS"
-    return data[fieldName .. suffix] or data[fieldName .. "_enUS"]
+
+--- Liefert den NPC-Datensatz für einen Slug aus der kategorisierten Datenbank.
+function IMAGO.GetNPCData(slug)
+    if not IMAGOdb or not IMAGOdb.npcs or not slug then return nil end
+    for cat, entries in pairs(IMAGOdb.npcs) do
+        if type(entries) == "table" and entries[slug] then
+            return entries[slug]
+        end
+    end
+    return nil
+end
+
+--- Baut den Reverse-Lookup (NPC-ID → Slug) für alle Kategorien auf.
+function IMAGO.BuildReverseLookup()
+    if not IMAGOdb or not IMAGOdb.npcs then return end
+    IMAGOdb.idToSlug = {}
+    for cat, entries in pairs(IMAGOdb.npcs) do
+        if type(entries) == "table" then
+            for slug, data in pairs(entries) do
+                if data.ids then
+                    for _, entry in ipairs(data.ids) do
+                        local id = type(entry) == "table" and entry[1] or entry
+                        IMAGOdb.idToSlug[tonumber(id)] = slug
+                        IMAGOdb.idToSlug[tostring(tonumber(id)) .. "_cat"] = cat
+                    end
+                end
+            end
+        end
+    end
 end
 
 --- Liefert die NPC-ID und den Typ aus einer GUID (sicher gegen Secret Strings).
@@ -96,10 +119,11 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
     if not IMAGOdb or not IMAGOdb.idToSlug then return false end
     
     local slug = IMAGOdb.idToSlug[npcID]
+    local cat = IMAGOdb.idToSlug[tostring(npcID) .. "_cat"]
     if slug then
-        local npcData = IMAGOdb.npcs[slug]
-        local name = IMAGO.GetLocalizedData(npcData, "displayName")
-        local lore = IMAGO.GetLocalizedData(npcData, "lore")
+        local npcData = cat and IMAGOdb.npcs[cat] and IMAGOdb.npcs[cat][slug] or IMAGO.GetNPCData(slug)
+        local name = npcData and npcData.name
+        local lore = npcData and npcData.lore
         
         if not IMAGOSaved.seenNPCs[slug] then
             IMAGOSaved.seenNPCs[slug] = true
@@ -313,8 +337,8 @@ function IMAGO.Scanner.DiscoverZone(mapID)
     local trackedID = tonumber(mapID) or mapID
     if type(trackedID) ~= "number" then return false end
 
-    local name = IMAGO.GetLocalizedData(zoneData, "name")
-    local lore = IMAGO.GetLocalizedData(zoneData, "lore")
+    local name = zoneData.name
+    local lore = zoneData.lore
 
     local wasSeen = IMAGO.Scanner.IsZoneMarkedSeen(trackedID)
     local isNew = not wasSeen
@@ -412,17 +436,17 @@ local function ShowLoginFact()
     
     local discovered = {}
     for slug, isSeen in pairs(IMAGOSaved.seenNPCs) do
-        if isSeen and IMAGOdb.npcs[slug] then
+        if isSeen and IMAGO.GetNPCData(slug) then
             table.insert(discovered, slug)
         end
     end
     
     if #discovered > 0 then
         local randomSlug = discovered[math.random(1, #discovered)]
-        local npcData = IMAGOdb.npcs[randomSlug]
-        local name = IMAGO.GetLocalizedData(npcData, "displayName")
-        local lore = IMAGO.GetLocalizedData(npcData, "lore")
-        local firstSentence = lore:match("^(.-%.%s)") or lore
+        local npcData = IMAGO.GetNPCData(randomSlug)
+        local name = npcData and npcData.name
+        local lore = npcData and npcData.lore
+        local firstSentence = lore and (lore:match("^(.-%.%s)") or lore) or ""
         
         print(string.format("|cFF9370DB[IMAGO]|r |cFFFFD700%s|r (|cFFCCCCCC%s|r) - %s", IMAGO.L["LOGIN_DID_YOU_KNOW"], name, firstSentence))
     else
@@ -611,16 +635,19 @@ function IMAGO.Init()
             if not isDev then return end
             print(IMAGO.L["VAL_START"] or "|cFFFFD700[IMAGO]|r Starte Datenbank-Validierung...")
             local count, missingIDs, missingLore = 0, 0, 0
-            for slug, data in pairs(IMAGOdb.npcs) do
-                count = count + 1
-                if not data.displayID and not data.ids then
-                    print(string.format(IMAGO.L["VAL_ERR_ID"] or "|cFFFF0000Fehler:|r %s hat weder displayID noch ids-Array!", slug))
-                    missingIDs = missingIDs + 1
-                end
-                local loreText = IMAGO.GetLocalizedData(data, "lore")
-                if not loreText or loreText == "" then
-                    print(string.format(IMAGO.L["VAL_WARN_LORE"] or "|cFFFF8C00Warnung:|r %s hat keine Lore in der aktuellen Sprache!", slug))
-                    missingLore = missingLore + 1
+            for cat, entries in pairs(IMAGOdb.npcs) do
+                if type(entries) == "table" then
+                    for slug, data in pairs(entries) do
+                        count = count + 1
+                        if not data.displayID and not data.ids then
+                            print(string.format(IMAGO.L["VAL_ERR_ID"] or "|cFFFF0000Fehler:|r %s hat weder displayID noch ids-Array!", slug))
+                            missingIDs = missingIDs + 1
+                        end
+                        if not data.lore or data.lore == "" then
+                            print(string.format(IMAGO.L["VAL_WARN_LORE"] or "|cFFFF8C00Warnung:|r %s hat keine Lore in der aktuellen Sprache!", slug))
+                            missingLore = missingLore + 1
+                        end
+                    end
                 end
             end
             print(string.format(IMAGO.L["VAL_DONE"] or "Validierung beendet. %d NPCs geprüft. %d kritische Fehler, %d Warnungen.", count, missingIDs, missingLore))
@@ -630,11 +657,15 @@ function IMAGO.Init()
             local count = 0
             
             -- 1. NPCs freischalten
-            for slug, _ in pairs(IMAGOdb.npcs or {}) do
-                if not IMAGOSaved.seenNPCs[slug] then
-                    IMAGOSaved.seenNPCs[slug] = true
-                    IMAGOSaved.viewedNPCs[slug] = true -- Verhindert Cinematic-Spam
-                    count = count + 1
+            for cat, entries in pairs(IMAGOdb.npcs or {}) do
+                if type(entries) == "table" then
+                    for slug, _ in pairs(entries) do
+                        if not IMAGOSaved.seenNPCs[slug] then
+                            IMAGOSaved.seenNPCs[slug] = true
+                            IMAGOSaved.viewedNPCs[slug] = true
+                            count = count + 1
+                        end
+                    end
                 end
             end
             
