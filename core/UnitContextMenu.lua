@@ -25,7 +25,7 @@ function IMAGO.UnitContextMenu.TryShowLoreForUnit(unit)
     end
 
     local slug = IMAGOdb.idToSlug[npcID]
-    if not slug or not IMAGOdb.npcs or not IMAGOdb.npcs[slug] then
+    if not slug or not IMAGO.GetNPCData(slug) then
         print(IMAGO.L["CONTEXT_LORE_NONE"] or "|cFF888888IMAGO:|r Keine Lore für diesen NPC gefunden.")
         return
     end

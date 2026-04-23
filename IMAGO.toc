@@ -3,14 +3,35 @@
 ## Notes: The world has a story. IMAGO preserves it.
 ## Notes-deDE: Die Welt hat eine Geschichte. IMAGO bewahrt sie.
 ## Author: Whisblaze
-## Version: 1.1.1
+## Version: 1.2.0
 ## SavedVariables: IMAGOSaved
 
 IMAGO.lua
 core/Locale.lua
+
+data/LoreSnippets_static.lua
+data/zones_static.lua
+data/npcs/CAT_QUELTHALAS.lua
+data/npcs/CAT_LIGHT.lua
+data/npcs/CAT_AMANI.lua
+data/npcs/CAT_HARATI.lua
+data/npcs/CAT_VOID.lua
+data/npcs/CAT_EBON_BLADE.lua
+data/npcs/CAT_NEUTRAL.lua
+
+locales/enUS/data/npcs.lua
+locales/enUS/data/zones.lua
+locales/enUS/data/snippets.lua
+locales/enUS/chronicle.lua
+
+locales/[TextLocale]/data/npcs.lua
+locales/[TextLocale]/data/zones.lua
+locales/[TextLocale]/data/snippets.lua
+locales/[TextLocale]/chronicle.lua
+
+core/MiniLorePopup.lua
+core/LoreSnippetSystem.lua
 core/Options.lua
 core/Chronicle.lua
 core/Display.lua
 core/UnitContextMenu.lua
-data/NPCs.lua
-data/zones.lua
