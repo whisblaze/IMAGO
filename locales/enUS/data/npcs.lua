@@ -433,13 +433,15 @@ IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].name = "Faerin Lothar"
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].race = "Human (Arathi)"
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].lore = "Faerin Lothar is one of the most charismatic leaders of the Arathi Expedition in Khaz Algar and the direct descendant of the legendary bloodline of Anduin Lothar. As a child, she barely survived the destruction of the Arathi armada by a leviathan in the deep waters, losing an arm and an eye in the process. Rather than breaking, she wields a massive shield prosthetic and fights with unwavering faith in the Sacred Flame. In The War Within, she became the most crucial moral support for Anduin Wrynn. In Midnight, the Lothar legacy returns to the surface: Faerin brings the fiery determination of the Arathi Empire to Quel'Thalas to defend the Light against absolute darkness."
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].race = "Human"
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].lore = [[This young paladin is a beacon of hope and optimism to her fellow soldiers, often being the first to rush into battle, protecting others with her shield and her faith in the Light. Faerin had always had a knack for danger, sneaking aboard the airship of the Arathi expedition to Hallowfall as just a mere child. In the following crash landing she lost her eye and arm but learned to fight on and live without them.
+Not having lived long in the Empire, Faerin is not interested in returning to her birthplace and instead wants to explore the rest of the world, especially the places important to her heritage as an Arathi and a Lothar. However, that endeavor will have to wait until after the Sunwell is secured.]]
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].source = "warcraft.wiki.gg/wiki/Faerin_Lothar"
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].timeline = {
-    {era = "TWW", text = "Discovered in Hallowfall. Leads the resistance against the nerubians of Azj-Kahet and helps Anduin Wrynn overcome his severe trauma and lost connection to the Light."},
-    {era = "Midnight", text = "Travels from the depths of Khaz Algar to the surface to support the defense of Quel'Thalas, Silvermoon, and Parhelion Plaza as a champion of the Light."},
+    {era = "Pre-Legion", text = "Snuck on board one of the airships of the Hallowfall Expedition and was physically disabled upon arrival. Trained as a Lamplighter under General Steelstrike."},
+    {era = "TWW", text = "Defended Hallowfall from the Nerubians and fought on the frontlines to repel Xal'atath. Befriended Anduin Wrynn and helped him regain his faith in the Light. Later helped prevent Maran Trollbane's rebellion in Stromgarde."},
+    {era = "Midnight", text = "Was summoned by the Sunwell and helped to defend it from the Void."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].name = "General Amias Bellamy"
