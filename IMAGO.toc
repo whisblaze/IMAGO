@@ -20,10 +20,10 @@ data/npcs/CAT_VOID.lua
 data/npcs/CAT_EBON_BLADE.lua
 data/npcs/CAT_NEUTRAL.lua
 
-locales/enUS/data/npcs.lua
-locales/enUS/data/zones.lua
-locales/enUS/data/snippets.lua
-locales/enUS/chronicle.lua
+locales/base/data/npcs.lua
+locales/base/data/zones.lua
+locales/base/data/snippets.lua
+locales/base/chronicle.lua
 
 locales/[TextLocale]/data/npcs.lua
 locales/[TextLocale]/data/zones.lua
