@@ -706,13 +706,15 @@ IMAGOdb.npcs.CAT_AMANI["akilzon"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["janalai"].name = "Jan'alai"
-IMAGOdb.npcs.CAT_AMANI["janalai"].race = "Forest Troll"
-IMAGOdb.npcs.CAT_AMANI["janalai"].lore = "Before Hex Lord Malacrass used dark magic to elevate him to the avatar of the dragonhawk god, Jan'alai was a gifted troll of the Amani. In classic Zul'Aman, he wielded blazing fire and summoned countless dragonhawks to turn intruders to ash. In Midnight, the flaming avatar miraculously manifests once again in Zul'Aman. With cleansing flames and relentless heat, he defends his tribe's territory against the cold shadows of the Void."
+IMAGOdb.npcs.CAT_AMANI["janalai"].race = "Troll"
+IMAGOdb.npcs.CAT_AMANI["janalai"].lore = [[Every year the Shadowpine trolls celebrate Fetna Alai-nazdo - Festival of the Fire Season. It's a tribute to the changing of the season, of summer, and of fire - all domains under the great, fiery wings of Jan'alai. The mighty dragonhawk loa is the patron of life, death, renewal, fire, and magic. She traces the sun across the sky and ignites a fire in Amani hearts. As death draws near, Shadowpine trolls welcome it with open arms, chanting: "Jan'alai must die. We all must die. And she will rise! And we will rise!"]]
 IMAGOdb.npcs.CAT_AMANI["janalai"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["janalai"].source = "warcraft.wiki.gg/wiki/Jan'alai"
+IMAGOdb.npcs.CAT_AMANI["janalai"].source = "Metrus & austin - IMAGO Community"
 IMAGOdb.npcs.CAT_AMANI["janalai"].timeline = {
-    {era = "TBC", text = "Became the avatar of the dragonhawk through Malacrass and guarded Zul'Aman with fire and flying beasts."},
-    {era = "Midnight", text = "Returns to Zul'Aman as a burning protector to repel the Void invasion with fire."},
+    {era = "TBC", text = "Suffered at the hands of Hex Lord Malacrass, having her essence stolen and imbued into one of the Amani's deadliest rogues. Her spirit was freed with the fall of Zul'jin"},
+    {era = "WotLK", text = "Called upon by Witch Doctor Khufu in Zul'Drak to ask for advice on rescuing Drakkari loa from their own people."},
+    {era = "Cata", text = "Once again, Jan'alai was subjected to the horrors of Hex Lord Malacrass. Her essence was infused into another Amani champion to create a twisted avatar. Her spirit was freed when adventurers defeated Daakara, successor to Zul'jin."},
+    {era = "Midnight", text = "Jan'alai returned to the Amani people after decades of silence. The betrayal by Zul'jin and Malacrass caused the loa to abandon the trolls, only coming back after hash'ey Zul'jarra atoned for the crimes of her people."},
 }
 
 IMAGOdb.npcs.CAT_AMANI["halazzi"].name = "Halazzi"
