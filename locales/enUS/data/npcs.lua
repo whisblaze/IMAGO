@@ -142,14 +142,16 @@ IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].name = "Salandria"
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].lore = "Salandria spent her early childhood as a war orphan in Shattrath. Even then, she showed a strong connection to the Holy Light and immense ambition. She was eventually adopted by Lady Liadrin, matriarch of the Blood Knights, and trained as a powerful paladin in Silvermoon. Even in the Caverns of Time, the bronze dragonflight sensed that she would one day play a massive role in the fate of Azeroth. In Midnight, the former orphan stands on the front lines as an adult, battle-ready Blood Knight. She defends Quel'Thalas, her mentor Liadrin, and her people's legacy with iron determination against the encroaching Void."
+IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].lore = [[Salandria was orphaned when she was merely a small infant. Spending the majority of her childhood in the orphanage of Shattrath City on Outland, she was eventually adopted by Lady Liadrin, who was an adoptee herself. Now, Salandria has become a Blood Knight, fighting for Silvermoon and the Holy Light with determination and unrelenting optimism.
+
+One thing looms over Salandria, promising a dark future: as a child, she was attacked on sight by a member of the Bronze Dragonflight for something vile she would do in her future. It is still a mystery what this ominous prophecy means for her and for the future of Azeroth.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].source = "warcraft.wiki.gg/wiki/Salandria"
+IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].timeline = {
-    {era = "TBC", text = "Grew up as an orphan in Shattrath and was cared for by Horde adventurers during Children's Week. The guards of the Caverns of Time attempted to attack her then due to ominous future deeds."},
-    {era = "WotLK", text = "Left a copper coin in the Dalaran fountain with the wish: 'Someday I'll be more powerful than all these mages!'"},
-    {era = "SL", text = "Emerged for the first time as an adult Blood Knight in Patch 9.2.5, helping the blood elves defend Tranquillien against the San'layn Vorath."},
-    {era = "Midnight", text = "Defends Silvermoon, Eversong Woods, and Quel'Danas as a battle-hardened Blood Knight of the coalition."},
+    {era = "TBC", text = "Taken on an adventure by a Horde champion during Children's Week, seeing the world outside of Shattrath for the first time. Got attacked on sight by a bronze dragon for something she will do, or fail to do, in her future. Later, Salandria would be adopted by Lady Liadrin."},
+    {era = "SL", text = "Went on her first mission as a Blood Knight trainee and accompanied Horde champions into the Shadowlands to empower a weapon against the newly risen Scourge in Quel'Thalas. Helped defeat the san'layn Vorath alongside Liadrin, ending the Scourge threat for the time being."},
+    {era = "TWW", text = "Accompanied her mother to Hallowfall to combat Xal'atath's forces. Learned about the Sacred Flame of the Arathi."},
+    {era = "Midnight", text = "Defended the Sunwell against the encroaching Voidstorm. Alongside Taelia Fordragon, she rescued captured paladins from the Twilight's Blade cultists and managed to slay their leader."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].name = "Magister Umbric"
