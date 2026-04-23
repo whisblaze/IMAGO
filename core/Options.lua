@@ -10,17 +10,27 @@ function IMAGO.Options.Init()
     local panel = CreateFrame("Frame", "IMAGOOptionsPanel")
     panel.name = "IMAGO"
 
+    -- ScrollFrame für scrollbaren Inhalt
+    local scrollFrame = CreateFrame("ScrollFrame", "IMAGOOptionsScroll", panel, "UIPanelScrollFrameTemplate")
+    scrollFrame:SetPoint("TOPLEFT", 10, -10)
+    scrollFrame:SetPoint("BOTTOMRIGHT", -30, 10)
+
+    -- ScrollChild Frame - hier kommen alle Controls rein
+    local content = CreateFrame("Frame", "IMAGOOptionsContent", scrollFrame)
+    content:SetSize(580, 800) -- Höhe wird später angepasst
+    scrollFrame:SetScrollChild(content)
+
     -- Titel (Lokalisiert)
-    local title = panel:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
-    title:SetPoint("TOPLEFT", 16, -16)
+    local title = content:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge")
+    title:SetPoint("TOPLEFT", 10, -10)
     title:SetText(IMAGO.L["SETTINGS_TITLE"])
 
-    local description = panel:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+    local description = content:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
     description:SetPoint("TOPLEFT", title, "BOTTOMLEFT", 0, -8)
     description:SetText(IMAGO.L["SETTINGS_DESC"])
 
     local function CreateSectionHeader(text, anchor, x, y)
-        local header = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+        local header = content:CreateFontString(nil, "ARTWORK", "GameFontNormal")
         header:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", x or 0, y or -18)
         header:SetText(text)
         return header
@@ -29,7 +39,7 @@ function IMAGO.Options.Init()
     local generalHeader = CreateSectionHeader(IMAGO.L["SETTINGS_SEC_GENERAL"], description, 0, -18)
 
     -- Checkbox: Addon Aktivieren (Lokalisiert)
-    local cbEnabled = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
+    local cbEnabled = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbEnabled:SetPoint("TOPLEFT", generalHeader, "BOTTOMLEFT", 0, -10)
     cbEnabled.Text:SetText(IMAGO.L["OPT_ENABLE"])
     cbEnabled:SetChecked(IMAGOSaved.enabled)
@@ -38,7 +48,7 @@ function IMAGO.Options.Init()
     end)
 
     -- Button: Historie zurücksetzen (Lokalisiert)
-    local btnReset = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
+    local btnReset = CreateFrame("Button", nil, content, "UIPanelButtonTemplate")
     btnReset:SetPoint("TOPLEFT", cbEnabled, "BOTTOMLEFT", 0, -14)
     btnReset:SetSize(160, 26)
     btnReset:SetText(IMAGO.L["OPT_RESET_BTN"])
@@ -53,7 +63,7 @@ function IMAGO.Options.Init()
     local discoveryHeader = CreateSectionHeader(IMAGO.L["SETTINGS_SEC_DISCOVERY_CARD"], btnReset, 0, -22)
 
     -- Checkbox: Nur einmal anzeigen (NPCs)
-    local cbOnceNPC = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
+    local cbOnceNPC = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbOnceNPC:SetPoint("TOPLEFT", discoveryHeader, "BOTTOMLEFT", 0, -10)
     cbOnceNPC.Text:SetText(IMAGO.L["OPT_ONCE_ONLY_NPC"])
     cbOnceNPC:SetChecked(IMAGOSaved.showOnceOnlyNPC)
@@ -62,7 +72,7 @@ function IMAGO.Options.Init()
     end)
 
     -- Checkbox: Nur einmal anzeigen (Zonen)
-    local cbOnceZone = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
+    local cbOnceZone = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbOnceZone:SetPoint("TOPLEFT", cbOnceNPC, "BOTTOMLEFT", 0, -10)
     cbOnceZone.Text:SetText(IMAGO.L["OPT_ONCE_ONLY_ZONE"])
     cbOnceZone:SetChecked(IMAGOSaved.showOnceOnlyZone)
@@ -71,7 +81,7 @@ function IMAGO.Options.Init()
     end)
 
     -- Checkbox: Haupt-Lorefenster offen lassen (kein Timer)
-    local cbNoMainLoreTimer = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
+    local cbNoMainLoreTimer = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbNoMainLoreTimer:SetPoint("TOPLEFT", cbOnceZone, "BOTTOMLEFT", 0, -10)
     cbNoMainLoreTimer.Text:SetText(IMAGO.L["OPT_MAIN_LORE_NO_TIMER"])
     cbNoMainLoreTimer:SetChecked(IMAGOSaved.noMainLoreTimerClose)
@@ -79,9 +89,43 @@ function IMAGO.Options.Init()
         IMAGOSaved.noMainLoreTimerClose = self:GetChecked() and true or false
     end)
 
-    local flashcardsHeader = CreateSectionHeader(IMAGO.L["SETTINGS_SEC_IDLE_FLASHCARDS"], cbNoMainLoreTimer, 0, -18)
+    -- Combat Mode: Close on Combat
+    local cbCloseOnCombat = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
+    cbCloseOnCombat:SetPoint("TOPLEFT", cbNoMainLoreTimer, "BOTTOMLEFT", 0, -10)
+    cbCloseOnCombat.Text:SetText(IMAGO.L["OPT_CLOSE_ON_COMBAT"])
+    cbCloseOnCombat:SetChecked(IMAGOSaved.closeOnCombat ~= false)
+    cbCloseOnCombat:SetScript("OnClick", function(self)
+        IMAGOSaved.closeOnCombat = self:GetChecked() and true or false
+    end)
 
-    local cbEnableFlashcards = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
+    -- Break Contact: Enable
+    local cbBreakContact = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
+    cbBreakContact:SetPoint("TOPLEFT", cbCloseOnCombat, "BOTTOMLEFT", 0, -10)
+    cbBreakContact.Text:SetText(IMAGO.L["OPT_ENABLE_BREAK_CONTACT"])
+    cbBreakContact:SetChecked(IMAGOSaved.enableBreakContact ~= false)
+    cbBreakContact:SetScript("OnClick", function(self)
+        IMAGOSaved.enableBreakContact = self:GetChecked() and true or false
+    end)
+
+    -- Break Contact: Distance Slider (kompakter Abstand)
+    local sliderDistance = CreateFrame("Slider", "IMAGOBreakContactSlider", content, "OptionsSliderTemplate")
+    sliderDistance:SetPoint("TOPLEFT", cbBreakContact, "BOTTOMLEFT", 0, -15)
+    sliderDistance:SetMinMaxValues(10, 200)
+    sliderDistance:SetValueStep(10)
+    sliderDistance:SetObeyStepOnDrag(true)
+    sliderDistance:SetValue(IMAGOSaved.breakContactDistance or 50)
+
+    _G[sliderDistance:GetName() .. "Low"]:SetText("10")
+    _G[sliderDistance:GetName() .. "High"]:SetText("200")
+    _G[sliderDistance:GetName() .. "Text"]:SetText(IMAGO.L["OPT_BREAK_CONTACT_DISTANCE"])
+
+    sliderDistance:SetScript("OnValueChanged", function(self, value)
+        IMAGOSaved.breakContactDistance = value
+    end)
+
+    local flashcardsHeader = CreateSectionHeader(IMAGO.L["SETTINGS_SEC_IDLE_FLASHCARDS"], sliderDistance, 0, -22)
+
+    local cbEnableFlashcards = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbEnableFlashcards:SetPoint("TOPLEFT", flashcardsHeader, "BOTTOMLEFT", 0, -10)
     cbEnableFlashcards.Text:SetText(IMAGO.L["OPT_ENABLE_IDLE_FLASHCARDS"])
     cbEnableFlashcards:SetChecked(IMAGOSaved.enableIdleFlashcards)
@@ -94,7 +138,7 @@ function IMAGO.Options.Init()
     end)
 
     -- Checkbox: Idle Flashcards offen lassen (kein Timer)
-    local cbKeepSnippetOpen = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
+    local cbKeepSnippetOpen = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbKeepSnippetOpen:SetPoint("TOPLEFT", cbEnableFlashcards, "BOTTOMLEFT", 0, -10)
     cbKeepSnippetOpen.Text:SetText(IMAGO.L["OPT_SNIPPET_NO_TIMER"])
     cbKeepSnippetOpen:SetChecked(IMAGOSaved.keepSnippetOpen)
@@ -104,7 +148,7 @@ function IMAGO.Options.Init()
 
     local motdHeader = CreateSectionHeader(IMAGO.L["SETTINGS_SEC_MOTD"], cbKeepSnippetOpen, 0, -18)
 
-    local cbEnableMotD = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
+    local cbEnableMotD = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbEnableMotD:SetPoint("TOPLEFT", motdHeader, "BOTTOMLEFT", 0, -10)
     cbEnableMotD.Text:SetText(IMAGO.L["OPT_ENABLE_MOTD"])
     cbEnableMotD:SetChecked(IMAGOSaved.enableMotD)
@@ -115,7 +159,7 @@ function IMAGO.Options.Init()
     local uiHeader = CreateSectionHeader(IMAGO.L["SETTINGS_SEC_UI"], cbEnableMotD, 0, -18)
 
     -- Checkbox: 100% intransparente Fenster
-    local cbOpaqueUI = CreateFrame("CheckButton", nil, panel, "InterfaceOptionsCheckButtonTemplate")
+    local cbOpaqueUI = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbOpaqueUI:SetPoint("TOPLEFT", uiHeader, "BOTTOMLEFT", 0, -10)
     cbOpaqueUI.Text:SetText(IMAGO.L["OPT_OPAQUE_UI"])
     cbOpaqueUI:SetChecked(IMAGOSaved.opaqueUI)
@@ -124,7 +168,7 @@ function IMAGO.Options.Init()
     end)
 
     -- Slider: Skalierung (Lokalisiert)
-    local sliderScale = CreateFrame("Slider", "IMAGOScaleSlider", panel, "OptionsSliderTemplate")
+    local sliderScale = CreateFrame("Slider", "IMAGOScaleSlider", content, "OptionsSliderTemplate")
     sliderScale:SetPoint("TOPLEFT", cbOpaqueUI, "BOTTOMLEFT", 0, -40)
     sliderScale:SetMinMaxValues(0.5, 2.0)
     sliderScale:SetValueStep(0.05)
@@ -141,6 +185,9 @@ function IMAGO.Options.Init()
             IMAGO.Display.frame:SetScale(value)
         end
     end)
+
+    -- Content-Höhe festlegen (genug Platz für alle Elemente)
+    content:SetHeight(700)
 
     -- In das WoW Settings-Menü registrieren
     local category = Settings.RegisterCanvasLayoutCategory(panel, panel.name)

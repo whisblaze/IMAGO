@@ -23,8 +23,12 @@ local defaults = {
     keepSnippetOpen = false,
     enableMotD = true,
     opaqueUI = false,
-    minimapPos    = 220, 
+    minimapPos    = 220,
     hideMinimap   = false,
+    -- Combat & Break Contact
+    closeOnCombat = true,
+    enableBreakContact = true,
+    breakContactDistance = 50,
     -- Debug: Chat-Ausgabe bei Zonen-Checks (raw vs. aufgelöste uiMapID)
     debugMap      = false,
 }
@@ -134,21 +138,21 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
             PlaySound(3175, "Master")
             
             if IMAGO.Display and IMAGO.Display.Show then
-                IMAGO.Display.Show(name, lore, "npc", true)
+                IMAGO.Display.Show(name, lore, "npc", true, slug)
             end
-            
+
             if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
                 IMAGO.Chronicle.UpdateList()
             end
-            
+
             return true, true
         else
             local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
             print(msgKnown)
-            
+
             if not IMAGO.Scanner.IsShowOnceOnlyEnabled("npc") then
                 if IMAGO.Display and IMAGO.Display.Show then
-                    IMAGO.Display.Show(name, lore, "npc", false)
+                    IMAGO.Display.Show(name, lore, "npc", false, slug)
                 end
             end
             return true, false
@@ -421,7 +425,20 @@ function IMAGO.CreateMinimapButton()
     dragFrame:SetScript("OnDragStop", function()
         dragFrame:SetScript("OnUpdate", nil)
     end)
-    
+
+    -- Tooltip beim Hovern
+    dragFrame:SetScript("OnEnter", function(self)
+        GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
+        GameTooltip:AddLine(IMAGO.L["MINIMAP_TOOLTIP_TITLE"], 1, 0.85, 0.1)
+        GameTooltip:AddLine(IMAGO.L["MINIMAP_TOOLTIP_LEFTCLICK"], 1, 1, 1)
+        GameTooltip:AddLine(IMAGO.L["MINIMAP_TOOLTIP_RIGHTCLICK"], 1, 1, 1)
+        GameTooltip:Show()
+    end)
+
+    dragFrame:SetScript("OnLeave", function()
+        GameTooltip:Hide()
+    end)
+
     -- Reagiert auf UI-Skalierung und Änderungen am Edit-Mode
     dragFrame:SetScript("OnEvent", UpdatePosition)
     UpdatePosition()
@@ -465,6 +482,7 @@ initFrame:RegisterEvent("PLAYER_TARGET_CHANGED")
 initFrame:RegisterEvent("PLAYER_DEAD")
 initFrame:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START")
 initFrame:RegisterEvent("PLAYER_CONTROL_LOST")
+initFrame:RegisterEvent("PLAYER_REGEN_DISABLED")
 
 initFrame:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" then
@@ -490,6 +508,11 @@ initFrame:SetScript("OnEvent", function(self, event, ...)
     elseif event == "PLAYER_DEAD" or event == "UNIT_SPELLCAST_CHANNEL_START" or event == "PLAYER_CONTROL_LOST" then
         if IMAGO.Snippets and IMAGO.Snippets.HandleEvent then
             IMAGO.Snippets.HandleEvent(event, ...)
+        end
+    elseif event == "PLAYER_REGEN_DISABLED" then
+        -- Combat Mode: Close Discovery Card when entering combat
+        if IMAGOSaved.closeOnCombat ~= false and IMAGO.Display.frame and IMAGO.Display.frame:IsShown() then
+            IMAGO.Display.HideLorePanel()
         end
     end
 end)

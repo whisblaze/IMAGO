@@ -174,6 +174,9 @@ function IMAGO.Chronicle.CreateFrame()
     f:SetScript("OnDragStop", f.StopMovingOrSizing)
     f:Hide()
 
+    -- ESC zum Schließen ermöglichen
+    table.insert(UISpecialFrames, "IMAGOChronicleFrame")
+
     local backdropDefault = {
         bgFile = "Interface\\Tooltips\\UI-Tooltip-Background",
         edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
@@ -435,7 +438,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.infoScroll:SetScrollChild(f.infoContent)
 
     f.loreBody = f.infoContent:CreateFontString(nil, "OVERLAY")
-    f.loreBody:SetFont(FONT_BODY, 15, "")
+    f.loreBody:SetFont(FONT_BODY, 15)
     f.loreBody:SetPoint("TOPLEFT", f.infoContent, "TOPLEFT", 0, 0)
     f.loreBody:SetWidth(290)
     f.loreBody:SetJustifyH("LEFT")
@@ -632,7 +635,7 @@ function IMAGO.Chronicle.CreateFrame()
 
     -- 5. Die Beschreibung
     f.hintPage.desc = f.hintPage:CreateFontString(nil, "OVERLAY")
-    f.hintPage.desc:SetFont(FONT_BODY, 14, "")
+    f.hintPage.desc:SetFont(FONT_BODY, 14)
     f.hintPage.desc:SetPoint("TOP", f.hintPage.warning, "BOTTOM", 0, -15)
     f.hintPage.desc:SetWidth(400)
     f.hintPage.desc:SetJustifyH("CENTER")
@@ -739,7 +742,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.comingSoonPage.title:SetShadowOffset(2, -2)
 
     f.comingSoonPage.desc = f.comingSoonPage:CreateFontString(nil, "OVERLAY")
-    f.comingSoonPage.desc:SetFont(FONT_BODY, 15, "")
+    f.comingSoonPage.desc:SetFont(FONT_BODY, 15)
     f.comingSoonPage.desc:SetPoint("TOP", f.comingSoonPage.title, "BOTTOM", 0, -20)
     f.comingSoonPage.desc:SetTextColor(0.6, 0.6, 0.6)
     f.comingSoonPage.desc:SetJustifyH("CENTER")
@@ -826,7 +829,7 @@ function IMAGO.Chronicle.CreateFrame()
                 f.creditsHeader.title:SetTextColor(1.0, 0.85, 0.1)
 
                 f.creditsHeader.desc = f.creditsHeader:CreateFontString(nil, "OVERLAY")
-                f.creditsHeader.desc:SetFont(FONT_BODY, 13, "")
+                f.creditsHeader.desc:SetFont(FONT_BODY, 13)
                 f.creditsHeader.desc:SetPoint("TOP", f.creditsHeader.title, "BOTTOM", 0, -10)
                 f.creditsHeader.desc:SetWidth(550)
                 f.creditsHeader.desc:SetText(IMAGO.L["CREDITS_DESC"])
@@ -834,7 +837,7 @@ function IMAGO.Chronicle.CreateFrame()
                 f.creditsHeader.desc:SetJustifyH("CENTER")
 
                 f.creditsHeader.topHint = f.creditsHeader:CreateFontString(nil, "OVERLAY")
-                f.creditsHeader.topHint:SetFont(FONT_BODY, 12, "ITALIC")
+                f.creditsHeader.topHint:SetFont(FONT_BODY, 12)
                 f.creditsHeader.topHint:SetPoint("TOP", f.creditsHeader.desc, "BOTTOM", 0, -10)
                 f.creditsHeader.topHint:SetWidth(500)
                 f.creditsHeader.topHint:SetText(IMAGO.L["CREDITS_TOP_HINT"])

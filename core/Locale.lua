@@ -116,6 +116,16 @@ if locale == "deDE" then
     L["TAB_DETAIL_TIMELINE"] = "Timeline"
     L["CMD_UNLOCKALL_SUCCESS"] = "Erfolg: Alle %d Echos der Vergangenheit wurden in der Chronik freigeschaltet!"
 
+    -- Minimap Tooltip
+    L["MINIMAP_TOOLTIP_TITLE"]       = "IMAGO"
+    L["MINIMAP_TOOLTIP_LEFTCLICK"]   = "Linksklick: Chronik öffnen"
+    L["MINIMAP_TOOLTIP_RIGHTCLICK"]  = "Rechtsklick: Idle Flashcards"
+
+    -- Combat & Break Contact Settings
+    L["OPT_CLOSE_ON_COMBAT"]         = "Discovery Card bei Kampfbeginn schließen"
+    L["OPT_ENABLE_BREAK_CONTACT"]    = "Discovery Card bei Entfernung vom NPC schließen"
+    L["OPT_BREAK_CONTACT_DISTANCE"]  = "Distanz-Schwellenwert (m)"
+
     -- Credits
     L["TAB_CREDITS"] = "Credits"
     L["CREDITS_TITLE"] = "MITWIRKENDE"
@@ -235,6 +245,16 @@ else
     L["TAB_DETAIL_LORE"] = "Lore"
     L["TAB_DETAIL_TIMELINE"] = "Timeline"
     L["CMD_UNLOCKALL_SUCCESS"] = "Success: All %d echoes of the past have been unlocked in the chronicle!"
+
+    -- Minimap Tooltip
+    L["MINIMAP_TOOLTIP_TITLE"]       = "IMAGO"
+    L["MINIMAP_TOOLTIP_LEFTCLICK"]   = "Left Click: Open Chronicle"
+    L["MINIMAP_TOOLTIP_RIGHTCLICK"]  = "Right Click: Idle Flashcards"
+
+    -- Combat & Break Contact Settings
+    L["OPT_CLOSE_ON_COMBAT"]         = "Close Discovery Card when entering combat"
+    L["OPT_ENABLE_BREAK_CONTACT"]    = "Close Discovery Card when moving away from NPC"
+    L["OPT_BREAK_CONTACT_DISTANCE"]  = "Distance threshold (yards)"
 
     -- Credits
     L["TAB_CREDITS"] = "Credits"

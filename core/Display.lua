@@ -54,25 +54,34 @@ end
 
 function IMAGO.GetProgress(type)
     if not IMAGOSaved or not IMAGOdb then return 0, 0 end
-    
+
     local savedTable, dbTable
     if type == "npc" then
         savedTable = IMAGOSaved.seenNPCs
-        dbTable = IMAGOdb.npcs
+        -- NPCs are now categorized - count across all categories
+        local totalNPCs = 0
+        for _, category in pairs(IMAGOdb.npcs or {}) do
+            for _ in pairs(category) do
+                totalNPCs = totalNPCs + 1
+            end
+        end
+        local seen = 0
+        for slug, v in pairs(savedTable or {}) do
+            if v and IMAGO.GetNPCData(slug) then seen = seen + 1 end
+        end
+        return seen, totalNPCs
     elseif type == "zone" then
         savedTable = IMAGOSaved.seenZones
         dbTable = IMAGOdb.zones
+        if not savedTable or not dbTable then return 0, 0 end
+        local seen = 0
+        for key, v in pairs(savedTable) do
+            if v and dbTable[key] then seen = seen + 1 end
+        end
+        return seen, countKeys(dbTable)
     else
         return 0, 0
     end
-
-    if not savedTable or not dbTable then return 0, 0 end
-    
-    local seen = 0
-    for key, v in pairs(savedTable) do
-        if v and dbTable[key] then seen = seen + 1 end
-    end
-    return seen, countKeys(dbTable)
 end
 
 local function RegisterLoreFrameForEscapeDismiss(frame)
@@ -92,6 +101,37 @@ function IMAGO.Display.HideLorePanel()
     UIFrameFadeRemoveFrame(f)
     f:SetAlpha(1)
     f:Hide()
+    f.trackingNPC = nil -- Clear break contact tracking
+end
+
+function IMAGO.Display.CheckBreakContact()
+    local f = IMAGO.Display.frame
+    if not f or not f:IsShown() or not f.trackingNPC then return end
+
+    local x, y, mapID = UnitPosition("player")
+    if not x or not y or not mapID then return end
+
+    -- Check if map changed (teleport, instance change, etc.)
+    if mapID ~= f.trackingNPC.mapID then
+        IMAGO.Display.HideLorePanel()
+        return
+    end
+
+    -- Calculate distance
+    local dx = x - f.trackingNPC.startX
+    local dy = y - f.trackingNPC.startY
+    local distance = math.sqrt(dx * dx + dy * dy)
+
+    local threshold = IMAGOSaved.breakContactDistance or 50
+    if distance >= threshold then
+        IMAGO.Display.HideLorePanel()
+        return
+    end
+
+    -- Continue checking
+    C_Timer.After(0.5, function()
+        IMAGO.Display.CheckBreakContact()
+    end)
 end
 
 local function attachProgressFontString(f)
@@ -214,12 +254,34 @@ function IMAGO.Display.CreateFrame()
         IMAGOSaved.frameY = yOfs
     end)
 
+    -- right click to close
+    f:SetScript("OnMouseDown", function(self, button)
+        if button == "RightButton" then
+            self._mouseDownX, self._mouseDownY = GetCursorPosition()
+        end
+    end)
+    f:SetScript("OnMouseUp", function(self, button)
+        if button ~= "RightButton" then return end
+        if self._dragging then return end
+        if GetMouseFocus and GetMouseFocus() ~= self then return end
+        if not self._mouseDownX then return end
+
+        local x, y = GetCursorPosition()
+        local dx = math.abs(x - self._mouseDownX)
+        local dy = math.abs(y - self._mouseDownY)
+        self._mouseDownX, self._mouseDownY = nil, nil
+
+        if dx < 6 and dy < 6 then
+            IMAGO.Display.HideLorePanel()
+        end
+    end)
+
     RegisterLoreFrameForEscapeDismiss(f)
 
     IMAGO.Display.frame = f
 end
 
-function IMAGO.Display.Show(title, bodyText, category, isNew)
+function IMAGO.Display.Show(title, bodyText, category, isNew, npcSlug)
     if not IMAGOSaved.enabled then return end
     if not IMAGO.Display.frame then return end
 
@@ -259,6 +321,25 @@ function IMAGO.Display.Show(title, bodyText, category, isNew)
     f.lineBottomRight:SetGradient("HORIZONTAL", CreateColor(color.r, color.g, color.b, 0.6), CreateColor(color.r, color.g, color.b, 0))
 
     f.body:SetText(bodyText or "")
+
+    -- Break Contact: Track NPC position for distance check
+    f.trackingNPC = nil
+    if category == "npc" and npcSlug and IMAGOSaved.enableBreakContact ~= false then
+        local x, y, mapID = UnitPosition("player")
+        if x and y and mapID then
+            f.trackingNPC = {
+                slug = npcSlug,
+                startX = x,
+                startY = y,
+                mapID = mapID,
+                startTime = GetTime()
+            }
+            -- Start distance check timer
+            C_Timer.After(0.5, function()
+                IMAGO.Display.CheckBreakContact()
+            end)
+        end
+    end
 
     local progressBlock = 0
     local progressGap = 10

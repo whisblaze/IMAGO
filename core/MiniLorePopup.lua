@@ -157,12 +157,12 @@ local function CreateMiniLorePopupFrame()
     end)
 
     f:SetScript("OnMouseDown", function(self, button)
-        if button == "LeftButton" then
+        if button == "RightButton" then
             self._mouseDownX, self._mouseDownY = GetCursorPosition()
         end
     end)
     f:SetScript("OnMouseUp", function(self, button)
-        if button ~= "LeftButton" then return end
+        if button ~= "RightButton" then return end
         if self._dragging then return end
         if GetMouseFocus and GetMouseFocus() ~= self then return end
         if not self._mouseDownX then return end
