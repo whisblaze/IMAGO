@@ -281,14 +281,18 @@ IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].name = "Taelia Fordragon"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].lore = "Taelia Fordragon is the daughter of the legendary Bolvar Fordragon. Raised in Kul Tiras as a ward of Cyrus Crestfall, she spent most of her life believing her father fell at the Wrathgate. It was only during the Fourth War that she learned the shocking truth about his fate as the Lich King. Driven by an unwavering sense of justice and her father's legacy, she has developed into a capable knight. In Midnight, she fights on the front lines to defend the Light against the Void and fulfill the Fordragon name with honor."
-IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].source = "warcraft.wiki.gg/wiki/Taelia_Fordragon"
+IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].lore = [[A friendly and headstrong young woman, Taelia was born in Lordaeron shortly before the wars against the Horde broke out. After losing her mother in the conflict, her father Bolvar sent her to the kingdom of Kul Tiras for her own safety.
+She became a paladin and fought loyally for House Proudmoore, for her new home, and afterwards for the Alliance.
+Taelia is an open-minded individual, being best friends with the former pirate Flynn Fairwind, and even reconnecting happily with her father Bolvar after finding out that he had been made the Lich King.
+Now, the Sunwell has called Taelia to lend her strength to Silvermoon's defense.]]
+IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
+IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].timeline = {
-    {era = "Pre-Classic", text = "Was sent to Kul Tiras by her father to protect her from the dangers of Lordaeron and the Third War."},
-    {era = "BfA", text = "Served as a messenger in Kul Tiras, met Jaina Proudmoore, and eventually learned of Bolvar's fate in Icecrown Citadel."},
-    {era = "SL", text = "Traveled to the Shadowlands to fight alongside her father and the Knights of the Ebon Blade against the Jailer."},
-    {era = "Midnight", text = "Supports the defense of Silvermoon and Quel'Danas as a prominent knight of the Army of Light."},
+    {era = "WC2", "Sent to Kul Tiras as a small child to escape the Second War. Brought into the care of Cyrus Crestfall, who raised her as a paladin."},
+    {era = "WotLK", text = "The letters from her father stopped and Taelia found out that he \"died\" in the war against the Lich King."},
+    {era = "BfA", text = "Discovered Priscilla Ashvane's treachery against House Proudmoore. Helped defeat the corrupted and mad Lord Stormsong. After the Fourth War, King Anduin thanked her personally for her service."},
+    {era = "SL", text = "Taelia finally learned of her father's true fate and decided to follow Bolvar into the Shadowlands. They reunited and Bolvar – now free from his role as the Lich King – vowed to reconnect with his daughter. "},
+    {era = "Midnight", text = "Defended the Sunwell against the encroaching Voidstorm. Alongside Salandria, she rescued captured paladins from the Twilight's Blade cultists and managed to slay their leader."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].name = "Moira Thaurissan"

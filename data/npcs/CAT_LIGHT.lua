@@ -50,7 +50,7 @@ IMAGOdb.npcs.CAT_LIGHT["calia_menethil"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"] = {
     displayID = 242803,
-    ids = {242803, 251931, 248323, 242898, 242889, 242608, 241706, 242894, 239510, 251951, 253187},
+    ids = {242803, 248323, 242889, 251931, 242894, 242608, 253187, 241706, 242898, 239510, 251951},
     zones = {},
     category = "CAT_LIGHT",
 }
