@@ -119,12 +119,12 @@ IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].timeline = {
     {era = "Midnight", text = "Führt die Waldläufer des Silbernen Bundes bei der Verteidigung von Silbermond und der Insel von Quel'Danas an."},
 }
 
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].name = "Shandris Mondfeder"
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].race = "Nachtelfe"
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].lore = "Generalin Shandris Mondfeder ist die Oberkommandierende der Mondwächterinnen und die Adoptivtochter von Tyrande Whisperwind. Als Veteranin, die bereits vor zehntausend Jahren im Krieg der Ahnen kämpfte, gehört sie zu den erfahrensten militärischen Führerinnen Azeroths. In Midnight fungiert sie als strategisches Bindeglied zwischen den Nachtelfen und ihren Cousins in Quel'Thalas. Ihre Präsenz in Silbermond und den Wäldern von Harandar signalisiert eine historische Einigkeit der Elfen im verzweifelten Kampf gegen die Leere."
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].zones = {"Amirdrassil", "Harandar", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].source = "warcraft.wiki.gg/wiki/Shandris_Feathermoon"
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].timeline = {
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].name = "Shandris Mondfeder"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].race = "Nachtelfe"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].lore = "Generalin Shandris Mondfeder ist die Oberkommandierende der Mondwächterinnen und die Adoptivtochter von Tyrande Whisperwind. Als Veteranin, die bereits vor zehntausend Jahren im Krieg der Ahnen kämpfte, gehört sie zu den erfahrensten militärischen Führerinnen Azeroths. In Midnight fungiert sie als strategisches Bindeglied zwischen den Nachtelfen und ihren Cousins in Quel'Thalas. Ihre Präsenz in Silbermond und den Wäldern von Harandar signalisiert eine historische Einigkeit der Elfen im verzweifelten Kampf gegen die Leere."
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].zones = {"Amirdrassil", "Harandar", "Silbermond"}
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].source = "warcraft.wiki.gg/wiki/Shandris_Feathermoon"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].timeline = {
     {era = "Pre-Classic", text = "Überlebte als junge Waise den Krieg der Ahnen und wurde von Tyrande Whisperwind adoptiert und ausgebildet."},
     {era = "WC3", text = "Führte die Mondwächterinnen während der Invasion der Brennenden Legion und verteidigte den Berg Hyjal."},
     {era = "BfA", text = "Kommandierte die Allianz-Streitkräfte in Nazjatar im Kampf gegen Königin Azshara und das Imperium der Naga."},

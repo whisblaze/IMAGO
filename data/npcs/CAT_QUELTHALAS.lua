@@ -55,7 +55,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"] = {
     category = "CAT_QUELTHALAS",
 }
 
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"] = {
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"] = {
     displayID = 240334,
     ids = {240334, 246486, 240258, 244647},
     zones = {},
