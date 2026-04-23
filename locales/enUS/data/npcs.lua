@@ -308,7 +308,7 @@ Now, the Sunwell has called Taelia to lend her strength to Silvermoon's defense.
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].timeline = {
-    {era = "WC2", "Sent to Kul Tiras as a small child to escape the Second War. Brought into the care of Cyrus Crestfall, who raised her as a paladin."},
+    {era = "WC2", text = "Sent to Kul Tiras as a small child to escape the Second War. Brought into the care of Cyrus Crestfall, who raised her as a paladin."},
     {era = "WotLK", text = "The letters from her father stopped and Taelia found out that he \"died\" in the war against the Lich King."},
     {era = "BfA", text = "Discovered Priscilla Ashvane's treachery against House Proudmoore. Helped defeat the corrupted and mad Lord Stormsong. After the Fourth War, King Anduin thanked her personally for her service."},
     {era = "SL", text = "Taelia finally learned of her father's true fate and decided to follow Bolvar into the Shadowlands. They reunited and Bolvar – now free from his role as the Lich King – vowed to reconnect with his daughter. "},

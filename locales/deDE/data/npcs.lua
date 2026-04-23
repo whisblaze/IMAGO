@@ -121,15 +121,23 @@ IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].name = "Shandris Mondfeder"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].race = "Nachtelfe"
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].lore = "Generalin Shandris Mondfeder ist die Oberkommandierende der Mondwächterinnen und die Adoptivtochter von Tyrande Whisperwind. Als Veteranin, die bereits vor zehntausend Jahren im Krieg der Ahnen kämpfte, gehört sie zu den erfahrensten militärischen Führerinnen Azeroths. In Midnight fungiert sie als strategisches Bindeglied zwischen den Nachtelfen und ihren Cousins in Quel'Thalas. Ihre Präsenz in Silbermond und den Wäldern von Harandar signalisiert eine historische Einigkeit der Elfen im verzweifelten Kampf gegen die Leere."
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].zones = {"Amirdrassil", "Harandar", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].source = "warcraft.wiki.gg/wiki/Shandris_Feathermoon"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].lore = [[Shandris wurde während des Krieges der Ahnen zur Waise und hat daher Kriegserfahrungen aus erster Hand. Sie wurde von Tyrande Wisperwind und Malfurion Sturmgrimm adoptiert, zur Jägerin ausgebildet und hat sich seitdem zu einer der furchterregendsten Bogenschützinnen auf Azeroth entwickelt.
+Shandris hat die Streitkräfte der Nachtelfen und der Allianz bereits mehrfach als Hochgeneralin der Armee der Schildwachen angeführt. Nachdem sie bei der Verteidigung des neuen Weltenbaums Amirdrassil an vorderster Front stand, führt sie die Nachtelfen nun als deren Anführerin.
+Sie setzt sich mit großer Hingabe für die Menschen ein, die ihr am Herzen liegen. So hat sie sich sogar in die Reiche des Todes gewagt, um ihre Mutter zu retten. Heutzutage ist Shandris vor allem eines wichtig: Frieden.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].zones = {"Amirdrassil", "Harandar", "Silbermond", "Insel von Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].timeline = {
-    {era = "Pre-Classic", text = "Überlebte als junge Waise den Krieg der Ahnen und wurde von Tyrande Whisperwind adoptiert und ausgebildet."},
-    {era = "WC3", text = "Führte die Mondwächterinnen während der Invasion der Brennenden Legion und verteidigte den Berg Hyjal."},
-    {era = "BfA", text = "Kommandierte die Allianz-Streitkräfte in Nazjatar im Kampf gegen Königin Azshara und das Imperium der Naga."},
-    {era = "DF", text = "Verteidigte den neuen Weltenbaum Amirdrassil im Smaragdgrünen Traum gegen die Traumreißer."},
-    {era = "Midnight", text = "Leitet die militärische Unterstützung der Nachtelfen in Quel'Thalas und koordiniert die Verteidigung von Silbermond."},
+    {era = "Ancient", text = "Wurde während der ersten Invasion der Brennenden Legion zur Waise und von Tyrande Wisperwind adoptiert."},
+    {era = "WC3", text = "Kämpfte im Eschental und am Berg Hyjal gegen die Brennende Legion und Archimonde selbst."},
+    {era = "Classic", text = "Wurde zur Hochgeneralin der Schildwachen befördert."},
+    {era = "Cata", text = "Beschützte Kalimdor vor den Bedrohungen der Naga und begann mit der Aufnahme der Worgen in die Reihen der Schildwachen. Half bei der Verteidigung des Eschentals gegen Garrosh Höllschreis Invasion."},
+    {era = "Pre-MoP", text = "Versuchte vergeblich, Theramore vor der Horde zu verteidigen."},
+    {era = "Legion", text = "Schloss sich dem Verborgenen Pfad an und half dabei, Hakkar den Hundemeister zu besiegen."},
+    {era = "Pre-BfA", text = "Vertrieb die Invasoren der Horde an der Dunkelküste, traf jedoch zu spät ein, um bei der Verteidigung von Teldrassil zu helfen."},
+    {era = "BfA", text = "Koordinierte die Kriegsanstrengungen der Allianz auf Zandalar. Half Tyrande dabei, zur Nachtkriegerin zu werden, und schlug die Horde an der Dunkelküste ein weiteres Mal zurück. Führte die Streitkräfte der Allianz gegen Königin Azshara an, nachdem die Schlacht in ihrer Heimat gewonnen war."},
+    {era = "SL", text = "Folgte ihrer Mutter Tyrande in die Schattenlande und befreite sie vom Fluch der Nachtkriegerin."},
+    {era = "DF", text = "Verteidigte Amirdrassil vor Fyrakks Flammen und arbeitete in einem ersten Versuch, den Vierten Krieg ruhen zu lassen, mit den Verlassenen zusammen. Danach wurde sie von Tyrande und Malfurion zur neuen Anführerin der Nachtelfen ernannt."},
+    {era = "Midnight", text = "Shandris unterstützte die Blutelfen gegen die Bedrohung durch die Leere und half bei der Erschaffung des Dämmerbrunnens."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].name = "Erzmagier Aethas Sonnenhäscher"
@@ -146,14 +154,16 @@ IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].name = "Salandria"
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].race = "Blutelfe"
-IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].lore = "Salandria verbrachte ihre frühe Kindheit als Kriegswaise in Shattrath. Schon früh zeigte sich ihre starke Verbindung zum Heiligen Licht und ein enormer Ehrgeiz. Sie wurde schließlich von Lady Liadrin, der Matriarchin der Blutritter, adoptiert und in Silbermond zu einer mächtigen Paladinin ausgebildet. Schon in den Höhlen der Zeit ahnte der bronzene Drachenschwarm, dass sie eines Tages eine gewaltige Rolle im Schicksal Azeroths spielen würde. In Midnight steht die einstige Waise als erwachsene, kampfbereite Blutritterin an vorderster Front. Sie verteidigt Quel'Thalas, ihre Mentorin Liadrin und das Erbe ihres Volkes mit eiserner Entschlossenheit gegen die eindringende Leere."
+IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].lore = [[Salandria wurde bereits als kleines Kind zur Waise. Den Großteil ihrer Kindheit verbrachte sie im Waisenhaus von Shattrath in der Scherbenwelt, bis sie schließlich von Lady Liadrin adoptiert wurde, die einst selbst ein Adoptivkind war. Inzwischen ist Salandria zu einer Blutritterin herangewachsen, die mit Entschlossenheit und unerbittlichem Optimismus für Silbermond und das Heilige Licht kämpft.
+
+Eine Sache wirft jedoch einen dunklen Schatten auf Salandrias Zukunft: Als Kind wurde sie von einem Mitglied des bronzenen Drachenschwarms bei Sichtkontakt angegriffen – angeblich für eine schreckliche Tat, die sie in ihrer Zukunft begehen wird. Es bleibt ein Rätsel, was diese ominöse Prophezeiung für sie und für die Zukunft von Azeroth bedeutet.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].zones = {"Immersangwald", "Insel von Quel'Danas", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].source = "warcraft.wiki.gg/wiki/Salandria"
+IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].timeline = {
-    {era = "TBC", text = "Wuchs als Waise in Shattrath auf und wurde während der Kinderwoche von Horde-Abenteurern betreut. Die Wachen der Höhlen der Zeit versuchten damals, sie wegen unheilvoller zukünftiger Taten anzugreifen."},
-    {era = "WotLK", text = "Hinterließ eine Kupfermünze im Brunnen von Dalaran mit dem Wunsch: 'Eines Tages werde ich mächtiger sein als all diese Magier!'"},
-    {era = "SL", text = "Trat in Patch 9.2.5 erstmals als erwachsene Blutritterin in Erscheinung und half den Blutelfen bei der Verteidigung von Tranquillien gegen den San'layn Vorath."},
-    {era = "Midnight", text = "Verteidigt Silbermond, den Immersangwald und Quel'Danas als kampferprobte Blutritterin der Koalition."},
+    {era = "TBC", text = "Wurde während der Kinderwoche von einem Champion der Horde auf ein Abenteuer mitgenommen und sah zum ersten Mal die Welt außerhalb von Shattrath. Sie wurde bei Sichtkontakt von einem bronzenen Drachen angegriffen, und zwar für etwas, das sie in ihrer Zukunft tun oder zu tun versäumen wird. Später wurde Salandria von Lady Liadrin adoptiert."},
+    {era = "SL", text = "Begab sich auf ihre erste Mission als Blutritteranwärterin und begleitete Champions der Horde in die Schattenlande, um eine Waffe gegen die neu erhobene Geißel in Quel'Thalas zu ermächtigen. Half gemeinsam mit Liadrin dabei den San'layn Vorath zu besiegen und die Bedrohung durch die Geißel vorerst zu beenden."},
+    {era = "TWW", text = "Begleitete ihre Adoptivmutter nach Heilsturz, um Xal'ataths Streitkräfte zu bekämpfen. Erfuhr dort von der Heiligen Flamme der Arathi."},
+    {era = "Midnight", text = "Verteidigte den Sonnenbrunnen gegen den vordringenden Leerensturm. Gemeinsam mit Taelia Fordragon rettete sie gefangene Paladine vor den Kultisten der Zwielichtsklinge und schaffte es, deren Anführer zur Strecke zu bringen."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].name = "Magister Umbric"
@@ -234,15 +244,25 @@ IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].name = "Anduin Wrynn"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].race = "Mensch"
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].lore = "Einst der idealistische König von Sturmwind und Hochkönig der Allianz. Anduin wurde während der Ereignisse in den Schattenlanden vom Kerkermeister dominiert und gezwungen, unaussprechliche Taten zu begehen. Von Schuldgefühlen zerfressen und scheinbar vom Licht verlassen, legte er die Krone ab und wanderte als gebrochener Mann durch Khaz Algar (The War Within). In Midnight schließt sich der Kreis: Er findet seinen Glauben an das Licht wieder und kämpft nicht länger als König, sondern als purer Streiter der Rechtschaffenheit bei der Verteidigung von Silbermond und dem Sonnenbrunnen."
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].source = "warcraft.wiki.gg/wiki/Anduin_Wrynn"
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].lore = [[Der abwesende Hochkönig der Allianz, Anduin Llane Wrynn, hat das Gefühl, nur noch ein Schatten seines einstigen, strahlenden Selbst zu sein.
+Er konnte einst das Licht wie kaum ein anderer wirken, heilte ganze Schlachtfelder und inspirierte so sein Volk, als unerschütterlicher Verteidiger von Gerechtigkeit, Toleranz und Frieden weiterzukämpfen. Das änderte sich, als er vom Kerkermeister beherrscht und gezwungen wurde, dabei zu helfen, die Welt zu vernichten, die er zu beschützen geschworen hatte – bei vollem Bewusstsein, aber unfähig, seine Taten zu kontrollieren. Selbst nachdem er sich befreien konnte, entkam er nicht der Angst, zu solch grausamen Taten fähig zu sein, und etwas in Anduin zerbrach. Er verschwand für Jahre und ließ sein Volk und sein Königreich zurück.
+Nun, da Xal'atath alles bedroht, was ihm lieb und teuer ist, hat sich Anduin endlich wieder in den Kampf gestürzt und beginnt langsam, sein Selbstvertrauen und seinen Glauben an das Licht zurückzugewinnen.]]
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].zones = {"Insel von Quel'Danas", "Parhelionplatz", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].timeline = {
-    {era = "Legion", text = "Übernahm nach dem tragischen Tod seines Vaters Varian den Thron von Sturmwind."},
-    {era = "BfA", text = "Führte die Allianz im Vierten Krieg an und strebte trotz Sylvanas' Gräueltaten stets nach Frieden."},
-    {era = "SL", text = "Wurde vom Kerkermeister Zovaal dominiert und als Waffe gegen seine eigenen Verbündeten eingesetzt."},
-    {era = "TWW", text = "Verweigerte die Rückkehr auf den Thron und suchte in Khaz Algar nach innerem Frieden und seinem verlorenen Glauben."},
-    {era = "Midnight", text = "Kehrt endgültig in den Schoß des Lichts zurück, um Seite an Seite mit den Elfen gegen die Leere zu streiten."},
+    {era = "Pre-WC3", text = "Verlor seine Mutter als Kleinkind beim Aufstand der Steinmetzgilde."},
+    {era = "Classic", text = "Wurde während des Verschwindens seines Vaters kurzzeitig zum König von Sturmwind gekrönt. Wurde von Onyxia gefangen genommen, aber nach der Rückkehr seines Vaters, König Varian, von diesem gerettet."},
+    {era = "WotLK", text = "Rettete das Leben seines Vaters während der Geißelinvasion von Sturmwind."},
+    {era = "Pre-Cata", text = "Wurde Zeuge von Magnis Verwandlung in Kristall und löste später die Krise um die Thronfolge in Eisenschmiede, wodurch er Moiras Tod durch die Hand von König Varian verhinderte. Nach einem weiteren Streit mit seinem Vater ging Anduin später zu Velen, um bei ihm zu leben und den Weg als Priester des Lichts zu studieren."},
+    {era = "Cata", text = "Deckte nach seiner Rückkehr nach Sturmwind eine Verschwörung des Schattenhammers auf."},
+    {era = "MoP", text = "Erkundete den neu entdeckten Kontinent Pandaria und ließ sich von der Philosophie der Pandaren inspirieren. Versuchste persönlich, Garrosh Höllschreis Kriegshetze zu stoppen, scheiterte jedoch und wurde dabei schwer verletzt. Traf sich später mit dem Drachen Furorion und freundete sich mit ihm an."},
+    {era = "Pre-WoD", text = "Wohnte Garroshs Prozess bei und verhinderte die Vergiftung des ehemaligen Kriegshäuptlings, wobei er sein eigenes Leben riskierte. Versuchte erfolglos, Furorion davon abzuhalten, Garrosh zu befreien."},
+    {era = "Legion", text = "Wurde nach Varians Tod zum Hochkönig der Allianz gekrönt."},
+    {era = "Pre-BfA", text = "Hieß die lichtgeschmiedeten Draenei und die Dunkeleisenzwerge in der Allianz willkommen. Verhandelte mit Sylvanas Windläufer ein Ereignis namens \"Die Zusammenkunft\", um willige Verlassene mit ihren lebenden Verwandten wiederzuvereinen. Zu Anduins Entsetzen endete der Austausch in einem Massaker."},
+    {era = "BfA", text = "Führte die Allianz während des Vierten Krieges gegen die Horde an, wobei er die Armee in der Schlacht um Lordaeron persönlich befehligte. Schmiedete später ein Bündnis mit Varok Saurfang und unterstützte dessen Rebellion gegen Sylvanas, was schließlich den Krieg beendete und zu einem Waffenstillstand führte."},
+    {era = "SL", text = "Wurde von den Streitkräften des Kerkermeisters gefangen genommen und durch Herrschaftsmagie kontrolliert, um als Waffe für den Tod zu dienen. Letztendlich befreite sich Anduin mit der Hilfe der Geister seines Vaters und Varok Saurfangs, blieb jedoch schwer traumatisiert zurück. Ernannte Turalyon zum Regenten von Sturmwind und verschwand."},
+    {era = "TWW", text = "Wurde von Thrall überzeugt, sich dem Kampf gegen Xal'atath anzuschließen. Kämpfte in Heilsturz und fand dank Faerin Lothar seinen Glauben an das Licht wieder. Rettete Khadgars Leben."},
+    {era = "Midnight", text = "Verhinderte Umbrics Hinrichtung und half dabei, den Sonnenbrunnen gegen die Leere zu verteidigen."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].name = "Hochexarch Turalyon"
@@ -285,14 +305,18 @@ IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].name = "Taelia Fordragon"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].race = "Mensch"
-IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].lore = "Taelia Fordragon ist die Tochter des legendären Bolvar Fordragon. Aufgewachsen in Kul Tiras als Mündel von Cyrus Schattensang, verbrachte sie den Großteil ihres Lebens in dem Glauben, ihr Vater sei an der Pforte des Zorns gefallen. Erst während des Vierten Krieges erfuhr sie die schockierende Wahrheit über sein Schicksal als Lichkönig. Getrieben von einem unerschütterlichen Gerechtigkeitssinn und dem Erbe ihres Vaters, hat sie sich zu einer fähigen Ritterin entwickelt. In Midnight kämpft sie an vorderster Front, um das Licht gegen die Leere zu verteidigen und den Namen Fordragon mit Ehre zu erfüllen."
-IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].zones = {"Immersangwald", "Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].source = "warcraft.wiki.gg/wiki/Taelia_Fordragon"
+IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].lore = [[Als freundliche und eigensinnige junge Frau wurde Taelia kurz vor Ausbruch der Kriege gegen die Horde in Lordaeron geboren. Nachdem sie ihre Mutter in dem Konflikt verlor, schickte ihr Vater Bolvar sie zu ihrer eigenen Sicherheit in das Königreich Kul Tiras.
+Sie wurde zu einer Paladinin und kämpfte loyal für Haus Prachtmeer, für ihre neue Heimat und später für die Allianz.
+Taelia ist eine aufgeschlossene Persönlichkeit, die eine enge Freundschaft mit dem ehemaligen Piraten Flynn Schönwind pflegt. Taelia ist eine aufgeschlossene Persönlichkeit, die eine enge Freundschaft mit dem ehemaligen Piraten Flynn Schönwind pflegt. Nach der Erkenntnis des wahren Schicksals ihres Vaters Bolvar, der zum Lichkönig gemacht worden war, fand sie sogar freudig wieder mit ihm zusammen.
+Nun hat der Sonnenbrunnen Taelia gerufen, damit sie Silbermonds Verteidigung ihre Stärke leiht.]]
+IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].zones = {"Immersangwald", "Insel von Quel'Danas", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].timeline = {
-    {era = "Pre-Classic", text = "Wurde von ihrem Vater nach Kul Tiras geschickt, um sie vor den Gefahren Lordaerons und des Dritten Krieges zu schützen."},
-    {era = "BfA", text = "Diente als Botin in Kul Tiras, traf Jaina Prachtmeer und erfuhr schließlich von Bolvars Schicksal in der Eiskronenzitadelle."},
-    {era = "SL", text = "Reiste in die Schattenlande, um an der Seite ihres Vaters und der Ritter der Schwarzen Klinge gegen den Kerkermeister zu kämpfen."},
-    {era = "Midnight", text = "Unterstützt die Verteidigung von Silbermond und Quel'Danas als prominente Ritterin des Leuchtenden Heeres."},
+    {era = "WC2", text = "Wurde als kleines Kind nach Kul Tiras geschickt, um dem Zweiten Krieg zu entkommen. Sie wurde in die Obhut von Cyrus Wappenfall übergeben, der sie zu einer Paladinin erzog."},
+    {era = "WotLK", text = "Die Briefe ihres Vaters blieben plötzlich aus und Taelia erfuhr, dass er im Krieg gegen den Lichkönig \"gestorben\" sei."},
+    {era = "BfA", text = "Deckte Priscilla Aschenwinds Verrat an Haus Prachtmeer auf. Half dabei, den verderbten und wahnsinnigen Lord Sturmsang zu besiegen. Nach dem Vierten Krieg dankte König Anduin ihr persönlich für ihre Dienste."},
+    {era = "SL", text = "Taelia erfuhr endlich vom wahren Schicksal ihres Vaters und beschloss, Bolvar in die Schattenlande zu folgen. Sie wurden wiedervereint und Bolvar – nun befreit von seiner Rolle als Lichkönig – schwor, die Bindung zu seiner Tochter wieder aufzubauen."},
+    {era = "Midnight", text = "Verteidigte den Sonnenbrunnen gegen den vordringenden Leerensturm. Gemeinsam mit Salandria rettete sie gefangene Paladine vor den Kultisten der Zwielichtsklinge und schaffte es, deren Anführer zur Strecke zu bringen."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].name = "Moira Thaurissan"
@@ -421,13 +445,16 @@ IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].name = "Faerin Lothar"
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].race = "Mensch (Arathi)"
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].lore = "Faerin Lothar ist eine der charismatischsten Anführerinnen der Arathi-Expedition in Khaz Algar und die direkte Nachfahrin der legendären Blutlinie von Anduin Lothar. Als Kind überlebte sie nur knapp die Vernichtung der Arathi-Armada durch einen Leviathan in den tiefen Gewässern und verlor dabei einen Arm und ein Auge. Anstatt daran zu zerbrechen, nutzt sie eine massive Schild-Prothese und kämpft mit unerschütterlichem Glauben an die Heilige Flamme. In The War Within wurde sie zur wichtigsten moralischen Stütze für Anduin Wrynn. In Midnight kehrt das Erbe der Lothars an die Oberfläche zurück: Faerin bringt die feurige Entschlossenheit des Arathi-Imperiums nach Quel'Thalas, um das Licht gegen die absolute Dunkelheit zu verteidigen."
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].source = "warcraft.wiki.gg/wiki/Faerin_Lothar"
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].race = "Mensch"
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].lore = [[Diese junge Paladinin ist ein Leuchtfeuer der Hoffnung und des Optimismus für ihre Mitstreiter. Oft ist sie die Erste, die sich in die Schlacht stürzt, um andere mit ihrem Schild und ihrem Glauben an das Licht zu beschützen. Faerin hatte schon immer einen Hang zur Gefahr und schlich sich als bloßes Kind an Bord eines Luftschiffs der Arathiexpedition nach Heilsturz. Bei der darauffolgenden Bruchlandung verlor sie ihr Auge und ihren Arm, lernte jedoch, weiterzukämpfen und ein Leben ohne sie zu führen.
+
+Da sie nicht lange im Imperium gelebt hat, hegt Faerin kein Interesse an einer Rückkehr an ihren Geburtsort. Stattdessen möchte sie den Rest der Welt erkunden, insbesondere jene Orte, die für ihr Erbe als Arathi und eine Lothar von Bedeutung sind. Dieses Vorhaben muss jedoch warten, bis der Sonnenbrunnen gesichert ist.]]
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].zones = {"Insel von Quel'Danas", "Parhelionplatz", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].timeline = {
-    {era = "TWW", text = "Wird in Heilsturz (Hallowfall) entdeckt. Führt den Widerstand gegen die Neruber von Azj-Kahet an und hilft Anduin Wrynn, sein schweres Trauma und seinen verlorenen Zugang zum Licht zu überwinden."},
-    {era = "Midnight", text = "Reist aus den Tiefen Khaz Algars an die Oberfläche, um die Verteidigung von Quel'Thalas, Silbermond und der Parhelionplaza als Champion des Lichts zu unterstützen."},
+    {era = "Pre-Legion", text = "Schlich sich an Bord eines der Luftschiffe der Heilsturz-Expedition und erlitt bei der Ankunft schwere körperliche Verletzungen. Wurde unter Generalin Stahlstoß zur Lampenanzünderin ausgebildet."},
+    {era = "TWW", text = "Verteidigte Heilsturz gegen die Neruber und kämpfte an vorderster Front, um Xal'atath zurückzuschlagen. Freundete sich mit Anduin Wrynn an und half ihm, seinen Glauben an das Licht wiederzufinden. Half später dabei, Maran Trollbanns Rebellion in Stromgarde zu verhindern."},
+    {era = "Midnight", text = "Wurde vom Sonnenbrunnen gerufen und half dabei, ihn gegen die Leere zu verteidigen."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].name = "Generalin Amias Bellamy"
@@ -558,11 +585,16 @@ IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
 
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].name = "Decimus"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].race = "Domanaar"
-IMAGOdb.npcs.CAT_NEUTRAL["decimus"].lore = "Decimus ist ein sarkastischer und pragmatischer Domanaar, der einst zu den mächtigsten von der Leere geprägten Anführern im Leerensturm gehörte. Anstatt sich jedoch blind Xal'atath zu unterwerfen, agiert er aus reinem Eigeninteresse und verbündet sich mit den Helden Azeroths. Mit seiner beißenden Ironie und seinem unschätzbaren Wissen über die Mächte des Kosmos leitet er den Aufbau der Voidforge — dem zentralen System der Erweiterung — und wird so zum wichtigsten unabhängigen Kontakt in Midnight."
+IMAGOdb.npcs.CAT_NEUTRAL["decimus"].lore = [[Charismatisch, gefährlich, arglistig – all diese Adjektive beschreiben Decimus treffend.
+Wie alle Domanaar des Leerensturms wurde er Xal'atath unterworfen und erkannte ihre Überlegenheit an. Doch sich dauerhaft dem Willen einer anderen Entität zu beugen, entsprach nicht Decimus' Plänen. Und so beginnt er nun ein riskantes Spiel – mit den Champions von Azeroth als seinen Spielfiguren.]]
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].zones = {"Leerensturm"}
-IMAGOdb.npcs.CAT_NEUTRAL["decimus"].source = "warcraft.wiki.gg/wiki/Decimus"
+IMAGOdb.npcs.CAT_NEUTRAL["decimus"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].timeline = {
-    {era = "Midnight", text = "Tritt im Leerensturm als überraschender, unabhängiger Verbündeter auf, der den Bau der Voidforge leitet."},
+    {
+        era = "Midnight",
+        text = [[Schmiedete ein Bündnis mit den Leerenelfen, bot ihnen einen sicheren Stützpunkt und unterstützte sie bei ihren Unternehmungen im Leerensturm. Praktischerweise entledigte er sich dabei ganz nebenbei rivalisierender Domanaar.
+Er konstruierte die Leerenschmiede – einen Fokuspunkt dunkler Energie –, die seinen neuen Verbündeten als Machtquelle dienen sollte. Es bleibt jedoch unklar, ob dies ihr wahrer und einziger Zweck ist.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl"].name = "König Mrgl-Mrgl"
@@ -709,13 +741,15 @@ IMAGOdb.npcs.CAT_AMANI["akilzon"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["janalai"].name = "Jan'alai"
-IMAGOdb.npcs.CAT_AMANI["janalai"].race = "Waldtroll"
-IMAGOdb.npcs.CAT_AMANI["janalai"].lore = "Bevor Hexlord Malacrass ihn mit dunkler Magie zum Avatar des Drachenfalken-Gottes erhob, war Jan'alai ein begabter Troll der Amani. Im klassischen Zul'Aman nutzte er loderndes Feuer und beschwor unzählige Drachenfalken, um Eindringlinge in Asche zu verwandeln. In Midnight manifestiert sich der flammende Avatar auf wundersame Weise erneut in Zul'Aman. Mit reinigenden Flammen und unerbittlicher Hitze verteidigt er das Territorium seines Stammes gegen die kalten Schatten der Leere."
+IMAGOdb.npcs.CAT_AMANI["janalai"].race = "Troll"
+IMAGOdb.npcs.CAT_AMANI["janalai"].lore = [[Jedes Jahr feiern die Waldschattentrolle Fetna Alai-nazdo – das Fest der Feuerjahreszeit. Es ist ein Tribut an den Wechsel der Jahreszeiten, an den Sommer und an das Feuer – allesamt Domänen unter den großen, feurigen Schwingen von Jan'alai. Die mächtige Drachenfalkenloa ist die Patronin von Leben, Tod, Erneuerung, Feuer und Magie. Sie zieht mit der Sonne über den Himmel und entfacht ein Feuer in den Herzen der Amani. Wenn der Tod naht, heißen die Waldschattentrolle ihn mit offenen Armen willkommen und singen: "Jan'alai muss sterben. Wir alle müssen sterben. Und sie wird auferstehen! Und wir werden auferstehen!"]]
 IMAGOdb.npcs.CAT_AMANI["janalai"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["janalai"].source = "warcraft.wiki.gg/wiki/Jan'alai"
+IMAGOdb.npcs.CAT_AMANI["janalai"].source = "Metrus & austin - IMAGO Community"
 IMAGOdb.npcs.CAT_AMANI["janalai"].timeline = {
-    {era = "TBC", text = "Wurde durch Malacrass zum Avatar des Drachenfalken und bewachte Zul'Aman mit Feuer und fliegenden Bestien."},
-    {era = "Midnight", text = "Kehrt als brennender Beschützer nach Zul'Aman zurück, um die Leereninvasion mit Feuer zurückzuschlagen."},
+    {era = "TBC", text = "Litt durch die Hand von Hexlord Malacrass, der ihre Essenz stahl und sie in einen der tödlichsten Schurken der Amani band. Ihr Geist wurde mit dem Fall von Zul'jin befreit."},
+    {era = "WotLK", text = "Wurde von Hexendoktor Khufu in Zul'Drak angerufen, um sie um Rat bei der Rettung der Drakkari-Loa vor ihrem eigenen Volk zu bitten."},
+    {era = "Cata", text = "Jan'alai wurde erneut den Schrecken von Hexlord Malacrass ausgesetzt. Ihre Essenz wurde in einen weiteren Champion der Amani eingeflößt, um einen verdrehten Avatar zu erschaffen. Ihr Geist wurde befreit, als die Abenteurer „Daakara”, den Nachfolger von Zul'jin, besiegten."},
+    {era = "Midnight", text = "Jan'alai kehrte nach Jahrzehnten des Schweigens zum Volk der Amani zurück. Der Verrat durch Zul'jin und Malacrass hatte die Loa dazu veranlasst, sich von den Trollen abzuwenden. Sie kehrte erst zurück, nachdem Hash'ey Zul'jarra für die Verbrechen ihres Volkes gebüßt hatte."},
 }
 
 IMAGOdb.npcs.CAT_AMANI["halazzi"].name = "Halazzi"
