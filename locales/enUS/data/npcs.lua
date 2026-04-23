@@ -221,7 +221,7 @@ IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].zones = {"Arcantina", "Burning Steppe
 IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].source = ""
 IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].timeline = {
     {era = "WC2", text = "Served under General Turalyon as a commander and tactician of the Alliance of Lordaeron, repelling the orcish Horde that threatened the Eastern Kingdoms and pursuing them beyond the Dark Portal to their homeworld of Draenor."},
-    {era = "TBC", text = "Led the forces of Honor Hold in staving off the demonic armies of Hellfire Peninsula. (See rewrite below, hit character limit)"},
+    {era = "TBC", text = "Led the forces of Honor Hold in staving off the demonic armies of Hellfire Peninsula."},
     {era = "Legion", text = "Aided heroic warriors in acquiring Strom’kar, the Warbreaker. This legendary sword once belonged to King Thoradin, the first human king and ancestor of Danath Trollbane himself. After the fall of the Legion, Danath returned to a long-ruined Stromgarde to rebuild the city and claim his birthright as king."},
     {era = "BfA", text = "Fought in the Battle of Stromgarde, leading his forces in the defense of their city. The struggle for the Arathi Highlands raged between the Horde and Alliance, sowing chaos across the formerly tranquil farmland."},
     {era = "TWW", text = "Joined the Alliance forces dispatched to Khaz Algar to combat the Harbinger, Xal’atath, and her nerubian forces. Routed a rebellion led by human supremacist Marran Trollbane, niece of Danath and regent of Stromgarde in his absence."},
@@ -555,11 +555,16 @@ IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
 
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].name = "Decimus"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].race = "Domanaar"
-IMAGOdb.npcs.CAT_NEUTRAL["decimus"].lore = "Decimus is a sarcastic and pragmatic Domanaar who was once among the most powerful Void-aligned leaders in the Voidstorm. Rather than blindly submitting to Xal'atath, he operates out of pure self-interest and allies with the heroes of Azeroth. With his biting irony and invaluable knowledge of cosmic forces, he guides the construction of the Voidforge — the central progression system of the expansion — becoming the most crucial independent contact in Midnight."
+IMAGOdb.npcs.CAT_NEUTRAL["decimus"].lore = [[Charismatic, dangerous, malicious - all of these adjectives could be used to describe Decimus.
+As all domanaar of the Voidstorm, he was subjugated to Xal'atath, recognizing her as the stronger being. Yet serving someone else wasn't something Decimus was planning on doing for much longer and thus they now enter a risky game - with the champions of Azeroth as their playing pieces.]]
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].zones = {"Voidstorm"}
-IMAGOdb.npcs.CAT_NEUTRAL["decimus"].source = "warcraft.wiki.gg/wiki/Decimus"
+IMAGOdb.npcs.CAT_NEUTRAL["decimus"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].timeline = {
-    {era = "Midnight", text = "Emerges in the Voidstorm as a surprising, independent ally who guides the construction of the Voidforge."},
+    {
+        era = "Midnight",
+        text = [[Formed an Alliance with the Void Elves, granting them a safe base of operations and aided them in their endeavours in the Voidstorm. Conveniently took out rival domanaar in the process.
+He engineered the Voidforge - a conduit of dark energy - for his new allies to use as a source of power. It remains unclear if that is it's only purpose.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl"].name = "King Mrgl-Mrgl"
