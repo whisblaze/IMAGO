@@ -1766,7 +1766,7 @@ end
 --- opts.skipDiscoveryCinematic: Entdeckungs-Zwischensequenz überspringen (z. B. Kontextmenü).
 function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     opts = opts or {}
-    if type(slug) ~= "string" or slug == "" or not IMAGOdb or not IMAGOdb.npcs or not IMAGOdb.npcs[slug] then
+    if type(slug) ~= "string" or slug == "" or not IMAGO.GetNPCData(slug) then
         return false
     end
 
@@ -1775,7 +1775,7 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     end
 
     local f = IMAGO.Chronicle.frame
-    local data = IMAGOdb.npcs[slug]
+    local data = IMAGO.GetNPCData(slug)
 
     f.activeFilter = "ALL"
     if f.searchBox then f.searchBox:SetText("") end
