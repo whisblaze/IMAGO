@@ -230,15 +230,25 @@ IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].name = "Anduin Wrynn"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].lore = "Once the idealistic King of Stormwind and High King of the Alliance. During the events in the Shadowlands, Anduin was dominated by the Jailer and forced to commit unspeakable acts. Consumed by guilt and seemingly abandoned by the Light, he laid down his crown and wandered as a broken man through Khaz Algar (The War Within). In Midnight, the circle is completed: he rediscovers his faith in the Light and fights no longer as a king, but as a pure champion of righteousness defending Silvermoon and the Sunwell."
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].lore = [[The High King-in-absentia of the Alliance, Anduin Llane Wrynn feels like he has become a mere shadow of his former radiant self.
+He used to wield the light like few others, healing entire battlefields and consequently inspiring his people to fight on as a staunch defender of justice, tolerance and peace.  That changed when he was dominated by the Jailer and forced to help unravel the world he had sworn to protect while fully aware but unable to control his actions. Even after breaking free, he could not escape the fear that he was capable of such evil deeds, and something in Anduin broke.  He vanished for years, leaving his people and kingdom behind.
+Now, with Xal'atath threatening everything he holds dear, Anduin has finally returned into the fray, slowly starting to gain back his confidence and his faith in the Light.]]
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].source = "warcraft.wiki.gg/wiki/Anduin_Wrynn"
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].timeline = {
-    {era = "Legion", text = "Took the throne of Stormwind following the tragic death of his father, Varian."},
-    {era = "BfA", text = "Led the Alliance in the Fourth War, constantly striving for peace despite Sylvanas's atrocities."},
-    {era = "SL", text = "Was dominated by the Jailer Zovaal and used as a weapon against his own allies."},
-    {era = "TWW", text = "Refused to return to the throne, searching Khaz Algar for inner peace and his lost faith."},
-    {era = "Midnight", text = "Finally returns to the embrace of the Light to fight side by side with the elves against the Void."},
+    {era = "Pre-WC3", text = "Lost his mother when he was just a baby to the Stonemasons' riot."},
+    {era = "Classic", text = "Made King of Stormwind briefly during his father's disappearance. Captured by Onyxia but was rescued by his father, King Varian, after his return."},
+    {era = "WotLK", text = "Saved his father's life during the Scourge invasion of Stormwind."},
+    {era = "Pre-Cata", text = "Witnessed Magni's transformation into crystal and later resolved the Ironforge succesion crisis, preventing Moira's death at King Varian's hands. After yet another fight with his father later on, Anduin went to live with Velen, studying to become a priest of the Light."},
+    {era = "Cata", text = "Uncovered a plot of the Twilight's Hammer after his return to Stormwind."},
+    {era = "MoP", text = "Explored the newly-discovered continent of Pandaria, and got inspired by Pandaren philosophy. Personally tried to stop Garrosh Hellscream's warmongering but failed and got injured gravely in the process. Later met and befriended the dragon Wrathion."},
+    {era = "Pre-WoD", text = "Attended Garrosh's trial and prevented the poisoning of the former Warchief, risking his own life while doing so. Unsuccesfully tried to stop Wrathion from freeing Garrosh."},
+    {era = "Legion", text = "Crowned High King of the Alliance after Varian's death."},
+    {era = "Pre-BfA", text = "Welcomed the Lightforged Draenei and the Dark Iron Dwarves into the Alliance. Negotiated an event called \"the Gathering\" with Sylvanas Windrunner, to reunite willing Forsaken with their living relatives. To Anduin's dismay, the exchange ended in a massacre."},
+    {era = "BfA", text = "Led the Alliance during the Fourth War against the Horde, personally leading the army in the Battle for Lordaeron. Later formed an alliance with Varok Saurfang and supported his rebellion against Sylvanas, ultimately ending the war and declaring an armistice."},
+    {era = "SL", text = "Got captured by the Jailer's forces and was dominated to serve as a weapon for Death. Ultimately, with the help of the spirits of his father and Varok Saurfang, Anduin freed himself but was left deeply traumatized. Appointed Turalyon as Stormwind's regent and vanished."},
+    {era = "TWW", text = "Got convinced by Thrall to join the fight against Xal'atath. Fought in Hallowfall and regained his faith in the Light thanks to Faerin Lothar. Saved Khadgar's life."},
+    {era = "Midnight", text = "Prevented Umbric's execution and helped to defend the Sunwell from the Void."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].name = "High Exarch Turalyon"
