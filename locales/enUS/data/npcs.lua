@@ -123,7 +123,7 @@ Highly protective of the people she holds dear – even venturing into the realm
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].zones = {"Amirdrassil", "Harandar", "Silvermoon City", "Isle of Quel'Danas"}
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].timeline = {
-    {era = "Ancient History", text = "Was orphaned during the first invasion of the Burning Legion, adopted by Tyrande Whisperwind."},
+        {era = "Ancient", text = "Was orphaned during the first invasion of the Burning Legion, adopted by Tyrande Whisperwind."},
     {era = "WC3", text = "Fought the Burning Legion and Archimonde himself in Ashenvale and Mount Hyjal."},
     {era = "Classic", text = "Was promoted to high general of the Sentinels."},
     {era = "Cata", text = "Kept Kalimdor safe from Naga threats and began the admission of the Worgen to the Sentinels. Helped defend Ashenvale from Garrosh Hellscream's invasion."},
