@@ -120,8 +120,8 @@ IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].race = "Night Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].lore = [[Orphaned during the War of the Ancients, Shandris has known battle for almost as long as she has lived. Adopted by Tyrande Whisperwind and Malfurion Stormrage, she trained as a huntress and has since become one of the most formidable archers on Azeroth.
 Shandris has led the night elven and Alliance forces as high general of the Sentinel army on more than one occasion, and after being on the front lines of defense of the new world tree Amirdrassil, she now leads the Night Elves as their ruler.
 Highly protective of the people she holds dear – even venturing into the realms of death itself to rescue her mother – Shandris nowadays wants peace most of all. ]]
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].zones = {"Amirdrassil", "Harandar", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].source = "warcraft.wiki.gg/wiki/Shandris_Feathermoon"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].zones = {"Amirdrassil", "Harandar", "Silvermoon City", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].timeline = {
     {era = "Ancient History", text = "Was orphaned during the first invasion of the Burning Legion, adopted by Tyrande Whisperwind."},
     {era = "WC3", text = "Fought the Burning Legion and Archimonde himself in Ashenvale and Mount Hyjal."},
