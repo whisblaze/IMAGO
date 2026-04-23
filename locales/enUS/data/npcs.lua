@@ -115,17 +115,25 @@ IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].timeline = {
     {era = "Midnight", text = "Leads the Silver Covenant rangers in the defense of Silvermoon and the Isle of Quel'Danas."},
 }
 
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].name = "Shandris Feathermoon"
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].race = "Night Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].lore = "General Shandris Feathermoon is the supreme commander of the Sentinel Army and the adopted daughter of Tyrande Whisperwind. A veteran who fought in the War of the Ancients ten thousand years ago, she is one of Azeroth's most seasoned military leaders. In Midnight, she serves as a strategic link between the Night Elves and their cousins in Quel'Thalas. Her presence in Silvermoon and the forests of Harandar signals a historic unification of the Elven peoples in their desperate struggle against the Void."
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].zones = {"Amirdrassil", "Harandar", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].source = "warcraft.wiki.gg/wiki/Shandris_Feathermoon"
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_mondfeder"].timeline = {
-    {era = "Pre-Classic", text = "Survived the War of the Ancients as a young orphan and was adopted and trained by Tyrande Whisperwind."},
-    {era = "WC3", text = "Led the Sentinels during the invasion of the Burning Legion and defended Mount Hyjal."},
-    {era = "BfA", text = "Commanded Alliance forces in Nazjatar in the battle against Queen Azshara and the Naga Empire."},
-    {era = "DF", text = "Defended the new World Tree, Amirdrassil, in the Emerald Dream against the Primalists."},
-    {era = "Midnight", text = "Leads Night Elf military support in Quel'Thalas and coordinates the defense of Silvermoon."},
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].name = "Shandris Feathermoon"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].race = "Night Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].lore = [[Orphaned during the War of the Ancients, Shandris has known battle for almost as long as she has lived. Adopted by Tyrande Whisperwind and Malfurion Stormrage, she trained as a huntress and has since become one of the most formidable archers on Azeroth.
+Shandris has led the night elven and Alliance forces as high general of the Sentinel army on more than one occasion, and after being on the front lines of defense of the new world tree Amirdrassil, she now leads the Night Elves as their ruler.
+Highly protective of the people she holds dear – even venturing into the realms of death itself to rescue her mother – Shandris nowadays wants peace most of all. ]]
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].zones = {"Amirdrassil", "Harandar", "Silvermoon City", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].timeline = {
+        {era = "Ancient", text = "Was orphaned during the first invasion of the Burning Legion, adopted by Tyrande Whisperwind."},
+    {era = "WC3", text = "Fought the Burning Legion and Archimonde himself in Ashenvale and Mount Hyjal."},
+    {era = "Classic", text = "Was promoted to high general of the Sentinels."},
+    {era = "Cata", text = "Kept Kalimdor safe from Naga threats and began the admission of the Worgen to the Sentinels. Helped defend Ashenvale from Garrosh Hellscream's invasion."},
+    {era = "Pre-MoP", text = "Tried and failed to defend Theramore from the Horde."},
+    {era = "Legion", text = "Joined the Unseen Path and helped defeat Hakkar the Houndmaster."},
+    {era = "Pre-BfA", text = "Drove off Horde invaders in Darkshore but couldn't arrive in time to help defend Teldrassil."},
+    {era = "BfA", text = " Coordinated the Alliance war effort on Zandalar. Helped Tyrande to become the Night Warrior and fought back against the Horde in Darkshore once more. She led Alliance forces against Queen Aszhara after the battle in her homeland was won."},
+    {era = "SL", text = "Followed her mother Tyrande into the Shadowlands and freed her of the Night Warrior's curse."},
+    {era = "DF", text = "Defended Amirdrassil from Fyrakk's flames and worked together with the Forsaken in a first attempt at letting the Fourth War rest. Afterwards, Tyrande and Malfurion named her as the new leader of the Night Elves."},
+    {era = "Midnight", text = "Shandris has aided the Blood Elves against the threat of the Void and helped to create the Dawnwell."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].name = "Archmage Aethas Sunreaver"
