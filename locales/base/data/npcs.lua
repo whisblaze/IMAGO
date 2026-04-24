@@ -676,6 +676,22 @@ IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].timeline = {
     {era = "Midnight", text = "Defended Light’s Hope Chapel from the Scourge along with the rest of the Four Horsemen."},
 }
 
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].name = "Thassarian"
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].race = "Human"
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].lore =
+[[As a young man, Thassarian joined the Lordaeron army hoping to follow in his father’s footsteps, and followed Prince Arthas on his expedition to Northrend. It was there he was slain and reanimated as a death knight. During his time under the Lich King’s control, he committed many atrocities, even killing his mother. After being freed from the Lich King’s control, he joined the Knights of the Ebon Blade and became the first death knight to serve the Alliance, showing unwavering loyalty to humanity once more. Despite the faction divide, Thassarian maintains a powerful, complicated brotherhood with the Horde death knight Koltira Deathweaver, a bond forged in death that heavily influences his path.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].source = "Nebb - IMAGO Community"
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {
+    {era = "WC3", text = "hassarian enlisted in the army and followed Prince Arthas to Northrend to hunt Mal'Ganis. There, he was killed by Falric and then converted into a death knight by Arthas.  As a soldier of the Scourge, he was forced to attack Lordaeron and Quel'Thalas."},
+    {era = "Pre-WotLK", text = "Thassarian was sent to Acherus to attack Light’s Hope Chapel. However, the death knights were defeated, with Thassarian himself being convinced by his father’s ghost to stand down. No longer under the control of the Lich King, Thassarian then traveled to Stormwind and met with King Varian Wrynn who accepted the Knights of the Ebon Blade as allies."},
+    {era = "WotLK", text = "Thassarian joined the Alliance in Northrend to fight against the Scourge and rescue his sister. He later aided the war effort in Icecrown by using his knowledge of the Scourge to weaken their defenses and help open a path to the Citadel. Fighting alongside the Knights of the Ebon Blade, he confronted the Lich King but was forced to withdraw."},
+    {era = "WoD", text = "Journeyed to alternate Draenor to attempt to discover Ner’zhul’s secrets in an attempt to save Bolvar."},
+    {era = "Cata", text = "Thassarian led Alliance forces at Andorhal against the Forsaken. He later fought in Mount Hyjal against Ragnaros’ forces."},
+    {era = "Legion", text = "Thassarian aided the new Deathlord in raising the new Four Horsemen. Later, he fought at the Battle for the Exodar.  Rescued Koltira Deathweaver from the Undercity. "},
+    {era = "SL", text = "Followed Bolvar Fordragon into the Shadowlands to stop Sylvanas Windrunner."},
+    {era = "Midnight", text = "Helped defend Light's Hope Chapel in the Eastern Plaguelands."},
+}
 
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexus-King Salhadaar"
