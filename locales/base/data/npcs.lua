@@ -749,13 +749,27 @@ IMAGOdb.npcs.CAT_AMANI["janalai"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["halazzi"].name = "Halazzi"
-IMAGOdb.npcs.CAT_AMANI["halazzi"].race = "Forest Troll"
-IMAGOdb.npcs.CAT_AMANI["halazzi"].lore = "Halazzi was a proud forest troll before Hex Lord Malacrass's dark rituals elevated him to the avatar of the lynx god Shirvallah. In classic Zul'Aman, he embodied the wild, relentless hunt and was known for his lightning-fast, deadly ambush strikes. In Midnight, the circle is completed: the lynx avatar manifests once again in the ancient ruins of Zul'Aman. Fierce and patient as ever, he lurks in the shadows, ready to tear the forces of the Void to pieces."
+IMAGOdb.npcs.CAT_AMANI["halazzi"].race = "Lynx (Loa)"
+IMAGOdb.npcs.CAT_AMANI["halazzi"].lore = [[Loa of the Hunt. The Schemer. The Silver Shadow. Long ear. Forest trolls have many names for him and yet none of them can fully capture the nature of Halazzi. Deep inside the forests of Zul'Aman, Witherbark trolls worship Halazzi and call upon his aid when they hunt. The Lynx Loa hides hunters from their prey and blesses the wilds with mist and rain, keeping them ever bountiful. Although Halazzi is a playful loa, nothing can hide from his ears and eyes - they see the unseen and reveal any lies. Should you find yourself wandering in Amani forests, tread lightly - for Halazzi is never far.]]
 IMAGOdb.npcs.CAT_AMANI["halazzi"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["halazzi"].source = "warcraft.wiki.gg/wiki/Halazzi"
+IMAGOdb.npcs.CAT_AMANI["halazzi"].source = "Metrus"
 IMAGOdb.npcs.CAT_AMANI["halazzi"].timeline = {
-    {era = "TBC", text = "Became the lynx avatar of Shirvallah through Malacrass and lurked as a brutal boss in Zul'Aman, waiting for intruders."},
-    {era = "Midnight", text = "Manifests again in Zul'Aman to hunt the servants of the Void with the cunning and ferocity of the lynx."},
+    {
+        era = "TBC",
+        text = [[Got his essence stolen by Hex Lord Malacrass and imbued into Kurinje the Shadow. His spirit was freed when Horde champions defeated Zul'Jin.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Was among other Amani Loas who were called by Witch Doctor Khufu in Zul'Drak to ask for advice on rescuing Drakkari Loas.]],
+    },
+    {
+        era = "Cata",
+        text = [[Got his essence stolen by Hex Lord Malacrass (again) and was used to create loa avatar. His spirit was freed when adventurers defeated Daakara.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Returned as the primary loa of the Witherbark tribe and granted his powers to the forest trolls once again to drive back the Void from Zul'Aman.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_AMANI["zuljan"].name = "Zul'jan"
