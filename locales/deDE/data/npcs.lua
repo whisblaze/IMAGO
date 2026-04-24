@@ -680,6 +680,22 @@ IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].timeline = {
     {era = "Midnight", text = "Verteidigte gemeinsam mit den übrigen Vier Reitern die Kapelle des hoffnungsvollen Lichts gegen die Geißel."},
 }
 
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].name = "Thassarian"
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].race = "Mensch"
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].lore = [[Thassarian trat als junger Mann der Armee von Lordaeron bei, in der Hoffnung, in die Fußstapfen seines Vaters zu treten. Er folgte Prinz Arthas auf dessen Expedition nach Nordend. Dort wurde er erschlagen und als Todesritter wiedererweckt. Während er unter der Kontrolle des Lichkönigs stand, beging er viele Gräueltaten und tötete sogar seine eigene Mutter. Nachdem er aus der Kontrolle des Lichkönigs befreit worden war, schloss er sich den Rittern der Schwarzen Klinge an und wurde der erste Todesritter, der der Allianz diente. Damit bewies er der Menschheit einmal mehr seine unerschütterliche Loyalität. Trotz der Spaltung der Fraktionen pflegt Thassarian eine starke, komplizierte Bruderschaft mit dem Todesritter der Horde, Koltira Todesweber – ein im Tod geschmiedetes Band, das seinen weiteren Weg stark beeinflusst.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].zones = {"Östliche Pestländer"}
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].source = "druidian - IMAGO Community"
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {
+    {era = "WC3", text = "Thassarian trat der Armee bei und folgte Prinz Arthas nach Nordend, um Mal'Ganis zu jagen. Dort wurde er von Falric getötet und anschließend von Arthas in einen Todesritter verwandelt. Als Soldat der Geißel wurde er gezwungen, Lordaeron und Quel'Thalas anzugreifen."},
+    {era = "Pre-WotLK", text = "Thassarian wurde nach Acherus entsandt, um die Kapelle des Hoffnungsvollen Lichts anzugreifen. Die Todesritter wurden jedoch besiegt und Thassarian selbst vom Geist seines Vaters davon überzeugt, die Waffen niederzulegen. Da er nicht länger unter der Kontrolle des Lichkönigs stand, reiste Thassarian nach Sturmwind und traf sich mit König Varian Wrynn, der die Ritter der Schwarzen Klinge als Verbündete akzeptierte."},
+    {era = "WotLK", text = "Thassarian schloss sich der Allianz in Nordend an, um gegen die Geißel zu kämpfen und seine Schwester zu retten. Später unterstützte er die Kriegsanstrengungen in Eiskrone, indem er sein Wissen über die Geißel nutzte, um ihre Verteidigung zu schwächen und einen Weg zur Zitadelle zu öffnen. An der Seite der Ritter der Schwarzen Klinge trat er dem Lichkönig entgegen, war jedoch gezwungen, sich zurückzuziehen."},
+    {era = "WoD", text = "Er reiste in das alternative Draenor, um Ner'zhuls Geheimnisse zu lüften und Bolvar zu retten."},
+    {era = "Cata", text = "Thassarian führte die Streitkräfte der Allianz in Andorhal gegen die Verlassenen an. Später kämpfte er am Berg Hyjal gegen Ragnaros' Streitkräfte."},
+    {era = "Legion", text = "Thassarian half dem neuen Todesgebieter dabei, die neuen Vier Reiter zu erwecken. Später kämpfte er in der Schlacht um die Exodar. Er rettete Koltira Todesweber aus Unterstadt."},
+    {era = "SL", text = "Folgte Bolvar Fordragon in die Schattenlande, um Sylvanas Windläufer aufzuhalten."},
+    {era = "Midnight", text = "Half bei der Verteidigung der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern."},
+}
+
 
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexuskönig Salhadaar"
@@ -753,13 +769,27 @@ IMAGOdb.npcs.CAT_AMANI["janalai"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["halazzi"].name = "Halazzi"
-IMAGOdb.npcs.CAT_AMANI["halazzi"].race = "Waldtroll"
-IMAGOdb.npcs.CAT_AMANI["halazzi"].lore = "Halazzi war ein stolzer Waldtroll, bevor er durch Hexlord Malacrass' dunkle Rituale zum Avatar des Luchsgottes Shirvallah erhoben wurde. Im klassischen Zul'Aman verkörperte er die wilde, unbarmherzige Jagd und war für seine blitzschnellen, tödlichen Angriffe aus dem Hinterhalt bekannt. In Midnight schließt sich der Kreis: Der Luchs-Avatar manifestiert sich erneut in den uralten Ruinen von Zul'Aman. Wild und geduldig wie eh und je lauert er in den Schatten, bereit, die Truppen der Leere in Stücke zu reißen."
+IMAGOdb.npcs.CAT_AMANI["halazzi"].race = "Luchs (Loa)"
+IMAGOdb.npcs.CAT_AMANI["halazzi"].lore = [[Loa der Jagd. Der Ränkeschmied. Der Silberschatten. Langohr. Die Waldtrolle haben viele Namen für ihn, und doch kann keiner von ihnen die wahre Natur von Halazzi vollständig erfassen. Tief in den Wäldern von Zul'Aman verehren die Bleichborkentrolle Halazzi und rufen ihn bei der Jagd um Hilfe an. Der Luchsloa verbirgt Jäger vor ihrer Beute und segnet die Wildnis mit Nebel und Regen, wodurch sie stets fruchtbar bleibt. Obwohl Halazzi ein verspielter Loa ist, kann sich nichts vor seinen Ohren und Augen verbergen – sie sehen das Unsichtbare und decken jede Lüge auf. Solltet ihr jemals durch die Wälder der Amani wandern, tretet leise auf – denn Halazzi ist nie weit entfernt.]]
 IMAGOdb.npcs.CAT_AMANI["halazzi"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["halazzi"].source = "warcraft.wiki.gg/wiki/Halazzi"
+IMAGOdb.npcs.CAT_AMANI["halazzi"].source = "Metrus"
 IMAGOdb.npcs.CAT_AMANI["halazzi"].timeline = {
-    {era = "TBC", text = "Wurde durch Malacrass zum Luchs-Avatar von Shirvallah und lauerte als brutaler Boss in Zul'Aman auf Eindringlinge."},
-    {era = "Midnight", text = "Manifestiert sich erneut in Zul'Aman, um mit der List und Wildheit des Luchses gegen die Diener der Leere zu jagen."},
+    {
+        era = "TBC",
+        text = [[Seine Essenz wurde von Hexlord Malacrass gestohlen und in "Kurinje the Shadow" eingeflößt. Sein Geist wurde befreit, als Champions der Horde Zul'jin besiegten.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Gehörte zu den Amani-Loa, die von Hexendoktor Khufu in Zul'Drak angerufen wurden, um ihn um Rat bei der Rettung der Drakkari-Loa zu bitten.]],
+    },
+    {
+        era = "Cata",
+        text = [[Seine Essenz wurde (erneut) von Hexlord Malacrass gestohlen und genutzt, um einen Loa-Avatar zu erschaffen. Sein Geist wurde befreit, als die Abenteurer „Daakara” besiegten.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Er kehrte als primärer Loa des Stammes der Bleichborken zurück und gewährte den Waldtrollen in Zul'Aman erneut seine Kräfte, um die Leere zurückzuschlagen.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_AMANI["zuljan"].name = "Zul'jan"
