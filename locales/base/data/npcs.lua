@@ -164,14 +164,19 @@ IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].name = "Magister Umbric"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].race = "Void Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].lore = "Magister Umbric is the wise and pragmatic leader of the ren'dorei (Void Elves). Driven by the desire to defend Quel'Thalas at all costs, he once researched forbidden Void magic, which led to his exile by Grand Magister Rommath. In exile, he almost fell victim to the nether-prince Durzaan but was saved at the last moment by Alleria Windrunner. Although he now serves the Alliance, he has never lost his love for his homeland. Most recently, he led a research expedition to K'aresh until Arator the Redeemer sought him out in Tazavesh, warning him of the impending danger to Silvermoon. Without hesitation, Umbric gathered his people. In Midnight, despite the bitter past, he returns to his homeland, turning his mastery over the Void against Xal'atath's forces."
+IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].lore = [[No limits – that was Umbric's desire as a student of the arcane arts in Dalaran. Yet he found the mages' studies to be too rigid, too constricting for his liking. Seeing the fall of the Sunwell and his home of Quel'Thalas, he realized that he needed to try a different approach to magic. The elves of Silvermoon needed an alternative way to survive if the need arose... and so Umbric turned to the dark energies of the Void.
+He gathered quite a few acolytes practicing the forbidden arts in secret before he was discovered. Exiled by his former friend, Grand Magister Rommath, Umbric and his followers continued their studies and finally found a way into a rift of space and time – Telogrus. Here, they were transformed into the ren'dorei, elves infused with the Void itself. 
+After joining the Alliance, Umbric and his ren'dorei have become a small but elite force of specialists and have been on the forefront in the efforts against Xal'atath multiple times by now.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].zones = {"Amirdrassil", "The Voidspire", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Twilight Highlands", "Silvermoon City", "Stormwind City", "Magister's Terrace"}
-IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].source = "Quest: Die Geisterlande"
+IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
-    {era = "BfA", text = "Was exiled from Silvermoon for his Void research, transformed by the Void in the Ghostlands, and saved by Alleria Windrunner."},
-    {era = "BfA", text = "Pledged loyalty to the Alliance and led the Void Elf forces during the Fourth War in crucial acts of sabotage in Zandalar."},
-    {era = "TWW", text = "Established the Shan'dorah camp on K'aresh and was mobilized in Tazavesh by Arator after the defeat of Dimensius to save Silvermoon."},
-    {era = "Midnight", text = "Returns to Quel'Thalas to defend the Sunwell and operates deep within Void-distorted zones like the Voidspire."},
+    {era = "Pre-WC1", text = "Studied the Arcane in Dalaran alongside his friends Rommath and Dar'Khan Drathir."},
+    {era = "Pre-WotLK", text = "Exiled from Silvermoon for practicing forbidden void magic."},
+    {era = "Legion", text = "Discovered Telogrus Rift and turned into ren'dorei along with his followers. Joined Alleria Windrunner after she offered them a place in the Alliance."},
+    {era = "BfA", text = "Fought in the Fourth War and proved his worth to the Alliance."},
+    {era = "DF", text = "Began the hunt for Xal'atath alongside Alleria Windrunner and defended Telogrus Rift from the Harbinger's void forces."},
+    {era = "TWW", text = "Established an outpost on K'aresh, lending the ren'dorei's strength in the fight against Dimensius."},
+    {era = "Midnight", text = "With Silvermoon in danger, Umbric returned to his former homeland to combat the Void. He managed to open a passage into the Voidstorm and later helped to create the Dawnwell. For his efforts he was readmitted into Silvermoon with a full pardon."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].name = "Lady Darkglen"
@@ -684,7 +689,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].lore =
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].zones = {"Eastern Plaguelands"}
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].source = "druidian - IMAGO Community"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {
-    {era = "WC3", text = "hassarian enlisted in the army and followed Prince Arthas to Northrend to hunt Mal'Ganis. There, he was killed by Falric and then converted into a death knight by Arthas.  As a soldier of the Scourge, he was forced to attack Lordaeron and Quel'Thalas."},
+    {era = "WC3", text = "Thassarian enlisted in the army and followed Prince Arthas to Northrend to hunt Mal'Ganis. There, he was killed by Falric and then converted into a death knight by Arthas.  As a soldier of the Scourge, he was forced to attack Lordaeron and Quel'Thalas."},
     {era = "Pre-WotLK", text = "Thassarian was sent to Acherus to attack Light’s Hope Chapel. However, the death knights were defeated, with Thassarian himself being convinced by his father’s ghost to stand down. No longer under the control of the Lich King, Thassarian then traveled to Stormwind and met with King Varian Wrynn who accepted the Knights of the Ebon Blade as allies."},
     {era = "WotLK", text = "Thassarian joined the Alliance in Northrend to fight against the Scourge and rescue his sister. He later aided the war effort in Icecrown by using his knowledge of the Scourge to weaken their defenses and help open a path to the Citadel. Fighting alongside the Knights of the Ebon Blade, he confronted the Lich King but was forced to withdraw."},
     {era = "WoD", text = "Journeyed to alternate Draenor to attempt to discover Ner’zhul’s secrets in an attempt to save Bolvar."},

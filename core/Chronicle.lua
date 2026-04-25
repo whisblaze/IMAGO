@@ -164,7 +164,7 @@ function IMAGO.Chronicle.CreateFrame()
     local f = CreateFrame("Frame", "IMAGOChronicleFrame", UIParent, "BackdropTemplate")
     f:SetFrameStrata("DIALOG")
     f:SetFrameLevel(100)
-    f:SetSize(950, 700)
+    f:SetSize(1100, 700)
     f:SetPoint("CENTER")
     f:SetFrameStrata("HIGH")
     f:EnableMouse(true)
@@ -369,20 +369,20 @@ function IMAGO.Chronicle.CreateFrame()
 
     -- Die Zierlinien unter dem Titel
     f.detailLineLeft = f.detailFrame:CreateTexture(nil, "ARTWORK")
-    f.detailLineLeft:SetSize(280, 1)
+    f.detailLineLeft:SetSize(355, 1)
     f.detailLineLeft:SetPoint("TOPRIGHT", f.detailTitle, "BOTTOM", 0, -8)
     f.detailLineLeft:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
     f.detailLineLeft:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0), CreateColor(1, 0.78, 0.1, 0.7))
 
     f.detailLineRight = f.detailFrame:CreateTexture(nil, "ARTWORK")
-    f.detailLineRight:SetSize(280, 1)
+    f.detailLineRight:SetSize(355, 1)
     f.detailLineRight:SetPoint("TOPLEFT", f.detailTitle, "BOTTOM", 0, -8)
     f.detailLineRight:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
     f.detailLineRight:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0.7), CreateColor(1, 0.78, 0.1, 0))
 
     -- Zonen-Elemente (Bild, Rahmen, Trenner)
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
-    f.detailImage:SetSize(580, 200)
+    f.detailImage:SetSize(680, 200)
     f.detailImage:SetPoint("TOP", f.detailFrame, "TOP", 0, -70)
     f.detailImage:SetTexCoord(0, 1, 0.195, 0.805) 
     f.detailImage:Hide()
@@ -434,13 +434,13 @@ function IMAGO.Chronicle.CreateFrame()
     if infoScrollBar then infoScrollBar:SetAlpha(0) end
 
     f.infoContent = CreateFrame("Frame", nil, f.infoScroll)
-    f.infoContent:SetSize(290, 1)
+    f.infoContent:SetSize(440, 1)
     f.infoScroll:SetScrollChild(f.infoContent)
 
     f.loreBody = f.infoContent:CreateFontString(nil, "OVERLAY")
-    f.loreBody:SetFont(FONT_BODY, 15)
+    f.loreBody:SetFont(FONT_BODY, 14)
     f.loreBody:SetPoint("TOPLEFT", f.infoContent, "TOPLEFT", 0, 0)
-    f.loreBody:SetWidth(290)
+    f.loreBody:SetWidth(420)
     f.loreBody:SetJustifyH("LEFT")
     f.loreBody:SetTextColor(0.9, 0.9, 0.9)
     f.loreBody:SetSpacing(6)
@@ -449,7 +449,7 @@ function IMAGO.Chronicle.CreateFrame()
     -- BILD FÜR DIE ZONEN-DETAILANSICHT (PANORAMA)
     -- ==========================================
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
-    f.detailImage:SetSize(580, 180) -- Breites Panorama-Format
+    f.detailImage:SetSize(680, 180) -- Breites Panorama-Format
     f.detailImage:SetPoint("TOP", f.detailFrame, "TOP", 0, -70) -- Mittig zentriert
     f.detailImage:SetTexCoord(0, 1, 0.15, 0.85) -- Schneidet 15% oben/unten ab für den ultimativen Kino-Look
     f.detailImage:Hide()
@@ -464,22 +464,74 @@ function IMAGO.Chronicle.CreateFrame()
     })
     f.detailImageBorder:SetBackdropBorderColor(1, 0.78, 0.1, 0.8)
     f.detailImageBorder:Hide()
-
-
     f.detailModel = CreateFrame("PlayerModel", nil, f.detailFrame)
     f.detailModel:SetSize(280, 400)
     f.detailModel:SetPoint("TOPLEFT", f.detailFrame, "TOPLEFT", 10, -80)
-    f.detailModel:Hide() 
-    
-    f.detailModel.bg = f.detailModel:CreateTexture(nil, "BACKGROUND")
-    f.detailModel.bg:SetAllPoints()
-    f.detailModel.bg:SetColorTexture(1, 0.78, 0.1, 0.03)
-    
-    f.detailModel.border = f.detailModel:CreateTexture(nil, "BORDER")
-    f.detailModel.border:SetAllPoints()
-    f.detailModel.border:SetAtlas("UI-Frame-Oribos-PortraitFrame", true)
-    f.detailModel.border:SetBlendMode("ADD")
-    f.detailModel.border:SetAlpha(0.2)
+    -- Kein Rahmen - Modell steht frei im Raum
+
+    -- Animation-Switcher Buttons
+    f.detailModel.animButtons = {}
+    local anims = {
+        {id=3, label="St", name="Static"},
+        {id=5, label="Ru", name="Run"},
+        {id=26, label="Cs", name="Combat"},
+        {id=18, label="At", name="Attack"}
+    }
+
+    local function UpdateAnimButtons(activeId)
+        for _, btn in ipairs(f.detailModel.animButtons) do
+            if btn.animId == activeId then
+                btn.bg:SetVertexColor(1, 0.78, 0.1, 0.4)
+            else
+                btn.bg:SetVertexColor(0.1, 0.1, 0.1, 0.6)
+            end
+        end
+    end
+
+    for i, anim in ipairs(anims) do
+        local btn = CreateFrame("Button", nil, f.detailModel)
+        btn:SetSize(20, 18)
+        btn:SetPoint("BOTTOMLEFT", 8 + (i-1)*24, 8)
+        btn.animId = anim.id
+
+        -- Hintergrund
+        btn.bg = btn:CreateTexture(nil, "BACKGROUND")
+        btn.bg:SetAllPoints()
+        btn.bg:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+
+        -- Text
+        btn.text = btn:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        btn.text:SetPoint("CENTER")
+        btn.text:SetText(anim.label)
+        btn.text:SetTextColor(0.8, 0.8, 0.8)
+
+        -- Click
+        btn:SetScript("OnClick", function()
+            f.detailModel:SetAnimation(anim.id)
+            f.detailModel.currentAnim = anim.id
+            UpdateAnimButtons(anim.id)
+        end)
+
+        -- Hover
+        btn:SetScript("OnEnter", function()
+            btn.text:SetTextColor(1, 0.85, 0.1)
+        end)
+        btn:SetScript("OnLeave", function()
+            btn.text:SetTextColor(0.8, 0.8, 0.8)
+        end)
+
+        table.insert(f.detailModel.animButtons, btn)
+    end
+
+    f.detailModel.UpdateAnimButtons = UpdateAnimButtons
+
+    -- OnShow Animation starten
+    f.detailModel:SetScript("OnShow", function(self)
+        self:SetAnimation(0) -- Stand als Default
+        if self.UpdateAnimButtons then
+            self.UpdateAnimButtons(0)
+        end
+    end)
     
     f.detailModel:EnableMouse(true)
     f.detailModel:EnableMouseWheel(true)
@@ -873,28 +925,46 @@ function IMAGO.Chronicle.CreateFrame()
                     end
                 end
 
-                local contributors = {
-                    {name = "Austin", roles = "Archivist, Lore Scribe", top = true},
-                    {name = "Cadash", roles = "Lore Scribe, Translator", top = true},
-                    {name = "druidian", roles = "Archivist, Lore Scribe", top = true},
-                    {name = "Minorou", roles = "Lore Scribe", top = true},
-                    {name = "Elanor", roles = "Data Miner, Translator", top = true},
-                    {name = "Kittywulfe", roles = "Tester"},
-                    {name = "MortiousPrime", roles = "Archivist, Lore Scribe, Data Miner"},
-                    {name = "Moshwan", roles = "Archivist"},
-                    {name = "Duschgell", roles = "Archivist"},
-                    {name = "Lemurensohn", roles = "Archivist, Translator"},
-                    {name = "Karstan", roles = "Lore Scribe, Translator"},
-                    {name = "Spibe", roles = "Lore Scribe"},
-                    {name = "Riknar", roles = "Lore Scribe"},
-                    {name = "Saljourn", roles = "Lore Scribe, Data Miner"},
-                    {name = "zelkaris", roles = "Lore Scribe, Data Miner, Lua Developer"},
-                    {name = "Nihilea", roles = "Data Miner, Translator"},
-                    {name = "Remu", roles = "Data Miner, Translator"},
-                    {name = "MayaWoW", roles = "Data Miner, Translator"},
-                    {name = "ALI4S", roles = "Lua Developer"},
-                    {name = "johnnyd2", roles = "Tester"},
-                }
+local contributors = {
+                {name = "Cadash", roles = "Lore Scribe, Translator", top = true},
+                {name = "austin", roles = "Archivist, Lore Scribe", top = true},
+                {name = "Elanor", roles = "Data Miner, Translator, Moderator", top = true},
+                {name = "druidian", roles = "Archivist, Lore Scribe", top = true},
+                {name = "Minorou", roles = "Lore Scribe", top = true},
+                {name = "MayaWoW", roles = "Data Miner, Translator"},
+                {name = "Lewi", roles = "Archivist, Lore Scribe, Translator"},
+                {name = "DeMaa", roles = "Archivist, Lore Scribe, Data Miner, Translator, Lua Developer, Moderator"},
+                {name = "Elsafan (Crazycat).", roles = "Archivist, Data Miner"},
+                {name = "Karstan", roles = "Lore Scribe, Translator"},
+                {name = "Nebb", roles = "Lore Scribe"},
+                {name = "Metrus", roles = "Lore Scribe, Translator"},
+                {name = "Travanoid", roles = "Lore Scribe"},
+                {name = "Lemurensohn", roles = "Archivist, Translator"},
+                {name = "zeerocool11", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
+                {name = "ALI4S", roles = "Lua Developer"},
+                {name = "Remu", roles = "Data Miner, Translator"},
+                {name = "zelkaris", roles = "Lore Scribe, Data Miner, Lua Developer"},
+                {name = "Duschgell", roles = "Archivist"},
+                {name = "Nihilea", roles = "Data Miner, Translator"},
+                {name = "Saljourn", roles = "Lore Scribe, Data Miner"},
+                {name = "Riknar", roles = "Lore Scribe"},
+                {name = "MortiousPrime", roles = "Archivist, Lore Scribe, Data Miner"},
+                {name = "LeoColpas", roles = "Translator"},
+                {name = "Chadson Chappo", roles = "Archivist"},
+                {name = "ruffboi", roles = "Lore Scribe"},
+                {name = "Echo_Delta_Golf", roles = "Lore Scribe"},
+                {name = "Lilith", roles = "Translator"},
+                {name = "LowRoars", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
+                {name = "咪嚕", roles = "Archivist, Translator"},
+                {name = "Silver_Wind809", roles = "Data Miner, Lua Developer"},
+                {name = "William Orr", roles = "Data Miner"},
+                {name = "Nuise_16094", roles = "Translator"},
+                {name = "Nuise", roles = "Translator"},
+                {name = "Jay! :P", roles = "Lore Scribe, Data Miner"},
+                {name = "!pxrty193", roles = "Lua Developer"},
+                {name = "johnnyd2", roles = "Tester"},
+                {name = "Kittywulfe", roles = "Tester"},
+}
 
                 local yOffset = -40 -- Mehr Platz nach der Trennlinie
                 local spacing = 25
@@ -982,7 +1052,7 @@ f.ShowDashboard = function()
         f.infoScroll:ClearAllPoints()
         f.infoScroll:SetPoint("TOPLEFT", f.detailFrame, "TOPLEFT", 310, -115)
         f.infoScroll:SetPoint("BOTTOMRIGHT", f.detailFrame, "BOTTOMRIGHT", -15, 100)
-        f.loreBody:SetWidth(290)
+        f.loreBody:SetWidth(420)
 
         if mode == "lore" then 
             f.loreBody:Show()
@@ -1006,54 +1076,116 @@ function IMAGO.Chronicle.RenderTimeline()
     local data = f.selectedNPC
     if not data or not data.timeline then return end
 
-    if not f.timelineContainer then 
+    if not f.timelineContainer then
         f.timelineContainer = CreateFrame("Frame", nil, f.infoContent)
-        f.timelineContainer:SetPoint("TOPLEFT")
-        f.timelineContainer:SetSize(320, 1) 
+        f.timelineContainer:SetPoint("TOPLEFT", 20, 0)
+        f.timelineContainer:SetSize(420, 1)
         f.timelineContainer.eras = {}
         f.timelineContainer.texts = {}
+        f.timelineContainer.dividers = {}
     end
     f.timelineContainer:Show()
-    
-    for _, fs in ipairs(f.timelineContainer.eras) do fs:Hide() end
-    for _, fs in ipairs(f.timelineContainer.texts) do fs:Hide() end
-    
+
+    -- Alle vorherigen Elemente verstecken (pairs für sparse tables)
+    for _, fs in pairs(f.timelineContainer.eras) do fs:Hide() end
+    for _, fs in pairs(f.timelineContainer.texts) do fs:Hide() end
+    for _, div in pairs(f.timelineContainer.dividers) do div:Hide() end
+
     local y = 0
-    local locale = GetLocale()
+    local entryCount = #data.timeline
 
     for i, entry in ipairs(data.timeline) do
+        -- Dezente Trennlinie vor jedem Eintrag (außer dem ersten)
+        if i > 1 then
+            local divider = f.timelineContainer.dividers[i]
+            if not divider then
+                divider = f.timelineContainer:CreateTexture(nil, "ARTWORK")
+                divider:SetSize(320, 1)
+                divider:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+                f.timelineContainer.dividers[i] = divider
+            end
+            divider:SetPoint("TOPLEFT", 0, -y + 10)
+            divider:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0.15), CreateColor(1, 0.78, 0.1, 0.05))
+            divider:Show()
+        end
+
         local era = f.timelineContainer.eras[i]
         if not era then
             era = f.timelineContainer:CreateFontString(nil, "OVERLAY")
             era:SetFont(FONT_BODY, 13, "OUTLINE")
             f.timelineContainer.eras[i] = era
         end
-        
+
         local col = eraColors[entry.era] or {1, 1, 1}
         era:SetTextColor(unpack(col))
         era:SetPoint("TOPLEFT", 0, -y)
         era:SetText("[" .. entry.era .. "]")
         era:Show()
-        
+
         local txt = f.timelineContainer.texts[i]
         if not txt then
             txt = f.timelineContainer:CreateFontString(nil, "OVERLAY")
             txt:SetFont(FONT_BODY, 14, "")
-            txt:SetWidth(230)
+            txt:SetWidth(310)
             txt:SetJustifyH("LEFT")
-            txt:SetTextColor(0.9, 0.9, 0.9)
             txt:SetSpacing(4)
             f.timelineContainer.texts[i] = txt
         end
-        
-        txt:SetPoint("TOPLEFT", 80, -y)
-        txt:SetText(entry.text or "")
+
+        -- Midnight Spoiler-Schutz
+        local isMidnight = (entry.era == "Midnight")
+        local npcSlug = f.selectedNPCSlug or ""
+        IMAGOSaved.revealedMidnight = IMAGOSaved.revealedMidnight or {}
+        local isRevealed = IMAGOSaved.revealedMidnight[npcSlug]
+
+        if isMidnight and not isRevealed then
+            local L = IMAGO.L
+            txt:SetText("[" .. L["SPOILER_MIDNIGHT_TITLE"] .. "] — " .. L["SPOILER_MIDNIGHT_HINT"])
+            txt:SetTextColor(0.42, 0.0, 0.8) -- Midnight-Leeren-Violett
+            txt.realText = entry.text
+            txt.npcSlug = npcSlug
+            txt.isSpoiler = true
+            txt:EnableMouse(true)
+            txt:SetScript("OnMouseUp", function(self)
+                IMAGOSaved.revealedMidnight[self.npcSlug] = true
+                self:SetText(self.realText)
+                self:SetTextColor(0.9, 0.9, 0.9)
+                self.isSpoiler = false
+                UIFrameFadeIn(self, 0.3, 0, 1)
+            end)
+            txt:SetScript("OnEnter", function(self)
+                if self.isSpoiler then
+                    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                    GameTooltip:SetText("⚠️ " .. L["SPOILER_TOOLTIP_TITLE"], 1, 0.2, 0.2)
+                    GameTooltip:AddLine(L["SPOILER_TOOLTIP_DESC"], 0.8, 0.8, 0.8)
+                    GameTooltip:Show()
+                    -- Hover-Effekt: Text heller
+                    self:SetTextColor(0.6, 0.2, 1.0)
+                end
+            end)
+            txt:SetScript("OnLeave", function(self)
+                GameTooltip:Hide()
+                if self.isSpoiler then
+                    self:SetTextColor(0.42, 0.0, 0.8)
+                end
+            end)
+        else
+            -- Normaler Text
+            txt:SetText(entry.text or "")
+            txt:SetTextColor(0.9, 0.9, 0.9)
+            txt.isSpoiler = false
+            txt:EnableMouse(false)
+            txt:SetScript("OnMouseUp", nil)
+            txt:SetScript("OnEnter", nil)
+            txt:SetScript("OnLeave", nil)
+        end
+        txt:SetPoint("TOPLEFT", 100, -y)
         txt:Show()
-        
+
         local textHeight = txt:GetStringHeight()
-        y = y + math.max(20, textHeight) + 18 
+        y = y + math.max(20, textHeight) + 28
     end
-    f.timelineContainer:SetHeight(y)
+    f.timelineContainer:SetHeight(y - 5)
 end
 
 function IMAGO.Chronicle.UpdateList()
@@ -1402,6 +1534,7 @@ function IMAGO.Chronicle.UpdateList()
 
                         f.startPage:Hide()
                         f.selectedNPC = npc.data
+                        f.selectedNPCSlug = npc.slug
                         
                         for _, b in pairs(IMAGO.Chronicle.buttons) do
                             if b.selected then b.selected:Hide() end
@@ -1436,14 +1569,25 @@ function IMAGO.Chronicle.UpdateList()
                                 f.detailTitle:SetShadowColor(0, 0, 0, 1)
                                 f.detailTitle:SetShadowOffset(2, -2)
 
-                                f.loreBody:SetText(npc.data.lore or "")
+                                local lore = npc.data.lore or ""
+                                local firstLetter = lore:sub(1,1)
+                                local restLore = lore:sub(2)
+                                f.loreBody:SetText("|cffffd700" .. firstLetter .. "|r" .. restLore)
                                 
                                 f.detailModel:ClearModel()
                                 local modelID = GetValidModelID(npc.data)
                                 if modelID then 
                                     f.detailModel:SetCreature(modelID)
-                                    C_Timer.After(0.15, function()
-                                        if f.detailModel:IsShown() then f.detailModel:SetCreature(modelID) end
+                                    -- Animation nach kurzer Verzögerung starten (Modell muss laden)
+                                    C_Timer.After(0.2, function()
+                                        if f.detailModel:IsShown() then 
+                                            f.detailModel:SetCreature(modelID)
+                                            f.detailModel:SetAnimation(0)
+                                            -- Buttons auf Stand zurücksetzen
+                                            if f.detailModel.UpdateAnimButtons then
+                                                f.detailModel.UpdateAnimButtons(0)
+                                            end
+                                        end
                                     end)
                                 end
                                 
@@ -1669,7 +1813,7 @@ elseif activeTab == 2 then
                     f.detailImage:SetTexture(zoneData.texturePath)
                     f.detailImage:SetDesaturated(false) 
                     f.detailImage:SetVertexColor(1, 1, 1, 1) 
-                    f.detailImage:SetSize(580, 200)
+                    f.detailImage:SetSize(680, 200)
                     f.detailImage:SetTexCoord(0, 1, 0.195, 0.805) 
                     f.detailImage:Show()
                     if f.detailImageBorder then f.detailImageBorder:Show() end
@@ -1690,12 +1834,12 @@ elseif activeTab == 2 then
                 end
                 
                 f.loreBody:SetText(formattedLore)
-                f.loreBody:SetWidth(500)
+                f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("LEFT")
                 f.loreBody:Show()
                 
                 f.infoScroll:ClearAllPoints()
-                f.infoScroll:SetWidth(520)
+                f.infoScroll:SetWidth(680)
                 f.infoScroll:SetPoint("TOP", f.detailFrame, "TOP", 0, -300)
                 f.infoScroll:SetPoint("BOTTOM", f.detailFrame, "BOTTOM", 0, 100)
                 f.infoScroll:Show()
@@ -1732,7 +1876,7 @@ elseif activeTab == 2 then
                     f.detailImage:SetTexture("Interface\\AddOns\\IMAGO\\media\\worldmap.tga")
                     f.detailImage:SetDesaturated(true) 
                     f.detailImage:SetVertexColor(0.4, 0.4, 0.4, 0.8) 
-                    f.detailImage:SetSize(580, 430) 
+                    f.detailImage:SetSize(680, 400) 
                     f.detailImage:SetTexCoord(0, 1, 0, 1)
                     f.detailImage:Show()
                 end
@@ -1740,12 +1884,12 @@ elseif activeTab == 2 then
                 local warningHeader = "\n\n|cffaaaaaa" .. (IMAGO.L["ZONE_UNEXPLORED_HEADER"] or "GEBIET UNERKUNDET") .. "|r"
                 local descText = "\n\n|cff666666" .. (IMAGO.L["ZONE_UNEXPLORED_DESC"] or "Die Kartographie dieser Region ist noch unvollständig.\nReise dorthin, um ihre Geheimnisse zu offenbaren.") .. "|r"
                 f.loreBody:SetText(warningHeader .. descText)
-                f.loreBody:SetWidth(500)
+                f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("CENTER")
                 f.loreBody:Show()
                 
                 f.infoScroll:ClearAllPoints()
-                f.infoScroll:SetWidth(520)
+                f.infoScroll:SetWidth(680)
                 f.infoScroll:SetPoint("TOP", f.detailFrame, "TOP", 0, -470)
                 f.infoScroll:SetPoint("BOTTOM", f.detailFrame, "BOTTOM", 0, 100)
                 f.infoScroll:Show()

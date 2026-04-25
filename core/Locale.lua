@@ -137,6 +137,12 @@ if locale == "deDE" then
     L["CREDITS_ROLE_TRANSLATOR"] = "Translators"
     L["CREDITS_ROLE_TESTER"] = "Testers"
 
+    -- Midnight Spoiler Protection
+    L["SPOILER_MIDNIGHT_TITLE"] = "Midnight-Ereignis"
+    L["SPOILER_MIDNIGHT_HINT"] = "Klicken zum Anzeigen"
+    L["SPOILER_TOOLTIP_TITLE"] = "SPOILER"
+    L["SPOILER_TOOLTIP_DESC"] = "Midnight Expansion"
+
 else
     -- English (default für enUS, enGB, und alle anderen)
     L["WINDOW_TITLE"]      = "Chronicle of the Unforgotten"
@@ -266,4 +272,11 @@ else
     L["CREDITS_ROLE_MINER"] = "Data Miners"
     L["CREDITS_ROLE_TRANSLATOR"] = "Translators"
     L["CREDITS_ROLE_TESTER"] = "Testers"
+
+    -- Midnight Spoiler Protection
+    L["SPOILER_MIDNIGHT_TITLE"] = "Midnight Event"
+    L["SPOILER_MIDNIGHT_HINT"] = "Click to reveal"
+    L["SPOILER_TOOLTIP_TITLE"] = "SPOILER"
+    L["SPOILER_TOOLTIP_DESC"] = "Midnight Expansion"
+
 end
