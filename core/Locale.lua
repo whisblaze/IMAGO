@@ -143,6 +143,20 @@ if locale == "deDE" then
     L["SPOILER_TOOLTIP_TITLE"] = "SPOILER"
     L["SPOILER_TOOLTIP_DESC"] = "Midnight Expansion"
 
+    -- Mode Toggle
+    L["MODE_LABEL"]        = "Modus"
+    L["MODE_EXPLORER"]     = "Entdecker-Modus"
+    L["MODE_ENCYCLOPEDIA"] = "Enzyklopädie-Modus"
+    L["MODE_MANUAL_UNLOCK"]= "Manuell freischalten"
+
+    -- Confirm Dialogs
+    L["CONFIRM_YES"]              = "Ja"
+    L["CONFIRM_NO"]               = "Nein"
+    L["CONFIRM_ENC_TITLE"]        = "Enzyklopädie-Modus aktivieren"
+    L["CONFIRM_ENC_DESC"]         = "Alle Inhalte werden sichtbar,\nzählen aber nicht für deinen Fortschritt.\n\nFortfahren?"
+    L["CONFIRM_UNLOCK_TITLE"]     = "Inhaltsvorschau freischalten"
+    L["CONFIRM_UNLOCK_DESC"]      = "Dieser Eintrag wird für dich lesbar, zählt aber nicht für deinen Fortschritt.\n\nFreischalten?"
+
 else
     -- English (default für enUS, enGB, und alle anderen)
     L["WINDOW_TITLE"]      = "Chronicle of the Unforgotten"
@@ -278,5 +292,19 @@ else
     L["SPOILER_MIDNIGHT_HINT"] = "Click to reveal"
     L["SPOILER_TOOLTIP_TITLE"] = "SPOILER"
     L["SPOILER_TOOLTIP_DESC"] = "Midnight Expansion"
+
+    -- Mode Toggle
+    L["MODE_LABEL"]        = "Mode"
+    L["MODE_EXPLORER"]     = "Explorer Mode"
+    L["MODE_ENCYCLOPEDIA"] = "Encyclopedia Mode"
+    L["MODE_MANUAL_UNLOCK"]= "Manually unlock"
+
+    -- Confirm Dialogs
+    L["CONFIRM_YES"]              = "Yes"
+    L["CONFIRM_NO"]               = "No"
+    L["CONFIRM_ENC_TITLE"]        = "Enable Encyclopedia Mode"
+    L["CONFIRM_ENC_DESC"]         = "All content becomes visible,\nbut won't count toward your progress.\n\nContinue?"
+    L["CONFIRM_UNLOCK_TITLE"]     = "Unlock Content Preview"
+    L["CONFIRM_UNLOCK_DESC"]      = "This entry will become readable but won't count toward your progress.\n\nUnlock?"
 
 end

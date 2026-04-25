@@ -31,6 +31,9 @@ local defaults = {
     breakContactDistance = 50,
     -- Debug: Chat-Ausgabe bei Zonen-Checks (raw vs. aufgelöste uiMapID)
     debugMap      = false,
+    -- Mode Toggle
+    encyclopediaMode = false,
+    manualUnlocks = {},
 }
 
 -- ============================================================

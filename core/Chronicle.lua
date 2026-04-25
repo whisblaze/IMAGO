@@ -742,6 +742,185 @@ function IMAGO.Chronicle.CreateFrame()
     })
     f.footer.bar.border:SetBackdropBorderColor(1, 0.78, 0.1, 0.5)
 
+    -- ==========================================
+    -- MODE TOGGLE BUTTON + DROPDOWN
+    -- ==========================================
+    f.modeBtn = CreateFrame("Button", nil, f.detailFrame, "BackdropTemplate")
+    f.modeBtn:SetSize(85, 22)
+    f.modeBtn:SetPoint("TOPLEFT", f.detailFrame, "TOPLEFT", 14, -14)
+    f.modeBtn:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
+    f.modeBtn:SetBackdropColor(0.05, 0.05, 0.05, 0.85)
+    f.modeBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+
+    f.modeBtn.label = f.modeBtn:CreateFontString(nil, "OVERLAY")
+    f.modeBtn.label:SetFont(FONT_BODY, 11, "OUTLINE")
+    f.modeBtn.label:SetPoint("CENTER", f.modeBtn, "CENTER", 0, 0)
+    f.modeBtn.label:SetTextColor(1, 0.85, 0.1)
+
+    local function UpdateModeBtn()
+        f.modeBtn.label:SetText(IMAGO.L["MODE_LABEL"])
+    end
+
+    -- ==========================================
+    -- CONFIRM DIALOG (wiederverwendbar)
+    -- ==========================================
+    f.confirmDialog = CreateFrame("Frame", nil, f, "BackdropTemplate")
+    f.confirmDialog:SetSize(320, 130)
+    f.confirmDialog:SetPoint("CENTER", f.detailFrame, "CENTER", 0, 20)
+    f.confirmDialog:SetFrameStrata("FULLSCREEN_DIALOG")
+    f.confirmDialog:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 14, insets = {left=4,right=4,top=4,bottom=4} })
+    f.confirmDialog:SetBackdropColor(0.04, 0.04, 0.06, 0.97)
+    f.confirmDialog:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+    f.confirmDialog:Hide()
+
+    f.confirmDialog.title = f.confirmDialog:CreateFontString(nil, "OVERLAY")
+    f.confirmDialog.title:SetFont(FONT_BODY, 13, "OUTLINE")
+    f.confirmDialog.title:SetPoint("TOP", f.confirmDialog, "TOP", 0, -14)
+    f.confirmDialog.title:SetTextColor(1, 0.85, 0.1)
+
+    f.confirmDialog.line = f.confirmDialog:CreateTexture(nil, "ARTWORK")
+    f.confirmDialog.line:SetSize(280, 1)
+    f.confirmDialog.line:SetPoint("TOP", f.confirmDialog.title, "BOTTOM", 0, -6)
+    f.confirmDialog.line:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+    f.confirmDialog.line:SetVertexColor(1, 0.78, 0.1, 0.4)
+
+    f.confirmDialog.desc = f.confirmDialog:CreateFontString(nil, "OVERLAY")
+    f.confirmDialog.desc:SetFont(FONT_BODY, 11)
+    f.confirmDialog.desc:SetPoint("TOP", f.confirmDialog.line, "BOTTOM", 0, -8)
+    f.confirmDialog.desc:SetWidth(290)
+    f.confirmDialog.desc:SetJustifyH("CENTER")
+    f.confirmDialog.desc:SetTextColor(0.85, 0.85, 0.85)
+    f.confirmDialog.desc:SetSpacing(3)
+
+    local function MakeConfirmBtn(label, xOff, color)
+        local btn = CreateFrame("Button", nil, f.confirmDialog, "BackdropTemplate")
+        btn:SetSize(90, 24)
+        btn:SetPoint("BOTTOM", f.confirmDialog, "BOTTOM", xOff, 10)
+        btn:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
+        btn:SetBackdropColor(0.05, 0.05, 0.05, 0.9)
+        btn:SetBackdropBorderColor(color[1], color[2], color[3], 0.7)
+        btn.lbl = btn:CreateFontString(nil, "OVERLAY")
+        btn.lbl:SetFont(FONT_BODY, 11, "OUTLINE")
+        btn.lbl:SetPoint("CENTER")
+        btn.lbl:SetText(label)
+        btn.lbl:SetTextColor(color[1], color[2], color[3])
+        btn:SetScript("OnEnter", function(self) self:SetBackdropBorderColor(color[1], color[2], color[3], 1) end)
+        btn:SetScript("OnLeave", function(self) self:SetBackdropBorderColor(color[1], color[2], color[3], 0.7) end)
+        return btn
+    end
+
+    f.confirmDialog.yesBtn = MakeConfirmBtn(IMAGO.L["CONFIRM_YES"], -52, {0.2, 0.9, 0.3})
+    f.confirmDialog.noBtn  = MakeConfirmBtn(IMAGO.L["CONFIRM_NO"],   52, {0.9, 0.3, 0.2})
+
+    f.confirmDialog.noBtn:SetScript("OnClick", function()
+        f.confirmDialog:Hide()
+    end)
+
+    f.ShowConfirm = function(title, desc, onYes)
+        f.confirmDialog.title:SetText(title)
+        f.confirmDialog.desc:SetText(desc)
+        f.confirmDialog.yesBtn:SetScript("OnClick", function()
+            f.confirmDialog:Hide()
+            onYes()
+        end)
+        if f.modeDropdown:IsShown() then f.modeDropdown:Hide() end
+        f.confirmDialog:Show()
+    end
+
+    -- Dropdown Frame
+    f.modeDropdown = CreateFrame("Frame", nil, f.detailFrame, "BackdropTemplate")
+    f.modeDropdown:SetSize(160, 54)
+    f.modeDropdown:SetFrameStrata("DIALOG")
+    f.modeDropdown:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
+    f.modeDropdown:SetBackdropColor(0.05, 0.05, 0.05, 0.97)
+    f.modeDropdown:SetBackdropBorderColor(1, 0.78, 0.1, 0.8)
+    f.modeDropdown:Hide()
+
+    local function CreateDropdownEntry(parent, text, yOffset, modeValue)
+        local btn = CreateFrame("Button", nil, parent)
+        btn:SetSize(150, 22)
+        btn:SetPoint("TOPLEFT", parent, "TOPLEFT", 5, yOffset)
+
+        btn.check = btn:CreateTexture(nil, "ARTWORK")
+        btn.check:SetSize(7, 7)
+        btn.check:SetPoint("LEFT", btn, "LEFT", 6, 0)
+        btn.check:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+        btn.check:SetVertexColor(1, 0.78, 0.1, 1)
+        btn.check:Hide()
+
+        btn.text = btn:CreateFontString(nil, "OVERLAY")
+        btn.text:SetFont(FONT_BODY, 11)
+        btn.text:SetPoint("LEFT", btn, "LEFT", 18, 0)
+        btn.text:SetText(text)
+
+        btn.modeValue = modeValue
+        btn:SetScript("OnEnter", function(self)
+            self.text:SetTextColor(1, 0.85, 0.1)
+        end)
+        btn:SetScript("OnLeave", function(self)
+            self.text:SetTextColor(0.9, 0.9, 0.9)
+        end)
+        return btn
+    end
+
+    f.modeDropdown.entryExplorer = CreateDropdownEntry(f.modeDropdown, IMAGO.L["MODE_EXPLORER"], -5, false)
+    f.modeDropdown.entryEncyclopedia = CreateDropdownEntry(f.modeDropdown, IMAGO.L["MODE_ENCYCLOPEDIA"], -27, true)
+
+    -- Explorer: sofort umschalten
+    f.modeDropdown.entryExplorer:SetScript("OnClick", function()
+        IMAGOSaved.encyclopediaMode = false
+        f.modeDropdown:Hide()
+        IMAGO.Chronicle.UpdateList()
+    end)
+
+    -- Enzyklopädie: erst Bestätigung
+    f.modeDropdown.entryEncyclopedia:SetScript("OnClick", function()
+        if IMAGOSaved.encyclopediaMode then
+            f.modeDropdown:Hide()
+            return
+        end
+        f.ShowConfirm(
+            IMAGO.L["CONFIRM_ENC_TITLE"],
+            IMAGO.L["CONFIRM_ENC_DESC"],
+            function()
+                IMAGOSaved.encyclopediaMode = true
+                IMAGO.Chronicle.UpdateList()
+            end
+        )
+    end)
+
+    local function UpdateDropdownChecks()
+        local isEnc = IMAGOSaved and IMAGOSaved.encyclopediaMode
+        f.modeDropdown.entryExplorer.check:SetShown(not isEnc)
+        f.modeDropdown.entryExplorer.text:SetTextColor(isEnc and 0.6 or 1, isEnc and 0.6 or 0.85, isEnc and 0.6 or 0.1)
+        f.modeDropdown.entryEncyclopedia.check:SetShown(isEnc)
+        f.modeDropdown.entryEncyclopedia.text:SetTextColor(isEnc and 1 or 0.6, isEnc and 0.85 or 0.6, isEnc and 0.1 or 0.6)
+    end
+
+    f.modeBtn:SetScript("OnClick", function()
+        if f.modeDropdown:IsShown() then
+            f.modeDropdown:Hide()
+        else
+            f.modeDropdown:ClearAllPoints()
+            f.modeDropdown:SetPoint("TOPLEFT", f.modeBtn, "BOTTOMLEFT", 0, -2)
+            UpdateDropdownChecks()
+            f.modeDropdown:Show()
+        end
+    end)
+    f.modeBtn:SetScript("OnEnter", function()
+        f.modeBtn:SetBackdropBorderColor(1, 0.95, 0.4, 1)
+    end)
+    f.modeBtn:SetScript("OnLeave", function()
+        f.modeBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+    end)
+
+    -- Dropdown bei Klick außerhalb schließen
+    f:HookScript("OnMouseDown", function()
+        if f.modeDropdown:IsShown() then f.modeDropdown:Hide() end
+    end)
+
+    f.UpdateModeBtn = UpdateModeBtn
+
 -- ==-- ==========================================
     -- NEU: HAUPT-REITER (BOTTOM TABS) LOKALISIERT
     -- ==========================================
@@ -1483,6 +1662,9 @@ function IMAGO.Chronicle.UpdateList()
                     btn.bg:SetColorTexture(1, 1, 1, (bIdx % 2 == 0 and 0.03 or 0))
                     
                     local isSeen = IMAGOSaved.seenNPCs[npc.slug]
+                    local isManual = IMAGOSaved.manualUnlocks and IMAGOSaved.manualUnlocks[npc.slug]
+                    local isEncyclopedia = IMAGOSaved.encyclopediaMode
+                    local isVisible = isSeen or isEncyclopedia or isManual
                     local hasViewed = IMAGOSaved.viewedNPCs and IMAGOSaved.viewedNPCs[npc.slug]
                     local isFav = IMAGOSaved.favorites and IMAGOSaved.favorites[npc.slug]
                     
@@ -1505,10 +1687,19 @@ function IMAGO.Chronicle.UpdateList()
                     end
 
                     local name = npc.data.name or ""
-                    btn.t:SetText(isSeen and name or IMAGO.L["UNDISCOVERED"])
-                    btn.t:SetTextColor(isSeen and 1 or 0.35, isSeen and 0.82 or 0.35, isSeen and 0 or 0.35)
+                    if isVisible then
+                        btn.t:SetText(name)
+                        if isManual and not isSeen and not isEncyclopedia then
+                            btn.t:SetTextColor(0.6, 0.5, 0.8)
+                        else
+                            btn.t:SetTextColor(isSeen and 1 or 0.85, isSeen and 0.82 or 0.75, isSeen and 0 or 0.4)
+                        end
+                    else
+                        btn.t:SetText(IMAGO.L["UNDISCOVERED"])
+                        btn.t:SetTextColor(0.35, 0.35, 0.35)
+                    end
                     
-                    if isSeen and not hasViewed then
+                    if isSeen and not hasViewed and not isEncyclopedia then
                         btn.newTag:Show()
                     else
                         btn.newTag:Hide()
@@ -1521,7 +1712,7 @@ function IMAGO.Chronicle.UpdateList()
                     end
                     
                     btn:SetScript("OnClick", function()
-                        if IsShiftKeyDown() and isSeen then
+                        if IsShiftKeyDown() and isVisible then
                             local linkText = string.format("|cFF9370DB[IMAGO: %s]|r", name)
                             local editBox = ChatEdit_ChooseBoxForSend()
                             if editBox then
@@ -1541,7 +1732,7 @@ function IMAGO.Chronicle.UpdateList()
                         end
                         btn.selected:Show()
                         
-                        if isSeen then
+                        if isVisible then
                             f.hintPage:Hide()
                             
                             local function OpenLoreTab()
@@ -1604,7 +1795,7 @@ function IMAGO.Chronicle.UpdateList()
                             end
 
                             IMAGOSaved.viewedNPCs = IMAGOSaved.viewedNPCs or {}
-                            if not IMAGOSaved.viewedNPCs[npc.slug] then
+                            if isSeen and not IMAGOSaved.viewedNPCs[npc.slug] then
                                 IMAGOSaved.viewedNPCs[npc.slug] = true
                                 f.detailTitle:Hide()
                                 f.detailLineLeft:Hide()
@@ -1646,7 +1837,26 @@ function IMAGO.Chronicle.UpdateList()
                                 f.hintPage.desc:SetText(IMAGO.L["HINT_UNKNOWN_LOC"])
                             end
                         end
-                    end) 
+                    end)
+
+                    btn:SetScript("OnMouseUp", function(self, mouseBtn)
+                        if mouseBtn == "RightButton" and not isSeen and not isEncyclopedia then
+                            if isManual then
+                                IMAGOSaved.manualUnlocks[npc.slug] = nil
+                                IMAGO.Chronicle.UpdateList()
+                            else
+                                f.ShowConfirm(
+                                    IMAGO.L["CONFIRM_UNLOCK_TITLE"],
+                                    IMAGO.L["CONFIRM_UNLOCK_DESC"],
+                                    function()
+                                        IMAGOSaved.manualUnlocks = IMAGOSaved.manualUnlocks or {}
+                                        IMAGOSaved.manualUnlocks[npc.slug] = true
+                                        IMAGO.Chronicle.UpdateList()
+                                    end
+                                )
+                            end
+                        end
+                    end)
                     
                     btn:Show()
                     yOffset = yOffset + 35
@@ -1755,6 +1965,8 @@ elseif activeTab == 2 then
         local mapID = zoneObj.id
         local zoneData = zoneObj.data
         local isSeen = IMAGOSaved.seenZones[mapID]
+        local isEncyclopedia = IMAGOSaved.encyclopediaMode
+        local isZoneVisible = isSeen or isEncyclopedia
         local name = zoneData.name or ""
         local lore = zoneData.lore or ""
 
@@ -1785,7 +1997,7 @@ elseif activeTab == 2 then
 
         btn:SetPoint("TOPLEFT", f.content, "TOPLEFT", 5, -yOffset)
 
-        if isSeen then
+        if isZoneVisible then
             btn.bg:SetTexture(zoneData.texturePath)
             btn.bg:SetDesaturated(false)
             btn.bg:SetVertexColor(1, 1, 1, 1) 
@@ -1978,6 +2190,7 @@ function IMAGO.Chronicle.Toggle()
     else 
         IMAGO.Chronicle.UpdateList()
         if f.ShowDashboard then f.ShowDashboard() end
+        if f.UpdateModeBtn then f.UpdateModeBtn() end
         f:Show() 
     end
 end
