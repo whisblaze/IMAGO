@@ -164,7 +164,7 @@ function IMAGO.Chronicle.CreateFrame()
     local f = CreateFrame("Frame", "IMAGOChronicleFrame", UIParent, "BackdropTemplate")
     f:SetFrameStrata("DIALOG")
     f:SetFrameLevel(100)
-    f:SetSize(950, 700)
+    f:SetSize(1100, 700)
     f:SetPoint("CENTER")
     f:SetFrameStrata("HIGH")
     f:EnableMouse(true)
@@ -369,20 +369,20 @@ function IMAGO.Chronicle.CreateFrame()
 
     -- Die Zierlinien unter dem Titel
     f.detailLineLeft = f.detailFrame:CreateTexture(nil, "ARTWORK")
-    f.detailLineLeft:SetSize(280, 1)
+    f.detailLineLeft:SetSize(355, 1)
     f.detailLineLeft:SetPoint("TOPRIGHT", f.detailTitle, "BOTTOM", 0, -8)
     f.detailLineLeft:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
     f.detailLineLeft:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0), CreateColor(1, 0.78, 0.1, 0.7))
 
     f.detailLineRight = f.detailFrame:CreateTexture(nil, "ARTWORK")
-    f.detailLineRight:SetSize(280, 1)
+    f.detailLineRight:SetSize(355, 1)
     f.detailLineRight:SetPoint("TOPLEFT", f.detailTitle, "BOTTOM", 0, -8)
     f.detailLineRight:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
     f.detailLineRight:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0.7), CreateColor(1, 0.78, 0.1, 0))
 
     -- Zonen-Elemente (Bild, Rahmen, Trenner)
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
-    f.detailImage:SetSize(580, 200)
+    f.detailImage:SetSize(680, 200)
     f.detailImage:SetPoint("TOP", f.detailFrame, "TOP", 0, -70)
     f.detailImage:SetTexCoord(0, 1, 0.195, 0.805) 
     f.detailImage:Hide()
@@ -434,13 +434,13 @@ function IMAGO.Chronicle.CreateFrame()
     if infoScrollBar then infoScrollBar:SetAlpha(0) end
 
     f.infoContent = CreateFrame("Frame", nil, f.infoScroll)
-    f.infoContent:SetSize(290, 1)
+    f.infoContent:SetSize(440, 1)
     f.infoScroll:SetScrollChild(f.infoContent)
 
     f.loreBody = f.infoContent:CreateFontString(nil, "OVERLAY")
-    f.loreBody:SetFont(FONT_BODY, 15)
+    f.loreBody:SetFont(FONT_BODY, 14)
     f.loreBody:SetPoint("TOPLEFT", f.infoContent, "TOPLEFT", 0, 0)
-    f.loreBody:SetWidth(290)
+    f.loreBody:SetWidth(420)
     f.loreBody:SetJustifyH("LEFT")
     f.loreBody:SetTextColor(0.9, 0.9, 0.9)
     f.loreBody:SetSpacing(6)
@@ -449,7 +449,7 @@ function IMAGO.Chronicle.CreateFrame()
     -- BILD FÜR DIE ZONEN-DETAILANSICHT (PANORAMA)
     -- ==========================================
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
-    f.detailImage:SetSize(580, 180) -- Breites Panorama-Format
+    f.detailImage:SetSize(680, 180) -- Breites Panorama-Format
     f.detailImage:SetPoint("TOP", f.detailFrame, "TOP", 0, -70) -- Mittig zentriert
     f.detailImage:SetTexCoord(0, 1, 0.15, 0.85) -- Schneidet 15% oben/unten ab für den ultimativen Kino-Look
     f.detailImage:Hide()
@@ -464,22 +464,74 @@ function IMAGO.Chronicle.CreateFrame()
     })
     f.detailImageBorder:SetBackdropBorderColor(1, 0.78, 0.1, 0.8)
     f.detailImageBorder:Hide()
-
-
     f.detailModel = CreateFrame("PlayerModel", nil, f.detailFrame)
     f.detailModel:SetSize(280, 400)
     f.detailModel:SetPoint("TOPLEFT", f.detailFrame, "TOPLEFT", 10, -80)
-    f.detailModel:Hide() 
-    
-    f.detailModel.bg = f.detailModel:CreateTexture(nil, "BACKGROUND")
-    f.detailModel.bg:SetAllPoints()
-    f.detailModel.bg:SetColorTexture(1, 0.78, 0.1, 0.03)
-    
-    f.detailModel.border = f.detailModel:CreateTexture(nil, "BORDER")
-    f.detailModel.border:SetAllPoints()
-    f.detailModel.border:SetAtlas("UI-Frame-Oribos-PortraitFrame", true)
-    f.detailModel.border:SetBlendMode("ADD")
-    f.detailModel.border:SetAlpha(0.2)
+    -- Kein Rahmen - Modell steht frei im Raum
+
+    -- Animation-Switcher Buttons
+    f.detailModel.animButtons = {}
+    local anims = {
+        {id=3, label="St", name="Static"},
+        {id=5, label="Ru", name="Run"},
+        {id=26, label="Cs", name="Combat"},
+        {id=18, label="At", name="Attack"}
+    }
+
+    local function UpdateAnimButtons(activeId)
+        for _, btn in ipairs(f.detailModel.animButtons) do
+            if btn.animId == activeId then
+                btn.bg:SetVertexColor(1, 0.78, 0.1, 0.4)
+            else
+                btn.bg:SetVertexColor(0.1, 0.1, 0.1, 0.6)
+            end
+        end
+    end
+
+    for i, anim in ipairs(anims) do
+        local btn = CreateFrame("Button", nil, f.detailModel)
+        btn:SetSize(20, 18)
+        btn:SetPoint("BOTTOMLEFT", 8 + (i-1)*24, 8)
+        btn.animId = anim.id
+
+        -- Hintergrund
+        btn.bg = btn:CreateTexture(nil, "BACKGROUND")
+        btn.bg:SetAllPoints()
+        btn.bg:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+
+        -- Text
+        btn.text = btn:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
+        btn.text:SetPoint("CENTER")
+        btn.text:SetText(anim.label)
+        btn.text:SetTextColor(0.8, 0.8, 0.8)
+
+        -- Click
+        btn:SetScript("OnClick", function()
+            f.detailModel:SetAnimation(anim.id)
+            f.detailModel.currentAnim = anim.id
+            UpdateAnimButtons(anim.id)
+        end)
+
+        -- Hover
+        btn:SetScript("OnEnter", function()
+            btn.text:SetTextColor(1, 0.85, 0.1)
+        end)
+        btn:SetScript("OnLeave", function()
+            btn.text:SetTextColor(0.8, 0.8, 0.8)
+        end)
+
+        table.insert(f.detailModel.animButtons, btn)
+    end
+
+    f.detailModel.UpdateAnimButtons = UpdateAnimButtons
+
+    -- OnShow Animation starten
+    f.detailModel:SetScript("OnShow", function(self)
+        self:SetAnimation(0) -- Stand als Default
+        if self.UpdateAnimButtons then
+            self.UpdateAnimButtons(0)
+        end
+    end)
     
     f.detailModel:EnableMouse(true)
     f.detailModel:EnableMouseWheel(true)
@@ -690,6 +742,185 @@ function IMAGO.Chronicle.CreateFrame()
     })
     f.footer.bar.border:SetBackdropBorderColor(1, 0.78, 0.1, 0.5)
 
+    -- ==========================================
+    -- MODE TOGGLE BUTTON + DROPDOWN
+    -- ==========================================
+    f.modeBtn = CreateFrame("Button", nil, f.detailFrame, "BackdropTemplate")
+    f.modeBtn:SetSize(85, 22)
+    f.modeBtn:SetPoint("TOPLEFT", f.detailFrame, "TOPLEFT", 14, -14)
+    f.modeBtn:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
+    f.modeBtn:SetBackdropColor(0.05, 0.05, 0.05, 0.85)
+    f.modeBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+
+    f.modeBtn.label = f.modeBtn:CreateFontString(nil, "OVERLAY")
+    f.modeBtn.label:SetFont(FONT_BODY, 11, "OUTLINE")
+    f.modeBtn.label:SetPoint("CENTER", f.modeBtn, "CENTER", 0, 0)
+    f.modeBtn.label:SetTextColor(1, 0.85, 0.1)
+
+    local function UpdateModeBtn()
+        f.modeBtn.label:SetText(IMAGO.L["MODE_LABEL"])
+    end
+
+    -- ==========================================
+    -- CONFIRM DIALOG (wiederverwendbar)
+    -- ==========================================
+    f.confirmDialog = CreateFrame("Frame", nil, f, "BackdropTemplate")
+    f.confirmDialog:SetSize(320, 130)
+    f.confirmDialog:SetPoint("CENTER", f.detailFrame, "CENTER", 0, 20)
+    f.confirmDialog:SetFrameStrata("FULLSCREEN_DIALOG")
+    f.confirmDialog:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 14, insets = {left=4,right=4,top=4,bottom=4} })
+    f.confirmDialog:SetBackdropColor(0.04, 0.04, 0.06, 0.97)
+    f.confirmDialog:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+    f.confirmDialog:Hide()
+
+    f.confirmDialog.title = f.confirmDialog:CreateFontString(nil, "OVERLAY")
+    f.confirmDialog.title:SetFont(FONT_BODY, 13, "OUTLINE")
+    f.confirmDialog.title:SetPoint("TOP", f.confirmDialog, "TOP", 0, -14)
+    f.confirmDialog.title:SetTextColor(1, 0.85, 0.1)
+
+    f.confirmDialog.line = f.confirmDialog:CreateTexture(nil, "ARTWORK")
+    f.confirmDialog.line:SetSize(280, 1)
+    f.confirmDialog.line:SetPoint("TOP", f.confirmDialog.title, "BOTTOM", 0, -6)
+    f.confirmDialog.line:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+    f.confirmDialog.line:SetVertexColor(1, 0.78, 0.1, 0.4)
+
+    f.confirmDialog.desc = f.confirmDialog:CreateFontString(nil, "OVERLAY")
+    f.confirmDialog.desc:SetFont(FONT_BODY, 11)
+    f.confirmDialog.desc:SetPoint("TOP", f.confirmDialog.line, "BOTTOM", 0, -8)
+    f.confirmDialog.desc:SetWidth(290)
+    f.confirmDialog.desc:SetJustifyH("CENTER")
+    f.confirmDialog.desc:SetTextColor(0.85, 0.85, 0.85)
+    f.confirmDialog.desc:SetSpacing(3)
+
+    local function MakeConfirmBtn(label, xOff, color)
+        local btn = CreateFrame("Button", nil, f.confirmDialog, "BackdropTemplate")
+        btn:SetSize(90, 24)
+        btn:SetPoint("BOTTOM", f.confirmDialog, "BOTTOM", xOff, 10)
+        btn:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
+        btn:SetBackdropColor(0.05, 0.05, 0.05, 0.9)
+        btn:SetBackdropBorderColor(color[1], color[2], color[3], 0.7)
+        btn.lbl = btn:CreateFontString(nil, "OVERLAY")
+        btn.lbl:SetFont(FONT_BODY, 11, "OUTLINE")
+        btn.lbl:SetPoint("CENTER")
+        btn.lbl:SetText(label)
+        btn.lbl:SetTextColor(color[1], color[2], color[3])
+        btn:SetScript("OnEnter", function(self) self:SetBackdropBorderColor(color[1], color[2], color[3], 1) end)
+        btn:SetScript("OnLeave", function(self) self:SetBackdropBorderColor(color[1], color[2], color[3], 0.7) end)
+        return btn
+    end
+
+    f.confirmDialog.yesBtn = MakeConfirmBtn(IMAGO.L["CONFIRM_YES"], -52, {0.2, 0.9, 0.3})
+    f.confirmDialog.noBtn  = MakeConfirmBtn(IMAGO.L["CONFIRM_NO"],   52, {0.9, 0.3, 0.2})
+
+    f.confirmDialog.noBtn:SetScript("OnClick", function()
+        f.confirmDialog:Hide()
+    end)
+
+    f.ShowConfirm = function(title, desc, onYes)
+        f.confirmDialog.title:SetText(title)
+        f.confirmDialog.desc:SetText(desc)
+        f.confirmDialog.yesBtn:SetScript("OnClick", function()
+            f.confirmDialog:Hide()
+            onYes()
+        end)
+        if f.modeDropdown:IsShown() then f.modeDropdown:Hide() end
+        f.confirmDialog:Show()
+    end
+
+    -- Dropdown Frame
+    f.modeDropdown = CreateFrame("Frame", nil, f.detailFrame, "BackdropTemplate")
+    f.modeDropdown:SetSize(160, 54)
+    f.modeDropdown:SetFrameStrata("DIALOG")
+    f.modeDropdown:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
+    f.modeDropdown:SetBackdropColor(0.05, 0.05, 0.05, 0.97)
+    f.modeDropdown:SetBackdropBorderColor(1, 0.78, 0.1, 0.8)
+    f.modeDropdown:Hide()
+
+    local function CreateDropdownEntry(parent, text, yOffset, modeValue)
+        local btn = CreateFrame("Button", nil, parent)
+        btn:SetSize(150, 22)
+        btn:SetPoint("TOPLEFT", parent, "TOPLEFT", 5, yOffset)
+
+        btn.check = btn:CreateTexture(nil, "ARTWORK")
+        btn.check:SetSize(7, 7)
+        btn.check:SetPoint("LEFT", btn, "LEFT", 6, 0)
+        btn.check:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+        btn.check:SetVertexColor(1, 0.78, 0.1, 1)
+        btn.check:Hide()
+
+        btn.text = btn:CreateFontString(nil, "OVERLAY")
+        btn.text:SetFont(FONT_BODY, 11)
+        btn.text:SetPoint("LEFT", btn, "LEFT", 18, 0)
+        btn.text:SetText(text)
+
+        btn.modeValue = modeValue
+        btn:SetScript("OnEnter", function(self)
+            self.text:SetTextColor(1, 0.85, 0.1)
+        end)
+        btn:SetScript("OnLeave", function(self)
+            self.text:SetTextColor(0.9, 0.9, 0.9)
+        end)
+        return btn
+    end
+
+    f.modeDropdown.entryExplorer = CreateDropdownEntry(f.modeDropdown, IMAGO.L["MODE_EXPLORER"], -5, false)
+    f.modeDropdown.entryEncyclopedia = CreateDropdownEntry(f.modeDropdown, IMAGO.L["MODE_ENCYCLOPEDIA"], -27, true)
+
+    -- Explorer: sofort umschalten
+    f.modeDropdown.entryExplorer:SetScript("OnClick", function()
+        IMAGOSaved.encyclopediaMode = false
+        f.modeDropdown:Hide()
+        IMAGO.Chronicle.UpdateList()
+    end)
+
+    -- Enzyklopädie: erst Bestätigung
+    f.modeDropdown.entryEncyclopedia:SetScript("OnClick", function()
+        if IMAGOSaved.encyclopediaMode then
+            f.modeDropdown:Hide()
+            return
+        end
+        f.ShowConfirm(
+            IMAGO.L["CONFIRM_ENC_TITLE"],
+            IMAGO.L["CONFIRM_ENC_DESC"],
+            function()
+                IMAGOSaved.encyclopediaMode = true
+                IMAGO.Chronicle.UpdateList()
+            end
+        )
+    end)
+
+    local function UpdateDropdownChecks()
+        local isEnc = IMAGOSaved and IMAGOSaved.encyclopediaMode
+        f.modeDropdown.entryExplorer.check:SetShown(not isEnc)
+        f.modeDropdown.entryExplorer.text:SetTextColor(isEnc and 0.6 or 1, isEnc and 0.6 or 0.85, isEnc and 0.6 or 0.1)
+        f.modeDropdown.entryEncyclopedia.check:SetShown(isEnc)
+        f.modeDropdown.entryEncyclopedia.text:SetTextColor(isEnc and 1 or 0.6, isEnc and 0.85 or 0.6, isEnc and 0.1 or 0.6)
+    end
+
+    f.modeBtn:SetScript("OnClick", function()
+        if f.modeDropdown:IsShown() then
+            f.modeDropdown:Hide()
+        else
+            f.modeDropdown:ClearAllPoints()
+            f.modeDropdown:SetPoint("TOPLEFT", f.modeBtn, "BOTTOMLEFT", 0, -2)
+            UpdateDropdownChecks()
+            f.modeDropdown:Show()
+        end
+    end)
+    f.modeBtn:SetScript("OnEnter", function()
+        f.modeBtn:SetBackdropBorderColor(1, 0.95, 0.4, 1)
+    end)
+    f.modeBtn:SetScript("OnLeave", function()
+        f.modeBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+    end)
+
+    -- Dropdown bei Klick außerhalb schließen
+    f:HookScript("OnMouseDown", function()
+        if f.modeDropdown:IsShown() then f.modeDropdown:Hide() end
+    end)
+
+    f.UpdateModeBtn = UpdateModeBtn
+
 -- ==-- ==========================================
     -- NEU: HAUPT-REITER (BOTTOM TABS) LOKALISIERT
     -- ==========================================
@@ -873,28 +1104,46 @@ function IMAGO.Chronicle.CreateFrame()
                     end
                 end
 
-                local contributors = {
-                    {name = "Austin", roles = "Archivist, Lore Scribe", top = true},
-                    {name = "Cadash", roles = "Lore Scribe, Translator", top = true},
-                    {name = "druidian", roles = "Archivist, Lore Scribe", top = true},
-                    {name = "Minorou", roles = "Lore Scribe", top = true},
-                    {name = "Elanor", roles = "Data Miner, Translator", top = true},
-                    {name = "Kittywulfe", roles = "Tester"},
-                    {name = "MortiousPrime", roles = "Archivist, Lore Scribe, Data Miner"},
-                    {name = "Moshwan", roles = "Archivist"},
-                    {name = "Duschgell", roles = "Archivist"},
-                    {name = "Lemurensohn", roles = "Archivist, Translator"},
-                    {name = "Karstan", roles = "Lore Scribe, Translator"},
-                    {name = "Spibe", roles = "Lore Scribe"},
-                    {name = "Riknar", roles = "Lore Scribe"},
-                    {name = "Saljourn", roles = "Lore Scribe, Data Miner"},
-                    {name = "zelkaris", roles = "Lore Scribe, Data Miner, Lua Developer"},
-                    {name = "Nihilea", roles = "Data Miner, Translator"},
-                    {name = "Remu", roles = "Data Miner, Translator"},
-                    {name = "MayaWoW", roles = "Data Miner, Translator"},
-                    {name = "ALI4S", roles = "Lua Developer"},
-                    {name = "johnnyd2", roles = "Tester"},
-                }
+local contributors = {
+                {name = "Cadash", roles = "Lore Scribe, Translator", top = true},
+                {name = "austin", roles = "Archivist, Lore Scribe", top = true},
+                {name = "Elanor", roles = "Data Miner, Translator, Moderator", top = true},
+                {name = "druidian", roles = "Archivist, Lore Scribe", top = true},
+                {name = "Minorou", roles = "Lore Scribe", top = true},
+                {name = "MayaWoW", roles = "Data Miner, Translator"},
+                {name = "Lewi", roles = "Archivist, Lore Scribe, Translator"},
+                {name = "DeMaa", roles = "Archivist, Lore Scribe, Data Miner, Translator, Lua Developer, Moderator"},
+                {name = "Elsafan (Crazycat).", roles = "Archivist, Data Miner"},
+                {name = "Karstan", roles = "Lore Scribe, Translator"},
+                {name = "Nebb", roles = "Lore Scribe"},
+                {name = "Metrus", roles = "Lore Scribe, Translator"},
+                {name = "Travanoid", roles = "Lore Scribe"},
+                {name = "Lemurensohn", roles = "Archivist, Translator"},
+                {name = "zeerocool11", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
+                {name = "ALI4S", roles = "Lua Developer"},
+                {name = "Remu", roles = "Data Miner, Translator"},
+                {name = "zelkaris", roles = "Lore Scribe, Data Miner, Lua Developer"},
+                {name = "Duschgell", roles = "Archivist"},
+                {name = "Nihilea", roles = "Data Miner, Translator"},
+                {name = "Saljourn", roles = "Lore Scribe, Data Miner"},
+                {name = "Riknar", roles = "Lore Scribe"},
+                {name = "MortiousPrime", roles = "Archivist, Lore Scribe, Data Miner"},
+                {name = "LeoColpas", roles = "Translator"},
+                {name = "Chadson Chappo", roles = "Archivist"},
+                {name = "ruffboi", roles = "Lore Scribe"},
+                {name = "Echo_Delta_Golf", roles = "Lore Scribe"},
+                {name = "Lilith", roles = "Translator"},
+                {name = "LowRoars", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
+                {name = "咪嚕", roles = "Archivist, Translator"},
+                {name = "Silver_Wind809", roles = "Data Miner, Lua Developer"},
+                {name = "William Orr", roles = "Data Miner"},
+                {name = "Nuise_16094", roles = "Translator"},
+                {name = "Nuise", roles = "Translator"},
+                {name = "Jay! :P", roles = "Lore Scribe, Data Miner"},
+                {name = "!pxrty193", roles = "Lua Developer"},
+                {name = "johnnyd2", roles = "Tester"},
+                {name = "Kittywulfe", roles = "Tester"},
+}
 
                 local yOffset = -40 -- Mehr Platz nach der Trennlinie
                 local spacing = 25
@@ -982,7 +1231,7 @@ f.ShowDashboard = function()
         f.infoScroll:ClearAllPoints()
         f.infoScroll:SetPoint("TOPLEFT", f.detailFrame, "TOPLEFT", 310, -115)
         f.infoScroll:SetPoint("BOTTOMRIGHT", f.detailFrame, "BOTTOMRIGHT", -15, 100)
-        f.loreBody:SetWidth(290)
+        f.loreBody:SetWidth(420)
 
         if mode == "lore" then 
             f.loreBody:Show()
@@ -1006,54 +1255,116 @@ function IMAGO.Chronicle.RenderTimeline()
     local data = f.selectedNPC
     if not data or not data.timeline then return end
 
-    if not f.timelineContainer then 
+    if not f.timelineContainer then
         f.timelineContainer = CreateFrame("Frame", nil, f.infoContent)
-        f.timelineContainer:SetPoint("TOPLEFT")
-        f.timelineContainer:SetSize(320, 1) 
+        f.timelineContainer:SetPoint("TOPLEFT", 20, 0)
+        f.timelineContainer:SetSize(420, 1)
         f.timelineContainer.eras = {}
         f.timelineContainer.texts = {}
+        f.timelineContainer.dividers = {}
     end
     f.timelineContainer:Show()
-    
-    for _, fs in ipairs(f.timelineContainer.eras) do fs:Hide() end
-    for _, fs in ipairs(f.timelineContainer.texts) do fs:Hide() end
-    
+
+    -- Alle vorherigen Elemente verstecken (pairs für sparse tables)
+    for _, fs in pairs(f.timelineContainer.eras) do fs:Hide() end
+    for _, fs in pairs(f.timelineContainer.texts) do fs:Hide() end
+    for _, div in pairs(f.timelineContainer.dividers) do div:Hide() end
+
     local y = 0
-    local locale = GetLocale()
+    local entryCount = #data.timeline
 
     for i, entry in ipairs(data.timeline) do
+        -- Dezente Trennlinie vor jedem Eintrag (außer dem ersten)
+        if i > 1 then
+            local divider = f.timelineContainer.dividers[i]
+            if not divider then
+                divider = f.timelineContainer:CreateTexture(nil, "ARTWORK")
+                divider:SetSize(320, 1)
+                divider:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+                f.timelineContainer.dividers[i] = divider
+            end
+            divider:SetPoint("TOPLEFT", 0, -y + 10)
+            divider:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0.15), CreateColor(1, 0.78, 0.1, 0.05))
+            divider:Show()
+        end
+
         local era = f.timelineContainer.eras[i]
         if not era then
             era = f.timelineContainer:CreateFontString(nil, "OVERLAY")
             era:SetFont(FONT_BODY, 13, "OUTLINE")
             f.timelineContainer.eras[i] = era
         end
-        
+
         local col = eraColors[entry.era] or {1, 1, 1}
         era:SetTextColor(unpack(col))
         era:SetPoint("TOPLEFT", 0, -y)
         era:SetText("[" .. entry.era .. "]")
         era:Show()
-        
+
         local txt = f.timelineContainer.texts[i]
         if not txt then
             txt = f.timelineContainer:CreateFontString(nil, "OVERLAY")
             txt:SetFont(FONT_BODY, 14, "")
-            txt:SetWidth(230)
+            txt:SetWidth(310)
             txt:SetJustifyH("LEFT")
-            txt:SetTextColor(0.9, 0.9, 0.9)
             txt:SetSpacing(4)
             f.timelineContainer.texts[i] = txt
         end
-        
-        txt:SetPoint("TOPLEFT", 80, -y)
-        txt:SetText(entry.text or "")
+
+        -- Midnight Spoiler-Schutz
+        local isMidnight = (entry.era == "Midnight")
+        local npcSlug = f.selectedNPCSlug or ""
+        IMAGOSaved.revealedMidnight = IMAGOSaved.revealedMidnight or {}
+        local isRevealed = IMAGOSaved.revealedMidnight[npcSlug]
+
+        if isMidnight and not isRevealed then
+            local L = IMAGO.L
+            txt:SetText("[" .. L["SPOILER_MIDNIGHT_TITLE"] .. "] — " .. L["SPOILER_MIDNIGHT_HINT"])
+            txt:SetTextColor(0.42, 0.0, 0.8) -- Midnight-Leeren-Violett
+            txt.realText = entry.text
+            txt.npcSlug = npcSlug
+            txt.isSpoiler = true
+            txt:EnableMouse(true)
+            txt:SetScript("OnMouseUp", function(self)
+                IMAGOSaved.revealedMidnight[self.npcSlug] = true
+                self:SetText(self.realText)
+                self:SetTextColor(0.9, 0.9, 0.9)
+                self.isSpoiler = false
+                UIFrameFadeIn(self, 0.3, 0, 1)
+            end)
+            txt:SetScript("OnEnter", function(self)
+                if self.isSpoiler then
+                    GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+                    GameTooltip:SetText("⚠️ " .. L["SPOILER_TOOLTIP_TITLE"], 1, 0.2, 0.2)
+                    GameTooltip:AddLine(L["SPOILER_TOOLTIP_DESC"], 0.8, 0.8, 0.8)
+                    GameTooltip:Show()
+                    -- Hover-Effekt: Text heller
+                    self:SetTextColor(0.6, 0.2, 1.0)
+                end
+            end)
+            txt:SetScript("OnLeave", function(self)
+                GameTooltip:Hide()
+                if self.isSpoiler then
+                    self:SetTextColor(0.42, 0.0, 0.8)
+                end
+            end)
+        else
+            -- Normaler Text
+            txt:SetText(entry.text or "")
+            txt:SetTextColor(0.9, 0.9, 0.9)
+            txt.isSpoiler = false
+            txt:EnableMouse(false)
+            txt:SetScript("OnMouseUp", nil)
+            txt:SetScript("OnEnter", nil)
+            txt:SetScript("OnLeave", nil)
+        end
+        txt:SetPoint("TOPLEFT", 100, -y)
         txt:Show()
-        
+
         local textHeight = txt:GetStringHeight()
-        y = y + math.max(20, textHeight) + 18 
+        y = y + math.max(20, textHeight) + 28
     end
-    f.timelineContainer:SetHeight(y)
+    f.timelineContainer:SetHeight(y - 5)
 end
 
 function IMAGO.Chronicle.UpdateList()
@@ -1351,6 +1662,9 @@ function IMAGO.Chronicle.UpdateList()
                     btn.bg:SetColorTexture(1, 1, 1, (bIdx % 2 == 0 and 0.03 or 0))
                     
                     local isSeen = IMAGOSaved.seenNPCs[npc.slug]
+                    local isManual = IMAGOSaved.manualUnlocks and IMAGOSaved.manualUnlocks[npc.slug]
+                    local isEncyclopedia = IMAGOSaved.encyclopediaMode
+                    local isVisible = isSeen or isEncyclopedia or isManual
                     local hasViewed = IMAGOSaved.viewedNPCs and IMAGOSaved.viewedNPCs[npc.slug]
                     local isFav = IMAGOSaved.favorites and IMAGOSaved.favorites[npc.slug]
                     
@@ -1373,10 +1687,19 @@ function IMAGO.Chronicle.UpdateList()
                     end
 
                     local name = npc.data.name or ""
-                    btn.t:SetText(isSeen and name or IMAGO.L["UNDISCOVERED"])
-                    btn.t:SetTextColor(isSeen and 1 or 0.35, isSeen and 0.82 or 0.35, isSeen and 0 or 0.35)
+                    if isVisible then
+                        btn.t:SetText(name)
+                        if isManual and not isSeen and not isEncyclopedia then
+                            btn.t:SetTextColor(0.6, 0.5, 0.8)
+                        else
+                            btn.t:SetTextColor(isSeen and 1 or 0.85, isSeen and 0.82 or 0.75, isSeen and 0 or 0.4)
+                        end
+                    else
+                        btn.t:SetText(IMAGO.L["UNDISCOVERED"])
+                        btn.t:SetTextColor(0.35, 0.35, 0.35)
+                    end
                     
-                    if isSeen and not hasViewed then
+                    if isSeen and not hasViewed and not isEncyclopedia then
                         btn.newTag:Show()
                     else
                         btn.newTag:Hide()
@@ -1389,7 +1712,7 @@ function IMAGO.Chronicle.UpdateList()
                     end
                     
                     btn:SetScript("OnClick", function()
-                        if IsShiftKeyDown() and isSeen then
+                        if IsShiftKeyDown() and isVisible then
                             local linkText = string.format("|cFF9370DB[IMAGO: %s]|r", name)
                             local editBox = ChatEdit_ChooseBoxForSend()
                             if editBox then
@@ -1402,13 +1725,14 @@ function IMAGO.Chronicle.UpdateList()
 
                         f.startPage:Hide()
                         f.selectedNPC = npc.data
+                        f.selectedNPCSlug = npc.slug
                         
                         for _, b in pairs(IMAGO.Chronicle.buttons) do
                             if b.selected then b.selected:Hide() end
                         end
                         btn.selected:Show()
                         
-                        if isSeen then
+                        if isVisible then
                             f.hintPage:Hide()
                             
                             local function OpenLoreTab()
@@ -1436,14 +1760,25 @@ function IMAGO.Chronicle.UpdateList()
                                 f.detailTitle:SetShadowColor(0, 0, 0, 1)
                                 f.detailTitle:SetShadowOffset(2, -2)
 
-                                f.loreBody:SetText(npc.data.lore or "")
+                                local lore = npc.data.lore or ""
+                                local firstLetter = lore:sub(1,1)
+                                local restLore = lore:sub(2)
+                                f.loreBody:SetText("|cffffd700" .. firstLetter .. "|r" .. restLore)
                                 
                                 f.detailModel:ClearModel()
                                 local modelID = GetValidModelID(npc.data)
                                 if modelID then 
                                     f.detailModel:SetCreature(modelID)
-                                    C_Timer.After(0.15, function()
-                                        if f.detailModel:IsShown() then f.detailModel:SetCreature(modelID) end
+                                    -- Animation nach kurzer Verzögerung starten (Modell muss laden)
+                                    C_Timer.After(0.2, function()
+                                        if f.detailModel:IsShown() then 
+                                            f.detailModel:SetCreature(modelID)
+                                            f.detailModel:SetAnimation(0)
+                                            -- Buttons auf Stand zurücksetzen
+                                            if f.detailModel.UpdateAnimButtons then
+                                                f.detailModel.UpdateAnimButtons(0)
+                                            end
+                                        end
                                     end)
                                 end
                                 
@@ -1460,7 +1795,7 @@ function IMAGO.Chronicle.UpdateList()
                             end
 
                             IMAGOSaved.viewedNPCs = IMAGOSaved.viewedNPCs or {}
-                            if not IMAGOSaved.viewedNPCs[npc.slug] then
+                            if isSeen and not IMAGOSaved.viewedNPCs[npc.slug] then
                                 IMAGOSaved.viewedNPCs[npc.slug] = true
                                 f.detailTitle:Hide()
                                 f.detailLineLeft:Hide()
@@ -1502,7 +1837,26 @@ function IMAGO.Chronicle.UpdateList()
                                 f.hintPage.desc:SetText(IMAGO.L["HINT_UNKNOWN_LOC"])
                             end
                         end
-                    end) 
+                    end)
+
+                    btn:SetScript("OnMouseUp", function(self, mouseBtn)
+                        if mouseBtn == "RightButton" and not isSeen and not isEncyclopedia then
+                            if isManual then
+                                IMAGOSaved.manualUnlocks[npc.slug] = nil
+                                IMAGO.Chronicle.UpdateList()
+                            else
+                                f.ShowConfirm(
+                                    IMAGO.L["CONFIRM_UNLOCK_TITLE"],
+                                    IMAGO.L["CONFIRM_UNLOCK_DESC"],
+                                    function()
+                                        IMAGOSaved.manualUnlocks = IMAGOSaved.manualUnlocks or {}
+                                        IMAGOSaved.manualUnlocks[npc.slug] = true
+                                        IMAGO.Chronicle.UpdateList()
+                                    end
+                                )
+                            end
+                        end
+                    end)
                     
                     btn:Show()
                     yOffset = yOffset + 35
@@ -1611,6 +1965,8 @@ elseif activeTab == 2 then
         local mapID = zoneObj.id
         local zoneData = zoneObj.data
         local isSeen = IMAGOSaved.seenZones[mapID]
+        local isEncyclopedia = IMAGOSaved.encyclopediaMode
+        local isZoneVisible = isSeen or isEncyclopedia
         local name = zoneData.name or ""
         local lore = zoneData.lore or ""
 
@@ -1641,7 +1997,7 @@ elseif activeTab == 2 then
 
         btn:SetPoint("TOPLEFT", f.content, "TOPLEFT", 5, -yOffset)
 
-        if isSeen then
+        if isZoneVisible then
             btn.bg:SetTexture(zoneData.texturePath)
             btn.bg:SetDesaturated(false)
             btn.bg:SetVertexColor(1, 1, 1, 1) 
@@ -1669,7 +2025,7 @@ elseif activeTab == 2 then
                     f.detailImage:SetTexture(zoneData.texturePath)
                     f.detailImage:SetDesaturated(false) 
                     f.detailImage:SetVertexColor(1, 1, 1, 1) 
-                    f.detailImage:SetSize(580, 200)
+                    f.detailImage:SetSize(680, 200)
                     f.detailImage:SetTexCoord(0, 1, 0.195, 0.805) 
                     f.detailImage:Show()
                     if f.detailImageBorder then f.detailImageBorder:Show() end
@@ -1690,12 +2046,12 @@ elseif activeTab == 2 then
                 end
                 
                 f.loreBody:SetText(formattedLore)
-                f.loreBody:SetWidth(500)
+                f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("LEFT")
                 f.loreBody:Show()
                 
                 f.infoScroll:ClearAllPoints()
-                f.infoScroll:SetWidth(520)
+                f.infoScroll:SetWidth(680)
                 f.infoScroll:SetPoint("TOP", f.detailFrame, "TOP", 0, -300)
                 f.infoScroll:SetPoint("BOTTOM", f.detailFrame, "BOTTOM", 0, 100)
                 f.infoScroll:Show()
@@ -1732,7 +2088,7 @@ elseif activeTab == 2 then
                     f.detailImage:SetTexture("Interface\\AddOns\\IMAGO\\media\\worldmap.tga")
                     f.detailImage:SetDesaturated(true) 
                     f.detailImage:SetVertexColor(0.4, 0.4, 0.4, 0.8) 
-                    f.detailImage:SetSize(580, 430) 
+                    f.detailImage:SetSize(680, 400) 
                     f.detailImage:SetTexCoord(0, 1, 0, 1)
                     f.detailImage:Show()
                 end
@@ -1740,12 +2096,12 @@ elseif activeTab == 2 then
                 local warningHeader = "\n\n|cffaaaaaa" .. (IMAGO.L["ZONE_UNEXPLORED_HEADER"] or "GEBIET UNERKUNDET") .. "|r"
                 local descText = "\n\n|cff666666" .. (IMAGO.L["ZONE_UNEXPLORED_DESC"] or "Die Kartographie dieser Region ist noch unvollständig.\nReise dorthin, um ihre Geheimnisse zu offenbaren.") .. "|r"
                 f.loreBody:SetText(warningHeader .. descText)
-                f.loreBody:SetWidth(500)
+                f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("CENTER")
                 f.loreBody:Show()
                 
                 f.infoScroll:ClearAllPoints()
-                f.infoScroll:SetWidth(520)
+                f.infoScroll:SetWidth(680)
                 f.infoScroll:SetPoint("TOP", f.detailFrame, "TOP", 0, -470)
                 f.infoScroll:SetPoint("BOTTOM", f.detailFrame, "BOTTOM", 0, 100)
                 f.infoScroll:Show()
@@ -1834,6 +2190,7 @@ function IMAGO.Chronicle.Toggle()
     else 
         IMAGO.Chronicle.UpdateList()
         if f.ShowDashboard then f.ShowDashboard() end
+        if f.UpdateModeBtn then f.UpdateModeBtn() end
         f:Show() 
     end
 end
