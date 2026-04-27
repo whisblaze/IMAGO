@@ -3,7 +3,7 @@
 -- ============================================================
 
 IMAGOdb.zones[2405].name = "Voidstorm"
-IMAGOdb.zones[2405].lore = " Not much is known about the scarred landscape now known as the Voidstorm. Hostile and alien, this broken world once knew life and peace. In times past, the hills and crags were part of a world called Predacea. A society of knowledge and scientific progress, Predacea was not immune to the drums of war. In seeking an end to all conflict, a weapon of mass destruction was unleashed that ended their civilization entirely. Untold years later, the remnants of this planet have become the staging ground for Xal’atath’s war on Azeroth."
+IMAGOdb.zones[2405].lore = "Not much is known about the scarred landscape now known as the Voidstorm. Hostile and alien, this broken world once knew life and peace. In times past, the hills and crags were part of a world called Predacea. A society of knowledge and scientific progress, Predacea was not immune to the drums of war. In seeking an end to all conflict, a weapon of mass destruction was unleashed that ended their civilization entirely. Untold years later, the remnants of this planet have become the staging ground for Xal’atath’s war on Azeroth."
 IMAGOdb.zones[2405].pointsOfInterest = {
     {
         name = "Slayer's Rise",
