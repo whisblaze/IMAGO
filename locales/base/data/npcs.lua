@@ -42,16 +42,26 @@ IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].name = "Lady Liadrin"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].lore = "Once a devoted priestess of the Light, Lady Liadrin lost her faith after the Scourge decimated Silvermoon. She became the first Blood Knight, initially bending the Light to her will by siphoning the naaru M'uru. Through the restoration of the Sunwell, she found redemption and true devotion. Today, as Matriarch of the Blood Knights, she is one of the most noble champions of the Army of the Light, standing unwavering between her homeland and the endless hunger of the Void."
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].lore = [[Lady Liadrin lost her faith in the Light when the Scourge decimated Silvermoon. She wandered the Ghostlands, killing undead in the ruins of her former home. Eventually, the Magisters came to her with an offer to use the Naaru M'uru's energies to wield the Light once more as a paladin. In doing so, Liadrin became the first Blood Knight.
+After the renewal of the Sunwell, her conviction was restored as well and she swore to protect it henceforth.
+
+Sometimes she may still doubt her worthiness for what she did to M'uru, but her faith and devotion to her people never wavered.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].zones = {"Atal'Aman", "Dornogal", "Eversong Woods", "Isle of Quel'Danas", "Orgrimmar", "Parhelion Plaza", "Silvermoon City", "Stormwind City", "Zul'Aman"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].source = "warcraft.wiki.gg/wiki/Lady_Liadrin"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].timeline = {
-    {era = "WC3", text = "Survived the Scourge invasion of Quel'Thalas, lost her faith, and abandoned the priesthood to take up the sword."},
-    {era = "TBC", text = "Founded the Blood Knights, turned against Kael'thas, pledged loyalty to the Sha'tar, and helped purify the Sunwell."},
-    {era = "WoD", text = "Led the Sunsworn in Auchindoun in the battle against the Shadow Council and the Burning Legion."},
-    {era = "Legion", text = "Became a Highlord of the Silver Hand and fought alongside the Army of the Light on the demon world of Argus."},
-    {era = "BfA", text = "Recruited the Nightborne into the Horde and commanded Horde forces at the Arathi Highlands Warfront."},
-    {era = "Midnight", text = "Coordinates the forces of the Light and the Blood Knights to defend Quel'Thalas against Xal'atath's Void powers."},
+    {era = "WC2", text = "Fought against the Amani trolls, and managed to help capture Zul'jin after first being captured by him. Felt a great sense of guilt after seeing the enemy warlord tortured extensively, judging  the forest trolls worthy of compassion for the first time."},
+    {era = "WC3", text = "Barely survived the Fall of Silvermoon. Gave up priesthood after losing her faith and her family."},
+    {era = "Pre-Classic", text = "Became the first Blood Knight paladin and leader of the order."},
+    {era = "TBC", text = "Helped depose Kael'thas and to purify the Sunwell. Regained her faith."},
+    {era = "WotLK", text = "Began training new paladins without relying on the torture of a Naaru."},
+    {era = "WoD", text = "Led the Sunsworn forces to combat the Iron Horde. Liberated Auchindoun from the Shadow Council."},
+    {era = "Legion", text = "Joined the Knights of the Silver Hand and defended Light's Hope Chapel. Led Horde forces to free Suramar from occupation of the Burning Legion."},
+    {era = "BfA", text = "Left the Knights of the Silver Hand and commanded Horde forces in the battle for Stromgarde."},
+    {era = "SL", text = "Defended Silvermoon from new Scourge incursions alongside Grand Magister Rommath and Aethas Sunreaver."},
+    {era = "Pre-DF", text = "Officiated Lor'themar and Thalyssra's marriage."},
+    {era = "TWW", text = "Helped defend Hallowfall from Xal'atath's forces and coordinated the training of new Earthen recruits for the Horde."},
+    {era = "Pre-Midnight", text = "Rallied the priests of Azeroth to Silvermoon with Alonsus Faol in anticipation of Xal'atath's attack."},
+    {era = "Midnight", text = "Liadrin fought on the forefront in the defense of the Sunwell, recruited outside help from Zul'jarra's Amani and helped to create the Dawnwell."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].name = "Grand Magister Rommath"
