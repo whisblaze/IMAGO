@@ -6,6 +6,13 @@ IMAGOdb = IMAGOdb or {}
 IMAGOdb.npcs = IMAGOdb.npcs or {}
 IMAGOdb.npcs.CAT_EBON_BLADE = IMAGOdb.npcs.CAT_EBON_BLADE or {}
 
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"] = {
+    displayID = 244958,
+    ids = {244958},
+    zones = {},
+    category = "CAT_EBONBLADE",
+}
+
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"] = {
     displayID = 244955,
     ids = {244955},

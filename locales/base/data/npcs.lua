@@ -662,6 +662,44 @@ IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
 
 
 -- CAT_EBON_BLADE
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].race = "Human"
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].lore = [[Following the death of her family at the hands of the Scourge in Lordaeron, Sally Whitemane had one focus - destroying the undead in their entirety. As a zealous priestess of the Light fueled by guilt and rage towards the undead, she was welcomed into the Scarlet Crusade, and very quickly rose through the ranks to the position of High Inquisitor. After taking control of the organization following what was believed to be her demise at the Scarlet Monastery years prior, she was finally slain by the forsaken assassin Lillian Voss and a band of adventurers.
+
+Now resurrected as a member of the Four Horsemen, Sally has recovered from her immense hatred, but remains passionate and devoted, now to the defense of Azeroth with her fellow Death Knights of the Ebon Blade.]]
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].source = "Nebb"
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Witnessed her family succumb to the plague of undeath in Lordaeron, and had to destroy them when they arose as members of the Scourge. Joined the Scarlet Crusade to end the undead threat.]],
+    },
+    {
+        era = "Classic",
+        text = [[Ascended to the rank of High Inquisitor. Survived attempts to defeat the leadership of the Scarlet Crusade by groups of adventurers raiding the Scarlet Monastery, and went into hiding.]],
+    },
+    {
+        era = "MoP",
+        text = [[Returned to lead the forces of the Scarlet Crusade. Finally slain by Lillian Voss and a group of adventurers.]],
+    },
+    {
+        era = "Legion",
+        text = [[Resurrected as a Death Knight by the Knights of the Ebon Blade to serve as the third of the Four Horsemen. Aided in fighting off the Burning Legion alongside the other horsemen on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Gathered fallen champions of the Horde and Alliance to be raised as the next generation of Death Knights.]],
+    },
+    {
+        era = "SL",
+        text = [[Acted as the Ebon Blade’s emissary to the Alliance. Aided with the assault on the Sanctum of Domination. Returned to Azeroth to assist the Ebon Blade in holding back the Scourge.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Defended Light’s Hope Chapel from the Scourge along with the rest of the Four Horsemen.]],
+    }
+}
+
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].name = "Highlord Darion Mograine"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].race = "Human"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].lore =
