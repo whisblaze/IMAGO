@@ -54,3 +54,10 @@ IMAGOdb.npcs.CAT_NEUTRAL["freya"] = {
     zones = {},
     category = "CAT_NEUTRAL",
 }
+
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"] = {
+    displayID = 248874,
+    ids = {248874, 248750, 242099, 249057, 242381, 250186, 248567, 248982},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}

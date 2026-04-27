@@ -659,7 +659,54 @@ IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
     {era = "Midnight", text = "Personally watches over the pristine jungle of Harandar to prevent the spread of the Void into the fragile ecosystem."},
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].name = "Valeera Sanguinar"
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].lore = [[Valeera Sanguinar owes allegiance to no faction and no leader. The young blood elf woman was orphaned at a young age and lived on the streets, thieving to survive. Whether it was the Scourge, mana addiction or enslavement – somehow Valeera made it through. She became slow to trust anybody, felt betrayed by the world, and became a reckless assassin.
 
+When she finally made true friends with Varian Wrynn and Broll Bearmantle, she took her first steps back into a healthier way of life. Owing her life to Varian she served him as a bodyguard without any obligation to the Alliance. After his death she coninued to serve his son, Anduin and Stormwind became her second home.
+
+Now, as a neutral friend to both factions, she aids the Champions of Azeroth in vanquishing foes that plot against Silvermoon from within the darkest depths of Quel'Thalas and beyond.]]
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].zones = {"Eversong Woods", "Parhelion Plaza", "Silvermoon City", "Zul'Aman", "Sunkiller Sanctum", "Atal'Aman", "Collegiate Calamity", "Shadowguard Point", "The Darkway", "The Grudge Pit", "The Gulf of Memory", "The Shadow Enclave", "Twilight Crypts"}
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].timeline = {
+    {
+        era = "Pre-WC3",
+        text = [[Orphaned as a child when her entire family was murdered by bandits. Survived as a thief on the streets.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Caught stealing in Horde territory and was sold to Rehgar Earthfury as a gladiator slave and was forced to fight alongside Varian Wrynn and Broll Bearmantle. The three became friends and escaped together, ultimately helping Varian reclaim the Throne of Stormwind.
+Valeera briefly struggled with addiction to fel magic and got possessed by the demon Kathra'natir.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Stayed in Stormwind City as royal bodyguard to repay King Varian for saving her life. Valeera and Broll joined Varian in the Battle for the Undercity.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Uncrowned and helped recover the Fangs of the Devourer. Managed to decipher Amber Kearnen's last message and thus uncovered that Stormwind's SI:7 had been infiltrated by the Burning Legion.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Now serving Anduin Wrynn she delivered a message to Baine Bloodhoof, initiating negotiations to hold the Gathering.]],
+    },
+    {
+        era = "BfA",
+        text = [[Delivered various messages between the warring Horde and Alliance, serving as a neutral party to both and was present during the formation of the Horde council.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Unsuccessfully tried to find traces of Sylvanas Windrunner. Refused to take part in any more faction business on either side.]],
+    },
+    {
+        era = "TWW",
+        text = [[Survived Dalaran's destruction and settled with the other Uncrowned in Dornogal for a while.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped kill the traitorous Lord Antenorian. At both Anduin and Lor'themar's behest she worked alongside the Reliquary and the Champions of Azeroth to thwart various threats to Silvermoon.]],
+    }
+}
 
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].name = "Highlord Darion Mograine"
