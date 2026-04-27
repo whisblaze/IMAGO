@@ -138,14 +138,18 @@ IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].name = "Archmage Aethas Sunreaver"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].lore = "Archmage Aethas Sunreaver looks back on a turbulent political career. For a long time, as the leader of the blood elven magi in the Kirin Tor, he tried to build a bridge between Dalaran and Silvermoon. After the tragic destruction of Dalaran in Khaz Algar, he turned his back on the old order of the magi. In Midnight, he has returned to Quel'Thalas to defend his homeland against the Void. When the alliance with the Silver Covenant is debated at the war table in Silvermoon, Aethas is initially strictly against it. Only when Vereesa Windrunner presents him with the ashes of fallen Sunreavers and ancient relics as an offering of peace does he relent in the face of impending annihilation."
+IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].lore = "Archmage Aethas Sunreaver is a brilliant sin'dorei mage who rapidly ascended to the Kirin Tor's Council of Six despite his youth. An eternal optimist and a staunch proponent of neutrality, he dedicated much of his life to repairing the millennia old alliance between Silvermoon and Dalaran. His loyalties and ideals have been severely tested by factional warfare, leading to difficult choices, betrayal, and even imprisonment as he struggled to protect his people. Despite enduring immense hardships and the recurring destruction of his beloved city, Aethas remains deeply committed to the pursuit of knowledge, cooperation, and the enduring survival of the blood elves."
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].zones = {"Eversong Woods", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].source = "warcraft.wiki.gg/wiki/Aethas_Sunreaver"
+IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].source = "Lewi - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].timeline = {
-    {era = "WotLK", text = "Founded the Sunreavers in Dalaran, securing a sanctuary for the Horde within the magi city."},
-    {era = "MoP", text = "Was imprisoned as a traitor during the bloody Purge of Dalaran by Jaina Proudmoore and fled to Silvermoon."},
-    {era = "TWW", text = "Survived the crash of Dalaran in Khaz Algar and renounced the arrogant, global political meddling of the Kirin Tor."},
-    {era = "Midnight", text = "Defends Silvermoon at the war table and overcomes his hatred of the Silver Covenant to save Quel'Thalas."},
+    {era = "WotLK", text = "Defended Dalaran from the Blue Dragonflight and successfully championed the readmission of the blood elves into the Kirin Tor to fight the Lich King. He also formally formed the Sunreaver faction of Dalaran to represent his followers and the Horde within the city."},
+    {era = "Pre-MoP", text = "Voted to send Kirin Tor aid to defend Theramore from the Horde. However, he later denied Jaina Proudmoore's request to mobilize Dalaran for vengeance after the city was annihilated by a mana bomb."},
+    {era = "MoP", text = "Imprisoned during the Purge of Dalaran after being tied to Horde war crimes. Following his rescue, he aided Quel'Thalas in the Isle of Thunder campaign and the rebellion against Garrosh Hellscream."},
+    {era = "Legion", text = "Orchestrated the recovery of the ancestral runeblade Felo'melorn to earn back the Sunreavers' place within the Kirin Tor. He later battled the Burning Legion alongside his peers on the Broken Shore and Argus."},
+    {era = "SL", text = "Returned to Quel'Thalas to help establish magical defenses in Tranquillien. Alongside his allies, he successfully defeated a renewed Scourge invasion led by a treacherous San'layn."},
+    {era = "DF", text = "Attempted to make amends with Jaina Proudmoore by seeking out a precious Kul Tiran music box she had lost, hoping to offer it as a gesture of peace."},
+    {era = "TWW", text = "Survived the destruction of Dalaran and suffered from profound survivor's guilt. He ultimately resolved alongside his peers to rebuild the Kirin Tor without the hubris of the past."},
+    {era = "Midnight", text = "Led the Sunreavers in the defense of Silvermoon against the encroaching Void, tolerating the Silver Covenant's presence to ensure the city did not fall. Following a succesful assault against the void in Quel'Danas, he agreed to the Silversun Compact, an uneasy agreement with the Silver Covenant to set aside their differences in times of great need."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].name = "Salandria"
