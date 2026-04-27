@@ -54,19 +54,19 @@ IMAGOdb.zones[2413].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2437].name = "Zul'Aman"
-IMAGOdb.zones[2437].lore = "Zul'Aman, the ancient home of the Amani trolls, unfolds as an expansive region of dense forests, tall mountains, and unforgiving wilderness. Under the leadership of Zul'jarra, the granddaughter of the legendary Zul'jin, the once-proud people desperately try to survive the Void onslaught. The fragile peace with the neighboring blood elves of Eversong Woods hangs by a thread as Zul'jarra and her militant brother Zul'jan grapple with the agonizing loss of connection to their loa. Amidst this existential crisis, forgotten enemies rise from the shadows, and the bloody history of troll culture reveals itself to explorers brave enough to enter these ancient lands."
+IMAGOdb.zones[2437].lore = "The towering forests of Zul’Aman have been home to the Amani trolls since long before the high elves ever established Quel’Thalas. Border skirmishes have defined the relationship between the two factions for as long as anyone can remember. Under the leadership of Zul’jin, the Amani twisted the magic of their loa to violent ends. In response, the wild gods went silent, abandoning the Amani tribe to their own fate for decades. Now, with the Twilight’s Blade infesting their woods, the trolls look to their neighbors for aid. Zul’jin’s grandchildren, Zul’jarra and Zul’jan, seek to guide the Amani back to their former glory."
 IMAGOdb.zones[2437].pointsOfInterest = {
     {
-        name = "The Abandoned Loa Temples",
-        lore = "Once magnificent shrines dedicated to the powerful spirits of Akil'zon (eagle), Halazzi (lynx), Jan'alai (dragonhawk), and Nalorakk (bear). Today, they are overgrown with jungle vines and stand as silent monuments to a fading spiritual power."
+        name = "Amani’Zar Village",
+        lore = "As the largest village in Zul’Aman and de facto capital of the Amani people, Amani’Zar Village has become a melting pot of troll culture. Many tribes fall under the Amani banner, including the Witherbark, Shadowpine, and Revantusk. Members of each of these tribes make their home in Amani’Zar, uniting their people against threats like the Viletusk and Twilight’s Blade."
     },
     {
-        name = "Maisara Caverns",
-        lore = "Deep beneath the sacred hills, extremist Vilebranch trolls perform gruesome sacrificial rituals on captured Witherbark. Their forbidden necromancy feeds a monstrous dire troll named Rak'tul—a ticking magical time bomb that could plunge all of Zul'Aman into chaos."
+        name = "The Loa Temples",
+        lore = "Dedicated temples to each of the major Amani loa dot the landscape throughout Zul’Aman. Halazzi the lynx, Jan’alai the dragonhawk, Nalorakk the bear, and Akil’zon the eagle each had major structures built in their honor. Though they were once spiritual centers of the Amani empire, they went silent after Zul’jin’s betrayal. Under Zul’jarra, the voices of the loa have returned to their people, and their temples have reawakened."
     },
     {
-        name = "The Broken Throne",
-        lore = "The architectural and political heart of the zone. Here, Zul'jarra desperately coordinates the resistance. Surrounded by massive towers hiding valuable artifacts and deadly puzzles, the fate of the Amani will be decided here."
+        name = "Atal'Aman",
+        lore = "The city of Atal'Aman was once a sacred site for the Amani. The temples built throughout were a gathering place for many disciples of the loa. Though still inhabited by the Amani, the spiritual meaning of the temple city has been all but lost. After Zul’jin betrayed the loa and stole their power for himself, the gods vanished, and their worshippers with them. The site has seen frequent bloodshed, being raided by opportunistic adventurers on two separate occasions. Even today, the spirits of those assaults run rampant across these sacred grounds."
     },
 }
 
