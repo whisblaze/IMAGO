@@ -19,3 +19,10 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"] = {
     zones = {},
     category = "CAT_EBON_BLADE",
 }
+
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"] = {
+    displayID = 244959,
+    ids = {244959, 221634},
+    zones = {},
+    category = "CAT_EBONBLADE",
+}

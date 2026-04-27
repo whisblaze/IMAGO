@@ -699,6 +699,49 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {
     {era = "Midnight", text = "Helped defend Light's Hope Chapel in the Eastern Plaguelands."},
 }
 
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].name = "Nazgrim"
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].race = "Orc"
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].lore = [[Honor, loyalty, courage - there is nothing more important to orcs. For Nazgrim, these were not merely mottos, but the very meaning of life.
+Starting as a lowly sergeant in Garrosh Hellscream's army, Nazgrim quickly rose to the rank of general through his achievements across Azeroth and became one of the closest allies of Warchief Hellscream.
+When the Horde rebelled against Hellscream and the moment came to choose between duty and morality, Nazgrim chose the former with grim determination, standing firm against the invaders and ultimately giving his life in service to his Warchief.
+However, his story did not end there, as he was risen by the Knights of the Ebon Blade as the first of the new Four Horsemen. Upon learning of the third invasion of the Burning Legion, he accepted his new role without hesitation and remained steadfast in his service to his people.]]
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].zones = {"Eastern Plaguelands", "The Dreamrift", "The Voidspire"}
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].source = "Metrus"
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].timeline = {
+    {
+        era = "Pre-WC3",
+        text = [[Was captured by the Alliance and held prisoner in the interment camps. After being freed by the Horde, he joined Thrall's army.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Stationed as sergeant at Conquest Hold in the Grizzly Hills.]],
+    },
+    {
+        era = "Cata",
+        text = [[Was promoted to Legionnaire and led the Horde's campaign in Vashj'ir.]],
+    },
+    {
+        era = "MoP",
+        text = [[Was promoted to general and ordered to take control of newly discovered lands of Pandaria. Recruited indigenous hozen and clashed with Admiral Taylor's forces, resulting in the destruction of Serpent's Heart and the unleashing of the sha. Was later summoned by Garrosh and was tasked to defend main gates of Orgrimmar from the Horde rebels and Alliance forces and eventually died there.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was raised by the new Deathlord and Thassarian as the first member of the new Four Horsemen.]],
+    },
+    {
+        era = "SL",
+        text = [[Became the Ebon Blade's emissary to the Horde. Accompanied Bolvar Fordragon during the attack on the Sanctum of Domination.]],
+    },
+    {
+        era = "DF",
+        text = [[Attended the first Kosh'arg on Azeroth as part of Warsong clan.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped defend Light's Hope Chapel.]],
+    }
+}
+
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexus-King Salhadaar"
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Ethereal"
