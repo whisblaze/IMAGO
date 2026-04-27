@@ -795,12 +795,14 @@ IMAGOdb.npcs.CAT_AMANI["halazzi"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["zuljan"].name = "Zul'jan"
-IMAGOdb.npcs.CAT_AMANI["zuljan"].race = "Forest Troll"
-IMAGOdb.npcs.CAT_AMANI["zuljan"].lore = "As one of the most prominent Amani leaders in Midnight, Zul'jan stands firmly alongside Zul'jarra. He embodies the deep shamanic tradition of the tribe and maintains the vital connection to the loa powers. His constant presence on the most heated fronts in Zul'Aman and Eversong Woods shows that he plays an absolute key role in coordinating the troops and the spiritual defense against the Void."
+IMAGOdb.npcs.CAT_AMANI["zuljan"].race = "Troll"
+IMAGOdb.npcs.CAT_AMANI["zuljan"].lore = [[The impulsive Zul'jan is chief advisor to the current ruler of the Amani tribes – his own sister, Zul'jarra. Unlike her though, Zul'jan distrusts the loa. As he sees it, they had abandoned the trolls in their time of greatest need. As much as he might disagree with his older sister on these matters, he genuinely cares about her and would do his utmost to protect her.
+Now, Zul'jan rallies the Amani to become strong by their own merits, not relying on loa or anybody else.]]
 IMAGOdb.npcs.CAT_AMANI["zuljan"].zones = {"Atal'Aman", "Eversong Woods", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["zuljan"].source = "warcraft.wiki.gg/wiki/Zul'jan"
+IMAGOdb.npcs.CAT_AMANI["zuljan"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_AMANI["zuljan"].timeline = {
-    {era = "Midnight", text = "Emerges as a high-ranking Amani leader, supporting Zul'jarra in the defense and coordination of the tribe."},
+    {era = "TBC", text = "Lost his father Man'ye and grandfather Zul'jin when he was just a young child. Later, his mother was killed in ritual combat and his sister Zul'jarra claimed leadership of the Amani tribes."},
+    {era = "Midnight", text = "Secured lightwood weapons for his people and battled the Blood Elves as well as the Twilight's Blade. Reluctantly followed his sister's orders to ally with the elves later on. "},
 }
 
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].name = "Loa Speaker Kinduru"
