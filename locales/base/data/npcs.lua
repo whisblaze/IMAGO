@@ -56,16 +56,19 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].name = "Grand Magister Rommath"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].lore = "As the Grand Magister of Quel'Thalas and leader of the Magisters, Rommath is the undisputed master of the arcane arts in Silvermoon. He was once a loyal companion of Kael'thas Sunstrider in Outland, but returned home to save his people from magical starvation. He harbors a deep, unforgiving hatred for the Kirin Tor, who once sentenced the blood elves to death. Pragmatic, sharp-tongued, and fiercely loyal to the Sin'dorei, he unleashes the full might of his Magisters in Midnight to repel the Void invasion. His presence in Orgrimmar and deep within the Twilight Highlands shows he is willing to harness even the most dangerous arcane or shadow knowledge to save his homeland."
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].lore = "Uncompromising and confrontational, the Grand Magister of Silvermoon is a man fiercely loyal to his people. As Kael'thas' staunchest supporter after the Third War, Rommath did whatever he thought was necessary to ensure the survival of the blood elves. Even if it meant using fel magic or torturing a Naaru for its holy power, Rommath was ready and willing. His loyalty was tested when Kael'thas allied himself with the Burning Legion; in the end, he chose his people over his former prince. Having been betrayed twice already – first by his former friend Dar'khan Drathir, and second by the Kirin Tor of Dalaran – Kael'thas' treachery hardened the elf's heart even further. With the Voidstorm encroaching on his homeland, Rommath will do what he has always done – protect Silvermoon at all costs, despite everything he and his people have endured."
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].zones = {"Eversong Woods", "Orgrimmar", "Twilight Highlands", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "warcraft.wiki.gg/wiki/Grand_Magister_Rommath"
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "Cadash & Austin - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
-    {era = "WC3", text = "Escaped the dungeons of Dalaran with Kael'thas and followed him to the shattered world of Outland."},
-    {era = "TBC", text = "Returned to Quel'Thalas, helped rebuild Silvermoon, and taught the blood elves how to siphon magic."},
-    {era = "MoP", text = "Rescued Aethas Sunreaver and other blood elves during Jaina Proudmoore's bloody Purge of Dalaran."},
-    {era = "Legion", text = "Defended Quel'Thalas against the Burning Legion and reluctantly supported the Tirisgarde."},
-    {era = "BfA", text = "Played a key role in recruiting the Nightborne as new allies of the Horde."},
-    {era = "Midnight", text = "Coordinates the arcane defense in Eversong Woods and seeks war-winning resources in the Twilight Highlands."},
+    {era = "Pre-WC1", text = "Studied the arcane in the mage capital of Dalaran alongside his friends Umbric and Dar'khan Drathir."},
+    {era = "WC3", text = "Survived Silvermoon's destruction and joined Kael'thas Sunstrider in his defense of Dalaran. Followed the prince to Outland after escaping the dungeons of the Kirin Tor and learned how to combat the blood elves' addiction to magic from Illidan Stormrage. He returned to Silvermoon as Grand Magister."},
+    {era = "TBC", text = "Helped found the order of the Blood Knights and joined the civil war against Kael'thas Sunstrider. Sometime after the prince's defeat, Rommath exiled Magister Umbric and his followers for practicing void magic."},
+    {era = "WotLK", text = "Attempted to dissuade Lor'themar from sending the diminished blood elves to war in Northrend, ultimately failing. Helped in the restoration of the weapon Quel'delar."},
+    {era = "MoP", text = "Rescued Aethas Sunreaver and many other mages from the purge of Dalaran. He fought for the Horde as part of the Sunreavers on the Isle of Thunder."},
+    {era = "Legion", text = "Helped to free Suramar from the occupation of the Burning Legion."},
+    {era = "BfA", text = "Took part in welcoming the nightborne into the Horde and defended the Sunwell from Alleria's influence."},
+    {era = "SL", text = "Defended Silvermoon from new Scourge incursions alongside Lady Liadrin and Aethas Sunreaver."},
+    {era = "Midnight", text = "Rommath leads the magisters of Silvermoon in their defense from the Devouring Host. Still wary of Umbric's use of Void magic, Rommath reluctantly agreed thst his expertise is needed to defeat their common enemy."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].name = "Halduron Brightwing"
