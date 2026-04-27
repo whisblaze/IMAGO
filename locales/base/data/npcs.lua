@@ -699,6 +699,44 @@ IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
 
 
 -- CAT_EBON_BLADE
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].race = "Human"
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].lore = [[Following the death of her family at the hands of the Scourge in Lordaeron, Sally Whitemane had one focus - destroying the undead in their entirety. As a zealous priestess of the Light fueled by guilt and rage towards the undead, she was welcomed into the Scarlet Crusade, and very quickly rose through the ranks to the position of High Inquisitor. After taking control of the organization following what was believed to be her demise at the Scarlet Monastery years prior, she was finally slain by the forsaken assassin Lillian Voss and a band of adventurers.
+
+Now resurrected as a member of the Four Horsemen, Sally has recovered from her immense hatred, but remains passionate and devoted, now to the defense of Azeroth with her fellow Death Knights of the Ebon Blade.]]
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].source = "Nebb"
+IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Witnessed her family succumb to the plague of undeath in Lordaeron, and had to destroy them when they arose as members of the Scourge. Joined the Scarlet Crusade to end the undead threat.]],
+    },
+    {
+        era = "Classic",
+        text = [[Ascended to the rank of High Inquisitor. Survived attempts to defeat the leadership of the Scarlet Crusade by groups of adventurers raiding the Scarlet Monastery, and went into hiding.]],
+    },
+    {
+        era = "MoP",
+        text = [[Returned to lead the forces of the Scarlet Crusade. Finally slain by Lillian Voss and a group of adventurers.]],
+    },
+    {
+        era = "Legion",
+        text = [[Resurrected as a Death Knight by the Knights of the Ebon Blade to serve as the third of the Four Horsemen. Aided in fighting off the Burning Legion alongside the other horsemen on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Gathered fallen champions of the Horde and Alliance to be raised as the next generation of Death Knights.]],
+    },
+    {
+        era = "SL",
+        text = [[Acted as the Ebon Blade’s emissary to the Alliance. Aided with the assault on the Sanctum of Domination. Returned to Azeroth to assist the Ebon Blade in holding back the Scourge.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Defended Light’s Hope Chapel from the Scourge along with the rest of the Four Horsemen.]],
+    }
+}
+
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].name = "Highlord Darion Mograine"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].race = "Human"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].lore =
@@ -734,6 +772,49 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {
     {era = "Legion", text = "Thassarian aided the new Deathlord in raising the new Four Horsemen. Later, he fought at the Battle for the Exodar.  Rescued Koltira Deathweaver from the Undercity. "},
     {era = "SL", text = "Followed Bolvar Fordragon into the Shadowlands to stop Sylvanas Windrunner."},
     {era = "Midnight", text = "Helped defend Light's Hope Chapel in the Eastern Plaguelands."},
+}
+
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].name = "Nazgrim"
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].race = "Orc"
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].lore = [[Honor, loyalty, courage - there is nothing more important to orcs. For Nazgrim, these were not merely mottos, but the very meaning of life.
+Starting as a lowly sergeant in Garrosh Hellscream's army, Nazgrim quickly rose to the rank of general through his achievements across Azeroth and became one of the closest allies of Warchief Hellscream.
+When the Horde rebelled against Hellscream and the moment came to choose between duty and morality, Nazgrim chose the former with grim determination, standing firm against the invaders and ultimately giving his life in service to his Warchief.
+However, his story did not end there, as he was risen by the Knights of the Ebon Blade as the first of the new Four Horsemen. Upon learning of the third invasion of the Burning Legion, he accepted his new role without hesitation and remained steadfast in his service to his people.]]
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].zones = {"Eastern Plaguelands", "The Dreamrift", "The Voidspire"}
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].source = "Metrus"
+IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].timeline = {
+    {
+        era = "Pre-WC3",
+        text = [[Was captured by the Alliance and held prisoner in the interment camps. After being freed by the Horde, he joined Thrall's army.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Stationed as sergeant at Conquest Hold in the Grizzly Hills.]],
+    },
+    {
+        era = "Cata",
+        text = [[Was promoted to Legionnaire and led the Horde's campaign in Vashj'ir.]],
+    },
+    {
+        era = "MoP",
+        text = [[Was promoted to general and ordered to take control of newly discovered lands of Pandaria. Recruited indigenous hozen and clashed with Admiral Taylor's forces, resulting in the destruction of Serpent's Heart and the unleashing of the sha. Was later summoned by Garrosh and was tasked to defend main gates of Orgrimmar from the Horde rebels and Alliance forces and eventually died there.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was raised by the new Deathlord and Thassarian as the first member of the new Four Horsemen.]],
+    },
+    {
+        era = "SL",
+        text = [[Became the Ebon Blade's emissary to the Horde. Accompanied Bolvar Fordragon during the attack on the Sanctum of Domination.]],
+    },
+    {
+        era = "DF",
+        text = [[Attended the first Kosh'arg on Azeroth as part of Warsong clan.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped defend Light's Hope Chapel.]],
+    }
 }
 
 -- CAT_VOID
