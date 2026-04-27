@@ -165,7 +165,9 @@ IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].timeline = {
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].name = "Magister Umbric"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].race = "Void Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].lore = [[No limits – that was Umbric's desire as a student of the arcane arts in Dalaran. Yet he found the mages' studies to be too rigid, too constricting for his liking. Seeing the fall of the Sunwell and his home of Quel'Thalas, he realized that he needed to try a different approach to magic. The elves of Silvermoon needed an alternative way to survive if the need arose... and so Umbric turned to the dark energies of the Void.
+
 He gathered quite a few acolytes practicing the forbidden arts in secret before he was discovered. Exiled by his former friend, Grand Magister Rommath, Umbric and his followers continued their studies and finally found a way into a rift of space and time – Telogrus. Here, they were transformed into the ren'dorei, elves infused with the Void itself. 
+
 After joining the Alliance, Umbric and his ren'dorei have become a small but elite force of specialists and have been on the forefront in the efforts against Xal'atath multiple times by now.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].zones = {"Amirdrassil", "The Voidspire", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Twilight Highlands", "Silvermoon City", "Stormwind City", "Magister's Terrace"}
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].source = "Cadash - IMAGO Community"
@@ -307,8 +309,11 @@ IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].timeline = {
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].name = "Taelia Fordragon"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].lore = [[A friendly and headstrong young woman, Taelia was born in Lordaeron shortly before the wars against the Horde broke out. After losing her mother in the conflict, her father Bolvar sent her to the kingdom of Kul Tiras for her own safety.
+
 She became a paladin and fought loyally for House Proudmoore, for her new home, and afterwards for the Alliance.
+
 Taelia is an open-minded individual, being best friends with the former pirate Flynn Fairwind, and even reconnecting happily with her father Bolvar after finding out that he had been made the Lich King.
+
 Now, the Sunwell has called Taelia to lend her strength to Silvermoon's defense.]]
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].source = "Cadash - IMAGO Community"
@@ -696,17 +701,15 @@ IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
     {era = "Midnight", text = "Personally watches over the pristine jungle of Harandar to prevent the spread of the Void into the fragile ecosystem."},
 }
 
-
-
 -- CAT_EBON_BLADE
-IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
-IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].race = "Human"
-IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].lore = [[Following the death of her family at the hands of the Scourge in Lordaeron, Sally Whitemane had one focus - destroying the undead in their entirety. As a zealous priestess of the Light fueled by guilt and rage towards the undead, she was welcomed into the Scarlet Crusade, and very quickly rose through the ranks to the position of High Inquisitor. After taking control of the organization following what was believed to be her demise at the Scarlet Monastery years prior, she was finally slain by the forsaken assassin Lillian Voss and a band of adventurers.
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].lore = [[Following the death of her family at the hands of the Scourge in Lordaeron, Sally Whitemane had one focus - destroying the undead in their entirety. As a zealous priestess of the Light fueled by guilt and rage towards the undead, she was welcomed into the Scarlet Crusade, and very quickly rose through the ranks to the position of High Inquisitor. After taking control of the organization following what was believed to be her demise at the Scarlet Monastery years prior, she was finally slain by the forsaken assassin Lillian Voss and a band of adventurers.
 
 Now resurrected as a member of the Four Horsemen, Sally has recovered from her immense hatred, but remains passionate and devoted, now to the defense of Azeroth with her fellow Death Knights of the Ebon Blade.]]
-IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].zones = {"Eastern Plaguelands"}
-IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].source = "Nebb"
-IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"].timeline = {
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].source = "Nebb"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].timeline = {
     {
         era = "Pre-Classic",
         text = [[Witnessed her family succumb to the plague of undeath in Lordaeron, and had to destroy them when they arose as members of the Scourge. Joined the Scarlet Crusade to end the undead threat.]],
@@ -774,15 +777,15 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {
     {era = "Midnight", text = "Helped defend Light's Hope Chapel in the Eastern Plaguelands."},
 }
 
-IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].name = "Nazgrim"
-IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].race = "Orc"
-IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].lore = [[Honor, loyalty, courage - there is nothing more important to orcs. For Nazgrim, these were not merely mottos, but the very meaning of life.
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].name = "Nazgrim"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].race = "Orc"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].lore = [[Honor, loyalty, courage - there is nothing more important to orcs. For Nazgrim, these were not merely mottos, but the very meaning of life.
 Starting as a lowly sergeant in Garrosh Hellscream's army, Nazgrim quickly rose to the rank of general through his achievements across Azeroth and became one of the closest allies of Warchief Hellscream.
 When the Horde rebelled against Hellscream and the moment came to choose between duty and morality, Nazgrim chose the former with grim determination, standing firm against the invaders and ultimately giving his life in service to his Warchief.
 However, his story did not end there, as he was risen by the Knights of the Ebon Blade as the first of the new Four Horsemen. Upon learning of the third invasion of the Burning Legion, he accepted his new role without hesitation and remained steadfast in his service to his people.]]
-IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].zones = {"Eastern Plaguelands", "The Dreamrift", "The Voidspire"}
-IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].source = "Metrus"
-IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"].timeline = {
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].zones = {"Eastern Plaguelands", "The Dreamrift", "The Voidspire"}
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].source = "Metrus"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].timeline = {
     {
         era = "Pre-WC3",
         text = [[Was captured by the Alliance and held prisoner in the interment camps. After being freed by the Horde, he joined Thrall's army.]],

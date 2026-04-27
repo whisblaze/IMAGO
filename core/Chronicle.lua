@@ -1108,15 +1108,15 @@ local contributors = {
                 {name = "Cadash", roles = "Lore Scribe, Translator", top = true},
                 {name = "austin", roles = "Archivist, Lore Scribe", top = true},
                 {name = "Elanor", roles = "Data Miner, Translator, Moderator", top = true},
+                {name = "DeMaa", roles = "Lua Developer, Moderator", top = true},
                 {name = "druidian", roles = "Archivist, Lore Scribe", top = true},
                 {name = "Minorou", roles = "Lore Scribe", top = true},
-                {name = "MayaWoW", roles = "Data Miner, Translator"},
-                {name = "Lewi", roles = "Archivist, Lore Scribe, Translator"},
-                {name = "DeMaa", roles = "Archivist, Lore Scribe, Data Miner, Translator, Lua Developer, Moderator"},
-                {name = "Elsafan (Crazycat).", roles = "Archivist, Data Miner"},
+                {name = "MayaWoW", roles = "Data Miner, Translator", top = true},
+                {name = "Lewi", roles = "Archivist, Lore Scribe, Translator", top = true},
+                {name = "Nebb", roles = "Lore Scribe", top = true},
+                {name = "Metrus", roles = "Lore Scribe, Translator", top = true},
                 {name = "Karstan", roles = "Lore Scribe, Translator"},
-                {name = "Nebb", roles = "Lore Scribe"},
-                {name = "Metrus", roles = "Lore Scribe, Translator"},
+                {name = "Elsafan (Crazycat).", roles = "Archivist, Data Miner"},
                 {name = "Travanoid", roles = "Lore Scribe"},
                 {name = "Lemurensohn", roles = "Archivist, Translator"},
                 {name = "zeerocool11", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
@@ -1966,7 +1966,8 @@ elseif activeTab == 2 then
         local zoneData = zoneObj.data
         local isSeen = IMAGOSaved.seenZones[mapID]
         local isEncyclopedia = IMAGOSaved.encyclopediaMode
-        local isZoneVisible = isSeen or isEncyclopedia
+        local isManual = IMAGOSaved.manualZoneUnlocks and IMAGOSaved.manualZoneUnlocks[mapID]
+        local isZoneVisible = isSeen or isEncyclopedia or isManual
         local name = zoneData.name or ""
         local lore = zoneData.lore or ""
 
@@ -2003,7 +2004,11 @@ elseif activeTab == 2 then
             btn.bg:SetVertexColor(1, 1, 1, 1) 
             btn.bg:SetTexCoord(0, 1, 0.2, 0.8)
             btn.t:SetText(name)
-            btn.t:SetTextColor(1, 0.85, 0.1)
+            if isManual then
+                btn.t:SetTextColor(0.58, 0.40, 0.86)
+            else
+                btn.t:SetTextColor(1, 0.85, 0.1)
+            end
 
             btn:SetScript("OnClick", function()
                 if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) end
@@ -2057,6 +2062,25 @@ elseif activeTab == 2 then
                 f.infoScroll:Show()
                 f.infoScroll:SetVerticalScroll(0)
             end)
+
+            btn:SetScript("OnMouseUp", function(self, mouseBtn)
+                if mouseBtn == "RightButton" and not isSeen and not isEncyclopedia then
+                    if isManual then
+                        IMAGOSaved.manualZoneUnlocks[mapID] = nil
+                        IMAGO.Chronicle.UpdateList()
+                    else
+                        f.ShowConfirm(
+                            IMAGO.L["CONFIRM_UNLOCK_TITLE"],
+                            IMAGO.L["CONFIRM_UNLOCK_DESC"],
+                            function()
+                                IMAGOSaved.manualZoneUnlocks = IMAGOSaved.manualZoneUnlocks or {}
+                                IMAGOSaved.manualZoneUnlocks[mapID] = true
+                                IMAGO.Chronicle.UpdateList()
+                            end
+                        )
+                    end
+                end
+            end)
         else
             btn.bg:SetTexture("Interface\\Icons\\INV_Misc_QuestionMark")
             btn.bg:SetDesaturated(true)
@@ -2106,6 +2130,20 @@ elseif activeTab == 2 then
                 f.infoScroll:SetPoint("BOTTOM", f.detailFrame, "BOTTOM", 0, 100)
                 f.infoScroll:Show()
                 f.infoScroll:SetVerticalScroll(0)
+            end)
+
+            btn:SetScript("OnMouseUp", function(self, mouseBtn)
+                if mouseBtn == "RightButton" and not isSeen and not isEncyclopedia then
+                    f.ShowConfirm(
+                        IMAGO.L["CONFIRM_UNLOCK_TITLE"],
+                        IMAGO.L["CONFIRM_UNLOCK_DESC"],
+                        function()
+                            IMAGOSaved.manualZoneUnlocks = IMAGOSaved.manualZoneUnlocks or {}
+                            IMAGOSaved.manualZoneUnlocks[mapID] = true
+                            IMAGO.Chronicle.UpdateList()
+                        end
+                    )
+                end
             end)
         end
 

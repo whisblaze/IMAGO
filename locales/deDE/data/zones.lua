@@ -5,7 +5,7 @@
 if GetLocale() ~= "deDE" then return end
 
 IMAGOdb.zones[2405].name = "Leerensturm"
-IMAGOdb.zones[2405].lore = "Über die narbige Landschaft, die heute als der Leerensturm bekannt ist, ist nur wenig bekannt. Diese feindselige und fremdartige, zerbrochene Welt kannte einst Leben und Frieden. In vergangenen Zeiten waren die Hügel und Felsvorsprünge Teil einer Welt namens Predacea. Als eine Gesellschaft des Wissens und des wissenschaftlichen Fortschritts war Predacea dennoch nicht immun gegen die Trommeln des Krieges. In dem Bestreben, jedem Konflikt ein Ende zu setzen, wurde eine Massenvernichtungswaffe entfesselt, die ihre Zivilisation gänzlich auslöschte. Unzählige Jahre später sind die Überreste dieses Planeten zum Aufmarschgebiet für Xal'ataths Krieg gegen Azeroth geworden."
+IMAGOdb.zones[2405].lore = "Uber die narbige Landschaft, die heute als der Leerensturm bekannt ist, ist nur wenig bekannt. Diese feindselige und fremdartige, zerbrochene Welt kannte einst Leben und Frieden. In vergangenen Zeiten waren die H\195\188gel und Felsvorspr\195\188nge Teil einer Welt namens Predacea. Als eine Gesellschaft des Wissens und des wissenschaftlichen Fortschritts war Predacea dennoch nicht immun gegen die Trommeln des Krieges. In dem Bestreben, jedem Konflikt ein Ende zu setzen, wurde eine Massenvernichtungswaffe entfesselt, die ihre Zivilisation g\195\164nzlich ausl\195\182schte. Unz\195\164hlige Jahre sp\195\164ter sind die \195\156berreste dieses Planeten zum Aufmarschgebiet f\195\188r Xal'ataths Krieg gegen Azeroth geworden."
 IMAGOdb.zones[2405].pointsOfInterest = {
     {
         name = "Schlächteranhöhe",

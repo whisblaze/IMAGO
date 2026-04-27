@@ -6,11 +6,11 @@ IMAGOdb = IMAGOdb or {}
 IMAGOdb.npcs = IMAGOdb.npcs or {}
 IMAGOdb.npcs.CAT_EBON_BLADE = IMAGOdb.npcs.CAT_EBON_BLADE or {}
 
-IMAGOdb.npcs.CAT_EBONBLADE["high_inquisitor_whitemane"] = {
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"] = {
     displayID = 244958,
     ids = {244958},
     zones = {},
-    category = "CAT_EBONBLADE",
+    category = "CAT_EBON_BLADE",
 }
 
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"] = {
@@ -27,9 +27,9 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"] = {
     category = "CAT_EBON_BLADE",
 }
 
-IMAGOdb.npcs.CAT_EBONBLADE["nazgrim"] = {
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"] = {
     displayID = 244959,
     ids = {244959, 221634},
     zones = {},
-    category = "CAT_EBONBLADE",
+    category = "CAT_EBON_BLADE",
 }
