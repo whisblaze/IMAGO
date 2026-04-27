@@ -509,12 +509,13 @@ IMAGOdb.npcs.CAT_LIGHT["valunei"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].name = "Mariella Ward"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].lore = "Mariella Ward is a former priestess of the fanatical Scarlet Onslaught. When she began to question the twisted and hateful teachings of her order, she was declared a heretic and sentenced to execution in Dragonblight. Rescued at the last moment by the leader of the priesthood, she pledged her unwavering loyalty to the Conclave at the Netherlight Temple. Mariella knows the difference between blind fanaticism and true devotion to the Light like few others. In Midnight, she travels to Quel'Thalas as a representative of the Conclave to protect the Sunwell from ultimate darkness alongside other Light wielders."
+IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].lore = [[Known as Mariella "the Heretic", she once served the Scarlet Onslaught. Disagreeing with their zealous ways to wield the Light, she was sentenced to death for her disobedience. Arriving to a timely rescue, the High Priest sent by Alonsus Faol was able to save her, and she joined the Conclave.
+Now, having found forgiveness for her deeds, she has been summoned by the Sunwell to protect Silvermoon as a part of the Vanguard of the Light.]]
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].source = "Quest: Champion: Mariella Ward"
+IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].timeline = {
-    {era = "Legion", text = "Was rescued from execution by the Scarlet Onslaught and joined the Conclave of Priests as a champion."},
-    {era = "Midnight", text = "Travels to Parhelion Plaza and the Isle of Quel'Danas to defend the Sunwell alongside other Light wielders."},
+    {era = "Legion", text = "Disavowed the Scarlet Onslaught and barely escaped their following death sentence. Joined the Conclave of priests in the Netherlight Temple."},
+    {era = "Midnight", text = "Was summoned to Silvermoon to defend the Sunwell and stayed by its holy waters to lend her magic against the encroaching Voidstorm."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].name = "Hadwin"
