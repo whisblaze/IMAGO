@@ -14,15 +14,6 @@ IMAGOdb.zones[2405] = {
     pointsOfInterest = {},
 }
 
-IMAGOdb.zones[2444] = {
-    id = 2444,
-    texturePath = "Interface\\AddOns\\IMAGO\\media\\slayers_rise.tga",
-    factionControl = "CAT_CONTESTED",
-    name = "",
-    lore = "",
-    pointsOfInterest = {},
-}
-
 IMAGOdb.zones[2413] = {
     id = 2413,
     texturePath = "Interface\\AddOns\\IMAGO\\media\\harandar.tga",

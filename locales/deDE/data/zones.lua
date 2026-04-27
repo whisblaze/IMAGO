@@ -5,37 +5,20 @@
 if GetLocale() ~= "deDE" then return end
 
 IMAGOdb.zones[2405].name = "Leerensturm"
-IMAGOdb.zones[2405].lore = "Der Leerensturm ist die absolute Manifestation von Xal'ataths Zerstörungswut und das Epizentrum der Korruption in Midnight. Einst ein Randgebiet von Quel'Thalas, wurde das Land durch gigantische kosmische Risse und instabile Leerenenergie in ein lebensfeindliches Ödland zerrissen. Wandernde Risse und umgedrehte Gravitationsfelder prägen die Landschaft. Hier patrouillieren die Domanaar – Xal'ataths 'Verschlingende Schar' – getrieben von einem unstillbaren Hunger nach Macht. Im Zentrum dieser apokalyptischen Zone thront die gigantische Leerenspitze, aus der heraus die Vorbotin ihren finalen Schlag gegen den Sonnenbrunnen orchestriert."
+IMAGOdb.zones[2405].lore = "Über die narbige Landschaft, die heute als der Leerensturm bekannt ist, ist nur wenig bekannt. Diese feindselige und fremdartige, zerbrochene Welt kannte einst Leben und Frieden. In vergangenen Zeiten waren die Hügel und Felsvorsprünge Teil einer Welt namens Predacea. Als eine Gesellschaft des Wissens und des wissenschaftlichen Fortschritts war Predacea dennoch nicht immun gegen die Trommeln des Krieges. In dem Bestreben, jedem Konflikt ein Ende zu setzen, wurde eine Massenvernichtungswaffe entfesselt, die ihre Zivilisation gänzlich auslöschte. Unzählige Jahre später sind die Überreste dieses Planeten zum Aufmarschgebiet für Xal'ataths Krieg gegen Azeroth geworden."
 IMAGOdb.zones[2405].pointsOfInterest = {
     {
+        name = "Schlächteranhöhe",
+        lore = "Der Gestank von frischem Blut erfüllt die Luft über den Ebenen der Schlächteranhöhe. Zwei Domanaar, Vidious und Ziadan, führen Krieg gegeneinander. Vordergründig kämpfen die beiden um die Kontrolle über das Territorium, doch die offensichtliche Freude, die beide am Blutvergießen empfinden, spielt zweifellos eine Rolle in ihren Plänen. Die beiden Widersacher haben gleichermaßen blutrünstige Mitglieder der Horde und der Allianz rekrutiert und schicken sie im Namen des Ruhms … oder zum bloßen Vergnügen in die Schlacht."
+    },
+    {
+        name = "Sturmarionzitadelle",
+        lore = "Die Sturmarionzitadelle thront am südwestlichen Rand des Leerensturms und blickt über eine endlose Weite aus zerklüfteten Canyons und totem Ödland. Ein Trupp von Ren'dorei-Forschern besetzt nun das Gebiet und versucht, die Vielzahl der um die Zitadelle verstreuten Singularitäten zu stabilisieren. Von allen Seiten durch Xal'ataths Streitkräfte bedroht, setzen diese tapferen Leerenelfen ihre Arbeit fort, ungeachtet des Preises."
+    },
+    {
         name = "Die Leerenspitze",
-        lore = "Das schreckliche Nervenzentrum der Invasion. Ein monumentaler Schlachtzug, in dem sich die Streitkräfte von Licht und Schatten um das Schicksal von Azeroth duellieren."
-    },
-    {
-        name = "Arena der Leerennarbe",
-        lore = "Aufseher Charonus zwingt hier entführte Champions aus ganz Azeroth (wie den hochgeschätzten Taz'Rah) in tödliche, nicht enden wollende Gladiatorenkämpfe."
-    },
-    {
-        name = "Nexuspunkte der Singularität",
-        lore = "Zerstörte arkane Anlagen, deren Kerne nun vor instabiler Leerenenergie pulsieren. Die Leerenelfen nutzen diese Orte für ihre gefährlichen Gegenschläge."
-    },
-}
-
-IMAGOdb.zones[2444].name = "Schlächteranhöhe"
-IMAGOdb.zones[2444].lore = "Die Schlächteranhöhe ist das blutgetränkte Herz des Konflikts im Leerensturm. Hier, wo die Grenzen zwischen offener Welt und epischen Schlachten verschwimmen, ringen Horde, Allianz und die verheerenden Domanaar in einem brutalen Überlebenskampf um die Vorherrschaft. Was einst eine strategische Anhöhe von Quel'Thalas war, ist heute ein Knotenpunkt des unerbittlichen Krieges. Entlang des 'Pfads der Pirsch' entbrennen monumentale 40-gegen-40 Gefechte, während mutige Helden im offenen Welt-PvP nach strategischen Vorteilen suchen. Ob im strukturierten Kampf oder im gnadenlosen Scharmützel – die Schlächteranhöhe verlangt ihren Tribut in Blut und Ehre."
-IMAGOdb.zones[2444].pointsOfInterest = {
-    {
-        name = "Pfad der Pirsch",
-        lore = "Die zentrale Ader des Schlachtfelds. Hier drängen die Fraktionen in einem dynamischen Tauziehen vor, durchbrechen Verteidigungslinien und versuchen, den feindlichen Domanaar-Kommandeur zur Strecke zu bringen."
-    },
-    {
-        name = "Die befestigten Stützpunkte",
-        lore = "Schwer bewachte Bastionen der Horde und Allianz an den Rändern des Gebiets. Sie dienen als strategischer Rückzugsort, Respawnpunkt und lokaler Knotenpunkt für Fraktions-Missionen."
-    },
-    {
-        name = "Neutraler Schlichterposten",
-        lore = "Ein seltener Zufluchtsort inmitten des Chaos. Hier versammeln sich Gladiatoren ungestört für Duelle, exklusive PvP-Händler bieten ihre Kriegsbeute an und sichere Portale führen zurück in die Hauptstädte."
-    },
+        lore = "Als Vollendung von Xal'ataths großem Plan ragt die Leerenspitze über den gesamten Leerensturm empor. Erschaffen aus der gefangenen Essenz von Dimensius dem Allesverzehrenden, ist die Leerenspitze ein Fokus dunkler Energie, wie ihn Azeroth noch nie zuvor gesehen hat. Hier zieht die Verschlingende Schar ihre Streitkräfte zusammen, um sich auf ihren unvermeidlichen letzten Angriff auf Quel'Thalas vorzubereiten."
+    }
 }
 
 IMAGOdb.zones[2413].name = "Harandar"
