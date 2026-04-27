@@ -867,12 +867,15 @@ IMAGOdb.npcs.CAT_AMANI["nalorakk"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["akilzon"].name = "Akil'zon"
-IMAGOdb.npcs.CAT_AMANI["akilzon"].race = "Forest Troll"
-IMAGOdb.npcs.CAT_AMANI["akilzon"].lore = "Akil'zon was once a mighty warrior of the Amani before Hex Lord Malacrass used dark magic to transform him into the avatar of the eagle god Akil'darac. In classic Zul'Aman, he commanded the storms until adventurers put an end to his reign. In Midnight, the eagle avatar manifests once again in Zul'Aman. Armed with the power of lightning, he takes to the skies to defend his homeland against the Void invaders."
+IMAGOdb.npcs.CAT_AMANI["akilzon"].race = "Troll"
+IMAGOdb.npcs.CAT_AMANI["akilzon"].lore = "Akil'zon has long stood behind the Amani trolls as their loa of victory. The great eagle has close ties to the Amani tribe itself, and represents their undying spirit and ferocity. It is said that an Amani berserker blessed by Akil'zon could tear apart an entire elven battalion and return unscathed. Having returned under hash'ey Zul'jarra, Akil'zon fixes her gaze on the Twilight's Blade, talons at the ready."
 IMAGOdb.npcs.CAT_AMANI["akilzon"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["akilzon"].source = "warcraft.wiki.gg/wiki/Akil'zon"
+IMAGOdb.npcs.CAT_AMANI["akilzon"].source = "austin - IMAGO Community"
 IMAGOdb.npcs.CAT_AMANI["akilzon"].timeline = {
-    {era = "TBC", text = "Became the eagle avatar through dark rituals and ruled the peak of the Amani as the second boss in Zul'Aman."},
+    {era = "TBC", text = "Bound by Hex Lord Malacrass into the body of Man'ye, the father of Zul'jarra and Zul'jan. Man'ye was transformed into an eagle-headed mystic, falling to invading adventurers."},
+    {era = "WotLK", text = "Aided the Zandalari in bringing an end to the Drakkari trolls and their consumption of loa for power."},
+    {era = "Cata", text = "Once again subjected to Hex Lord Malacrass' dark magic. Her spirit was freed upon the death of her avatar at the hands of adventurers."},
+    {era = "BfA", text = "The Amani claimed a small section of Dazar’alor as their own, with shrines and disciples for each loa. Akil'zon was no exception."},
     {era = "Midnight", text = "Returns to Zul'Aman to unleash the power of the storms against Xal'atath's forces."},
 }
 
