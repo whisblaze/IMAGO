@@ -170,7 +170,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].name = "Magister Umbric"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].race = "Void Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].lore = [[No limits – that was Umbric's desire as a student of the arcane arts in Dalaran. Yet he found the mages' studies to be too rigid, too constricting for his liking. Seeing the fall of the Sunwell and his home of Quel'Thalas, he realized that he needed to try a different approach to magic. The elves of Silvermoon needed an alternative way to survive if the need arose... and so Umbric turned to the dark energies of the Void.
 
-He gathered quite a few acolytes practicing the forbidden arts in secret before he was discovered. Exiled by his former friend, Grand Magister Rommath, Umbric and his followers continued their studies and finally found a way into a rift of space and time – Telogrus. Here, they were transformed into the ren'dorei, elves infused with the Void itself. 
+He gathered quite a few acolytes practicing the forbidden arts in secret before he was discovered. Exiled by his former friend, Grand Magister Rommath, Umbric and his followers continued their studies and finally found a way into a rift of space and time – Telogrus. Here, they were transformed into the ren'dorei, elves infused with the Void itself.
 
 After joining the Alliance, Umbric and his ren'dorei have become a small but elite force of specialists and have been on the forefront in the efforts against Xal'atath multiple times by now.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].zones = {"Amirdrassil", "The Voidspire", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Twilight Highlands", "Silvermoon City", "Stormwind City", "Magister's Terrace"}
@@ -703,6 +703,27 @@ IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
     {era = "Ancient", text = "Shaped the Emerald Dream and created the first refuges of life (such as Un'Goro Crater, Sholazar Basin, and the Vale of Eternal Blossoms)."},
     {era = "WotLK", text = "Was driven to madness by Yogg-Saron in Ulduar until Azeroth's heroes defeated her and cleansed her of the corruption."},
     {era = "Midnight", text = "Personally watches over the pristine jungle of Harandar to prevent the spread of the Void into the fragile ecosystem."},
+}
+
+
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].name = "Eitrigg"
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].race = "Orc"
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].lore = "A veteran of countless battles, he is one of the most important orcs in the history of the Horde, one of the few who remember the dark ages of the past when countless horrors were committed against the innocent. He fought for the Old Horde on Draenor and in the New Horde to this day on Azeroth, forging a bond with Tirion Fordring, a human, after years of war between the two races. He served as an advisor to Thrall and Garrosh as Warchiefs and rose up when necessary against the latter and Sylvanas Windrunner. He was eventually admitted into the Sons of Lothar as a symbol that honor can come from anyone."
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].zones = {"Burning Steppes", "Arcantina",  "Arathi Highlands", "Silvermoon City"}
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].source = "Karstan - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].timeline = {
+    {era = "WC1", text = "Fought for the Old Horde against the Draenei and later, in Azeroth against the Humans of Stormwind."},
+    {era = "WC2", text = "Maintained his position as one of the new Warchief Orgrim's most trusted lieutenants. After the battle at Blackrock Mountain, his faith in the Horde crumbled. Eitrigg deserted and lived as a hermit in Lordaeron, hidden from the humans."},
+    {era = "Pre-WC3", text = "Fought Tirion Fordring. Despite having the opportunity to kill him, Eitrigg saved Tirion's life, creating a debt of honor that the paladin would repay by preventing the orc's execution in Stratholme. The orc joined Thrall's new Horde afterwards but continued to view Tirion as his brother."},
+    {era = "Classic", text = "Served as Honor Guard to the Warchief and was tasked with overseeing new recruits."},
+    {era = "WotLK", text = "Participated in the War against the Lich King, traveling to Northrend to support the Horde and the Argent Crusade, attempting to uncover the role of Saronite in the Scourge."},
+    {era = "Cata", text = "Continued to be the Warchief's advisor. He went to the Burning Steppes with his son Ariok to stop the Dark Horde's invasion of the Redridge Mountains."},
+    {era = "MoP", text = "Stood up against Garrosh and was seriously wounded."},
+    {era = "Legion", text = "He became champion of the Valarjar, aiding the Battlelord in the Trial of Rage."},
+    {era = "BfA", text = "Helped Merchant Prince Gallywix establish a Horde base in Drustvar. At some point he traveled with the Champion to Alternate Draenor to recruit the Mag'har orcs. Later, Participated in the Battle for Stromgarde againts Alliance leaders."},
+    {era = "DF", text = "Now chieftain of the Blackrock Clan, was instrumental in the revival of the Kosh'harg, an annual festival where orcs from all clans gathered."},
+    {era = "TWW", text = "Eitrigg, acting as an advisor to Geya'rah, leader of the Mag'har, played an active role in uncovering the true enemy of the Arathi Highlands: The Red Dawn, defeating their leader, Marran Trollbane."},
+    {era = "Pre-Midnight", text = "He was eventually named a member of the Sons of Lothar, and is called upon when they met to discuss the threats facing Azeroth."}
 }
 
 -- CAT_EBON_BLADE
