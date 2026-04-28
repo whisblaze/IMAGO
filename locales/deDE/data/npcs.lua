@@ -46,30 +46,42 @@ IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].name = "Lady Liadrin"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].race = "Blutelfe"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].lore = "Einst eine hingebungsvolle Priesterin des Lichts, verlor Lady Liadrin nach der Vernichtung Silbermonds durch die Geißel ihren Glauben. Sie wurde die erste Blutritterin und bändigte das Licht zunächst durch den Entzug der Energien des Naaru M'uru. Durch die Wiederherstellung des Sonnenbrunnens fand sie Vergebung und wahre Hingabe. Heute ist sie als Matriarchin der Blutritter eine der edelsten Verfechterinnen des Leuchtenden Heeres und steht unerschütterlich zwischen ihrer Heimat und dem endlosen Hunger der Leere."
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].zones = {"Atal'Aman", "Dornogal", "Immersangwald", "Insel von Quel'Danas", "Orgrimmar", "Parhelionplaza", "Silbermond", "Sturmwind", "Zul'Aman"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].source = "warcraft.wiki.gg/wiki/Lady_Liadrin"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].lore = [[Lady Liadrin verlor ihren Glauben an das Licht, als die Geißel Silbermond dezimierte. Sie durchstreifte die Geisterlande und erschlug Untote in den Ruinen ihrer einstigen Heimat. Schließlich traten die Magister mit dem Angebot an sie heran, die Energien des Naaru M'uru zu nutzen, um als Paladin erneut das Licht führen zu können. Auf diese Weise wurde Liadrin zum ersten Blutritter. Nach der Läuterung des Sonnenbrunnens kehrte auch ihre Überzeugung zurück, und sie schwor, ihn fortan zu beschützen.
+
+Bisweilen zweifelt sie noch immer an ihrer Würdigkeit aufgrund dessen, was sie M'uru angetan hat, doch ihr Glaube und ihre Hingabe für ihr Volk wankten nie.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].zones = {"Atal'Aman", "Dornogal", "Immergesangwald", "Insel von Quel'Danas", "Orgrimmar", "Parhelionplaza", "Silbermond", "Sturmwind", "Zul'Aman"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].timeline = {
-    {era = "WC3", text = "Überlebte die Invasion der Geißel auf Quel'Thalas, verlor ihren Glauben und legte den Priesterstab nieder, um zum Schwert zu greifen."},
-    {era = "TBC", text = "Gründete den Orden der Blutritter, wandte sich von Kael'thas ab, schwor den Sha'tar die Treue und half bei der Reinigung des Sonnenbrunnens."},
-    {era = "WoD", text = "Führte die Sonnenverehrer (Sunsworn) in Auchindoun im Kampf gegen den Schattenrat und die Brennende Legion an."},
-    {era = "Legion", text = "Wurde Hochlord der Silbernen Hand und kämpfte an der Seite der Armee des Lichts auf der Dämonenwelt Argus."},
-    {era = "BfA", text = "Rekrutierte die Nachtgeborenen für die Horde und befehligte Hordenstreitkräfte an der Kriegsfront im Arathihochland."},
-    {era = "Midnight", text = "Koordiniert die Streitkräfte des Lichts und der Blutritter, um Quel'Thalas gegen die Leerenmächte von Xal'atath zu verteidigen."},
+    {era = "WC2", text = "Kämpfte gegen die Amani-Trolle und half bei der Gefangennahme von Zul'jin, nachdem sie zuvor selbst von ihm gefangen genommen worden war. Sie empfand tiefe Schuldgefühle, als sie die exzessive Folter am Kriegsfürsten der Feinde miterlebte, und hielt die Waldtrolle zum ersten Mal für würdig, Mitgefühl zu erfahren."},
+    {era = "WC3", text = "Überlebte nur knapp den Fall von Silbermond. Gab das Priestertum auf, nachdem sie ihren Glauben und ihre Familie verloren hatte."},
+    {era = "Pre-Classic", text = "Wurde zum ersten Blutritter-Paladin und zur Anführerin des Ordens."},
+    {era = "TBC", text = "Half dabei, Kael'thas abzusetzen und den Sonnenbrunnen zu läutern. Erlangte ihren Glauben zurück."},
+    {era = "WotLK", text = "Begann mit der Ausbildung neuer Paladine, ohne auf die Folter eines Naaru angewiesen zu sein."},
+    {era = "WoD", text = "Führte die Sonnenzorn-Einheiten im Kampf gegen die Eiserne Horde an. Befreite Auchindoun aus den Händen des Schattenrats."},
+    {era = "Legion", text = "Schloss sich den Rittern der Silbernen Hand an und verteidigte die Kapelle des Hoffnungsvollen Lichts. Führte die Truppen der Horde an, um Suramar von der Besatzung der Brennenden Legion zu befreien."},
+    {era = "BfA", text = "Verließ die Ritter der Silbernen Hand und befehligte die Streitkräfte der Horde in der Schlacht um Stromgarde."},
+    {era = "SL", text = "Verteidigte Silbermond an der Seite von Großmagister Rommath und Aethas Sonnenhäscher gegen neue Übergriffe der Geißel."},
+    {era = "Pre-DF", text = "Führte die Trauung von Lor'themar und Thalyssra durch."},
+    {era = "TWW", text = "Half bei der Verteidigung von Heilsturz gegen Xal'ataths Streitkräfte und koordinierte die Ausbildung neuer Rekruten der Irdenen für die Horde."},
+    {era = "Pre-Midnight", text = "Versammelte gemeinsam mit Alonsus Faol die Priester von Azeroth in Silbermond, in Erwartung von Xal'ataths Angriff."},
+    {era = "Midnight", text = "Liadrin kämpfte an vorderster Front bei der Verteidigung des Sonnenbrunnens, rekrutierte externe Hilfe von Zul'jarras Amani und half bei der Erschaffung des Düsterbrunnens."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].name = "Großmagister Rommath"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].race = "Blutelf"
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].lore = "Als Großmagister von Quel'Thalas und Anführer der Magister ist Rommath der unangefochtene Meister der arkanen Künste in Silbermond. Er war einst ein loyaler Begleiter von Kael'thas Sonnenwanderer in der Scherbenwelt, kehrte jedoch in die Heimat zurück, um sein Volk vor dem magischen Verhungern zu retten. Er hegt einen tiefen, unversöhnlichen Hass auf die Kirin Tor, die die Blutelfen einst zum Tode verurteilten. Pragmatisch, scharfzüngig und unerbittlich loyal gegenüber den Sin'dorei, entfesselt er in Midnight die volle Macht seiner Magister, um die Leereninvasion zurückzuschlagen. Dass er sich bis nach Orgrimmar und tief ins Schattenhochland begibt, zeigt, dass er bereit ist, auch das gefährlichste arkane oder schattenhafte Wissen zu nutzen, um seine Heimat zu retten."
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].lore = [[Kompromisslos und streitlustig – der Großmagister von Silbermond ist ein Mann, dessen Loyalität seinem Volk gegenüber unerschütterlich ist. Als treuester Unterstützer von Kael'thas nach dem Dritten Krieg tat Rommath alles, was er für das Überleben der Blutelfen als notwendig erachtete. Selbst wenn dies bedeutete, Teufelsmagie einzusetzen oder einen Naaru für dessen heilige Macht zu foltern, war Rommath bereit und entschlossen dazu. Seine Treue wurde auf die Probe gestellt, als Kael'thas sich mit der Brennenden Legion verbündete; letztendlich entschied er sich für sein Volk und gegen seinen ehemaligen Prinzen. Nachdem er bereits zweimal verraten worden war – zuerst von seinem einstigen Freund Dar'khan Drathir und danach von den Kirin Tor von Dalaran –, verhärtete Kael'thas' Verrat das Herz des Elfen noch weiter. Während nun der Leerensturm sein Heimatland bedroht, wird Rommath das tun, was er schon immer getan hat: Silbermond um jeden Preis schützen, trotz allem, was er und sein Volk erlitten haben.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].zones = {"Immersangwald", "Orgrimmar", "Schattenhochland", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "warcraft.wiki.gg/wiki/Grand_Magister_Rommath"
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "Cadash & Austin - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
-    {era = "WC3", text = "Entkam mit Kael'thas aus den Kerkern von Dalaran und folgte ihm in die zersplitterte Scherbenwelt."},
-    {era = "TBC", text = "Kehrte nach Quel'Thalas zurück, half beim Wiederaufbau von Silbermond und lehrte die Blutelfen, Magie zu entziehen."},
-    {era = "MoP", text = "Rettete Aethas Sonnenhäscher und weitere Blutelfen bei Jaina Prachtmeers blutiger Säuberung von Dalaran."},
-    {era = "Legion", text = "Verteidigte Quel'Thalas gegen die Brennende Legion und unterstützte widerwillig die Tirisgarde."},
-    {era = "BfA", text = "Spielte eine Schlüsselrolle bei der Rekrutierung der Nachtgeborenen als neue Verbündete der Horde."},
-    {era = "Midnight", text = "Koordiniert die arkane Verteidigung im Immersangwald und sucht im Schattenhochland nach kriegsentscheidenden Ressourcen."},
+    {era = "Pre-WC1", text = "Studierte das Arkanum in der Magierhauptstadt Dalaran an der Seite seiner Freunde Umbric und Dar'khan Drathir."},
+    {era = "WC3", text = "Überlebte die Zerstörung von Silbermond und schloss sich Kael'thas Sonnenwanderer bei der Verteidigung von Dalaran an. Er folgte dem Prinzen in die Scherbenwelt, nachdem er aus den Verliesen der Kirin Tor entkommen war, und lernte von Illidan Sturmgrimm, wie man den Magiedurst der Blutelfen bekämpft. Er kehrte als Großmagister nach Silbermond zurück."},
+    {era = "TBC", text = "Half bei der Gründung des Ordens der Blutritter und beteiligte sich am Bürgerkrieg gegen Kael'thas Sonnenwanderer. Einige Zeit nach der Niederlage des Prinzen verbannte Rommath Magister Umbric und dessen Anhänger für das Praktizieren von Leerenmagie."},
+    {era = "WotLK", text = "Versuchte erfolglos, Lor'themar davon abzubringen, die geschwächten Blutelfen in den Krieg nach Nordend zu schicken. Half bei der Wiederherstellung der Waffe Quel'Delar."},
+    {era = "MoP", text = "Rettete Aethas Sonnenhäscher und viele andere Magier während der Säuberung von Dalaran. Er kämpfte für die Horde als Teil der Sonnenhäscher auf der Insel des Donners."},
+    {era = "Legion", text = "Half dabei, Suramar von der Besatzung der Brennenden Legion zu befreien."},
+    {era = "BfA", text = "Beteiligte sich an der Aufnahme der Nachtgeborenen in die Horde und verteidigte den Sonnenbrunnen vor Allerias Einfluss."},
+    {era = "SL", text = "Verteidigte Silbermond an der Seite von Lady Liadrin und Aethas Sonnenhäscher gegen neue Übergriffe der Geißel."},
+    {era = "Midnight", text = "Rommath führte die Magister von Silbermond bei ihrer Verteidigung gegen die Verschlingende Schar an. Er steht Umbrics Einsatz von Leerenmagie zwar immer noch skeptisch gegenüber, stimmte jedoch widerstrebend zu, dass dessen Expertise notwendig ist, um ihren gemeinsamen Feind zu besiegen."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].name = "Halduron Wolkenglanz"
@@ -142,14 +154,18 @@ IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].name = "Erzmagier Aethas Sonnenhäscher"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].race = "Blutelf"
-IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].lore = "Erzmagier Aethas Sonnenhäscher blickt auf eine turbulente politische Karriere zurück. Lange Zeit versuchte er als Anführer der blutelfischen Magier in den Kirin Tor eine Brücke zwischen Dalaran und Silbermond zu schlagen. Nach der tragischen Zerstörung Dalarans in Khaz Algar wandte er sich von der alten Ordnung der Magier ab. In Midnight ist er nach Quel'Thalas zurückgekehrt, um seine Heimat gegen die Leere zu verteidigen. Als am Kriegstisch von Silbermond das Bündnis mit dem Silbernen Bund debattiert wird, ist Aethas zunächst strikt dagegen. Erst als Vereesa Windläufer ihm die Asche gefallener Sonnenhäscher und uralte Relikte als Friedensangebot überreicht, lenkt er im Angesicht der drohenden Vernichtung ein."
+IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].lore = [[Erzmagier Aethas Sonnenhäscher ist ein brillanter Magier der Sin'dorei, der trotz seines jungen Alters rasch in den Rat der Sechs der Kirin Tor aufstieg. Als ewiger Optimist und entschiedener Verfechter der Neutralität widmete er einen Großteil seines Lebens der Wiederherstellung des jahrtausendealten Bündnisses zwischen Silbermond und Dalaran. Seine Loyalität und seine Ideale wurden durch die Kriege zwischen den Fraktionen auf eine harte Probe gestellt. Auf seinem Weg, sein Volk zu schützen, musste er schwierige Entscheidungen treffen und erlebte Verrat sowie Gefangenschaft. Trotz immenser Entbehrungen und der wiederholten Zerstörung seiner geliebten Stadt bleibt Aethas dem Streben nach Wissen, der Zusammenarbeit und dem Fortbestand der Blutelfen tief verpflichtet.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].zones = {"Immersangwald", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].source = "warcraft.wiki.gg/wiki/Aethas_Sunreaver"
+IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].source = "Lewi - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].timeline = {
-    {era = "WotLK", text = "Gründete die Sonnenhäscher in Dalaran und sicherte der Horde einen Zufluchtsort in der Magierstadt."},
-    {era = "MoP", text = "Wurde während der blutigen Säuberung von Dalaran durch Jaina Prachtmeer als Verräter inhaftiert und floh nach Silbermond."},
-    {era = "TWW", text = "Überlebte den Absturz Dalarans in Khaz Algar und schwor der arroganten, weltpolitischen Einmischung der Kirin Tor ab."},
-    {era = "Midnight", text = "Verteidigt Silbermond am Kriegstisch und überwindet seinen Hass auf den Silbernen Bund, um Quel'Thalas zu retten."},
+    {era = "WotLK", text = "Verteidigte Dalaran gegen den Blauen Drachenschwarm und setzte sich erfolgreich für die Wiederaufnahme der Blutelfen in die Kirin Tor ein, um gegen den Lichkönig zu kämpfen. Zudem gründete er offiziell die Fraktion der Sonnenhäscher in Dalaran, um seine Anhänger und die Horde innerhalb der Stadt zu repräsentieren."},
+    {era = "Pre-MoP", text = "Stimmte dafür, Hilfe der Kirin Tor zur Verteidigung von Theramore gegen die Horde zu entsenden. Später lehnte er jedoch Jaina Prachtmeers Ersuch ab, Dalaran für einen Vergeltungsschlag zu mobilisieren, nachdem die Stadt durch eine Manabombe vernichtet worden war."},
+    {era = "MoP", text = "Wurde während der Säuberung von Dalaran inhaftiert, nachdem er mit Kriegsverbrechen der Horde in Verbindung gebracht worden war. Nach seiner Rettung unterstützte er Quel'Thalas beim Feldzug auf der Insel des Donners und bei der Rebellion gegen Garrosh Höllschrei."},
+    {era = "Legion", text = "Organisierte die Bergung der geschichtsträchtigen Runenklinge Felo'melorn, um den Sonnenhäschern ihren Platz innerhalb der Kirin Tor zurückzuverdienen. Später kämpfte er an der Seite seiner Ratsmitglieder an der Verheerten Küste und auf Argus gegen die Brennende Legion."},
+    {era = "SL", text = "Kehrte nach Quel'Thalas zurück, um beim Aufbau der magischen Verteidigung von Tristessa zu helfen. Gemeinsam mit seinen Verbündeten besiegte er erfolgreich eine erneute Invasion der Geißel, die von einem verräterischen San'layn angeführt wurde."},
+    {era = "DF", text = "Versuchte, sich mit Jaina Prachtmeer auszusöhnen, indem er nach einer kostbaren kul-tiranischen Spieldose suchte, die sie verloren hatte, in der Hoffnung, sie ihr als Geste des Friedens zu überreichen."},
+    {era = "TWW", text = "Überlebte die Zerstörung von Dalaran und litt unter schweren Schuldgefühlen als Überlebender. Schließlich schloss er mit seinen Ratskollegen den Pakt, die Kirin Tor ohne den Hochmut der Vergangenheit neu aufzubauen."},
+    {era = "Midnight", text = "Führte die Sonnenhäscher bei der Verteidigung von Silbermond gegen die vordringende Leere an und duldete dabei die Präsenz des Silberbunds, um den Fall der Stadt zu verhindern. Nach einem erfolgreichen Angriff gegen die Leere auf Quel'Danas stimmte er dem Silbersonnenabkommen zu – einer mühsamen Übereinkunft mit dem Silberbund, Differenzen in Zeiten großer Not beiseitezulegen."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].name = "Salandria"
@@ -412,14 +428,24 @@ IMAGOdb.npcs.CAT_LIGHT["lothraxion"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].name = "Erzbischof Alonsus Faol"
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].race = "Verlassener"
-IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].lore = "Erzbischof Alonsus Faol ist eine der historisch wichtigsten Figuren Azeroths. Nach dem Fall von Sturmwind im Ersten Krieg war er es, der erkannte, dass reine Priester auf dem Schlachtfeld zu verwundbar waren. Gemeinsam mit Uther gründete er den Orden der Silbernen Hand und erschuf damit die ersten Paladine. Faol verstarb vor dem Dritten Krieg, wurde jedoch von der Geißel als Untoter erweckt. Durch unvorstellbare Willenskraft befreite er sich und nutzt das Heilige Licht weiterhin, obwohl es ihm als Verlassenem physische Schmerzen bereitet. In Midnight reist die lebende Legende zu den historischen Stätten der Allianz und nach Quel'Thalas, um die Verteidiger im Kampf gegen die Leere zu segnen."
+IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].lore = [[Ehemals der Erzbischof der Kirche des Heiligen Lichts, war Alonsus Faol wohl der angesehenste Mann in ganz Lordaeron. Als die Horde zum ersten Mal in Azeroth einfiel, war es Faol, der die ersten Paladine ausbildete und weihte – eine Entscheidung, die der Allianz letztlich den Sieg im Krieg sicherte. Stolz auf seine Errungenschaften, verstarb der betagte Bischof schließlich friedlich.
+
+Doch Arthas Menethil ließ ihn nicht ruhen und erweckte ihn als geistlosen Diener der Geißel wieder. Als Alonsus sich schließlich aus der Kontrolle des gefallenen Paladins befreien konnte, wurde er von der Allianz gemieden und von radikalen Dienern des Lichts gejagt; zudem bereitete ihm die Anwendung heiliger Magie fortan schreckliche Schmerzen. Er zog sich für viele Jahre von der Welt zurück.
+
+Als die Legion einfiel, konnte Alonsus nicht länger tatenlos zusehen. Als Anführer des Konklaves vereinte er die Priesterorden und half bei der Bergung verschiedener Artefakte im Kampf gegen die Dämonen. Eines dieser Artefakte war die Klinge des Schwarzen Imperiums – Xal'atath. Heute kämpft Alonsus für den Sonnenbrunnen und das Licht, um seinen einstigen Fehler wiedergutzumachen.]]
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].zones = {"Brennende Steppe", "Das Arathihochland", "Insel von Quel'Danas", "Östliche Pestländer", "Parhelionplaza", "Silbermond", "Tirisfal"}
-IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].source = "warcraft.wiki.gg/wiki/Alonsus_Faol"
+IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
-    {era = "WC2", text = "Gründete den Orden der Silbernen Hand und weihte die ersten fünf Paladine (darunter Uther und Turalyon)."},
-    {era = "Pre-WC3", text = "Verstarb eines natürlichen Todes und wurde in Faols Ruh in Tirisfal beigesetzt, bevor er von der Geißel erweckt wurde."},
-    {era = "Legion", text = "Trat aus dem Schatten, um die Konklave im Netherlichttempel zu gründen und die Priester gegen die Legion zu führen."},
-    {era = "Midnight", text = "Unternimmt eine weitreichende Pilgerreise über Azeroth bis nach Quel'Thalas, um die spirituellen Truppen des Lichts zu sammeln."},
+    {era = "Pre-WC1", text = "Führte die Kirche des Heiligen Lichts als Erzbischof an und nahm Uther als seinen Lehrling auf."},
+    {era = "WC2", text = "Gründete den Orden der Silbernen Hand und bildete die ersten Paladine persönlich aus."},
+    {era = "Pre-WC3", text = "Sammelte Spenden für den Wiederaufbau von Sturmwind sowie verschiedener Siedlungen im Königreich Lordaeron. Erbaute gemeinsam mit seinem neuen Lehrling Benediktus die Kathedrale von Sturmwind. Kurze Zeit später starb Alonsus eines natürlichen Todes."},
+    {era = "WC3", text = "Wurde von Arthas Menethil wiedererweckt und gezwungen, für die Geißel zu kämpfen. Wurde zusammen mit den anderen Verlassenen aus der Gedankenkontrolle befreit, weigerte sich jedoch, sich ihren Reihen anzuschließen, und verschwand."},
+    {era = "Legion", text = "Führte das Konklave an, welches die verschiedenen Priesterorden im Kampf gegen die Brennende Legion vereinte. Half bei der Bergung mächtiger Waffen, darunter Xal'atath. Rief die Paladine zur Hilfe auf, um den Netherlichttempel zu verteidigen."},
+    {era = "Pre-BfA", text = "Führte Calia Menethil zurück in die Welt. Auf Geheiß von König Anduin half er bei der Organisation der Zusammenkunft, um die Verlassenen und die lebenden Menschen einander wieder näherzubringen. Während der Verhandlungen lehnte Alonsus es ab, der Horde beizutreten. Half dabei, Calia als vom Licht berührte Untote wiederzuerwecken, nachdem sie beim Massaker der Zusammenkunft getötet worden war."},
+    {era = "BfA", text = "Unterstützte die Nachtelfen-Flüchtlinge von Teldrassil bei der Bereitstellung von Notunterkünften und entsandte Priester, um die Verwundeten zu heilen."},
+    {era = "SL", text = "Half den Verlassenen dabei, Unterstadt von der Seuche des Vierten Krieges zu befreien, und war bei der Gründung des Desolaten Rates anwesend."},
+    {era = "Pre-Midnight", text = "Versammelte auf Lady Liadrins Ersuchen die Priester in Silbermond, in Erwartung von Xal'ataths Angriff auf den Sonnenbrunnen."},
+    {era = "Midnight", text = "Überwachte die Verteidigung des Sonnenbrunnens und stärkte die erschöpften Verteidiger mit heiliger Magie. Half Arator dabei, seine Zweifel an seinem Vater und dem Licht zu überwinden."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].name = "Tahu Weisenwind"
@@ -520,12 +546,13 @@ IMAGOdb.npcs.CAT_LIGHT["valunei"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].name = "Mariella Ward"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].race = "Mensch"
-IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].lore = "Mariella Ward ist eine ehemalige Priesterin der fanatischen Scharlachroten Offensive. Als sie die verdrehten und hasserfüllten Lehren ihres Ordens zu hinterfragen begann, wurde sie zur Ketzerin erklärt und sollte in der Drachenöde hingerichtet werden. Sie wurde im letzten Moment durch den Anführer der Priesterschaft gerettet und schwor daraufhin dem Konklave im Netherlichttempel ihre unerschütterliche Treue. Mariella kennt den Unterschied zwischen blindem Fanatismus und wahrer Hingabe an das Licht wie kaum eine Zweite. In Midnight reist sie als Vertreterin des Konklaves nach Quel'Thalas, um den Sonnenbrunnen an der Seite anderer Lichtträger vor der ultimativen Dunkelheit zu bewahren."
+IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].lore = [[Bekannt als Mariella „die Häretikerin“, diente sie einst dem Scharlachroten Ansturm. Da sie die fanatische Art und Weise, wie der Orden das Licht führte, ablehnte, wurde sie wegen Ungehorsams zum Tode verurteilt. Dank einer rechtzeitigen Rettung durch den von Alonsus Faol entsandten Hohepriester konnte sie gerettet werden und schloss sich dem Konklave an.
+Nachdem sie Vergebung für ihre vergangenen Taten gefunden hat, wurde sie nun vom Sonnenbrunnen gerufen, um Silbermond als Teil der Vorhut des Lichts zu beschützen.]]
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].source = "Quest: Champion: Mariella Ward"
+IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].timeline = {
-    {era = "Legion", text = "Wurde vor der Hinrichtung durch die Scharlachrote Offensive gerettet und schloss sich als Champion dem Konklave der Priester an."},
-    {era = "Midnight", text = "Reist zur Parhelionplaza und zur Insel von Quel'Danas, um mit den anderen Lichtträgern den Sonnenbrunnen zu verteidigen."},
+    {era = "Legion", text = "Sagte sich vom Scharlachroten Ansturm los und entkam nur knapp dem darauf folgenden Todesurteil. Schloss sich dem Konklave der Priester im Netherlichttempel an."},
+    {era = "Midnight", text = "Wurde nach Silbermond gerufen, um den Sonnenbrunnen zu verteidigen, und blieb an seinen heiligen Wassern, um ihre Magie gegen den vordringenden Leerensturm einzusetzen."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].name = "Hadwin"
@@ -706,6 +733,25 @@ IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
     {era = "Midnight", text = "Wacht persönlich über den unberührten Dschungel von Harandar, um die Ausbreitung der Leere in das empfindliche Ökosystem zu verhindern."},
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].name = "Eitrigg"
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].race = "Orc"
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].lore = [[Als Veteran zahlloser Schlachten ist er einer der bedeutendsten Orcs in der Geschichte der Horde – einer der wenigen, die sich noch an die finsteren Zeiten der Vergangenheit erinnern, als Unschuldigen unsagbares Leid zugefügt wurde. Er kämpfte für die Alte Horde auf Draenor und dient bis heute der Neuen Horde auf Azeroth. Nach Jahren des Krieges zwischen ihren Völkern schmiedete er ein enges Band zum Menschen Tirion Fordring. Er diente Thrall und Garrosh als Berater, erhob jedoch seine Stimme gegen Letzteren sowie gegen Sylvanas Windläufer, als es die Ehre gebot. Schließlich wurde er in den Bund der Söhne Lothars aufgenommen – als lebendiges Symbol dafür, dass Ehre in jedem Herzen zu finden sein kann.]]
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].zones = {"Brennende Steppen", "Arcantina", "Arathihochland", "Silbermond"}
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].source = "Karstan - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].timeline = {
+    {era = "WC1", text = "Kämpfte für die Alte Horde gegen die Draenei und später auf Azeroth gegen die Menschen von Sturmwind."},
+    {era = "WC2", text = "Behauptete seine Position als einer der vertrautesten Leutnants des neuen Kriegshäuptlings Orgrim Schicksalshammer. Nach der Schlacht am Schwarzfels zerbrach sein Glaube an die Horde. Eitrigg desertierte und lebte fortan als Einsiedler in Lordaeron, verborgen vor den Menschen."},
+    {era = "Pre-WC3", text = "Kämpfte gegen Tirion Fordring. Obwohl er die Gelegenheit hatte, ihn zu töten, rettete Eitrigg Tirion das Leben. Damit begründete er eine Ehrenschuld, die der Paladin beglich, indem er Eitriggs Hinrichtung in Stratholme verhinderte. Der Orc schloss sich daraufhin Thralls Neuer Horde an, betrachtete Tirion jedoch weiterhin als seinen Bruder."},
+    {era = "Classic", text = "Diente dem Kriegshäuptling als Ehrenwache und war mit der Aufsicht über neue Rekruten betraut."},
+    {era = "WotLK", text = "Nahm am Krieg gegen den Lichkönig teil und reiste nach Nordend, um die Horde und den Argentumkreuzzug zu unterstützen. Dabei versuchte er, die Rolle von Saronit innerhalb der Geißel aufzudecken."},
+    {era = "Cata", text = "Blieb weiterhin der Berater des Kriegshäuptlings. Er reiste mit seinem Sohn Ariok in die Brennenden Steppen, um die Invasion des Rotkammgebirges durch die Dunkle Horde zu stoppen."},
+    {era = "MoP", text = "Leistete Widerstand gegen Garrosh und wurde dabei schwer verwundet."},
+    {era = "Legion", text = "Wurde ein Champion der Valarjar und unterstützte den Schlachtenfürsten bei der Prüfung des Zorns."},
+    {era = "BfA", text = "Half Handelsprinz Gallywix beim Aufbau eines Stützpunktes der Horde in Drustvar. Zu einem späteren Zeitpunkt reiste er mit dem Champion in das alternative Draenor, um die Mag'har-Orcs zu rekrutieren. Später nahm er an der Schlacht um Stromgarde gegen die Anführer der Allianz teil."},
+    {era = "DF", text = "Nun Häuptling des Schwarzfelsclans, war er maßgeblich an der Wiederbelebung des Kosh'harg-Festes beteiligt – einer jährlichen Feierlichkeit, bei der Orcs aller Clans zusammenkommen."},
+    {era = "TWW", text = "Agierte als Berater für Geya'rah, der Anführerin der Mag'har, und spielte eine aktive Rolle bei der Entlarvung des wahren Feindes im Arathihochland: Der Roten Dämmerung. Gemeinsam besiegten sie deren Anführer, Marran Trollbann."},
+    {era = "Pre-Midnight", text = "Wurde schließlich zum Mitglied der Söhne Lothars ernannt und wird seither zu deren Versammlungen herbeigerufen, um über die Bedrohungen für Azeroth zu beraten."}
+}
 
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].name = "Hochlord Darion Mograine"
@@ -879,13 +925,16 @@ IMAGOdb.npcs.CAT_AMANI["nalorakk"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["akilzon"].name = "Akil'zon"
-IMAGOdb.npcs.CAT_AMANI["akilzon"].race = "Waldtroll"
-IMAGOdb.npcs.CAT_AMANI["akilzon"].lore = "Akil'zon war einst ein mächtiger Krieger der Amani, bevor Hexlord Malacrass ihn mit dunkler Magie zum Avatar des Adlergottes Akil'darac machte. Im klassischen Zul'Aman herrschte er über die Stürme, bis Abenteurer seinem Treiben ein Ende setzten. In Midnight manifestiert sich der Adler-Avatar erneut in Zul'Aman. Bewaffnet mit der Macht der Blitze erhebt er sich in die Lüfte, um seine Heimat gegen die Eindringlinge der Leere zu verteidigen."
+IMAGOdb.npcs.CAT_AMANI["akilzon"].race = "Troll"
+IMAGOdb.npcs.CAT_AMANI["akilzon"].lore = [[Akil'zon steht den Amani-Trollen seit langem als ihr Loa des Sieges zur Seite. Der große Adler ist eng mit dem Stamm der Amani verbunden und verkörpert ihren unsterblichen Geist sowie ihre Wildheit. Es heißt, dass ein von Akil'zon gesegneter Berserker der Amani ein ganzes Bataillon der Elfen zerfetzen und unversehrt zurückkehren könnte. Zurückgekehrt unter Hash'ey Zul'jarra, richtet Akil'zon ihren Blick nun auf die Zwielichtklinge die Krallen zum Angriff bereit.]]
 IMAGOdb.npcs.CAT_AMANI["akilzon"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["akilzon"].source = "warcraft.wiki.gg/wiki/Akil'zon"
+IMAGOdb.npcs.CAT_AMANI["akilzon"].source = "austin - IMAGO Community"
 IMAGOdb.npcs.CAT_AMANI["akilzon"].timeline = {
-    {era = "TBC", text = "Wurde durch dunkle Rituale zum Adler-Avatar und herrschte über den Gipfel der Amani als zweiter Boss in Zul'Aman."},
-    {era = "Midnight", text = "Kehrt nach Zul'Aman zurück, um die Mächte der Stürme gegen Xal'ataths Truppen zu entfesseln."},
+    {era = "TBC", text = "Wurde vom Hexlord Malacrass in den Körper von Man'ye gebunden, dem Vater von Zul'jarra und Zul'jan. Man'ye wurde in einen Mystiker mit Adlerkopf verwandelt und fiel den eindringenden Abenteurern zum Opfer."},
+    {era = "WotLK", text = "Unterstützte die Zandalari dabei, den Drakkari-Trollen und ihrem Verzehr von Loa zur Machtgewinnung ein Ende zu setzen."},
+    {era = "Cata", text = "Wurde erneut der dunklen Magie von Hexlord Malacrass unterworfen. Ihr Geist wurde nach dem Tod ihres Avatars durch die Hände von Abenteurern befreit."},
+    {era = "BfA", text = "Die Amani beanspruchten einen kleinen Teil von Dazar'alor für sich, inklusive Schreinen und Jüngern für jeden Loa. Akil'zon bildete hierbei keine Ausnahme."},
+    {era = "Midnight", text = "Kehrt nach Zul'Aman zurück, um die Macht der Stürme gegen Xal'ataths Streitkräfte zu entfesseln."},
 }
 
 IMAGOdb.npcs.CAT_AMANI["janalai"].name = "Jan'alai"
@@ -925,12 +974,13 @@ IMAGOdb.npcs.CAT_AMANI["halazzi"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["zuljan"].name = "Zul'jan"
-IMAGOdb.npcs.CAT_AMANI["zuljan"].race = "Waldtroll"
-IMAGOdb.npcs.CAT_AMANI["zuljan"].lore = "Als einer der bedeutendsten Anführer der Amani in Midnight steht Zul'jan fest an der Seite von Zul'jarra. Er verkörpert die tiefe schamanistische Tradition des Stammes und hält die lebenswichtige Verbindung zu den Loa-Mächten aufrecht. Seine ständige Präsenz an den hitzigsten Fronten in Zul'Aman und dem Immersangwald zeigt, dass er eine absolute Schlüsselrolle bei der Koordination der Truppen und der spirituellen Verteidigung gegen die Leere spielt."
+IMAGOdb.npcs.CAT_AMANI["zuljan"].race = "Troll"
+IMAGOdb.npcs.CAT_AMANI["zuljan"].lore = [[Der impulsive Zul'jan ist der oberste Berater der derzeitigen Herrscherin der Amani-Stämme – seiner eigenen Schwester, Zul'jarra. Im Gegensatz zu ihr misstraut Zul'jan jedoch den Loa. Seiner Ansicht nach haben sie die Trolle in ihrer Stunde der größten Not im Stich gelassen. So sehr er in diesen Angelegenheiten auch uneins mit seiner älteren Schwester sein mag, so aufrichtig sorgt er sich um sie und würde sein Äußerstes tun, um sie zu beschützen. Nun schart Zul'jan die Amani um sich, damit sie aus eigener Kraft stark werden, ohne sich auf die Loa oder irgendjemand anderen verlassen zu müssen.]]
 IMAGOdb.npcs.CAT_AMANI["zuljan"].zones = {"Atal'Aman", "Immersangwald", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["zuljan"].source = "warcraft.wiki.gg/wiki/Zul'jan"
+IMAGOdb.npcs.CAT_AMANI["zuljan"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_AMANI["zuljan"].timeline = {
-    {era = "Midnight", text = "Tritt als hochrangiger Amani-Anführer in Erscheinung und unterstützt Zul'jarra bei der Verteidigung und Koordination des Stammes."},
+    {era = "TBC", text = "Verlor seinen Vater Man'ye und seinen Großvater Zul'jin, als er noch ein kleines Kind war. Später wurde seine Mutter im Ritualkampf getötet und seine Schwester Zul'jarra übernahm die Führung der Amani-Stämme."},
+    {era = "Midnight", text = "Sicherte Lichtholzwaffen für sein Volk und kämpfte sowohl gegen die Blutelfen als auch gegen die Zwielichtklinge. Später beugte er sich widerstrebend den Befehlen seiner Schwester, sich mit den Elfen zu verbünden."},
 }
 
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].name = "Loasprecher Kinduru"

@@ -39,19 +39,19 @@ IMAGOdb.zones[2413].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2437].name = "Zul'Aman"
-IMAGOdb.zones[2437].lore = "Zul'Aman, die uralte Heimat der Amanitrolle, entfaltet sich als weitläufiges Gebiet voller dichter Wälder, hoher Berge und gnadenloser Wildnis. Unter der Führung von Zul'jarra, der Enkelin des legendären Zul'jin, versucht das einst stolze Volk verzweifelt, den Ansturm der Leere zu überleben. Der brüchige Frieden mit den benachbarten Blutelfen aus dem Immersangwald steht auf Messers Schneide, während Zul'jarra und ihr militanter Bruder Zul'jan mit dem schmerzhaften Verlust der Verbindung zu ihren Loa ringen. Inmitten dieser existenziellen Krise erheben sich vergessene Feinde aus dem Schatten, und die blutige Historie der Troll-Kultur offenbart sich jenen Entdeckern, die mutig genug sind, diese uralten Ländereien zu betreten."
+IMAGOdb.zones[2437].lore = "Die hoch aufragenden Wälder von Zul’Aman sind bereits seit einer Zeit die Heimat der Amanitrolle, die weit vor der Gründung von Quel’Thalas durch die Hochelfen liegt. Grenzscharmützel prägen das Verhältnis zwischen den beiden Fraktionen seit Menschengedenken. Unter der Führung von Zul’jin missbrauchten die Amani die Magie ihrer Loa für gewaltsame Zwecke. Als Reaktion darauf verstummten die wilden Götter und überließen den Stamm der Amani für Jahrzehnte seinem eigenen Schicksal. Nun, da die Zwielichtklinge ihre Wälder heimsucht, suchen die Trolle bei ihren Nachbarn nach Hilfe. Zul’jins Enkel, Zul’jarra und Zul’jan, versuchen die Amani zu ihrem einstigen Ruhm zurückzuführen."
 IMAGOdb.zones[2437].pointsOfInterest = {
     {
-        name = "Die verlassenen Loa-Tempel",
-        lore = "Einst prachtvolle Schreine, die den mächtigen Geistern von Akil'zon (Adler), Halazzi (Luchs), Jan'alai (Drachenfalke) und Nalorakk (Bär) geweiht waren. Heute sind sie von Dschungelranken überwuchert und stehen als stumme Denkmäler einer schwindenden spirituellen Macht."
+        name = "Dorf Amani’Zar",
+        lore = "Als größtes Dorf in Zul’Aman und de facto Hauptstadt des Volkes der Amani ist das Dorf Amani’Zar zu einem Schmelztiegel der Trollkultur geworden. Viele Stämme haben sich unter dem Banner der Amani versammelt, darunter die Bleichborken, die Waldschattentrolle und die Revantusk. Mitglieder all dieser Stämme sind in Amani’Zar beheimatet und vereinen ihr Volk gegen Bedrohungen wie die Gifthauer und die Zwielichtklinge."
     },
     {
-        name = "Die Maisara-Höhlen",
-        lore = "Tief unter den heiligen Hügeln vollziehen extremistische Trolle der Vilebranch grausame Opferrituale an gefangenen Witherbark. Ihre verbotene Nekromantie speist einen monströsen Gräueltroll namens Rak'tul – eine tickende magische Zeitbombe, die ganz Zul'Aman ins Chaos stürzen könnte."
+        name = "Die Loa-Tempel",
+        lore = "Überall in Zul’Aman finden sich Tempel, die jeweils einem der großen Loa der Amani gewidmet sind. Zu Ehren von Halazzi dem Luchs, Jan’alai dem Drachenfalken, Nalorakk dem Bären und Akil’zon dem Adler wurden gewaltige Bauwerke errichtet. Obwohl sie einst die spirituellen Zentren des Amani-Imperiums waren, verstummten sie nach Zul’jins Verrat. Unter Zul’jarra sind die Stimmen der Loa zu ihrem Volk zurückgekehrt und ihre Tempel sind zu neuem Leben erwacht."
     },
     {
-        name = "Der Zerbrochene Thron",
-        lore = "Das architektonische und politische Herz der Zone. Hier koordiniert Zul'jarra verzweifelt den Widerstand. Umgeben von gigantischen Türmen, in denen wertvolle Artefakte und tödliche Rätsel verborgen liegen, entscheidet sich hier das Schicksal der Amani."
+        name = "Atal'Aman",
+        lore = "Die Stadt Atal'Aman war einst eine heilige Stätte der Amani. Die überall errichteten Tempel dienten vielen Jüngern der Loa als Versammlungsort. Obwohl sie immer noch von den Amani bewohnt wird, ist die spirituelle Bedeutung der Tempelstadt fast vollständig verloren gegangen. Nachdem Zul’jin die Loa verraten und ihre Macht für sich selbst gestohlen hatte, verschwanden die Götter und mit ihnen ihre Anbeter. Die Stätte war Schauplatz häufigen Blutvergießens und wurde bereits zweimal von opportunistischen Abenteurern geplündert. Noch heute streifen die Geister jener Überfälle unruhig über diesen heiligen Boden."
     },
 }
 
