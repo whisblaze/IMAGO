@@ -422,15 +422,26 @@ IMAGOdb.npcs.CAT_LIGHT["lothraxion"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].name = "Archbishop Alonsus Faol"
-IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].race = "Forsaken"
-IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].lore = "Archbishop Alonsus Faol is one of the most historically significant figures in Azeroth. After the fall of Stormwind in the First War, he realized that pure priests were too vulnerable on the battlefield. Together with Uther, he founded the Order of the Silver Hand, creating the first paladins. Faol died before the Third War but was raised by the Scourge as an undead. Through unimaginable willpower, he broke free and continues to wield the Holy Light, even though it causes him physical pain as a Forsaken. In Midnight, the living legend travels to historic Alliance sites and Quel'Thalas to bless the defenders in the war against the Void."
+IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].race = "Undead"
+IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].lore = [[Formerly the Archbishop of the Church of the Holy Light, Alonsus Faol was arguably the most revered man in Lordaeron. When the Horde first invaded Azeroth, it was Faol who trained and annointed the first paladins – a decision that won the war for the Alliance. Proud of his achievements, the elderly bishop died peacefully.
+
+Arthas Menethil would not let him rest and resurrected him as a mindless minion of the Scourge. When Alonsus finally broke free of the fallen paladin's control, he was shunned by the Alliance, hunted by radical servants of the Light, and met with terrible pain whenever he himself used holy magic. He retreated from the world for years.
+
+When the Legion invaded, Alonsus could not stand by and watch. Now leading the Conclave, uniting the priestly orders, he helped find various artifacts to combat the demons. One these artifacts was the Blade of the Black Empire – Xal'atath.
+Now, Alonsus fights for the Sunwell and the Light, and to correct his mistake.]]
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].zones = {"Burning Steppes", "Arathi Highlands", "Isle of Quel'Danas", "Eastern Plaguelands", "Parhelion Plaza", "Silvermoon City", "Tirisfal Glades"}
-IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].source = "warcraft.wiki.gg/wiki/Alonsus_Faol"
+IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
-    {era = "WC2", text = "Founded the Order of the Silver Hand and ordained the first five paladins (including Uther and Turalyon)."},
-    {era = "Pre-WC3", text = "Died of natural causes and was buried in Faol's Rest in Tirisfal before being raised by the Scourge."},
-    {era = "Legion", text = "Stepped out of the shadows to found the Conclave in the Netherlight Temple and lead priests against the Legion."},
-    {era = "Midnight", text = "Undertakes a far-reaching pilgrimage across Azeroth to Quel'Thalas to rally the spiritual forces of the Light."},
+    {era = "Pre-WC1", text = "Led the Church of the Holy Light as archbishop. Took in Uther as an apprentice."},
+    {era = "WC2", text = "Founded the Order of the Silver Hand and trained the first paladins personally."},
+    {era = "Pre-WC3", text = "Raised funds to help rebuild both Stormwind City and various settlements in the Kingdom of Lordaeron. Built the Stormwind Cathedral together with his new apprentice – Benedictus. Sometimes after, Alonsus died of natural causes."},
+    {era = "WC3", text = "Resurrected by Arthas Menethil and forced to fight for the Scourge. Freed from mind control along with the other Forsaken but refused to join their ranks and vanished."},
+    {era = "Legion", text = "Led the Conclave, uniting the various priestly orders, in the fight against the Burning Legion. Helped retrieve various powerful weapons for the cause, including Xal'atath. Rallied the paladins for help to defend the Netherlight Temple."},
+    {era = "Pre-BfA", text = "Reintroduced Calia Menethil to the world. At King Anduin's behest, he helped to organize the Gathering to bring the Forsaken and living humans closer as a people. During negotiations, Alonsus refused to join the Horde. Helped resurrect Calia as an undead touched by the Light after she was killed in the massacre of the Gathering."},
+    {era = "BfA", text = "Assisted the night elven refugees of Teldrassil by helping to provide temporary housing and sent priests to heal the wounded."},
+    {era = "SL", text = "Aided the Forsaken in recovering the Undercity from the blight of the Fourth War and was present during the formation  of the Desolate Council."},
+    {era = "Pre-Midnight", text = "Rallied the priests to Silvermoon at Lady Liadrin's behest, in anticipation of Xal'atath's attack on the Sunwell."},
+    {era = "Midnight", text = "Oversaw the defense of the Sunwell and provided the exhausted defenders with holy magic. Aided Arator to overcome his doubts about his father and the Light."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].name = "Tahu Sagewind"
