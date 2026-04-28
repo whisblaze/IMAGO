@@ -60,7 +60,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].timeline = {
     {era = "SL", text = "Defended Silvermoon from new Scourge incursions alongside Grand Magister Rommath and Aethas Sunreaver."},
     {era = "Pre-DF", text = "Officiated Lor'themar and Thalyssra's marriage."},
     {era = "TWW", text = "Helped defend Hallowfall from Xal'atath's forces and coordinated the training of new Earthen recruits for the Horde."},
-    {era = "Pre-Midnight", text = "Rallied the priests of Azeroth to Silvermoon with Alonsus Faol in anticipation of Xal'atath's attack."},
+    {era = "Pre-MN", text = "Rallied the priests of Azeroth to Silvermoon with Alonsus Faol in anticipation of Xal'atath's attack."},
     {era = "Midnight", text = "Liadrin fought on the forefront in the defense of the Sunwell, recruited outside help from Zul'jarra's Amani and helped to create the Dawnwell."},
 }
 
@@ -440,7 +440,7 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
     {era = "Pre-BfA", text = "Reintroduced Calia Menethil to the world. At King Anduin's behest, he helped to organize the Gathering to bring the Forsaken and living humans closer as a people. During negotiations, Alonsus refused to join the Horde. Helped resurrect Calia as an undead touched by the Light after she was killed in the massacre of the Gathering."},
     {era = "BfA", text = "Assisted the night elven refugees of Teldrassil by helping to provide temporary housing and sent priests to heal the wounded."},
     {era = "SL", text = "Aided the Forsaken in recovering the Undercity from the blight of the Fourth War and was present during the formation  of the Desolate Council."},
-    {era = "Pre-Midnight", text = "Rallied the priests to Silvermoon at Lady Liadrin's behest, in anticipation of Xal'atath's attack on the Sunwell."},
+    {era = "Pre-MN", text = "Rallied the priests to Silvermoon at Lady Liadrin's behest, in anticipation of Xal'atath's attack on the Sunwell."},
     {era = "Midnight", text = "Oversaw the defense of the Sunwell and provided the exhausted defenders with holy magic. Aided Arator to overcome his doubts about his father and the Light."},
 }
 
@@ -748,7 +748,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].timeline = {
     {era = "BfA", text = "Helped Merchant Prince Gallywix establish a Horde base in Drustvar. At some point he traveled with the Champion to Alternate Draenor to recruit the Mag'har orcs. Later, Participated in the Battle for Stromgarde againts Alliance leaders."},
     {era = "DF", text = "Now chieftain of the Blackrock Clan, was instrumental in the revival of the Kosh'harg, an annual festival where orcs from all clans gathered."},
     {era = "TWW", text = "Eitrigg, acting as an advisor to Geya'rah, leader of the Mag'har, played an active role in uncovering the true enemy of the Arathi Highlands: The Red Dawn, defeating their leader, Marran Trollbane."},
-    {era = "Pre-Midnight", text = "He was eventually named a member of the Sons of Lothar, and is called upon when they met to discuss the threats facing Azeroth."}
+    {era = "Pre-MN", text = "He was eventually named a member of the Sons of Lothar, and is called upon when they met to discuss the threats facing Azeroth."}
 }
 
 -- CAT_EBON_BLADE
