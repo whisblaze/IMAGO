@@ -3,37 +3,20 @@
 -- ============================================================
 
 IMAGOdb.zones[2405].name = "Voidstorm"
-IMAGOdb.zones[2405].lore = "The Voidstorm is the absolute manifestation of Xal'atath's destructive wrath and the epicenter of corruption in Midnight. Once a border region of Quel'Thalas, the land has been torn apart by gigantic cosmic rifts and unstable Void energy into a hostile wasteland. Wandering rifts and inverted gravity fields define the landscape. Here, the Domanaar—Xal'atath's 'Devouring Swarm'—patrol, driven by an insatiable hunger for power. At the center of this apocalyptic zone looms the massive Voidspire, from which the Harbinger orchestrates her final strike against the Sunwell."
+IMAGOdb.zones[2405].lore = "Not much is known about the scarred landscape now known as the Voidstorm. Hostile and alien, this broken world once knew life and peace. In times past, the hills and crags were part of a world called Predacea. A society of knowledge and scientific progress, Predacea was not immune to the drums of war. In seeking an end to all conflict, a weapon of mass destruction was unleashed that ended their civilization entirely. Untold years later, the remnants of this planet have become the staging ground for Xal’atath’s war on Azeroth."
 IMAGOdb.zones[2405].pointsOfInterest = {
     {
-        name = "The Voidspire",
-        lore = "The terrifying nerve center of the invasion. A monumental raid where the forces of Light and Shadow duel for the fate of Azeroth."
+        name = "Slayer's Rise",
+        lore = "The stench of fresh blood fills the air across the plains of Slayer’s Rise. Two domanaar, Vidious and Ziadan, wage war on one another. Ostensibly, the two battle for control of the territory, but the glee each seems to take in the bloodshed certainly plays a role in their schemes. The two foes have recruited equally bloodthirsty members of the Horde and Alliance, sending them to battle in their names for glory… or for sport."
     },
     {
-        name = "Arena of the Voidscar",
-        lore = "Overseer Charonus forces abducted champions from all over Azeroth (such as the esteemed Taz'Rah) into deadly, never-ending gladiatorial combat here."
+        name = "Stormarion Citadel",
+        lore = "Stormarion Citadel rests on the southwest edge of the Voidstorm, peering out over an endless expanse of jagged canyons and dead earth. An outfit of ren’dorei researchers now occupy the area, attempting to stabilize the multitude of singularities scattered around the citadel. Threatened on all sides by the Xal’atath’s forces, these brave void elves continue their work no matter the cost."
     },
     {
-        name = "Nexus Points of the Singularity",
-        lore = "Destroyed arcane facilities whose cores now pulse with unstable Void energy. The Void Elves use these locations for their dangerous counterstrikes."
-    },
-}
-
-IMAGOdb.zones[2444].name = "Slayer's Rise"
-IMAGOdb.zones[2444].lore = "Slayer's Rise is the blood-soaked heart of the conflict in the Voidstorm. Here, where the lines between the open world and epic battles blur, the Horde, Alliance, and the devastating Domanaar clash in a brutal struggle for supremacy. What was once a strategic elevation of Quel'Thalas is now a nexus of relentless war. Monumental 40v40 skirmishes ignite along the 'Path of Predation', while brave heroes scour the open world PvP areas for strategic advantages. Whether in structured combat or ruthless skirmishes—Slayer's Rise exacts its toll in blood and honor."
-IMAGOdb.zones[2444].pointsOfInterest = {
-    {
-        name = "Path of Predation",
-        lore = "The central artery of the battlefield. Here the factions push forward in a dynamic tug-of-war, breaching defenses and attempting to take down the enemy Domanaar commander."
-    },
-    {
-        name = "The Fortified Strongholds",
-        lore = "Heavily guarded bastions of the Horde and Alliance at the edges of the area. They serve as a strategic retreat, respawn point, and local hub for faction missions."
-    },
-    {
-        name = "Neutral Arbiter Post",
-        lore = "A rare sanctuary amidst the chaos. Here, gladiators gather undisturbed for duels, exclusive PvP vendors offer their spoils of war, and safe portals lead back to the capitals."
-    },
+        name = "Voidspire",
+        lore = "Xal’atath’s grand design brought to fruition, the Voidspire looms over the entirety of the Voidstorm. Created with the captured essence of Dimensius the All-Devouring, the Voidspire is a focus of dark energy unlike any Azeroth has ever seen. Here, the Devouring Host marshals their forces in preparation for their inevitable final assault on Quel’Thalas"
+    }
 }
 
 IMAGOdb.zones[2413].name = "Harandar"

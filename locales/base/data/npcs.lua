@@ -165,7 +165,9 @@ IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].timeline = {
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].name = "Magister Umbric"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].race = "Void Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].lore = [[No limits – that was Umbric's desire as a student of the arcane arts in Dalaran. Yet he found the mages' studies to be too rigid, too constricting for his liking. Seeing the fall of the Sunwell and his home of Quel'Thalas, he realized that he needed to try a different approach to magic. The elves of Silvermoon needed an alternative way to survive if the need arose... and so Umbric turned to the dark energies of the Void.
-He gathered quite a few acolytes practicing the forbidden arts in secret before he was discovered. Exiled by his former friend, Grand Magister Rommath, Umbric and his followers continued their studies and finally found a way into a rift of space and time – Telogrus. Here, they were transformed into the ren'dorei, elves infused with the Void itself. 
+
+He gathered quite a few acolytes practicing the forbidden arts in secret before he was discovered. Exiled by his former friend, Grand Magister Rommath, Umbric and his followers continued their studies and finally found a way into a rift of space and time – Telogrus. Here, they were transformed into the ren'dorei, elves infused with the Void itself.
+
 After joining the Alliance, Umbric and his ren'dorei have become a small but elite force of specialists and have been on the forefront in the efforts against Xal'atath multiple times by now.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].zones = {"Amirdrassil", "The Voidspire", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Twilight Highlands", "Silvermoon City", "Stormwind City", "Magister's Terrace"}
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].source = "Cadash - IMAGO Community"
@@ -307,8 +309,11 @@ IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].timeline = {
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].name = "Taelia Fordragon"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].lore = [[A friendly and headstrong young woman, Taelia was born in Lordaeron shortly before the wars against the Horde broke out. After losing her mother in the conflict, her father Bolvar sent her to the kingdom of Kul Tiras for her own safety.
+
 She became a paladin and fought loyally for House Proudmoore, for her new home, and afterwards for the Alliance.
+
 Taelia is an open-minded individual, being best friends with the former pirate Flynn Fairwind, and even reconnecting happily with her father Bolvar after finding out that he had been made the Lich King.
+
 Now, the Sunwell has called Taelia to lend her strength to Silvermoon's defense.]]
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].source = "Cadash - IMAGO Community"
@@ -637,15 +642,52 @@ IMAGOdb.npcs.CAT_NEUTRAL["fiona"].timeline = {
 
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].name = "Valeera Sanguinar"
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].lore = "Valeera Sanguinar is a master assassin who places loyalty above faction lines. As a former slave and gladiator, she fought in the arena alongside Varian Wrynn and Broll Bearmantle, forging a deep friendship with House Wrynn. For a long time, she battled an addiction to fel magic after absorbing the essence of the dreadlord Kathra'natir to save her friends. In Midnight, she returns to her old homeland of Quel'Thalas. There, she accompanies the heroes of Azeroth as a Delve Companion into the most dangerous vaults and depths to stop the spread of the Void with deadly precision."
-IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].zones = {"Academic Uproar", "Atal'Aman", "The Grudge Pit", "Harandar", "Den of Masters", "Eversong Woods", "Voidstorm", "Parhelion Plaza", "Silvermoon City", "Zul'Aman"}
-IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].source = "warcraft.wiki.gg/wiki/Valeera_Sanguinar"
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].lore = [[Valeera Sanguinar owes allegiance to no faction and no leader. The young blood elf woman was orphaned at a young age and lived on the streets, thieving to survive. Whether it was the Scourge, mana addiction or enslavement – somehow Valeera made it through. She became slow to trust anybody, felt betrayed by the world, and became a reckless assassin.
+
+When she finally made true friends with Varian Wrynn and Broll Bearmantle, she took her first steps back into a healthier way of life. Owing her life to Varian she served him as a bodyguard without any obligation to the Alliance. After his death she coninued to serve his son, Anduin and Stormwind became her second home.
+
+Now, as a neutral friend to both factions, she aids the Champions of Azeroth in vanquishing foes that plot against Silvermoon from within the darkest depths of Quel'Thalas and beyond.]]
+
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].zones = {"Eversong Woods", "Parhelion Plaza", "Silvermoon City", "Zul'Aman", "Sunkiller Sanctum", "Atal'Aman", "Collegiate Calamity", "Shadowguard Point", "The Darkway", "The Grudge Pit", "The Gulf of Memory", "The Shadow Enclave", "Twilight Crypts"}
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].timeline = {
-    {era = "Pre-WotLK", text = "Fought as a gladiator of the Crimson Ring alongside Lo'Gosh (Varian Wrynn) and Broll Bearmantle."},
-    {era = "WotLK", text = "Accompanied Varian Wrynn during the Battle for the Undercity, supporting him as a personal bodyguard."},
-    {era = "Legion", text = "Joined the Uncrowned (Rogue Order) in the Hall of Shadows and helped permanently banish the demon Kathra'natir."},
-    {era = "BfA", text = "Acted as a secret courier between Anduin Wrynn, Baine Bloodhoof, and Varok Saurfang to undermine Sylvanas' rule."},
-    {era = "Midnight", text = "Roams the most dangerous instances and depths of Quel'Thalas as a Delve Companion to combat the Void invasion."},
+    {
+        era = "Pre-WC3",
+        text = [[Orphaned as a child when her entire family was murdered by bandits. Survived as a thief on the streets.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Caught stealing in Horde territory and was sold to Rehgar Earthfury as a gladiator slave and was forced to fight alongside Varian Wrynn and Broll Bearmantle. The three became friends and escaped together, ultimately helping Varian reclaim the Throne of Stormwind.
+Valeera briefly struggled with addiction to fel magic and got possessed by the demon Kathra'natir.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Stayed in Stormwind City as royal bodyguard to repay King Varian for saving her life. Valeera and Broll joined Varian in the Battle for the Undercity.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Uncrowned and helped recover the Fangs of the Devourer. Managed to decipher Amber Kearnen's last message and thus uncovered that Stormwind's SI:7 had been infiltrated by the Burning Legion.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Now serving Anduin Wrynn she delivered a message to Baine Bloodhoof, initiating negotiations to hold the Gathering.]],
+    },
+    {
+        era = "BfA",
+        text = [[Delivered various messages between the warring Horde and Alliance, serving as a neutral party to both and was present during the formation of the Horde council.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Unsuccessfully tried to find traces of Sylvanas Windrunner. Refused to take part in any more faction business on either side.]],
+    },
+    {
+        era = "TWW",
+        text = [[Survived Dalaran's destruction and settled with the other Uncrowned in Dornogal for a while.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped kill the traitorous Lord Antenorian. At both Anduin and Lor'themar's behest she worked alongside the Reliquary and the Champions of Azeroth to thwart various threats to Silvermoon.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].name = "Freya"
@@ -681,6 +723,44 @@ IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].timeline = {
 }
 
 -- CAT_EBON_BLADE
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].lore = [[Following the death of her family at the hands of the Scourge in Lordaeron, Sally Whitemane had one focus - destroying the undead in their entirety. As a zealous priestess of the Light fueled by guilt and rage towards the undead, she was welcomed into the Scarlet Crusade, and very quickly rose through the ranks to the position of High Inquisitor. After taking control of the organization following what was believed to be her demise at the Scarlet Monastery years prior, she was finally slain by the forsaken assassin Lillian Voss and a band of adventurers.
+
+Now resurrected as a member of the Four Horsemen, Sally has recovered from her immense hatred, but remains passionate and devoted, now to the defense of Azeroth with her fellow Death Knights of the Ebon Blade.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].source = "Nebb"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Witnessed her family succumb to the plague of undeath in Lordaeron, and had to destroy them when they arose as members of the Scourge. Joined the Scarlet Crusade to end the undead threat.]],
+    },
+    {
+        era = "Classic",
+        text = [[Ascended to the rank of High Inquisitor. Survived attempts to defeat the leadership of the Scarlet Crusade by groups of adventurers raiding the Scarlet Monastery, and went into hiding.]],
+    },
+    {
+        era = "MoP",
+        text = [[Returned to lead the forces of the Scarlet Crusade. Finally slain by Lillian Voss and a group of adventurers.]],
+    },
+    {
+        era = "Legion",
+        text = [[Resurrected as a Death Knight by the Knights of the Ebon Blade to serve as the third of the Four Horsemen. Aided in fighting off the Burning Legion alongside the other horsemen on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Gathered fallen champions of the Horde and Alliance to be raised as the next generation of Death Knights.]],
+    },
+    {
+        era = "SL",
+        text = [[Acted as the Ebon Blade’s emissary to the Alliance. Aided with the assault on the Sanctum of Domination. Returned to Azeroth to assist the Ebon Blade in holding back the Scourge.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Defended Light’s Hope Chapel from the Scourge along with the rest of the Four Horsemen.]],
+    }
+}
+
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].name = "Highlord Darion Mograine"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].race = "Human"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].lore =
@@ -716,6 +796,49 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {
     {era = "Legion", text = "Thassarian aided the new Deathlord in raising the new Four Horsemen. Later, he fought at the Battle for the Exodar.  Rescued Koltira Deathweaver from the Undercity. "},
     {era = "SL", text = "Followed Bolvar Fordragon into the Shadowlands to stop Sylvanas Windrunner."},
     {era = "Midnight", text = "Helped defend Light's Hope Chapel in the Eastern Plaguelands."},
+}
+
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].name = "Nazgrim"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].race = "Orc"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].lore = [[Honor, loyalty, courage - there is nothing more important to orcs. For Nazgrim, these were not merely mottos, but the very meaning of life.
+Starting as a lowly sergeant in Garrosh Hellscream's army, Nazgrim quickly rose to the rank of general through his achievements across Azeroth and became one of the closest allies of Warchief Hellscream.
+When the Horde rebelled against Hellscream and the moment came to choose between duty and morality, Nazgrim chose the former with grim determination, standing firm against the invaders and ultimately giving his life in service to his Warchief.
+However, his story did not end there, as he was risen by the Knights of the Ebon Blade as the first of the new Four Horsemen. Upon learning of the third invasion of the Burning Legion, he accepted his new role without hesitation and remained steadfast in his service to his people.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].zones = {"Eastern Plaguelands", "The Dreamrift", "The Voidspire"}
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].source = "Metrus"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].timeline = {
+    {
+        era = "Pre-WC3",
+        text = [[Was captured by the Alliance and held prisoner in the interment camps. After being freed by the Horde, he joined Thrall's army.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Stationed as sergeant at Conquest Hold in the Grizzly Hills.]],
+    },
+    {
+        era = "Cata",
+        text = [[Was promoted to Legionnaire and led the Horde's campaign in Vashj'ir.]],
+    },
+    {
+        era = "MoP",
+        text = [[Was promoted to general and ordered to take control of newly discovered lands of Pandaria. Recruited indigenous hozen and clashed with Admiral Taylor's forces, resulting in the destruction of Serpent's Heart and the unleashing of the sha. Was later summoned by Garrosh and was tasked to defend main gates of Orgrimmar from the Horde rebels and Alliance forces and eventually died there.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was raised by the new Deathlord and Thassarian as the first member of the new Four Horsemen.]],
+    },
+    {
+        era = "SL",
+        text = [[Became the Ebon Blade's emissary to the Horde. Accompanied Bolvar Fordragon during the attack on the Sanctum of Domination.]],
+    },
+    {
+        era = "DF",
+        text = [[Attended the first Kosh'arg on Azeroth as part of Warsong clan.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped defend Light's Hope Chapel.]],
+    }
 }
 
 -- CAT_VOID

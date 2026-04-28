@@ -168,14 +168,21 @@ IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].name = "Magister Umbric"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].race = "Leerenelf"
-IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].lore = "Magister Umbric ist der weise und pragmatische Anführer der Ren'dorei (Leerenelfen). Getrieben von dem Wunsch, Quel'Thalas um jeden Preis zu verteidigen, erforschte er einst verbotene Leerenmagie, was zu seiner Verbannung durch Großmagister Rommath führte. Im Exil fiel er beinahe dem Leerenprinzen Durzaan zum Opfer, wurde jedoch im letzten Moment von Alleria Windläufer gerettet. Obwohl er nun der Allianz dient, hat er die Liebe zu seiner Heimat nie verloren. Zuletzt leitete er eine Forschungsexpedition nach K'aresh, bis Arator der Erlöser ihn in Tazavesh aufsuchte und vor der drohenden Gefahr für Silbermond warnte. Ohne zu zögern sammelte Umbric sein Volk. In Midnight kehrt er trotz der bitteren Vergangenheit in seine Heimat zurück und richtet seine Meisterschaft über die Leere gegen Xal'ataths Streitkräfte."
+IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].lore = [[Keine Grenzen – das war Umbrics Verlangen als Student der arkanen Künste in Dalaran. Doch er empfand die Studien der Magier als zu starr, zu einengend für seinen Geschmack. Angesichts des Falls des Sonnenbrunnens und seiner Heimat Quel'Thalas erkannte er, dass er einen anderen Zugang zur Magie finden musste. Die Elfen von Silbermond brauchten einen alternativen Weg, um im Ernstfall zu überleben... und so wandte sich Umbric den dunklen Energien der Leere zu.
+
+Er scharte eine ganze Reihe von Akolythen um sich, die die verbotenen Künste im Geheimen praktizierten, bevor er entdeckt wurde. Ins Exil verbannt von seinem ehemaligen Freund, Großmagister Rommath, setzten Umbric und seine Anhänger ihre Studien fort und fanden schließlich einen Weg in einen Riss in Raum und Zeit – Telogrus. Hier wurden sie in die Ren'dorei verwandelt, Elfen, die von der Leere selbst durchdrungen sind.
+
+Nachdem sie sich der Allianz angeschlossen hatten, wurden Umbric und seine Ren'dorei zu einer kleinen, aber elitären Truppe von Spezialisten und standen bereits mehrfach an vorderster Front im Kampf gegen Xal'atath.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].zones = {"Amirdrassil", "Die Leerenspitze", "Immersangwald", "Insel von Quel'Danas", "Leerensturm", "Schattenhochland", "Silbermond", "Sturmwind", "Terrasse der Magister"}
-IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].source = "Quest: Die Geisterlande"
+IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
-    {era = "BfA", text = "Wurde für seine Leerenforschung aus Silbermond verbannt, in den Geisterlanden von der Leere transformiert und durch Alleria Windläufer gerettet."},
-    {era = "BfA", text = "Schwor der Allianz die Treue und führte die Streitkräfte der Leerenelfen im Vierten Krieg bei entscheidenden Sabotageakten in Zandalar an."},
-    {era = "TWW", text = "Errichtete das Lager Shan'dorah auf K'aresh und wurde nach dem Sieg über Dimensius in Tazavesh von Arator mobilisiert, um Silbermond zu retten."},
-    {era = "Midnight", text = "Kehrt nach Quel'Thalas zurück, um den Sonnenbrunnen zu verteidigen, und operiert tief in den von der Leere verzerrten Zonen wie der Leerenspitze."},
+    {era = "Pre-WC1", text = "Studierte das Arkane in Dalaran an der Seite seiner Freunde Rommath und Dar'Khan Drathir."},
+    {era = "Pre-WotLK", text = "Wurde wegen des Praktizierens verbotener Leerenmagie aus Silbermond verbannt."},
+    {era = "Legion", text = "Entdeckte den Telogrusriss und wurde zusammen mit seinen Anhängern in Ren'dorei verwandelt. Schloss sich Alleria Windläufer an, nachdem sie ihnen einen Platz in der Allianz angeboten hatte."},
+    {era = "BfA", text = "Kämpfte im Vierten Krieg und bewies der Allianz seinen Wert."},
+    {era = "DF", text = "Begann an der Seite von Alleria Windläufer die Jagd auf Xal'atath und verteidigte den Telogrusriss vor den Leerenstreitkräften der Heroldin."},
+    {era = "TWW", text = "Errichtete einen Außenposten auf K'aresh und stellte die Stärke der Ren'dorei im Kampf gegen Dimensius zur Verfügung."},
+    {era = "Midnight", text = "Da Silbermond in Gefahr war, kehrte Umbric in seine alte Heimat zurück, um die Leere zu bekämpfen. Es gelang ihm, einen Durchgang in den Leerensturm zu öffnen, und später half er bei der Erschaffung des Dämmerbrunnens. Für seine Verdienste wurde er vollständig begnadigt und wieder in Silbermond aufgenommen."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].name = "Lady Dunkeltal"
@@ -245,7 +252,9 @@ IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].timeline = {
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].name = "Anduin Wrynn"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].race = "Mensch"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].lore = [[Der abwesende Hochkönig der Allianz, Anduin Llane Wrynn, hat das Gefühl, nur noch ein Schatten seines einstigen, strahlenden Selbst zu sein.
+
 Er konnte einst das Licht wie kaum ein anderer wirken, heilte ganze Schlachtfelder und inspirierte so sein Volk, als unerschütterlicher Verteidiger von Gerechtigkeit, Toleranz und Frieden weiterzukämpfen. Das änderte sich, als er vom Kerkermeister beherrscht und gezwungen wurde, dabei zu helfen, die Welt zu vernichten, die er zu beschützen geschworen hatte – bei vollem Bewusstsein, aber unfähig, seine Taten zu kontrollieren. Selbst nachdem er sich befreien konnte, entkam er nicht der Angst, zu solch grausamen Taten fähig zu sein, und etwas in Anduin zerbrach. Er verschwand für Jahre und ließ sein Volk und sein Königreich zurück.
+
 Nun, da Xal'atath alles bedroht, was ihm lieb und teuer ist, hat sich Anduin endlich wieder in den Kampf gestürzt und beginnt langsam, sein Selbstvertrauen und seinen Glauben an das Licht zurückzugewinnen.]]
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].zones = {"Insel von Quel'Danas", "Parhelionplatz", "Silbermond"}
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].source = "Cadash - IMAGO Community"
@@ -306,8 +315,11 @@ IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].timeline = {
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].name = "Taelia Fordragon"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].race = "Mensch"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].lore = [[Als freundliche und eigensinnige junge Frau wurde Taelia kurz vor Ausbruch der Kriege gegen die Horde in Lordaeron geboren. Nachdem sie ihre Mutter in dem Konflikt verlor, schickte ihr Vater Bolvar sie zu ihrer eigenen Sicherheit in das Königreich Kul Tiras.
+
 Sie wurde zu einer Paladinin und kämpfte loyal für Haus Prachtmeer, für ihre neue Heimat und später für die Allianz.
+
 Taelia ist eine aufgeschlossene Persönlichkeit, die eine enge Freundschaft mit dem ehemaligen Piraten Flynn Schönwind pflegt. Taelia ist eine aufgeschlossene Persönlichkeit, die eine enge Freundschaft mit dem ehemaligen Piraten Flynn Schönwind pflegt. Nach der Erkenntnis des wahren Schicksals ihres Vaters Bolvar, der zum Lichkönig gemacht worden war, fand sie sogar freudig wieder mit ihm zusammen.
+
 Nun hat der Sonnenbrunnen Taelia gerufen, damit sie Silbermonds Verteidigung ihre Stärke leiht.]]
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].zones = {"Immersangwald", "Insel von Quel'Danas", "Silbermond"}
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].source = "Cadash - IMAGO Community"
@@ -636,15 +648,51 @@ IMAGOdb.npcs.CAT_NEUTRAL["fiona"].timeline = {
 
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].name = "Valeera Sanguinar"
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].race = "Blutelfe"
-IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].lore = "Valeera Sanguinar ist eine Meisterassassine, die Loyalität über Fraktionsgrenzen stellt. Als ehemalige Sklavin und Gladiatorin kämpfte sie in der Arena an der Seite von Varian Wrynn und Broll Bärenpranke, was eine tiefe Freundschaft zum Haus Wrynn schmiedete. Lange Zeit kämpfte sie gegen die Sucht nach Teufelsmagie, nachdem sie die Essenz des Schreckenslords Kathra'natir in sich aufnahm, um ihre Freunde zu retten. In Midnight kehrt sie in ihre alte Heimat Quel'Thalas zurück. Dort begleitet sie die Helden Azeroths als Delve-Companion in die gefährlichsten Gewölbe und Tiefen, um die Ausbreitung der Leere mit tödlicher Präzision zu stoppen."
-IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].zones = {"Akademischer Aufruhr", "Atal'Aman", "Die Grollgrube", "Harandar", "Hort der Meister", "Immersangwald", "Leerensturm", "Parhelionplaza", "Silbermond", "Zul'Aman"}
-IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].source = "warcraft.wiki.gg/wiki/Valeera_Sanguinar"
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].lore = [[Valeera Sanguinar ist weder einer Fraktion noch einem Anführer zur Treue verpflichtet. Die junge Blutelfe wurde früh zur Waise und überlebte als Diebin auf den Straßen. Ob die Geißel, Magiesucht oder Sklaverei – Valeera trotzte jedem Schicksal. Sie lernte, niemandem zu vertrauen, fühlte sich von der Welt verraten und wurde zu einer rücksichtslosen Meuchelmörderin.
+
+Erst durch ihre Freundschaft mit Varian Wrynn und Broll Bärenmantel fand sie den Weg zurück in ein besseres Leben. Da sie Varian ihr Leben verdankte, diente sie ihm als Leibwächterin, ohne sich jemals der Allianz zu verpflichten. Nach seinem Tod diente sie weiterhin seinem Sohn, Anduin, und Sturmwind wurde zu ihrer zweiten Heimat.
+
+Heute unterstützt sie als neutrale Verbündete beider Fraktionen die Champions von Azeroth dabei, jene Feinde zu bezwingen, die in den dunkelsten Tiefen von Quel'Thalas und darüber hinaus gegen Silbermond intrigieren.]]
+
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].zones = {"Immergesangwald", "Parhelionplaza", "Silbermond", "Zul'Aman", "Sonnentötersanktum", "Atal'Aman", "Akademischer Aufruhr", "Schattenwachtspitze", "Der Düsterweg", "Die Grollgrube", "Die Kluft der Erinnerung", "Die Schattenenklave", "Gruften der Zwielichtklinge"}
+IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].timeline = {
-    {era = "Pre-WotLK", text = "Kämpfte als Gladiatorin des Blutrings an der Seite von Lo'Gosh (Varian Wrynn) und Broll Bärenpranke."},
-    {era = "WotLK", text = "Begleitete Varian Wrynn bei der Schlacht um Unterstadt und unterstützte ihn als persönliche Leibwache."},
-    {era = "Legion", text = "Schloss sich den Ungekrönten (Schurken-Orden) in der Halle der Schatten an und half, den Dämon Kathra'natir endgültig zu verbannen."},
-    {era = "BfA", text = "Fungierte als Geheimkurierin zwischen Anduin Wrynn, Baine Bluthuf und Varok Saurfang, um Sylvanas' Herrschaft zu untergraben."},
-    {era = "Midnight", text = "Durchstreift als Delve-Companion die gefährlichsten Instanzen und Tiefen von Quel'Thalas, um die Leereninvasion zu bekämpfen."},
+    {
+        era = "Pre-WC3",
+        text = [[Wurde als Kind zur Waise, nachdem ihre gesamte Familie von Banditen ermordet wurde. Überlebte als Diebin auf den Straßen.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Wurde beim Stehlen in Horde-Territorium gefasst und als Gladiatorensklavin an Rehgar Erdfuror verkauft. Dort wurde sie gezwungen, an der Seite von Varian Wrynn und Broll Bärenmantel zu kämpfen. Die drei wurden Freunde, entkamen gemeinsam und halfen Varian schließlich, den Thron von Sturmwind zurückzuerobern. Valeera kämpfte kurzzeitig mit einer Sucht nach Teufelsmagie und wurde vom Dämon Kathra'natir besessen.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Blieb als königliche Leibwächterin in Sturmwind, um ihre Lebensschuld gegenüber König Varian zu begleichen. Gemeinsam mit Varian und Broll nahm sie an der Schlacht um Unterstadt teil.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich den Ungekrönten an und half bei der Bergung der Fangzähne des Verschlingers. Es gelang ihr, Amber Kearnens letzte Nachricht zu entschlüsseln und so die Infiltration des SI:7 durch die Brennende Legion aufzudecken.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Im Dienste von Anduin Wrynn überbrachte sie Baine Bluthufe eine Nachricht, um die Verhandlungen für die Zusammenkunft einzuleiten.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fungierte als neutrale Vermittlerin und überbrachte Nachrichten zwischen der verfeindeten Horde und Allianz. Sie war bei der Gründung des Rates der Horde anwesend.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Versuchte erfolglos, Spuren von Sylvanas Windläufer zu finden. Weigerte sich fortan, weiterhin an den Fraktionsangelegenheiten beider Seiten teilzunehmen.]],
+    },
+    {
+        era = "TWW",
+        text = [[Überlebte die Zerstörung von Dalaran und ließ sich für eine Weile mit den anderen Ungekrönten in Dornogal nieder.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Half bei der Tötung des verräterischen Lords Antenorian. Auf Geheiß von Anduin und Lor'themar arbeitete sie mit dem Reliquiar und den Champions von Azeroth zusammen, um verschiedene Bedrohungen für Silbermond abzuwehren.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].name = "Freya"
@@ -696,6 +744,90 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {
     {era = "Midnight", text = "Half bei der Verteidigung der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern."},
 }
 
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].name = "Nazgrim"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].race = "Orc"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].lore = [[Ehre, Loyalität, Mut – es gibt nichts Wichtigeres für einen Orc. Für Nazgrim waren dies nicht bloß leere Worte, sondern der Kern seines gesamten Daseins.
+Beginnend als einfacher Unteroffizier in der Armee von Garrosh Höllschrei, stieg Nazgrim durch seine Verdienste auf ganz Azeroth rasch zum Rang eines Generals auf und wurde zu einem der engsten Verbündeten des Kriegshäuptlings.
+
+Als die Horde gegen Höllschrei rebellierte und der Moment kam, in dem er zwischen Pflicht und Moral wählen musste, entschied sich Nazgrim mit grimmiger Entschlossenheit für seine Pflicht. Er leistete den Eindringlingen erbitterten Widerstand und gab letztlich sein Leben im Dienst für seinen Kriegshäuptling.
+
+Doch seine Geschichte endete dort nicht: Er wurde von den Rittern der Schwarzen Klinge als der erste der neuen Vier Reiter von den Toten erweckt. Als er von der dritten Invasion der Brennenden Legion erfuhr, akzeptierte er seine neue Rolle ohne Zögern und blieb seinem Volk weiterhin standhaft treu.]]
+
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].zones = {"Östliche Pestländer", "Der Traumriss", "Die Leerenspitze"}
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].source = "Metrus"
+IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].timeline = {
+    {
+        era = "Pre-WC3",
+        text = [[Wurde von der Allianz gefangen genommen und in den Internierungslagern festgehalten. Nachdem er von der Horde befreit wurde, schloss er sich der Armee von Thrall an.]],
+    },
+    {
+        era = "WotLK",
+        text = [[War als Unteroffizier in der Eroberungshalle in den Grizzlyhügeln stationiert.]],
+    },
+    {
+        era = "Cata",
+        text = [[Wurde zum Legionär befördert und leitete den Feldzug der Horde in Vashj'ir.]],
+    },
+    {
+        era = "MoP",
+        text = [[Wurde zum General befördert und erhielt den Befehl, die neu entdeckten Lande von Pandaria unter Kontrolle zu bringen. Er rekrutierte die einheimischen Hozen und stieß mit den Truppen von Admiral Taylor zusammen, was zur Zerstörung des Herzens der Schlange und der Entfesselung der Sha führte. Später wurde er von Garrosh herbeigerufen, um die Haupttore von Orgrimmar gegen die Rebellen der Horde und die Streitkräfte der Allianz zu verteidigen, wobei er schließlich im Kampf fiel.]],
+    },
+    {
+        era = "Legion",
+        text = [[Wurde vom neuen Todesgebietieter und Thassarian als erstes Mitglied der neuen Vier Reiter erweckt.]],
+    },
+    {
+        era = "SL",
+        text = [[Wurde der Gesandte der Schwarzen Klinge bei der Horde. Begleitete Bolvar Fordragon während des Angriffs auf das Sanktum der Herrschaft.]],
+    },
+    {
+        era = "DF",
+        text = [[Nahm als Teil des Kriegshymnenklans am ersten Kosh'harg auf Azeroth teil.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Half bei der Verteidigung der Kapelle der Hoffnung des Lichts.]],
+    }
+}
+
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "Hochinquisitorin Weißsträhne"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Mensch"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].lore = [[Nach dem Tod ihrer Familie durch die Hände der Geißel in Lordaeron hatte Sally Weißsträhne nur noch ein Ziel: die vollständige Vernichtung aller Untoten. Als eifernde Priesterin des Lichts, angetrieben von Schuldgefühlen und tiefem Zorn, wurde sie im Scharlachroten Kreuzzug willkommen geheißen und stieg rasch bis in den Rang der Hochinquisitorin auf. Nachdem sie die Führung der Organisation übernommen hatte – infolge ihres vermeintlichen Ablebens im Scharlachroten Kloster Jahre zuvor –, wurde sie schließlich von der Meuchelmörderin der Verlassenen, Lilian Voss, und einer Gruppe von Abenteurern getötet.
+
+Heute, als eines der Mitglieder der Vier Reiter wiedererweckt, hat Sally ihren grenzenlosen Hass hinter sich gelassen. Dennoch bleibt sie leidenschaftlich und entschlossen – nun jedoch im Dienste der Verteidigung Azeroths an der Seite ihrer Mitstreiter von der Schwarzen Klinge.]]
+
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].zones = {"Östliche Pestländer"}
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].source = "Nebb"
+IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Wurde Zeugin, wie ihre Familie in Lordaeron der Plage des Untods erlag, und musste sie eigenhändig vernichten, als sie als Mitglieder der Geißel wiederauferstanden. Schloss sich dem Scharlachroten Kreuzzug an, um die Bedrohung durch die Untoten zu beenden.]],
+    },
+    {
+        era = "Classic",
+        text = [[Stieg in den Rang der Hochinquisitorin auf. Überlebte Versuche von Abenteurergruppen, die Führung des Scharlachroten Kreuzzugs im Scharlachroten Kloster zu stürzen, und tauchte unter.]],
+    },
+    {
+        era = "MoP",
+        text = [[Kehrte zurück, um die Streitkräfte des Scharlachroten Kreuzzugs anzuführen. Wurde schließlich von Lilian Voss und einer Gruppe von Abenteurern getötet.]],
+    },
+    {
+        era = "Legion",
+        text = [[Wurde von den Rittern der Schwarzen Klinge als Todesritterin wiedererweckt, um als dritte der Vier Reiter zu dienen. Half dabei, die Brennende Legion an der Verheerten Küste an der Seite der anderen Reiter zurückzuschlagen.]],
+    },
+    {
+        era = "BfA",
+        text = [[Versammelte gefallene Champions der Horde und Allianz, um sie als nächste Generation von Todesrittern zu erwecken.]],
+    },
+    {
+        era = "SL",
+        text = [[Fungierte als Gesandte der Schwarzen Klinge bei der Allianz. Half beim Angriff auf das Sanktum der Herrschaft und kehrte anschließend nach Azeroth zurück, um die Schwarze Klinge beim Zurückschlagen der Geißel zu unterstützen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Verteidigte zusammen mit den restlichen Vier Reitern die Kapelle des Hoffnungsvollen Lichts gegen die Geißel.]],
+    }
+}
 
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexuskönig Salhadaar"
