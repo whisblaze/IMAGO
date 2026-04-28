@@ -68,7 +68,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
     {era = "Legion", text = "Helped to free Suramar from the occupation of the Burning Legion."},
     {era = "BfA", text = "Took part in welcoming the nightborne into the Horde and defended the Sunwell from Alleria's influence."},
     {era = "SL", text = "Defended Silvermoon from new Scourge incursions alongside Lady Liadrin and Aethas Sunreaver."},
-    {era = "Midnight", text = "Rommath leads the magisters of Silvermoon in their defense from the Devouring Host. Still wary of Umbric's use of Void magic, Rommath reluctantly agreed thst his expertise is needed to defeat their common enemy."},
+    {era = "Midnight", text = "Rommath led the magisters of Silvermoon in their defense from the Devouring Host. Still wary of Umbric's use of Void magic, Rommath reluctantly agreed that his expertise is needed to defeat their common enemy."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].name = "Halduron Brightwing"
