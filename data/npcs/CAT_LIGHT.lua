@@ -64,7 +64,7 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"] = {
     displayID = 248318,
-    ids = {248318, 242614, 245605, 242507},
+    ids = {248318, 242614, 245605, 242507, 263563},
     zones = {},
     category = "CAT_LIGHT",
 }
