@@ -903,6 +903,19 @@ IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_VOID["l_ura"].name = "L'ura"
+IMAGOdb.npcs.CAT_VOID["l_ura"].race = "Void Naaru"
+IMAGOdb.npcs.CAT_VOID["l_ura"].lore = "L'ura is the tragic centerpiece of the Void invasion in Quel'Thalas. Once a being of Light who covered the draenei's flight from Argus, she fell into a Void state after eons of imprisonment. After Alleria Windrunner absorbed her essence in the Seat of the Triumvirate, L'ura served as the source of Alleria's Void power for years. In Midnight, her fate reaches a horrific climax: Xal'atath stabbed Alleria in the back at the Voidspire and forcibly tore L'ura's essence from her. With this power, the Harbinger corrupted the Sunwell into the 'Darkwell.' Serving as the final encounter during the March on Quel'Danas, L'ura must be defeated once and for all to prevent the total transformation of the well into a font of absolute darkness."
+IMAGOdb.npcs.CAT_VOID["l_ura"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_VOID["l_ura"].source = "warcraft.wiki.gg/wiki/L'ura"
+IMAGOdb.npcs.CAT_VOID["l_ura"].timeline = {
+    {era = "Ancient", text = "Stayed behind during the flight from Argus to hold back the Legion and was imprisoned in the Seat of the Triumvirate on Kil'jaeden's orders."},
+    {era = "Legion", text = "Was defeated by Alleria Windrunner and adventurers, with Alleria fully siphoning her essence."},
+    {era = "Midnight", text = "Manifested by Alleria in the Voidstorm to defeat the naaru T'era. Later torn from Alleria by Xal'atath at the Voidspire to transform the Sunwell into the 'Darkwell'."},
+    {era = "Midnight", text = "Serves as the final encounter in the 'March on Quel'Danas' to prevent the salvation of the Sunwell."},
+}
+
+
 
 -- CAT_AMANI
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].name = "Zul'jarra"
