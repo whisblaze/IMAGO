@@ -573,36 +573,6 @@ IMAGOdb.npcs.CAT_LIGHT["talthis"].timeline = {
     {era = "Midnight", text = "Returns to his homeland to stop the chaos of the Void invasion on the Isle of Quel'Danas as part of Tyr's Guard."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].name = "Vindicator Boros"
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].race = "Draenei"
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].lore = "Vindicator Boros is an unyielding veteran of the Hand of Argus and a high-ranking champion of the Silver Hand. Following the crash of the Exodar on Azeroth, he led the draenei's bitter fight against blood elf sabotage on Bloodmyst Isle. This previously deep-seated enmity makes his presence in Midnight all the more remarkable: faced with total annihilation by the Void, Boros lays old grudges to rest. Wielding his gigantic hammer and the pure power of the Light, he now stands shoulder-to-shoulder on Parhelion Plaza with the very elves he once fought, determined to protect the Sunwell."
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].source = "Quest: Die Hand von Argus"
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].timeline = {
-    {era = "TBC", text = "Led the forces of the Hand of Argus on Bloodmyst Isle in the battle against Kael'thas's Sunhawks."},
-    {era = "Legion", text = "Joined the newly reformed Silver Hand and served the Highlord as a loyal champion in the war against the Legion."},
-    {era = "Midnight", text = "Fights as the vanguard of the Silver Hand at Parhelion Plaza and the Isle of Quel'Danas against the Void invasion."},
-}
-
-IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].name = "Sunwalker Dezco"
-IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].lore =
-[[
-Chieftain of the Dawnchaser tribe, Sunwalker Dezco is a steadfast tauren who reveres An'she, the sun, drawing his formidable power from her light. Having endured unimaginable personal tragedies that would break a lesser spirit, Dezco journeyed to distant lands in search of purpose. Though his travels have taken him across distant continents and even into the realms of the afterlife, the place he felt most at home was with the common people of Azeroth. 
-    
-Dedicated to service, Dezco stands as a seasoned veteran and wise elder among the Sunwalkers. As conflict brews anew, he serves as a guiding mentor, teaching allies that walking the path of the Light requires not only fervent zeal, but deep compassion as well.]]
-IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].zones = {"Arathi Highlands"}
-IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].source = "Lewi - IMAGO Community"
-IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
-    {era = "Pre-MoP", text = "Fought against dragons, the undead, and Alliance forces on several Horde missions across multiple continents alongside his closest allies."},
-    {era = "MoP", text = "Led the Dawnchaser tribe to Pandaria, enduring the tragic deaths of his wife and one of his infant sons. He became a staunch defender of the Vale of Eternal Blossoms and ultimately helped overthrow Garrosh Hellscream to stop his desecration of the sacred land."},
-    {era = "WoD", text = "Traveled to Draenor in search of peace, temporarily struggling with an addiction to the soothing, warm light of an arakkoan Sun Crystal to cope with his immense grief."},
-    {era = "Legion", text = "Joined the ranks of the Silver Hand, aiding the paladin order's defensive efforts from within the Sanctum of Light."},
-    {era = "BfA", text = "Departed from the Silver Hand following the fractured loyalties and political turmoil of the Fourth War."},
-    {era = "SL", text = "Crossed the veil into the Shadowlands and arrived in Oribos, hoping to find the souls of his departed wife and son to deliver a final message of love."},
-    {era = "TWW", text = "Traveled to the shores of Khaz Algar alongside other prominent tauren, proudly overseeing the martial training of his now-grown son, Kor."},
-    {era = "Midnight", text = "Acts as a guiding mentor for the Sunwalkers and their allies, teaching a new generation that wielding the Light is about much more than mere violence."},
-}
 
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].name = "Vindicator Boros"
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].race = "Draenei"
@@ -628,6 +598,26 @@ IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].timeline = {
         era = "Midnight",
         text = [[Helped to defend the Sunwell against the Voidstorm.]],
     }
+}
+
+IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].name = "Sunwalker Dezco"
+IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].race = "Tauren"
+IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].lore =
+[[
+Chieftain of the Dawnchaser tribe, Sunwalker Dezco is a steadfast tauren who reveres An'she, the sun, drawing his formidable power from her light. Having endured unimaginable personal tragedies that would break a lesser spirit, Dezco journeyed to distant lands in search of purpose. Though his travels have taken him across distant continents and even into the realms of the afterlife, the place he felt most at home was with the common people of Azeroth. 
+    
+Dedicated to service, Dezco stands as a seasoned veteran and wise elder among the Sunwalkers. As conflict brews anew, he serves as a guiding mentor, teaching allies that walking the path of the Light requires not only fervent zeal, but deep compassion as well.]]
+IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].zones = {"Arathi Highlands"}
+IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].source = "Lewi - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
+    {era = "Pre-MoP", text = "Fought against dragons, the undead, and Alliance forces on several Horde missions across multiple continents alongside his closest allies."},
+    {era = "MoP", text = "Led the Dawnchaser tribe to Pandaria, enduring the tragic deaths of his wife and one of his infant sons. He became a staunch defender of the Vale of Eternal Blossoms and ultimately helped overthrow Garrosh Hellscream to stop his desecration of the sacred land."},
+    {era = "WoD", text = "Traveled to Draenor in search of peace, temporarily struggling with an addiction to the soothing, warm light of an arakkoan Sun Crystal to cope with his immense grief."},
+    {era = "Legion", text = "Joined the ranks of the Silver Hand, aiding the paladin order's defensive efforts from within the Sanctum of Light."},
+    {era = "BfA", text = "Departed from the Silver Hand following the fractured loyalties and political turmoil of the Fourth War."},
+    {era = "SL", text = "Crossed the veil into the Shadowlands and arrived in Oribos, hoping to find the souls of his departed wife and son to deliver a final message of love."},
+    {era = "TWW", text = "Traveled to the shores of Khaz Algar alongside other prominent tauren, proudly overseeing the martial training of his now-grown son, Kor."},
+    {era = "Midnight", text = "Acts as a guiding mentor for the Sunwalkers and their allies, teaching a new generation that wielding the Light is about much more than mere violence."},
 }
 
 -- CAT_NEUTRAL

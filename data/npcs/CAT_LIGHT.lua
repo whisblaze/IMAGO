@@ -201,10 +201,3 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"] = {
     zones = {},
     category = "CAT_LIGHT",
 }
-
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"] = {
-    displayID = 248406,
-    ids = {248406, 243218, 239509, 240640},
-    zones = {},
-    category = "CAT_LIGHT",
-}
