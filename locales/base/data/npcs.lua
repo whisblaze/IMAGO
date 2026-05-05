@@ -379,13 +379,45 @@ IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].name = "Lord Grayson Shadowbreaker"
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].lore = "Lord Grayson Shadowbreaker is a highly respected Paladin Master of the Silver Hand. For years, he served in the Cathedral of Light in Stormwind as a mentor and was instrumental in the training and outfitting of the knightly cavalry. During the invasion of the Burning Legion, he joined the reformed order in the Sanctum of Light. In Midnight, he brings his decades of experience to the fronts of Quel'Thalas to support the defense of the Sunwell with the holy wrath of the Silver Hand."
+IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].lore = [[The primary human paladin trainer and a veteran fighter of the Order of the Silver Hand, Lord Grayson Shadowbreaker has been an indispensable asset to the Alliance for decades. 
+He is not only in charge of training new recruits and helping them become beacons of righteousness, but he also oversees threats all across Azeroth and sends out reinforcements as needed.
+
+Shadowbreaker can be considered a paladin of very traditional values and still holds the undead in high contempt. Never one to be too friendly or forgiving with both his trainees and his foes, he ultimately wants what is best for the Alliance and for the Order of the Silver Hand.]]
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].source = "warcraft.wiki.gg/wiki/Lord_Grayson_Shadowbreaker"
+IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].timeline = {
-    {era = "Classic", text = "Instructed young paladins in Stormwind and helped them summon their holy steeds."},
-    {era = "Legion", text = "Joined the Conclave in the Sanctum of Light to unite the Order of the Silver Hand against Sargeras' Legion."},
-    {era = "Midnight", text = "Commands Silver Hand troops on the Isle of Quel'Danas in defense of the Light."},
+    {
+        era = "Pre-Classic",
+        text = [[Was visited by his sister Jubeka who had become Forsaken after the Scourging of Lordaeron. Grayson chased her away in disgust, seeing her as nothing more than a monster.]],
+    },
+    {
+        era = "Classic",
+        text = [[Stationed in Stormwind City, he oversaw threats all across Azeroth and gave out missions for both newer and more experienced paladins. Helped fellow paladins to acquire their holy chargers – trusted mounts that are faithful companions to every Knight of the Order.]],
+    },
+    {
+        era = "TBC",
+        text = [[Joined the expedition to Outland with Arator Windrunner as his squire and fought the fel orcs in Hellfire Citadel.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Served food and drink at the ceremony in honor of the fallen Alliance heroes of Northrend, proving that no task is too modest for a paladin of his station if it helps others.]],
+    },
+    {
+        era = "Cata",
+        text = [[Sent paladin troops to combat some of the greater threats Azeroth faced, such as the orcs and dark iron dwarves of Blackrock Mountain.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was tasked with coordinating the various paladin orders at Light's Hope Chapel and thwarted a new undead threat in the Eastern Plaguelands by slaying Ramien the Soultaker. Redeemed Shadowmane, the undead horse of the late Baron Rivendare, and made it the holy mount of the Highlord of the Silver Hand. Later fought the Burning Legion on Argus.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Now stationed at Light's Hope Chapel as the primary paladin trainer, he was present at his former squire Arator's promotion. He denied the existence of his sister.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and defended it against the Voidstorm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].name = "Eadric the Pure"
