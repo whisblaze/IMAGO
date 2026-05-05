@@ -604,6 +604,31 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
     {era = "Midnight", text = "Acts as a guiding mentor for the Sunwalkers and their allies, teaching a new generation that wielding the Light is about much more than mere violence."},
 }
 
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].name = "Vindicator Boros"
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].race = "Draenei"
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].lore = [[Both a leader of the Hand of Argus and a member of the Silver Hand, Boros has vowed to keep paladin traditions alive. He has proven a capable military commander in service of his people, the Draenei, multiple times but won't hesitate to pledge his hammer and faith to anyone in need.
+
+Now, Vindicator Boros has been called by the Sunwell to combat the Void. As always, he can be counted on to fulfill his duty to the people of Azeroth.]]
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].timeline = {
+    {
+        era = "TBC",
+        text = [[Defeated the traitor Sironas, saving the Draenei refugees on the Bloodmyst Isle from falling to demon corruption. Later helped restore the landscape surrounding the Exodar's crash site.]],
+    },
+    {
+        era = "Legion",
+        text = [[Pledged the Hand of Argus to the Order of the Silver Hand. Defended the Exodar and the Netherlight Temple from the Burning Legion. Worked with the priests and the demon hunters to rescue fellow paladins. Later he fought the Legion on their homeworld of Argus.]],
+    },
+    {
+        era = "DF",
+        text = [[Was present during Tyr's resurrection. Attended the first Tishamaat holiday of the Draenei on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped to defend the Sunwell against the Voidstorm.]],
+    }
+}
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
