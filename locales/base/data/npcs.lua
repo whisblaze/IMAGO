@@ -989,6 +989,18 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
     {era = "Midnight", text = "Acts as Loa Speaker in Zul'Aman and teaches players at the Altar of Blessings how to harness the gods' power against the Void."},
 }
 
+IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"
+IMAGOdb.npcs.CAT_AMANI["filo"].race = "Kapara (Loa)"
+IMAGOdb.npcs.CAT_AMANI["filo"].lore = [[Worshipped in Zul’Aman as the Loa of Children, Filo never speaks on his own, instead taking the youngest child of each village as his speaker. While gentle toward those he protects, he pursues anyone who dares harm his children with a vow of vengeance.
+When a child dies before their parents, Filo will guard their spirit until their parents join them in the afterlife.]]
+IMAGOdb.npcs.CAT_AMANI["filo"].zones = {"Zul'Aman", "Atal'Aman"}
+IMAGOdb.npcs.CAT_AMANI["filo"].source = "Travanoid"
+IMAGOdb.npcs.CAT_AMANI["filo"].timeline = {
+    {
+        era = "Midnight",
+        text = [[Watched over Kanza, an Amani child who sought him out in an attempt to reunite with the spirit of her twin sister. Filo lent his power to the adventurer who helped prepare the ritual - so long as they left his children undisturbed.]],
+    }
+}
 
 -- CAT_HARATI
 IMAGOdb.npcs.CAT_HARATI["orweyna"].name = "Orweyna"
