@@ -234,6 +234,28 @@ IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].timeline = {
     {era = "Midnight", text = "Experimented with a new type of magic – anguish – to empower the city's defenses and ensure the survival and prosperity of the blood elves."},
 }
 
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].name = "Lord Saltheril"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].lore = [[A minor quel'dorei noble, Lord Saltheril is famous throughout Quel'Thalas for his lavish parties, where magical wines and extravagant food are provided to his guests. Saltheril was a patron of Lirath Windrunner, arranging musical performances for various Silvermoon nobles and royalty, including Prince Kael'thas Sunstrider and Lor'themar Theron.
+
+A survivor of many calamities, including the Second War and the Scourge Invasion, Saltheril has never ceased hosting parties. Regent Lord Lor'themar remarked that not even Arthas Menethil could halt him for long.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].zones = {"Eversong Woods"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].source = "Travanoid"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Banished Sylvanas Windrunner from his grounds after she caused a scandal at one of his parties by slipping woundwood into drinks and temporarily paralyzing his tongue.]],
+    },
+    {
+        era = "TBC",
+        text = [[Continued to host parties and surround himself with sycophants, despite accusations of avoiding the reality of the situation in Quel'Thalas.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Opened his grounds to the Magisters, Farstriders, Blood Knights, and even the miscreants of Murder Row for an event he calls "Saltheril's Soiree". These factions court the sin'dorei nobility and adventurers for favor and patronage.]],
+    }
+}
+
 
 -- CAT_LIGHT
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dawnblade"
