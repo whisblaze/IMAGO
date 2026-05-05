@@ -7,8 +7,8 @@ IMAGOdb.npcs = IMAGOdb.npcs or {}
 IMAGOdb.npcs.CAT_VOID = IMAGOdb.npcs.CAT_VOID or {}
 
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"] = {
-    displayID = 235475,
-    ids = {235475},
+    displayID = 240432,
+    ids = {240432, 235475},
     zones = {},
     category = "CAT_VOID",
 }
