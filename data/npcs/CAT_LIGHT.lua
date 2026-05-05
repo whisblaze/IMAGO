@@ -36,7 +36,7 @@ IMAGOdb.npcs.CAT_LIGHT["turalyon"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"] = {
     displayID = 251869,
-    ids = {251869, 239623, 251944, 253146, 246271, 256008, 242740, 246669},
+    ids = {251869, 239623, 242740, 246271, 253146, 251944, 256008, 246669},
     zones = {},
     category = "CAT_LIGHT",
 }

@@ -300,14 +300,66 @@ IMAGOdb.npcs.CAT_LIGHT["turalyon"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].name = "Prophet Velen"
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].race = "Draenei"
-IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].lore = "Prophet Velen is the spiritual leader of the draenei and one of the wisest beings in the cosmos. He led his people away from Argus 25,000 years ago to escape the corruption of the Burning Legion. Velen is inextricably linked to elven history: after the betrayal of Kael'thas, he used the spark of the fallen naaru M'uru to purify the Sunwell, restoring it as a fount of holy and arcane light. In Midnight, he returns to this sacred place to aid Quel'Thalas against the Void."
+IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].lore = [[Admired and trusted by the people of Azeroth, the old prophet Velen has led the draenei for over thirteen millennia. A chosen of the naaru, he has been granted the gift of foresight through visions of the Light itself. These visions have on more than one occasion not only saved his people's lives, but also have granted him confidence to believe in a future where evil will eventually be vanquished from the cosmos.
+
+Velen's faith in the Light is unbreakable, and his earnestness and good nature have inspired his beliefs in both friends and even opponents – notably Anduin Wrynn and Lady Liadrin respectively.
+
+It comes as no surprise then, that the Sunwell has called to him for aid. After all, Velen had restored it from corruption once before... and he will not let it darken again.]]
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].source = "warcraft.wiki.gg/wiki/Velen"
+IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].timeline = {
-    {era = "Pre-Classic", text = "Fled from Argus and led the draenei through the cosmos for millennia, hunted by the Legion."},
-    {era = "TBC", text = "Crashed on Azeroth with the Exodar and ultimately purified the Sunwell using the heart of M'uru."},
-    {era = "Legion", text = "Led the assault on Argus and finally confronted his former brother, Kil'jaeden."},
-    {era = "Midnight", text = "Stands as a mentor and defender at the Sunwell to halt Xal'atath's Void invasion."},
+    {
+        era = "Ancient",
+        text = [[Millennia ago, Velen, Kil'jaeden and Archimonde ruled over the idyllic Eredar homeworld of Argus as the Triumvirate. When Sargeras offered them power and a place in the Burning Legion, Velen refused and gathered as many followers as he could before fleeing the planet. Kil'jaeden, once as close as a brother to Velen, vowed to hunt him down for this betrayal.]],
+    },
+    {
+        era = "Pre-WC1",
+        text = [[After evading the Burning Legion for thousands of years, the Genedar crashed on the planet Draenor and Velen's people – now called Draenei, Exiled Ones – were stranded. When Kil'jaeden found them, he corrupted the orcs of Draenor into committing genocide. Velen was only barely able to flee with a handful of his people.]],
+    },
+    {
+        era = "WC2",
+        text = [[Survived the Shattering of Outland by Ner'zhul but saw his former home dragged into the Twisting Nether.]],
+    },
+    {
+        era = "WC3",
+        text = [[Seizing the only chance to escape Outland, Velen devised a plan to capture the naaru vessel called the Exodar, that was in possession of Kael'thas Sunstrider. The surviving draenei were discovered however and the ship's engine sabotaged – leaving them to aimlessly roam the Twisting Nether for years.]],
+    },
+    {
+        era = "Pre-TBC",
+        text = [[Finally leaving the trans-dimensional planes, the Exodar crash landed on the Azuremyst Isle of Kalimdor on Azeroth. After seeing to the wounded, the draenei explored the new world – only to find it inhabited by the very same orcs that had murdered their people on Draenor. Velen, in need of allies, joined the Alliance, finding comfort in their many races' reverence of the Light.]],
+    },
+    {
+        era = "TBC",
+        text = [[Urged his new allies on to commit to the invasion of Outland and thwart the Burning Legion's plans. After Kil'jaeden's defeat on the Sunwell Plateau, Velen restored the corrupted Sunwell with the remaining fragment of the fallen naaru M'uru. He then inspired the Blood Knights, Lady Liadrin chief among them, to use the Light more responsibly in the future.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[When his draenei shamans warned him of earthquakes and elemental unrest not unlike on Draenor, Velen briefly considered fleeing Azeroth as well, but eventually decided against it. Tired of running, he declared Azeroth their new home and vowed to fight for her in the future.]],
+    },
+    {
+        era = "Cata",
+        text = [[Attended a meeting of the Alliance leaders in Darnassus and was approached by young Anduin Wrynn petitioning him to take him as a student and teach him the ways of the Light. Velen agreed and saw a vision of a much older Anduin leading the armies of all of Azeroth into a final battle against an all-consuming shadow.]],
+    },
+    {
+        era = "MoP",
+        text = [[Healed Anduin Wrynn alongside pandaren monks after the prince was injured trying to stop Garrosh Hellscream by himself.]],
+    },
+    {
+        era = "Legion",
+        text = [[Defended the Exodar and was forced to watch his own son Rakeesh die. Took part in the second assault on the Broken Shore and confronted Kil'jaeden in a final battle in the Twisting Nether. The demon and Velen had one last conversation before the Deceiver died. Velen, alongside Illidan Stormrage and Khadgar, led Azeroth's forces on Argus and finally witnessed the defeat of the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Took part in healing Azeroth from her wounds left by Sargeras' sword. Personally provided healing for the refugees of Teldrassil.]],
+    },
+    {
+        era = "DF",
+        text = [[Organized the first Tishamaat holiday, uniting the draenei, broken and eredar for the first time on Azeroth. Personally helped to defend Amirdrassil from Fyrakk.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell to defend it against the Voidstorm. Oversaw the channelers and was the only one not needing magical reinforcements to keep channeling the Light.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].name = "Calia Menethil"
