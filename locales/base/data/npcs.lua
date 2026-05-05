@@ -870,6 +870,42 @@ IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].name = "Koltira Deathweaver"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].race = "Darkfallen Blood Elf"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].lore = [[Koltira fought and died for Silvermoon when Arthas and the Scourge marched through her gates. Death was not the end for him though as he was promptly resurrected as a Death Knight. 
+
+Under Arthas' control, he was forced to kill for the very army that destroyed everything he had once known and loved. He developed a true bond of friendship with Thassarian, the man who killed him, despite their gruesome circumstances.  Both of them were freed from the Lich King's mind control and chose to fight for the newly formed Ebon Blade and vowed to keep all of Azeroth safe from the undead. Koltira joined the Horde and acted as an emissary for his fellow Death Knights.
+
+Though they have found themselves on the opposite sides of the faction wars at times, Koltira Deathweaver and Thassarian remain close friends.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].source = "Cadash"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].timeline = {
+    {
+        era = "WC3",
+        text = [[Fell to Thassarian's blade in the defense of Silvermoon. Was resurrected as a Death Knight and forced to fight for the Scourge.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Freed from the Lich King's mind control and vowed to defend Azeroth with the new-formed Ebon Blade. Joined the Horde and fought in Northrend, lending his expertise as a Death Knight to breach the Lich King's fortress of Icecrown.]],
+    },
+    {
+        era = "Cata",
+        text = [[Imprisoned by Sylvanas Windrunner in the Undercity due to seeking a truce between Horde and Alliance during the battle of Andorhal.]],
+    },
+    {
+        era = "Legion",
+        text = [[Freed from captivity by Thassarian and joined the fight against the Burning Legion afterwards.]],
+    },
+    {
+        era = "SL",
+        text = [[Followed Bolvar Fordragon into the Shadowlands to fight Sylvanas.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped defend Light's Hope Chapel.]],
+    }
+}
+
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexus-King Salhadaar"
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Ethereal"
