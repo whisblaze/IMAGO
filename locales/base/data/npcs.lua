@@ -236,16 +236,47 @@ IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].timeline = {
 
 
 -- CAT_LIGHT
+-- MEHLAR DAWNBLADE --
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dawnblade"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].lore = "Once a hopeful paladin student of Uther the Lightbringer, Mehlar Dawnblade fell into deep bitterness after the fall of Quel'Thalas. He blamed Uther for the destruction of his homeland and in his wrath even had his old master's tomb defiled. However, through the redemption of the Blood Knights, he eventually returned to righteousness, joined the Silver Hand, and fights in Midnight as a faithful champion of the Light."
+IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].lore = [[Once a student of Uther the Lightbringer, Mehlar Dawnblade was a paladin of the Silver Hand before the Third War. He was known to follow a strict moral codex and heeded the commands of the order to the letter. When Uther's most prominent pupil – Arthas Menethil – strayed from the path of the Light and decimated Mehlar's homeland of Quel'Thalas, the blood elf's compassion turned into rage and a desire for vengeance.
+
+He joined the Blood Knights under Lady Liadrin and fought in exemplary unity with his fellow paladins against the Scourge. He defiled Uther's tomb in a fit of rage, only to be confronted by the spirit of his former mentor. Receiving only forgiveness from the fallen paladin, Mehlar vowed to rethink his outlook and now tries to not be swayed by hatred as easily anymore.]]
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].source = "warcraft.wiki.gg/wiki/Mehlar_Dawnblade"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
-    {era = "Pre-Classic", text = "Studied as a young elf under Uther the Lightbringer, but felt abandoned by him during the fall of Quel'Thalas."},
-    {era = "Classic", text = "Sent adventurers from the Bulwark to defile the tomb of his former mentor, Uther."},
-    {era = "Legion", text = "Joined the newly reformed Order of the Silver Hand in the Sanctum of Light."},
-    {era = "Midnight", text = "Defends Parhelion Plaza and the Isle of Quel'Danas as a veteran Blood Knight against the Void."},
+    {
+        era = "Pre-WC3",
+        text = [[Trained under Uther the Lightbringer as a Knight of the Silver Hand.]],
+    },
+    {
+        era = "WC3",
+        text = [[Fought the Scourge on many fronts and later joined the Blood Knights.]],
+    },
+    {
+        era = "TBC",
+        text = [[Defiled Uther's tomb and faced the spirit of his mentor. Realized that rage and violence were not the emotions he wanted to be guided by. He worked with Sylvanas Windrunner to create the Scourgebane trinket.]],
+    },
+    {
+        era = "WoD",
+        text = [[Followed Lady Liadrin to Draenor and helped her defend Auchindoun from the Shadow Council.]],
+    },
+    {
+        era = "Legion",
+        text = [[Journeyed to Uther's tomb again, this time to defend it against restless spirits. Later he briefly rejoined the Silver Hand when Lady Liadrin pledged her Blood Knights to the new Highlord.]],
+    },
+    {
+        era = "DF",
+        text = [[Was present at the reformation of Tyr and the founding of Tyr's Hand Order.]],
+    },
+    {
+        era = "TWW",
+        text = [[Helped train new earthen volunteers for the Horde.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Injured during the initial assault on the Sunwell, Mehlar later rejoined the Vanguard of the Light in the fight against the Void.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].name = "Danath Trollbane"
