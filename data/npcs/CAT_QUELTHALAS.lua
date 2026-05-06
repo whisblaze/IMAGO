@@ -90,6 +90,13 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"] = {
     category = "CAT_QUELTHALAS",
 }
 
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"] = {
+    displayID = 257416,
+    ids = {257416, 239426, 239616, 239722, 241169, 241170, 241171, 241173, 241175, 243441, 244745, 247664, 247674, 252461, 241174},
+    zones = {},
+    category = "CAT_QUELTHALAS",
+}
+
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"] = {
     displayID = 254513,
     ids = {238531, 239349, 239418, 239517, 239618, 239659, 239686, 239802, 240116, 240538, 241076, 242930, 247595, 252949, 254427, 254512, 254513},

@@ -198,14 +198,27 @@ IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
     {era = "Midnight", text = "With Silvermoon in danger, Umbric returned to his former homeland to combat the Void. He managed to open a passage into the Voidstorm and later helped to create the Dawnwell. For his efforts he was readmitted into Silvermoon with a full pardon."},
 }
 
+-- LADY DARKGLEN --
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].name = "Lady Darkglen"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].race = "Undead (Dark Ranger)"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].lore = "Lady Darkglen is a fearsome commander of the Dark Rangers and a cold, loyal defender of Quel'Thalas. As an undead who once served under the banner of Sylvanas Windrunner, she unambiguously chose to remain loyal to her true homeland after the Banshee Queen's betrayal. Already during the Fourth War, she delivered devastating strikes against the Alliance at the Darkshore warfront. In Midnight, she brings her deadly, pragmatic precision back home. She operates ruthlessly in the Voidstorm and coordinates defenses from Silvermoon City, where her arrows no longer seek night elves, but silently pierce the monstrous entities of the Void."
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].zones = {"Voidstorm", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].source = "Quest: Die Schlacht an der Dunkelküste"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].race = "Void Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].lore = [[Lady Darkglen is a noblewoman from Quel'Thalas and one of the ren'dorei's most expert alchemists and ritualists. Her free and sometimes reckless use of void magic can unsettle even some of her fellow comrades but she doesn't mind. She risked her sanity already as a warlock and then once more when becoming infused with the Void. So why shouldn't she go all out?
+
+It comes as no surprise that she and her pet voidwalker Blocciniux join Magister Umbric in his attempt to breach the Voidstorm. What could be more fascinating than a place of pure chaos?]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].zones = {"Silvermoon City", "Voidstorm", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].timeline = {
-    {era = "BfA", text = "Served as a high-ranking commander of the Dark Rangers at the Darkshore Warfront against the warriors of Elune."},
-    {era = "Midnight", text = "Leads the ranks of the Dark Rangers on the front lines in the Voidstorm and Silvermoon City to repel the Void invasion."},
+    {
+        era = "DF",
+        text = [[Helped to defend Telogrus Rift from the Shadowguard.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought on K'aresh against Dimensius' forces. Took on contracts with the Brokers of Tazavesh.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Stopped the spread of a mutated pathogen in the Molt and successfully cured the ren'dorei of the sickness. Fought in the Voidspire. Investigated the ritual sites of the fragmented void forces after the Dawnwell's restoration.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].name = "Riftblade Maella"
