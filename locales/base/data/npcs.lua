@@ -388,15 +388,31 @@ IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].timeline = {
     {era = "Midnight", text = "Commands Silver Hand troops on the Isle of Quel'Danas in defense of the Light."},
 }
 
+-- EADRIC THE PURE --
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].name = "Eadric the Pure"
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].lore = "Eadric the Pure is the Grand Champion of the Argent Crusade and one of the most virtuous paladins in the order's history. Known for his humility and unwavering faith, he served as the final test at the Grand Tournament in Northrend for those wishing to prove themselves against the Lich King. Despite his high rank, he has always maintained a spark of humor and deep humanity. In Midnight, he leads the defense of Parhelion Plaza, proving that true purity is the brightest bulwark against the shadows of the Void."
+IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].lore = [[A paladin and quartermaster of the Argent Crusade, Eadric is mostly known for his contributions to the order during the war against the Lich King in Northrend. Tensions between the Alliance and the Horde were rising once again, and Highlord Tirion Fordring proposed to host a friendly tournament to prevent a conflict. His champion Eadric was the one responsible for organizing most of this tournament.
+
+He has since mostly been stationed in Northrend, but as any true paladin, he goes where the Light calls him.]]
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].zones = {"Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].source = "warcraft.wiki.gg/wiki/Eadric_the_Pure"
+IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
-    {era = "WotLK", text = "Served as Grand Champion of the Argent Crusade and tested the heroes of Azeroth in the Trial of the Crusader."},
-    {era = "Legion", text = "Joined the Conclave in the Sanctum of Light and supported the Highlord in leading the Order of the Silver Hand."},
-    {era = "Midnight", text = "Defends Parhelion Plaza against the Void invasion and serves as a moral anchor for the forces of Light."},
+    {
+        era = "WotLK",
+        text = [[Served the Argent Crusade and Tirion Fordring as Grand Champion. Was in charge of organizing the Grand Argent Tournament in northern Icecrown by keeping the grounds safe and supplied and overseeing the combatants' training. He served as quartermaster and occasionally participated in the tournament as a fighter himself.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the reformed Knights of the Silver Hand and served as Light's Hope Chapel's quartermaster.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Held back the rampaging Scourge in Northrend.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought the Void at Parhelion Plaza.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].name = "Yalia Sagewhisper"
