@@ -19,3 +19,10 @@ IMAGOdb.npcs.CAT_VOID["l_ura"] = {
     zones = {},
     category = "CAT_VOID",
 }
+
+IMAGOdb.npcs.CAT_VOID["mor_duun"] = {
+    displayID = 240229,
+    ids = {240229, 241301, 259068, 236514, 236094, 259736, 246139},
+    zones = {},
+    category = "CAT_VOID",
+}
