@@ -285,6 +285,7 @@ IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].timeline = {
     {era = "Midnight", text = "Prevented Umbric's execution and helped to defend the Sunwell from the Void."},
 }
 
+-- HIGH EXARCH TURALYON --
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].name = "High Exarch Turalyon"
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].lore = [[One of the first paladins of the Order of the Silver Hand, Turalyon became one of the Alliance's most famous war heroes – and one of the most admired. He fought as second-in-command to Anduin Lothar himself and, after the commander fell, it was Turalyon who decided the final battle against the orcish Horde in favor for the Alliance and the Holy Light. 
