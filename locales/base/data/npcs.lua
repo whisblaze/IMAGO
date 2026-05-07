@@ -764,6 +764,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].timeline = {
     {era = "TBC", text = "Held a stronghold in Shadowmoon Valley and helped Alliance adventurers against Illidan Stormrage and the Burning Legion."},
     {era = "Pre-Cata", text = "Briefly represented the Wildhammer clan in the Council of Three Hammers in Ironforge, but conceded his position to Falstad Wildhammer instead."},
     {era = "Cata", text = "Helped to unite the various Wildhammer clans and welcomed them into the Alliance. His faithful gryphon mount Sky'ree was lost in a fire but Kurdran could save her last egg."},
+    {era = "Pre-TWW", text = "Bonded with the stormrooks in Valdrakken and trained the Champion to be an elemental gryphon rider."}
     {era = "TWW", text = "Joined his friends Turalyon and Danath Trollbane on the Isle of Dorn. Alongside his now fully-grown new mount Sky'reen, Kurdran began training new Earthen gryphon riders."},
     {era = "Midnight", text = "Helped Arator learn the history of his father, Turalyon, and his part in the events of the Second War. Introduced heroes to the Arcantina, a home away from home for adventurers from all over Azeroth."}
 }
