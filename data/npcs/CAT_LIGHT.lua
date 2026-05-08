@@ -8,7 +8,7 @@ IMAGOdb.npcs.CAT_LIGHT = IMAGOdb.npcs.CAT_LIGHT or {}
 
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"] = {
     displayID = 248321,
-    ids = {239858, 240769, 242611, 248321},
+    ids = {248321, 239858, 240769, 242611},
     zones = {},
     category = "CAT_LIGHT",
 }
