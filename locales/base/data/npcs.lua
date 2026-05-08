@@ -1097,6 +1097,28 @@ IMAGOdb.npcs.CAT_VOID["l_ura"].timeline = {
     {era = "Midnight", text = "Serves as the final encounter in the 'March on Quel'Danas' to prevent the salvation of the Sunwell."},
 }
 
+-- MOR_DUUN --
+IMAGOdb.npcs.CAT_VOID["mor_duun"].name = "Mor'duun"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].race = "Ogre"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].lore = [[As a powerful ogre mage, Mor’duun led the Twilght’s Blade, a cult devoted to Xal’atath. After his devotion drew her attention, she granted Mor’duun the power of the Void, renewing the cult’s fervor. 
+Mor’duun personally led the Twilight’s Blade’s invasion of Zul'Aman, leaving Atal’Aman in ruins and commanding his forces from the Broken Throne.]]
+IMAGOdb.npcs.CAT_VOID["mor_duun"].zones = {"Zul'Aman"}
+IMAGOdb.npcs.CAT_VOID["mor_duun"].source = "Travanoid"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].timeline = {
+    {
+        era = "TWW",
+        text = [[Formed the Twilight’s Blade with the remnants of the Twilight’s Hammer, pledging himself to Xal’atath’s service.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Ordered the Twilight’s Blade to recruit members in Stormwind and Orgrimmar, taking advantage of the hopelessness and confusion caused by the Radiant Song.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Led the Twilight’s Blade’s assault on Zul’Aman, sacking Atal’Aman and commanding his armies from the Broken Throne before being struck down by Zul’Jarra, Liadrin, and an adventurer.]],
+    }
+}
+
 
 
 -- CAT_AMANI
