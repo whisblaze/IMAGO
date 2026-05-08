@@ -595,15 +595,31 @@ IMAGOdb.npcs.CAT_LIGHT["talthis"].timeline = {
     {era = "Midnight", text = "Returns to his homeland to stop the chaos of the Void invasion on the Isle of Quel'Danas as part of Tyr's Guard."},
 }
 
+
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].name = "Vindicator Boros"
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].race = "Draenei"
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].lore = "Vindicator Boros is an unyielding veteran of the Hand of Argus and a high-ranking champion of the Silver Hand. Following the crash of the Exodar on Azeroth, he led the draenei's bitter fight against blood elf sabotage on Bloodmyst Isle. This previously deep-seated enmity makes his presence in Midnight all the more remarkable: faced with total annihilation by the Void, Boros lays old grudges to rest. Wielding his gigantic hammer and the pure power of the Light, he now stands shoulder-to-shoulder on Parhelion Plaza with the very elves he once fought, determined to protect the Sunwell."
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].lore = [[Both a leader of the Hand of Argus and a member of the Silver Hand, Boros has vowed to keep paladin traditions alive. He has proven a capable military commander in service of his people, the Draenei, multiple times but won't hesitate to pledge his hammer and faith to anyone in need.
+
+Now, Vindicator Boros has been called by the Sunwell to combat the Void. As always, he can be counted on to fulfill his duty to the people of Azeroth.]]
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].source = "Quest: Die Hand von Argus"
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].timeline = {
-    {era = "TBC", text = "Led the forces of the Hand of Argus on Bloodmyst Isle in the battle against Kael'thas's Sunhawks."},
-    {era = "Legion", text = "Joined the newly reformed Silver Hand and served the Highlord as a loyal champion in the war against the Legion."},
-    {era = "Midnight", text = "Fights as the vanguard of the Silver Hand at Parhelion Plaza and the Isle of Quel'Danas against the Void invasion."},
+    {
+        era = "TBC",
+        text = [[Defeated the traitor Sironas, saving the Draenei refugees on the Bloodmyst Isle from falling to demon corruption. Later helped restore the landscape surrounding the Exodar's crash site.]],
+    },
+    {
+        era = "Legion",
+        text = [[Pledged the Hand of Argus to the Order of the Silver Hand. Defended the Exodar and the Netherlight Temple from the Burning Legion. Worked with the priests and the demon hunters to rescue fellow paladins. Later he fought the Legion on their homeworld of Argus.]],
+    },
+    {
+        era = "DF",
+        text = [[Was present during Tyr's resurrection. Attended the first Tishamaat holiday of the Draenei on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped to defend the Sunwell against the Voidstorm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].name = "Sunwalker Dezco"
@@ -625,7 +641,6 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
     {era = "TWW", text = "Traveled to the shores of Khaz Algar alongside other prominent tauren, proudly overseeing the martial training of his now-grown son, Kor."},
     {era = "Midnight", text = "Acts as a guiding mentor for the Sunwalkers and their allies, teaching a new generation that wielding the Light is about much more than mere violence."},
 }
-
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
