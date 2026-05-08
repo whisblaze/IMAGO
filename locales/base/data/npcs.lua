@@ -932,13 +932,35 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].timeline = {
 
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexus-King Salhadaar"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Ethereal"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].lore = "Once the power-hungry leader of the Ethereum in Outland's Netherstorm. Salhadaar attempted to transform his people into pure void energy before being defeated by adventurers. In Midnight, he returns as a fully realized entity of the Void. He now commands forces in the Voidstorm under Xal'atath's banner, serving as living proof of what becomes of the ethereals when they fully surrender to the darkness."
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].zones = {"Voidstorm"}
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].source = "warcraft.wiki.gg/wiki/Nexus-King_Salhadaar"
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Void Ethereal"
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].lore = [[For a long time, Nexus-King Salhadaar has known only desperation and suffering. Thousands of years ago, he ruled the people of the planet K'aresh before it was devoured by the Void.
+
+Losing one's world and one's physical body is enough to turn the strongest soul to madness – and Salhadaar was no exeption. He led his people, now called the Ethereals, into the service of Dimensius the All-Devouring, the very void lord that had taken all he had known.
+
+After being defeated by the Champions of Azeroth, Salhadaar was conscripted by Xal'atath and forced to obey yet another being of the Void. Unwilling but without hope for a way out of this bargain, the Nexus-King and his Shadowguard Ethereals once again oppose the united forces of Azeroth.]]
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].zones = {"The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].source = "Cadash"
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].timeline = {
-    {era = "TBC", text = "Led the Ethereum in Netherstorm and was killed while attempting to master the energies of the Void."},
-    {era = "Midnight", text = "Returns as a powerful Void entity in the Voidstorm to carry out Xal'atath's orders."},
+    {
+        era = "Ancient",
+        text = [[Ruled as High Priest over the people of K'aresh and chose to ignore Locus Walker's warnings of the encroaching Void, ultimately blaming him for what would happen next. When Dimensius came, Salhadaar lost his physical body and K'aresh was destroyed. He fled with his people into the Twisting Nether.]],
+    },
+    {
+        era = "TBC",
+        text = [[Under the pretense of defeating Dimensius, Salhadaar founded the Shadowguard and sought out fragments of the void lord. He turned some of his own Ethereals into void being before being killed by the Champions of Azeroth and rebelling Ethereals.]],
+    },
+    {
+        era = "TWW",
+        text = [[Remade by the Void, Salhadaar commanded the Shadowguard forces on K'aresh. Almost succeeded in bringing back Dimensius before being defeated once again. He was captured by Xal'atath.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Agreed to follow Xal'atath's orders under threat of death.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Succeeded in corrupting the Naaru T'era to the Void as Xal'atath had ordered. Instead of rewarding him, Xal'atath instead infused him with excessive void energy and a fully mad and delirious Salhadaar was made to fight the Vanguard of the Light at the Voidspire. For the final time, Salhadaar was killed and embraced the end in relief.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_VOID["l_ura"].name = "L'ura"
@@ -952,6 +974,7 @@ IMAGOdb.npcs.CAT_VOID["l_ura"].timeline = {
     {era = "Midnight", text = "Manifested by Alleria in the Voidstorm to defeat the naaru T'era. Later torn from Alleria by Xal'atath at the Voidspire to transform the Sunwell into the 'Darkwell'."},
     {era = "Midnight", text = "Serves as the final encounter in the 'March on Quel'Danas' to prevent the salvation of the Sunwell."},
 }
+
 
 
 -- CAT_AMANI
