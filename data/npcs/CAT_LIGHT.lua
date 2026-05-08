@@ -78,7 +78,7 @@ IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"] = {
     displayID = 247929,
-    ids = {247929, 239494, 246779},
+    ids = {247929, 239494, 246779, 246657},
     zones = {},
     category = "CAT_LIGHT",
 }
