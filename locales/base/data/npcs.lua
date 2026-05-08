@@ -198,14 +198,27 @@ IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
     {era = "Midnight", text = "With Silvermoon in danger, Umbric returned to his former homeland to combat the Void. He managed to open a passage into the Voidstorm and later helped to create the Dawnwell. For his efforts he was readmitted into Silvermoon with a full pardon."},
 }
 
+-- LADY DARKGLEN --
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].name = "Lady Darkglen"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].race = "Undead (Dark Ranger)"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].lore = "Lady Darkglen is a fearsome commander of the Dark Rangers and a cold, loyal defender of Quel'Thalas. As an undead who once served under the banner of Sylvanas Windrunner, she unambiguously chose to remain loyal to her true homeland after the Banshee Queen's betrayal. Already during the Fourth War, she delivered devastating strikes against the Alliance at the Darkshore warfront. In Midnight, she brings her deadly, pragmatic precision back home. She operates ruthlessly in the Voidstorm and coordinates defenses from Silvermoon City, where her arrows no longer seek night elves, but silently pierce the monstrous entities of the Void."
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].zones = {"Voidstorm", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].source = "Quest: Die Schlacht an der Dunkelküste"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].race = "Void Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].lore = [[Lady Darkglen is a noblewoman from Quel'Thalas and one of the ren'dorei's most expert alchemists and ritualists. Her free and sometimes reckless use of void magic can unsettle even some of her fellow comrades but she doesn't mind. She risked her sanity already as a warlock and then once more when becoming infused with the Void. So why shouldn't she go all out?
+
+It comes as no surprise that she and her pet voidwalker Blocciniux join Magister Umbric in his attempt to breach the Voidstorm. What could be more fascinating than a place of pure chaos?]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].zones = {"Silvermoon City", "Voidstorm", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].timeline = {
-    {era = "BfA", text = "Served as a high-ranking commander of the Dark Rangers at the Darkshore Warfront against the warriors of Elune."},
-    {era = "Midnight", text = "Leads the ranks of the Dark Rangers on the front lines in the Voidstorm and Silvermoon City to repel the Void invasion."},
+    {
+        era = "DF",
+        text = [[Helped to defend Telogrus Rift from the Shadowguard.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought on K'aresh against Dimensius' forces. Took on contracts with the Brokers of Tazavesh.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Stopped the spread of a mutated pathogen in the Molt and successfully cured the ren'dorei of the sickness. Fought in the Voidspire. Investigated the ritual sites of the fragmented void forces after the Dawnwell's restoration.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].name = "Riftblade Maella"
@@ -234,18 +247,71 @@ IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].timeline = {
     {era = "Midnight", text = "Experimented with a new type of magic – anguish – to empower the city's defenses and ensure the survival and prosperity of the blood elves."},
 }
 
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].name = "Lord Saltheril"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].lore = [[A minor quel'dorei noble, Lord Saltheril is famous throughout Quel'Thalas for his lavish parties, where magical wines and extravagant food are provided to his guests. Saltheril was a patron of Lirath Windrunner, arranging musical performances for various Silvermoon nobles and royalty, including Prince Kael'thas Sunstrider and Lor'themar Theron.
+
+A survivor of many calamities, including the Second War and the Scourge Invasion, Saltheril has never ceased hosting parties. Regent Lord Lor'themar remarked that not even Arthas Menethil could halt him for long.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].zones = {"Eversong Woods"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].source = "Travanoid"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Banished Sylvanas Windrunner from his grounds after she caused a scandal at one of his parties by slipping woundwood into drinks and temporarily paralyzing his tongue.]],
+    },
+    {
+        era = "TBC",
+        text = [[Continued to host parties and surround himself with sycophants, despite accusations of avoiding the reality of the situation in Quel'Thalas.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Opened his grounds to the Magisters, Farstriders, Blood Knights, and even the miscreants of Murder Row for an event he calls "Saltheril's Soiree". These factions court the sin'dorei nobility and adventurers for favor and patronage.]],
+    }
+}
+
 
 -- CAT_LIGHT
+-- MEHLAR DAWNBLADE --
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dawnblade"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].lore = "Once a hopeful paladin student of Uther the Lightbringer, Mehlar Dawnblade fell into deep bitterness after the fall of Quel'Thalas. He blamed Uther for the destruction of his homeland and in his wrath even had his old master's tomb defiled. However, through the redemption of the Blood Knights, he eventually returned to righteousness, joined the Silver Hand, and fights in Midnight as a faithful champion of the Light."
+IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].lore = [[Once a student of Uther the Lightbringer, Mehlar Dawnblade was a paladin of the Silver Hand before the Third War. He was known to follow a strict moral codex and heeded the commands of the order to the letter. When Uther's most prominent pupil – Arthas Menethil – strayed from the path of the Light and decimated Mehlar's homeland of Quel'Thalas, the blood elf's compassion turned into rage and a desire for vengeance.
+
+He joined the Blood Knights under Lady Liadrin and fought in exemplary unity with his fellow paladins against the Scourge. He defiled Uther's tomb in a fit of rage, only to be confronted by the spirit of his former mentor. Receiving only forgiveness from the fallen paladin, Mehlar vowed to rethink his outlook and now tries to not be swayed by hatred as easily anymore.]]
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].source = "warcraft.wiki.gg/wiki/Mehlar_Dawnblade"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
-    {era = "Pre-Classic", text = "Studied as a young elf under Uther the Lightbringer, but felt abandoned by him during the fall of Quel'Thalas."},
-    {era = "Classic", text = "Sent adventurers from the Bulwark to defile the tomb of his former mentor, Uther."},
-    {era = "Legion", text = "Joined the newly reformed Order of the Silver Hand in the Sanctum of Light."},
-    {era = "Midnight", text = "Defends Parhelion Plaza and the Isle of Quel'Danas as a veteran Blood Knight against the Void."},
+    {
+        era = "Pre-WC3",
+        text = [[Trained under Uther the Lightbringer as a Knight of the Silver Hand.]],
+    },
+    {
+        era = "WC3",
+        text = [[Fought the Scourge on many fronts and later joined the Blood Knights.]],
+    },
+    {
+        era = "TBC",
+        text = [[Defiled Uther's tomb and faced the spirit of his mentor. Realized that rage and violence were not the emotions he wanted to be guided by. He worked with Sylvanas Windrunner to create the Scourgebane trinket.]],
+    },
+    {
+        era = "WoD",
+        text = [[Followed Lady Liadrin to Draenor and helped her defend Auchindoun from the Shadow Council.]],
+    },
+    {
+        era = "Legion",
+        text = [[Journeyed to Uther's tomb again, this time to defend it against restless spirits. Later he briefly rejoined the Silver Hand when Lady Liadrin pledged her Blood Knights to the new Highlord.]],
+    },
+    {
+        era = "DF",
+        text = [[Was present at the reformation of Tyr and the founding of Tyr's Hand Order.]],
+    },
+    {
+        era = "TWW",
+        text = [[Helped train new earthen volunteers for the Horde.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Injured during the initial assault on the Sunwell, Mehlar later rejoined the Vanguard of the Light in the fight against the Void.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].name = "Danath Trollbane"
@@ -300,27 +366,123 @@ IMAGOdb.npcs.CAT_LIGHT["turalyon"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].name = "Prophet Velen"
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].race = "Draenei"
-IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].lore = "Prophet Velen is the spiritual leader of the draenei and one of the wisest beings in the cosmos. He led his people away from Argus 25,000 years ago to escape the corruption of the Burning Legion. Velen is inextricably linked to elven history: after the betrayal of Kael'thas, he used the spark of the fallen naaru M'uru to purify the Sunwell, restoring it as a fount of holy and arcane light. In Midnight, he returns to this sacred place to aid Quel'Thalas against the Void."
+IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].lore = [[Admired and trusted by the people of Azeroth, the old prophet Velen has led the draenei for over thirteen millennia. A chosen of the naaru, he has been granted the gift of foresight through visions of the Light itself. These visions have on more than one occasion not only saved his people's lives, but also have granted him confidence to believe in a future where evil will eventually be vanquished from the cosmos.
+
+Velen's faith in the Light is unbreakable, and his earnestness and good nature have inspired his beliefs in both friends and even opponents – notably Anduin Wrynn and Lady Liadrin respectively.
+
+It comes as no surprise then, that the Sunwell has called to him for aid. After all, Velen had restored it from corruption once before... and he will not let it darken again.]]
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].source = "warcraft.wiki.gg/wiki/Velen"
+IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].timeline = {
-    {era = "Pre-Classic", text = "Fled from Argus and led the draenei through the cosmos for millennia, hunted by the Legion."},
-    {era = "TBC", text = "Crashed on Azeroth with the Exodar and ultimately purified the Sunwell using the heart of M'uru."},
-    {era = "Legion", text = "Led the assault on Argus and finally confronted his former brother, Kil'jaeden."},
-    {era = "Midnight", text = "Stands as a mentor and defender at the Sunwell to halt Xal'atath's Void invasion."},
+    {
+        era = "Ancient",
+        text = [[Millennia ago, Velen, Kil'jaeden and Archimonde ruled over the idyllic Eredar homeworld of Argus as the Triumvirate. When Sargeras offered them power and a place in the Burning Legion, Velen refused and gathered as many followers as he could before fleeing the planet. Kil'jaeden, once as close as a brother to Velen, vowed to hunt him down for this betrayal.]],
+    },
+    {
+        era = "Pre-WC1",
+        text = [[After evading the Burning Legion for thousands of years, the Genedar crashed on the planet Draenor and Velen's people – now called Draenei, Exiled Ones – were stranded. When Kil'jaeden found them, he corrupted the orcs of Draenor into committing genocide. Velen was only barely able to flee with a handful of his people.]],
+    },
+    {
+        era = "WC2",
+        text = [[Survived the Shattering of Outland by Ner'zhul but saw his former home dragged into the Twisting Nether.]],
+    },
+    {
+        era = "WC3",
+        text = [[Seizing the only chance to escape Outland, Velen devised a plan to capture the naaru vessel called the Exodar, that was in possession of Kael'thas Sunstrider. The surviving draenei were discovered however and the ship's engine sabotaged – leaving them to aimlessly roam the Twisting Nether for years.]],
+    },
+    {
+        era = "Pre-TBC",
+        text = [[Finally leaving the trans-dimensional planes, the Exodar crash landed on the Azuremyst Isle of Kalimdor on Azeroth. After seeing to the wounded, the draenei explored the new world – only to find it inhabited by the very same orcs that had murdered their people on Draenor. Velen, in need of allies, joined the Alliance, finding comfort in their many races' reverence of the Light.]],
+    },
+    {
+        era = "TBC",
+        text = [[Urged his new allies on to commit to the invasion of Outland and thwart the Burning Legion's plans. After Kil'jaeden's defeat on the Sunwell Plateau, Velen restored the corrupted Sunwell with the remaining fragment of the fallen naaru M'uru. He then inspired the Blood Knights, Lady Liadrin chief among them, to use the Light more responsibly in the future.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[When his draenei shamans warned him of earthquakes and elemental unrest not unlike on Draenor, Velen briefly considered fleeing Azeroth as well, but eventually decided against it. Tired of running, he declared Azeroth their new home and vowed to fight for her in the future.]],
+    },
+    {
+        era = "Cata",
+        text = [[Attended a meeting of the Alliance leaders in Darnassus and was approached by young Anduin Wrynn petitioning him to take him as a student and teach him the ways of the Light. Velen agreed and saw a vision of a much older Anduin leading the armies of all of Azeroth into a final battle against an all-consuming shadow.]],
+    },
+    {
+        era = "MoP",
+        text = [[Healed Anduin Wrynn alongside pandaren monks after the prince was injured trying to stop Garrosh Hellscream by himself.]],
+    },
+    {
+        era = "Legion",
+        text = [[Defended the Exodar and was forced to watch his own son Rakeesh die. Took part in the second assault on the Broken Shore and confronted Kil'jaeden in a final battle in the Twisting Nether. The demon and Velen had one last conversation before the Deceiver died. Velen, alongside Illidan Stormrage and Khadgar, led Azeroth's forces on Argus and finally witnessed the defeat of the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Took part in healing Azeroth from her wounds left by Sargeras' sword. Personally provided healing for the refugees of Teldrassil.]],
+    },
+    {
+        era = "DF",
+        text = [[Organized the first Tishamaat holiday, uniting the draenei, broken and eredar for the first time on Azeroth. Personally helped to defend Amirdrassil from Fyrakk.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell to defend it against the Voidstorm. Oversaw the channelers and was the only one not needing magical reinforcements to keep channeling the Light.]],
+    }
 }
 
+-- CALIA MENETHIL --
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].name = "Calia Menethil"
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].race = "Light-bound Undead"
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].lore = "Princess Calia Menethil is the last heir of the Menethil dynasty and the sister of Arthas. After living in hiding under a false name for decades, she re-emerged during the Fourth War, only to be killed by Sylvanas Windrunner. Through an unprecedented miracle of the Light, she returned as a unique, light-infused undead. In Midnight, she stands at the Sunwell as a living paradox and a symbol of hope, coordinating the forces of Light against the all-consuming Void."
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].race = "Undead Human"
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].lore = [[To call the Pallid Lady a politically controversial figure would be an understatement. She is the sister of the infamous Arthas Menethil and only remaining heir to the throne of Lordaeron, which is now in Forsaken hands - the very undead hands of Arthas' primary victims. As a member of the Alliance and a priestess of the Light, Calia had denied to wish to rule over her people.
+
+That changed, however, when she herself was killed and raised into undeath by the naaru Saa'ra. She joined the Horde and became a ruling member of the Forsaken's Desolate Council. Even though she has since shown a desire to aid her people, even putting herself in danger for the cause, it does seem like she has yet to earn the Forsaken's full trust. 
+
+For now though, her political ambitions – whatever they may be – have to wait. The Light has called her to Silvermoon and Calia has answered the call.]]
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].source = "warcraft.wiki.gg/wiki/Calia_Menethil"
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].timeline = {
-    {era = "WC3", text = "Fled during the destruction of Lordaeron by her brother Arthas and lived unrecognized among humans for years."},
-    {era = "Legion", text = "Revealed herself to Alonsus Faol and joined the Conclave in the Sanctum of Light to aid priests in the battle against the Legion."},
-    {era = "BfA", text = "Was killed by Sylvanas at the Arathi Highlands gathering and resurrected as light-bound undead by Saa'ra and Anduin."},
-    {era = "DF", text = "Took her place on the Desolate Council to lead the Forsaken into a new era without Sylvanas."},
-    {era = "Midnight", text = "Supports the defense of Quel'Thalas and serves as a diplomatic bridge between the Light and the undead."},
+    {
+        era = "WC2",
+        text = [[Was betrothed against her wishes to the Alteraci noble Lord Daval Prestor by her father when Calia was just 16 years old. Prestor, who was actually the dragon Deathwing in disguise, vanished after the war and Calia was glad to remain unmarried.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Fell in love with a common footman of the Lordaeron army and became pregnant with his child.]],
+    },
+    {
+        era = "WC3",
+        text = [[Survived Lordaeron's fall through sheer luck and was able to flee with her husband and daughter to Southshore where the three lived happily in secret for a while. After an attack on the town, Calia was separated from her family.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Sometime before the third invasion of the Burning Legion, she met Alonsus Faol, who showed her the difference between the mindless Scourge and the undead of the Forsaken. Filled with hope that her family might be among the Forsaken people, Calia joined Alonsus.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Conclave and helped Faol restore the void god Saraka to her holy naaru form Saa'ra. Helped defend the Exodar from the Burning Legion.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Reappeared as a public figure and was considered the rightful ruler of Lordaeron by King Anduin Wrynn. She joined in the Gathering, hoping to meet her family again. She revealed herself, urging the Forsaken on to rejoin the Alliance. Instead of succeeding or finding her loved ones, she found only death in the massacre that followed. Was revived by Saa'ra and Anduin as an undead of the Light.]],
+    },
+    {
+        era = "BfA",
+        text = [[After the Fourth War ended, Calia formed a friendship with Derek Proudmoore, who had been turned into an undead as well. Both of them decided to join the Horde and Calia proclaimed that she wanted not only to aid her people, but also redeem the name Menethil.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Stepped up as a councilor of the Forsaken and joined the Horde's ruling council. She accompanied Thrall on a diplomatic mission to Teldrassil's remains.]],
+    },
+    {
+        era = "SL",
+        text = [[Journeyed to the Shadowlands and helped in the campaign against the Jailer. Later, Calia was instrumental in recovering the Undercity from the Blight of the Fourth War, personally using her Light as a shield to combat the lingering poison. She joined the Desolate Council as one of its leaders, took Derek Proudmoore as her champion, and vowed to remove Forsaken troops from Gilneas.]],
+    },
+    {
+        era = "DF",
+        text = [[Succesfully directed the Forsaken counterattack after the Scarlet Crusade moved against the Undercity. Was true to her word and not only removed her undead troops from the Ruins of Gilneas, but also helped King Genn Greymane and Princess Tess personally to then recover the worgen city from the Scarlet Crusade's occupation.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought to defend Silvermoon.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].name = "Taelia Fordragon"
@@ -357,13 +519,36 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].name = "Captain Fareeya"
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].race = "Lightforged Draenei"
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].lore = "Captain Fareeya is the high field commander of the Lightforged Draenei and one of High Exarch Turalyon's most trusted officers. During the thousand-year war against the Burning Legion, she led countless operations aboard the Vindicaar. Fareeya is known for her unwavering discipline and her indomitable faith in the Holy Light. In Midnight, she leads the Lightforged contingent on the Isle of Quel'Danas, fortifying the Sunwell against the Void with advanced technology and divine power."
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].source = "warcraft.wiki.gg/wiki/Captain_Fareeya"
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].lore = [[Second-in-command to High Exarch Turalyon, Fareeya is one of the leaders of the Army of the Light. A survivor of the Burning Legion, she originally escaped Argus with Prophet Velen but later her path would lead her back to her corrupted homeworld. With her most elite draenei soldiers she was adamant to not flee, but to stand and fight. 
+
+Her troop became the Army of the Light and they gave themselves fully to the Light - in both body and soul. The holy crusade grew and inspired even other races to join the mission. In the end, and with the help of the Champions of Azeroth, the demons were finally defeated. Fareeya didn't plan on resting on her laurels though and followed Turalyon into the ranks of the Alliance on Azeroth, determined to keep on fighting for all that is holy and good.]]
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].timeline = {
-    {era = "Legion", text = "Served as a central commander of the Army of the Light during the Argus campaign, assisting the heroes of Azeroth."},
-    {era = "BfA", text = "Officially led the Lightforged Draenei into the Alliance and oversaw the training of new recruits on the Vindicaar."},
-    {era = "Midnight", text = "Commands the defensive positions on the Isle of Quel'Danas and coordinates Light artillery against the Void portals."},
+    {
+        era = "Ancient",
+        text = [[Escaped Argus on the Genedar with Prophet Velen when the eredar joined the Burning Legion. Later commandeered another spaceship – the Xenedar – back into the Twisting Nether. Under command of the naaru Xe'ra, she became Lightforged and became a leader of the Army of the Light.]],
+    },
+    {
+        era = "Legion",
+        text = [[Fought on the frontlines during the assault on Antorus. With the support of the Champions of Azeroth, the Army of the Light was able to put an end to the Burning Legion on Argus once and for all.]],
+    },
+    {
+        era = "BfA",
+        text = [[Strongly approved of High Exarch Turalyon's choice to pledge the Army of the Light to the Alliance. Was reunited with Velen and her people and began training new draenei from Azeroth as Lightforged soldiers. Fought in the Fourth War.]],
+    },
+    {
+        era = "DF",
+        text = [[Attended the first Tishamaat holiday of the draenei on Azeroth.]],
+    },
+    {
+        era = "TWW",
+        text = [[Traveled to Hallowfall to witness Beledar's Light and inspired Arathi younglings with her aptitude in the Light.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped to defend the Sunwell against the Voidstorm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].name = "Delas Moonfang"
@@ -379,24 +564,72 @@ IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].name = "Lord Grayson Shadowbreaker"
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].lore = "Lord Grayson Shadowbreaker is a highly respected Paladin Master of the Silver Hand. For years, he served in the Cathedral of Light in Stormwind as a mentor and was instrumental in the training and outfitting of the knightly cavalry. During the invasion of the Burning Legion, he joined the reformed order in the Sanctum of Light. In Midnight, he brings his decades of experience to the fronts of Quel'Thalas to support the defense of the Sunwell with the holy wrath of the Silver Hand."
+IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].lore = [[The primary human paladin trainer and a veteran fighter of the Order of the Silver Hand, Lord Grayson Shadowbreaker has been an indispensable asset to the Alliance for decades. 
+He is not only in charge of training new recruits and helping them become beacons of righteousness, but he also oversees threats all across Azeroth and sends out reinforcements as needed.
+
+Shadowbreaker can be considered a paladin of very traditional values and still holds the undead in high contempt. Never one to be too friendly or forgiving with both his trainees and his foes, he ultimately wants what is best for the Alliance and for the Order of the Silver Hand.]]
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].source = "warcraft.wiki.gg/wiki/Lord_Grayson_Shadowbreaker"
+IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].timeline = {
-    {era = "Classic", text = "Instructed young paladins in Stormwind and helped them summon their holy steeds."},
-    {era = "Legion", text = "Joined the Conclave in the Sanctum of Light to unite the Order of the Silver Hand against Sargeras' Legion."},
-    {era = "Midnight", text = "Commands Silver Hand troops on the Isle of Quel'Danas in defense of the Light."},
+    {
+        era = "Pre-Classic",
+        text = [[Was visited by his sister Jubeka who had become Forsaken after the Scourging of Lordaeron. Grayson chased her away in disgust, seeing her as nothing more than a monster.]],
+    },
+    {
+        era = "Classic",
+        text = [[Stationed in Stormwind City, he oversaw threats all across Azeroth and gave out missions for both newer and more experienced paladins. Helped fellow paladins to acquire their holy chargers – trusted mounts that are faithful companions to every Knight of the Order.]],
+    },
+    {
+        era = "TBC",
+        text = [[Joined the expedition to Outland with Arator Windrunner as his squire and fought the fel orcs in Hellfire Citadel.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Served food and drink at the ceremony in honor of the fallen Alliance heroes of Northrend, proving that no task is too modest for a paladin of his station if it helps others.]],
+    },
+    {
+        era = "Cata",
+        text = [[Sent paladin troops to combat some of the greater threats Azeroth faced, such as the orcs and dark iron dwarves of Blackrock Mountain.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was tasked with coordinating the various paladin orders at Light's Hope Chapel and thwarted a new undead threat in the Eastern Plaguelands by slaying Ramien the Soultaker. Redeemed Shadowmane, the undead horse of the late Baron Rivendare, and made it the holy mount of the Highlord of the Silver Hand. Later fought the Burning Legion on Argus.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Now stationed at Light's Hope Chapel as the primary paladin trainer, he was present at his former squire Arator's promotion. He denied the existence of his sister.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and defended it against the Voidstorm.]],
+    }
 }
 
+-- EADRIC THE PURE --
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].name = "Eadric the Pure"
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].lore = "Eadric the Pure is the Grand Champion of the Argent Crusade and one of the most virtuous paladins in the order's history. Known for his humility and unwavering faith, he served as the final test at the Grand Tournament in Northrend for those wishing to prove themselves against the Lich King. Despite his high rank, he has always maintained a spark of humor and deep humanity. In Midnight, he leads the defense of Parhelion Plaza, proving that true purity is the brightest bulwark against the shadows of the Void."
+IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].lore = [[A paladin and quartermaster of the Argent Crusade, Eadric is mostly known for his contributions to the order during the war against the Lich King in Northrend. Tensions between the Alliance and the Horde were rising once again, and Highlord Tirion Fordring proposed to host a friendly tournament to prevent a conflict. His champion Eadric was the one responsible for organizing most of this tournament.
+
+He has since mostly been stationed in Northrend, but as any true paladin, he goes where the Light calls him.]]
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].zones = {"Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].source = "warcraft.wiki.gg/wiki/Eadric_the_Pure"
+IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
-    {era = "WotLK", text = "Served as Grand Champion of the Argent Crusade and tested the heroes of Azeroth in the Trial of the Crusader."},
-    {era = "Legion", text = "Joined the Conclave in the Sanctum of Light and supported the Highlord in leading the Order of the Silver Hand."},
-    {era = "Midnight", text = "Defends Parhelion Plaza against the Void invasion and serves as a moral anchor for the forces of Light."},
+    {
+        era = "WotLK",
+        text = [[Served the Argent Crusade and Tirion Fordring as Grand Champion. Was in charge of organizing the Grand Argent Tournament in northern Icecrown by keeping the grounds safe and supplied and overseeing the combatants' training. He served as quartermaster and occasionally participated in the tournament as a fighter himself.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the reformed Knights of the Silver Hand and served as Light's Hope Chapel's quartermaster.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Held back the rampaging Scourge in Northrend.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought the Void at Parhelion Plaza.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].name = "Yalia Sagewhisper"
@@ -456,16 +689,43 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].timeline = {
     {era = "Midnight", text = "Travels to Silvermoon and Quel'Danas to bring the light of An'she into the elves' darkest battle."},
 }
 
+-- APONI BRIGHTMANE --
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].name = "Aponi Brightmane"
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].lore = "Aponi Brightmane is the High Chieftain of the Sunwalkers, the order of tauren paladins. As a former warrior, she was severely wounded in the war against the Scourge. In long conversations with Tahu Sagewind, she realized her people had lost sight of the Earth Mother's balance. By turning to the power of An'she (the sun), she became the very first Sunwalker. In Midnight, she stands shoulder to shoulder with the paladins of the Silver Hand at Parhelion Plaza, unleashing the light of An'she against absolute darkness."
+IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].lore = [[During the war against the Lich King in Northrend, the tauren warrior Aponi Brightmane had an epiphany. She wanted to help her people and the Horde with more than just her strength. After a discussion with her friend Tahu Sagewind, Aponi incorporated the teachings of the deity An'she – the sun – into her fighting. Thus, she became the first tauren paladin.
+
+Since joining the Order of the Silver Hand in battle during the third and final invasion of the Burning Legion, Aponi's Sunwalkers can be found far and wide across Azeroth, helping anyone in need.]]
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].source = "warcraft.wiki.gg/wiki/Aponi_Brightmane"
+IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
-    {era = "WotLK", text = "Was wounded as a warrior in Northrend and laid the ideological foundation for sun magic with Tahu."},
-    {era = "Cata", text = "Officially founded the Sunwalkers and became the first tauren paladin."},
-    {era = "Legion", text = "Joined the reformed Silver Hand in the Sanctum of Light as a high-ranking champion."},
-    {era = "Midnight", text = "Defends Quel'Danas and Parhelion Plaza with the concentrated radiant power of the sun."},
+    {
+        era = "WotLK",
+        text = [[Fought as a warrior in Northrend against the armies of the Lich King but was gravely wounded and returned to Thunder Bluff. Here, she and Tahu Sagewind laid the foundations to the creations of the first tauren paladin and priestly orders. After being healed, Aponi returned to the war and now fought with An'she's light at her side.]],
+    },
+    {
+        era = "Cata",
+        text = [[Officially formed the Sunwalker paladin order and was the primary trainer for new tauren recruits. She helped defend Thunder Bluff from rampaging elementals.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined forces with the Order of the Silver Hand. Unsuccesfully tried to hunt down the demon Balnazzar but was captured in the process and had to be rescued by the Highlord. Helped defend the Netherlight Temple and the Exodar from the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[With the Order of the Silver Hand splitting up due to faction conflict in the Fourth War, Aponi returned to Thunder Bluff to train new recruits once more.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Dragonscale Expedition to the Dragon Isles and became friend and supporter to the centaurs of Teerakai.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought against Xal'atath's forces on the Isle of Dorn after hearing of Dalaran's destruction.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and defended it against the Voidstorm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].name = "War Chaplain Senn"
@@ -573,15 +833,31 @@ IMAGOdb.npcs.CAT_LIGHT["talthis"].timeline = {
     {era = "Midnight", text = "Returns to his homeland to stop the chaos of the Void invasion on the Isle of Quel'Danas as part of Tyr's Guard."},
 }
 
+
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].name = "Vindicator Boros"
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].race = "Draenei"
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].lore = "Vindicator Boros is an unyielding veteran of the Hand of Argus and a high-ranking champion of the Silver Hand. Following the crash of the Exodar on Azeroth, he led the draenei's bitter fight against blood elf sabotage on Bloodmyst Isle. This previously deep-seated enmity makes his presence in Midnight all the more remarkable: faced with total annihilation by the Void, Boros lays old grudges to rest. Wielding his gigantic hammer and the pure power of the Light, he now stands shoulder-to-shoulder on Parhelion Plaza with the very elves he once fought, determined to protect the Sunwell."
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].lore = [[Both a leader of the Hand of Argus and a member of the Silver Hand, Boros has vowed to keep paladin traditions alive. He has proven a capable military commander in service of his people, the Draenei, multiple times but won't hesitate to pledge his hammer and faith to anyone in need.
+
+Now, Vindicator Boros has been called by the Sunwell to combat the Void. As always, he can be counted on to fulfill his duty to the people of Azeroth.]]
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].source = "Quest: Die Hand von Argus"
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].timeline = {
-    {era = "TBC", text = "Led the forces of the Hand of Argus on Bloodmyst Isle in the battle against Kael'thas's Sunhawks."},
-    {era = "Legion", text = "Joined the newly reformed Silver Hand and served the Highlord as a loyal champion in the war against the Legion."},
-    {era = "Midnight", text = "Fights as the vanguard of the Silver Hand at Parhelion Plaza and the Isle of Quel'Danas against the Void invasion."},
+    {
+        era = "TBC",
+        text = [[Defeated the traitor Sironas, saving the Draenei refugees on the Bloodmyst Isle from falling to demon corruption. Later helped restore the landscape surrounding the Exodar's crash site.]],
+    },
+    {
+        era = "Legion",
+        text = [[Pledged the Hand of Argus to the Order of the Silver Hand. Defended the Exodar and the Netherlight Temple from the Burning Legion. Worked with the priests and the demon hunters to rescue fellow paladins. Later he fought the Legion on their homeworld of Argus.]],
+    },
+    {
+        era = "DF",
+        text = [[Was present during Tyr's resurrection. Attended the first Tishamaat holiday of the Draenei on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped to defend the Sunwell against the Voidstorm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].name = "Sunwalker Dezco"
@@ -603,7 +879,6 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
     {era = "TWW", text = "Traveled to the shores of Khaz Algar alongside other prominent tauren, proudly overseeing the martial training of his now-grown son, Kor."},
     {era = "Midnight", text = "Acts as a guiding mentor for the Sunwalkers and their allies, teaching a new generation that wielding the Light is about much more than mere violence."},
 }
-
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
@@ -915,15 +1190,75 @@ IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].name = "Thoras Trollbane"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].race = "Human"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].lore = [[Loved by his people and feared by his enemies, Thoras Trollbane was the warrior king of Stromgarde, and a founding member of the Alliance of Lordaeron.
+
+After the defeat of the orcs in the Second War, Thoras disagreed with the policy of keeping the surviving orcs in internment camps, openly calling for them to be executed. When Lordaeron refused, Trollbane bitterly withdrew his support from the Alliance.
+
+At some point after the death of King Terenas Menethil, Thoras was murdered by his son Galen.
+
+During the Burning Legion’s third invasion, the Knights of the Ebon Blade raised Thoras as a member of the Four Horsemen. Believing that he had failed as a father and as a king, Thoras joined them in order to preserve peace in Azeroth.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].zones = {"The Dreamrift", "The Voidspire", "Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].source = "Travanoid"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Led the armies of Stromgarde into battle in several wars with the kingdom of Alterac.]],
+    },
+    {
+        era = "WC2",
+        text = [[Joined the Alliance of Lordaeron as a founding member, defending the Northlands from Horde invasion through the overtaken Dwarven realm of Khaz Modan. Later, he and his armies helped break the siege of Lordaeron by stopping Horde forces from moving through the Alterac Mountains. After the war, he was murdered by his son Galen.]],
+    },
+    {
+        era = "Legion",
+        text = [[Raised into undeath by the Knights of the Ebon Blade as a member of the Four Horsemen. Joined the assault on the Scarlet Monastery and the battle against demons at the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Worked to acquire fallen Horde and Alliance heroes and raised them as a new generation of death knights.]],
+    },
+    {
+        era = "SL",
+        text = [[Accompanied Bolvar Fordragon and a cadre of adventurers to the attack on the Sanctum of Domination.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Aided in the defense of Light’s Hope Chapel while the Argent Crusade was occupied with the defense of the Sunwell.]],
+    }
+}
+
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexus-King Salhadaar"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Ethereal"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].lore = "Once the power-hungry leader of the Ethereum in Outland's Netherstorm. Salhadaar attempted to transform his people into pure void energy before being defeated by adventurers. In Midnight, he returns as a fully realized entity of the Void. He now commands forces in the Voidstorm under Xal'atath's banner, serving as living proof of what becomes of the ethereals when they fully surrender to the darkness."
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].zones = {"Voidstorm"}
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].source = "warcraft.wiki.gg/wiki/Nexus-King_Salhadaar"
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Void Ethereal"
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].lore = [[For a long time, Nexus-King Salhadaar has known only desperation and suffering. Thousands of years ago, he ruled the people of the planet K'aresh before it was devoured by the Void.
+
+Losing one's world and one's physical body is enough to turn the strongest soul to madness – and Salhadaar was no exeption. He led his people, now called the Ethereals, into the service of Dimensius the All-Devouring, the very void lord that had taken all he had known.
+
+After being defeated by the Champions of Azeroth, Salhadaar was conscripted by Xal'atath and forced to obey yet another being of the Void. Unwilling but without hope for a way out of this bargain, the Nexus-King and his Shadowguard Ethereals once again oppose the united forces of Azeroth.]]
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].zones = {"The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].source = "Cadash"
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].timeline = {
-    {era = "TBC", text = "Led the Ethereum in Netherstorm and was killed while attempting to master the energies of the Void."},
-    {era = "Midnight", text = "Returns as a powerful Void entity in the Voidstorm to carry out Xal'atath's orders."},
+    {
+        era = "Ancient",
+        text = [[Ruled as High Priest over the people of K'aresh and chose to ignore Locus Walker's warnings of the encroaching Void, ultimately blaming him for what would happen next. When Dimensius came, Salhadaar lost his physical body and K'aresh was destroyed. He fled with his people into the Twisting Nether.]],
+    },
+    {
+        era = "TBC",
+        text = [[Under the pretense of defeating Dimensius, Salhadaar founded the Shadowguard and sought out fragments of the void lord. He turned some of his own Ethereals into void being before being killed by the Champions of Azeroth and rebelling Ethereals.]],
+    },
+    {
+        era = "TWW",
+        text = [[Remade by the Void, Salhadaar commanded the Shadowguard forces on K'aresh. Almost succeeded in bringing back Dimensius before being defeated once again. He was captured by Xal'atath.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Agreed to follow Xal'atath's orders under threat of death.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Succeeded in corrupting the Naaru T'era to the Void as Xal'atath had ordered. Instead of rewarding him, Xal'atath instead infused him with excessive void energy and a fully mad and delirious Salhadaar was made to fight the Vanguard of the Light at the Voidspire. For the final time, Salhadaar was killed and embraced the end in relief.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_VOID["l_ura"].name = "L'ura"
@@ -937,6 +1272,29 @@ IMAGOdb.npcs.CAT_VOID["l_ura"].timeline = {
     {era = "Midnight", text = "Manifested by Alleria in the Voidstorm to defeat the naaru T'era. Later torn from Alleria by Xal'atath at the Voidspire to transform the Sunwell into the 'Darkwell'."},
     {era = "Midnight", text = "Serves as the final encounter in the 'March on Quel'Danas' to prevent the salvation of the Sunwell."},
 }
+
+-- MOR_DUUN --
+IMAGOdb.npcs.CAT_VOID["mor_duun"].name = "Mor'duun"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].race = "Ogre"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].lore = [[As a powerful ogre mage, Mor’duun led the Twilght’s Blade, a cult devoted to Xal’atath. After his devotion drew her attention, she granted Mor’duun the power of the Void, renewing the cult’s fervor. 
+Mor’duun personally led the Twilight’s Blade’s invasion of Zul'Aman, leaving Atal’Aman in ruins and commanding his forces from the Broken Throne.]]
+IMAGOdb.npcs.CAT_VOID["mor_duun"].zones = {"Zul'Aman"}
+IMAGOdb.npcs.CAT_VOID["mor_duun"].source = "Travanoid"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].timeline = {
+    {
+        era = "TWW",
+        text = [[Formed the Twilight’s Blade with the remnants of the Twilight’s Hammer, pledging himself to Xal’atath’s service.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Ordered the Twilight’s Blade to recruit members in Stormwind and Orgrimmar, taking advantage of the hopelessness and confusion caused by the Radiant Song.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Led the Twilight’s Blade’s assault on Zul’Aman, sacking Atal’Aman and commanding his armies from the Broken Throne before being struck down by Zul’Jarra, Liadrin, and an adventurer.]],
+    }
+}
+
 
 
 -- CAT_AMANI
@@ -1034,6 +1392,18 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
     {era = "Midnight", text = "Acts as Loa Speaker in Zul'Aman and teaches players at the Altar of Blessings how to harness the gods' power against the Void."},
 }
 
+IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"
+IMAGOdb.npcs.CAT_AMANI["filo"].race = "Kapara (Loa)"
+IMAGOdb.npcs.CAT_AMANI["filo"].lore = [[Worshipped in Zul’Aman as the Loa of Children, Filo never speaks on his own, instead taking the youngest child of each village as his speaker. While gentle toward those he protects, he pursues anyone who dares harm his children with a vow of vengeance.
+When a child dies before their parents, Filo will guard their spirit until their parents join them in the afterlife.]]
+IMAGOdb.npcs.CAT_AMANI["filo"].zones = {"Zul'Aman", "Atal'Aman"}
+IMAGOdb.npcs.CAT_AMANI["filo"].source = "Travanoid"
+IMAGOdb.npcs.CAT_AMANI["filo"].timeline = {
+    {
+        era = "Midnight",
+        text = [[Watched over Kanza, an Amani child who sought him out in an attempt to reunite with the spirit of her twin sister. Filo lent his power to the adventurer who helped prepare the ritual - so long as they left his children undisturbed.]],
+    }
+}
 
 -- CAT_HARATI
 IMAGOdb.npcs.CAT_HARATI["orweyna"].name = "Orweyna"
