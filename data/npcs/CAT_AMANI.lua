@@ -54,3 +54,10 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"] = {
     zones = {},
     category = "CAT_AMANI",
 }
+
+IMAGOdb.npcs.CAT_AMANI["filo"] = {
+    displayID = 256170,
+    ids = {256170, 264374, 248726},
+    zones = {},
+    category = "CAT_AMANI",
+}
