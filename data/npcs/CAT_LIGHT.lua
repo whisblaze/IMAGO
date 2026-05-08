@@ -119,8 +119,8 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"] = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"] = {
-    displayID = 239483,
-    ids = {239483, 238277, 240777, 243432, 246672, 247925},
+    displayID = 247925,
+    ids = {247925, 239483, 238277, 240777, 243432, 246672},
     zones = {},
     category = "CAT_LIGHT",
 }

@@ -585,16 +585,43 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].timeline = {
     {era = "Midnight", text = "Travels to Silvermoon and Quel'Danas to bring the light of An'she into the elves' darkest battle."},
 }
 
+-- APONI BRIGHTMANE --
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].name = "Aponi Brightmane"
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].lore = "Aponi Brightmane is the High Chieftain of the Sunwalkers, the order of tauren paladins. As a former warrior, she was severely wounded in the war against the Scourge. In long conversations with Tahu Sagewind, she realized her people had lost sight of the Earth Mother's balance. By turning to the power of An'she (the sun), she became the very first Sunwalker. In Midnight, she stands shoulder to shoulder with the paladins of the Silver Hand at Parhelion Plaza, unleashing the light of An'she against absolute darkness."
+IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].lore = [[During the war against the Lich King in Northrend, the tauren warrior Aponi Brightmane had an epiphany. She wanted to help her people and the Horde with more than just her strength. After a discussion with her friend Tahu Sagewind, Aponi incorporated the teachings of the deity An'she – the sun – into her fighting. Thus, she became the first tauren paladin.
+
+Since joining the Order of the Silver Hand in battle during the third and final invasion of the Burning Legion, Aponi's Sunwalkers can be found far and wide across Azeroth, helping anyone in need.]]
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].source = "warcraft.wiki.gg/wiki/Aponi_Brightmane"
+IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
-    {era = "WotLK", text = "Was wounded as a warrior in Northrend and laid the ideological foundation for sun magic with Tahu."},
-    {era = "Cata", text = "Officially founded the Sunwalkers and became the first tauren paladin."},
-    {era = "Legion", text = "Joined the reformed Silver Hand in the Sanctum of Light as a high-ranking champion."},
-    {era = "Midnight", text = "Defends Quel'Danas and Parhelion Plaza with the concentrated radiant power of the sun."},
+    {
+        era = "WotLK",
+        text = [[Fought as a warrior in Northrend against the armies of the Lich King but was gravely wounded and returned to Thunder Bluff. Here, she and Tahu Sagewind laid the foundations to the creations of the first tauren paladin and priestly orders. After being healed, Aponi returned to the war and now fought with An'she's light at her side.]],
+    },
+    {
+        era = "Cata",
+        text = [[Officially formed the Sunwalker paladin order and was the primary trainer for new tauren recruits. She helped defend Thunder Bluff from rampaging elementals.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined forces with the Order of the Silver Hand. Unsuccesfully tried to hunt down the demon Balnazzar but was captured in the process and had to be rescued by the Highlord. Helped defend the Netherlight Temple and the Exodar from the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[With the Order of the Silver Hand splitting up due to faction conflict in the Fourth War, Aponi returned to Thunder Bluff to train new recruits once more.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Dragonscale Expedition to the Dragon Isles and became friend and supporter to the centaurs of Teerakai.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought against Xal'atath's forces on the Isle of Dorn after hearing of Dalaran's destruction.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and defended it against the Voidstorm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].name = "War Chaplain Senn"
