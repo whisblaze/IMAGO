@@ -431,13 +431,36 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].name = "Captain Fareeya"
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].race = "Lightforged Draenei"
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].lore = "Captain Fareeya is the high field commander of the Lightforged Draenei and one of High Exarch Turalyon's most trusted officers. During the thousand-year war against the Burning Legion, she led countless operations aboard the Vindicaar. Fareeya is known for her unwavering discipline and her indomitable faith in the Holy Light. In Midnight, she leads the Lightforged contingent on the Isle of Quel'Danas, fortifying the Sunwell against the Void with advanced technology and divine power."
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].source = "warcraft.wiki.gg/wiki/Captain_Fareeya"
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].lore = [[Second-in-command to High Exarch Turalyon, Fareeya is one of the leaders of the Army of the Light. A survivor of the Burning Legion, she originally escaped Argus with Prophet Velen but later her path would lead her back to her corrupted homeworld. With her most elite draenei soldiers she was adamant to not flee, but to stand and fight. 
+
+Her troop became the Army of the Light and they gave themselves fully to the Light - in both body and soul. The holy crusade grew and inspired even other races to join the mission. In the end, and with the help of the Champions of Azeroth, the demons were finally defeated. Fareeya didn't plan on resting on her laurels though and followed Turalyon into the ranks of the Alliance on Azeroth, determined to keep on fighting for all that is holy and good.]]
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].timeline = {
-    {era = "Legion", text = "Served as a central commander of the Army of the Light during the Argus campaign, assisting the heroes of Azeroth."},
-    {era = "BfA", text = "Officially led the Lightforged Draenei into the Alliance and oversaw the training of new recruits on the Vindicaar."},
-    {era = "Midnight", text = "Commands the defensive positions on the Isle of Quel'Danas and coordinates Light artillery against the Void portals."},
+    {
+        era = "Ancient",
+        text = [[Escaped Argus on the Genedar with Prophet Velen when the eredar joined the Burning Legion. Later commandeered another spaceship – the Xenedar – back into the Twisting Nether. Under command of the naaru Xe'ra, she became Lightforged and became a leader of the Army of the Light.]],
+    },
+    {
+        era = "Legion",
+        text = [[Fought on the frontlines during the assault on Antorus. With the support of the Champions of Azeroth, the Army of the Light was able to put an end to the Burning Legion on Argus once and for all.]],
+    },
+    {
+        era = "BfA",
+        text = [[Strongly approved of High Exarch Turalyon's choice to pledge the Army of the Light to the Alliance. Was reunited with Velen and her people and began training new draenei from Azeroth as Lightforged soldiers. Fought in the Fourth War.]],
+    },
+    {
+        era = "DF",
+        text = [[Attended the first Tishamaat holiday of the draenei on Azeroth.]],
+    },
+    {
+        era = "TWW",
+        text = [[Traveled to Hallowfall to witness Beledar's Light and inspired Arathi younglings with her aptitude in the Light.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped to defend the Sunwell against the Voidstorm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].name = "Delas Moonfang"
