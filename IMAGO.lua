@@ -560,6 +560,7 @@ function IMAGO.Init()
     
     if IMAGO.Display and IMAGO.Display.CreateFrame then IMAGO.Display.CreateFrame() end
     if IMAGO.UnitContextMenu and IMAGO.UnitContextMenu.Init then IMAGO.UnitContextMenu.Init() end
+    if IMAGO.NPCLinker and IMAGO.NPCLinker.BuildNameLookup then IMAGO.NPCLinker.BuildNameLookup() end
     IMAGO.CreateMinimapButton()
 
     if TooltipDataProcessor and TooltipDataProcessor.AddTooltipPostCall then

@@ -444,8 +444,13 @@ function IMAGO.Chronicle.CreateFrame()
     f.loreBody:SetJustifyH("LEFT")
     f.loreBody:SetTextColor(0.9, 0.9, 0.9)
     f.loreBody:SetSpacing(6)
-
--- ==========================================
+    f.infoContent:SetHyperlinksEnabled(true)
+    f.infoContent:SetScript("OnHyperlinkClick", function(self, link, text, button)
+        if IMAGO.NPCLinker and IMAGO.NPCLinker.OnHyperlinkClick then
+            IMAGO.NPCLinker.OnHyperlinkClick(self, link, text, button)
+        end
+    end)
+    -- ==========================================
     -- BILD FÜR DIE ZONEN-DETAILANSICHT (PANORAMA)
     -- ==========================================
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
@@ -1763,8 +1768,9 @@ function IMAGO.Chronicle.UpdateList()
                                 local lore = npc.data.lore or ""
                                 local firstLetter = lore:sub(1,1)
                                 local restLore = lore:sub(2)
-                                f.loreBody:SetText("|cffffd700" .. firstLetter .. "|r" .. restLore)
+                                local linked = IMAGO.NPCLinker.LinkNames("|cffffd700" .. firstLetter .. "|r" .. restLore, npc.slug)
                                 
+                                f.loreBody:SetText(linked)
                                 f.detailModel:ClearModel()
                                 local modelID = GetValidModelID(npc.data)
                                 if modelID then 
@@ -2050,7 +2056,7 @@ elseif activeTab == 2 then
                     end
                 end
                 
-                f.loreBody:SetText(formattedLore)
+                f.loreBody:SetText(IMAGO.NPCLinker.LinkNames(formattedLore))
                 f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("LEFT")
                 f.loreBody:Show()
@@ -2119,8 +2125,7 @@ elseif activeTab == 2 then
 
                 local warningHeader = "\n\n|cffaaaaaa" .. (IMAGO.L["ZONE_UNEXPLORED_HEADER"] or "GEBIET UNERKUNDET") .. "|r"
                 local descText = "\n\n|cff666666" .. (IMAGO.L["ZONE_UNEXPLORED_DESC"] or "Die Kartographie dieser Region ist noch unvollständig.\nReise dorthin, um ihre Geheimnisse zu offenbaren.") .. "|r"
-                f.loreBody:SetText(warningHeader .. descText)
-                f.loreBody:SetWidth(660)
+                f.loreBody:SetText(IMAGO.NPCLinker.LinkNames(warningHeader .. descText))f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("CENTER")
                 f.loreBody:Show()
                 
