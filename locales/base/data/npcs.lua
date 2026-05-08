@@ -384,17 +384,61 @@ IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].timeline = {
     }
 }
 
+-- CALIA MENETHIL --
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].name = "Calia Menethil"
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].race = "Light-bound Undead"
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].lore = "Princess Calia Menethil is the last heir of the Menethil dynasty and the sister of Arthas. After living in hiding under a false name for decades, she re-emerged during the Fourth War, only to be killed by Sylvanas Windrunner. Through an unprecedented miracle of the Light, she returned as a unique, light-infused undead. In Midnight, she stands at the Sunwell as a living paradox and a symbol of hope, coordinating the forces of Light against the all-consuming Void."
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].race = "Undead Human"
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].lore = [[To call the Pallid Lady a politically controversial figure would be an understatement. She is the sister of the infamous Arthas Menethil and only remaining heir to the throne of Lordaeron, which is now in Forsaken hands - the very undead hands of Arthas' primary victims. As a member of the Alliance and a priestess of the Light, Calia had denied to wish to rule over her people.
+
+That changed, however, when she herself was killed and raised into undeath by the naaru Saa'ra. She joined the Horde and became a ruling member of the Forsaken's Desolate Council. Even though she has since shown a desire to aid her people, even putting herself in danger for the cause, it does seem like she has yet to earn the Forsaken's full trust. 
+
+For now though, her political ambitions – whatever they may be – have to wait. The Light has called her to Silvermoon and Calia has answered the call.]]
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].source = "warcraft.wiki.gg/wiki/Calia_Menethil"
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].timeline = {
-    {era = "WC3", text = "Fled during the destruction of Lordaeron by her brother Arthas and lived unrecognized among humans for years."},
-    {era = "Legion", text = "Revealed herself to Alonsus Faol and joined the Conclave in the Sanctum of Light to aid priests in the battle against the Legion."},
-    {era = "BfA", text = "Was killed by Sylvanas at the Arathi Highlands gathering and resurrected as light-bound undead by Saa'ra and Anduin."},
-    {era = "DF", text = "Took her place on the Desolate Council to lead the Forsaken into a new era without Sylvanas."},
-    {era = "Midnight", text = "Supports the defense of Quel'Thalas and serves as a diplomatic bridge between the Light and the undead."},
+    {
+        era = "WC2",
+        text = [[Was betrothed against her wishes to the Alteraci noble Lord Daval Prestor by her father when Calia was just 16 years old. Prestor, who was actually the dragon Deathwing in disguise, vanished after the war and Calia was glad to remain unmarried.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Fell in love with a common footman of the Lordaeron army and became pregnant with his child.]],
+    },
+    {
+        era = "WC3",
+        text = [[Survived Lordaeron's fall through sheer luck and was able to flee with her husband and daughter to Southshore where the three lived happily in secret for a while. After an attack on the town, Calia was separated from her family.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Sometime before the third invasion of the Burning Legion, she met Alonsus Faol, who showed her the difference between the mindless Scourge and the undead of the Forsaken. Filled with hope that her family might be among the Forsaken people, Calia joined Alonsus.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Conclave and helped Faol restore the void god Saraka to her holy naaru form Saa'ra. Helped defend the Exodar from the Burning Legion.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Reappeared as a public figure and was considered the rightful ruler of Lordaeron by King Anduin Wrynn. She joined in the Gathering, hoping to meet her family again. She revealed herself, urging the Forsaken on to rejoin the Alliance. Instead of succeeding or finding her loved ones, she found only death in the massacre that followed. Was revived by Saa'ra and Anduin as an undead of the Light.]],
+    },
+    {
+        era = "BfA",
+        text = [[After the Fourth War ended, Calia formed a friendship with Derek Proudmoore, who had been turned into an undead as well. Both of them decided to join the Horde and Calia proclaimed that she wanted not only to aid her people, but also redeem the name Menethil.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Stepped up as a councilor of the Forsaken and joined the Horde's ruling council. She accompanied Thrall on a diplomatic mission to Teldrassil's remains.]],
+    },
+    {
+        era = "SL",
+        text = [[Journeyed to the Shadowlands and helped in the campaign against the Jailer. Later, Calia was instrumental in recovering the Undercity from the Blight of the Fourth War, personally using her Light as a shield to combat the lingering poison. She joined the Desolate Council as one of its leaders, took Derek Proudmoore as her champion, and vowed to remove Forsaken troops from Gilneas.]],
+    },
+    {
+        era = "DF",
+        text = [[Succesfully directed the Forsaken counterattack after the Scarlet Crusade moved against the Undercity. Was true to her word and not only removed her undead troops from the Ruins of Gilneas, but also helped King Genn Greymane and Princess Tess personally to then recover the worgen city from the Scarlet Crusade's occupation.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought to defend Silvermoon.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].name = "Taelia Fordragon"
