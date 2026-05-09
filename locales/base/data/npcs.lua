@@ -351,17 +351,32 @@ IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].timeline = {
     {era = "Midnight", text = "Prevented Umbric's execution and helped to defend the Sunwell from the Void."},
 }
 
+-- HIGH EXARCH TURALYON --
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].name = "High Exarch Turalyon"
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["turalyon"].lore = "High Exarch Turalyon is a legendary figure and one of the first five paladins of the Silver Hand. After his disappearance on Draenor, he fought for millennia alongside the naaru as the leader of the Army of the Light against the Burning Legion. As a Light-infused immortal, he embodies unwavering resistance against the forces of darkness. In Midnight, he leads the defense of the sacred sites of Quel'Thalas, standing as a shining bulwark against the encroaching Void that threatens his home and his family."
+IMAGOdb.npcs.CAT_LIGHT["turalyon"].lore = [[One of the first paladins of the Order of the Silver Hand, Turalyon became one of the Alliance's most famous war heroes – and one of the most admired. He fought as second-in-command to Anduin Lothar himself and, after the commander fell, it was Turalyon who decided the final battle against the orcish Horde in favor for the Alliance and the Holy Light. 
+
+It was in the Second War that he met the woman he would share his life with – Alleria Windrunner. In the midst of all the fighting, the two became three. Yet when Turalyon and Alleria ventured into the orcish homeworld to stop the Horde once and for all, they made the difficult choice to leave their son Arator behind on Azeroth, knowing they would perhaps never see him grow up.
+
+In the end, Draenor shattered and the couple were whisked away to fight for the Army of the Light in a thousand year long war against the Burning Legion. Turalyon thus became immortal, a Lightforged bulwark for justice and righteousness. Alleria, however, embraced the magic of the Void, a force of pure Evil in Turalyon's eyes.
+
+Now, with the Burning Legion defeated, Turalyon and Alleria are back on Azeroth, on a world changed. Trying to reconnect with a son they don't know, trying to come to terms with how they've drifted so far apart as lovers, and most of all, trying to save their world once again.]]
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].zones = {"The Voidspire", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["turalyon"].source = "warcraft.wiki.gg/wiki/Turalyon"
+IMAGOdb.npcs.CAT_LIGHT["turalyon"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].timeline = {
-    {era = "WC2", text = "Served as Anduin Lothar's second-in-command and took leadership after his death to defeat the Horde at Blackrock Mountain."},
-    {era = "WC2", text = "Led the Alliance Expedition through the Dark Portal to Draenor and stayed behind to protect Azeroth when the portal was destroyed."},
-    {era = "Legion", text = "Returns as High Exarch of the Army of the Light and key leader in the final strike against the Burning Legion on Argus."},
-    {era = "BfA/TWW", text = "Served as Regent of Stormwind and Lord Commander of Alliance forces during King Anduin's absence."},
-    {era = "Midnight", text = "Commands the defense of the Isle of Quel'Danas and leads the Light against Xal'atath's Void invasion."},
+    {era = "Pre-WC1", text = "Orphaned and given to the Church of the Holy Light to become a priest."},
+    {era = "WC2", text = "Became one of the first five paladins of the Order of the Silver Hand. Fought as Lothar's general and decided the Second War, driving the Horde back. Met Alleria, had a son, and ventured into Outland, ultimately becoming stranded there."},
+    {era = "Pre-WC3", text = "Traveled through the Twisting Nether with Alleria and was conscripted into the Army of the Light to fight the Burning Legion. What would take a few decades on Azeroth, to them were a thousand years of war. Turalyon became Lightforged."},
+    {era = "Legion", text = "Led the final battle against the Legion in their stronghold of Antorus and succeeded. With his crusade finally over, him and Alleria were reunited with their son, Arator."},
+    {era = "Pre-BfA", text = "Brought the Army of the Light, especially the Lightforged Draenei into the ranks of the Alliance. Turalyon served as their High Exarch."},
+    {era = "BfA", text = "Helped his old friend Danath Trollbane to win the Battle of Stromgarde against the new Horde."},
+    {era = "Pre-SL", text = "Joined in the hunt for Sylvanas Windrunner. Used the Holy Light to torture a Horde civilian."},
+    {era = "SL", text = "Was made regent of Stormwind after Anduin's disappearance."},
+    {era = "Pre-DF", text = "Attended Lor'themar and Thalyssra's wedding in a show of good faith for the truce with the Horde."},
+    {era ="DF", text = "Became quite popular among the Stormwind nobles after ruling the Alliance for 5 years. Personally helped to defend Amirdrassil against Fyrakk the Blazing."}, 
+    {era = "TWW", text = "Led the Alliance forces on the Isle of Dorn against Xal'atath's armies and personally held the line against the Nerubians in Hallowfall."},
+    {era = "Pre-MN", text = "Thwarted a resurgence of the Burning Legion together with Alleria and Arator, seemingly getting closer as a family. Yet Alleria left a heartbroken Turalyon at the altar, deciding not to marry him even after all these years together. During this time, Turalyon got lost more frequently in light-blindness."},
+    {era = "Midnight", text = "Called by the Sunwell to defend Silvermoon against the Void, Turalyon once more led the forces of the Light. His zeal out of control, Turalyon hurt his son in a terrible accident but did not lose faith in the Light despite that. Faced Xal'atath in her Voidspire and got lost in the Darkwell with Alleria"},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].name = "Prophet Velen"
