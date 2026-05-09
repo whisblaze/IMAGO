@@ -919,17 +919,62 @@ IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl"].timeline = {
     {era = "Midnight", text = "After defending the murlocs of Zul’Aman from an attacking tribe of deep sea murlocs, King Mrgl-Mrgl was declared the Loa of Murlocs. His worshippers kept him trapped in their swamp-bound temple as their god and savior."},
 }
 
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].name = "Trade Prince Monte Gazlowe"
+-- MONTE GAZLOWE --
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].name = "Monte Gazlowe"
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].race = "Goblin"
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = "Monte Gazlowe is one of Azeroth's most brilliant engineers and has had a meteoric career. Once the neutral boss of Ratchet and builder of Orgrimmar, he succeeded Jastor Gallywix after the latter's betrayal. Today, he is the Trade Prince of the Bilgewater Cartel and represents the goblins on the Horde Council. In The War Within, he proved true leadership by leading the expedition deep into Undermine to dismantle Gallywix's Black Blood syndicate and instigating a revolution against the corrupt cartels. In Midnight, he brings his brilliant engineering to the fronts of Harandar and The Den to equip the defensive lines of the united forces with massive goblin firepower."
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].zones = {"The Den", "Harandar"}
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].source = "warcraft.wiki.gg/wiki/Monte_Gazlowe"
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = [[The architect of Orgrimmar and Trade Prince of the Bilgewater Cartel is one of the Horde's most important members, even if his influence is mostly felt in the background. He isn't a fighter, doesn't consider himself a hero and is seen by most as nothing but another greedy goblin. 
+That is not what lies below the surface though, and the people that know him beyond shallow appearances know that this goblin has a great heart under all his snark. 
+
+His reforms have given the exploited workers of his cartel security and rights for the first time in goblin culture. He has lent monetary support to a lot of his Horde allies out of loyalty and without bartering for much in return. He was instrumental in bringing revolutionary change to the Undermine, even when he was planning on not getting involved at first.
+
+He has formed a friendship with Orweyna and the two have begun to show each other their cultures.]]
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].zones = {"Harandar", "The Den"}
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].timeline = {
-    {era = "WC3", text = "Worked as a freelance contractor for Thrall and oversaw the construction of the capital city Orgrimmar as chief engineer."},
-    {era = "BfA", text = "Took over leadership of the Bilgewater Cartel following Gallywix's flight, firmly integrating the goblins into the Horde Council."},
-    {era = "WoD", text = "Served as the architect for the construction of the Horde garrison (Frostwall) on alternate Draenor."},
-    {era = "TWW", text = "Led forces to Undermine in Patch 11.1 to stop the exploitation by Gallywix and Xal'atath."},
-    {era = "Midnight", text = "Establishes heavily armed technical outposts in Harandar and The Den for military support."},
+    {
+        era = "Pre-WC3",
+        text = [[Born and raised in Undermine, Gazlowe left the city disillusioned and vowing to never return. He joined the Steamwheedle Cartel alongside his old friend Marin Noggenfogger.]],
+    },
+    {
+        era = "WC3",
+        text = [[Was contracted by Warchief Thrall to oversee the construction of Orgrimmar.]],
+    },
+    {
+        era = "Classic",
+        text = [[Established the port town of Ratchet in the Barrens with the money he earned when Orgrimmar was completed. Grateful to Thrall, he continued to aid the orcs of Durotar, but officially stayed a neutral figure and let both Horde and Alliance into his town. Kept the coast of Horde territory free of pirates.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Was paid by Thrall again to rebuild Orgrimmar after parts of it were damaged by rampaging elementals. He was later approached by Baine Bloodhoof, who pleaded for help to liberate Thunder Bluff. Gazlowe sent three zeppelins, various mercenaries and a massive amount of explosives to his tauren friends and accepted only a moderate amount of payment.]],
+    },
+    {
+        era = "Cata",
+        text = [[Not wanting to lose profit in the faction war, Gazlowe stayed officially neutral. Yet when an Alliance admiral tried to block trade routes from Orgrimmar to Ratchet, Gazlowe quickly had his cargo and ships destroyed.]],
+    },
+    {
+        era = "WoD",
+        text = [[Got hired by Warchief Vol'jin to construct the Horde's garrison in Frostfire Ridge, as well as various outposts and a shipyard. Supplied the Horde with machinery in Talador and – helped by Thaelin Darkanvil - was able to operate an Iron Star to help liberate Shattrath City from the Iron Horde. Later he constructed a siege machine that destroyed the Tanaan Gate.]],
+    },
+    {
+        era = "BfA",
+        text = [[Helped Prince Erazmin and the Alliance to liberate Mechagon from King Mechagon's cruel reign. Joined in Saurfang's rebellion against Sylvanas Windrunner. After Gallywix fled, Gazlowe officially joined the Horde as Bilgewater's new Trade Prince. He was made part of the Horde Council by Thrall, the two having become close friends after all these years.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Tried to manage the Horde's internal problems after the Fourth War, but had to concede that the hunt for Sylvanas Windrunner took precedence.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Made a deal with Marin Noggenfogger to align their cartels together and enforced better working conditions for Steamwheedle's goblins.]],
+    },
+    {
+        era = "TWW",
+        text = [[Aided the Hallowfall expedition in Azj-Kahet and noticed Venture Company goblins snooping around. Worked with Renzik “the Shiv” and Orweyna to uncover Gallywix's deal with Xal'atath and consequently liberated Undermine of Gallywix's tyranny. Alongside Mathias Shaw, he scattered Renzik's ashes after he had sacrificed himself for Gazlowe. Became part of Undermine's new ruling council.]],
+    },
+    {
+        era = "Midnight",
+        text = [[After Orweyna helped him in Undermine, Gazlowe promised to come to Harandar and experience her culture. He enjoyed learning about the Hara'ti.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["fiona"].name = "Fiona"
