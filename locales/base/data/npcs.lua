@@ -1145,41 +1145,39 @@ IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].timeline = {
     }
 }
 
-IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].name = "Thoras Trollbane"
-IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].race = "Human"
-IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].lore = [[Loved by his people and feared by his enemies, Thoras Trollbane was the warrior king of Stromgarde, and a founding member of the Alliance of Lordaeron.
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].name = "Koltira Deathweaver"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].race = "Darkfallen Blood Elf"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].lore = [[Koltira fought and died for Silvermoon when Arthas and the Scourge marched through her gates. Death was not the end for him though as he was promptly resurrected as a Death Knight. 
 
-After the defeat of the orcs in the Second War, Thoras disagreed with the policy of keeping the surviving orcs in internment camps, openly calling for them to be executed. When Lordaeron refused, Trollbane bitterly withdrew his support from the Alliance.
+Under Arthas' control, he was forced to kill for the very army that destroyed everything he had once known and loved. He developed a true bond of friendship with Thassarian, the man who killed him, despite their gruesome circumstances.  Both of them were freed from the Lich King's mind control and chose to fight for the newly formed Ebon Blade and vowed to keep all of Azeroth safe from the undead. Koltira joined the Horde and acted as an emissary for his fellow Death Knights.
 
-At some point after the death of King Terenas Menethil, Thoras was murdered by his son Galen.
-
-During the Burning Legion’s third invasion, the Knights of the Ebon Blade raised Thoras as a member of the Four Horsemen. Believing that he had failed as a father and as a king, Thoras joined them in order to preserve peace in Azeroth.]]
-IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].zones = {"The Dreamrift", "The Voidspire", "Eastern Plaguelands"}
-IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].source = "Travanoid"
-IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].timeline = {
+Though they have found themselves on the opposite sides of the faction wars at times, Koltira Deathweaver and Thassarian remain close friends.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].source = "Cadash"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].timeline = {
     {
-        era = "Pre-WC2",
-        text = [[Led the armies of Stromgarde into battle in several wars with the kingdom of Alterac.]],
+        era = "WC3",
+        text = [[Fell to Thassarian's blade in the defense of Silvermoon. Was resurrected as a Death Knight and forced to fight for the Scourge.]],
     },
     {
-        era = "WC2",
-        text = [[Joined the Alliance of Lordaeron as a founding member, defending the Northlands from Horde invasion through the overtaken Dwarven realm of Khaz Modan. Later, he and his armies helped break the siege of Lordaeron by stopping Horde forces from moving through the Alterac Mountains. After the war, he was murdered by his son Galen.]],
+        era = "WotLK",
+        text = [[Freed from the Lich King's mind control and vowed to defend Azeroth with the new-formed Ebon Blade. Joined the Horde and fought in Northrend, lending his expertise as a Death Knight to breach the Lich King's fortress of Icecrown.]],
+    },
+    {
+        era = "Cata",
+        text = [[Imprisoned by Sylvanas Windrunner in the Undercity due to seeking a truce between Horde and Alliance during the battle of Andorhal.]],
     },
     {
         era = "Legion",
-        text = [[Raised into undeath by the Knights of the Ebon Blade as a member of the Four Horsemen. Joined the assault on the Scarlet Monastery and the battle against demons at the Broken Shore.]],
-    },
-    {
-        era = "BfA",
-        text = [[Worked to acquire fallen Horde and Alliance heroes and raised them as a new generation of death knights.]],
+        text = [[Freed from captivity by Thassarian and joined the fight against the Burning Legion afterwards.]],
     },
     {
         era = "SL",
-        text = [[Accompanied Bolvar Fordragon and a cadre of adventurers to the attack on the Sanctum of Domination.]],
+        text = [[Followed Bolvar Fordragon into the Shadowlands to fight Sylvanas.]],
     },
     {
         era = "Midnight",
-        text = [[Aided in the defense of Light’s Hope Chapel while the Argent Crusade was occupied with the defense of the Sunwell.]],
+        text = [[Helped defend Light's Hope Chapel.]],
     }
 }
 

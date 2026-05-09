@@ -33,10 +33,9 @@ IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"] = {
     zones = {},
     category = "CAT_EBON_BLADE",
 }
-
-IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"] = {
-    displayID = 221635,
-    ids = {221635, 244957},
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"] = {
+    displayID = 244961,
+    ids = {244961},
     zones = {},
     category = "CAT_EBON_BLADE",
 }
