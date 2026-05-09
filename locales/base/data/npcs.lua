@@ -1071,6 +1071,26 @@ IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].timeline = {
     {era = "Pre-MN", text = "He was eventually named a member of the Sons of Lothar, and is called upon when they met to discuss the threats facing Azeroth."}
 }
 
+-- KURDRAN WILDHAMMER --
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].name = "Kurdran Wildhammer"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].race = "Dwarf"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].lore = [[A thane of the Wildhammer clan and skilled gryphon rider, Kurdran was one of the first dwarves to take up arms against the invading orcs in the Second War. He joined the Alliance of Lordaeron and eventually followed general Turalyon beyond the Dark Portal into Outland. He forged a bond of true friendship with the Sons of Lothar.
+He returned to Azeroth after surviving two decades on the broken orcish world. Kurdran tried his hand at politics for a time - briefly acting as representative of the Wildhammer clan in Ironforge – before settling down for a time.
+Now, reunited with his friends of old, Kurdran is ready once again to fight for the good of Azeroth.]]
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].zones = {"Burning Steppes", "Arcantina", "Silvermoon City"}
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].timeline = {
+    {era = "WC2", text = "Battled and helped drive back the Old Horde. Later followed Turalyon's expedition to Outland to deal with the orcish threat once and for all. Chose to stay behind to ensure the Dark Portal was properly closed to safeguard Azeroth."},
+    {era = "TBC", text = "Held a stronghold in Shadowmoon Valley and helped Alliance adventurers against Illidan Stormrage and the Burning Legion."},
+    {era = "Pre-Cata", text = "Briefly represented the Wildhammer clan in the Council of Three Hammers in Ironforge, but conceded his position to Falstad Wildhammer instead."},
+    {era = "Cata", text = "Helped to unite the various Wildhammer clans and welcomed them into the Alliance. His faithful gryphon mount Sky'ree was lost in a fire but Kurdran could save her last egg."},
+    {era = "Pre-TWW", text = "Bonded with the stormrooks in Valdrakken and trained the Champion to be an elemental gryphon rider."}
+    {era = "TWW", text = "Joined his friends Turalyon and Danath Trollbane on the Isle of Dorn. Alongside his now fully-grown new mount Sky'reen, Kurdran began training new Earthen gryphon riders."},
+    {era = "Midnight", text = "Helped Arator learn the history of his father, Turalyon, and his part in the events of the Second War. Introduced heroes to the Arcantina, a home away from home for adventurers from all over Azeroth."}
+}
+
+
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
