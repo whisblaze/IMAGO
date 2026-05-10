@@ -202,13 +202,25 @@ IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].name = "Lady Dunkeltal"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].race = "Untote (Dunkle Waldläuferin)"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].lore = "Lady Dunkeltal ist eine furchteinflößende Kommandantin der Dunklen Waldläufer und eine eiskalte, loyale Verteidigerin von Quel'Thalas. Als Untote, die einst unter dem Banner von Sylvanas Windläufer diente, entschied sie sich nach dem Verrat der Bansheekönigin unmissverständlich dafür, ihrer wahren Heimat treu zu bleiben. Bereits während des Vierten Krieges führte sie an der Kriegsfront der Dunkelküste verheerende Schläge gegen die Allianz aus. In Midnight bringt sie ihre tödliche, pragmatische Präzision zurück nach Hause. Sie operiert kompromisslos im Leerensturm und koordiniert die Verteidigung aus Silbermond, wo ihre Pfeile nun keine Nachtelfen mehr suchen, sondern die monströsen Entitäten der Leere lautlos durchbohren."
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].zones = {"Leerensturm", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].source = "Quest: Die Schlacht an der Dunkelküste"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].race = "Leerenelfe"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].lore = [[Lady Dunkeltal ist eine Adlige aus Quel'Thalas und eine der talentiertesten Alchemistinnen und Ritualistinnen der Ren'dorei. Ihr freier und mitunter leichtsinniger Umgang mit Leerenmagie verunsichert selbst einige ihrer Gefährten, doch das kümmert sie wenig. Bereits als Hexenmeisterin riskierte sie ihren Verstand – und dann ein weiteres Mal, als sie von der Leere durchdrungen wurde. Warum also sollte sie sich jetzt noch zurückhalten?
+
+Daher überrascht es kaum, dass sie sich gemeinsam mit ihrem Leerwandler Blocciniux Magister Umbric anschließt, um den Versuch zu wagen, den Leerensturm zu durchbrechen. Was könnte faszinierender sein als ein Ort des reinen Chaos?]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].zones = {"Silbermond", "Leerensturm", "Insel von Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].timeline = {
-    {era = "BfA", text = "Diente als hochrangige Kommandantin der Dunklen Waldläufer an der Kriegsfront an der Dunkelküste gegen die Elune-Krieger."},
-    {era = "Midnight", text = "Führt die Reihen der Dunklen Waldläufer an der Frontlinie im Leerensturm und in Silbermond an, um die Leereninvasion zurückzuschlagen."},
+    {
+        era = "DF",
+        text = [[Half dabei, den Telogrusriss gegen die Astralen der Schattenwache zu verteidigen.]],
+    },
+    {
+        era = "TWW",
+        text = [[Kämpfte auf K'aresh gegen Dimensius' Streitkräfte. Übernahm Aufträge für die Mittler von Tazavesh.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Verhinderte die Ausbreitung eines mutierten Krankheitserregers im Leerensturm und heilte die Ren'dorei erfolgreich von der Krankheit. Kämpfte in der Leerenspitze und untersuchte nach der Wiederherstellung des Morgenbrunnens die Ritualstätten der zersplitterten Streitkräfte der Leere.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].name = "Rissklinge Maella"
@@ -237,18 +249,46 @@ IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].timeline = {
     {era = "Midnight", text = "Experimentierte mit einer neuen Art von Magie – Qual – um die Verteidigung der Stadt zu stärken und das Überleben sowie den Wohlstand der Blutelfen zu sichern."},
 }
 
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].name = "Lord Saltheril"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].race = "Blutelf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].lore = [[Als unbeträchtlicher Adliger der Blutelfen ist Lord Saltheril in ganz Quel'Thalas für seine prunkvollen Feste bekannt, bei denen seine Gäste mit magischen Weinen und extravaganten Speisen bewirtet werden. Saltheril war zudem ein Förderer von Lirath Windläufer und organisierte musikalische Darbietungen für verschiedene Adlige und Mitglieder des Königshauses von Silbermond, darunter Prinz Kael'thas Sonnenwanderer und Lor'themar Theron.
+
+Als Überlebender zahlreicher Katastrophen – darunter des Zweiten Krieges und der Invasion der Geißel – hat Saltheril niemals aufgehört, Feste zu veranstalten. Fürstregent Lor’themar bemerkte einst, dass nicht einmal Arthas Menethil ihn lange davon abhalten konnte.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].zones = {"Immersangwald"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].source = "Travanoid"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Verbannte Sylvanas Windläufer von seinem Anwesen, nachdem sie auf einer seiner Feiern einen Skandal ausgelöst hatte, indem sie heimlich Kräuter in Getränke mischte und ihm vorübergehend die Zunge lähmte.]],
+    },
+    {
+        era = "TBC",
+        text = [[Veranstaltete weiterhin Feste und umgab sich mit Schmeichlern, trotz der Vorwürfe, die Realität der Lage in Quel'Thalas zu ignorieren.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Öffnete sein Anwesen für die Magister, die Weltenwanderer, die Blutritter und sogar die zwielichtigen Gestalten der Mördergasse für eine Veranstaltung, die er „Saltherils Soiree“ nennt. Diese Fraktionen buhlen dort um die Gunst und Förderung der Sin’dorei-Adligen und Abenteurer.]],
+    }
+}
+
 
 -- CAT_LIGHT
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dämmerklinge"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].race = "Blutelf"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].lore = "Einst ein hoffnungsvoller Paladin-Schüler von Uther dem Lichtbringer, verfiel Mehlar Dämmerklinge nach dem Fall von Quel'Thalas in tiefe Verbitterung. Er gab Uther die Schuld am Untergang seiner Heimat und ließ in seinem rasenden Zorn sogar das Grab seines alten Meisters schänden. Durch die Läuterung der Blutritter fand er jedoch schließlich zur Rechtschaffenheit zurück, schloss sich der Silbernen Hand an und kämpft in Midnight als treuer Streiter des Lichts."
+IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].lore = [[Einst war Mehlar Dämmerklinge Uther Lichtbringers Schüler und diente vor dem Dritten Krieg der Silbernen Hand als Paladin. Er folgte einem strengen Moralkodex und führte die Befehle des Ordens buchstabengetreu aus. Als Uthers berüchtigtster Schüler - Arthas Menethil - vom Pfad des Lichts abkam und Mehlars Heimat Quel'Thalas verwüstete, verwandelte sich das Mitgefühl des Blutelfen in Zorn und ihn überkam der Durst nach Rache.
+
+Er schloss sich Lady Liadrin und ihren Blutrittern an und kämpfte in vorbildlicher Einheit mit seinen Mitpaladinen gegen die Geißel. In einem Anfall von Wut entweihte er Uthers Grab, nur um dort dem Geist seines ehemaligen Mentors gegenüberzutreten. Da er von dem gefallenen Paladin nichts als Vergebung erhielt, schwor Mehlar, seine Sichtweise zu überdenken, und bemüht sich fortan, sich nicht mehr von Hass leiten zu lassen.]]
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].source = "warcraft.wiki.gg/wiki/Mehlar_Dawnblade"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
-    {era = "Pre-Classic", text = "Studierte als junger Elf unter Uther dem Lichtbringer, fühlte sich beim Fall von Quel'Thalas jedoch von ihm im Stich gelassen."},
-    {era = "Classic", text = "Entsandte Abenteurer vom Bollwerk aus, um das Grabmal seines ehemaligen Mentors Uther zu schänden."},
-    {era = "Legion", text = "Schloss sich dem neugegründeten Orden der Silbernen Hand im Sanktum des Lichts an."},
-    {era = "Midnight", text = "Verteidigt die Parhelionplaza und die Insel von Quel'Danas als erfahrener Blutritter gegen die Leere."},
+    {era = "Pre-WC3", text = "Wurde von Uther Lichtbringer als Ritter der Silbernen Hand ausgebildet."},
+    {era = "WC3", text = "Er kämpfte an vielen Fronten gegen die Geißel und schloss sich später den Blutrittern an."},
+    {era = "Classic", text = "Er entweihte Uthers Grab und stellte sich dem Geist seines Mentors. Dabei erkannte er, dass Zorn und Gewalt nicht die Gefühle waren, von denen er sich leiten lassen wollte. Gemeinsam mit Sylvanas Windläufer arbeitete er an der Herstellung des Schmuckstücks „Geißelbann“."},
+    {era = "WoD", text = "Er folgte Lady Liadrin nach Draenor und half ihr dabei, Auchindoun gegen den Schattenrat zu verteidigen."},
+    {era = "Legion", text = "Er reiste erneut zu Uthers Grab, diesmal um es gegen rastlose Geister zu verteidigen. Später schloss er sich kurzzeitig wieder der Silbernen Hand an, nachdem Lady Liadrin ihre Blutritter dem neuen Hochlord unterstellte."},
+    {era = "DF", text = "Er war bei der Wiedererschaffung Tyrs und der Gründung des Ordens der Tyrs Hand anwesend."},
+    {era = "TWW", text = "Er half dabei, neue irdene Freiwillige für die Horde auszubilden."},
+    {era = "Midnight", text = "Während des ersten Angriffs auf den Sonnenbrunnen wurde Mehlar verletzt, schloss sich später jedoch erneut der Vorhut des Lichts im Kampf gegen die Leere an."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].name = "Danath Trollbann"
@@ -292,40 +332,116 @@ IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].name = "Hochexarch Turalyon"
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].race = "Mensch"
-IMAGOdb.npcs.CAT_LIGHT["turalyon"].lore = "Hochexarch Turalyon ist eine legendäre Gestalt und einer der ersten fünf Paladine der Silbernen Hand. Nach seinem Verschwinden auf Draenor kämpfte er jahrtausendelang an der Seite der Naaru als Anführer des Leuchtenden Heeres gegen die Brennende Legion. Als ein vom Licht erfüllter Unsterblicher verkörpert er den unerschütterlichen Widerstand gegen die Mächte der Finsternis. In Midnight führt er die Verteidigung der heiligen Stätten von Quel'Thalas an und steht als leuchtendes Bollwerk gegen die vordringende Leere, die nun seine Heimat und seine Familie bedroht."
+IMAGOdb.npcs.CAT_LIGHT["turalyon"].lore = [[Als einer der ersten Paladine des Ordens der Silbernen Hand wurde Turalyon zu einem der berühmtesten und verehrtesten Kriegshelden der Allianz. Er kämpfte als rechte Hand Anduin Lothars, und nachdem sein Kommandant im Kampf fiel, war es Turalyon, der die entscheidende Schlacht gegen die orcische Horde zugunsten der Allianz und des Heiligen Lichts entschied.
+
+Im Zweiten Krieg begegnete er der Frau, mit der er sein Leben teilen würde - Alleria Windläufer. Inmitten des Wahnsinns des Kriegs wurden aus den beiden schließlich drei. Doch als Turalyon und Alleria in die Heimatwelt der Orcs aufbrachen, um die Horde ein für alle Mal aufzuhalten, trafen sie die schwere Entscheidung, ihren Sohn Arator auf Azeroth zurückzulassen - im Wissen, dass sie ihn womöglich niemals würden aufwachsen sehen.
+
+Draenor zerbrach, und das Paar wurde fortgerissen, um als Teil der Armee des Lichts in einem tausend Jahre andauernden Krieg gegen die Brennende Legion zu kämpfen. Turalyon wurde unsterblich - ein lichtgeschmiedetes Bollwerk für Gerechtigkeit und Rechtschaffenheit. Alleria hingegen wandte sich der Magie der Leere zu, einer Macht, die in Turalyons Augen nichts als das reine Böses verkörpert.
+
+Nun, da die Brennende Legion besiegt wurde, sind Turalyon und Alleria nach Azeroth zurückgekehrt - in eine veränderte Welt. Sie müssen versuchen, eine Verbindung zu einem ihnen fremden Sohn aufzubauen, zu verstehen wie sie sich als Liebende so voneinander entfernen konnten, und vor allem erneut ihre Welt zu retten.]]
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].zones = {"Die Leerenspitze", "Immersangwald", "Insel von Quel'Danas", "Leerensturm", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["turalyon"].source = "warcraft.wiki.gg/wiki/Turalyon"
+IMAGOdb.npcs.CAT_LIGHT["turalyon"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["turalyon"].timeline = {
-    {era = "WC2", text = "Diente als rechte Hand von Anduin Lothar und übernahm nach dessen Tod das Kommando, um die Horde am Schwarzfels zu besiegen."},
-    {era = "WC2", text = "Führte die Allianz-Expedition durch das Dunkle Portal nach Draenor und blieb zurück, um Azeroth zu schützen, als das Portal zerstört wurde."},
-    {era = "Legion", text = "Rückkehr als Hochexarch des Leuchtenden Heeres und entscheidender Anführer im finalen Schlag gegen die Brennende Legion auf Argus."},
-    {era = "BfA/TWW", text = "Diente als Regent von Sturmwind und Lordkommandant der Allianzstreitkräfte während der Abwesenheit von König Anduin."},
-    {era = "Midnight", text = "Befehligt die Verteidigung der Insel von Quel'Danas und führt das Licht gegen die Leereninvasion von Xal'atath."},
+    {era = "Pre-WC1", text = "Wurde als Waisenkind der Kirche des Heiligen Lichts übergeben, um Priester zu werden."},
+    {era = "Pre-WC2", text = "Wurde einer der ersten fünf Paladine des Ordens der Silbernen Hand. Kämpfte als General von Anduin Lothar und entschied den Zweiten Krieg, indem er die Horde zurückdrängte. Lernte Alleria Windläufer kennen, bekam mit ihr einen Sohn und reiste in die Scherbenwelt, wo beide schließlich strandeten."},
+    {era = "Pre-WC3", text = "Reiste mit Alleria durch den Wirbelnden Nether und wurde in die Armee des Lichts eingezogen, um gegen die Brennende Legion zu kämpfen. Was auf Azeroth nur wenige Jahrzehnte dauern würde, bedeutete für sie tausend Jahre Krieg. Turalyon wurde lichtgeschmiedet."},
+    {era = "Legion", text = "Führte die finale Schlacht gegen die Legion in ihrer Festung Antorus an und besiegte die Dämonen. Nachdem sein Kreuzzug endlich beendet war, wurden er und Alleria wieder mit ihrem Sohn Arator vereint."},
+    {era = "Pre-BfA", text = "Rekrutierte die Armee des Lichts, insbesondere die Lichtgeschmiedeten Draenei, in die Reihen der Allianz. Turalyon führte sie an als ihr Hochexarch."},
+    {era = "BfA", text = "Half seinem alten Freund Danath Trollbann, die Schlacht um Stromgarde gegen die neue Horde zu gewinnen."},
+    {era = "Pre-SL", text = "Beteiligte sich an der Jagd auf Sylvanas Windläufer. Nutzte das Heilige Licht, um einen Zivilisten der Horde zu foltern."},
+    {era = "SL", text = "Wurde nach dem Verschwinden von Sturmwinds König Anduin Wrynn zum Regenten des Königreichs ernannt."},
+    {era = "Pre-DF", text = "Nahm an der Hochzeit von Lor'themar Theron und der Ersten Arkanistin Thalyssra teil, als Zeichen des guten Willens für den Waffenstillstand mit der Horde."},
+    {era = "DF", text = "Wurde unter den Adligen von Sturmwind recht beliebt, nachdem er die Allianz fünf Jahre lang kompetent regiert hatte. Half persönlich mit bei der Verteidigung Amirdrassils gegen Fyrakk den Lodernden."},
+    {era = "TWW", text = "Führte die Streitkräfte der Allianz auf der Insel von Dorn gegen Xal'ataths Armeen an und hielt persönlich die Front gegen die Neruber in Heilsturz."},
+    {era = "Pre-MN", text = "Vereitelte gemeinsam mit Alleria und Arator Windläufer ein Wiedererstarken der Brennenden Legion, wobei die drei sich scheinbar wieder als Familie annäherten. Dennoch entschied sich Alleria trotz all der gemeinsam verbrachten Jahre gegen eine Heirat, ließ Turalyon vor dem Altar zurück und brach ihm damit das Herz. In dieser Zeit verlor sich Turalyon immer häufiger in lichtblindem Fanatismus."},
+    {era = "Midnight", text = "Vom Sonnenbrunnen gerufen, um Silbermond gegen die Leere zu verteidigen, führte Turalyon erneut die Streitkräfte des Lichts an. Sein religiöser Eifer geriet außer Kontrolle, und in einem schrecklichen Unfall verletzte er seinen Sohn schwer, verlor jedoch dennoch nicht den Glauben an das Licht. Er stellte sich Xal'atath in ihrer Leerenspitze entgegen und ging gemeinsam mit Alleria im Dunkelbrunnen verloren."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].name = "Prophet Velen"
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].race = "Draenei"
-IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].lore = "Der Prophet Velen ist das spirituelle Oberhaupt der Draenei und eines der weisesten Wesen des Kosmos. Er führte sein Volk vor 25.000 Jahren von Argus fort, um der Verderbnis der Brennenden Legion zu entkommen. Velen ist untrennbar mit der Geschichte der Elfen verbunden: Nach dem Verrat von Kael'thas nutzte er den Funken des gefallenen Naaru M'uru, um den Sonnenbrunnen zu reinigen und ihn als Quelle von heiligem und arkanem Licht wiederherzustellen. In Midnight kehrt er an diesen heiligen Ort zurück, um Quel'Thalas gegen die Leere beizustehen."
+IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].lore = [[Von den Völkern Azeroths bewundert und geschätzt, führt der alte Prophet Velen die Draenei bereits seit über dreizehntausend Jahren an. Als Erwählter der Naaru wurde ihm durch Visionen des Lichts die Gabe der Voraussicht verliehen. Diese Visionen haben nicht nur mehrfach das Leben seines Volkes gerettet, sondern ihm auch die Zuversicht gegeben, an eine Zukunft glauben zu können, in der das Böse eines Tages aus dem Kosmos verschwindet.
+
+Velens Glaube an das Licht ist unerschütterlich, und seine Aufrichtigkeit sowie seine Güte haben sowohl Freunde als auch Feinde inspiriert - insbesondere Anduin Wrynn und Lady Liadrin.
+
+Daher überrascht es kaum, dass der Sonnenbrunnen ihn um Hilfe gerufen hat. Schließlich hatte Velen ihn bereits einst von der Verderbnis gereinigt... und er wird nicht zulassen, dass er erneut verdunkelt wird.]]
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].zones = {"Insel von Quel'Danas", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].source = "warcraft.wiki.gg/wiki/Velen"
+IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"].timeline = {
-    {era = "Pre-Classic", text = "Floh von Argus und führte die Draenei über Jahrtausende durch den Kosmos, gejagt von der Legion."},
-    {era = "TBC", text = "Stürzte mit der Exodar auf Azeroth ab und reinigte am Ende den Sonnenbrunnen mit dem Herzen von M'uru."},
-    {era = "Legion", text = "Führte den Angriff auf Argus an und konfrontierte schließlich seinen einstigen Bruder Kil'jaeden."},
-    {era = "Midnight", text = "Steht als Mentor und Verteidiger am Sonnenbrunnen, um die Leereninvasion von Xal'atath aufzuhalten."},
+    {
+        era = "Ancient",
+        text = [[Herrschte vor Jahrtausenden als Teil des Triumvirats über Argus. Als Sargeras den Eredar Macht und einen Platz in der Brennenden Legion anbot, lehnte Velen ab und sammelte so viele Anhänger wie möglich, bevor er dem Planeten entfloh. Kil'jaeden, einst Velen so nah wie ein Bruder, schwor, ihn für diesen Verrat zu jagen.]],
+    },
+    {
+        era = "Pre-WC1",
+        text = [[Nach Jahrtausenden auf der Flucht vor der Brennenden Legion stürzte die Genedar auf Draenor ab, und Velens Volk - nun als Draenei bekannt - strandete dort. Als Kil'jaeden sie schließlich fand, verdarb er die Orcs und trieb sie zum Völkermord gegen die Draenei an. Velen konnte nur knapp mit einer Handvoll Überlebender entkommen.]],
+    },
+    {
+        era = "WC2",
+        text = [[Überlebte die Zerschmetterung Draenors durch Ner'zhul, musste jedoch mit ansehen, wie seine ehemalige Heimat in den Wirbelnden Nether gerissen wurde.]],
+    },
+    {
+        era = "WC3",
+        text = [[Entwendete das Naaruschiff „Exodar“, welches sich im Besitz von Kael'thas Sonnenwanderer befand, um der Scherbenwelt zu entkommen. Die überlebenden Draenei wurden jedoch entdeckt und der Antrieb des Schiffes sabotiert - wodurch sie ziellos durch den Wirbelnden Nether trieben.]],
+    },
+    {
+        era = "Pre-TBC",
+        text = [[Jahre später verließ die Exodar die transdimensionalen Ebenen und stürzte auf der Azurmythosinsel in Kalimdor auf Azeroth ab. Die Verwundeten versorgt, erkundeten die Draenei ihre neue Welt - nur um festzustellen, dass sie von denselben Orcs bewohnt wurde, die ihr Volk einst auf Draenor abgeschlachtet hatten. Velen schloss sich, auf der Suche nach Verbündeten, der Allianz an und fand Trost in Gesellschaft der Menschen, Zwerge und Nachtelfen, welche ebenfalls an das Licht glaubten.]],
+    },
+    {
+        era = "TBC",
+        text = [[Drängte seine neuen Verbündeten dazu, die Invasion der Scherbenwelt voranzutreiben. Nach Kil'jaedens Niederlage auf dem Sonnenbrunnenplateau stellte Velen den verdorbenen Sonnenbrunnen mithilfe des verbliebenen Fragments des gefallenen Naaru M'uru wieder her. Anschließend inspirierte er die Blutritter - allen voran Lady Liadrin - dazu, künftig verantwortungsvoller mit dem Licht umzugehen.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Als seine Schamanen ihn vor Erdbeben und elementaren Unruhen warnten, die jenen auf Draenor erschreckend ähnelten, zog Velen kurzzeitig in Betracht, auch Azeroth zu verlassen. Letztlich entschied er sich jedoch dagegen. Müde vom ewigen Davonlaufen erklärte er Azeroth zur neuen Heimat seines Volkes und schwor, künftig für diese Welt zu kämpfen.]],
+    },
+    {
+        era = "Cata",
+        text = [[Nahm an einem Treffen der Anführer der Allianz in Darnassus teil und wurde dort vom jungen Anduin Wrynn gebeten, ihn als Schüler aufzunehmen und ihn in den Wegen des Lichts zu unterweisen. Velen stimmte zu und sah eine Vision eines deutlich älteren Anduin, der die Armeen ganz Azeroths in eine letzte Schlacht gegen einen alles verschlingenden Schatten führte.]],
+    },
+    {
+        era = "MoP",
+        text = [[Heilte Anduin Wrynn gemeinsam mit Pandarenmönchen, nachdem der Prinz verletzt worden war, als er versucht hatte, Garrosh Höllschrei allein aufzuhalten.]],
+    },
+    {
+        era = "Legion",
+        text = [[Verteidigte die Exodar und musste mit ansehen, wie sein eigener Sohn Rakeesh starb. Nahm am zweiten Angriff auf die Verheere Küste teil und stellte sich Kil'jaeden in einer letzten Schlacht im Wirbelnden Nether entgegen. Der Dämon und Velen führten noch ein letztes Gespräch, bevor der Betrüger starb. Gemeinsam mit Illidan Sturmgrimm und Khadgar führte Velen Azeroths Streitkräfte auf Argus an und wurde Zeuge der Niederlage der Brennenden Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Beteiligte sich an der Heilung von Azeroths Wunden, die Sargeras’ Schwert hinterlassen hatte. Versorgte persönlich die Flüchtlinge von Teldrassil.]],
+    },
+    {
+        era = "DF",
+        text = [[Organisierte das erste Tishamaat und vereinte damit zum ersten Mal auf Azeroth Draenei, Zerschlagene und Eredar. Half außerdem persönlich bei der Verteidigung von Amirdrassil gegen Fyrakk.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen, um ihn gegen den Leerensturm zu verteidigen. Beaufsichtigte die Magiewirker um den Sonnenbrunnen und war der Einzige, der keine magischen Verstärkungen benötigte, um weiterhin das Licht zu beschwören.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].name = "Calia Menethil"
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].race = "Lichtgebundene Untote"
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].lore = "Prinzessin Calia Menethil ist die letzte Erbin der Menethil-Dynastie und die Schwester von Arthas. Nachdem sie jahrzehntelang unter falschem Namen im Verborgenen lebte, trat sie während des Vierten Krieges wieder ins Rampenlicht, wurde jedoch von Sylvanas Windläufer getötet. Durch ein beispielloses Wunder des Lichts kehrte sie als einzigartige, lichtdurchflutete Untote zurück. In Midnight steht sie am Sonnenbrunnen als lebendes Paradoxon und Symbol der Hoffnung, um die Mächte des Lichts gegen die alles verschlingende Leere zu koordinieren."
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].race = "Verlassene des Lichts"
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].lore = [[Die bleiche Lady als politisch umstrittene Persönlichkeit zu bezeichnen, wäre eine gewaltige Untertreibung. Sie ist die Schwester des berüchtigten Arthas Menethil und die letzte verbliebene Erbin des Thrones von Lordaeron, welcher sich nun in den Händen der Verlassenen befindet - genau jener untoten Hände, die zu Arthas' ersten Opfern gehörten. Als Mitglied der Allianz und Priesterin des Lichts hatte Calia lange bestritten, jemals über ihr ehemaliges Volk herrschen zu wollen.
+
+Das änderte sich jedoch, als sie selbst getötet und von dem Naaru Saa'ra als Untote wiedererweckt wurde. Sie schloss sich der Horde an und wurde Mitglied des Trostlosen Rates der Verlassenen. Obwohl sie inzwischen den Wunsch gezeigt hat, ihrem Volk zu helfen und sich sogar für diesen Zweck in Gefahr begibt, scheint sie das volle Vertrauen der Verlassenen noch immer nicht gewonnen zu haben.
+
+Vorerst müssen ihre politischen Ambitionen - welcher Art sie auch sein mögen - jedoch warten. Das Licht hat sie nach Silbermond gerufen, und Calia ist dem Ruf gefolgt.]]
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].zones = {"Insel von Quel'Danas", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].source = "warcraft.wiki.gg/wiki/Calia_Menethil"
+IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["calia_menethil"].timeline = {
-    {era = "WC3", text = "Floh während der Zerstörung von Lordaeron durch ihren Bruder Arthas und lebte jahrelang unerkannt unter den Menschen."},
-    {era = "Legion", text = "Offenbarte sich Alonsus Faol und schloss sich der Conclave im Sanktum des Lichts an, um Priestern im Kampf gegen die Legion zu helfen."},
-    {era = "BfA", text = "Wurde bei der Zusammenkunft im Arathihochland von Sylvanas getötet und durch Saa'ra und Anduin als lichtgebundene Untote wiederbelebt."},
-    {era = "DF", text = "Nahm ihren Platz im Rat der Desolaten ein, um die Verlassenen in eine neue Ära ohne Sylvanas zu führen."},
-    {era = "Midnight", text = "Unterstützt die Verteidigung von Quel'Thalas und dient als diplomatische Brücke zwischen dem Licht und den Untoten."},
+    {era = "WC2", text = "Wurde gegen ihren Willen im Alter von nur 16 Jahren von ihrem Vater mit dem Adligen Lord Daval Prestor aus Alterac verlobt. Prestor, der in Wahrheit der Drache Todesschwinge war, verschwand nach dem Krieg, und Calia war erleichtert, unverheiratet zu bleiben."},
+    {era = "Pre-WC3", text = "Verliebte sich in einen einfachen Fußsoldaten der Armee Lordaerons und wurde mit seinem Kind schwanger."},
+    {era = "WC3", text = "Sie überlebte den Fall Lordaerons durch pures Glück und konnte gemeinsam mit ihrem Ehemann und gemeinsamer Tochter nach Süderstade fliehen, wo die drei eine Zeit lang heimlich glücklich zusammenlebten. Nach einem Angriff auf die Stadt wurde Calia von ihrer Familie getrennt."},
+    {era = "Pre-Legion", text = "Irgendwann vor der dritten Invasion der Brennenden Legion traf sie auf Alonsus Faol, der ihr den Unterschied zwischen der willenlosen Geißel und den Untoten der Verlassenen zeigte. Voller Hoffnung, dass ihre Familie unter den Verlassenen sein könnte, schloss sich Calia Alonsus an."},
+    {era = "Legion", text = "Sie trat dem Konklave bei und half Faol dabei, die Leerengöttin Saraka wieder in ihre heilige Naaru-Gestalt Saa'ra zurückzubringen. Außerdem half sie dabei, die Exodar gegen die Brennende Legion zu verteidigen."},
+    {era = "Pre-BfA", text = "Sie trat erneut als öffentliche Persönlichkeit auf und wurde von König Anduin Wrynn als rechtmäßige Herrscherin von Lordaeron angesehen. Sie nahm am so genannten Treffen teil, in der Hoffnung, ihre Familie wiederzusehen. Dort gab sie sich zu erkennen und forderte die Verlassenen auf, zur Allianz zu desertieren. Anstatt ihre Liebsten wiederzufinden, fand sie im darauffolgenden Massaker nur den Tod. Saa'ra und Anduin erweckten sie als Untote des Lichts wieder zum Leben."},
+    {era = "BfA", text = "Nach dem Ende des Vierten Krieges freundete sich Calia mit Derek Prachtmeer an, der ebenfalls zu einem Untoten gemacht worden war. Beide beschlossen, sich der Horde anzuschließen, und Calia erklärte, dass sie nicht nur ihrem Volk helfen, sondern auch den Namen Menethil rehabilitieren wolle."},
+    {era = "Pre-SL", text = "Sie übernahm die Rolle einer Beraterin der Verlassenen und trat dem Rat der Horde als Anführerin bei. Außerdem begleitete sie Thrall auf einer diplomatischen Mission zu den Überresten von Teldrassil."},
+    {era = "SL", text = "Sie reiste in die Schattenlande und half im Feldzug gegen den Kerkermeister. Später spielte Calia eine entscheidende Rolle bei der Rückeroberung der Unterstadt von der Seuche des Vierten Krieges und nutzte ihr Licht als Schutzschild gegen das verbleibende Gift. Sie trat dem Trostlosen Rat als eine seiner Anführerinnen bei, ernannte Derek Prachtmeer zu ihrem Champion und schwor, die Truppen der Verlassenen aus Gilneas abzuziehen."},
+    {era = "DF", text = "Sie leitete erfolgreich den Gegenangriff der Verlassenen, nachdem der Scharlachrote Kreuzzug gegen die Unterstadt vorgerückt war. Sie hielt Wort und zog nicht nur ihre untoten Truppen aus den Ruinen von Gilneas ab, sondern half auch persönlich König Genn Graumähne und Prinzessin Tess dabei, die Stadt der Worgen von der Besatzung des Scharlachroten Kreuzzugs zurückzuerobern."},
+    {era = "Midnight", text = "Sie wurde vom Sonnenbrunnen gerufen und verteidigte Silbermond gegen den Leerensturm."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].name = "Taelia Fordragon"
@@ -384,13 +500,22 @@ IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].name = "Lord Grayson Schattenbruch"
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].race = "Mensch"
-IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].lore = "Lord Grayson Schattenbruch ist ein hochangesehener Paladin-Meister der Silbernen Hand. Jahrelang diente er in der Kathedrale des Lichts in Sturmwind als Mentor und war maßgeblich an der Ausbildung und Ausrüstung der ritterlichen Kavallerie beteiligt. Während der Invasion der Brennenden Legion schloss er sich dem reformierten Orden im Sanktum des Lichts an. In Midnight führt er seine jahrzehntelange Erfahrung an die Fronten von Quel'Thalas, um die Verteidigung des Sonnenbrunnens mit dem heiligen Zorn der Silbernen Hand zu unterstützen."
+IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].lore = [[Der wichtigste menschliche Paladinausbilder und ein erfahrener Kämpfer des Ordens der Silbernen Hand, ist seit Jahrzehnten ein unverzichtbarer Teil der Allianz.
+
+Er ist nicht nur für die Ausbildung neuer Rekruten verantwortlich und hilft ihnen dabei, zu leuchtenden Vorbildern der Rechtschaffenheit zu werden, sondern überwacht auch Bedrohungen in ganz Azeroth und entsendet bei Bedarf Verstärkungen.
+
+Schattenbruch ist ein Paladin mit sehr traditionellen Werten und verachtet die Untoten nach wie vor zutiefst. Er ist weder besonders freundlich noch nachsichtig – weder mit seinen Schülern noch mit seinen Feinden –, strebt letztlich jedoch danach, das Beste für die Allianz und den Orden der Silbernen Hand zu erreichen.]]
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].source = "warcraft.wiki.gg/wiki/Lord_Grayson_Shadowbreaker"
+IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].timeline = {
-    {era = "Classic", text = "Unterrichtete junge Paladine in Sturmwind und half ihnen, ihre heiligen Streitrosse zu beschwören."},
-    {era = "Legion", text = "Schloss sich der Conclave im Sanktum des Lichts an, um den Orden der Silbernen Hand gegen Sargeras' Legion zu vereinen."},
-    {era = "Midnight", text = "Kommandiert Truppen der Silbernen Hand auf der Insel von Quel'Danas zur Verteidigung des Lichts."},
+    {era = "Pre-Classic", text = "Wurde von seiner Schwester Jubeka besucht, die nach der Geißelung von Lordaeron zu einer Verlassenen geworden war. Grayson jagte sie voller Abscheu fort, da er in ihr nichts weiter als ein Monster sah."},
+    {era = "Classic", text = "In Sturmwind stationiert überwachte er Bedrohungen in ganz Azeroth und vergab Aufträge sowohl an neue als auch erfahrene Paladine. Er half anderen Paladinen dabei, ihre heiligen Streitrosse zu erhalten – treue Reittiere, die jedem Ritter des Ordens als loyale Gefährten dienen."},
+    {era = "TBC", text = "Er schloss sich der Expedition in die Scherbenwelt an, mit Arator Windläufer als seinem Knappen, und kämpfte gegen die Höllenorcs in der Höllenfeuerzitadelle."},
+    {era = "Pre-Cata", text = "Bei der Zeremonie zu Ehren der gefallenen Allianzhelden von Nordend servierte er Speisen und Getränke und bewies damit, dass keine Aufgabe für einen Paladin seines Ranges zu bescheiden ist, solange sie anderen hilft."},
+    {era = "Cata", text = "Er entsandte Paladintruppen, um einige der größten Bedrohungen Azeroths zu bekämpfen, darunter die Orcs und Dunkeleisenzwerge des Schwarzfels."},
+    {era = "Legion", text = "Er wurde damit beauftragt, die verschiedenen Paladinorden in der Kapelle des hoffnungsvollen Lichts aufeinander abzustimmen, und vereitelte eine neue untote Bedrohung in den Östlichen Pestländern. Erlöste Schattenmähne, das untote Pferd des verstorbenen Barons Totenschwur, und machte es zum heiligen Reittier des Hochlords der Silbernen Hand. Später kämpfte er auf Argus gegen die Brennende Legion."},
+    {era = "Pre-MN", text = "Nun in der Kapelle des hoffnungsvollen Lichts als oberster Paladinlehrer stationiert, war er bei der Beförderung seines ehemaligen Knappen Arator anwesend. Er leugnete die Existenz seiner Schwester."},
+    {era = "Midnight", text = "Er wurde vom Sonnenbrunnen gerufen und verteidigte Silbermond gegen den Leerensturm."},
 }
 
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].name = "Eadric der Reine"
@@ -650,15 +775,26 @@ IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl"].timeline = {
 
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].name = "Handelsprinz Monte Gazlowe"
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].race = "Goblin"
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = "Monte Gazlowe ist einer der genialsten Ingenieure Azeroths und hat eine steile Karriere hinter sich. Einst der neutrale Chef von Ratchet und Erbauer von Orgrimmar, trat er nach dem Verrat von Jastor Gallywix dessen Nachfolge an. Heute ist er der Handelsprinz des Bilgewasserkartells und vertritt die Goblins im Rat der Horde. In The War Within bewies er wahre Führungsstärke, als er die Expedition tief hinab nach Lorenhall (Undermine) führte, um Gallywix' Schwarzblut-Syndikat zu zerschlagen und eine Revolution gegen die korrupten Kartelle anzuzetteln. In Midnight verlegt er seine brillante Ingenieurskunst an die Fronten von Harandar und der Höhle, um die Verteidigungslinien der vereinten Streitkräfte mit massiver goblinischer Feuerkraft auszustatten."
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = [[Der Architekt von Orgrimmar und Handelsprinz des Bilgewasserkartells ist eines der wichtigsten Mitglieder der Horde, auch wenn sein Einfluss meist eher im Hintergrund spürbar ist. Er ist kein Kämpfer, betrachtet sich selbst nicht als Helden und wird von den meisten lediglich als ein weiterer gieriger Goblin gesehen.
+Doch das entspricht nicht dem, was unter der Oberfläche liegt, und jene, die ihn über den ersten Eindruck hinaus kennen, wissen, dass dieser Goblin unter all seiner Gerissenheit und seines Sarkasmus ein großes Herz besitzt.
+
+Seine Reformen haben den ausgebeuteten Arbeitern seines Kartells zum ersten Mal in der Geschichte seiner Kultur Sicherheit und Rechte verschafft. Aus Loyalität hat er viele seiner Verbündeten innerhalb der Horde finanziell unterstützt, ohne dabei viel als Gegenleistung zu verlangen. Außerdem spielte er eine entscheidende Rolle dabei, revolutionäre Veränderungen in Lorenhall herbeizufen, obwohl er sich ursprünglich nicht einmischen wollte.
+
+Er hat eine Freundschaft mit Orweyna aufgebaut, und die beiden haben begonnen, einander ihre Kulturen näherzubringen.]]
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].zones = {"Die Höhle", "Harandar"}
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].source = "warcraft.wiki.gg/wiki/Monte_Gazlowe"
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].timeline = {
-    {era = "WC3", text = "Arbeitete als freier Auftragnehmer für Thrall und leitete als Chefingenieur den Bau der Hauptstadt Orgrimmar."},
-    {era = "BfA", text = "Übernahm nach Gallywix' Flucht die Führung des Bilgewasserkartells und integrierte die Goblins fest in den Rat der Horde."},
-    {era = "WoD", text = "Leitete als Architekt den Aufbau der Horde-Garnison (Frostwall) auf dem alternativen Draenor."},
-    {era = "TWW", text = "Führte die Truppen in Patch 11.1 nach Lorenhall, um die Ausbeutung durch Gallywix und Xal'atath zu stoppen."},
-    {era = "Midnight", text = "Errichtet in Harandar und der Höhle schwer bewaffnete technische Außenposten zur militärischen Unterstützung."},
+    { era = "Pre-WC3", text = "Schwer desillusioniert verließ Gazlowe Lorenhall mit dem Gedanken nie wieder zurückzukehren. Er schloss sich gemeinsam mit seinem alten Freund Marin Noggenfogger dem Dampfdruckkartell an." },
+    { era = "WC3", text = "Wurde von Kriegshäuptling Thrall beauftragt, den Bau von Orgrimmar zu überwachen." },
+    { era = "Classic", text = "Gründete mit dem Geld, das er nach der Fertigstellung Orgrimmars verdiente, die Hafenstadt Ratschet im Brachland. Aus Dankbarkeit gegenüber Thrall unterstützte er weiterhin die Orcs in Durotar, blieb offiziell jedoch neutral und erlaubte sowohl Horde als auch Allianz Zugang zu seiner Stadt. Er hielt die Küste des Hordengebiets frei von Piraten." },
+    { era = "Pre-Cata", text = "Wurde erneut von Thrall bezahlt, um Orgrimmar wiederaufzubauen, nachdem Teile der Stadt durch randalierende Elementare beschädigt worden waren. Später wurde er von Baine Bluthuf um Hilfe gebeten, um Donnerfels zu befreien. Gazlowe schickte drei Zeppeline, zahlreiche Söldner und eine gewaltige Menge Sprengstoff und wollte dafür nur eine moderate Aufwandsentschädigung." },
+    { era = "Cata", text = "Um keinen Profit im Fraktionskrieg zu verlieren, blieb Gazlowe offiziell neutral. Als jedoch ein Admiral der Allianz versuchte, die Handelsrouten zwischen Orgrimmar und Ratschet zu blockieren, ließ Gazlowe dessen Fracht und Schiffe kurzerhand zerstören." },
+    { era = "WoD", text = "Wurde von Kriegshäuptling Vol'jin angeheuert, um die Garnison der Horde im Frostfeuergrad sowie verschiedene Außenposten und eine Werft zu errichten. Versorgte die Horde in Talador mit Maschinen und konnte - mit Unterstützung von Thaelin Schwarzamboss - einen Eisenstern einsetzen, um bei der Befreiung von Shattrath zu helfen. Später konstruierte er eine Belagerungsmaschine, die das Tor von Tanaan zerstörte." },
+    { era = "BfA", text = "Half Prinz Erazmin und der Allianz dabei, Mechagon von der grausamen Herrschaft von König Mechagon zu befreien. Schloss sich außerdem Varok Saurfangs Rebellion gegen Sylvanas Windläufer an. Nachdem Handelsprinz Gallywix geflohen war, trat Gazlowe der Horde offiziell als neuer Handelsprinz des Bilgewasserkartells bei. Von Thrall wurde er in den Rat der Horde berufen und über die Jahre waren die beiden gute Freunde geworden." },
+    { era = "Pre-SL", text = "Versuchte nach dem Vierten Krieg, die internen Probleme der Horde zu bewältigen, musste jedoch einsehen, dass die Jagd auf Sylvanas Windläufer Vorrang hatte." },
+    { era = "Pre-TWW", text = "Traf eine Vereinbarung mit Marin Noggenfogger, um ihre Kartelle enger zusammenzuführen, und setzte bessere Arbeitsbedingungen für die Goblins des Dampfdruckkartells durch." },
+    { era = "TWW", text = "Unterstützte die Expedition von Heilsturz in Azj-Kahet und bemerkte dabei Goblins der Venture Company, die dort herumschnüffelten. Arbeitete gemeinsam mit Renzik „das Messer“ und Orweyna daran, Gallywix’ Abmachung mit Xal'atath aufzudecken, und befreite schließlich Lorenhall von Gallywix’ Tyrannei. Zusammen mit Mathias Shaw verstreute er Renziks Asche, nachdem dieser sich für Gazlowe geopfert hatte. Anschließend wurde Gazlowe Teil des neuen Rats von Lorenhall." },
+    { era = "Midnight", text = "Nachdem Orweyna ihm in Lorenhall geholfen hatte, versprach Gazlowe ihr, nach Harandar zu kommen und ihre Kultur kennenzulernen. Er genoss es, mehr über die Hara'ti zu erfahren." },
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["fiona"].name = "Fiona"
@@ -751,6 +887,25 @@ IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].timeline = {
     {era = "DF", text = "Nun Häuptling des Schwarzfelsclans, war er maßgeblich an der Wiederbelebung des Kosh'harg-Festes beteiligt – einer jährlichen Feierlichkeit, bei der Orcs aller Clans zusammenkommen."},
     {era = "TWW", text = "Agierte als Berater für Geya'rah, der Anführerin der Mag'har, und spielte eine aktive Rolle bei der Entlarvung des wahren Feindes im Arathihochland: Der Roten Dämmerung. Gemeinsam besiegten sie deren Anführer, Marran Trollbann."},
     {era = "Pre-Midnight", text = "Wurde schließlich zum Mitglied der Söhne Lothars ernannt und wird seither zu deren Versammlungen herbeigerufen, um über die Bedrohungen für Azeroth zu beraten."}
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].name = "Kurdran Wildhammer"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].race = "Zwerg"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].lore = [[Als ein Anführer des Wildhammerklans und talentierter Greifenreiter gehörte Kurdran Wildhammer zu den ersten Zwergen, die im Zweiten Krieg gegen die einfallenden Orcs zu den Waffen griffen. Er schloss sich der Allianz von Lordaeron an und folgte schließlich Hochgeneral Turalyon durch das Dunkle Portal nach Draenor. Er schloss eine tiefe Freundschaft mit den Söhnen Lothars.
+
+Nachdem er zwei Jahrzehnte auf der zerstörten Orcwelt überlebt hatte, kehrte er nach Azeroth zurück. Für eine Zeit versuchte sich Kurdran in der Politik und fungierte kurzzeitig als Vertreter des Wildhammerklans in Eisenschmiede, bevor er sich vorübergehend zur Ruhe setzte.
+
+Nun, wiedervereint mit seinen alten Freunden, ist Kurdran erneut bereit, für das Wohl Azeroths zu kämpfen.]]
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].zones = {"Arcantina", "Brennende Steppe", "Silbermond"}
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].timeline = {
+    {era = "WC2", text = "Kämpfte gegen die Horde und half dabei, sie zurückzuschlagen. Folgte später Turalyons Expedition nach Draenor, um die Bedrohung durch die Orcs endgültig zu beenden. Entschied sich, dort zurückzubleiben, und stellte sicher, dass das Dunkle Portal geschlossen wurde und Azeroth geschützt blieb."},
+    {era = "TBC", text = "Verteidigte eine Festung im Schattenmondtal und unterstützte Allianz-Abenteurer im Kampf gegen Illidan Sturmgrimm und die Brennende Legion."},
+    {era = "Pre-Cata", text = "Vertrat kurzzeitig den Wildhammerklan im Rat der drei Hämmer in Eisenschmiede, überließ seinen Platz jedoch schließlich Falstad Wildhammer."},
+    {era = "Cata", text = "Half dabei, die verschiedenen Wildhammerklans zu vereinen und sie in die Allianz aufzunehmen. Seine treue Greifin Hori'zee kam bei einem Feuer ums Leben, doch Kurdran konnte ihr letztes Ei retten."},
+    {era = "Pre-TWW", text = "Knüpfte in Valdrakken eine Verbindung zu den Sturmkrähen. Trainierte den Abenteurer darin, ein elementarer Greifenreiter zu werden."},
+    {era = "TWW", text = "Schloss sich seinen Freunden Turalyon und Danath Trollbann auf der Insel von Dorn an. Gemeinsam mit Hori'zees jetzt ausgewachsenen letztem Küken begann Kurdran damit, neue irdene Greifenreiter auszubilden."},
+    {era = "Midnight", text = "Half Arator dabei, mehr über die Geschichte seines Vaters Turalyon und dessen Rolle im Zweiten Krieg zu erfahren. Führte Helden zur Arkantine, einem Zuhause fern der Heimat für Abenteurer aus ganz Azeroth."}
 }
 
 -- CAT_EBON_BLADE
@@ -875,15 +1030,74 @@ IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].name = "Koltira Todesweber"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].race = "Untoter Hochelf"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].lore = [[Koltira Todesweber kämpfte und starb für Silbermond, als Arthas Menethil und die Geißel durch ihre Tore marschierten. Der Tod bedeutete jedoch nicht das Ende für ihn, denn schon bald wurde er als Todesritter wiedererweckt.
+
+Unter Arthas’ Kontrolle war er gezwungen, für genau jene Armee zu töten, die alles zerstört hatte, was er einst gekannt und geliebt hatte. Trotz ihrer grausamen Umstände entwickelte er eine echte Freundschaft zu Thassarian – dem Mann, der ihn getötet hatte. Beide wurden schließlich von der Gedankenkontrolle des Lichkönigs befreit und entschieden sich, für die neu gegründeten Ritter der schwarzen Klinge zu kämpfen, und schworen, ganz Azeroth vor den Untoten zu beschützen.
+Koltira schloss sich der Horde an und fungierte als Gesandter seiner Mitstreiter, den Todesrittern.
+
+Obwohl sie sich im Verlauf der Fraktionskriege zeitweise auf gegnerischen Seiten wiederfanden, blieben Koltira Todesweber und Thassarian enge Freunde.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].zones = {"Östliche Pestländer"}
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].source = "Cadash"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].timeline = {
+    {
+        era = "WC3",
+        text = [[Starb bei der Verteidigung von Silbermond durch Thassarians Schwert. Wurde anschließend als Todesritter wiedererweckt und gezwungen, für die Geißel zu kämpfen.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Wurde von der Gedankenkontrolle des Lichkönigs befreit und schwor, Azeroth gemeinsam mit den neu gegründeten Rittern der schwarzen Klinge zu verteidigen. Schloss sich der Horde an und kämpfte in Nordend, wobei er seine Erfahrung als Todesritter einsetzte, um die Zitadelle des Lichkönigs in Eiskrone zu stürmen.]],
+    },
+    {
+        era = "Cata",
+        text = [[Wurde von Sylvanas Windläufer in Unterstadt eingesperrt, da er während der Schlacht um Andorhal einen Waffenstillstand zwischen Horde und Allianz anstrebte.]],
+    },
+    {
+        era = "Legion",
+        text = [[Wurde von Thassarian aus der Gefangenschaft befreit und schloss sich anschließend dem Kampf gegen die Brennende Legion an.]],
+    },
+    {
+        era = "SL",
+        text = [[Folgte Bolvar Fordragon in die Schattenlande, um Sylvanas aufzuhalten.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Half bei der Verteidigung der Kapelle des hoffnungsvollen Lichts.]],
+    }
+}
+
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexuskönig Salhadaar"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Astraler"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].lore = "Einst der machthungrige Anführer des Ätherneums im Nethersturm der Scherbenwelt. Salhadaar versuchte schon damals, sein Volk in reine Leerenenergie umzuwandeln, bevor er von Abenteurern besiegt wurde. In Midnight kehrt er als vollendete Entität der Leere zurück. Er befehligt nun Truppen im Leerensturm unter Xal'ataths Banner und ist der lebende Beweis dafür, was aus den Astralen wird, wenn sie sich der Dunkelheit völlig hingeben."
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].zones = {"Leerensturm"}
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].source = "warcraft.wiki.gg/wiki/Nexus-King_Salhadaar"
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Leerenastraler"
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].lore = [[Für lange Zeit kannte Nexuskönig Salhadaar nichts außer Verzweiflung und Leid. Vor Jahrtausenden herrschte er über die Bewohner des Planeten K'aresh, bevor dieser von der Leere verschlungen wurde.
+
+Den Verlust der eigenen Welt und des eigenen Körpers zu ertragen, genügt, um selbst die stärkste Seele in den Wahnsinn zu treiben - und Salhadaar bildete dabei keine Ausnahme. Er führte sein Volk, das nun als Astrale bekannt wurde, in den Dienst von Dimensius den alles Verschlingenden, jenem Leerenfürsten, der ihm alles genommen hatte, was er einst gekannt hatte.
+
+Nachdem er von den Helden Azeroths besiegt worden war, wurde Salhadaar von Xal'atath in ihren Dienst gezwungen und musste erneut einem Wesen der Leere gehorchen. Widerwillig und ohne Hoffnung auf einen Ausweg aus diesem Pakt stellen sich der Nexuskönig und seine Astralen der Schattenwache nun erneut den vereinten Streitkräften Azeroths entgegen.]]
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].zones = {"Die Leerenspitze", "Leerensturm"}
+IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].source = "Cadash"
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].timeline = {
-    {era = "TBC", text = "Führte das Ätherneum im Nethersturm an und wurde getötet, als er versuchte, die Energien der Leere zu meistern."},
-    {era = "Midnight", text = "Kehrt als mächtige Leerenentität im Leerensturm zurück, um Xal'ataths Befehle auszuführen."},
+    {
+        era = "Ancient",
+        text = [[Herrschte als Hohepriester über die Bewohner K'areshs und entschied sich, die Warnungen von Raumgänger vor der herannahenden Leere zu ignorieren. Letztlich machte er ihn sogar für das verantwortlich, was folgen sollte. Als Dimensius der alles Verschlingende erschien, verlor Salhadaar seinen physischen Körper und K'aresh wurde zerstört. Gemeinsam mit seinem Volk floh er in den Wirbelnden Nether.]],
+    },
+    {
+        era = "TBC",
+        text = [[Unter dem Vorwand, Dimensius besiegen zu wollen, gründete Salhadaar die Schattenwache und suchte nach Fragmenten des Leerenfürsten. Er verwandelte einige seiner eigenen Astralen in Wesen der Leere, bevor er von den Abenteurern Azeroths und rebellierenden Astralen getötet wurde.]],
+    },
+    {
+        era = "TWW",
+        text = [[Von der Leere neu erschaffen, kommandierte Salhadaar die Streitkräfte der Schattenwache auf K'aresh. Beinahe konnte er Dimensius zurückzubringen, bevor er erneut besiegt wurde. Anschließend wurde er von Xal'atath gefangen genommen.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Unter Todesdrohung erklärte er sich bereit, Xal'ataths Befehlen zu folgen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Es gelang ihm, den Naaru T'era wie von Xal'atath befohlen zur Leere zu verderben. Anstatt ihn dafür zu belohnen, durchflutete Xal'atath ihn jedoch mit übermäßiger Leerenenergie. Der nun vollkommen wahnsinnige Salhadaar wurde gezwungen, gegen die Vorhut des Lichts in der Leerenspitze zu kämpfen. Dort fand er schließlich zum letzten Mal den Tod - und nahm sein Ende mit Erleichterung an.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_VOID["l_ura"].name = "L'ura"

@@ -1099,7 +1099,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].timeline = {
     {era = "TBC", text = "Held a stronghold in Shadowmoon Valley and helped Alliance adventurers against Illidan Stormrage and the Burning Legion."},
     {era = "Pre-Cata", text = "Briefly represented the Wildhammer clan in the Council of Three Hammers in Ironforge, but conceded his position to Falstad Wildhammer instead."},
     {era = "Cata", text = "Helped to unite the various Wildhammer clans and welcomed them into the Alliance. His faithful gryphon mount Sky'ree was lost in a fire but Kurdran could save her last egg."},
-    {era = "Pre-TWW", text = "Bonded with the stormrooks in Valdrakken and trained the Champion to be an elemental gryphon rider."}
+    {era = "Pre-TWW", text = "Bonded with the stormrooks in Valdrakken and trained the Champion to be an elemental gryphon rider."},
     {era = "TWW", text = "Joined his friends Turalyon and Danath Trollbane on the Isle of Dorn. Alongside his now fully-grown new mount Sky'reen, Kurdran began training new Earthen gryphon riders."},
     {era = "Midnight", text = "Helped Arator learn the history of his father, Turalyon, and his part in the events of the Second War. Introduced heroes to the Arcantina, a home away from home for adventurers from all over Azeroth."}
 }
@@ -1258,6 +1258,44 @@ IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].timeline = {
     {
         era = "Midnight",
         text = [[Helped defend Light's Hope Chapel.]],
+    }
+}
+
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].name = "Thoras Trollbane"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].race = "Human"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].lore = [[Loved by his people and feared by his enemies, Thoras Trollbane was the warrior king of Stromgarde, and a founding member of the Alliance of Lordaeron.
+
+After the defeat of the orcs in the Second War, Thoras disagreed with the policy of keeping the surviving orcs in internment camps, openly calling for them to be executed. When Lordaeron refused, Trollbane bitterly withdrew his support from the Alliance.
+
+At some point after the death of King Terenas Menethil, Thoras was murdered by his son Galen.
+
+During the Burning Legion’s third invasion, the Knights of the Ebon Blade raised Thoras as a member of the Four Horsemen. Believing that he had failed as a father and as a king, Thoras joined them in order to preserve peace in Azeroth.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].zones = {"The Dreamrift", "The Voidspire", "Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].source = "Travanoid"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Led the armies of Stromgarde into battle in several wars with the kingdom of Alterac.]],
+    },
+    {
+        era = "WC2",
+        text = [[Joined the Alliance of Lordaeron as a founding member, defending the Northlands from Horde invasion through the overtaken Dwarven realm of Khaz Modan. Later, he and his armies helped break the siege of Lordaeron by stopping Horde forces from moving through the Alterac Mountains. After the war, he was murdered by his son Galen.]],
+    },
+    {
+        era = "Legion",
+        text = [[Raised into undeath by the Knights of the Ebon Blade as a member of the Four Horsemen. Joined the assault on the Scarlet Monastery and the battle against demons at the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Worked to acquire fallen Horde and Alliance heroes and raised them as a new generation of death knights.]],
+    },
+    {
+        era = "SL",
+        text = [[Accompanied Bolvar Fordragon and a cadre of adventurers to the attack on the Sanctum of Domination.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Aided in the defense of Light’s Hope Chapel while the Argent Crusade was occupied with the defense of the Sunwell.]],
     }
 }
 
