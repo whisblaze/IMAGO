@@ -8,7 +8,7 @@ IMAGOdb.npcs.CAT_LIGHT = IMAGOdb.npcs.CAT_LIGHT or {}
 
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"] = {
     displayID = 248321,
-    ids = {239858, 240769, 242611, 248321},
+    ids = {248321, 239858, 240769, 242611},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -36,7 +36,7 @@ IMAGOdb.npcs.CAT_LIGHT["turalyon"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen"] = {
     displayID = 251869,
-    ids = {251869, 239623, 251944, 253146, 246271, 256008, 242740, 246669},
+    ids = {251869, 239623, 242740, 246271, 253146, 251944, 256008, 246669},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -64,7 +64,7 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"] = {
     displayID = 248318,
-    ids = {248318, 242614, 245605, 242507},
+    ids = {248318, 242614, 245605, 242507, 263563},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -78,7 +78,7 @@ IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"] = {
     displayID = 247929,
-    ids = {247929, 239494, 246779},
+    ids = {247929, 239494, 246779, 246657},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -119,8 +119,8 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"] = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"] = {
-    displayID = 239483,
-    ids = {239483, 238277, 240777, 243432, 246672, 247925},
+    displayID = 247925,
+    ids = {247925, 239483, 238277, 240777, 243432, 246672},
     zones = {},
     category = "CAT_LIGHT",
 }
