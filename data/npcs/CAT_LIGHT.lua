@@ -97,6 +97,14 @@ IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"] = {
     category = "CAT_LIGHT",
 }
 
+IMAGOdb.npcs.CAT_LIGHT["fiona"] = {
+    displayID = 243406,
+    ids = {243406, 246659},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
+
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"] = {
     displayID = 249268,
     ids = {249268, 250581, 235477, 236657, 241546, 235713, 235606, 235648, 235504, 235530, 235394, 235522, 235649, 235486, 250265, 235777, 235473, 235603, 235535, 240381, 242531, 243688, 240673, 240230, 235647, 239980, 235725, 252738, 239416, 244034, 246121, 240020},

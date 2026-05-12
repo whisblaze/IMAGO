@@ -658,6 +658,38 @@ IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].timeline = {
     {era = "Midnight", text = "Provides spiritual support and healing at Parhelion Plaza during the Void siege."},
 }
 
+-- FIONA --
+IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = [[Caring and loyal, this worgen woman and her caravan have been traveling all over Azeroth for many years. She earns her livelihood as a traveling herbalist and healer, but her heart yearns for the companionship of the different people she meets on her adventures. She is all too happy to lend travelers a ride on her stagecoach and can't walk past souls in need without stopping to help however she can. It is a simple life, but Fiona is very fulfilled by it.  
+Her two closest friends are the paladins Tarenar Sunstrike and Gidwin Goldbraids, who frequently accompany her.
+
+The Sunwell has sensed her compassion and willingness to help others and has called her to Silvermoon to defend it. As always, Fiona will do whatever she can.]]
+IMAGOdb.npcs.CAT_LIGHT["fiona"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["fiona"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].timeline = {
+    {
+        era = "Cata",
+        text = [[Traveled the Eastern Plaguelands with Tarenar and Gidwin. They stopped multiple times and helped the paladins of Light's Hope Chapel before settling in the sanctuary for the time being. Made several friends and acquaintances along the way like Argus Highbeacon, the ghost of Pamela Redpath and Vex'tul.]],
+    },
+    {
+        era = "WoD",
+        text = [[Traveled to Draenor and helped with the threat of the botani in Shadowmoon Valley. Parked the caravan in Lunarfall Garrison for a while to help the Alliance commander. Fiona found an interest in watching the fights in the ogre coliseum of Highmaul.]],
+    },
+    {
+        era = "BfA",
+        text = [[Traveled to Boralus and put up shop there for a while.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Dragonscale Expedition and explored the Dragon Isles in her caravan.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought on the Isle of Quel'Danas.]],
+    }
+}
+
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"].name = "Lothraxion"
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"].race = "Lightforged Dreadlord"
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"].lore = "Lothraxion is an absolute rarity in the cosmos: he is a nathrezim (dreadlord) forged with the Holy Light by the prime naaru Xe'ra. As a high-ranking commander of the Army of the Light, his loyalty to the Light appears unwavering, even though his true origins from the Shadowlands often arouse deep suspicion among some. In Midnight, he coordinates the Light's massive military offensive and can be found on the front lines of nearly every crisis zone in Quel'Thalas and the Voidstorm."
@@ -989,38 +1021,6 @@ IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].timeline = {
     {
         era = "Midnight",
         text = [[After Orweyna helped him in Undermine, Gazlowe promised to come to Harandar and experience her culture. He enjoyed learning about the Hara'ti.]],
-    }
-}
-
--- FIONA --
-IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
-IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
-IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = [[Caring and loyal, this worgen woman and her caravan have been traveling all over Azeroth for many years. She earns her livelihood as a traveling herbalist and healer, but her heart yearns for the companionship of the different people she meets on her adventures. She is all too happy to lend travelers a ride on her stagecoach and can't walk past souls in need without stopping to help however she can. It is a simple life, but Fiona is very fulfilled by it.  
-Her two closest friends are the paladins Tarenar Sunstrike and Gidwin Goldbraids, who frequently accompany her.
-
-The Sunwell has sensed her compassion and willingness to help others and has called her to Silvermoon to defend it. As always, Fiona will do whatever she can.]]
-IMAGOdb.npcs.CAT_LIGHT["fiona"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["fiona"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["fiona"].timeline = {
-    {
-        era = "Cata",
-        text = [[Traveled the Eastern Plaguelands with Tarenar and Gidwin. They stopped multiple times and helped the paladins of Light's Hope Chapel before settling in the sanctuary for the time being. Made several friends and acquaintances along the way like Argus Highbeacon, the ghost of Pamela Redpath and Vex'tul.]],
-    },
-    {
-        era = "WoD",
-        text = [[Traveled to Draenor and helped with the threat of the botani in Shadowmoon Valley. Parked the caravan in Lunarfall Garrison for a while to help the Alliance commander. Fiona found an interest in watching the fights in the ogre coliseum of Highmaul.]],
-    },
-    {
-        era = "BfA",
-        text = [[Traveled to Boralus and put up shop there for a while.]],
-    },
-    {
-        era = "DF",
-        text = [[Joined the Dragonscale Expedition and explored the Dragon Isles in her caravan.]],
-    },
-    {
-        era = "Midnight",
-        text = [[Was summoned by the Sunwell and fought on the Isle of Quel'Danas.]],
     }
 }
 
