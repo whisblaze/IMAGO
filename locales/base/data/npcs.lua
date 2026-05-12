@@ -117,15 +117,24 @@ IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].name = "Vereesa Windrunner"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].race = "High Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].lore = "The youngest of the Windrunner sisters and the resolute leader of the Silver Covenant. Unlike her sisters, Vereesa remained true to the path of the High Elves and established deep roots within the Alliance. After the painful loss of her husband Rhonin at Theramore, she dedicated her life to protecting Azeroth and training her rangers. In Midnight, she returns to Quel'Thalas to defend her homeland against the Void and face the painful legacy of her family."
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].lore = [[Vereesa is the youngest of the Windrunner sisters. Her life changed when the Horde arrived on Azeroth and she was unable to prevent the death of her younger brother, Lirath. She raised Arator, her sister Alleria's son, and aided the mage Rhonin in his mission to rescue the dragon Alexstrasza. However, her life was marked by tragedy when she found herself completely alone after the death of everything she knew at the hands of Arthas and the death of her husband Rhonin following the destruction of Theramore. This led her to commit acts that would forever affect her reputation with the blood elves.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].source = "warcraft.wiki.gg/wiki/Vereesa_Windrunner"
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].source = "Karstan"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].timeline = {
-    {era = "Pre-Classic", text = "Fought in Grim Batol during the events of 'Day of the Dragon', where she met her future husband, Rhonin."},
-    {era = "WotLK", text = "Founded the Silver Covenant in Dalaran to limit the influence of the blood elves within the Kirin Tor."},
-    {era = "MoP", text = "Supported Jaina Proudmoore during the bloody Purge of Dalaran following the destruction of Theramore."},
-    {era = "Legion", text = "Joined the Unseen Path and was reunited with her sister Alleria after over a thousand years."},
-    {era = "Midnight", text = "Leads the Silver Covenant rangers in the defense of Silvermoon and the Isle of Quel'Danas."},
+    {era = "Pre-WC2", text="Lived peacefully on Windrunner Spire, as part of the Windrunner family, one of the most prestigious names in Quel'Thalas."},
+    {era = "WC2", text="Participated in the defense of Quel'Thalas, helping her sister Alleria travel to Silvermoon. Her younger brother, Lirath, died at the hands of the Horde after being secretly trained by her, damaging her relationship with Sylvanas, who refused to train him so that he would be safe in Silvermoon."},
+    {era = "Pre-WC3", text = "Adopted Arator at the request of her sister Alleria and aided the mage Rhonin in his secret mission to rescue the Aspect of the Red Dragonflight Alexstrasza from the clutches of the Dragonmaw orc clan, ruining Deathwing's plans."},
+    {era = "WC3", text="Lived in Dalaran raising Arator when Arthas invaded the city with the Scourge. She managed to survive, and eventually married Rhonin."},
+    {era = "Classic", text = "Had two sons, Giramar and Galadin."},
+    {era = "WotLK", text = "Participated in the war against the Lich King and founded the Silver Covenant. She helped restore Quel'Delar, the legendary sword of Thalorien Dawnseeker who defended Silvermoon from the invasion of the Scourge."},
+    {era = "Cata", text = "Helped Halduron Brightwing and Darkspear Chieftain Vol'jin stop the Amani Empire, which threatened to rise again and destroy Quel'Thalas."},
+    {era = "MoP", text = [[Was not present at the destruction of Theramore, which cost Rhonin his life. Enraged, she joined Jaina Proudmoore in purging Dalaran of the Sunreavers, the Horde's blood elf representatives in Dalaran. After that, Vereesa aided the Kirin Tor offensive, opposing the Horde on Thunder Isle.
+
+    After the fall of Garrosh Hellscream, Vereesa devised a plan to assassinate him during his trial for his crimes in order to avenge her husband's death. However, she ultimately regretted her plan and did not carry it out.]]},
+    {era = "Legion", text = "Traveled to Niskara to search for Alleria. However, she only found her bow, Thas'dorah. Subsequently, Vereesa led the high elves to support the Nightborne rebels in Suramar in reclaiming the city. Finally, she traveled to Argus to stop the Legion, where she was reunited with Alleria."},
+    {era = "TWW", text = "After years of peace, she received several visions of the Radiant Song, which foretold a dark future for Quel'Thalas against the Void."},
+    {era = "Midnight", text = "Alongside the Silver Covenant, joined the attack on the Darkwell on the Isle of Quel'danas. Following the battle, she disbanded the Silver Coventant to form the Silversun Compact along with Aethas Sunreaver. She was then present at the purification of the Darkwell, offering the crown of Anasterian Sunstrider."}
+
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].name = "Shandris Feathermoon"
