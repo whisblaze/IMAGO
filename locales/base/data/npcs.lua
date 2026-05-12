@@ -765,14 +765,26 @@ IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].timeline = {
     {era = "Midnight", text = "Was summoned by the Sunwell and helped to defend it from the Void."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].name = "General Amias Bellamy"
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].race = "Human (Arathi)"
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].lore = "General Amias Bellamy is the highest-ranking military commander of the Arathi Expedition. A pragmatic and battle-hardened tactician, she led the endless war against the nerubians and creatures of the deep in Hallowfall, always guided by her faith in the Sacred Flame. Unlike Faerin Lothar, who often represents the heart of the Arathi, Bellamy is the iron shield and drawn sword of her people. In Midnight, she has moved her troops from the underground to the surface. Under her command, the Arathi army does not limit itself to pure defense but launches offensive counterstrikes deep into the Voidstorm and the Void Spire."
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].zones = {"The Voidspire", "Isle of Quel'Danas", "Voidstorm", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].source = "warcraft.wiki.gg/wiki/General_Amias_Bellamy"
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].timeline = {
-    {era = "TWW", text = "Commands the Arathi Expedition in Hallowfall, holding the line against the relentless attacks from Azj-Kahet."},
-    {era = "Midnight", text = "Leads the Arathi military offensive on the surface, commanding troops from Silvermoon to the center of the Voidstorm."},
+-- GENERAL AMAIS BELLAMY --
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].name = "General Amias Bellamy"
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].race = "Arathi"
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].lore = [[Few can say that their faith has held such a significant role in their lives as the Arathi of Hallowfall. Bellamy, like many of her fellow paladins, undertook the dangerous expedition across the sea to follow a vision of the Light. 
+In the end, she became stranded under Khaz Algar, the Sacred Flame and their star Beledar the only brightness in their new lives of constant darkness and danger. Faith was no longer a mere comfort – it was what kept her alive.
+
+Of course she was summoned by the Sunwell after keeping Hallowfall safe.
+Of course she will keep fighting for the Light and only for the Light. 
+Of course every being of the Void should be considered an enemy.]]
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].zones = {"Isle of Quel'Danas", "Silvermoon City", "The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].timeline = {
+    {
+        era = "Pre-Legion",
+        text = [[Joined the Arathi expedition at the behest of the vision of their emperor. Survived the voyage and got stranded in Hallowfall, where she thus fought as a paladin to protect the crystal Beledar and to vanquish any foe encroaching on their new home.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and defended it as general of the Vanguard of the Light under Turalyon. Became very irritated with Silvermoon's residents for not lending the Vanguard their unconditional support. Joined in the assault of Xal'atath's Voidspire and got so consumed by light-blindness that she started to attack her own allies. Was killed by Turalyon and the Champions of Azeroth.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["arator"].name = "Arator the Redeemer"
