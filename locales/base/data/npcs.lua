@@ -647,6 +647,7 @@ IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
     }
 }
 
+-- YALIA SAGEWHISPER --
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].name = "Yalia Sagewhisper"
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].race = "Pandaren"
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].lore = "Yalia Sagewhisper is a high-ranking priestess of the Shado-Pan from Pandaria. She is renowned for her unwavering calm and her ability to bring spiritual peace even in the darkest moments. During the invasion of the Burning Legion, she joined the Conclave in the Sanctum of Light to unite the priests of Azeroth. In Midnight, she brings the meditative practices and healing arts of her people to Parhelion Plaza, serving as a moral anchor and healer for the united defenders of Quel'Thalas."
@@ -658,15 +659,33 @@ IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].timeline = {
     {era = "Midnight", text = "Provides spiritual support and healing at Parhelion Plaza during the Void siege."},
 }
 
+-- LOTHRAXION --
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"].name = "Lothraxion"
-IMAGOdb.npcs.CAT_LIGHT["lothraxion"].race = "Lightforged Dreadlord"
-IMAGOdb.npcs.CAT_LIGHT["lothraxion"].lore = "Lothraxion is an absolute rarity in the cosmos: he is a nathrezim (dreadlord) forged with the Holy Light by the prime naaru Xe'ra. As a high-ranking commander of the Army of the Light, his loyalty to the Light appears unwavering, even though his true origins from the Shadowlands often arouse deep suspicion among some. In Midnight, he coordinates the Light's massive military offensive and can be found on the front lines of nearly every crisis zone in Quel'Thalas and the Voidstorm."
-IMAGOdb.npcs.CAT_LIGHT["lothraxion"].zones = {"Isle of Quel'Danas", "Voidstorm", "Nexus Point Xenas", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["lothraxion"].source = "warcraft.wiki.gg/wiki/Lothraxion"
+IMAGOdb.npcs.CAT_LIGHT["lothraxion"].race = "Lightforged Nathrezim"
+IMAGOdb.npcs.CAT_LIGHT["lothraxion"].lore = [[It is said that dreadlords are cruel, sadistic and manipulative creatures. Either spies from the Burning Legion or from the realms of death itself. Shapeshifters that infiltrate their enemies' ranks and turn even the noblest souls against one another. It is said they can't be trusted.
+
+Lothraxion is the one exception to this truth. He had destroyed countless worlds in service of Sargeras' grand vision and made the Void his greatest enemy. When the  demons' crusade brought him to meet the draenei, Lothraxion was swayed to betray his former masters. He joined the Army of the Light and became Lightforged.
+
+Having known all the horrors that both the Fel and the Void had wrought across the cosmos, Lothraxion accepts no compromises in dealing with any creatures that belong to these forces. He is convinced that only the Light can defeat these evils. Now, under his High Exarch Turalyon's command, Lothraxion has been called to the Sunwell to once again fight against the forces of darkness.]]
+IMAGOdb.npcs.CAT_LIGHT["lothraxion"].zones = {"Isle of Quel'Danas", "Nexus-Point Xenas", "Parhelion Plaza", "Silvermoon City", "Voidstorm"}
+IMAGOdb.npcs.CAT_LIGHT["lothraxion"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"].timeline = {
-    {era = "Legion", text = "Revealed himself as a Lightforged demon and assisted the paladins in the Sanctum of Light in the battle against Balnazzar."},
-    {era = "SL", text = "A report in Revendreth (Enemy Infiltration) raised the dark suspicion that he might be a sleeper agent of Sire Denathrius."},
-    {era = "Midnight", text = "Emerges as the supreme military strategist of the Light in countless zones of Quel'Thalas."},
+    {
+        era = "Ancient",
+        text = [[Helped to destroy unnumbered worlds throughout the Great Dark Beyond as a demon of the Burning Legion. Abandoned the demons and his fellow nathrezim after meeting the draenei. Finally joined the Army of the Light, pledged his loyalty to Xe'ra the Light Mother and became infused with the Light itself.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[After Draenor's destruction, Lothraxion recruited Turalyon and Alleria Windrunner into the Army of the Light. When Alleria was infected with the Void, Lothraxion helped her remain sane and even convinced Xe'ra not to execute her. Later, he fought by High Exarch Turalyon's side on Argus.]],
+    },
+    {
+        era = "Legion",
+        text = [[Got captured and imprisoned on the demon world Niskara, but was rescued by the Highlord of the Silver Hand. Helped defend the Netherlight Temple and later joined the armies of Azeroth on the Vindicaar to return to the fight on Argus. After the Burning Legion was defeated, Lothraxion didn't join the Alliance, but left to fight demons elsewhere in the cosmos.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell to defend it against the Devouring Host and joined Alleria and Umbric in the assault on the Voidstorm. The overwhelming presence of the dark energies drove Lothraxion to seek out radical methods to combat the Void, even endangering allies to further his cause. When his zeal threatened to destroy all of Silvermoon, Lothraxion was killed by his allies.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].name = "Archbishop Alonsus Faol"
