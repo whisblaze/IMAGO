@@ -1503,12 +1503,20 @@ IMAGOdb.npcs.CAT_HARATI["elder_hagar"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_HARATI["amarakk"].name = "Amarakk"
-IMAGOdb.npcs.CAT_HARATI["amarakk"].race = "Haran'ir"
-IMAGOdb.npcs.CAT_HARATI["amarakk"].lore = "Amarakk is Orweyna's closest confidant and lifelong friend. As the two grew from seed to sapling in the wilds of Harandar, he was always at her side. While Orweyna was always driven by wilder impulses, Amarakk served as the steady voice of reason, her most important counterweight and emotional anchor. Even though surviving underground was harsh, their bond was unbreakable. In Midnight, he remains steadfastly by Orweyna's side as she leads the newly formed Hara'ti faction on the surface. He provides crucial support with his profound knowledge—such as preparing Alndust—to heal the fighters. Amarakk does not shy away from highly dangerous locations like the Dream Rift to aid his friend and his people in the fight against the Void."
-IMAGOdb.npcs.CAT_HARATI["amarakk"].zones = {"The Dream Rift", "Harandar"}
-IMAGOdb.npcs.CAT_HARATI["amarakk"].source = "Kurzgeschichte: Nach uns, die Stille"
+IMAGOdb.npcs.CAT_HARATI["amarakk"].race = "Haranir"
+IMAGOdb.npcs.CAT_HARATI["amarakk"].lore = [[When Amarakk was young, he still heard the song of the goddess. A good son from a good family, he preferred to go on adventures with his best friend Orweyna and didn't take life very seriously. When their adventures led them into the Rift of Aln though, Amarakk saw the madness and horror of what lurked under their very homes.
+
+To choose the path of a Shul'ka is to forever cut oneself off from the song of the goddess - a mutilation of the mind for most haranir. Yet Amarakk knew this was his path, that he needed to go into the Rift again and fight, sacrificing his happiness for his people. Orweyna never understood that.]]
+IMAGOdb.npcs.CAT_HARATI["amarakk"].zones = {"Isle of Quel'Danas", "Harandar", "The Dreamrift"}
+IMAGOdb.npcs.CAT_HARATI["amarakk"].source = "Cadash"
 IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
-    {era = "Pre-MN", text = "Grew up alongside Orweyna in Harandar, serving as the steady voice of reason to help ground her impulsive nature."},
-    {era = "Midnight", text = "Accompanies Orweyna on the surface and in the Dream Rift, supporting the Hara'ti with his knowledge of nature and Alndust."},
+    {
+        era = "Pre-TWW",
+        text = [[Became a Shul'ka and thus an outcast to his people. He began fighting the dreamed-up monsters in the Rift of Aln.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped Orweyna and the Champion venture into the Rift of Aln to acquire Alndust as a weapon against the Lightbloom.]],
+    }
 }
 
