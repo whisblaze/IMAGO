@@ -768,11 +768,14 @@ IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].timeline = {
 -- GENERAL AMAIS BELLAMY --
 IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].name = "General Amias Bellamy"
 IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].race = "Arathi"
-IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].lore = [[Few can say that their faith has held such a significant role in their lives as the Arathi of Hallowfall. Bellamy, like many of her fellow paladins, undertook the dangerous expedition across the sea to follow a vision of the Light. 
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].lore = [[Few can say that their faith has held such a significant role in their lives as the Arathi of Hallowfall. Bellamy, like many of her fellow paladins, undertook the dangerous expedition across the sea to follow a vision of the Light.
+
 In the end, she became stranded under Khaz Algar, the Sacred Flame and their star Beledar the only brightness in their new lives of constant darkness and danger. Faith was no longer a mere comfort – it was what kept her alive.
 
 Of course she was summoned by the Sunwell after keeping Hallowfall safe.
-Of course she will keep fighting for the Light and only for the Light. 
+
+Of course she will keep fighting for the Light and only for the Light.
+
 Of course every being of the Void should be considered an enemy.]]
 IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].zones = {"Isle of Quel'Danas", "Silvermoon City", "The Voidspire", "Voidstorm"}
 IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].source = "Cadash"
