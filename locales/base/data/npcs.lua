@@ -1478,7 +1478,7 @@ IMAGOdb.npcs.CAT_AMANI["filo"].timeline = {
 
 -- CAT_HARATI
 IMAGOdb.npcs.CAT_HARATI["orweyna"].name = "Orweyna"
-IMAGOdb.npcs.CAT_HARATI["orweyna"].race = "Haran'ir"
+IMAGOdb.npcs.CAT_HARATI["orweyna"].race = "Haranir"
 IMAGOdb.npcs.CAT_HARATI["orweyna"].lore =
 [[
 A scout of the mysterious race called Haranir, Orweyna is quite different from most of her kind. Fascinated with the world and its people outside of her homeland, she went against her oaths of secrecy and seclusion and made contact first with the champion of Azeroth in Azj-Kahet, and now with the elves of Quel'Thalas to petition their aid.
@@ -1492,14 +1492,23 @@ IMAGOdb.npcs.CAT_HARATI["orweyna"].timeline = {
     {era = "Midnight", text = "Helped to contain the Lightbloom in both Harandar and Quel'Thalas. Negotiated a tentative Alliance between her people and the elves of Quel'Thalas, leading the Haranir to explore the outside world for the first time."},
 }
 
+-- ELDER HAGAR --
 IMAGOdb.npcs.CAT_HARATI["elder_hagar"].name = "Elder Hagar"
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].race = "Haran'ir"
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].lore = "Elder Hagar is a deeply revered sage of the Haran'ir and serves in Midnight as the essential diplomatic bridge between the Hara'ti faction and the peoples of Azeroth. Her personal fate is marked by deep tragedy: she once served unnoticed as the Rootwarden for the World Tree Teldrassil. When the tree burned, Hagar experienced the death of its roots deep underground as a deafening, traumatizing silence. Now, with the Void threatening the ancient arcane roots beneath Quel'Thalas, she refuses to stand by and accept the death of another tree. She has left the protective darkness of the underground and positioned herself in Silvermoon City right by the Harandar portal to recruit capable heroes and officially lead her people into the global conflict as an Allied Race."
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].zones = {"The Den", "Harandar", "Eversong Woods", "Silvermoon City"}
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].source = "warcraft.wiki.gg/wiki/Hagar"
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].race = "Haranir"
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].lore = [[The haranir have many rules and traditions and as an Elder in the ruling council, it is Hagar's duty to enforce them. However, she does not agree with many of the old customs anymore.
+
+Before she was an Elder, she was the Rootwarden of Teldrassil, tasked with the care of protecting the great World Tree. But what good are well-tended roots if the entire tree above ground is burned to ashes? Hagar could not stop her charge's decay and while she is still haunted by what has happened, she has also started to rethink what she thought true before. The haranir can not live isolated from the outside world forever and when Orweyna set out to make contact with Outsiders, Hagar was the only Elder to support her.]]
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].zones = {"Silvermoon City", "Eversong Woods", "Harandar", "The Den"}
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].source = "Cadash"
 IMAGOdb.npcs.CAT_HARATI["elder_hagar"].timeline = {
-    {era = "BfA", text = "Watched over the roots of Teldrassil deep underground as a Rootwarden until the tree was destroyed."},
-    {era = "Midnight", text = "Coordinates the diplomatic binding and the unlock of the Haran'ir as an Allied Race from Silvermoon City."},
+    {
+        era = "Pre-BfA",
+        text = [[During her normal routine as Rootwarden, the roots of Teldrassil suddenly burst into flames and Hagar could do nothing but watch them wither away. Now without a purpose, she joined the Council of Elders in the Den.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Granted Orweyna, Halduron Brightwing and the Champion the chance to plead their case before the Elders. Was instrumental in helping to form a tentative alliance between the Hara'ti and the outside world. Co-ruled the village of Har'mara and made it a place of unity between haranir, rutaani and fungarians.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_HARATI["amarakk"].name = "Amarakk"
