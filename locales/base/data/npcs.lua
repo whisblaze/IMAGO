@@ -992,16 +992,36 @@ IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].timeline = {
     }
 }
 
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].name = "Fiona"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].race = "Worgen"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].lore = "Fiona is a worgen adventurer, holy priest, and one of the most loyal souls in Azeroth. She became famous for her legendary caravan in the Eastern Plaguelands, with which she safely escorted countless adventurers—most notably her best friends, the paladins Gidwin Goldbraids and Tarenar Sunstrike—through enemy territory. She is the personified lifeblood of civilians and independent helpers in Azeroth. In Midnight, she has steered her caravan to the Isle of Quel'Danas. Although she belongs to no military order, she tirelessly supports the defenders of the Light with her healing arts, her supplies, and her pragmatism."
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].source = "warcraft.wiki.gg/wiki/Fiona"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].timeline = {
-    {era = "Cata", text = "Drove her famous caravan through the Eastern Plaguelands and supported the Argent Crusade."},
-    {era = "WoD", text = "Joined the Alliance expedition on Draenor, serving as a holy priest and herbalist in the garrison (Shadowmoon Valley)."},
-    {era = "DF", text = "Traveled with the Dragonscale Expedition to the Waking Shores basecamp after reuniting with Gidwin and Tarenar."},
-    {era = "Midnight", text = "Appears on the Isle of Quel'Danas as a civilian supporter and healer for the united defenders against the Void."},
+-- FIONA --
+IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = [[Caring and loyal, this worgen woman and her caravan have been traveling all over Azeroth for many years. She earns her livelihood as a traveling herbalist and healer, but her heart yearns for the companionship of the different people she meets on her adventures. She is all too happy to lend travelers a ride on her stagecoach and can't walk past souls in need without stopping to help however she can. It is a simple life, but Fiona is very fulfilled by it.  
+Her two closest friends are the paladins Tarenar Sunstrike and Gidwin Goldbraids, who frequently accompany her.
+
+The Sunwell has sensed her compassion and willingness to help others and has called her to Silvermoon to defend it. As always, Fiona will do whatever she can.]]
+IMAGOdb.npcs.CAT_LIGHT["fiona"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["fiona"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].timeline = {
+    {
+        era = "Cata",
+        text = [[Traveled the Eastern Plaguelands with Tarenar and Gidwin. They stopped multiple times and helped the paladins of Light's Hope Chapel before settling in the sanctuary for the time being. Made several friends and acquaintances along the way like Argus Highbeacon, the ghost of Pamela Redpath and Vex'tul.]],
+    },
+    {
+        era = "WoD",
+        text = [[Traveled to Draenor and helped with the threat of the botani in Shadowmoon Valley. Parked the caravan in Lunarfall Garrison for a while to help the Alliance commander. Fiona found an interest in watching the fights in the ogre coliseum of Highmaul.]],
+    },
+    {
+        era = "BfA",
+        text = [[Traveled to Boralus and put up shop there for a while.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Dragonscale Expedition and explored the Dragon Isles in her caravan.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought on the Isle of Quel'Danas.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].name = "Valeera Sanguinar"
