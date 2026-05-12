@@ -898,14 +898,28 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].lore = "As a ruthless Demon Hunter of the Illidari, Allari is a master of enemy interrogations. Armed with the Scythe of Souls, she uses her fel-infused powers to lay bare the minds of her enemies and harvest their essences. In Midnight, she expands her merciless hunting methods to a cosmic scale, pursuing the forces of the Void into the Telogrus Rift and onto the shattered world of K'aresh."
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].zones = {"Telogrus Rift", "Eredath", "K'aresh", "Voidstorm"}
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].source = "warcraft.wiki.gg/wiki/Allari_the_Souleater"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].lore = [[With a nearly unrivaled hatred for the Burning Legion, Allari the Souleater earned her moniker by using the mighty Scythe of Souls to entrap the souls of demons within it. This dangerous weapon communicates with her, pushing her to commit even more harm to her enemies and she frequently uses it as a torture device.
+
+Yet even though her methods are extreme, Allari fights for the good of Azeroth. With the Legion's final defeat, she now has made it her mission to teach willing ren'dorei the ways of the demon hunters and aids them in the battle against the Void.]]
+IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].zones = {"Voidstorm", "K'aresh"}
+IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
-    {era = "TBC", text = "Traveled to the Black Temple in Outland and pledged her loyalty to Illidan Stormrage."},
-    {era = "Legion", text = "Fought on Mardum and the Broken Shore, using her scythe to interrogate demons in the Fel Hammer."},
-    {era = "BfA", text = "Participated in the Fourth War, securing positions in the Arathi Highlands and Darkshore."},
-    {era = "Midnight", text = "Leads independent, cross-faction incursions into cosmic Void zones like K'aresh and Eredath."},
+    {
+        era = "TBC",
+        text = [[Pledged her loyalty to Illidan Stormrage in Outland. Successfully retrieved the Sargerite Keystone artifact at his behest, but upon returning was captured and imprisoned alongside her fellow Illidari by Maiev Shadowsong.]],
+    },
+    {
+        era = "Legion",
+        text = [[After being locked in stasis for 6 years, Allari and the other demon hunters were freed by her captor as a last resort to combat Gul'dan. Helped reassemble the Illidari forces by capturing demon souls to restore the Fel Hammer and helped retrieve the Aldrachi Warblades artifact weapons. Helped to recover Illidan Stormrage's soul and fought at his side for the remainder of the war.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Took on Leona Darkstrider and other willing ren'dorei as apprentices to teach them the ways of the Illidari.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Fought alongside the ren'dorei in the Voidstorm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].name = "Decimus"
