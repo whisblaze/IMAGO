@@ -1507,7 +1507,7 @@ IMAGOdb.npcs.CAT_HARATI["elder_hagar"].timeline = {
     },
     {
         era = "Midnight",
-        text = [[Granted Orweyna, Halduron Brightwing and the Champion the chance to plead their case before the Elders. Was instrumental in helping to form a tentative alliance between the Hara'ti and the outside world. Co-ruled the village of Har'mara and made it a place of unity between haranir, rutaani and fungarians.]],
+        text = [[Granted Orweyna, Halduron Brightwing, and the Champion the chance to plead their case before the Elders. Was instrumental in helping to form a tentative alliance between the Hara'ti and the outside world. Co-ruled the village of Har'mara and made it a place of unity between haranir, rutaani and fungarians.]],
     }
 }
 
