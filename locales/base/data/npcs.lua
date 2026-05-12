@@ -102,67 +102,6 @@ IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].timeline = {
     {era = "Midnight", text = "Halduron was the first to notice the threat of the Lightbloom and ventured into Harandar with Orweyna. Securing a tentative alliance with the Haranir, Halduron managed to keep the Lightbloom in check and strengthened Silvermoon's defenses."},
 }
 
--- ALLERIA WINDRUNNER
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windrunner"
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Void elf (former high elf)"
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Known to the people of Azeroth as one of the Alliance's greatest war heroes, Alleria has fought in the Second War and in the millennia-long crusade against the Burning Legion. She is many things - a mother, a partner, a hero, an older sister - but above all she is a huntress. Everything comes second to the mission before her and no price is too high to ensure the safety of her world. 
-
-War is the only life she understands, and she finds more comfort and familiarity on the battlefield than in times of peace. When she lost her younger brother and her parents to the war against the Horde, Alleria blamed herself and charged recklessly into combat, chasing purpose through violence. She never truly recovered from the trauma of these losses. Having a family of her own with Turalyon and their son Arator, she can't bring herself to open up emotionally again, even though seeing the two men become strangers is hurting her to the core.
-
-While fighting the Burning Legion, Alleria has found a weapon in the Void. She was infused with the fallen naaru L'ura and now wields her dark powers for the good of Azeroth. Always on the brink of falling to madness, with constant whispers assaulting her mind, Alleria has now set her mind on hunting Xal'atath. As with all her hunts, the pursuit has become an obsession and she won't rest until her foe lies defeated.]]
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].zones = {"The Voidspire", "Voidstorm"}
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
-    {
-        era = "Pre-WC2",
-        text = [[Refused the title of future Ranger-General of Silvermoon and left her homeland to see the world beyond. She made contact and allies within the Alliance of Lordaeron. Her parents were murdered by the orcish Horde during her absence.]],
-    },
-    {
-        era = "WC2",
-        text = [[With the armies of Lordaeron at her side, she successfully defended Quel'Thalas from the Horde. In the fighting, her brother Lirath died and Alleria blamed herself for it. Stayed with the Alliance's forces and helped to ultimately win the war. Met Turalyon, had a son, and ventured into Outland, ultimately becoming stranded there.]],
-    },
-    {
-        era = "Pre-WC3",
-        text = [[Traveled through the Twisting Nether with Turalyon and was conscripted into the Army of the Light to fight the Burning Legion. What would take a few decades on Azeroth, to them were a thousand years of war. Alleria met Locus Walker and learned how to make use of void magic. She was briefly locked up by Xe'ra and the Army of the Light because of it.]],
-    },
-    {
-        era = "Legion",
-        text = [[Learned more about the Void and how to resist it's whispers. Was infused with the naaru L'ura. Fought in the final battle against the Legion in their stronghold of Antorus and succeeded. With the crusade finally over, her and Turalyon were reunited with their son, Arator. Found and recruited the exiled ren'dorei into the Alliance.]],
-    },
-    {
-        era = "Pre-BfA",
-        text = [[Returned to Silvermoon but was promptly exiled when her mere dark presence almost corrupted the Sunwell. Met with her sisters Vereesa and Sylvanas but the meeting ended in a fight.]],
-    },
-    {
-        era = "BfA",
-        text = [[Fought in the Siege of Lordaeron against Sylvanas and later fought for the Alliance in the Fourth War.]],
-    },
-    {
-        era = "Pre-SL",
-        text = [[Led the hunt for Sylvanas Windrunner. She resorted to torture to get information out of Horde civilians.]],
-    },
-    {
-        era = "SL",
-        text = [[Attended Sylvanas' trial in Oribos.]],
-    },
-    {
-        era = "DF",
-        text = [[At Khadgar's request she began to hunt "the Harbinger", who turned out to be Xal'atath. Defended Telogrus Rift alongside Locus Walker and Magister Umbric from Xal'atath's Shadowguard.]],
-    },
-    {
-        era = "TWW",
-        text = [[Survived the destruction of Dalaran and recklessly hunted Xal'atath through all of Khaz Algar and below. Managed to damage the Dark Heart. Very reluctantly worked together with Xal'atath and Locus Walker to defeat Dimensius the All-Devouring.]],
-    },
-    {
-        era = "Pre-MN",
-        text = [[Thwarted a resurgence of the Burning Legion together with Turalyon and Arator, seemingly getting closer as a family.  Accepted a marriage proposal from Turalyon but struggled to find herself at ease. With a heavy heart she left Turalyon at the altar and did not attend her son's promotion ceremony. Later refused to journey to Silvermoon with Arator and instead followed Xal'atath into the Voidstorm.]],
-    },
-    {
-        era = "Midnight",
-        text = [[Led the fight against the Void in the Voidstorm. Faced Xal'atath in her Voidspire and was overcome by the madness of the whispers in her mind, turning on her allies. Xal'atath then cut L'ura out of Alleria and the barely-conscious elf was lost in the Darkwell alongside Turalyon.]],
-    }
-}
-
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].name = "Vereesa Windrunner"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].race = "High Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].lore = "The youngest of the Windrunner sisters and the resolute leader of the Silver Covenant. Unlike her sisters, Vereesa remained true to the path of the High Elves and established deep roots within the Alliance. After the painful loss of her husband Rhonin at Theramore, she dedicated her life to protecting Azeroth and training her rangers. In Midnight, she returns to Quel'Thalas to defend her homeland against the Void and face the painful legacy of her family."
@@ -955,6 +894,68 @@ IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
     {era = "BfA", text = "Participated in the Fourth War, securing positions in the Arathi Highlands and Darkshore."},
     {era = "Midnight", text = "Leads independent, cross-faction incursions into cosmic Void zones like K'aresh and Eredath."},
 }
+
+-- ALLERIA WINDRUNNER --
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windrunner"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Void elf (former high elf)"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Known to the people of Azeroth as one of the Alliance's greatest war heroes, Alleria has fought in the Second War and in the millennia-long crusade against the Burning Legion. She is many things - a mother, a partner, a hero, an older sister - but above all she is a huntress. Everything comes second to the mission before her and no price is too high to ensure the safety of her world. 
+
+War is the only life she understands, and she finds more comfort and familiarity on the battlefield than in times of peace. When she lost her younger brother and her parents to the war against the Horde, Alleria blamed herself and charged recklessly into combat, chasing purpose through violence. She never truly recovered from the trauma of these losses. Having a family of her own with Turalyon and their son Arator, she can't bring herself to open up emotionally again, even though seeing the two men become strangers is hurting her to the core.
+
+While fighting the Burning Legion, Alleria has found a weapon in the Void. She was infused with the fallen naaru L'ura and now wields her dark powers for the good of Azeroth. Always on the brink of falling to madness, with constant whispers assaulting her mind, Alleria has now set her mind on hunting Xal'atath. As with all her hunts, the pursuit has become an obsession and she won't rest until her foe lies defeated.]]
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].zones = {"The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Refused the title of future Ranger-General of Silvermoon and left her homeland to see the world beyond. She made contact and allies within the Alliance of Lordaeron. Her parents were murdered by the orcish Horde during her absence.]],
+    },
+    {
+        era = "WC2",
+        text = [[With the armies of Lordaeron at her side, she successfully defended Quel'Thalas from the Horde. In the fighting, her brother Lirath died and Alleria blamed herself for it. Stayed with the Alliance's forces and helped to ultimately win the war. Met Turalyon, had a son, and ventured into Outland, ultimately becoming stranded there.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Traveled through the Twisting Nether with Turalyon and was conscripted into the Army of the Light to fight the Burning Legion. What would take a few decades on Azeroth, to them were a thousand years of war. Alleria met Locus Walker and learned how to make use of void magic. She was briefly locked up by Xe'ra and the Army of the Light because of it.]],
+    },
+    {
+        era = "Legion",
+        text = [[Learned more about the Void and how to resist it's whispers. Was infused with the naaru L'ura. Fought in the final battle against the Legion in their stronghold of Antorus and succeeded. With the crusade finally over, her and Turalyon were reunited with their son, Arator. Found and recruited the exiled ren'dorei into the Alliance.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Returned to Silvermoon but was promptly exiled when her mere dark presence almost corrupted the Sunwell. Met with her sisters Vereesa and Sylvanas but the meeting ended in a fight.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought in the Siege of Lordaeron against Sylvanas and later fought for the Alliance in the Fourth War.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Led the hunt for Sylvanas Windrunner. She resorted to torture to get information out of Horde civilians.]],
+    },
+    {
+        era = "SL",
+        text = [[Attended Sylvanas' trial in Oribos.]],
+    },
+    {
+        era = "DF",
+        text = [[At Khadgar's request she began to hunt "the Harbinger", who turned out to be Xal'atath. Defended Telogrus Rift alongside Locus Walker and Magister Umbric from Xal'atath's Shadowguard.]],
+    },
+    {
+        era = "TWW",
+        text = [[Survived the destruction of Dalaran and recklessly hunted Xal'atath through all of Khaz Algar and below. Managed to damage the Dark Heart. Very reluctantly worked together with Xal'atath and Locus Walker to defeat Dimensius the All-Devouring.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Thwarted a resurgence of the Burning Legion together with Turalyon and Arator, seemingly getting closer as a family.  Accepted a marriage proposal from Turalyon but struggled to find herself at ease. With a heavy heart she left Turalyon at the altar and did not attend her son's promotion ceremony. Later refused to journey to Silvermoon with Arator and instead followed Xal'atath into the Voidstorm.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Led the fight against the Void in the Voidstorm. Faced Xal'atath in her Voidspire and was overcome by the madness of the whispers in her mind, turning on her allies. Xal'atath then cut L'ura out of Alleria and the barely-conscious elf was lost in the Darkwell alongside Turalyon.]],
+    }
+}
+
 
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].name = "Decimus"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].race = "Domanaar"
