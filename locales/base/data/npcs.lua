@@ -649,13 +649,28 @@ IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].name = "Yalia Sagewhisper"
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].race = "Pandaren"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].lore = "Yalia Sagewhisper is a high-ranking priestess of the Shado-Pan from Pandaria. She is renowned for her unwavering calm and her ability to bring spiritual peace even in the darkest moments. During the invasion of the Burning Legion, she joined the Conclave in the Sanctum of Light to unite the priests of Azeroth. In Midnight, she brings the meditative practices and healing arts of her people to Parhelion Plaza, serving as a moral anchor and healer for the united defenders of Quel'Thalas."
+IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].lore = [[Raised as a fisherwoman, trained as a Shado-Pan and serving as a priest and alchemist, Yalia is a woman of many talents. After having to leave her family behind at a young age, she has dedicated most of her life to healing her fellow pandaren from the Shado-Pan Monastary in Kun-Lai Summit.
+
+After lending her support to combat foes such as Lei Shen and the Burning Legion, Yalia's wisdom and need to make the world a better place were recognized by the Holy Light. She now has been called to Silvermoon to once again fight for her world.]]
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].zones = {"Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].source = "warcraft.wiki.gg/wiki/Yalia_Sagewhisper"
+IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].timeline = {
-    {era = "MoP", text = "Served the Shado-Pan on the Isle of Thunder and supported heroes in the fight against the Thunder King Lei Shen."},
-    {era = "Legion", text = "Became a founding member of the Conclave in the Sanctum of Light to combat the Legion's shadows with inner strength."},
-    {era = "Midnight", text = "Provides spiritual support and healing at Parhelion Plaza during the Void siege."},
+    {
+        era = "Pre-WC3",
+        text = [[With two young pandaren boys getting into a ceaseless rivalry to gain her hand in future marriage, Yalia saw no other choice than to leave her home and family behind. She joined the Shado-Pan Order at five years old.]],
+    },
+    {
+        era = "MoP",
+        text = [[Now a senior Shado-Pan, Yalia oversaw the training of new recruits. When the Alliance and Horde conflict broke out on Pandaria, Yalia fought to defend the Townlong Steppes from the manifesting Sha. Later she reunited with her family and defended the Shado-Pan Monastery from the Zandalari onslaught. Met Chen Stormstout and the two fell in love.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was recruited by Prophet Velen into the Conclave to serve as an alchemist. Helped to defend the Netherlight Temple.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell to defend it against the Void.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"].name = "Lothraxion"
