@@ -45,6 +45,10 @@ local eraColors = {
 IMAGO.Chronicle.ranks = IMAGO.Chronicle.ranks or {}
 IMAGO.Chronicle.zoneRanks = IMAGO.Chronicle.zoneRanks or {}
 
+-- Navigation stack for the back button
+local navStack = {}
+local isNavigatingBack = false
+
 local function GetCrypticName(name)
     local crypt = ""
     local consonants = {"k", "z", "n", "h", "r", "t", "x", "v", "l", "s", "q", "w", "y"}
@@ -195,6 +199,10 @@ function IMAGO.Chronicle.CreateFrame()
 
     f.closeBtn = CreateFrame("Button", nil, f, "UIPanelCloseButton")
     f.closeBtn:SetPoint("TOPRIGHT", f, "TOPRIGHT", -4, -4)
+    f.closeBtn:HookScript("OnClick", function()
+        wipe(navStack)
+        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(false) end
+    end)
 
     -- 1. NEU: Header-Hintergrund (Verdunkelt den oberen Bereich für mehr Fokus)
     f.headerBg = f:CreateTexture(nil, "BACKGROUND")
@@ -444,8 +452,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.loreBody:SetJustifyH("LEFT")
     f.loreBody:SetTextColor(0.9, 0.9, 0.9)
     f.loreBody:SetSpacing(6)
-
--- ==========================================
+    -- ==========================================
     -- BILD FÜR DIE ZONEN-DETAILANSICHT (PANORAMA)
     -- ==========================================
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
@@ -913,6 +920,65 @@ function IMAGO.Chronicle.CreateFrame()
     f.modeBtn:SetScript("OnLeave", function()
         f.modeBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
     end)
+
+    -- Back button: sits to the right of modeBtn inside detailFrame
+    f.backBtn = CreateFrame("Button", nil, f.detailFrame, "BackdropTemplate")
+    f.backBtn:SetSize(70, 22)
+    f.backBtn:SetPoint("LEFT", f.modeBtn, "RIGHT", 8, 0)
+    f.backBtn:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
+    f.backBtn:SetBackdropColor(0.05, 0.05, 0.05, 0.85)
+    f.backBtn:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
+
+    f.backBtn.label = f.backBtn:CreateFontString(nil, "OVERLAY")
+    f.backBtn.label:SetFont(FONT_BODY, 11, "OUTLINE")
+    f.backBtn.label:SetPoint("CENTER", f.backBtn, "CENTER", 0, 0)
+    f.backBtn.label:SetText("< " .. (IMAGO.L and IMAGO.L["BACK"] or "Back"))
+    f.backBtn.label:SetTextColor(0.5, 0.5, 0.5)
+    f.backBtn.enabled = false
+
+    f.backBtn:SetScript("OnEnter", function(self)
+        if self.enabled then
+            self:SetBackdropBorderColor(1, 0.95, 0.4, 1)
+        end
+    end)
+    f.backBtn:SetScript("OnLeave", function(self)
+        if self.enabled then
+            self:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+        else
+            self:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
+        end
+    end)
+    f.backBtn:SetScript("OnClick", function(self)
+        if not self.enabled then return end
+        local prevSlug = table.remove(navStack)
+        if not prevSlug then return end
+
+        isNavigatingBack = true
+        IMAGO.Chronicle.OpenToNPCSlug(prevSlug, { skipDiscoveryCinematic = true })
+        
+        C_Timer.After(0, function()
+            isNavigatingBack = false
+        end)
+
+        if #navStack == 0 then
+            self.enabled = false
+            self:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
+            self.label:SetTextColor(0.5, 0.5, 0.5)
+        end
+    end)
+
+    IMAGO.Chronicle.SetBackEnabled = function(val)
+        local btn = IMAGO.Chronicle.frame and IMAGO.Chronicle.frame.backBtn
+        if not btn then return end
+        btn.enabled = val
+        if val then
+            btn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+            btn.label:SetTextColor(1, 0.85, 0.1)
+        else
+            btn:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
+            btn.label:SetTextColor(0.5, 0.5, 0.5)
+        end
+    end
 
     -- Dropdown bei Klick außerhalb schließen
     f:HookScript("OnMouseDown", function()
@@ -1724,6 +1790,17 @@ function IMAGO.Chronicle.UpdateList()
                         end
 
                         f.startPage:Hide()
+                        if not isNavigatingBack
+                            and f.selectedNPCSlug
+                            and f.selectedNPCSlug ~= ""
+                            and f.selectedNPCSlug ~= npc.slug
+                        then
+                            table.insert(navStack, f.selectedNPCSlug)
+                            if IMAGO.Chronicle.SetBackEnabled then
+                                IMAGO.Chronicle.SetBackEnabled(true)
+                            end
+                        end
+
                         f.selectedNPC = npc.data
                         f.selectedNPCSlug = npc.slug
                         
@@ -2169,6 +2246,14 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     end
 
     local f = IMAGO.Chronicle.frame
+
+    -- Push current page onto nav stack before navigating away.
+    -- Skip if navigating back, or already on this NPC.
+    if not isNavigatingBack and f.selectedNPCSlug and f.selectedNPCSlug ~= "" and f.selectedNPCSlug ~= slug then
+        table.insert(navStack, f.selectedNPCSlug)
+        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+    end
+
     local data = IMAGO.GetNPCData(slug)
 
     f.activeFilter = "ALL"
@@ -2184,6 +2269,7 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     end
 
     f.selectedNPC = data
+    f.selectedNPCSlug = slug
 
     IMAGO.Chronicle.SelectMainTab(1)
     f:Show()
