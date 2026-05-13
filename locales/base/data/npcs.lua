@@ -1104,7 +1104,32 @@ IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].timeline = {
     {era = "Midnight", text = "Helped Arator learn the history of his father, Turalyon, and his part in the events of the Second War. Introduced heroes to the Arcantina, a home away from home for adventurers from all over Azeroth."}
 }
 
+-- LIRATH WINDRUNNER --
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].name = "Lirath Windrunner"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].race = "High elf"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].lore = [[The youngest of the four, and only brother among the Windrunner siblings. Lirath was a brilliant singer who made a name for himself performing at Lord Saltheril's court, and was eventually named Royal Musician by Kael’thas Sunstrider.
 
+After the death of their parents, Lirath demanded his sisters train him as a ranger. Lirath was killed while defending Windrunner Village from orcs during the burning of Quel'thalas.]]
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].zones = {"Windrunner Spire"}
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].source = "Travanoid"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Appointed as Royal Musician by Prince Kael’thas Sunstrider. Began training as a ranger with his sister Vereesa after the death of their parents.]],
+    },
+    {
+        era = "WC2",
+        text = [[Killed by the Horde during the Burning of Quel’thalas. His body was recovered by Sylvanas and buried alongside their parents in Eversong Woods.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Sylvanas considered raising Lirath into undeath but ultimately decided against it.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Appeared as a spirit in Windrunner Spire, guiding adventurers to collect relics of the Windrunner family. He used these relics to summon and exorcise the Restless Heart, allowing the spirits of the spire to find peace.]],
+    }
+}
 
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
