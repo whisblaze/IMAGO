@@ -14,8 +14,8 @@ IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"] = {
 }
 
 IMAGOdb.npcs.CAT_VOID["l_ura"] = {
-    displayID = 240391,
-    ids = {240391, 248195},
+    displayID = 257959,
+    ids = {257959, 249617, 258268, 250368, 258296, 261963, 257957, 260859, 253979, 258304, 240391, 248195},
     zones = {},
     category = "CAT_VOID",
 }
