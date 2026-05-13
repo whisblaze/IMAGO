@@ -1453,14 +1453,25 @@ IMAGOdb.npcs.CAT_AMANI["zuljan"].timeline = {
     {era = "Midnight", text = "Secured lightwood weapons for his people and battled the Blood Elves as well as the Twilight's Blade. Reluctantly followed his sister's orders to ally with the elves later on. "},
 }
 
+-- Loa Speaker Kinduru --
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].name = "Loa Speaker Kinduru"
-IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].race = "Forest Troll (Amani)"
-IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].lore = "Loa Speaker Kinduru is the eccentric yet endearing spiritual guide of the Amani. As the direct son of the legendary Zul'jin and uncle to Zul'jan and Zul'jarra, he forms a massive contrast to his warmongering bloodline. While his nephew Zul'jan rejects faith in the Loa, Kinduru is a devout servant of the mighty Amani gods—Akil'zon, Halazzi, Jan'alai, and Nalorakk. His personality reminds many of a wise, slightly mad shaman. In Midnight, he is the driving spiritual force in Zul'Aman. He patiently teaches the defenders how to earn the blessings of the Loa to stave off the endless hunger of the Void."
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].race = "Forest troll"
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].lore = [[The son of Zul'jin, Kinduru doesn't look back fondly on his father's infamous exploits. Having always been a worshipper of the loa - serving as Speaker of Akil'zon herself - what had transpired during Zul'jin's last battle struck him as an atrocity. The following loss of the loa saddened him deeply.
+
+Now without their gods at their side, Kinduru serves the Amani leader Zul'jarra as advisor. More importantly though, he is her uncle, and he is very fond of both his niece and her brother Zul'jan.
+
+He tried to instill the traditions of loa worship in both of them and, even after all these years, he still holds on to hope that one day their gods will return.]]
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].zones = {"Atal'Aman", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].source = "warcraft.wiki.gg/wiki/Loa_Speaker_Kinduru"
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
-    {era = "Pre-MN", text = "Grew up in the shadow of his father Zul'jin, but dedicated his life to the spiritual worship of the Loa instead of blind hatred."},
-    {era = "Midnight", text = "Acts as Loa Speaker in Zul'Aman and teaches players at the Altar of Blessings how to harness the gods' power against the Void."},
+    {
+        era = "TBC",
+        text = [[Became advisor to chieftain Zarama, the wife of his late brother Man'ye, after Zul'jin's defeat and death. After Zarama was killed in ritual combat, Kinduru began to serve her daughter Zul'jarra.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Guided Zul'jarra on her path to become hash'ey. Witnessed the return of the loa to Zul'aman and took up his old role as Speaker of Akil'zon. Helped the hash'ura gain various blessings of the loa at the altar in Amani'zar village.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"
