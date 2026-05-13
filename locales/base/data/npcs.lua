@@ -895,6 +895,30 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
     {era = "Midnight", text = "Acts as a guiding mentor for the Sunwalkers and their allies, teaching a new generation that wielding the Light is about much more than mere violence."},
 }
 
+-- AEONARA DAWNSHADE --
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].name = "Aeonara Dawnshade"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].race = "Void elf"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].lore = [[As the only known void elf paladin, Aeonara Dawnshade fights against the armies of the Void. She defended Telogrus Rift from the void ethereals of the Shadowguard, and later fought against Dimensius’ forces at Manaforge Omega in K'aresh.
+
+She has now been summoned as part of the Vanguard of the Light in order to defend the Sunwell from Xal’atath’s Devouring Host.]]
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].zones = {"Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].source = "Travanoid"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].timeline = {
+    {
+        era = "DF",
+        text = [[Defended void elf camps in Telogrus Rift against attacks from the Shadowguard.]],
+    },
+    {
+        era = "TWW",
+        text = [[Accompanied Alleria Windrunner and the void elves in K’aresh to fight Dimensius at Manaforge Omega.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by Lady Liadrin to Parhelion Plaza to defend the Sunwell from the Devouring Host. Joined with other members of the Vanguard of the Light to defeat the Voidmarked Reserve.]],
+    }
+}
+
+
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].race = "Blood Elf"
