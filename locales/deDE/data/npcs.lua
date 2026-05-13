@@ -487,12 +487,12 @@ IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].timeline = {
     {era = "Midnight", text = "Befehligt die Verteidigungsstellungen auf der Insel von Quel'Danas und koordiniert die Licht-Artillerie gegen die Leerenportale."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].name = "Delas Mondfang"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].race = "Nachtelfe"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].lore = "Delas Mondfang ist eine historische Pionierin: Als ehemalige Priesterin von Elune war sie die erste Nachtelfe, die den Weg des Paladins einschlug und sich dem Orden der Silbernen Hand anschloss. Unter der Anleitung von Mehlar Dämmerklinge lernte sie, das heilige Licht mit den Traditionen ihres Volkes in Einklang zu bringen. In Midnight dient sie als lebendiges Symbol der Einheit am Sonnenbrunnen und beweist, dass der Glaube an das Licht keine Grenzen zwischen den Elfenvölkern kennt, wenn es um die Verteidigung Azeroths geht."
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].source = "warcraft.wiki.gg/wiki/Delas_Moonfang"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].name = "Delas Mondfang"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].race = "Nachtelfe"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].lore = "Delas Mondfang ist eine historische Pionierin: Als ehemalige Priesterin von Elune war sie die erste Nachtelfe, die den Weg des Paladins einschlug und sich dem Orden der Silbernen Hand anschloss. Unter der Anleitung von Mehlar Dämmerklinge lernte sie, das heilige Licht mit den Traditionen ihres Volkes in Einklang zu bringen. In Midnight dient sie als lebendiges Symbol der Einheit am Sonnenbrunnen und beweist, dass der Glaube an das Licht keine Grenzen zwischen den Elfenvölkern kennt, wenn es um die Verteidigung Azeroths geht."
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].zones = {"Insel von Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].source = "warcraft.wiki.gg/wiki/Delas_Moonfang"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].timeline = {
     {era = "WoD", text = "Diente als Mondpriesterin im Schattenmondtal auf Draenor und unterstützte die Allianz-Streitkräfte gegen die Eiserne Horde."},
     {era = "Legion", text = "Trat der Silbernen Hand bei und wurde im Sanktum des Lichts zur ersten Nachtelf-Paladinin geweiht."},
     {era = "Midnight", text = "Kämpft als erfahrene Paladinin auf der Insel von Quel'Danas für die Verteidigung des Sonnenbrunnens."},

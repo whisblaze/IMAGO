@@ -566,15 +566,39 @@ IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].timeline = {
     }
 }
 
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].name = "Delas Moonfang"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].race = "Night Elf"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].lore = "Delas Moonfang is a historical pioneer: a former Priestess of Elune, she was the first Night Elf to walk the path of the Paladin and join the Order of the Silver Hand. Under the tutelage of Mehlar Dawnblade, she learned to harmonize the Holy Light with the traditions of her people. In Midnight, she serves as a living symbol of unity at the Sunwell, proving that faith in the Light knows no boundaries between elven peoples when it comes to defending Azeroth."
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].source = "warcraft.wiki.gg/wiki/Delas_Moonfang"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].timeline = {
-    {era = "WoD", text = "Served as a Priestess of the Moon in Shadowmoon Valley on Draenor, assisting Alliance forces against the Iron Horde."},
-    {era = "Legion", text = "Joined the Silver Hand and was ordained as the first Night Elf Paladin in the Sanctum of Light."},
-    {era = "Midnight", text = "Fights as an experienced Paladin on the Isle of Quel'Danas for the defense of the Sunwell."},
+-- DELAS MOONFANG --
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].name = "Delas Moonfang"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].race = "Night elf"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].lore = [[Delas Moonfang has been a priestess of Elune for almost the entirety of her long life. Growing up during the War of the Ancients, she took on the holy profession to aid others – because aid was clearly needed in a time of demons. She committed her life to healing and to the study of demons, and she even learned to speak Eredun.
+
+When the Legion returned, Delas wasted no time to join the Conclave under Alonsus Faol. Her true path in the Light lay in becoming the first night elven paladin though, as she found out when she met the Highlord of the Silver Hand. After all these millennia, she finally feels like she can accomplish her true destiny.]]
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Grew up in Val'sharah during the War of the Ancients and joined the Sisterhood of Elune.]],
+    },
+    {
+        era = "WoD",
+        text = [[Aided Archmage Khadgar to track Gul'dan.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Conclave as one of its first members and helped redeem the void god Saraka. Translated various texts from the Burning Legion for both the Conclave and the reformed Knights of the Silver Hand. Met the Highlord and found her truth – she became a paladin. Later confronted her ancestors who made a deal with the demons out of desperation.]],
+    },
+    {
+        era = "DF",
+        text = [[Moved to Bel'ameth.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought for the Alliance in Azj-Kahet against Queen Ansurek's nerubians.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought on the Isle of Quel'Danas against the Devouring Host.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].name = "Lord Grayson Shadowbreaker"
