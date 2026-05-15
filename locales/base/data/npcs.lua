@@ -1405,15 +1405,28 @@ IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_VOID["l_ura"].name = "L'ura"
-IMAGOdb.npcs.CAT_VOID["l_ura"].race = "Void Naaru"
-IMAGOdb.npcs.CAT_VOID["l_ura"].lore = "L'ura is the tragic centerpiece of the Void invasion in Quel'Thalas. Once a being of Light who covered the draenei's flight from Argus, she fell into a Void state after eons of imprisonment. After Alleria Windrunner absorbed her essence in the Seat of the Triumvirate, L'ura served as the source of Alleria's Void power for years. In Midnight, her fate reaches a horrific climax: Xal'atath stabbed Alleria in the back at the Voidspire and forcibly tore L'ura's essence from her. With this power, the Harbinger corrupted the Sunwell into the 'Darkwell.' Serving as the final encounter during the March on Quel'Danas, L'ura must be defeated once and for all to prevent the total transformation of the well into a font of absolute darkness."
+IMAGOdb.npcs.CAT_VOID["l_ura"].race = "Naaru"
+IMAGOdb.npcs.CAT_VOID["l_ura"].lore = [[The naaru are perhaps the purest expression of the Light throughout the Great Dark Beyond. 
+L'ura was once one of these shining beacons of holy energy. It stayed behind on Argus to ensure Velen and his draenei refugees could escape Kil'jaeden's wrath and, after holding out against countless demons, L'ura was overwhelmed by the Burning Legion. 
+
+Imprisoned for millennia, the once bright creature fell into a state of Void. Guided by madness and chaos and wrath, it became a dangerous entity to most and a powerful weapon to others. 
+
+In the Seat of the Triumvirate, Alleria Windrunner eventually confronted the fallen naaru and subdued it, binding its essence within herself. Now the void-touched ranger wields L’ura’s power as her own, yet the darkened naaru still endures within her, waiting for the moment it may be unleashed once again.]]
 IMAGOdb.npcs.CAT_VOID["l_ura"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_VOID["l_ura"].source = "warcraft.wiki.gg/wiki/L'ura"
+IMAGOdb.npcs.CAT_VOID["l_ura"].source = "Cadash"
 IMAGOdb.npcs.CAT_VOID["l_ura"].timeline = {
-    {era = "Ancient", text = "Stayed behind during the flight from Argus to hold back the Legion and was imprisoned in the Seat of the Triumvirate on Kil'jaeden's orders."},
-    {era = "Legion", text = "Was defeated by Alleria Windrunner and adventurers, with Alleria fully siphoning her essence."},
-    {era = "Midnight", text = "Manifested by Alleria in the Voidstorm to defeat the naaru T'era. Later torn from Alleria by Xal'atath at the Voidspire to transform the Sunwell into the 'Darkwell'."},
-    {era = "Midnight", text = "Serves as the final encounter in the 'March on Quel'Danas' to prevent the salvation of the Sunwell."},
+    {
+        era = "Ancient",
+        text = [[Stayed behind on Argus to ensure Velen's escape from the Burning Legion. Was defeated and imprisoned by Kil'jaeden.]],
+    },
+    {
+        era = "Legion",
+        text = [[Now a dark naaru, L'ura's power drew the attention of the Shadowguard ethereals who wanted to use its power as a weapon. Eventually Alleria Windrunner and Locus Walker killed the ethereals and subdued L'ura, and Alleria absorbed it's powers.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was manifested by Alleria to kill another dark naaru - T'era. At the Voidspire, Xal'atath triumphed over Alleria and cut L'ura from the ranger, separating the two beings once more. Xal'atath then used L'ura to corrupt the Sunwell and the mad naaru was killed by the Champions of Azeroth in Quel'Thalas.]],
+    }
 }
 
 -- MOR_DUUN --
