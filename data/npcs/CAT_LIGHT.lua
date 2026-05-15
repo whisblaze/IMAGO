@@ -201,3 +201,10 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"] = {
     zones = {},
     category = "CAT_LIGHT",
 }
+
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"] = {
+    displayID = 240464,
+    ids = {240464},
+    zones = {},
+    category = "CAT_LIGHT",
+}
