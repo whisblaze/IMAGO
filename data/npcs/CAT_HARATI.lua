@@ -15,14 +15,14 @@ IMAGOdb.npcs.CAT_HARATI["orweyna"] = {
 
 IMAGOdb.npcs.CAT_HARATI["elder_hagar"] = {
     displayID = 255819,
-    ids = {255819, 237332, 237567, 237572, 240754, 240839, 241216, 245151, 248886, 252494, 252495, 252496, 252497},
+    ids = {255819, 237332, 256918, 237567, 237572, 240754, 240839, 241216, 245151, 248886, 252494, 252495, 252496, 252497},
     zones = {},
     category = "CAT_HARATI",
 }
 
 IMAGOdb.npcs.CAT_HARATI["amarakk"] = {
-    displayID = 237236,
-    ids = {237236, 237284, 244419, 244455, 249066},
+    displayID = 244455,
+    ids = {244455, 237284, 237236, 244419, 241525, 253971, 249066},
     zones = {},
     category = "CAT_HARATI",
 }
