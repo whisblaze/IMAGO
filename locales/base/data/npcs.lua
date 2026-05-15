@@ -862,17 +862,30 @@ IMAGOdb.npcs.CAT_LIGHT["nolaki"].timeline = {
     {era = "Midnight", text = "Fights as external support of the Light orders on the Isle of Quel'Danas against the advancing Void invasion."},
 }
 
+-- VALUNEI --
 IMAGOdb.npcs.CAT_LIGHT["valunei"].name = "Valunei"
-IMAGOdb.npcs.CAT_LIGHT["valunei"].race = "Lightforged Draenei"
-IMAGOdb.npcs.CAT_LIGHT["valunei"].lore = "Valunei is a Lightforged draenei and the current 'Exemplar of Compassion' in the newly reformed Tyr's Guard. On Argus, she learned the ways of the Light from her mentor Vindicator Iriska and spent countless years fighting the horrors of the Burning Legion. She deeply despises unnecessary suffering and has made it her life's mission to heal and protect the innocent. After arriving on Azeroth, she was recruited by Travard into Tyr's Guard on the Dragon Isles. In Midnight, her unwavering path of compassion leads her to the Isle of Quel'Danas. There, she uses her remarkable healing powers on the front lines to preserve the lives of the defenders and protect the Sunwell from the Void."
+IMAGOdb.npcs.CAT_LIGHT["valunei"].race = "Lightforged draenei"
+IMAGOdb.npcs.CAT_LIGHT["valunei"].lore = [[Valunei has always been opposed to fighting. When the Burning Legion conquered her homeworld though, she was left with no choice. The war was won in the end, but Valunei had lost her best friend to the demons and had fought for so long that she didn't remember who she was before it all started.
+
+Joining her brethren on Azeroth, Valunei felt without purpose. She wandered this new world trying to help as many people as she could, and slowly finding hope again. The kindness she showed drew the attention of Travard and thus, Valunei was recruited into the renewed Tyr's Guard as the Exemplar of Compassion.]]
 IMAGOdb.npcs.CAT_LIGHT["valunei"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["valunei"].source = "warcraft.wiki.gg/wiki/Valunei"
+IMAGOdb.npcs.CAT_LIGHT["valunei"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["valunei"].timeline = {
-    {era = "Legion", text = "Fought as part of the Army of the Light on Argus against the Burning Legion and learned the teachings of the paladins."},
-    {era = "DF", text = "Was inducted into Tyr's Guard on the Dragon Isles and accepted the title 'Exemplar of Compassion'."},
-    {era = "Midnight", text = "Travels to the Isle of Quel'Danas to use her healing arts in the bitter war against the Void invasion."},
+    {
+        era = "Ancient",
+        text = [[Joined the Army of the Light, became Lightforged, and fought on Argus against the Burning Legion. Was trained as a paladin by her best friend and commander, Vindicator Iriska. Valunei was heartbroken when Iriska died.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Tyr's Guard as the Exemplar of Compassion and took part in reforming the titan keeper. Attended the first Tishamaat holiday of the draenei on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped to defend the Sunwell against the Voidstorm.]],
+    }
 }
 
+-- MARIELLA WARD --
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].name = "Mariella Ward"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].lore = [[Known as Mariella "the Heretic", she once served the Scarlet Onslaught. Disagreeing with their zealous ways to wield the Light, she was sentenced to death for her disobedience. Arriving to a timely rescue, the High Priest sent by Alonsus Faol was able to save her, and she joined the Conclave.
@@ -884,6 +897,7 @@ IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].timeline = {
     {era = "Midnight", text = "Was summoned to Silvermoon to defend the Sunwell and stayed by its holy waters to lend her magic against the encroaching Voidstorm."},
 }
 
+-- HADWIN --
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].name = "Hadwin"
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].race = "Human (Kul Tiran)"
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].lore = "Hadwin is a burly Kul Tiran and the current 'Exemplar of Justice' in the newly reformed Tyr's Guard. Originally a worshiper of the Tidemother, he joined the Order of Embers in Drustvar as an Inquisitor to assist Lady Waycrest in fighting the coven witches. To his own surprise, he developed an inexplicable yet profound connection to the Holy Light in the process. He trained as a paladin with the Silver Hand but soon left to follow his own pragmatic code. On the Dragon Isles, he finally found his true calling within Tyr's Guard. In Midnight, Hadwin stands on the front lines at Parhelion Plaza with his massive shield, ensuring that the merciless hunger of the Void is met with iron justice."
@@ -895,6 +909,7 @@ IMAGOdb.npcs.CAT_LIGHT["hadwin"].timeline = {
     {era = "Midnight", text = "Fights as the vanguard of Tyr's Guard at Parhelion Plaza and Quel'Danas against the forces of the Void."},
 }
 
+-- TALTHIS --
 IMAGOdb.npcs.CAT_LIGHT["talthis"].name = "Talthis"
 IMAGOdb.npcs.CAT_LIGHT["talthis"].race = "Blood Elf"
 IMAGOdb.npcs.CAT_LIGHT["talthis"].lore = "Talthis is a blood elf paladin and the current 'Exemplar of Order' in the newly reformed Tyr's Guard. As a child, he was forced to watch his homeland of Silvermoon fall to the absolute chaos of the Scourge invasion. This traumatic experience, along with surviving countless global catastrophes, forged within him an unwavering desire for structure, security, and order. When Travard discovered him during a Primalist assault on the Dragon Isles, Talthis did not hesitate to join Tyr's Guard. In Midnight, the son of Quel'Thalas returns to his homeland—not within the ranks of the Blood Knights, but as part of the Light's elite strike force to halt the ultimate chaos of the Void on the Isle of Quel'Danas."
