@@ -62,3 +62,9 @@ IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"] = {
     category = "CAT_NEUTRAL",
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"] = {
+    displayID = 235081,
+    ids = {235081},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
