@@ -21,8 +21,8 @@ IMAGOdb.npcs.CAT_HARATI["elder_hagar"] = {
 }
 
 IMAGOdb.npcs.CAT_HARATI["amarakk"] = {
-    displayID = 237236,
-    ids = {237236, 237284, 244419, 244455, 249066},
+    displayID = 244455,
+    ids = {244455, 237284, 237236, 244419, 241525, 253971, 249066},
     zones = {},
     category = "CAT_HARATI",
 }
