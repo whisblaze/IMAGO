@@ -230,14 +230,39 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].timeline = {
     }
 }
 
+-- RIFTBLADE MAELLA --
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].name = "Riftblade Maella"
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].race = "Void Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].lore = "Riftblade Maella is a deadly melee combatant of the ren'dorei and part of the absolute vanguard of Magister Umbric's forces. As a Riftblade, she masters the art of fusing physical martial prowess with the unstable magic of the Telogrus Rift to slice through space and disorient her foes. The fact that the Void Elves are defending their old homeland of Quel'Thalas in Midnight is a matter of honor and survival for Maella. Her deployments in the Voidspire and at the center of the deadly Voidstorm show that she fearlessly fights where the corruption of the Void is thickest. She ruthlessly uses pure darkness as a weapon against the Void itself, defending Silvermoon City with ice-cold precision."
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].zones = {"The Voidspire", "Voidstorm", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].source = "Quest: Der Telogrusriss"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].race = "Void elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].lore = [[Maella used to be a spellbreaker - a warrior trained to combat mages - when she was still living in Silvermoon.  She learned from Magister Umbric about the Void in secret, believing that in the forbidden magic lay the answer to help the struggling blood elves. She was caught however, and instead of renouncing her, Umbric chose to take the blame and the magister and his followers were exiled from their home.
+
+Now deeply loyal to him, Maella followed Umbric into Telogrus Rift where she became involuntarily infused with the Void. With no way out but through, she became a Riftblade and now serves the ren'dorei's cause wherever it may lead.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].zones = {"Isle of Quel'Danas", "Silvermoon City", "Sunkiller Sanctum", "The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].timeline = {
-    {era = "BfA", text = "Was transformed in the Ghostlands and trained as a Riftblade in the Telogrus Rift to master the Void on the battlefield."},
-    {era = "Midnight", text = "Leads the melee vanguard of the ren'dorei in the Voidstorm and the Voidspire to protect the Sunwell."},
+    {
+        era = "Pre-WotLK",
+        text = [[Was discovered in the attempt of performing a Void ritual and was exiled from Quel'Thalas by Grand Magister Rommath and Lor'themar Theron.]],
+    },
+    {
+        era = "Legion",
+        text = [[Followed Umbric into Telogrus Rift and was transformed into a ren'dorei. Joined the Alliance after Alleria Windrunner rescued them.]],
+    },
+    {
+        era = "DF",
+        text = [[Defended Telogrus Rift from the Shadowguard ethereals.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought on K'aresh against Dimensius' forces. Protected Shan'dorah from saboteurs in Untethered Space.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Stayed behind to watch over Telogrus while Umbric went to Quel'Thalas to negotiate. Battled the Twilight's Blade Cult in the Twilight Highlands.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Fought Xal'atath's forces in the Voidstorm alongside her fellow ren'dorei. Dispelled unstable singularities woven by Xal'atath's minions at Stormarion Citadel, preventing catastrophic explosions.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].name = "Astalor Bloodsworn"
