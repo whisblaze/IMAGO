@@ -107,20 +107,6 @@ IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].timeline = {
     {era = "Midnight", text = "Halduron was the first to notice the threat of the Lightbloom and ventured into Harandar with Orweyna. Securing a tentative alliance with the Haranir, Halduron managed to keep the Lightbloom in check and strengthened Silvermoon's defenses."},
 }
 
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].name = "Alleria Windrunner"
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].aliases = {"Alleria"}
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].race = "Void Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].lore = "The eldest of the Windrunner sisters and a legend among elves. After millennia of absence and endless war in the Twisting Nether, Alleria absorbed the essence of a dark naaru, becoming the first Void Elf. She carries the constant temptation and whispers of the shadows within her. In Midnight, she returns to her homeland to unite the splintered elves in the defense of Quel'Thalas and personally confront her nemesis, Xal'atath, on the frontlines."
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].zones = {"The Void Spire", "Voidstorm"}
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].source = "warcraft.wiki.gg/wiki/Alleria_Windrunner"
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].timeline = {
-    {era = "WC2", text = "Led the elven rangers in the Second War and traveled with the Alliance Expedition through the Dark Portal."},
-    {era = "Legion", text = "Absorbed the power of the dark naaru L'ura on Argus and mastered the energies of the Void."},
-    {era = "BfA", text = "Led the ren'dorei (Void Elves) as new allies into the ranks of the Alliance."},
-    {era = "TWW", text = "Hunted Xal'atath as her personal nemesis through Khaz Algar to save Azeroth from falling."},
-    {era = "Midnight", text = "Fights in the most dangerous zones of the Voidstorm and the Void Spire for the survival of Quel'Thalas."},
-}
-
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].name = "Vereesa Windrunner"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].aliases = {"Vereesa"}
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].race = "High Elf"
@@ -622,16 +608,40 @@ IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].timeline = {
     }
 }
 
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].name = "Delas Moonfang"
+-- DELAS MOONFANG --
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].name = "Delas Moonfang"
 IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].aliases = {"Delas"}
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].race = "Night Elf"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].lore = "Delas Moonfang is a historical pioneer: a former Priestess of Elune, she was the first Night Elf to walk the path of the Paladin and join the Order of the Silver Hand. Under the tutelage of Mehlar Dawnblade, she learned to harmonize the Holy Light with the traditions of her people. In Midnight, she serves as a living symbol of unity at the Sunwell, proving that faith in the Light knows no boundaries between elven peoples when it comes to defending Azeroth."
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].source = "warcraft.wiki.gg/wiki/Delas_Moonfang"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].timeline = {
-    {era = "WoD", text = "Served as a Priestess of the Moon in Shadowmoon Valley on Draenor, assisting Alliance forces against the Iron Horde."},
-    {era = "Legion", text = "Joined the Silver Hand and was ordained as the first Night Elf Paladin in the Sanctum of Light."},
-    {era = "Midnight", text = "Fights as an experienced Paladin on the Isle of Quel'Danas for the defense of the Sunwell."},
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].race = "Night elf"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].lore = [[Delas Moonfang has been a priestess of Elune for almost the entirety of her long life. Growing up during the War of the Ancients, she took on the holy profession to aid others – because aid was clearly needed in a time of demons. She committed her life to healing and to the study of demons, and she even learned to speak Eredun.
+
+When the Legion returned, Delas wasted no time to join the Conclave under Alonsus Faol. Her true path in the Light lay in becoming the first night elven paladin though, as she found out when she met the Highlord of the Silver Hand. After all these millennia, she finally feels like she can accomplish her true destiny.]]
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Grew up in Val'sharah during the War of the Ancients and joined the Sisterhood of Elune.]],
+    },
+    {
+        era = "WoD",
+        text = [[Aided Archmage Khadgar to track Gul'dan.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Conclave as one of its first members and helped redeem the void god Saraka. Translated various texts from the Burning Legion for both the Conclave and the reformed Knights of the Silver Hand. Met the Highlord and found her truth – she became a paladin. Later confronted her ancestors who made a deal with the demons out of desperation.]],
+    },
+    {
+        era = "DF",
+        text = [[Moved to Bel'ameth.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought for the Alliance in Azj-Kahet against Queen Ansurek's nerubians.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought on the Isle of Quel'Danas against the Devouring Host.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].name = "Lord Grayson Shadowbreaker"
@@ -731,6 +741,38 @@ IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].timeline = {
     {
         era = "Midnight",
         text = [[Was summoned by the Sunwell to defend it against the Void.]],
+    }
+}
+
+-- FIONA --
+IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = [[Caring and loyal, this worgen woman and her caravan have been traveling all over Azeroth for many years. She earns her livelihood as a traveling herbalist and healer, but her heart yearns for the companionship of the different people she meets on her adventures. She is all too happy to lend travelers a ride on her stagecoach and can't walk past souls in need without stopping to help however she can. It is a simple life, but Fiona is very fulfilled by it.  
+Her two closest friends are the paladins Tarenar Sunstrike and Gidwin Goldbraids, who frequently accompany her.
+
+The Sunwell has sensed her compassion and willingness to help others and has called her to Silvermoon to defend it. As always, Fiona will do whatever she can.]]
+IMAGOdb.npcs.CAT_LIGHT["fiona"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["fiona"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].timeline = {
+    {
+        era = "Cata",
+        text = [[Traveled the Eastern Plaguelands with Tarenar and Gidwin. They stopped multiple times and helped the paladins of Light's Hope Chapel before settling in the sanctuary for the time being. Made several friends and acquaintances along the way like Argus Highbeacon, the ghost of Pamela Redpath and Vex'tul.]],
+    },
+    {
+        era = "WoD",
+        text = [[Traveled to Draenor and helped with the threat of the botani in Shadowmoon Valley. Parked the caravan in Lunarfall Garrison for a while to help the Alliance commander. Fiona found an interest in watching the fights in the ogre coliseum of Highmaul.]],
+    },
+    {
+        era = "BfA",
+        text = [[Traveled to Boralus and put up shop there for a while.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Dragonscale Expedition and explored the Dragon Isles in her caravan.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought on the Isle of Quel'Danas.]],
     }
 }
 
@@ -1086,6 +1128,68 @@ IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
     }
 }
 
+-- ALLERIA WINDRUNNER --
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windrunner"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Void elf (former high elf)"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Known to the people of Azeroth as one of the Alliance's greatest war heroes, Alleria has fought in the Second War and in the millennia-long crusade against the Burning Legion. She is many things - a mother, a partner, a hero, an older sister - but above all she is a huntress. Everything comes second to the mission before her and no price is too high to ensure the safety of her world. 
+
+War is the only life she understands, and she finds more comfort and familiarity on the battlefield than in times of peace. When she lost her younger brother and her parents to the war against the Horde, Alleria blamed herself and charged recklessly into combat, chasing purpose through violence. She never truly recovered from the trauma of these losses. Having a family of her own with Turalyon and their son Arator, she can't bring herself to open up emotionally again, even though seeing the two men become strangers is hurting her to the core.
+
+While fighting the Burning Legion, Alleria has found a weapon in the Void. She was infused with the fallen naaru L'ura and now wields her dark powers for the good of Azeroth. Always on the brink of falling to madness, with constant whispers assaulting her mind, Alleria has now set her mind on hunting Xal'atath. As with all her hunts, the pursuit has become an obsession and she won't rest until her foe lies defeated.]]
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].zones = {"The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Refused the title of future Ranger-General of Silvermoon and left her homeland to see the world beyond. She made contact and allies within the Alliance of Lordaeron. Her parents were murdered by the orcish Horde during her absence.]],
+    },
+    {
+        era = "WC2",
+        text = [[With the armies of Lordaeron at her side, she successfully defended Quel'Thalas from the Horde. In the fighting, her brother Lirath died and Alleria blamed herself for it. Stayed with the Alliance's forces and helped to ultimately win the war. Met Turalyon, had a son, and ventured into Outland, ultimately becoming stranded there.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Traveled through the Twisting Nether with Turalyon and was conscripted into the Army of the Light to fight the Burning Legion. What would take a few decades on Azeroth, to them were a thousand years of war. Alleria met Locus Walker and learned how to make use of void magic. She was briefly locked up by Xe'ra and the Army of the Light because of it.]],
+    },
+    {
+        era = "Legion",
+        text = [[Learned more about the Void and how to resist it's whispers. Was infused with the naaru L'ura. Fought in the final battle against the Legion in their stronghold of Antorus and succeeded. With the crusade finally over, her and Turalyon were reunited with their son, Arator. Found and recruited the exiled ren'dorei into the Alliance.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Returned to Silvermoon but was promptly exiled when her mere dark presence almost corrupted the Sunwell. Met with her sisters Vereesa and Sylvanas but the meeting ended in a fight.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought in the Siege of Lordaeron against Sylvanas and later fought for the Alliance in the Fourth War.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Led the hunt for Sylvanas Windrunner. She resorted to torture to get information out of Horde civilians.]],
+    },
+    {
+        era = "SL",
+        text = [[Attended Sylvanas' trial in Oribos.]],
+    },
+    {
+        era = "DF",
+        text = [[At Khadgar's request she began to hunt "the Harbinger", who turned out to be Xal'atath. Defended Telogrus Rift alongside Locus Walker and Magister Umbric from Xal'atath's Shadowguard.]],
+    },
+    {
+        era = "TWW",
+        text = [[Survived the destruction of Dalaran and recklessly hunted Xal'atath through all of Khaz Algar and below. Managed to damage the Dark Heart. Very reluctantly worked together with Xal'atath and Locus Walker to defeat Dimensius the All-Devouring.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Thwarted a resurgence of the Burning Legion together with Turalyon and Arator, seemingly getting closer as a family.  Accepted a marriage proposal from Turalyon but struggled to find herself at ease. With a heavy heart she left Turalyon at the altar and did not attend her son's promotion ceremony. Later refused to journey to Silvermoon with Arator and instead followed Xal'atath into the Voidstorm.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Led the fight against the Void in the Voidstorm. Faced Xal'atath in her Voidspire and was overcome by the madness of the whispers in her mind, turning on her allies. Xal'atath then cut L'ura out of Alleria and the barely-conscious elf was lost in the Darkwell alongside Turalyon.]],
+    }
+}
+
+
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].name = "Decimus"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].aliases = {}
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].race = "Domanaar"
@@ -1170,19 +1274,6 @@ IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].timeline = {
         era = "Midnight",
         text = [[After Orweyna helped him in Undermine, Gazlowe promised to come to Harandar and experience her culture. He enjoyed learning about the Hara'ti.]],
     }
-}
-
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].name = "Fiona"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].aliases = {}
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].race = "Worgen"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].lore = "Fiona is a worgen adventurer, holy priest, and one of the most loyal souls in Azeroth. She became famous for her legendary caravan in the Eastern Plaguelands, with which she safely escorted countless adventurers—most notably her best friends, the paladins Gidwin Goldbraids and Tarenar Sunstrike—through enemy territory. She is the personified lifeblood of civilians and independent helpers in Azeroth. In Midnight, she has steered her caravan to the Isle of Quel'Danas. Although she belongs to no military order, she tirelessly supports the defenders of the Light with her healing arts, her supplies, and her pragmatism."
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].source = "warcraft.wiki.gg/wiki/Fiona"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].timeline = {
-    {era = "Cata", text = "Drove her famous caravan through the Eastern Plaguelands and supported the Argent Crusade."},
-    {era = "WoD", text = "Joined the Alliance expedition on Draenor, serving as a holy priest and herbalist in the garrison (Shadowmoon Valley)."},
-    {era = "DF", text = "Traveled with the Dragonscale Expedition to the Waking Shores basecamp after reuniting with Gidwin and Tarenar."},
-    {era = "Midnight", text = "Appears on the Isle of Quel'Danas as a civilian supporter and healer for the united defenders against the Void."},
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].name = "Valeera Sanguinar"

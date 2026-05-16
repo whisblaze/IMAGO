@@ -69,9 +69,9 @@ IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"] = {
-    displayID = 246670,
-    ids = {246670, 239484, 240731, 260830},
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"] = {
+    displayID = 240731,
+    ids = {240731, 239484, 260830, 246670},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -96,6 +96,14 @@ IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"] = {
     zones = {},
     category = "CAT_LIGHT",
 }
+
+IMAGOdb.npcs.CAT_LIGHT["fiona"] = {
+    displayID = 243406,
+    ids = {243406, 246659},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
 
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"] = {
     displayID = 249268,
