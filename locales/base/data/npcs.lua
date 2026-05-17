@@ -979,14 +979,29 @@ IMAGOdb.npcs.CAT_LIGHT["hadwin"].timeline = {
 
 -- TALTHIS --
 IMAGOdb.npcs.CAT_LIGHT["talthis"].name = "Talthis"
-IMAGOdb.npcs.CAT_LIGHT["talthis"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_LIGHT["talthis"].lore = "Talthis is a blood elf paladin and the current 'Exemplar of Order' in the newly reformed Tyr's Guard. As a child, he was forced to watch his homeland of Silvermoon fall to the absolute chaos of the Scourge invasion. This traumatic experience, along with surviving countless global catastrophes, forged within him an unwavering desire for structure, security, and order. When Travard discovered him during a Primalist assault on the Dragon Isles, Talthis did not hesitate to join Tyr's Guard. In Midnight, the son of Quel'Thalas returns to his homeland—not within the ranks of the Blood Knights, but as part of the Light's elite strike force to halt the ultimate chaos of the Void on the Isle of Quel'Danas."
+IMAGOdb.npcs.CAT_LIGHT["talthis"].race = "Blood elf"
+IMAGOdb.npcs.CAT_LIGHT["talthis"].lore = [[Growing up during the Third War in Quel'Thalas changed Talthis' view on life and robbed him of a peaceful childhood. He came to the conclusion that the world was out of order, that the forces of evil and disarray like the Lich King and the Burning Legion had to be eliminated so that structure and harmony could return to the world.
+
+He joined the Blood Knights to purge the remnants of the rampaging Scourge in the Dead Scar and later ventured to the Dragon Isles to stop the elemental disorder. He was recruited into the Tyr's Guard and felt a great appreciation for the titan philosophy of peace through order. Thus he became the Exemplar of Order and was content with his role in the grander scheme of things.]]
 IMAGOdb.npcs.CAT_LIGHT["talthis"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["talthis"].source = "Quest: Ein Vorbild der Ordnung: Talthis"
+IMAGOdb.npcs.CAT_LIGHT["talthis"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["talthis"].timeline = {
-    {era = "WC3", text = "Witnessed the devastating fall of Silvermoon to the Scourge as a child, which shaped his lifelong pursuit of order."},
-    {era = "DF", text = "Fought against the Primalists during the Flashfrost Assault on the Dragon Isles and was recruited by Travard as the Exemplar of Order."},
-    {era = "Midnight", text = "Returns to his homeland to stop the chaos of the Void invasion on the Isle of Quel'Danas as part of Tyr's Guard."},
+    {
+        era = "WC3",
+        text = [[Survived the fall of Quel'Thalas as a child.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Sometimes after becoming an adult, he joined the Blood Knights as a paladin and fought the undead in the Ghostlands.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Tyr's Guard as the Exemplar of Order and took part in reforming the titan keeper.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned to Silvermoon and fought to protect the Sunwell.]],
+    }
 }
 
 
