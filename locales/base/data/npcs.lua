@@ -826,15 +826,31 @@ IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].timeline = {
     {era = "Midnight", text = "Was summoned to Silvermoon to defend the Sunwell and stayed by its holy waters to lend her magic against the encroaching Voidstorm."},
 }
 
+-- Hadwin --
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].name = "Hadwin"
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].race = "Human (Kul Tiran)"
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].lore = "Hadwin is a burly Kul Tiran and the current 'Exemplar of Justice' in the newly reformed Tyr's Guard. Originally a worshiper of the Tidemother, he joined the Order of Embers in Drustvar as an Inquisitor to assist Lady Waycrest in fighting the coven witches. To his own surprise, he developed an inexplicable yet profound connection to the Holy Light in the process. He trained as a paladin with the Silver Hand but soon left to follow his own pragmatic code. On the Dragon Isles, he finally found his true calling within Tyr's Guard. In Midnight, Hadwin stands on the front lines at Parhelion Plaza with his massive shield, ensuring that the merciless hunger of the Void is met with iron justice."
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].race = "Human"
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].lore = [[A burly man from humble origins and with a blunt attitude, Hadwin never thought about becoming a paladin. Like most Kul Tirans, he grew up worshipping the Tidemother. Ever since he was a small boy, watching fretfully as his mother's shop was robbed again and again whenever his father was out at sea, a burning desire for justice fueled his actions. 
+
+He vowed to stand up for the people that needed a strong arm to defend them and he volunteered to become an inquisitor for the Order of Embers in Drustvar. There, he began to feel a strange connection to the Light, a connection he still can't quite explain. He began training as a paladin out of curiosity and to find out his true path in life. Now, he has become the Exemplar of Justice in the Tyr's Guard and the Sunwell recognized his good heart and summoned him to Silvermoon.]]
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].source = "Quest: Ein Vorbild der Gerechtigkeit: Hadwin"
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].timeline = {
-    {era = "BfA", text = "Fought as an Inquisitor for the Order of Embers in Drustvar against witches, discovering the Light and later becoming a paladin of the Silver Hand."},
-    {era = "DF", text = "Traveled to the Dragon Isles to right wrongs and was inducted into Tyr's Guard by Travard as the Exemplar of Justice."},
-    {era = "Midnight", text = "Fights as the vanguard of Tyr's Guard at Parhelion Plaza and Quel'Danas against the forces of the Void."},
+    {
+        era = "BfA",
+        text = [[Volunteered to join the Order of Embers under Lucille Waycrest to combat the witches of Drustvar. Started to feel a connection to the Light.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Briefly joined the Order of the Silver Hand and began training as a paladin.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Tyr's Guard as the Exemplar of Justice and took part in reforming the titan keeper.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned to Silvermoon and fought to protect the Sunwell.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["talthis"].name = "Talthis"
