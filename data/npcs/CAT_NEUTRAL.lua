@@ -13,6 +13,13 @@ IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"] = {
     category = "CAT_NEUTRAL",
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"] = {
+    displayID = 238386,
+    ids = {238386, 239826, 235502, 235765, 235763, 236945, 235532, 235389, 235662, 238296, 235726, 235471, 235715, 239574, 240232, 240378, 235521, 235717, 240455, 239978, 235609, 235660, 235544, 235664, 240393, 235601, 244300, 244761},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"] = {
     displayID = 235697,
     ids = {235697, 243907, 252853, 235633, 240691, 244929, 244948, 245060, 235650, 235600, 235652, 235392, 248583, 235607, 243276, 240674, 241034, 249088, 243857, 240690, 239603, 240233, 235718, 235778, 235653, 240395, 240379, 244098},
@@ -30,13 +37,6 @@ IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl"] = {
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"] = {
     displayID = 242593,
     ids = {242593, 242693, 242934, 242881},
-    zones = {},
-    category = "CAT_NEUTRAL",
-}
-
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"] = {
-    displayID = 243406,
-    ids = {243406, 246659},
     zones = {},
     category = "CAT_NEUTRAL",
 }
@@ -69,3 +69,9 @@ IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"] = {
     category = "CAT_NEUTRAL",
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"] = {
+    displayID = 235081,
+    ids = {235081},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
