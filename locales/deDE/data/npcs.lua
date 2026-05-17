@@ -944,12 +944,12 @@ IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].timeline = {
     { era = "Midnight", text = "Nachdem Orweyna ihm in Lorenhall geholfen hatte, versprach Gazlowe ihr, nach Harandar zu kommen und ihre Kultur kennenzulernen. Er genoss es, mehr über die Hara'ti zu erfahren." },
 }
 
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].name = "Fiona"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].race = "Worgen"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].lore = "Fiona ist eine Worgen-Abenteurerin, Heiligpriesterin und eine der treuesten Seelen Azeroths. Berühmt wurde sie durch ihre legendäre Karawane in den Östlichen Pestländern, mit der sie unzählige Abenteurer – allen voran ihre besten Freunde, die Paladine Gidwin Goldzopf und Tarenar Sonnenhieb – sicher durch Feindesland kutschierte. Sie ist das personifizierte Herzblut der Zivilisten und unabhängigen Helfer in Azeroth. In Midnight hat sie ihre Karawane auf die Insel von Quel'Danas gesteuert. Sie gehört zwar keinem militärischen Orden an, unterstützt die Verteidiger des Lichts jedoch unermüdlich mit ihrer Heilkunst, ihren Vorräten und ihrem Pragmatismus."
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].source = "warcraft.wiki.gg/wiki/Fiona"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = "Fiona ist eine Worgen-Abenteurerin, Heiligpriesterin und eine der treuesten Seelen Azeroths. Berühmt wurde sie durch ihre legendäre Karawane in den Östlichen Pestländern, mit der sie unzählige Abenteurer – allen voran ihre besten Freunde, die Paladine Gidwin Goldzopf und Tarenar Sonnenhieb – sicher durch Feindesland kutschierte. Sie ist das personifizierte Herzblut der Zivilisten und unabhängigen Helfer in Azeroth. In Midnight hat sie ihre Karawane auf die Insel von Quel'Danas gesteuert. Sie gehört zwar keinem militärischen Orden an, unterstützt die Verteidiger des Lichts jedoch unermüdlich mit ihrer Heilkunst, ihren Vorräten und ihrem Pragmatismus."
+IMAGOdb.npcs.CAT_LIGHT["fiona"].zones = {"Insel von Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["fiona"].source = "warcraft.wiki.gg/wiki/Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].timeline = {
     {era = "Cata", text = "Kutschierte mit ihrer berühmten Karawane durch die Östlichen Pestländer und unterstützte den Silbernen Kreuzzug."},
     {era = "WoD", text = "Schloss sich der Allianz-Expedition auf Draenor an und diente als Heiligpriesterin und Kräuterkundige in der Garnison (Schattenmondtal)."},
     {era = "DF", text = "Reiste mit der Drachenschuppenexpedition ins Basislager der Küste des Erwachens, nachdem sie wieder mit Gidwin und Tarenar vereint war."},
