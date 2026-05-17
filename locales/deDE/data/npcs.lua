@@ -597,12 +597,12 @@ IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
     {era = "Midnight", text = "Verteidigt Quel'Danas und die Parhelionplaza mit der geballten strahlenden Macht der Sonne."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].name = "Kriegskaplanin Senn"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].race = "Lichtgeschmiedete Draenei"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].lore = "Kriegskaplanin Senn ist eine lichtgeschmiedete Draenei und eine der loyalsten Offizierinnen von Hochexarch Turalyon. Nach dem Vierten Krieg unterstützte sie ihn im Arathihochland bei der unerbittlichen Jagd nach Sylvanas Windläufer. Dort musste sie widerwillig mit der Leerenelfe Celosel Nachtgeber kooperieren – eine Erfahrung, die bei der lichtgeschmiedeten Veteranin physischen Ekel vor der Leerenmagie auslöste. In Midnight schließt sie sich der Vorhut des Lichts an. Mit heiligem Zorn und tiefer Abscheu vor den Schatten stellt sie sich den Eindringlingen am Sonnenbrunnen und im Leerensturm entgegen."
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].zones = {"Die Leerenspitze", "Insel von Quel'Danas", "Leerensturm", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].source = "warcraft.wiki.gg/wiki/War_Chaplain_Senn"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].name = "Kriegskaplanin Senn"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].race = "Lichtgeschmiedete Draenei"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].lore = "Kriegskaplanin Senn ist eine lichtgeschmiedete Draenei und eine der loyalsten Offizierinnen von Hochexarch Turalyon. Nach dem Vierten Krieg unterstützte sie ihn im Arathihochland bei der unerbittlichen Jagd nach Sylvanas Windläufer. Dort musste sie widerwillig mit der Leerenelfe Celosel Nachtgeber kooperieren – eine Erfahrung, die bei der lichtgeschmiedeten Veteranin physischen Ekel vor der Leerenmagie auslöste. In Midnight schließt sie sich der Vorhut des Lichts an. Mit heiligem Zorn und tiefer Abscheu vor den Schatten stellt sie sich den Eindringlingen am Sonnenbrunnen und im Leerensturm entgegen."
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].zones = {"Die Leerenspitze", "Insel von Quel'Danas", "Leerensturm", "Parhelionplaza", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].source = "warcraft.wiki.gg/wiki/War_Chaplain_Senn"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].timeline = {
     {era = "BfA", text = "Jagte mit Turalyon im Arathihochland nach Sylvanas und zeigte offen ihren tiefen Ekel vor der Leerenmagie der Ren'dorei."},
     {era = "Midnight", text = "Dient in der Vorhut des Lichts und bekämpft die absolute Finsternis in den gefährlichsten Zonen von Quel'Thalas."},
 }

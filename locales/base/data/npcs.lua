@@ -854,14 +854,27 @@ IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
     }
 }
 
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].name = "War Chaplain Senn"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].race = "Lightforged Draenei"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].lore = "War Chaplain Senn is a Lightforged draenei and one of High Exarch Turalyon's most loyal lieutenants. After the Fourth War, she aided him in the relentless hunt for Sylvanas Windrunner in the Arathi Highlands. There, she reluctantly had to cooperate with the void elf Celosel Nightgiver—an experience that triggered physical disgust for Void magic in the Lightforged veteran. In Midnight, she joins the Vanguard of Light. With holy wrath and a deep abhorrence for the shadows, she confronts the invaders at the Sunwell and in the Voidstorm."
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].zones = {"The Void Spire", "Isle of Quel'Danas", "Voidstorm", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].source = "warcraft.wiki.gg/wiki/War_Chaplain_Senn"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].timeline = {
-    {era = "BfA", text = "Hunted Sylvanas with Turalyon in the Arathi Highlands and openly showed her deep disgust for the Void magic of the ren'dorei."},
-    {era = "Midnight", text = "Serves in the Vanguard of Light, fighting absolute darkness in the most dangerous zones of Quel'Thalas."},
+-- WAR CHAPLAIN SENN --
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].name = "War Chaplain Senn"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].race = "Lightforged draenei"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].lore = [[A loyal lieutenant to Turalyon, Senn has fought cosmic evil in service of the Army of the Light for hundreds of years. She has developed an intense hatred towards the forces of the Void and can barely contain her disgust towards her ren'dorei allies. 
+
+Now, she has been summoned by the Sunwell to fight for the Light once more. Senn isn't interested in defending Silvermoon City though. Her priorities lie first and foremost in vanquishing Xal'atath and her minions, no matter the costs.]]
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City", "The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].timeline = {
+    {
+        era = "Legion",
+        text = [[Fought on Argus against the Burning Legion.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Helped Turalyon and Alleria on the hunt for Sylvanas Windrunner and very reluctantly worked with the ren'dorei.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought at Parhelion Plaza. Disapproved of seeing Umbric walk free after he avoided execution while trying to study the Voidstorm. Senn later joined the assault on the Voidspire and became blinded by the Light. She attacked her own allies, Turalyon included, and was killed as a result.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].name = "Faerin Lothar"
