@@ -71,19 +71,24 @@ IMAGOdb.zones[2395].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2424].name = "Isle of Quel'Danas"
-IMAGOdb.zones[2424].lore = "The Isle of Quel'Danas, the radiant crown jewel of the elven empire and home to the sacred Sunwell, has become the ultimate battleground. Xal'atath has focused the full might of her Void armada here to plunge the fount of Light and Arcane magic into eternal darkness. The skies above the island are torn by massive cosmic rifts, while Blood, High, and Void Elves unite for the first time in millennia. Shoulder to shoulder, they stand in a desperate last stand to save the absolute heart of their civilization from ruin."
+IMAGOdb.zones[2424].lore = [[The northernmost part of the kingdom is primarily known as the site of the Sunwell, the sacred heart of Quel'Thalas. Both a blessing and a curse to the elves, this font of arcane and holy magic has kept them alive for millennia but also has made them a target for malign forces that covet the well. Thus the Isle of Quel'Danas has been left devastated and the Sunwell corrupted twice in the last few decades – first by death from the north and the Scourge that heeded it's command, second by the Burning Legion during prince Kael'thas's betrayal. 
+
+Now, the Void threatens to lay the Sunwell to waste once more and the upheaval of the Voidstorm in the sky above Quel'Danas is ample reason to fight once more... or to despair. 
+]]
 IMAGOdb.zones[2424].pointsOfInterest = {
+
+ 
     {
         name = "The Sunwell",
-        lore = "The magical center of the elves and Xal'atath's primary target. The well has been heavily fortified and pulses with volatile energies as Azeroth's most powerful magi maintain a massive shield against the all-consuming Void."
+        lore = [[The magical source of power for every living blood elf. Dath'remar Sunstrider brought a vial from the original Well of Eternity to his new homeland of Quel'Thalas ten thousand years ago and created the Sunwell. Through its waters the elves have almost become one with its arcane magic. After its destruction by Arthas, it became evident that they had become addicted to it, to the point of withering away and dying without it. Now that it has been restored with holy magic, the blood elves can't let such tragedy happen again.]]
     },
     {
-        name = "Sanctum of the Sun's Reach",
-        lore = "Once the headquarters of the Shattered Sun Offensive, this staging ground has been rebuilt into an impenetrable fortress. Here, the united faction leaders coordinate the defense of the entire island."
+        name = "Magister's Terrace",
+        lore = [[Grand Magister Rommath would argue that the magisters – Silvermoon's mages – are possibly the most skilled and learned spellcasters in all of Azeroth. They all start here in the halls of the Magister's Terrace where they learn the various forms of the Arcane, the Light, and more. Stored and studied here are many artifacts of significant import and danger as well, and one will never find the Terrace unguarded.]]
     },
     {
-        name = "The Dawnstar Front",
-        lore = "The bloody beaches of the island where Xal'atath's invasion forces relentlessly make landfall. A brutal, unending meat grinder where arcane golems and void beasts clash in an endless war."
+        name = "The Shining Span",
+        lore = [[A masterwork of magical craftsmanship, this bridge spans over a thousand yards and connects the Isle of Quel'Danas to Silvermoon City proper. Visitors and pilgrims will see the shining towers of the Phoenix Court and the Sunwell Ramparts when first they step foot on it – making the Isle a true sight to behold]]
     },
 }
 
