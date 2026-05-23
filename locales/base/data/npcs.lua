@@ -1807,3 +1807,5 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
     }
 }
 
+-- CAT_ARCANTINA
+
