@@ -541,16 +541,66 @@ IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].name = "Moira Thaurissan"
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].race = "Dwarf (Dark Iron)"
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].lore = "Moira Thaurissan is the heir to the throne of Ironforge and regent of the Dark Iron clan. As a member of the Council of Three Hammers, she has united the once-feuding dwarven clans through iron will and political savvy. Moira is not only a capable diplomat but also a powerful priestess. In Midnight, she represents the dwarves at the Sunwell, bringing the combined might of Dark Iron magic and the Light to save Quel'Thalas from total darkness."
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].race = "Dwarf"
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].lore = [[A long-standing and respected leader of the Bronzebeard and the Dark Iron Clans, Queen Moira had not always held such a favorable position among Alliance ranks. Her days of meddling in civil wars are in the past now, though.
+Born as the sole heir to former King Magni and as the widow of the late Emperor Dagran Thaurissan of Blackrock Mountain, she is a member of two out of the three ruling clans of the dwarves. Her son, Dagran II is poised to be the next king of all the clans, once he comes of age.
+
+Never having seen eye to eye with her father, the two of them have recently made the first steps towards reconciliation. Their family time has been promptly interrupted by Xal'atath's attack - first on Dalaran and now, on Silvermoon.]]
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].source = "warcraft.wiki.gg/wiki/Moira_Thaurissan"
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].timeline = {
-    {era = "Classic", text = "Disappeared from Ironforge and became the consort of Emperor Dagran Thaurissan in Blackrock Depths."},
-    {era = "Cata", text = "Returned to Ironforge after her father Magni's petrification and helped found the Council of Three Hammers."},
-    {era = "BfA", text = "Secured the official integration of the Dark Iron dwarves into the Alliance during the Fourth War."},
-    {era = "TWW", text = "Accompanied the expedition to Khaz Algar and supported her son Dagran II in his first diplomatic steps."},
-    {era = "Midnight", text = "Fights as a leading priestess and representative of the dwarves in the defense of the Sunwell."},
+    {
+        era = "Pre-Classic",
+        text = [[Born as the sole heir to King Magni and Queen Eimear of Ironforge. Her mother died to a troll skirmish when Moira was a child and a rift grew between her and her father. He would have preferred a son to a daughter and made the fact known clearly to her and to his subjects.]],
+    },
+    {
+        era = "Classic",
+        text = [[Was kidnapped by the Dark Iron Clan to use as a hostage in the impending dwarven civil war. She fell in love with and married her captor, Emperor Dagran Thaurissan, and the two had a son together. When her husband was killed at Magni's orders, Moira stayed in Shadowforge City as queen, and masterminded the Dark Iron dwarves' liberation from Ragnaros by allying with the Hydraxian Waterlords.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[When her father was turned into crystal, Moira and infant Dagran II returned to Ironforge to claim the throne. Met with resistance, she took the whole city hostage in a siege, including a visiting Anduin Wrynn. Was spared execution by King Varian at Anduin's request and became a member of the newly formed Council of Three Hammers as the Dark Iron representative.]],
+    },
+    {
+        era = "Cata",
+        text = [[Still mistrusted by the people of Ironforge, Moira rooted out traitors of the Dark Iron Clan who had defected to the Twilight's Hammer.]],
+    },
+    {
+        era = "MoP",
+        text = [[Joined King Varian in the defense of Ironforge against the Frostmane trolls. Clearly humbled, she vowed to prove the Dark Iron Clan's worth to the kingdom, and to the Alliance. Fought in the Siege of Orgrimmar against Garrosh Hellscream's troops.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[Was in charge of the reconstruction of the Jade Serpent statue.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Defended Khaz Modan from demonic invasions. After four years of petrification, Magni finally reawakened as the Speaker of Azeroth. Seeing how well her daughter had managed as a ruler, despite all the obstacles in her way, Magni told a tearful Moira that he was proud of her for the first time.]],
+    },
+    {
+        era = "Legion",
+        text = [[Helped in the Third Invasion of the Burning Legion as a priest in the Conclave.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Rallied the Conclave and healers of Ironforge to aid in curing Azeroth's wounds inflicted by Sargeras. Was charged by King Anduin to find out more about the properties of Azerite.]],
+    },
+    {
+        era = "BfA",
+        text = [[Halted rebelling subjects that had formed the Cult of Ragnaros. Officially made the Dark Iron Clan a member of the Alliance.]],
+    },
+    {
+        era = "DF",
+        text = [[Aided in the defense of Amirdrassil.]],
+    },
+    {
+        era = "TWW",
+        text = [[Survived the destruction of Dalaran and made contact with the earthen of Khaz Algar. Helped the earthen reunite as a people and secured their aid in the fight against Xal'atath. Journeyed to Gundargaz with Dagran II and Magni to stop the traitorous High Speaker. Grew a bit closer to her father again.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell to defend Silvermoon.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].name = "Captain Fareeya"

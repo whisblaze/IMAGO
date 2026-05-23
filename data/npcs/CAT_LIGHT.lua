@@ -56,8 +56,8 @@ IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"] = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"] = {
-    displayID = 251932,
-    ids = {251932, 251949, 253188, 254299, 247926},
+    displayID = 253188,
+    ids = {253188, 247926, 251932, 254299, 251949},
     zones = {},
     category = "CAT_LIGHT",
 }
