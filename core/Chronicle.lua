@@ -2041,7 +2041,7 @@ elseif activeTab == 2 then
                 local restLore = lore:sub(2)
                 local formattedLore = "|cffffd700" .. firstLetter .. "|r" .. restLore .. "\n\n"
                 
-                if zoneData.pointsOfInterest then
+                if zoneData.pointsOfInterest and next(zoneData.pointsOfInterest) then
                     formattedLore = formattedLore .. "|cffffd700" .. (IMAGO.L["ZONE_POI_HEADER"] or "INTERESSANTE ORTE") .. "|r\n_________________________________\n\n"
                     for _, poi in ipairs(zoneData.pointsOfInterest) do
                         local pName = poi.name or ""

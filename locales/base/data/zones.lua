@@ -107,6 +107,5 @@ IMAGOdb.zones[2393].pointsOfInterest = {
 IMAGOdb.zones[10473].name = "The Arcantina"
 IMAGOdb.zones[10473].lore = [[Created as a pocket dimension by a Kirin Tor archmage long before this time, the Arcantina now opens its doors to the Champions of Azeroth. This cozy tavern offers refuge far removed from the turmoil of war and the burdens of the outside world. Originally a meeting place for the Sons of Lothar during the Second War, the inn has since grown lively with travelers and visitors from all across Azeroth.
 
-Unofficially, the Arcantina belongs to Archmage Khadgar, though many friendly souls have made their stay here permanent.
-Behind the counter stands Bartender Bob, serving only the finest brews with a warmth that can put even the most battle-worn souls at ease. Everyone is allowed to stay for as long as they like and share in tales with both old friends and newfound companions.
+Unofficially, the Arcantina belongs to Archmage Khadgar, though many friendly souls have made their stay here permanent. Behind the counter stands Bartender Bob, serving only the finest brews with a warmth that can put even the most battle-worn souls at ease. Everyone is allowed to stay for as long as they like and share in tales with both old friends and newfound companions.
 ]]

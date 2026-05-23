@@ -59,7 +59,7 @@ IMAGOdb.zones[2393] = {
     pointsOfInterest = {},
 }
 
-IMAGO.zones[10473] = {
+IMAGOdb.zones[10473] = {
     id = 10473,
     texturePath = "Interface\\Addons\\IMAGO\\media\\arcantina.tga",
     factionControl = "CAT_CONTESTED",
