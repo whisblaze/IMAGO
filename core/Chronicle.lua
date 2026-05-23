@@ -950,12 +950,15 @@ function IMAGO.Chronicle.CreateFrame()
     end)
     f.backBtn:SetScript("OnClick", function(self)
         if not self.enabled then return end
-        local prevSlug = table.remove(navStack)
-        if not prevSlug then return end
+        local prev = table.remove(navStack)
+        if not prev then return end
 
         isNavigatingBack = true
-        IMAGO.Chronicle.OpenToNPCSlug(prevSlug, { skipDiscoveryCinematic = true })
-        
+        if prev.type == "npc" then
+            IMAGO.Chronicle.OpenToNPCSlug(prev.slug, { skipDiscoveryCinematic = true })
+        elseif prev.type == "zone" then
+            IMAGO.Chronicle.OpenToZoneMapID(prev.mapID)
+        end
         C_Timer.After(0, function()
             isNavigatingBack = false
         end)
@@ -1790,16 +1793,21 @@ function IMAGO.Chronicle.UpdateList()
                         end
 
                         f.startPage:Hide()
-                        if not isNavigatingBack
-                            and f.selectedNPCSlug
-                            and f.selectedNPCSlug ~= ""
-                            and f.selectedNPCSlug ~= npc.slug
-                        then
-                            table.insert(navStack, f.selectedNPCSlug)
-                            if IMAGO.Chronicle.SetBackEnabled then
-                                IMAGO.Chronicle.SetBackEnabled(true)
+                        if not isNavigatingBack then
+                            local entry = nil
+                            if f.selectedNPCSlug and f.selectedNPCSlug ~= "" and f.selectedNPCSlug ~= npc.slug then
+                                entry = { type = "npc", slug = f.selectedNPCSlug }
+                            elseif f.selectedZoneMapID then
+                                entry = { type = "zone", mapID = f.selectedZoneMapID }
+                            end
+                            if entry then
+                                table.insert(navStack, entry)
+                                if IMAGO.Chronicle.SetBackEnabled then
+                                    IMAGO.Chronicle.SetBackEnabled(true)
+                                end
                             end
                         end
+                        f.selectedZoneMapID = nil
 
                         f.selectedNPC = npc.data
                         f.selectedNPCSlug = npc.slug
@@ -2074,6 +2082,7 @@ elseif activeTab == 2 then
         end
 
         btn:SetPoint("TOPLEFT", f.content, "TOPLEFT", 5, -yOffset)
+        btn.zoneMapID = mapID  -- store for nav stack lookup
 
         if isZoneVisible then
             btn.bg:SetTexture(zoneData.texturePath)
@@ -2089,6 +2098,22 @@ elseif activeTab == 2 then
 
             btn:SetScript("OnClick", function()
                 if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) end
+
+                if not isNavigatingBack then
+                    local entry = nil
+                    if f.selectedNPCSlug and f.selectedNPCSlug ~= "" then
+                        entry = { type = "npc", slug = f.selectedNPCSlug }
+                    elseif f.selectedZoneMapID and f.selectedZoneMapID ~= mapID then
+                        entry = { type = "zone", mapID = f.selectedZoneMapID }
+                    end
+                    if entry then
+                        table.insert(navStack, entry)
+                        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+                    end
+                end
+                f.selectedNPCSlug = nil
+                f.selectedZoneMapID = mapID
+
                 f.startPage:Hide()
                 f.hintPage:Hide()
                 f.tabLore:Hide() 
@@ -2168,6 +2193,22 @@ elseif activeTab == 2 then
 
             btn:SetScript("OnClick", function()
                 if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) end
+
+                if not isNavigatingBack then
+                    local entry = nil
+                    if f.selectedNPCSlug and f.selectedNPCSlug ~= "" then
+                        entry = { type = "npc", slug = f.selectedNPCSlug }
+                    elseif f.selectedZoneMapID and f.selectedZoneMapID ~= mapID then
+                        entry = { type = "zone", mapID = f.selectedZoneMapID }
+                    end
+                    if entry then
+                        table.insert(navStack, entry)
+                        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+                    end
+                end
+                f.selectedNPCSlug = nil
+                f.selectedZoneMapID = mapID
+
                 f.startPage:Hide()
                 f.hintPage:Hide()
                 f.tabLore:Hide()
@@ -2249,10 +2290,19 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
 
     -- Push current page onto nav stack before navigating away.
     -- Skip if navigating back, or already on this NPC.
-    if not isNavigatingBack and f.selectedNPCSlug and f.selectedNPCSlug ~= "" and f.selectedNPCSlug ~= slug then
-        table.insert(navStack, f.selectedNPCSlug)
-        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+    if not isNavigatingBack then
+        local entry = nil
+        if f.selectedNPCSlug and f.selectedNPCSlug ~= "" and f.selectedNPCSlug ~= slug then
+            entry = { type = "npc", slug = f.selectedNPCSlug }
+        elseif f.selectedZoneMapID then
+            entry = { type = "zone", mapID = f.selectedZoneMapID }
+        end
+        if entry then
+            table.insert(navStack, entry)
+            if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+        end
     end
+    f.selectedZoneMapID = nil
 
     local data = IMAGO.GetNPCData(slug)
 
@@ -2296,6 +2346,41 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
                 local fn = btn:GetScript("OnClick")
                 if fn then fn(btn) end
             end
+            C_Timer.After(0, function()
+                if f:IsShown() then scrollToButton(btn) end
+            end)
+            return true
+        end
+    end
+
+    return false
+end
+
+--- Navigate back to a zone by mapID: switches to the zones tab, finds the button, and clicks it.
+function IMAGO.Chronicle.OpenToZoneMapID(mapID)
+    if not mapID then return false end
+
+    if not IMAGO.Chronicle.frame then
+        IMAGO.Chronicle.CreateFrame()
+    end
+
+    local f = IMAGO.Chronicle.frame
+    IMAGO.Chronicle.SelectMainTab(2)
+    f:Show()
+
+    local function scrollToButton(btn)
+        if not btn or not f.scrollFrame or not f.content then return end
+        local scroll = f.scrollFrame
+        local range = math.max(0, (f.content:GetHeight() or 0) - (scroll:GetHeight() or 0))
+        local _, _, _, _, btnY = btn:GetPoint()
+        local target = math.max(0, math.min(range, -(btnY or 0) - 40))
+        scroll:SetVerticalScroll(target)
+    end
+
+    for _, btn in pairs(IMAGO.Chronicle.zoneButtons or {}) do
+        if btn.zoneMapID == mapID and btn:IsShown() then
+            local fn = btn:GetScript("OnClick")
+            if fn then fn(btn) end
             C_Timer.After(0, function()
                 if f:IsShown() then scrollToButton(btn) end
             end)
