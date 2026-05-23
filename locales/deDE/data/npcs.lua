@@ -630,12 +630,12 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
     {era = "Midnight", text = "Überwachte die Verteidigung des Sonnenbrunnens und stärkte die erschöpften Verteidiger mit heiliger Magie. Half Arator dabei, seine Zweifel an seinem Vater und dem Licht zu überwinden."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].name = "Tahu Weisenwind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].lore = "Tahu Weisenwind ist der spirituelle Begründer der Seher, der Priesterschaft der Tauren. Während die Menschen das heilige Licht verehren, lehrte Tahu sein Volk, das Licht durch An'she – die Sonne und das rechte Auge der Erdenmutter – zu kanalisieren. Seine Anwesenheit in Quel'Thalas während Midnight ist von gewaltiger diplomatischer und poetischer Bedeutung: Der Meister der Sonnenmagie der Horde steht den Blutelfen zur Seite, um deren eigene Sonnenquelle vor dem alles verschlingenden Hunger der Leere zu beschützen."
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].source = "warcraft.wiki.gg/wiki/Tahu_Sagewind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].name = "Tahu Weisenwind"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].race = "Tauren"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].lore = "Tahu Weisenwind ist der spirituelle Begründer der Seher, der Priesterschaft der Tauren. Während die Menschen das heilige Licht verehren, lehrte Tahu sein Volk, das Licht durch An'she – die Sonne und das rechte Auge der Erdenmutter – zu kanalisieren. Seine Anwesenheit in Quel'Thalas während Midnight ist von gewaltiger diplomatischer und poetischer Bedeutung: Der Meister der Sonnenmagie der Horde steht den Blutelfen zur Seite, um deren eigene Sonnenquelle vor dem alles verschlingenden Hunger der Leere zu beschützen."
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].source = "warcraft.wiki.gg/wiki/Tahu_Sagewind"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].timeline = {
     {era = "WotLK", text = "Diskutierte mit Aponi Lichtmähne über das Ungleichgewicht zwischen Mu'sha (Mond) und An'she (Sonne) und legte so den Grundstein für die Tauren-Paladine und -Priester."},
     {era = "Cata", text = "Gründete offiziell den Orden der Seher und brachte den Tauren bei, die Macht von An'she zu wirken."},
     {era = "Legion", text = "Vertrat die Tauren in der Konklave im Netherlichttempel und kämpfte Seite an Seite mit den Priestern Azeroths."},
