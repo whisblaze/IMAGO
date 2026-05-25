@@ -105,19 +105,6 @@ IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].timeline = {
     {era = "Midnight", text = "Halduron war der Erste, der die Bedrohung durch die Lichtblüte bemerkte und sich mit Orweyna auf die Reise nach Harandar begab. Durch ein vorläufiges Bündnis mit den Haranir gelang es Halduron, die Lichtblüte in Schach zu halten und die Verteidigung von Silbermond zu stärken."},
 }
 
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].name = "Alleria Windläufer"
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].race = "Leerenelfe"
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].lore = "Die älteste der Windläufer-Schwestern und eine Legende unter den Elfen. Nach Jahrtausenden der Abwesenheit und dem endlosen Krieg im Wirbelnden Nether absorbierte Alleria die Essenz eines dunklen Naaru und wurde zur ersten Leerenelfe. Sie trägt die ständige Versuchung und das Flüstern der Schatten in sich. In Midnight kehrt sie in ihre Heimat zurück, um die zersplitterten Elfen in der Verteidigung von Quel'Thalas zu vereinen und sich ihrer persönlichen Nemesis, Xal'atath, an der Front entgegenzustellen."
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].zones = {"Die Leerenspitze", "Leerensturm"}
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].source = "warcraft.wiki.gg/wiki/Alleria_Windrunner"
-IMAGOdb.npcs.CAT_QUELTHALAS["alleria_windrunner"].timeline = {
-    {era = "WC2", text = "Führte die elfischen Waldläufer im Zweiten Krieg an und reiste mit der Allianz-Expedition durch das Dunkle Portal."},
-    {era = "Legion", text = "Absorbierte die Macht des dunklen Naaru L'ura auf Argus und meisterte die Energien der Leere."},
-    {era = "BfA", text = "Führte die Ren'dorei (Leerenelfen) als neue Verbündete in die Ränge der Allianz."},
-    {era = "TWW", text = "Jagte Xal'atath als persönliche Nemesis durch Khaz Algar, um Azeroth vor dem Fall zu bewahren."},
-    {era = "Midnight", text = "Kämpft in den gefährlichsten Zonen des Leerensturms und der Leerenspitze um das Überleben von Quel'Thalas."},
-}
-
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].name = "Vereesa Windläufer"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].race = "Hochelfe"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].lore = "Die jüngste der Windläufer-Schwestern und die entschlossene Anführerin des Silbernen Bundes. Im Gegensatz zu ihren Schwestern blieb Vereesa dem Pfad der Hochelfen treu und schlug eine tiefe Wurzel in der Allianz. Nach dem schmerzhaften Verlust ihres Ehemanns Rhonin in Theramore widmete sie ihr Leben dem Schutz Azeroths und der Ausbildung ihrer Waldläufer. In Midnight kehrt sie nach Quel'Thalas zurück, um ihre Heimat gegen die Leere zu verteidigen und sich dem schmerzhaften Erbe ihrer Familie zu stellen."
@@ -478,13 +465,36 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].name = "Hauptmann Fareeya"
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].race = "Lichtgeschmiedete Draenei"
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].lore = "Hauptmann Fareeya ist die oberste Feldkommandantin der Lichtgeschmiedeten Draenei und eine der vertrauenswürdigsten Offiziere von Hochexarch Turalyon. Während des tausendjährigen Krieges gegen die Brennende Legion leitete sie unzählige Einsätze an Bord der Vindicaar. Fareeya ist bekannt für ihre unerschütterliche Disziplin und ihren unbändigen Glauben an das heilige Licht. In Midnight führt sie das Kontingent der Lichtgeschmiedeten auf der Insel von Quel'Danas an, um den Sonnenbrunnen mit modernster Technologie und göttlicher Macht gegen die Leere zu verbarrikadieren."
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].source = "warcraft.wiki.gg/wiki/Captain_Fareeya"
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].lore = [[Als Stellvertreterin von Hochexarch Turalyon ist Fareeya eine der Anführerinnen der Armee des Lichts. Als Überlebende der Brennenden Legion floh sie ursprünglich gemeinsam mit Prophet Velen von Argus, doch später führte ihr Weg sie zurück auf ihre verderbte Heimatwelt. Zusammen mit ihren elitärsten Draenei-Soldaten war sie fest entschlossen, nicht länger zu fliehen, sondern standzuhalten und zu kämpfen.
+
+Aus ihrer Truppe entstand die Armee des Lichts, die sich dem Licht mit Leib und Seele verschrieb. Der heilige Kreuzzug wuchs stetig und inspirierte sogar Angehörige anderer Völker dazu, sich der Mission anzuschließen. Schlussendlich wurden die Dämonen - mit der Hilfe der Champions von Azeroth - endgültig besiegt. Fareeya dachte jedoch nicht daran, sich auf ihren Lorbeeren auszuruhen, und folgte Turalyon in die Reihen der Allianz auf Azeroth, entschlossen, weiterhin für alles Heilige und Gute zu kämpfen.]]
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].zones = {"Insel von Quel'Danas", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].timeline = {
-    {era = "Legion", text = "Diente als zentrale Kommandantin der Armee des Lichts während des Feldzugs auf Argus und unterstützte die Helden Azeroths."},
-    {era = "BfA", text = "Führte die Lichtgeschmiedeten Draenei offiziell in die Allianz und überwachte die Ausbildung neuer Rekruten auf der Vindicaar."},
-    {era = "Midnight", text = "Befehligt die Verteidigungsstellungen auf der Insel von Quel'Danas und koordiniert die Licht-Artillerie gegen die Leerenportale."},
+    {
+        era = "Ancient",
+        text = [[Sie entkam gemeinsam mit Prophet Velen an Bord der Genedar von Argus, als sich die Eredar der Brennenden Legion anschlossen. Später übernahm sie ein weiteres Raumschiff - die Xenedar - und kehrte damit in den Wirbelnden Nether zurück. Unter dem Kommando des Naaru Xe'ra wurde sie lichtgeschmiedet und zu einer Anführerin der Armee des Lichts.]],
+    },
+    {
+        era = "Legion",
+        text = [[Kämpfte an vorderster Front während des Angriffs auf Antorus. Mit der Unterstützung der Champions von Azeroth konnte die Armee des Lichts der Brennenden Legion auf Argus ein für alle Mal ein Ende bereiten.]],
+    },
+    {
+        era = "BfA",
+        text = [[Begrüßte die Entscheidung des Hochexarchen Turalyon ausdrücklich, die Armee des Lichts der Allianz anzuschließen. Sie wurde mit Velen und ihrem Volk wiedervereint und begann damit, neue Draenei aus Azeroth zu lichtgeschmiedeten Soldaten auszubilden. Außerdem kämpfte sie im Vierten Krieg.]],
+    },
+    {
+        era = "DF",
+        text = [[Nahm am ersten Tishamaat-Fest der Draenei auf Azeroth teil.]],
+    },
+    {
+        era = "TWW",
+        text = [[Reiste nach Heilsturz, um Beledars Licht zu erleben, und inspirierte die jungen Arathi mit ihrer Begabung im Umgang mit dem Licht.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Half bei der Verteidigung des Sonnenbrunnens gegen den Leerensturm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].name = "Delas Mondfang"
@@ -520,35 +530,82 @@ IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].name = "Eadric der Reine"
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].race = "Mensch"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].lore = "Eadric der Reine ist der Großchampion des Silbernen Kreuzzugs und einer der tugendhaftesten Paladine in der Geschichte des Ordens. Bekannt für seine Demut und seinen unerschütterlichen Glauben, diente er beim Großen Turnier in Nordend als letzte Prüfung für jene, die sich gegen den Lichkönig beweisen wollten. Trotz seiner hohen Position hat er sich stets einen Funken Humor und eine tiefe Menschlichkeit bewahrt. In Midnight führt er die Verteidigung der Parhelionplaza an und beweist, dass wahre Reinheit das hellste Bollwerk gegen die Schatten der Leere ist."
+IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].lore = [[Als Paladin und Quartiermeister des Argentumkreuzzuges ist Eadric vor allem für seine Verdienste um den Orden während des Krieges gegen den Lichkönig in Nordend bekannt. Die Spannungen zwischen der Allianz und der Horde nahmen erneut zu, und Hochlord Tirion Fordring schlug vor, ein freundschaftliches Turnier auszurichten, um einen größeren Konflikt zu verhindern. Sein Großchampion Eadric war für den Großteil der Organisation dieses Turniers verantwortlich.
+
+Seitdem ist er meistens in Nordend stationiert, doch wie jeder wahre Paladin geht er dorthin, wohin das Licht ihn ruft.]]
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].zones = {"Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].source = "warcraft.wiki.gg/wiki/Eadric_the_Pure"
+IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
-    {era = "WotLK", text = "Diente als Großchampion des Silbernen Kreuzzugs und prüfte die Helden Azeroths in der Prüfung des Kreuzfahrers."},
-    {era = "Legion", text = "Schloss sich der Conclave im Sanktum des Lichts an und unterstützte den Hohenlord bei der Führung des Ordens der Silbernen Hand."},
-    {era = "Midnight", text = "Verteidigt die Parhelionplaza gegen die Leereninvasion und dient als moralischer Anker für die Truppen des Lichts."},
+    {
+        era = "WotLK",
+        text = [[Diente dem Argentumkreuzzug und Tirion Fordring als Großchampion. Er war für die Organisation des Argentumturniers im nördlichen Teil von Eiskrone verantwortlich, indem er das Turniergelände sicherte und mit Vorräten versorgte sowie das Training der Kämpfer überwachte. Er diente als Quartiermeister und nahm gelegentlich selbst als Kämpfer am Turnier teil.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich den neu formierten Rittern der Silbernen Hand an und diente als Quartiermeister der Kapelle des hoffnungsvollen Lichts.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Hielt die wütende Geißel in Nordend zurück.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen und kämpfte auf der Parhelionplaza gegen die Leere.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].name = "Yalia Weisenwisper"
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].race = "Pandaren"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].lore = "Yalia Weisenwisper ist eine hochrangige Priesterin der Schado-Pan aus Pandaria. Sie ist bekannt für ihre unerschütterliche Ruhe und ihre Fähigkeit, selbst in den dunkelsten Momenten spirituellen Frieden zu stiften. Während der Invasion der Brennenden Legion schloss sie sich der Conclave im Sanktum des Lichts an, um die Priester Azeroths zu vereinen. In Midnight bringt sie die meditativen Praktiken und Heilkünste ihres Volkes an die Parhelionplaza, wo sie als moralischer Anker und Heilerin für die vereinten Verteidiger von Quel'Thalas dient."
+IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].lore = [[Als Fischerin aufgewachsen, bei den Shado-Pan ausgebildet und als Priesterin sowie Alchemistin tätig, ist Yalia eine Frau mit vielen Talenten. Nachdem sie ihre Familie schon in jungen Jahren zurücklassen musste, widmete sie den Großteil ihres Lebens der Heilung ihrer Mitpandaren im Shado-Pan-Kloster im Gipfel von Kun-Lai.
+
+Nachdem sie im Kampf gegen Feinde wie Lei Shen und die Brennende Legion ihre Unterstützung gewährt hatte, wurden Yalias Weisheit und ihr Wunsch, die Welt zu einem besseren Ort zu machen, vom Heiligen Licht erkannt. Nun wurde sie nach Silbermond gerufen, um erneut für ihre Welt zu kämpfen.]]
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].zones = {"Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].source = "warcraft.wiki.gg/wiki/Yalia_Sagewhisper"
+IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].timeline = {
-    {era = "MoP", text = "Diente den Schado-Pan auf der Insel des Donners und unterstützte die Helden im Kampf gegen den Donnerkönig Lei Shen."},
-    {era = "Legion", text = "Wurde ein Gründungsmitglied der Conclave im Sanktum des Lichts, um die Schatten der Legion mit innerer Stärke zu bekämpfen."},
-    {era = "Midnight", text = "Bietet spirituellen Beistand und Heilung auf der Parhelionplaza während der Belagerung durch die Leere."},
+    {
+        era = "Pre-WC3",
+        text = [[Da zwei Pandarenjungen in eine gefährliche Rivalität verfielen, um eines Tages ihre Hand zu gewinnen, sah Yalia keinen anderen Ausweg, als ihre Heimat und ihre Familie hinter sich zu lassen. Bereits im Alter von fünf Jahren schloss sie sich dem Orden der Shado-Pan an.]],
+    },
+    {
+        era = "MoP",
+        text = [[Mittlerweile zu einer erfahrenen Shado-Panpriesterin aufgestiegen, beaufsichtigte Yalia die Ausbildung neuer Rekruten. Als der Konflikt zwischen Allianz und Horde auf Pandaria ausbrach, kämpfte sie zur Verteidigung der Tonlongsteppe gegen die manifestierten Sha. Später wurde sie mit ihrer Familie wiedervereint und verteidigte das Shado-Pan-Kloster gegen den Angriff der Zandalari. Dort begegnete sie Chen Sturmbräu, und die beiden verliebten sich ineinander.]],
+    },
+    {
+        era = "Legion",
+        text = [[Wurde von Prophet Velen für das Konklave rekrutiert, um dort als Alchemistin zu dienen. Half bei der Verteidigung des Netherlichttempels.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen, um ihn gegen die Leere zu verteidigen.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"].name = "Lothraxion"
-IMAGOdb.npcs.CAT_LIGHT["lothraxion"].race = "Lichtgeschmiedeter Schreckenslord"
-IMAGOdb.npcs.CAT_LIGHT["lothraxion"].lore = "Lothraxion ist eine absolute Seltenheit im Kosmos: Er ist ein Nathrezim (Schreckenslord), der vom Ur-Naaru Xe'ra mit dem Heiligen Licht geschmiedet wurde. Als hochrangiger Kommandant des Leuchtenden Heeres scheint seine Loyalität zum Licht unerschütterlich, auch wenn seine wahre Herkunft aus den Schattenlanden bei manchen stets tiefes Misstrauen weckt. In Midnight koordiniert er die gigantische militärische Offensive des Lichts und ist in fast jedem Krisengebiet von Quel'Thalas und dem Leerensturm an vorderster Front zu finden."
-IMAGOdb.npcs.CAT_LIGHT["lothraxion"].zones = {"Insel von Quel'Danas", "Leerensturm", "Nexuspunkt Xenas", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["lothraxion"].source = "warcraft.wiki.gg/wiki/Lothraxion"
+IMAGOdb.npcs.CAT_LIGHT["lothraxion"].race = "Lichtgeschmiedeter Nathrezim"
+IMAGOdb.npcs.CAT_LIGHT["lothraxion"].lore = [[Man sagt, dass Schreckenslords grausame, sadistische und manipulative Wesen seien - entweder Spione der Brennenden Legion oder der Reiche des Todes selbst. Gestaltwandler, die die Reihen ihrer Feinde infiltrieren und selbst die edelsten Seelen gegeneinander aufbringen. Man sagt, man könne ihnen nicht vertrauen.
+
+Lothraxion ist die eine Ausnahme von dieser Regel. Er zerstörte unzählige Welten im Dienst von Sargeras’ großer Vision und machte die Leere zu seinem größten Feind. Als der Kreuzzug der Dämonen ihn mit den Draenei zusammenführte, ließ sich Lothraxion dazu bewegen, seine früheren Herren zu verraten. Er schloss sich der Armee des Lichts an und wurde lichtgeschmiedet.
+
+Da er all die Schrecken kennt, die sowohl das Fel als auch die Leere über den Kosmos gebracht haben, akzeptiert Lothraxion keinerlei Kompromisse im Umgang mit Wesen, die diesen Mächten dienen. Er ist überzeugt, dass einzig das Licht diese Übel besiegen kann. Nun wurde Lothraxion unter dem Befehl seines Hochexarchen Turalyon zum Sonnenbrunnen gerufen, um erneut gegen die Mächte der Dunkelheit zu kämpfen.]]
+IMAGOdb.npcs.CAT_LIGHT["lothraxion"].zones = {"Insel von Quel'Danas", "Nexuspunkt Xenas", "Parhelionplaza", "Silbermond", "Leerensturm"}
+IMAGOdb.npcs.CAT_LIGHT["lothraxion"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["lothraxion"].timeline = {
-    {era = "Legion", text = "Offenbarte sich als lichtgeschmiedeter Dämon und unterstützte die Paladine im Sanktum des Lichts im Kampf gegen Balnazzar."},
-    {era = "SL", text = "Ein Bericht in Revendreth (Feindliche Infiltration) ließ die dunkle Vermutung zu, dass er ein Schläfer-Agent von Graf Denathrius sein könnte."},
-    {era = "Midnight", text = "Tritt als oberster militärischer Stratege des Lichts in unzähligen Zonen von Quel'Thalas in Erscheinung."},
+    {
+        era = "Ancient",
+        text = [[Half dabei, als Dämon der Brennenden Legion zahllose Welten in den Großen Dunklen Weiten zu vernichten. Verließ die Dämonen und seine Mitstreiter der Nathrezim, nachdem er den Draenei begegnet war. Schloss sich schließlich der Armee des Lichts an, schwor Xe'ra, der Mutter des Lichts, die Treue und wurde selbst vom Licht durchdrungen.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Nach der Zerstörung von Draenor rekrutierte Lothraxion Turalyon und Alleria Windläufer in die Armee des Lichts. Als Alleria von der Leere infiziert wurde, half Lothraxion ihr, ihren Verstand zu bewahren, und überzeugte sogar Xe'ra davon, sie nicht hinzurichten. Später kämpfte er an der Seite von Hochexarch Turalyon auf Argus.]],
+    },
+    {
+        era = "Legion",
+        text = [[Wurde auf der Dämonenwelt Niskara gefangen genommen und eingesperrt, jedoch vom Hochlord der Silbernen Hand gerettet. Half bei der Verteidigung des Netherlichttempels und schloss sich später den Armeen Azeroths auf der Vindikaar an, um den Kampf auf Argus fortzusetzen. Nach der Niederlage der Brennenden Legion schloss sich Lothraxion jedoch nicht der Allianz an, sondern zog weiter, um andernorts im Kosmos Dämonen zu bekämpfen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen, um ihn gegen die Verschlingende Heerschar zu verteidigen, und schloss sich Alleria Windläufer sowie Magister Umbric beim Angriff auf den Leerensturm an. Die überwältigende Präsenz der dunklen Energien trieb Lothraxion dazu, nach immer radikaleren Methoden im Kampf gegen die Leere zu suchen, wodurch er sogar Verbündete gefährdete, um sein Ziel zu erreichen. Als sein Fanatismus schließlich ganz Silbermond zu vernichten drohte, wurde Lothraxion von seinen eigenen Verbündeten getötet.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].name = "Erzbischof Alonsus Faol"
@@ -573,12 +630,12 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
     {era = "Midnight", text = "Überwachte die Verteidigung des Sonnenbrunnens und stärkte die erschöpften Verteidiger mit heiliger Magie. Half Arator dabei, seine Zweifel an seinem Vater und dem Licht zu überwinden."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].name = "Tahu Weisenwind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].lore = "Tahu Weisenwind ist der spirituelle Begründer der Seher, der Priesterschaft der Tauren. Während die Menschen das heilige Licht verehren, lehrte Tahu sein Volk, das Licht durch An'she – die Sonne und das rechte Auge der Erdenmutter – zu kanalisieren. Seine Anwesenheit in Quel'Thalas während Midnight ist von gewaltiger diplomatischer und poetischer Bedeutung: Der Meister der Sonnenmagie der Horde steht den Blutelfen zur Seite, um deren eigene Sonnenquelle vor dem alles verschlingenden Hunger der Leere zu beschützen."
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].source = "warcraft.wiki.gg/wiki/Tahu_Sagewind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].name = "Tahu Weisenwind"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].race = "Tauren"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].lore = "Tahu Weisenwind ist der spirituelle Begründer der Seher, der Priesterschaft der Tauren. Während die Menschen das heilige Licht verehren, lehrte Tahu sein Volk, das Licht durch An'she – die Sonne und das rechte Auge der Erdenmutter – zu kanalisieren. Seine Anwesenheit in Quel'Thalas während Midnight ist von gewaltiger diplomatischer und poetischer Bedeutung: Der Meister der Sonnenmagie der Horde steht den Blutelfen zur Seite, um deren eigene Sonnenquelle vor dem alles verschlingenden Hunger der Leere zu beschützen."
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].source = "warcraft.wiki.gg/wiki/Tahu_Sagewind"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].timeline = {
     {era = "WotLK", text = "Diskutierte mit Aponi Lichtmähne über das Ungleichgewicht zwischen Mu'sha (Mond) und An'she (Sonne) und legte so den Grundstein für die Tauren-Paladine und -Priester."},
     {era = "Cata", text = "Gründete offiziell den Orden der Seher und brachte den Tauren bei, die Macht von An'she zu wirken."},
     {era = "Legion", text = "Vertrat die Tauren in der Konklave im Netherlichttempel und kämpfte Seite an Seite mit den Priestern Azeroths."},
@@ -587,22 +644,48 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].name = "Aponi Lichtmähne"
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].lore = "Aponi Lichtmähne ist die Oberste Häuptling der Sonnenläufer, dem Orden der Tauren-Paladine. Als ehemalige Kriegerin wurde sie im Krieg gegen die Geißel schwer verwundet. In langen Gesprächen mit Tahu Weisenwind erkannte sie, dass ihr Volk das Gleichgewicht der Erdenmutter aus den Augen verloren hatte. Indem sie sich der Macht von An'she (der Sonne) zuwandte, wurde sie die allererste Sonnenläuferin. In Midnight steht sie Schulter an Schulter mit den Paladinen der Silbernen Hand auf der Parhelionplaza, um das Licht von An'she gegen die absolute Finsternis zu entfesseln."
+IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].lore = [[Während des Krieges gegen den Lichkönig in Nordend hatte die Taurenkriegerin Aponi Lichtmähne eine Eingebung. Sie wollte ihrem Volk und der Horde mit mehr als nur ihrer Stärke helfen. Nach einem Gespräch mit ihrem Freund Tahu Weisenwind verband Aponi die Lehren der Gottheit An'she - der Sonne - mit ihrem Kampfstil. So wurde sie zum ersten Taurenpaladin.
+
+Seit sie sich während der dritten und letzten Invasion der Brennenden Legion dem Orden der Silbernen Hand angeschlossen hat, sind Aponis Sonnenläufer in ganz Azeroth anzutreffen und helfen jedem, der ihre Unterstützung benötigt.]]
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].source = "warcraft.wiki.gg/wiki/Aponi_Brightmane"
+IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
-    {era = "WotLK", text = "Wurde als Kriegerin in Nordend verwundet und legte mit Tahu den ideologischen Grundstein für die Sonnenmagie."},
-    {era = "Cata", text = "Gründete offiziell die Sonnenläufer und wurde die erste Paladinin der Tauren."},
-    {era = "Legion", text = "Schloss sich der reformierten Silbernen Hand im Sanktum des Lichts als hochrangiger Champion an."},
-    {era = "Midnight", text = "Verteidigt Quel'Danas und die Parhelionplaza mit der geballten strahlenden Macht der Sonne."},
+    {
+        era = "WotLK",
+        text = [[Kämpfte als Kriegerin in Nordend gegen die Armeen des Lichkönigs, wurde jedoch schwer verwundet und kehrte nach Donnerfels zurück. Dort legten sie und Tahu Weisenwind den Grundstein für die ersten taurischen Paladin- und Priesterorden. Nachdem sie geheilt worden war, kehrte Aponi in den Krieg zurück und kämpfte nun mit dem Licht An'shes an ihrer Seite.]],
+    },
+    {
+        era = "Cata",
+        text = [[Gründete offiziell den Paladinorden der Sonnenläufer und war die wichtigste Ausbilderin neuer taurischer Rekruten. Außerdem half sie dabei, Donnerfels gegen die tobenden Elementare zu verteidigen.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich den Streitkräften des Ordens der Silbernen Hand an. Sie versuchte erfolglos, den Dämon Balnazzar aufzuspüren, wurde dabei jedoch gefangen genommen und musste vom Hochlord gerettet werden. Zudem half sie bei der Verteidigung des Netherlichttempels und der Exodar gegen die Brennende Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Als sich der Orden der Silbernen Hand aufgrund des Fraktionskonflikts im Vierten Krieg aufspaltete, kehrte Aponi nach Donnerfels zurück, um erneut neue Rekruten auszubilden.]],
+    },
+    {
+        era = "DF",
+        text = [[Schloss sich der Drachenschuppenexpedition auf die Dracheninseln an und wurde zur Freundin und Unterstützerin der Zentauren von Teerakai.]],
+    },
+    {
+        era = "TWW",
+        text = [[Kämpfte auf der Insel von Dorn gegen die Streitkräfte von Xal'atath, nachdem sie von der Zerstörung Dalarans erfahren hatte.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen und verteidigte ihn gegen den Leerensturm.]],
+    }
 }
 
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].name = "Kriegskaplanin Senn"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].race = "Lichtgeschmiedete Draenei"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].lore = "Kriegskaplanin Senn ist eine lichtgeschmiedete Draenei und eine der loyalsten Offizierinnen von Hochexarch Turalyon. Nach dem Vierten Krieg unterstützte sie ihn im Arathihochland bei der unerbittlichen Jagd nach Sylvanas Windläufer. Dort musste sie widerwillig mit der Leerenelfe Celosel Nachtgeber kooperieren – eine Erfahrung, die bei der lichtgeschmiedeten Veteranin physischen Ekel vor der Leerenmagie auslöste. In Midnight schließt sie sich der Vorhut des Lichts an. Mit heiligem Zorn und tiefer Abscheu vor den Schatten stellt sie sich den Eindringlingen am Sonnenbrunnen und im Leerensturm entgegen."
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].zones = {"Die Leerenspitze", "Insel von Quel'Danas", "Leerensturm", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].source = "warcraft.wiki.gg/wiki/War_Chaplain_Senn"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].name = "Kriegskaplanin Senn"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].race = "Lichtgeschmiedete Draenei"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].lore = "Kriegskaplanin Senn ist eine lichtgeschmiedete Draenei und eine der loyalsten Offizierinnen von Hochexarch Turalyon. Nach dem Vierten Krieg unterstützte sie ihn im Arathihochland bei der unerbittlichen Jagd nach Sylvanas Windläufer. Dort musste sie widerwillig mit der Leerenelfe Celosel Nachtgeber kooperieren – eine Erfahrung, die bei der lichtgeschmiedeten Veteranin physischen Ekel vor der Leerenmagie auslöste. In Midnight schließt sie sich der Vorhut des Lichts an. Mit heiligem Zorn und tiefer Abscheu vor den Schatten stellt sie sich den Eindringlingen am Sonnenbrunnen und im Leerensturm entgegen."
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].zones = {"Die Leerenspitze", "Insel von Quel'Danas", "Leerensturm", "Parhelionplaza", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].source = "warcraft.wiki.gg/wiki/War_Chaplain_Senn"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].timeline = {
     {era = "BfA", text = "Jagte mit Turalyon im Arathihochland nach Sylvanas und zeigte offen ihren tiefen Ekel vor der Leerenmagie der Ren'dorei."},
     {era = "Midnight", text = "Dient in der Vorhut des Lichts und bekämpft die absolute Finsternis in den gefährlichsten Zonen von Quel'Thalas."},
 }
@@ -620,14 +703,28 @@ IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].timeline = {
     {era = "Midnight", text = "Wurde vom Sonnenbrunnen gerufen und half dabei, ihn gegen die Leere zu verteidigen."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].name = "Generalin Amias Bellamy"
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].race = "Mensch (Arathi)"
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].lore = "Generalin Amias Bellamy ist die ranghöchste militärische Kommandantin der Arathi-Expedition. Als pragmatische und kampfgehärtete Taktikerin führte sie in Heilsturz (Hallowfall) den endlosen Krieg gegen die Neruber und die Kreaturen der Tiefe, immer geleitet vom Glauben an die Heilige Flamme. Anders als Faerin Lothar, die oft das Herz der Arathi repräsentiert, ist Bellamy der eiserne Schild und das gezogene Schwert ihres Volkes. In Midnight hat sie ihre Truppen aus dem Untergrund an die Oberfläche verlegt. Unter ihrem Kommando beschränkt sich die Armee der Arathi nicht auf die reine Verteidigung, sondern führt offensive Gegenschläge bis tief in den Leerensturm und die Leerenspitze aus."
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].zones = {"Die Leerenspitze", "Insel von Quel'Danas", "Leerensturm", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].source = "warcraft.wiki.gg/wiki/General_Amias_Bellamy"
-IMAGOdb.npcs.CAT_LIGHT["generalin_bellamy"].timeline = {
-    {era = "TWW", text = "Kommandiert die Arathi-Expedition in Heilsturz und hält die Stellung gegen die unerbittlichen Angriffe aus Azj-Kahet."},
-    {era = "Midnight", text = "Führt die militärische Offensive der Arathi an der Oberfläche und kommandiert Truppen von Silbermond bis in das Zentrum des Leerensturms."},
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].name = "Generalin Amias Bellamy"
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].race = "Arathi"
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].lore = [[Nur wenige können behaupten, dass ihr Glaube eine so bedeutende Rolle in ihrem Leben gespielt hat wie bei den Arathi von Heilsturz. Bellamy unternahm - wie viele ihrer Mitstreiter unter den Paladinen - die gefährliche Expedition über das Meer, um einer Vision des Lichts zu folgen.
+
+Letztlich strandete sie unter Khaz Algar, wobei die Heilige Flamme und ihr Stern Beledar das einzige Licht in ihrem neuen Leben voller ständiger Dunkelheit und Gefahr waren. Der Glaube war nicht länger bloß ein Trost – er war das, was sie am Leben hielt.
+
+Natürlich wurde sie nach der Verteidigung von Heilsturz vom Sonnenbrunnen gerufen.
+
+Natürlich wird sie weiter für das Licht kämpfen - und nur für das Licht.
+
+Natürlich sollte jedes Wesen der Leere als Feind betrachtet werden.]]
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].zones = {"Insel von Quel'Danas", "Silbermond", "Die Leerenspitze", "Leerensturm"}
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].timeline = {
+    {
+        era = "Pre-Legion",
+        text = [[Schloss sich der Arathi-Expedition auf Geheiß der Vision ihres Kaisers an. Überlebte die Reise und strandete in Heilsturz, wo sie fortan als Paladin kämpfte, um den Kristall Beledar zu beschützen und jeden Feind zu vernichten, der ihre neue Heimat bedrohte.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen und verteidigte ihn als Generalin der Vorhut des Lichts unter Turalyon. Reagierte zunehmend gereizt auf die Bewohner Silbermonds, da diese der Vorhut nicht ihre bedingungslose Unterstützung gewährten. Beteiligte sich am Angriff auf die Leerenspitze von Xal'atath und wurde dabei so sehr von Lichtblindheit verzehrt, dass sie begann, ihre eigenen Verbündeten anzugreifen. Wurde schließlich von Turalyon und den Champions von Azeroth getötet.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["arator"].name = "Arator der Retter"
@@ -704,13 +801,28 @@ IMAGOdb.npcs.CAT_LIGHT["talthis"].timeline = {
 
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].name = "Verteidiger Boros"
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].race = "Draenei"
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].lore = "Verteidiger Boros ist ein unbeugsamer Veteran der Hand von Argus und ein hochrangiger Champion der Silbernen Hand. In der Zeit nach dem Absturz der Exodar auf Azeroth führte er auf der Blutmythosinsel den erbitterten Kampf der Draenei gegen die Sabotageakte der Blutelfen an. Diese ehemals tiefe Feindschaft macht seine Präsenz in Midnight umso bemerkenswerter: Im Angesicht der totalen Auslöschung durch die Leere lässt Boros den alten Groll ruhen. Mit seinem gigantischen Hammer und der reinen Macht des Lichts steht er heute auf der Parhelionplaza Schulter an Schulter mit genau jenen Elfen, die er einst bekämpfte, um den Sonnenbrunnen zu schützen."
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].lore = [[Als Anführer der Hand von Argus und zugleich Mitglied der Silbernen Hand hat Boros geschworen, die Traditionen der Paladine am Leben zu erhalten. Bereits mehrfach hat er sich als fähiger militärischer Befehlshaber im Dienst seines Volkes, der Draenei, bewiesen, doch er zögert niemals, Hammer und Glauben all jenen zur Verfügung zu stellen, die Hilfe benötigen.
+
+Nun wurde Verteidiger Boros vom Sonnenbrunnen gerufen, um gegen die Leere zu kämpfen. Wie immer kann man sich darauf verlassen, dass er seine Pflicht gegenüber den Völkern Azeroths erfüllt.]]
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].source = "Quest: Die Hand von Argus"
+IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].timeline = {
-    {era = "TBC", text = "Führte die Truppen der Hand von Argus auf der Blutmythosinsel im Kampf gegen Kael'thas' Sonnenfalken an."},
-    {era = "Legion", text = "Schloss sich der neugegründeten Silbernen Hand an und diente dem Hochlord als treuer Champion im Kampf gegen die Legion."},
-    {era = "Midnight", text = "Kämpft als Vorhut der Silbernen Hand auf der Parhelionplaza und der Insel von Quel'Danas gegen die Leereninvasion."},
+    {
+        era = "TBC",
+        text = [[Besiegte den Verräter Sironas und bewahrte die draenischen Flüchtlinge auf der Blutmythosinsel davor, der dämonischen Verderbnis anheimzufallen. Später half er dabei, die Landschaft rund um die Absturzstelle der Exodar wiederherzustellen.]],
+    },
+    {
+        era = "Legion",
+        text = [[Unterstellte die Hand von Argus dem Orden der Silbernen Hand. Verteidigte die Exodar und den Netherlichttempel gegen die Brennende Legion. Arbeitete gemeinsam mit den Priestern und Dämonenjägern daran, gefangene Paladine zu retten. Später kämpfte er gegen die Legion auf seiner Heimatwelt Argus.]],
+    },
+    {
+        era = "DF",
+        text = [[War bei der Wiedererweckung von Tyr anwesend. Nahm am ersten Tishamaat der Draenei auf Azeroth teil.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Half bei der Verteidigung des Sonnenbrunnens gegen den Leerensturm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].name = "Sonnenläufer Dezco"
@@ -733,18 +845,53 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
     {era = "Midnight", text = "Fungiert als anleitender Mentor für die Sonnenläufer und ihre Verbündeten und lehrt eine neue Generation, dass das Führen des Lichts viel mehr bedeutet als bloße Gewalt."},
 }
 
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].name = "Aeonara Dämmerschemen"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].race = "Leerenelfe"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].lore = [[Als einzige bekannte Leerenelfenpaladin kämpft Aeonara Dämmerschemen gegen die Armeen der Leere. Sie verteidigte den Telogrusriss gegen die Astralen der Schattenwache und kämpfte später in der Manaschmiede Omega auf K'aresh gegen die Streitkräfte von Dimensius.
+
+Sie wurde nun als Teil der Vorhut des Lichts berufen, um den Sonnenbrunnen gegen die Verschlingende Heerschar von Xal'atath zu verteidigen.]]
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].zones = {"Parhelionplaza"}
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].source = "Travanoid"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].timeline = {
+    {
+        era = "DF",
+        text = [[Verteidigte Leerenelfenlager im Telogrusriss gegen Angriffe der Schattenwache.]],
+    },
+    {
+        era = "TWW",
+        text = [[Begleitete Alleria Windläufer und die Leerenelfen nach K'aresh, um in der Manaschmiede Omega gegen Dimensius zu kämpfen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde von Lady Liadrin zur Parhelionplaza gerufen, um den Sonnenbrunnen gegen die Verschlingende Heerschar zu verteidigen. Gemeinsam mit anderen Mitgliedern der Vorhut des Lichts besiegte sie den Leerenmarkierten Reservisten.]],
+    }
+}
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari die Seelenfresserin"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].race = "Blutelf"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].lore = "Als rücksichtslose Dämonenjägerin der Illidari ist Allari eine Meisterin der feindlichen Verhöre. Bewaffnet mit der Sichel der Seelen, nutzt sie ihre teufelserfüllten Kräfte, um die Gedanken ihrer Feinde freizulegen und ihre Essenzen zu ernten. In Midnight weitet sie ihre gnadenlosen Jagdmethoden auf eine kosmische Ebene aus und verfolgt die Mächte der Leere bis in den Telogrusriss und auf die zerrüttete Welt K'aresh."
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].zones = {"Der Telogrusriss", "Eredath", "K'aresh", "Leerensturm"}
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].source = "warcraft.wiki.gg/wiki/Allari_the_Souleater"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].lore = [[Mit einem beinahe unübertroffenen Hass auf die Brennende Legion verdiente sich Allari die Seelenfresserin ihren Beinamen, indem sie die mächtige Seelensense nutzte, um die Seelen von Dämonen darin einzusperren. Diese gefährliche Waffe kommuniziert mit ihr und drängt sie dazu, ihren Feinden noch mehr Leid zuzufügen, weshalb Allari sie häufig auch als Folterinstrument einsetzt.
+
+Trotz ihrer extremen Methoden kämpft Allari jedoch für das Wohl Azeroths. Nach der endgültigen Niederlage der Legion hat sie es sich zur Aufgabe gemacht, willige Ren'dorei in den Wegen der Dämonenjäger zu unterweisen und ihnen im Kampf gegen die Leere beizustehen.]]
+IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].zones = {"Leerensturm", "K'aresh"}
+IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
-    {era = "TBC", text = "Reiste zum Schwarzen Tempel in der Scherbenwelt und schwor Illidan Sturmgrimm die Treue."},
-    {era = "Legion", text = "Kämpfte auf Mardum und an der Verheerten Küste und nutzte ihre Sichel, um Dämonen in der Teufelshammer zu verhören."},
-    {era = "BfA", text = "Beteiligte sich am Vierten Krieg und sicherte Stellungen im Arathihochland und an der Dunkelküste."},
-    {era = "Midnight", text = "Führt unabhängige, fraktionsübergreifende Vorstöße in kosmischen Leeren-Zonen wie K'aresh und Eredath an."},
+    {
+        era = "TBC",
+        text = [[Schwor Illidan Sturmgrimm in der Scherbenwelt ihre Loyalität. Holte auf seinen Befehl hin erfolgreich das Artefakt Sargeritschlüsselstein zurück, wurde nach ihrer Rückkehr jedoch gemeinsam mit ihren Mitstreitern der Illidari von Maiev Schattensang gefangen genommen und eingesperrt.]],
+    },
+    {
+        era = "Legion",
+        text = [[Nachdem sie sechs Jahre lang in Stasis gefangen gewesen war, wurden Allari und die anderen Dämonenjäger von ihrer einstigen Kerkermeisterin als letztes Mittel gegen Gul'dan befreit. Half dabei, die Streitkräfte der Illidari wiederaufzubauen, indem sie Dämonenseelen einfing, um den Teufelshammer wiederherzustellen, und unterstützte die Bergung der Kriegsklingen der Aldrachi. Half außerdem dabei, die Seele Illidan Sturmgrimms zurückzuholen, und kämpfte für den Rest des Krieges an seiner Seite.]],
+    },
+    {
+        era = "Pre-Midnight",
+        text = [[Nahm Leona Dunkelstreifer und andere willige Ren'dorei als Schüler auf, um sie in den Wegen der Illidari zu unterweisen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Kämpfte gemeinsam mit den Ren'dorei im Leerensturm.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].name = "Decimus"
@@ -797,12 +944,12 @@ IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].timeline = {
     { era = "Midnight", text = "Nachdem Orweyna ihm in Lorenhall geholfen hatte, versprach Gazlowe ihr, nach Harandar zu kommen und ihre Kultur kennenzulernen. Er genoss es, mehr über die Hara'ti zu erfahren." },
 }
 
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].name = "Fiona"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].race = "Worgen"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].lore = "Fiona ist eine Worgen-Abenteurerin, Heiligpriesterin und eine der treuesten Seelen Azeroths. Berühmt wurde sie durch ihre legendäre Karawane in den Östlichen Pestländern, mit der sie unzählige Abenteurer – allen voran ihre besten Freunde, die Paladine Gidwin Goldzopf und Tarenar Sonnenhieb – sicher durch Feindesland kutschierte. Sie ist das personifizierte Herzblut der Zivilisten und unabhängigen Helfer in Azeroth. In Midnight hat sie ihre Karawane auf die Insel von Quel'Danas gesteuert. Sie gehört zwar keinem militärischen Orden an, unterstützt die Verteidiger des Lichts jedoch unermüdlich mit ihrer Heilkunst, ihren Vorräten und ihrem Pragmatismus."
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].source = "warcraft.wiki.gg/wiki/Fiona"
-IMAGOdb.npcs.CAT_NEUTRAL["fiona"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = "Fiona ist eine Worgen-Abenteurerin, Heiligpriesterin und eine der treuesten Seelen Azeroths. Berühmt wurde sie durch ihre legendäre Karawane in den Östlichen Pestländern, mit der sie unzählige Abenteurer – allen voran ihre besten Freunde, die Paladine Gidwin Goldzopf und Tarenar Sonnenhieb – sicher durch Feindesland kutschierte. Sie ist das personifizierte Herzblut der Zivilisten und unabhängigen Helfer in Azeroth. In Midnight hat sie ihre Karawane auf die Insel von Quel'Danas gesteuert. Sie gehört zwar keinem militärischen Orden an, unterstützt die Verteidiger des Lichts jedoch unermüdlich mit ihrer Heilkunst, ihren Vorräten und ihrem Pragmatismus."
+IMAGOdb.npcs.CAT_LIGHT["fiona"].zones = {"Insel von Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["fiona"].source = "warcraft.wiki.gg/wiki/Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].timeline = {
     {era = "Cata", text = "Kutschierte mit ihrer berühmten Karawane durch die Östlichen Pestländer und unterstützte den Silbernen Kreuzzug."},
     {era = "WoD", text = "Schloss sich der Allianz-Expedition auf Draenor an und diente als Heiligpriesterin und Kräuterkundige in der Garnison (Schattenmondtal)."},
     {era = "DF", text = "Reiste mit der Drachenschuppenexpedition ins Basislager der Küste des Erwachens, nachdem sie wieder mit Gidwin und Tarenar vereint war."},
@@ -906,6 +1053,152 @@ IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].timeline = {
     {era = "Pre-TWW", text = "Knüpfte in Valdrakken eine Verbindung zu den Sturmkrähen. Trainierte den Abenteurer darin, ein elementarer Greifenreiter zu werden."},
     {era = "TWW", text = "Schloss sich seinen Freunden Turalyon und Danath Trollbann auf der Insel von Dorn an. Gemeinsam mit Hori'zees jetzt ausgewachsenen letztem Küken begann Kurdran damit, neue irdene Greifenreiter auszubilden."},
     {era = "Midnight", text = "Half Arator dabei, mehr über die Geschichte seines Vaters Turalyon und dessen Rolle im Zweiten Krieg zu erfahren. Führte Helden zur Arkantine, einem Zuhause fern der Heimat für Abenteurer aus ganz Azeroth."}
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].name = "Lirath Windläufer"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].race = "Hochelf"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].lore = [[Der Jüngste der vier Windläufer-Geschwister und der einzige Bruder unter ihnen. Lirath war ein begnadeter Sänger, der sich mit Auftritten am Hof von Lord Saltheril einen Namen machte und schließlich von Kael'thas Sonnenwanderer zum königlichen Musiker ernannt wurde.
+
+Nach dem Tod ihrer Eltern verlangte Lirath von seinen Schwestern, ihn zum Waldläufer auszubilden. Während der Verbrennung von Quel'Thalas wurde Lirath bei der Verteidigung von Windläuferdorf gegen die Orcs getötet.]]
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].zones = {"Windläuferturm"}
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].source = "Travanoid"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Wurde zum königlichen Musiker von Prinz Kael'thas Sonnenwanderer ernannt. Nach dem Tod ihrer Eltern begann er gemeinsam mit seiner Schwester Vereesa mit der Ausbildung zum Waldläufer.]],
+    },
+    {
+        era = "WC2",
+        text = [[Er wurde während der Verbrennung von Quel'Thalas von der Horde getötet. Sein Körper wurde von Sylvanas geborgen und zusammen mit ihren Eltern im Immersangwald beigesetzt.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Sylvanas erwog, Lirath als Untoten wiederzuerwecken, entschied sich jedoch letztlich dagegen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Sein Geist erschien im Windläuferturm und führte Abenteurer dazu, Relikte der Familie Windläufer zu sammeln. Mithilfe dieser Relikte beschwor und vertrieb er das rastlose Herz, wodurch die Geister des Turms endlich Frieden finden konnten.]],
+    }
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windläufer"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Leerenelfe"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Den Völkern Azeroths ist Alleria als eine der größten Kriegsheldinnen der Allianz bekannt. Sie kämpfte im Zweiten Krieg gegen die Horde sowie im jahrtausendelangen Kreuzzug gegen die Brennende Legion. Sie ist vieles - eine Mutter, eine Liebende, eine Heldin, eine ältere Schwester - doch vor allem ist sie eine Jägerin. Alles steht hinter ihren Missionen zurück, und kein Preis ist zu hoch, um die Sicherheit ihrer Welt zu gewährleisten.
+
+Krieg ist das einzige Leben, das sie kennt, und auf dem vertrauten Schlachtfeld findet sie mehr Trost als in Zeiten des Friedens. Als sie ihren jüngeren Bruder und ihre Eltern im Krieg gegen die Horde verlor, gab Alleria sich selbst die Schuld und stürzte sich rücksichtslos in den Kampf, auf der Suche nach Sinn durch Gewalt. Von dem Trauma dieser Verluste hat sie sich nie wirklich erholt. Obwohl sie mit Turalyon und ihrem Sohn Arator nun eine eigene Familie gegründet hat, kann sie sich nicht dazu bringen, sich emotional erneut zu öffnen - auch wenn es sie bis ins Innerste schmerzt, mitzuerleben, wie die beiden Männer zu Fremden werden.
+
+Im Kampf gegen die Brennende Legion fand Alleria eine Waffe in der Leere. Sie wurde mit der gefallenen Naaru L'ura erfüllt und nutzt nun deren dunkle Kräfte zum Wohl Azeroths. Ständig am Rand des Wahnsinns, während unaufhörliche Stimmen ihren Geist bedrängen, hat Alleria sich nun darauf eingeschworen, Xal'atath zu jagen. Wie bei all ihren Jagden ist die Verfolgung zu einer Besessenheit geworden, und sie wird nicht ruhen, bis ihre Feindin besiegt am Boden liegt.]]
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].zones = {"Die Leerenspitze", "Leerensturm"}
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Sie lehnte den Titel der zukünftigen Waldläufergeneralin von Silbermond ab und verließ ihre Heimat, um die Welt jenseits davon kennenzulernen. Dabei knüpfte sie Kontakte und Bündnisse innerhalb der Allianz von Lordaeron. Während ihrer Abwesenheit wurden ihre Eltern von der orcischen Horde ermordet.]],
+    },
+    {
+        era = "WC2",
+        text = [[An der Seite der Armeen von Lordaeron verteidigte sie erfolgreich Quel'Thalas gegen die Horde. Während der Schlacht starb ihr Bruder Lirath, und Alleria gab sich selbst die Schuld daran. Sie blieb bei den Streitkräften der Allianz und half schließlich dabei, den Krieg zu gewinnen. Sie lernte Turalyon kennen, sie zeugten einen Sohn und reisten in die Scherbenwelt, wo sie letztlich gestrandet wurden.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Gemeinsam mit Turalyon reiste sie durch den Wirbelnden Nether und wurde in die Armee des Lichts eingezogen, um gegen die Brennende Legion zu kämpfen. Was auf Azeroth nur einige Jahrzehnte gewesen wären, bedeutete für sie tausend Jahre Krieg. Alleria traf auf Raumgänger und lernte, die Magie der Leere zu nutzen. Aufgrund dessen wurde sie zeitweise von Xe'ra und der Armee des Lichts eingesperrt.]],
+    },
+    {
+        era = "Legion",
+        text = [[Sie erfuhr mehr über die Leere und darüber, wie man ihrem Flüstern widersteht. Dabei wurde sie mit der Naaru L'ura erfüllt. Sie kämpfte in der finalen Schlacht gegen die Legion in der Festung Antorus und siegte. Nachdem der Kreuzzug endlich beendet war, wurden sie und Turalyon mit ihrem Sohn Arator wiedervereint. Außerdem fand sie die verbannten Ren'dorei und rekrutierte sie für die Allianz.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Sie kehrte nach Silbermond zurück, wurde jedoch umgehend verbannt, da allein ihre dunkle Präsenz beinahe den Sonnenbrunnen verdorben hätte. Sie traf ihre Schwestern Vereesa und Sylvanas, doch das Wiedersehen endete in einem Streit.]],
+    },
+    {
+        era = "BfA",
+        text = [[Sie kämpfte bei der Belagerung von Lordaeron gegen Sylvanas und später im Vierten Krieg für die Allianz.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Sie führte die Jagd auf Sylvanas Windläufer an. Um Informationen von Zivilisten der Horde zu erhalten, griff sie sogar zu Folter.]],
+    },
+    {
+        era = "SL",
+        text = [[Sie nahm an dem Prozess gegen Sylvanas in Oribos teil.]],
+    },
+    {
+        era = "DF",
+        text = [[Auf Khadgars Bitte hin begann sie die Jagd auf „die Vorbotin“, die sich als Xal'atath entpuppte. Gemeinsam mit Raumgänger und Magister Umbric verteidigte sie den Telogrusriss gegen Xal'ataths Schattenwache.]],
+    },
+    {
+        era = "TWW",
+        text = [[Sie überlebte die Zerstörung von Dalaran und jagte Xal'atath rücksichtslos durch ganz Khaz Algar und dessen Tiefen. Dabei gelang es ihr, das Dunkle Herz zu beschädigen. Widerwillig arbeitete sie später mit Xal'atath und Raumgänger zusammen, um Dimensius den Allesverschlingenden zu besiegen.]],
+    },
+    {
+        era = "Pre-Midnight",
+        text = [[Gemeinsam mit Turalyon und Arator vereitelte sie ein Wiedererstarken der Brennenden Legion und schien ihrer Familie wieder näherzukommen. Sie akzeptierte Turalyons Heiratsantrag, schaffte es jedoch nicht, inneren Frieden zu finden. Schweren Herzens ließ sie Turalyon schließlich am Altar zurück und nahm auch nicht an der Beförderungszeremonie seines Sohnes teil. Später weigerte sie sich, mit Arator nach Silbermond zu reisen, und folgte stattdessen Xal'atath in den Leerensturm.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Sie führte den Kampf gegen die Leere im Leerensturm an. In Xal'ataths Leerenspitze stellte sie sich ihrer Feindin entgegen, wurde jedoch vom Wahnsinn der Stimmen in ihrem Kopf überwältigt und wandte sich gegen ihre Verbündeten. Daraufhin schnitt Xal'atath L'ura gewaltvoll aus Alleria heraus, und die kaum noch bei Bewusstsein befindliche Elfe ging gemeinsam mit Turalyon im Dunkelbrunnen verloren.]],
+    }
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windläufer"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Leerenelfe"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Den Völkern Azeroths ist Alleria als eine der größten Kriegsheldinnen der Allianz bekannt. Sie kämpfte im Zweiten Krieg gegen die Horde sowie im jahrtausendelangen Kreuzzug gegen die Brennende Legion. Sie ist vieles - eine Mutter, eine Liebende, eine Heldin, eine ältere Schwester - doch vor allem ist sie eine Jägerin. Alles steht hinter ihren Missionen zurück, und kein Preis ist zu hoch, um die Sicherheit ihrer Welt zu gewährleisten.
+
+Krieg ist das einzige Leben, das sie kennt, und auf dem vertrauten Schlachtfeld findet sie mehr Trost als in Zeiten des Friedens. Als sie ihren jüngeren Bruder und ihre Eltern im Krieg gegen die Horde verlor, gab Alleria sich selbst die Schuld und stürzte sich rücksichtslos in den Kampf, auf der Suche nach Sinn durch Gewalt. Von dem Trauma dieser Verluste hat sie sich nie wirklich erholt. Obwohl sie mit Turalyon und ihrem Sohn Arator nun eine eigene Familie gegründet hat, kann sie sich nicht dazu bringen, sich emotional erneut zu öffnen - auch wenn es sie bis ins Innerste schmerzt, mitzuerleben, wie die beiden Männer zu Fremden werden.
+
+Im Kampf gegen die Brennende Legion fand Alleria eine Waffe in der Leere. Sie wurde mit der gefallenen Naaru L'ura erfüllt und nutzt nun deren dunkle Kräfte zum Wohl Azeroths. Ständig am Rand des Wahnsinns, während unaufhörliche Stimmen ihren Geist bedrängen, hat Alleria sich nun darauf eingeschworen, Xal'atath zu jagen. Wie bei all ihren Jagden ist die Verfolgung zu einer Besessenheit geworden, und sie wird nicht ruhen, bis ihre Feindin besiegt am Boden liegt.]]
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].zones = {"Die Leerenspitze", "Leerensturm"}
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Sie lehnte den Titel der zukünftigen Waldläufergeneralin von Silbermond ab und verließ ihre Heimat, um die Welt jenseits davon kennenzulernen. Dabei knüpfte sie Kontakte und Bündnisse innerhalb der Allianz von Lordaeron. Während ihrer Abwesenheit wurden ihre Eltern von der orcischen Horde ermordet.]],
+    },
+    {
+        era = "WC2",
+        text = [[An der Seite der Armeen von Lordaeron verteidigte sie erfolgreich Quel'Thalas gegen die Horde. Während der Schlacht starb ihr Bruder Lirath, und Alleria gab sich selbst die Schuld daran. Sie blieb bei den Streitkräften der Allianz und half schließlich dabei, den Krieg zu gewinnen. Sie lernte Turalyon kennen, sie zeugten einen Sohn und reisten in die Scherbenwelt, wo sie letztlich gestrandet wurden.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Gemeinsam mit Turalyon reiste sie durch den Wirbelnden Nether und wurde in die Armee des Lichts eingezogen, um gegen die Brennende Legion zu kämpfen. Was auf Azeroth nur einige Jahrzehnte gewesen wären, bedeutete für sie tausend Jahre Krieg. Alleria traf auf Raumgänger und lernte, die Magie der Leere zu nutzen. Aufgrund dessen wurde sie zeitweise von Xe'ra und der Armee des Lichts eingesperrt.]],
+    },
+    {
+        era = "Legion",
+        text = [[Sie erfuhr mehr über die Leere und darüber, wie man ihrem Flüstern widersteht. Dabei wurde sie mit der Naaru L'ura erfüllt. Sie kämpfte in der finalen Schlacht gegen die Legion in der Festung Antorus und siegte. Nachdem der Kreuzzug endlich beendet war, wurden sie und Turalyon mit ihrem Sohn Arator wiedervereint. Außerdem fand sie die verbannten Ren'dorei und rekrutierte sie für die Allianz.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Sie kehrte nach Silbermond zurück, wurde jedoch umgehend verbannt, da allein ihre dunkle Präsenz beinahe den Sonnenbrunnen verdorben hätte. Sie traf ihre Schwestern Vereesa und Sylvanas, doch das Wiedersehen endete in einem Streit.]],
+    },
+    {
+        era = "BfA",
+        text = [[Sie kämpfte bei der Belagerung von Lordaeron gegen Sylvanas und später im Vierten Krieg für die Allianz.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Sie führte die Jagd auf Sylvanas Windläufer an. Um Informationen von Zivilisten der Horde zu erhalten, griff sie sogar zu Folter.]],
+    },
+    {
+        era = "SL",
+        text = [[Sie nahm an dem Prozess gegen Sylvanas in Oribos teil.]],
+    },
+    {
+        era = "DF",
+        text = [[Auf Khadgars Bitte hin begann sie die Jagd auf „die Vorbotin“, die sich als Xal'atath entpuppte. Gemeinsam mit Raumgänger und Magister Umbric verteidigte sie den Telogrusriss gegen Xal'ataths Schattenwache.]],
+    },
+    {
+        era = "TWW",
+        text = [[Sie überlebte die Zerstörung von Dalaran und jagte Xal'atath rücksichtslos durch ganz Khaz Algar und dessen Tiefen. Dabei gelang es ihr, das Dunkle Herz zu beschädigen. Widerwillig arbeitete sie später mit Xal'atath und Raumgänger zusammen, um Dimensius den Allesverschlingenden zu besiegen.]],
+    },
+    {
+        era = "Pre-Midnight",
+        text = [[Gemeinsam mit Turalyon und Arator vereitelte sie ein Wiedererstarken der Brennenden Legion und schien ihrer Familie wieder näherzukommen. Sie akzeptierte Turalyons Heiratsantrag, schaffte es jedoch nicht, inneren Frieden zu finden. Schweren Herzens ließ sie Turalyon schließlich am Altar zurück und nahm auch nicht an der Beförderungszeremonie seines Sohnes teil. Später weigerte sie sich, mit Arator nach Silbermond zu reisen, und folgte stattdessen Xal'atath in den Leerensturm.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Sie führte den Kampf gegen die Leere im Leerensturm an. In Xal'ataths Leerenspitze stellte sie sich ihrer Feindin entgegen, wurde jedoch vom Wahnsinn der Stimmen in ihrem Kopf überwältigt und wandte sich gegen ihre Verbündeten. Daraufhin schnitt Xal'atath L'ura gewaltvoll aus Alleria heraus, und die kaum noch bei Bewusstsein befindliche Elfe ging gemeinsam mit Turalyon im Dunkelbrunnen verloren.]],
+    }
 }
 
 -- CAT_EBON_BLADE
@@ -1067,6 +1360,44 @@ IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].name = "Thoras Trollbann"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].race = "Mensch"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].lore = [[Von seinem Volk geliebt und von seinen Feinden gefürchtet, war Thoras Trollbann der Kriegerkönig von Stromgarde und eines der Gründungsmitglieder der Allianz von Lordaeron.
+
+Nach der Niederlage der Orcs im Zweiten Krieg widersetzte sich Thoras der Entscheidung, die überlebenden Orcs in Internierungslagern festzuhalten, und sprach sich offen dafür aus, sie hinzurichten. Als Lordaeron dies ablehnte, zog Trollbann seine Unterstützung für die Allianz voller Bitterkeit zurück.
+
+Irgendwann nach dem Tod von König Terenas Menethil wurde Thoras von seinem eigenen Sohn Galen ermordet.
+
+Während der dritten Invasion der Brennenden Legion erhoben die Ritter der Schwarzen Klinge Thoras als Mitglied der Vier Reiter. Im Glauben, sowohl als Vater als auch als König versagt zu haben, schloss sich Thoras ihnen an, um den Frieden in Azeroth zu bewahren.]]
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].zones = {"Der Traumriss", "Die Leerenspitze", "Östliche Pestländer"}
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].source = "Travanoid"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].timeline = {
+    {
+        era = "Pre-WC2",
+        text = [[Führte die Armeen von Stromgarde in mehreren Kriegen gegen das Königreich Alterac in die Schlacht.]],
+    },
+    {
+        era = "WC2",
+        text = [[Trat der Allianz von Lordaeron als eines ihrer Gründungsmitglieder bei und verteidigte die Nordlande gegen die Invasion der Horde durch das eroberte Zwergenreich Khaz Modan. Später half er mit seinen Armeen dabei, die Belagerung von Lordaeron zu brechen, indem er die Streitkräfte der Horde daran hinderte, durch das Alteracgebirge vorzurücken. Nach dem Krieg wurde er von seinem Sohn Galen ermordet.]],
+    },
+    {
+        era = "Legion",
+        text = [[Wurde von den Rittern der Schwarzen Klinge als Mitglied der Vier Reiter in den Untod erhoben. Nahm am Angriff auf das Scharlachrote Kloster sowie an der Schlacht gegen die Dämonen an der Verheerten Küste teil.]],
+    },
+    {
+        era = "BfA",
+        text = [[Arbeitete daran, gefallene Helden der Horde und Allianz zu bergen und sie als neue Generation von Todesrittern zu erheben.]],
+    },
+    {
+        era = "SL",
+        text = [[Begleitete Bolvar Fordragon und eine Gruppe von Abenteurern beim Angriff auf das Sanktum der Herrschaft.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Half bei der Verteidigung der Kapelle des hoffnungsvollen Lichts, während der Argentumkreuzzug mit der Verteidigung des Sonnenbrunnens beschäftigt war.]],
+    }
+}
+
 -- CAT_VOID
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexuskönig Salhadaar"
 IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Leerenastraler"
@@ -1101,17 +1432,50 @@ IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_VOID["l_ura"].name = "L'ura"
-IMAGOdb.npcs.CAT_VOID["l_ura"].race = "Leeren-Naaru"
-IMAGOdb.npcs.CAT_VOID["l_ura"].lore = "L'ura ist das tragische Herzstück der Leeren-Invasion in Quel'Thalas. Einst ein Wesen des Lichts, das die Flucht der Draenei von Argus deckte, fiel sie nach Äonen der Gefangenschaft in den Leerenstatus. Nachdem Alleria Windläufer ihre Essenz im Sitz des Triumvirats absorbiert hatte, diente L'ura jahrelang als Quelle von Allerias Leerenmacht. In Midnight erreicht ihr Schicksal einen schrecklichen Höhepunkt: Xal'atath stach Alleria am Leerenturm in den Rücken und riss L'uras Essenz gewaltsam aus ihr heraus. Mit dieser Macht korrumpierte die Vorbotin den Sonnenbrunnen zum 'Darkwell'. Als finale Begegnung beim Marsch auf Quel'Danas muss L'ura endgültig bezwungen werden, um die vollständige Transformation des Brunnens in eine Quelle der totalen Finsternis zu verhindern."
+IMAGOdb.npcs.CAT_VOID["l_ura"].race = "Naaru"
+IMAGOdb.npcs.CAT_VOID["l_ura"].lore = [[Die Naaru sind womöglich der reinste Ausdruck des Lichts in den gesamten Großen Dunklen Weiten. L'ura war einst eines dieser strahlenden Wesen heiliger Energie. Sie blieb auf Argus zurück, um sicherzustellen, dass Velen und seine draeneischen Flüchtlinge Kil'jaedens Zorn entkommen konnten, und hielt unzähligen Dämonen stand, bevor sie schließlich von der Brennenden Legion überwältigt wurde.
+
+Über Jahrtausende hinweg gefangen gehalten, verfiel das einst leuchtende Wesen in einen Zustand der Leere. Von Wahnsinn, Chaos und Zorn geleitet, wurde sie für die meisten zu einer gefährlichen Entität und für andere zu einer mächtigen Waffe.
+
+Alleria Windläufer stellte sich dem gefallenen Naaru schließlich entgegen und bezwang sie, wobei sie ihre Essenz in sich band. Nun nutzt die von der Leere berührte Jägerin L'uras Macht als ihre eigene, doch der verdunkelte Naaru existiert weiterhin in ihr – und wartet auf den Moment, in dem sie erneut entfesselt werden könnte.]]
 IMAGOdb.npcs.CAT_VOID["l_ura"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_VOID["l_ura"].source = "warcraft.wiki.gg/wiki/L'ura"
+IMAGOdb.npcs.CAT_VOID["l_ura"].source = "Cadash"
 IMAGOdb.npcs.CAT_VOID["l_ura"].timeline = {
-    {era = "Ancient", text = "Blieb bei der Flucht von Argus zurück, um die Legion aufzuhalten, und wurde auf Befehl Kil'jaedens im Sitz des Triumvirats eingesperrt."},
-    {era = "Legion", text = "Wurde von Alleria Windläufer und Abenteurern besiegt, wobei Alleria ihre Essenz vollständig in sich aufnahm."},
-    {era = "Midnight", text = "Wurde im Leerensturm von Alleria manifestiert, um den Naaru T'era zu besiegen. Später von Xal'atath am Leerenturm aus Alleria gerissen, um den Sonnenbrunnen in den 'Darkwell' zu verwandeln."},
-    {era = "Midnight", text = "Dient als Endboss beim 'Marsch auf Quel'Danas', um die Rettung des Sonnenbrunnens zu verhindern."},
+    {
+        era = "Ancient",
+        text = [[Blieb auf Argus zurück, um Velens Flucht vor der Brennenden Legion zu sichern. Wurde von Kil'jaeden besiegt und eingesperrt.]],
+    },
+    {
+        era = "Legion",
+        text = [[Nun zu einem dunklen Naaru geworden, zog L'uras Macht die Aufmerksamkeit der Schattenwächterastralen auf sich, die ihre Kraft als Waffe nutzen wollten. Schließlich töteten Alleria Windläufer und Raumgänger die Astralen und brachten L'ura unter Kontrolle, woraufhin Alleria ihre Kräfte absorbierte.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde von Alleria manifestiert, um einen weiteren dunklen Naaru - T'era - zu töten. Auf der Leerenspitze triumphierte Xal'atath über Alleria und trennte L'ura gewaltsam von der Jägerin, wodurch beide Wesen erneut voneinander getrennt wurden. Anschließend nutzte Xal'atath L'ura, um den Sonnenbrunnen zu verderben, und der wahnsinnige Naaru wurde schließlich von den Abenteurern Azeroths in Quel'Thalas getötet.]],
+    }
 }
 
+IMAGOdb.npcs.CAT_VOID["mor_duun"].name = "Mor'duun"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].race = "Oger"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].lore = [[Als mächtiger Oger-Magier führte Mor'duun die Zwielichtklinge an, einen Kult, der Xal'atath ergeben war. Nachdem seine Hingabe ihre Aufmerksamkeit erregt hatte, verlieh sie Mor'duun die Macht der Leere und entfachte damit den Fanatismus des Kults erneut.
+
+Mor'duun führte persönlich die Invasion der Zwielichtklinge auf Zul'Aman an, hinterließ Atal'Aman in Trümmern und kommandierte seine Streitkräfte vom Zerschlagenen Thron aus.]]
+IMAGOdb.npcs.CAT_VOID["mor_duun"].zones = {"Zul'Aman"}
+IMAGOdb.npcs.CAT_VOID["mor_duun"].source = "Travanoid"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].timeline = {
+    {
+        era = "TWW",
+        text = [[Gründete die Zwielichtklinge aus den Überresten des Schattenhammers und verschrieb sich dem Dienste Xal'ataths.]],
+    },
+    {
+        era = "Pre-Midnight",
+        text = [[Befahl der Zwielichtklinge, neue Mitglieder in Sturmwind und Orgrimmar anzuwerben, wobei sie die Hoffnungslosigkeit und Verwirrung ausnutzten, die durch den Strahlenden Gesang verursacht worden waren.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Führte den Angriff der Zwielichtklinge auf Zul'Aman an, plünderte Atal'Aman und kommandierte seine Armeen vom Zerschlagenen Thron aus, bevor er schließlich von Zul'jarra, Liadrin und einem Abenteurer niedergestreckt wurde.]],
+    }
+}
 
 -- CAT_AMANI
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].name = "Zul'jarra"
@@ -1207,6 +1571,19 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
     {era = "Midnight", text = "Agiert als Loasprecher in Zul'Aman und lehrt die Spieler am Altar der Segnungen, die Macht der Götter gegen die Leere zu nutzen."},
 }
 
+IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"
+IMAGOdb.npcs.CAT_AMANI["filo"].race = "Kapara (Loa)"
+IMAGOdb.npcs.CAT_AMANI["filo"].lore = [[Filo wird in Zul'Aman als Loa der Kindheit verehrt. Er spricht niemals mit eigener Stimme, sondern erwählt stets das jüngste Kind eines jeden Dorfes zu seinem Sprecher. Gegenüber jenen, die er beschützt, zeigt er sich sanftmütig, doch jeden, der es wagt, seinen Kindern Leid zuzufügen, verfolgt er mit einem furchterregenden Schwur der Vergeltung.
+
+Wenn ein Kind vor seinen Eltern stirbt, wacht Filo über dessen Geist, bis die Eltern ihm im Jenseits folgen.]]
+IMAGOdb.npcs.CAT_AMANI["filo"].zones = {"Zul'Aman", "Atal'Aman"}
+IMAGOdb.npcs.CAT_AMANI["filo"].source = "Travanoid"
+IMAGOdb.npcs.CAT_AMANI["filo"].timeline = {
+    {
+        era = "Midnight",
+        text = [[Er wachte über Kanza, ein Kind der Amani, das ihn aufsuchte, um den Geist ihrer Zwillingsschwester wiederzufinden. Filo verlieh dem Abenteurer, der bei der Vorbereitung des Rituals half, einen Teil seiner Macht - solange seine Kinder ungestört blieben.]],
+    }
+}
 
 -- CAT_HARATI
 IMAGOdb.npcs.CAT_HARATI["orweyna"].name = "Orweyna"
@@ -1225,22 +1602,40 @@ IMAGOdb.npcs.CAT_HARATI["orweyna"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_HARATI["elder_hagar"].name = "Älteste Hagar"
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].race = "Haran'ir"
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].lore = "Älteste Hagar ist eine tief verehrte Weise der Haran'ir und fungiert in Midnight als essenzielle diplomatische Brücke zwischen der Hara'ti-Fraktion und den Völkern Azeroths. Ihr persönliches Schicksal ist von tiefer Tragik geprägt: Sie diente einst unbemerkt als Hüterin der Weltenbaumwurzeln von Teldrassil. Als der Baum verbrannte, erlebte Hagar den Tod der Wurzeln tief unter der Erde als eine ohrenbetäubende, traumatisierende Stille. Nun, da die Leere die uralten arkanen Wurzeln unterhalb von Quel'Thalas bedroht, weigert sie sich, den Tod eines weiteren Baumes tatenlos hinzunehmen. Sie hat die schützende Dunkelheit des Untergrunds verlassen und positioniert sich in Silbermond direkt am Harandar-Portal, um fähige Helden zu rekrutieren und ihr Volk offiziell als Verbündete in den globalen Konflikt zu führen."
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].zones = {"Die Höhle", "Harandar", "Immersangwald", "Silbermond"}
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].source = "warcraft.wiki.gg/wiki/Hagar"
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].race = "Haranir"
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].lore = [[Die Haranir besitzen viele Regeln und Traditionen, und als Älteste im herrschenden Rat ist es Hagars Pflicht, diese durchzusetzen. Doch inzwischen stimmt sie vielen der alten Bräuche nicht mehr zu.
+
+Bevor sie zur Ältesten wurde, war sie die Wurzelhüterin von Teldrassil und damit für den Schutz des großen Weltenbaums verantwortlich. Doch was nützen gepflegte Wurzeln, wenn der gesamte Baum über der Erde zu Asche verbrannt wird? Hagar konnte den Verfall ihres Baumes nicht aufhalten, und obwohl sie noch immer von dem verfolgt wird, was geschehen ist, hat sie begonnen, vieles von dem zu hinterfragen, was sie einst für wahr hielt.
+
+Die Haranir können nicht ewig isoliert von der Außenwelt leben, und als Orweyna auszog, um Kontakt zu den Außenseitern aufzunehmen, war Hagar die einzige Älteste, die sie unterstützte.]]
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].zones = {"Silbermond", "Immersangwald", "Harandar", "Die Höhle"}
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].source = "Cadash"
 IMAGOdb.npcs.CAT_HARATI["elder_hagar"].timeline = {
-    {era = "BfA", text = "Wachte im tiefen Untergrund als Hüterin über die Wurzeln von Teldrassil, bis der Baum vernichtet wurde."},
-    {era = "Midnight", text = "Koordiniert von Silbermond aus die diplomatische Bindung und die Freischaltung der Haran'ir als Verbündetes Volk."},
+    {
+        era = "Pre-BfA",
+        text = [[Während ihrer routinemäßigen Arbeit als Wurzelhüterin gingen die Wurzeln von Teldrassil plötzlich in Flammen auf, und Hagar konnte nichts weiter tun, als mit anzusehen, wie sie verdorrten. Ohne ihren einstigen Lebenszweck schloss sie sich daraufhin dem Ältestenrat im Bau an.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Gewährte Orweyna, Halduron Wolkenglanz und dem Abenteurer die Möglichkeit, ihr Anliegen vor den Ältesten vorzutragen. Spielte eine entscheidende Rolle bei der Entstehung eines ersten Bündnisses zwischen den Hara'ti und der Außenwelt. Regierte gemeinsam das Dorf Har'mara und machte es zu einem Ort der Einheit zwischen Haranir, Rutaani und Fungianern.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_HARATI["amarakk"].name = "Amarakk"
-IMAGOdb.npcs.CAT_HARATI["amarakk"].race = "Haran'ir"
-IMAGOdb.npcs.CAT_HARATI["amarakk"].lore = "Amarakk ist Orweynas engster Vertrauter und lebenslanger Freund. Als die beiden in der Wildnis von Harandar vom Samen zum Schössling heranwuchsen, war er stets an ihrer Seite. Während Orweyna schon immer von wilden Impulsen getrieben wurde, bildete Amarakk als ruhige Stimme der Vernunft ihr wichtigstes Gegengewicht und ihren emotionalen Anker. Auch wenn das Überleben im Untergrund hart war, war ihr Band unzerstörbar. In Midnight weicht er nicht von Orweynas Seite, während sie an der Oberfläche die neugegründete Hara'ti-Fraktion anführt. Er unterstützt sie maßgeblich mit seinem tiefgreifenden Wissen – etwa bei der Zubereitung von Aln-Staub –, um die Kämpfer zu heilen. Selbst vor hochgefährlichen Orten wie dem Traumriss schreckt Amarakk nicht zurück, um seiner Freundin und seinem Volk im Kampf gegen die Leere beizustehen."
-IMAGOdb.npcs.CAT_HARATI["amarakk"].zones = {"Der Traumriss", "Harandar"}
-IMAGOdb.npcs.CAT_HARATI["amarakk"].source = "Kurzgeschichte: Nach uns, die Stille"
+IMAGOdb.npcs.CAT_HARATI["amarakk"].race = "Haranir"
+IMAGOdb.npcs.CAT_HARATI["amarakk"].lore = [[Als Amarakk jung war, hörte er noch das Lied der Göttin. Als guter Sohn aus einer guten Familie zog er es vor, gemeinsam mit seiner besten Freundin Orweyna auf Abenteuer zu gehen und nahm das Leben nicht besonders ernst. Doch als ihre Reisen sie in den Riss von Aln führten, sah Amarakk den Wahnsinn und das Grauen dessen, was unter ihren eigenen Heimen lauerte.
+
+Den Weg eines Shul'ka zu wählen bedeutet, sich für immer vom Lied der Göttin abzuschneiden – für die meisten Haranir eine Zerstörung des eigenen Geistes. Doch Amarakk wusste, dass dies sein Weg war: dass er erneut in den Riss gehen und kämpfen musste, sein eigenes Glück opfern, um sein Volk zu schützen. Orweyna hat dies nie verstanden.]]
+IMAGOdb.npcs.CAT_HARATI["amarakk"].zones = {"Insel von Quel'Danas", "Harandar", "Der Traumriss"}
+IMAGOdb.npcs.CAT_HARATI["amarakk"].source = "Cadash"
 IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
-    {era = "Pre-MN", text = "Wuchs gemeinsam mit Orweyna in Harandar auf und half ihr als ruhige Stimme der Vernunft, ihre impulsivste Seite zu zügeln."},
-    {era = "Midnight", text = "Begleitet Orweyna an der Oberfläche und im Traumriss, und unterstützt die Hara'ti durch sein Wissen über die Natur und Aln-Staub."},
+    {
+        era = "Pre-TWW",
+        text = [[Er wurde ein Shul'ka und damit zum Ausgestoßenen seines Volkes. Er begann, die erträumten Monster im Riss von Aln zu bekämpfen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Er half Orweyna und dem Champion dabei, in den Riss von Aln vorzudringen, um Alnstaub als Waffe gegen die Lichtblüte zu gewinnen.]],
+    }
 }
 
