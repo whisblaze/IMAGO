@@ -2058,3 +2058,22 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
         text = [[Unenthusiastically tried to help out the armies of Silvermoon but was promptly arrested by the Army of the Light for being a warlock. Abandoning the fight, he convinced Marius to join him for a drink in the Arcantica.]],
     }
 }
+
+-- CECILIA CLESSINGTON --
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].name = "Cecilia Clessington"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].lore = [[Cecilia Primrose Clessington the Second, only heir to Count Clessington of Stormwind's noble class. One would be mistaken to judge her the same as the other nobles of the kingdom though, as Cecilia has no interest in power, riches or influence. She sincerely wants to help the downtrodden and use her birthright to create a political voice for the farmers and workers of Westfall.
+
+Together with Vanessa VanCleef, she has founded the Breadbasket Guild and developed a friendship with the former leader of the Defias.]]
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].timeline = {
+    {
+        era = "DF",
+        text = [[Was kidnapped by Vanessa VanCleef as leverage when Cecilia's father took control of the Defias Brotherhood to rob Stormwind City. Befriended the rogue and helped her and SI:7 to stop and kill her father, Count Clessington. As the only heir to her name, she took the title of Countess and joined Stormwind's House of Nobles. Founded the Breadbasket Guild to help the people of Westfall.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina with Vanessa.]],
+    }
+}
