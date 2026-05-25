@@ -10,5 +10,5 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"] = {
     displayID = 259334,
     ids = {259334},
     zones = {},
-    category = "CAT_NEUTRAL",
+    category = "CAT_ARCANTINA",
 }
