@@ -1807,5 +1807,69 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
     }
 }
 
--- CAT_ARCANTINA
 
+-- CAT_ARCANTINA
+-- REXXAR --
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].name = "Rexxar"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].race = "Half-Ogre, Half-Orc"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].lore = [[Born as neither orc nor ogre, the Mok'Nathal hunter Rexxar, son of chieftain Leoroxx, has never cared much for the squabbles of others. He witnessed the descent of the Old Horde into fel-corrupted madness and pledged himself to Warchief Blackhand in order to have his clan spared. 
+
+After the Second War was over, Rexxar abandoned the Horde. Cast out by his clan, feared by the Alliance and without any desire to rejoin his people, he began to live in Kalimdor's wilderness. Always by his side were his trusted animal companions, the bear Misha his closest friend among them. These beasts aren't pets or weapons to him, they are his family.
+
+Rexxar has since somewhat rejoined the New Horde and society as a whole, but he will not be found staying in a city for long.]]
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
+    {
+        era = "WC1",
+        text = [[Pledged his loyalty to Warchief Blackhand to deter him from wiping out the pacifistic Mok'Nathal clan. Went through the Dark Portal and fought for the Old Horde during the First War.]],
+    },
+    {
+        era = "WC2",
+        text = [[Stationed at the Dark Portal under Grommash Hellscream and became sickened by the constant cruelty of the Horde. Lost his wolf companion Haratha to an orcish warlock. Was stranded on Azeroth after Draenor's destruction and abandoned the Horde.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Found his way to Kalimdor and lived as a hunter in the wilderness of Feralas. Rescued and befriended an orphaned bear cub he would later call Misha.]],
+    },
+    {
+        era = "WC3",
+        text = [[Stumbled upon a fatally wounded orc scout who told him to deliver a message to Warchief Thrall. Intrigued, Rexxar helped Thrall in defending the newly founded Orgrimmar and rescued a young Baine Bloodhoof from centaurs. He later killed Daelin Proudmoore and was named Champion of the Horde by Thrall.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Noticed the Burning Blade clan murdering orcs in Durotar and helped settle a small dispute between Orgrimmar and Theramore.]],
+    },
+    {
+        era = "Classic",
+        text = [[Roamed the wilderness of Desolace with Misha.]],
+    },
+    {
+        era = "TBC",
+        text = [[Returned to Draenor and protected his former clan from the Bloodmaul ogres. Did not reconcile with his father, the chieftain still being bitter about his son joining the Old Horde. Rexxar befriended Baron Sablemane without finding out about his dragon identity, and helped him slay the sons of Gruul.]],
+    },
+    {
+        era = "Cata",
+        text = [[Defended Durotar from raging elementals.]],
+    },
+    {
+        era = "Legion",
+        text = [[Challenged the Huntmaster of the Unseen Path to survive one night in the wilds of Highmountain. The Huntmaster did and earned Rexxar's trust and support and the Mok'Nathal joined the fight against the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Compelled by honor, he fought for the Horde in the Fourth War and helped establish military outposts on Kul Tiras. Aided in recruiting Thomas Zelling. Reclaimed the Tide Pearl from the Shrine of Storms. Helped free Priscilla Ashvane. He later joined Saurfang's rebellion against Warchief Sylvanas Windrunner.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Alongside young Zekhan, Rexxar traveled Kalimdor to give a full report on Horde holdouts on the continent. Mourned his wolf friend Huelo, who had fallen in the Fourth War.]],
+    },
+    {
+        era = "DF",
+        text = [[Reunited with his old friends Baine Bloodhoof, Rokhan, and Chen Stormstout to restore Toghusuq Village. Fought against Fyrakk's forces in the defense of Amirdrassil. Was surprised to be invited to the orcish Kosh'harg festival by Thrall and finally reconnected with his father.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina with his old friend Chen Stormstout.]],
+    }
+}
