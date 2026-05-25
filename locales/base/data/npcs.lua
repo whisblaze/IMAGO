@@ -541,16 +541,66 @@ IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].name = "Moira Thaurissan"
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].race = "Dwarf (Dark Iron)"
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].lore = "Moira Thaurissan is the heir to the throne of Ironforge and regent of the Dark Iron clan. As a member of the Council of Three Hammers, she has united the once-feuding dwarven clans through iron will and political savvy. Moira is not only a capable diplomat but also a powerful priestess. In Midnight, she represents the dwarves at the Sunwell, bringing the combined might of Dark Iron magic and the Light to save Quel'Thalas from total darkness."
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].race = "Dwarf"
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].lore = [[A long-standing and respected leader of the Bronzebeard and the Dark Iron Clans, Queen Moira had not always held such a favorable position among Alliance ranks. Her days of meddling in civil wars are in the past now, though.
+Born as the sole heir to former King Magni and as the widow of the late Emperor Dagran Thaurissan of Blackrock Mountain, she is a member of two out of the three ruling clans of the dwarves. Her son, Dagran II is poised to be the next king of all the clans, once he comes of age.
+
+Never having seen eye to eye with her father, the two of them have recently made the first steps towards reconciliation. Their family time has been promptly interrupted by Xal'atath's attack - first on Dalaran and now, on Silvermoon.]]
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].source = "warcraft.wiki.gg/wiki/Moira_Thaurissan"
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].timeline = {
-    {era = "Classic", text = "Disappeared from Ironforge and became the consort of Emperor Dagran Thaurissan in Blackrock Depths."},
-    {era = "Cata", text = "Returned to Ironforge after her father Magni's petrification and helped found the Council of Three Hammers."},
-    {era = "BfA", text = "Secured the official integration of the Dark Iron dwarves into the Alliance during the Fourth War."},
-    {era = "TWW", text = "Accompanied the expedition to Khaz Algar and supported her son Dagran II in his first diplomatic steps."},
-    {era = "Midnight", text = "Fights as a leading priestess and representative of the dwarves in the defense of the Sunwell."},
+    {
+        era = "Pre-Classic",
+        text = [[Born as the sole heir to King Magni and Queen Eimear of Ironforge. Her mother died to a troll skirmish when Moira was a child and a rift grew between her and her father. He would have preferred a son to a daughter and made the fact known clearly to her and to his subjects.]],
+    },
+    {
+        era = "Classic",
+        text = [[Was kidnapped by the Dark Iron Clan to use as a hostage in the impending dwarven civil war. She fell in love with and married her captor, Emperor Dagran Thaurissan, and the two had a son together. When her husband was killed at Magni's orders, Moira stayed in Shadowforge City as queen, and masterminded the Dark Iron dwarves' liberation from Ragnaros by allying with the Hydraxian Waterlords.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[When her father was turned into crystal, Moira and infant Dagran II returned to Ironforge to claim the throne. Met with resistance, she took the whole city hostage in a siege, including a visiting Anduin Wrynn. Was spared execution by King Varian at Anduin's request and became a member of the newly formed Council of Three Hammers as the Dark Iron representative.]],
+    },
+    {
+        era = "Cata",
+        text = [[Still mistrusted by the people of Ironforge, Moira rooted out traitors of the Dark Iron Clan who had defected to the Twilight's Hammer.]],
+    },
+    {
+        era = "MoP",
+        text = [[Joined King Varian in the defense of Ironforge against the Frostmane trolls. Clearly humbled, she vowed to prove the Dark Iron Clan's worth to the kingdom, and to the Alliance. Fought in the Siege of Orgrimmar against Garrosh Hellscream's troops.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[Was in charge of the reconstruction of the Jade Serpent statue.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Defended Khaz Modan from demonic invasions. After four years of petrification, Magni finally reawakened as the Speaker of Azeroth. Seeing how well her daughter had managed as a ruler, despite all the obstacles in her way, Magni told a tearful Moira that he was proud of her for the first time.]],
+    },
+    {
+        era = "Legion",
+        text = [[Helped in the Third Invasion of the Burning Legion as a priest in the Conclave.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Rallied the Conclave and healers of Ironforge to aid in curing Azeroth's wounds inflicted by Sargeras. Was charged by King Anduin to find out more about the properties of Azerite.]],
+    },
+    {
+        era = "BfA",
+        text = [[Halted rebelling subjects that had formed the Cult of Ragnaros. Officially made the Dark Iron Clan a member of the Alliance.]],
+    },
+    {
+        era = "DF",
+        text = [[Aided in the defense of Amirdrassil.]],
+    },
+    {
+        era = "TWW",
+        text = [[Survived the destruction of Dalaran and made contact with the earthen of Khaz Algar. Helped the earthen reunite as a people and secured their aid in the fight against Xal'atath. Journeyed to Gundargaz with Dagran II and Magni to stop the traitorous High Speaker. Grew a bit closer to her father again.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell to defend Silvermoon.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].name = "Captain Fareeya"
@@ -803,16 +853,35 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
     {era = "Midnight", text = "Oversaw the defense of the Sunwell and provided the exhausted defenders with holy magic. Aided Arator to overcome his doubts about his father and the Light."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].name = "Tahu Sagewind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].lore = "Tahu Sagewind is the spiritual founder of the Seers, the tauren priesthood. While humans revere the Holy Light, Tahu taught his people to channel the Light through An'she—the sun and the right eye of the Earth Mother. His presence in Quel'Thalas during Midnight holds immense diplomatic and poetic significance: the Horde's master of sun magic stands alongside the blood elves to protect their own Sunwell from the all-consuming hunger of the Void."
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].source = "warcraft.wiki.gg/wiki/Tahu_Sagewind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].timeline = {
-    {era = "WotLK", text = "Discussed the imbalance between Mu'sha (Moon) and An'she (Sun) with Aponi Brightmane, laying the foundation for tauren paladins and priests."},
-    {era = "Cata", text = "Officially founded the order of the Seers, teaching the tauren to wield the power of An'she."},
-    {era = "Legion", text = "Represented the tauren in the Conclave at the Netherlight Temple, fighting alongside the priests of Azeroth."},
-    {era = "Midnight", text = "Travels to Silvermoon and Quel'Danas to bring the light of An'she into the elves' darkest battle."},
+-- TAHU SAGEWIND --
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].name = "Tahu Sagewind"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].race = "Tauren"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].lore = [[The tauren have practiced druidism since the dawn of their people. The magic showed reverence to Azeroth's moon, Mu'sha, one of the eyes of the Earth Mother. Tahu and his friend Aponi Brightmane pondered the nature of the Earth Mother's other eye, An'she – the Sun – and wondered why the tauren had been neglecting him for so long. Thus were sown the first seeds to new paths for their people.
+
+While Aponi became a paladin, Tahu founded the priestly order of the Seers and both paid heed to An'she's teachings of the Light. Since then he has trained countless priests and lent his aid to Azeroth on many occasions.]]
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].timeline = {
+    {
+        era = "WotLK",
+        text = [[Pondered the nature of An'she with Aponi Brightmane in Thunder Bluff. There, the first steps towards the creation of the tauren orders of the Seers and the Sunwalkers were made.]],
+    },
+    {
+        era = "Cata",
+        text = [[Officially founded the Seers, the tauren priest order, and became the primary trainer for new recruits.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Conclave under Alonsus Faol. Helped the Highlord of the Silver Hand to commune with the spirits of vrykul in order to acquire the artifact weapon Truthguard.]],
+    },
+    {
+        era = "TWW",
+        text = [[Aided the Horde on the Isle of Dorn against Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought on the Isle of Quel'Danas against the Devouring Host.]],
+    }
 }
 
 -- APONI BRIGHTMANE --
@@ -854,14 +923,27 @@ IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
     }
 }
 
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].name = "War Chaplain Senn"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].race = "Lightforged Draenei"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].lore = "War Chaplain Senn is a Lightforged draenei and one of High Exarch Turalyon's most loyal lieutenants. After the Fourth War, she aided him in the relentless hunt for Sylvanas Windrunner in the Arathi Highlands. There, she reluctantly had to cooperate with the void elf Celosel Nightgiver—an experience that triggered physical disgust for Void magic in the Lightforged veteran. In Midnight, she joins the Vanguard of Light. With holy wrath and a deep abhorrence for the shadows, she confronts the invaders at the Sunwell and in the Voidstorm."
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].zones = {"The Void Spire", "Isle of Quel'Danas", "Voidstorm", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].source = "warcraft.wiki.gg/wiki/War_Chaplain_Senn"
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"].timeline = {
-    {era = "BfA", text = "Hunted Sylvanas with Turalyon in the Arathi Highlands and openly showed her deep disgust for the Void magic of the ren'dorei."},
-    {era = "Midnight", text = "Serves in the Vanguard of Light, fighting absolute darkness in the most dangerous zones of Quel'Thalas."},
+-- WAR CHAPLAIN SENN --
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].name = "War Chaplain Senn"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].race = "Lightforged draenei"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].lore = [[A loyal lieutenant to Turalyon, Senn has fought cosmic evil in service of the Army of the Light for hundreds of years. She has developed an intense hatred towards the forces of the Void and can barely contain her disgust towards her ren'dorei allies. 
+
+Now, she has been summoned by the Sunwell to fight for the Light once more. Senn isn't interested in defending Silvermoon City though. Her priorities lie first and foremost in vanquishing Xal'atath and her minions, no matter the costs.]]
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City", "The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].timeline = {
+    {
+        era = "Legion",
+        text = [[Fought on Argus against the Burning Legion.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Helped Turalyon and Alleria on the hunt for Sylvanas Windrunner and very reluctantly worked with the ren'dorei.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought at Parhelion Plaza. Disapproved of seeing Umbric walk free after he avoided execution while trying to study the Voidstorm. Senn later joined the assault on the Voidspire and became blinded by the Light. She attacked her own allies, Turalyon included, and was killed as a result.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].name = "Faerin Lothar"
@@ -919,15 +1001,27 @@ IMAGOdb.npcs.CAT_LIGHT["arator"].timeline = {
     {era = "Midnight", text = "After being summoned by the Sunwell, Arator fought on the front lines against the Void. He organized the reunification of the elven nations of Azeroth to fight a common foe."},
 }
 
+-- NOLAKI --
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].name = "Nolaki"
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].race = "Zandalari Troll"
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].lore = "Nolaki is a Zandalari Prelate and the current 'Exemplar of Sacrifice' in the newly reformed Tyr's Guard. Her resolve was forged during the Battle of Dazar'alor: at the time, she stayed behind, feeling she was too inexperienced, while her mentor Ra'wani Kanae fell in battle against the Alliance. Plagued by guilt, Nolaki swore to use the Light until her dying breath to save lives. This led her to the Dragon Isles, where she was recruited by Travard into Tyr's Guard. In Midnight, she faces her ultimate test: traveling to the Isle of Quel'Danas to stand on the front lines and make every possible sacrifice to prevent the Sunwell from falling to the Void."
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].race = "Zandalari troll"
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].lore = [[Easy to amuse and hard to anger, this Zandalari woman became a paladin under Ra'wani Kanae. Being young, she stayed behind when the Alliance attacked Dazar'alor because she was convinced that one warrior more or less wouldn't make a difference in the battle. Her demeanor changed when both her mentor and King Rastakhan were slain.
+
+Since then, Nolaki matured a lot and dedicated her life to putting others before herself. That, to her, is what makes a paladin and she joined the Tyr's Guard as the Exemplary of Sacrifice, ready to put herself in between the enemy and whoever would need her protection.]]
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].source = "warcraft.wiki.gg/wiki/Nolaki"
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].timeline = {
-    {era = "BfA", text = "Stayed behind during the Battle of Dazar'alor and lost her beloved mentor Ra'wani Kanae, which shaped her unwavering path as a paladin."},
-    {era = "DF", text = "Traveled to the Dragon Isles, joined Tyr's Guard, and proudly accepted the title of Exemplar of Sacrifice."},
-    {era = "Midnight", text = "Fights as external support of the Light orders on the Isle of Quel'Danas against the advancing Void invasion."},
+    {
+        era = "BfA",
+        text = [[Trained as a young paladin under the Champion of the Light Ra'wani Kanae. Did not participate in the Battle of Dazar'alor.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Tyr's Guard as the Exemplar of Sacrifice and took part in reforming the titan keeper.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped to defend the Sunwell against the Voidstorm.]],
+    }
 }
 
 -- VALUNEI --
@@ -967,26 +1061,56 @@ IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].timeline = {
 
 -- HADWIN --
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].name = "Hadwin"
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].race = "Human (Kul Tiran)"
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].lore = "Hadwin is a burly Kul Tiran and the current 'Exemplar of Justice' in the newly reformed Tyr's Guard. Originally a worshiper of the Tidemother, he joined the Order of Embers in Drustvar as an Inquisitor to assist Lady Waycrest in fighting the coven witches. To his own surprise, he developed an inexplicable yet profound connection to the Holy Light in the process. He trained as a paladin with the Silver Hand but soon left to follow his own pragmatic code. On the Dragon Isles, he finally found his true calling within Tyr's Guard. In Midnight, Hadwin stands on the front lines at Parhelion Plaza with his massive shield, ensuring that the merciless hunger of the Void is met with iron justice."
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].race = "Human"
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].lore = [[A burly man from humble origins and with a blunt attitude, Hadwin never thought about becoming a paladin. Like most Kul Tirans, he grew up worshipping the Tidemother. Ever since he was a small boy, watching fretfully as his mother's shop was robbed again and again whenever his father was out at sea, a burning desire for justice fueled his actions. 
+
+He vowed to stand up for the people that needed a strong arm to defend them and he volunteered to become an inquisitor for the Order of Embers in Drustvar. There, he began to feel a strange connection to the Light, a connection he still can't quite explain. He began training as a paladin out of curiosity and to find out his true path in life. Now, he has become the Exemplar of Justice in the Tyr's Guard and the Sunwell recognized his good heart and summoned him to Silvermoon.]]
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].source = "Quest: Ein Vorbild der Gerechtigkeit: Hadwin"
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].timeline = {
-    {era = "BfA", text = "Fought as an Inquisitor for the Order of Embers in Drustvar against witches, discovering the Light and later becoming a paladin of the Silver Hand."},
-    {era = "DF", text = "Traveled to the Dragon Isles to right wrongs and was inducted into Tyr's Guard by Travard as the Exemplar of Justice."},
-    {era = "Midnight", text = "Fights as the vanguard of Tyr's Guard at Parhelion Plaza and Quel'Danas against the forces of the Void."},
+    {
+        era = "BfA",
+        text = [[Volunteered to join the Order of Embers under Lucille Waycrest to combat the witches of Drustvar. Started to feel a connection to the Light.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Briefly joined the Order of the Silver Hand and began training as a paladin.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Tyr's Guard as the Exemplar of Justice and took part in reforming the titan keeper.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned to Silvermoon and fought to protect the Sunwell.]],
+    }
 }
 
 -- TALTHIS --
 IMAGOdb.npcs.CAT_LIGHT["talthis"].name = "Talthis"
-IMAGOdb.npcs.CAT_LIGHT["talthis"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_LIGHT["talthis"].lore = "Talthis is a blood elf paladin and the current 'Exemplar of Order' in the newly reformed Tyr's Guard. As a child, he was forced to watch his homeland of Silvermoon fall to the absolute chaos of the Scourge invasion. This traumatic experience, along with surviving countless global catastrophes, forged within him an unwavering desire for structure, security, and order. When Travard discovered him during a Primalist assault on the Dragon Isles, Talthis did not hesitate to join Tyr's Guard. In Midnight, the son of Quel'Thalas returns to his homeland—not within the ranks of the Blood Knights, but as part of the Light's elite strike force to halt the ultimate chaos of the Void on the Isle of Quel'Danas."
+IMAGOdb.npcs.CAT_LIGHT["talthis"].race = "Blood elf"
+IMAGOdb.npcs.CAT_LIGHT["talthis"].lore = [[Growing up during the Third War in Quel'Thalas changed Talthis' view on life and robbed him of a peaceful childhood. He came to the conclusion that the world was out of order, that the forces of evil and disarray like the Lich King and the Burning Legion had to be eliminated so that structure and harmony could return to the world.
+
+He joined the Blood Knights to purge the remnants of the rampaging Scourge in the Dead Scar and later ventured to the Dragon Isles to stop the elemental disorder. He was recruited into the Tyr's Guard and felt a great appreciation for the titan philosophy of peace through order. Thus he became the Exemplar of Order and was content with his role in the grander scheme of things.]]
 IMAGOdb.npcs.CAT_LIGHT["talthis"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["talthis"].source = "Quest: Ein Vorbild der Ordnung: Talthis"
+IMAGOdb.npcs.CAT_LIGHT["talthis"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["talthis"].timeline = {
-    {era = "WC3", text = "Witnessed the devastating fall of Silvermoon to the Scourge as a child, which shaped his lifelong pursuit of order."},
-    {era = "DF", text = "Fought against the Primalists during the Flashfrost Assault on the Dragon Isles and was recruited by Travard as the Exemplar of Order."},
-    {era = "Midnight", text = "Returns to his homeland to stop the chaos of the Void invasion on the Isle of Quel'Danas as part of Tyr's Guard."},
+    {
+        era = "WC3",
+        text = [[Survived the fall of Quel'Thalas as a child.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Sometimes after becoming an adult, he joined the Blood Knights as a paladin and fought the undead in the Ghostlands.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Tyr's Guard as the Exemplar of Order and took part in reforming the titan keeper.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned to Silvermoon and fought to protect the Sunwell.]],
+    }
 }
 
 
@@ -1283,17 +1407,34 @@ Valeera briefly struggled with addiction to fel magic and got possessed by the d
     }
 }
 
+-- FREYA --
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].name = "Freya"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].race = "Titan Keeper"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].lore = "Freya is one of the most powerful Titan Keepers of Azeroth, created by the Pantheon and empowered by Eonar to shape and protect life on the planet. It was she who channeled the Emerald Dream and planted the first seeds from which the great World Trees grew. After being corrupted by the Old God Yogg-Saron in Ulduar and freed by adventurers, she largely withdrew. In Midnight, however, she intervenes directly: Harandar harbors an ancient, bioluminescent ecosystem and the delicate roots that ensure the survival of life itself. Freya steps out of the shadows of history to defend this pristine jungle as an uncompromising guardian against the all-consuming hunger of the Void."
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].zones = {"Harandar"}
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].source = "warcraft.wiki.gg/wiki/Freya"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
-    {era = "Ancient", text = "Shaped the Emerald Dream and created the first refuges of life (such as Un'Goro Crater, Sholazar Basin, and the Vale of Eternal Blossoms)."},
-    {era = "WotLK", text = "Was driven to madness by Yogg-Saron in Ulduar until Azeroth's heroes defeated her and cleansed her of the corruption."},
-    {era = "Midnight", text = "Personally watches over the pristine jungle of Harandar to prevent the spread of the Void into the fragile ecosystem."},
-}
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].race = "Titanic watcher"
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].lore = [[Freya has reliably done the mighty titan Eonar's bidding on Azeroth as her keeper since her creation. She is credited in the records of the Titans of creating most life on the planet, including the Wild Gods and loa, and to have been the one that created the Emerald Dream. Other sources may say differently, and describe the Dream as something that has always existed, and that life has had a place in the world long before the Titans came – but it is undeniable that Freya's influence can be felt on Azeroth wherever nature sprouts.
 
+With the Titans' defeat at Sargeras' hand, Freya has become somewhat stagnant, just like most of the other keepers have.]]
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].zones = {"Harandar"}
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Helped to vanquish the Black Empire by defeating Therazane. She repopulated Azeroth with plantlife and experimented with life magic in Un'goro Crater, Sholazar Basin and the Vale of Eternal Blossom. Titan records say she created the Emerald Dream and planted the world tree G'hanir in it, and from the animals of her making evolved the Wild Gods and the loa. Helped infuse the Dragon Aspects.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Was defeated by the treacherous keeper Loken and was driven mad by the Old God Yogg-Saron in the Halls of Ulduar.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Kept safeguarding Sholazar Basin through her avatar.
+
+        Was freed of corruption by the Champions of Azeroth and helped defeat Yogg-Saron.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Appeared as a memory of the ancestors of the haranir. They remember her as a giant to be feared.]],
+    }
+}
 
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].name = "Eitrigg"
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].race = "Orc"
@@ -1650,14 +1791,31 @@ IMAGOdb.npcs.CAT_AMANI["zaljarra"].timeline = {
     {era = "Midnight", text = "Chose to ally with Lady Liadrin and accept her help in becoming hash'ey. Zul'jarra united the tribes of Zul'Aman and regained the trust of the loa. Afterwards she led the battle against the Twilight's Blade, successfully defending her people from the Void."},
 }
 
+-- NALORAKK --
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].name = "Nalorakk"
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].race = "Forest Troll"
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].lore = "Once a proud forest troll, Nalorakk was infused with the essence of the bear god Rhunok through the dark magic of Hex Lord Malacrass. He served as the brutal guardian and first loa avatar in classic Zul'Aman before being struck down by adventurers. In Midnight, the massive bear avatar mysteriously manifests once again. With sheer physical force and animalistic fury, he joins the Amani to defend the Heart of Rage against the Void."
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].zones = {"Heart of Rage", "Nalorakk's Den", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].source = "warcraft.wiki.gg/wiki/Nalorakk"
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].race = "Bear (loa)"
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].lore = [[The Unyielding One, The Dreamer, Ironjaw... The Loa of War and of the Earth was revered by many names. The great bear was the primary god of the Revantusk Tribe and granted them strength in battle and prosperity in harvest. Stonemasons laid down offerings for him and he in turn reinforced the walls around them.
+
+Then came Zul'jin and Hex Lord Malacrass and forcefully sealed his sacred essence into their fiercest warriors in a blasphemous battle against the elves of Quel'Thalas. When Zul'jin failed and his army was defeated, Nalorakk, alongside the other loa of Zul'Aman, turned his back on his once-loyal followers.]]
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].zones = {"Den of Nalorakk", "The Heart of Rage", "Zul'Aman"}
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].timeline = {
-    {era = "TBC", text = "Became the avatar of the bear god Rhunok through Malacrass and guarded the entrance of Zul'Aman as its first boss."},
-    {era = "Midnight", text = "Returns to Nalorakk's Den, unleashing the power of the bear against Xal'atath's invading forces."},
+    {
+        era = "TBC",
+        text = [[Was bound to one of Zul'jin's strongest warriors by Hex Lord Malacrass. When the warrior was killed by adventurers, Nalorakk was set free again.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Helped Witch Doctor Khufu to liberate the enslaved loa of the mad Drakkari in Zul'Drak.]],
+    },
+    {
+        era = "Cata",
+        text = [[His essence was once again stolen by Malacrass and sealed into the body of Daakara, the warlord successor of Zul'jin himself. His spirit was set free when Vol'jin's champions killed Daakara. Not giving either the Amani nor the Revantusk a third chance, Nalorakk stopped to answer the trolls' prayers, letting only a few remaining loyal Revantusk near him.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Granted Zul'jarra a spiritual trial in his mystical den to determine her worth as hash'ey. After she succeeded, Nalorakk rejoined the Amani people as the Loa of War and marched the Revantusk into battle against the Twilight's Blade at the Broken Throne.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_AMANI["akilzon"].name = "Akil'zon"
@@ -1807,3 +1965,69 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
     }
 }
 
+
+-- CAT_ARCANTINA
+-- REXXAR --
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].name = "Rexxar"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].race = "Half-Ogre, Half-Orc"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].lore = [[Born as neither orc nor ogre, the Mok'Nathal hunter Rexxar, son of chieftain Leoroxx, has never cared much for the squabbles of others. He witnessed the descent of the Old Horde into fel-corrupted madness and pledged himself to Warchief Blackhand in order to have his clan spared. 
+
+After the Second War was over, Rexxar abandoned the Horde. Cast out by his clan, feared by the Alliance and without any desire to rejoin his people, he began to live in Kalimdor's wilderness. Always by his side were his trusted animal companions, the bear Misha his closest friend among them. These beasts aren't pets or weapons to him, they are his family.
+
+Rexxar has since somewhat rejoined the New Horde and society as a whole, but he will not be found staying in a city for long.]]
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
+    {
+        era = "WC1",
+        text = [[Pledged his loyalty to Warchief Blackhand to deter him from wiping out the pacifistic Mok'Nathal clan. Went through the Dark Portal and fought for the Old Horde during the First War.]],
+    },
+    {
+        era = "WC2",
+        text = [[Stationed at the Dark Portal under Grommash Hellscream and became sickened by the constant cruelty of the Horde. Lost his wolf companion Haratha to an orcish warlock. Was stranded on Azeroth after Draenor's destruction and abandoned the Horde.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Found his way to Kalimdor and lived as a hunter in the wilderness of Feralas. Rescued and befriended an orphaned bear cub he would later call Misha.]],
+    },
+    {
+        era = "WC3",
+        text = [[Stumbled upon a fatally wounded orc scout who told him to deliver a message to Warchief Thrall. Intrigued, Rexxar helped Thrall in defending the newly founded Orgrimmar and rescued a young Baine Bloodhoof from centaurs. He later killed Daelin Proudmoore and was named Champion of the Horde by Thrall.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Noticed the Burning Blade clan murdering orcs in Durotar and helped settle a small dispute between Orgrimmar and Theramore.]],
+    },
+    {
+        era = "Classic",
+        text = [[Roamed the wilderness of Desolace with Misha.]],
+    },
+    {
+        era = "TBC",
+        text = [[Returned to Draenor and protected his former clan from the Bloodmaul ogres. Did not reconcile with his father, the chieftain still being bitter about his son joining the Old Horde. Rexxar befriended Baron Sablemane without finding out about his dragon identity, and helped him slay the sons of Gruul.]],
+    },
+    {
+        era = "Cata",
+        text = [[Defended Durotar from raging elementals.]],
+    },
+    {
+        era = "Legion",
+        text = [[Challenged the Huntmaster of the Unseen Path to survive one night in the wilds of Highmountain. The Huntmaster did and earned Rexxar's trust and support and the Mok'Nathal joined the fight against the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Compelled by honor, he fought for the Horde in the Fourth War and helped establish military outposts on Kul Tiras. Aided in recruiting Thomas Zelling. Reclaimed the Tide Pearl from the Shrine of Storms. Helped free Priscilla Ashvane. He later joined Saurfang's rebellion against Warchief Sylvanas Windrunner.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Alongside young Zekhan, Rexxar traveled Kalimdor to give a full report on Horde holdouts on the continent. Mourned his wolf friend Huelo, who had fallen in the Fourth War.]],
+    },
+    {
+        era = "DF",
+        text = [[Reunited with his old friends Baine Bloodhoof, Rokhan, and Chen Stormstout to restore Toghusuq Village. Fought against Fyrakk's forces in the defense of Amirdrassil. Was surprised to be invited to the orcish Kosh'harg festival by Thrall and finally reconnected with his father.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina with his old friend Chen Stormstout.]],
+    }
+}

@@ -3,7 +3,7 @@
 ## Notes: The world has a story. IMAGO preserves it.
 ## Notes-deDE: Die Welt hat eine Geschichte. IMAGO bewahrt sie.
 ## Author: Whisblaze
-## Version: 1.3.2
+## Version: 1.3.3
 ## SavedVariables: IMAGOSaved
 ## IconTexture: 5341597
 
@@ -19,6 +19,7 @@ data/npcs/CAT_HARATI.lua
 data/npcs/CAT_VOID.lua
 data/npcs/CAT_EBON_BLADE.lua
 data/npcs/CAT_NEUTRAL.lua
+data/npcs/CAT_ARCANTINA.lua
 
 locales/base/data/npcs.lua
 locales/base/data/zones.lua

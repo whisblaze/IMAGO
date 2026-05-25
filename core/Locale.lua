@@ -54,6 +54,7 @@ if locale == "deDE" then
     L["CAT_VOID"]          = "Die Leereninvasion"
     L["CAT_EBON_BLADE"]    = "Ritter der Schwarzen Klinge"
     L["CAT_NEUTRAL"]       = "Unabhängige & Rätselhafte"
+    L["CAT_ARCANTINA"]     = "Die Arcantina"
 
     -- ============================================================
     -- TAB 2: ZONEN (DASHBOARD & DETAILS)
@@ -204,6 +205,7 @@ else
     L["CAT_VOID"]          = "The Void Invasion"
     L["CAT_EBON_BLADE"]    = "Knights of the Ebon Blade"
     L["CAT_NEUTRAL"]       = "Independent & Enigmatic"
+    L["CAT_ARCANTINA"]     = "The Arcantina"
 
     -- ============================================================
     -- TAB 2: ZONES (DASHBOARD & DETAILS)
