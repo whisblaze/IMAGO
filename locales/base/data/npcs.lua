@@ -1680,14 +1680,31 @@ IMAGOdb.npcs.CAT_AMANI["zaljarra"].timeline = {
     {era = "Midnight", text = "Chose to ally with Lady Liadrin and accept her help in becoming hash'ey. Zul'jarra united the tribes of Zul'Aman and regained the trust of the loa. Afterwards she led the battle against the Twilight's Blade, successfully defending her people from the Void."},
 }
 
+-- NALORAKK --
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].name = "Nalorakk"
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].race = "Forest Troll"
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].lore = "Once a proud forest troll, Nalorakk was infused with the essence of the bear god Rhunok through the dark magic of Hex Lord Malacrass. He served as the brutal guardian and first loa avatar in classic Zul'Aman before being struck down by adventurers. In Midnight, the massive bear avatar mysteriously manifests once again. With sheer physical force and animalistic fury, he joins the Amani to defend the Heart of Rage against the Void."
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].zones = {"Heart of Rage", "Nalorakk's Den", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].source = "warcraft.wiki.gg/wiki/Nalorakk"
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].race = "Bear (loa)"
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].lore = [[The Unyielding One, The Dreamer, Ironjaw... The Loa of War and of the Earth was revered by many names. The great bear was the primary god of the Revantusk Tribe and granted them strength in battle and prosperity in harvest. Stonemasons laid down offerings for him and he in turn reinforced the walls around them.
+
+Then came Zul'jin and Hex Lord Malacrass and forcefully sealed his sacred essence into their fiercest warriors in a blasphemous battle against the elves of Quel'Thalas. When Zul'jin failed and his army was defeated, Nalorakk, alongside the other loa of Zul'Aman, turned his back on his once-loyal followers.]]
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].zones = {"Den of Nalorakk", "The Heart of Rage", "Zul'Aman"}
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].timeline = {
-    {era = "TBC", text = "Became the avatar of the bear god Rhunok through Malacrass and guarded the entrance of Zul'Aman as its first boss."},
-    {era = "Midnight", text = "Returns to Nalorakk's Den, unleashing the power of the bear against Xal'atath's invading forces."},
+    {
+        era = "TBC",
+        text = [[Was bound to one of Zul'jin's strongest warriors by Hex Lord Malacrass. When the warrior was killed by adventurers, Nalorakk was set free again.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Helped Witch Doctor Khufu to liberate the enslaved loa of the mad Drakkari in Zul'Drak.]],
+    },
+    {
+        era = "Cata",
+        text = [[His essence was once again stolen by Malacrass and sealed into the body of Daakara, the warlord successor of Zul'jin himself. His spirit was set free when Vol'jin's champions killed Daakara. Not giving either the Amani nor the Revantusk a third chance, Nalorakk stopped to answer the trolls' prayers, letting only a few remaining loyal Revantusk near him.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Granted Zul'jarra a spiritual trial in his mystical den to determine her worth as hash'ey. After she succeeded, Nalorakk rejoined the Amani people as the Loa of War and marched the Revantusk into battle against the Twilight's Blade at the Broken Throne.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_AMANI["akilzon"].name = "Akil'zon"
