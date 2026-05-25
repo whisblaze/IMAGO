@@ -72,21 +72,25 @@ IMAGOdb.zones[2395].pointsOfInterest = {
     },
 }
 
-IMAGOdb.zones[2424].name = "Insel von Quel'Danas"
-IMAGOdb.zones[2424].lore = "Die Insel von Quel'Danas, das strahlende Kronjuwel des Elfenimperiums und Heimat des heiligen Sonnenbrunnens, ist zum ultimativen Schlachtfeld geworden. Xal'atath hat die gesamte Macht ihrer Leerenarmada hierher gelenkt, um den Quell aus Licht und arkaner Magie in ewige Finsternis zu stürzen. Der Himmel über der Insel ist von gigantischen kosmischen Rissen durchzogen, während sich Blut-, Hoch- und Leerenelfen zum ersten Mal seit Jahrtausenden vereinen. Schulter an Schulter stehen sie in einem verzweifelten letzten Gefecht, um das absolute Herz ihrer Zivilisation vor dem Untergang zu bewahren."
+-- DIE INSEL VON QUEL'DANAS --
+IMAGOdb.zones[2424].name = "Die Insel von Quel'Danas"
+IMAGOdb.zones[2424].lore = [[Der nördlichste Teil des Königreichs ist vor allem als Standort des Sonnenbrunnens bekannt – dem heiligen Herzen Quel'Thalas'. Dieser Quell arkaner und heiliger Magie ist für die Elfen zugleich Segen und Fluch: Er hat ihr Volk über Jahrtausende hinweg am Leben erhalten, machte sie jedoch auch zum Ziel bösartiger Mächte, die nach seiner Kraft verlangten. 
+So wurde die Insel Quel'Danas in den letzten Jahrzehnten bereits zweimal verwüstet und der Sonnenbrunnen verdorben – zuerst durch den Tod aus dem Norden und die Geißel, die seinem Ruf folgte, dann durch die Brennende Legion während des Verrats von Prinz Kael'thas Sonnenwanderer. 
+
+Nun droht die Leere erneut, den Sonnenbrunnen ins Verderben zu stürzen, und das Chaos des Leerensturms am Himmel über Quel'Danas ist Grund genug, erneut zu den Waffen zu greifen … oder der Verzweiflung zu verfallen.]]
 IMAGOdb.zones[2424].pointsOfInterest = {
     {
         name = "Der Sonnenbrunnen",
-        lore = "Das magische Zentrum der Elfen und Xal'ataths primäres Ziel. Der Brunnen wurde massiv befestigt und pulsiert mit instabilen Energien, während die mächtigsten Magier Azeroths einen gewaltigen Schild gegen die alles verschlingende Leere aufrechterhalten."
+        lore = [[Die magische Quelle der Macht eines jeden lebenden Blutelfen. Dath'Remar Sonnenwanderer brachte vor zehntausend Jahren ein Fläschchen aus dem ursprünglichen Brunnen der Ewigkeit in seine neue Heimat Quel'Thalas und erschuf daraus den Sonnenbrunnen. Durch seine Wasser wurden die Elfen beinahe eins mit seiner arkanen Magie. Nach seiner Zerstörung durch Arthas Menethil wurde deutlich, wie abhängig sie von ihm geworden waren – so sehr, dass sie ohne seine Macht dahinsiechten und starben. Nun, da der Sonnenbrunnen durch heilige Magie wiederhergestellt wurde, dürfen die Blutelfen eine solche Tragödie niemals erneut zulassen.]]
     },
     {
-        name = "Heiligtum der Sonnenweiten",
-        lore = "Einst das Hauptquartier der Offensive der Zerschmetterten Sonne, wurde dieser Stützpunkt zu einer undurchdringlichen Festung ausgebaut. Hier koordinieren die vereinten Fraktionsführer die Verteidigung der gesamten Insel."
+        name = "Terrasse der Magister",
+        lore = [[Großmagister Rommath würde behaupten, dass die Magister – Silbermonds Magier – womöglich die talentiertesten und gelehrtesten Zauberwirker in ganz Azeroth sind. Sie alle beginnen ihre Ausbildung hier, in den Hallen der Terrasse der Magister, wo sie die verschiedensten Formen der arkanen Magie, des Lichts und vielem mehr erlernen. Zudem werden hier zahlreiche Artefakte von enormer Bedeutung und Gefahr aufbewahrt und erforscht – weshalb man die Terrasse niemals unbewacht vorfinden wird.]]
     },
     {
-        name = "Die Morgensternfront",
-        lore = "Die blutigen Strände der Insel, an denen Xal'ataths Invasionstruppen unablässig anlanden. Ein brutaler, nicht enden wollender Fleischwolf, in dem arkane Golems und Leerenbestien in einem endlosen Krieg aufeinanderprallen."
-    },
+        name = "Die Leuchtende Spanne",
+        lore = [[Ein Meisterwerk magischer Handwerkskunst: Diese Brücke erstreckt sich über mehr als tausend Meter und verbindet die Insel von Quel'Danas mit der eigentlichen Stadt Silbermond. Besucher und Pilger erblicken die strahlenden Türme des Phönixhofes und die Sonnenbrunnenbollwerke bereits bei ihrem ersten Schritt auf die Brücke – und dies macht die Insel zu einem wahrhaft atemberaubenden Anblick.]]
+    }
 }
 
 IMAGOdb.zones[2393].name = "Silbermond"
@@ -105,3 +109,9 @@ IMAGOdb.zones[2393].pointsOfInterest = {
         lore = "Silbermond war schon immer Vorreiter der arkanen Künste. Es waren die Elfen von Quel'Thalas, die der Menschheit erstmals zeigten, wie man die Arkane Macht selbst nutzt. In dieser Tradition umfasste der Wiederaufbau Silbermonds einen weitläufigen Universitätscampus. Hier wird die nächste Generation von Magiern unter der weisen Anleitung ihrer hochgeschätzten Professoren ausgebildet."
     },
 }
+
+-- DIE ARKANTINE --
+IMAGOdb.zones[10473].name = "Die Arkantine"
+IMAGOdb.zones[10473].lore = [[Erschaffen als eine Taschendimension von einem Erzmagier der Kirin Tor lange vor dieser Zeit, öffnet die Arkantine nun ihre Türen für die Abenteurer Azeroths. Diese gemütliche Taverne bietet Zuflucht weit entfernt vom Chaos des Krieges und den Lasten der Welt. Ursprünglich ein Treffpunkt der Söhne Lothars während des Zweiten Krieges, ist das Gasthaus inzwischen zu einem lebhaften Ort voller Reisender und Besucher aus ganz Azeroth geworden.
+
+Inoffiziell gehört die Arkantine dem Erzmagier Khadgar, auch wenn viele freundliche Seelen beschlossen haben, dauerhaft hierzubleiben. Hinter dem Tresen steht Schankkellner Bob und serviert nur die feinsten Getränke – mit einer Herzlichkeit, die selbst die kampferprobtesten Seelen zur Ruhe kommen lässt. Jeder darf so lange bleiben, wie er möchte, und Geschichten mit alten Freunden ebenso wie mit neu gewonnenen Gefährten teilen.]]

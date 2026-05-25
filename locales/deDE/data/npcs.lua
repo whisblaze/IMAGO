@@ -105,17 +105,60 @@ IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].timeline = {
     {era = "Midnight", text = "Halduron war der Erste, der die Bedrohung durch die Lichtblüte bemerkte und sich mit Orweyna auf die Reise nach Harandar begab. Durch ein vorläufiges Bündnis mit den Haranir gelang es Halduron, die Lichtblüte in Schach zu halten und die Verteidigung von Silbermond zu stärken."},
 }
 
+-- VEREESA WINDLÄUFER --
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].name = "Vereesa Windläufer"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].race = "Hochelfe"
-IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].lore = "Die jüngste der Windläufer-Schwestern und die entschlossene Anführerin des Silbernen Bundes. Im Gegensatz zu ihren Schwestern blieb Vereesa dem Pfad der Hochelfen treu und schlug eine tiefe Wurzel in der Allianz. Nach dem schmerzhaften Verlust ihres Ehemanns Rhonin in Theramore widmete sie ihr Leben dem Schutz Azeroths und der Ausbildung ihrer Waldläufer. In Midnight kehrt sie nach Quel'Thalas zurück, um ihre Heimat gegen die Leere zu verteidigen und sich dem schmerzhaften Erbe ihrer Familie zu stellen."
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].lore = [[Vereesa Windläufer ist die jüngste der Windläuferschwestern. Ihr Leben veränderte sich grundlegend, als die Horde nach Azeroth kam und sie den Tod ihres jüngeren Bruders Lirath nicht verhindern konnte. Sie zog Arator, den Sohn ihrer Schwester Alleria Windläufer, groß und unterstützte den Magier Rhonin bei seiner Mission, den Drachen Alexstrasza zu retten. 
+Doch ihr Leben war von Tragödien geprägt: Erst verlor sie durch Arthas Menethil nahezu alles und jeden, den sie kannte, und später starb auch ihr Ehemann Rhonin infolge der Zerstörung von Theramore. Diese Ereignisse führten dazu, dass Vereesa Taten beging, die ihren Ruf unter den Blutelfen für immer beeinträchtigen sollten.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].zones = {"Immersangwald", "Insel von Quel'Danas", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].source = "warcraft.wiki.gg/wiki/Vereesa_Windrunner"
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].source = "Karstan"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].timeline = {
-    {era = "Pre-Classic", text = "Kämpfte während der Ereignisse von 'Der Tag des Drachen' in Grim Batol und traf dort ihren späteren Ehemann Rhonin."},
-    {era = "WotLK", text = "Gründete den Silbernen Bund in Dalaran, um den Einfluss der Blutelfen innerhalb der Kirin Tor zu begrenzen."},
-    {era = "MoP", text = "Unterstützte Jaina Prachtmeer bei der blutigen Säuberung von Dalaran nach der Zerstörung von Theramore."},
-    {era = "Legion", text = "Schloss sich dem Verborgenen Pfad an und wurde nach über tausend Jahren mit ihrer Schwester Alleria vereint."},
-    {era = "Midnight", text = "Führt die Waldläufer des Silbernen Bundes bei der Verteidigung von Silbermond und der Insel von Quel'Danas an."},
+    {
+        era = "Pre-WC2", 
+        text = [[Vereesa lebte einst friedlich auf dem Windläuferturm als Teil der Familie Windläufer, einem der angesehensten Namen in Quel'Thalas.]]
+    },
+    {
+        era = "WC2", 
+        text = [[Vereesa nahm an der Verteidigung von Quel'Thalas teil und half ihrer Schwester Alleria Windläufer bei der Reise nach Silbermond. Ihr jüngerer Bruder Lirath wurde von der Horde getötet, nachdem Vereesa ihn heimlich ausgebildet hatte. Dies belastete ihre Beziehung zu Sylvanas, die sich geweigert hatte, ihn zu trainieren, damit er sicher in Silbermond bleiben konnte.]]
+    },
+    {
+        era = "Pre-WC3", 
+        text = [[Nachdem sie auf Wunsch ihrer Schwester Alleria Arator adoptiert hatte, unterstützte Vereesa den Magier Rhonin bei seiner geheimen Mission, den Aspekt des roten Drachenschwarms, Alexstrasza, aus den Fängen des Drachenmalklans der Orcs zu befreien und dadurch Todesschwinges Pläne zu vereiteln.]]
+    },
+    {
+        era = "WC3", 
+        text = [[Sie befand sich in Dalaran und zog Arator groß, als Arthas Menethil mit der Geißel die Stadt angriff. Vereesa überlebte und heiratete später Rhonin.]]
+    },
+    {
+        era = "Classic", 
+        text = [[Vereesa bekam zwei Söhne: Giramar und Galadin.]]
+    },
+    {
+        era = "WotLK", 
+        text = [[Sie nahm am Krieg gegen den Lichkönig teil und gründete den Silberbund. Außerdem half sie dabei, Quel'Delar wiederherzustellen – das legendäre Schwert von Thalorien Dämmersucher, der Silbermond gegen die Invasion der Geißel verteidigt hatte.]]
+    },
+    {
+        era = "Cata", 
+        text = [[Sie unterstützte Halduron Wolkenglanz und den Häuptling der Dunkelspeere, Vol'jin, dabei, das Amani-Imperium aufzuhalten, das erneut aufzusteigen drohte, um Quel'Thalas zu vernichten.]]
+    },
+    {
+        era = "MoP", 
+        text = [[Vereesa war bei der Zerstörung von Theramore nicht anwesend, die Rhonin das Leben kostete. Vor Wut erfüllt schloss sie sich Jaina Prachtmeer bei der Säuberung von Dalaran an – und nahm vielen Blutelfen der Sonnenhäscher das Leben. Danach unterstützte Vereesa die Offensive des Kirin Tor und stellte sich der Horde auf der Insel des Donners entgegen.
+
+Nach dem Sturz von Garrosh Höllschrei schmiedete Vereesa einen Plan, ihn während seines Prozesses für seine Verbrechen zu ermorden, um Rhonins Tod zu rächen. Letztendlich bereute sie diesen Plan jedoch und führte ihn nicht aus.]]
+    },
+    {
+        era = "Legion", 
+        text = [[Sie reiste nach Niskara, um nach Alleria zu suchen, fand dort jedoch nur deren Bogen, Thas'dorah. Anschließend führte Vereesa die Hochelfen an, um die Nachtgeborenen-Rebellen in Suramar bei der Rückeroberung der Stadt zu unterstützen. Schließlich reiste sie nach Argus, um die Legion aufzuhalten, wo sie wieder mit Alleria vereint wurde.]]
+    },
+    {
+        era = "TWW", 
+        text = [[Nach Jahren des Friedens empfing sie mehrere Visionen des Strahlenden Gesangs, die Quel'Thalas eine düstere Zukunft im Kampf gegen die Leere vorhersagten.]]
+    },
+    {
+        era = "Midnight", 
+        text = [[Vereesa und der Silberbund beteiligten sich am Angriff auf den Dunkelbrunnen auf der Insel Quel'Danas. Nach der Schlacht löste sie den Silberbund auf und gründete gemeinsam mit Aethas Sonnenhäscher das Silbersonnenbündnis. Anschließend war sie bei der Reinigung des Dunkelbrunnens anwesend und brachte dabei die Krone von Anasterian Sonnenwanderer dar.]]
+    }
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].name = "Shandris Mondfeder"
@@ -210,14 +253,39 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].timeline = {
     }
 }
 
+-- RISSKLINGE MAELLA --
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].name = "Rissklinge Maella"
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].race = "Leerenelf"
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].lore = "Rissklinge Maella ist eine tödliche Nahkämpferin der Ren'dorei und gehört zur absoluten Vorhut von Magister Umbrics Streitkräften. Als Rissklinge meistert sie die Kunst, physische Kampfkraft mit der instabilen Magie des Telogrusrisses zu verschmelzen, um durch den Raum zu schneiden und ihre Feinde zu desorientieren. Dass die Leerenelfen in Midnight ihre alte Heimat Quel'Thalas verteidigen, ist für Maella eine Frage der Ehre und des Überlebens. Ihre Einsatzorte in der Leerenspitze und im Zentrum des tödlichen Leerensturms zeigen, dass sie unerschrocken dort kämpft, wo die Korruption der Leere am dichtesten ist. Sie nutzt die pure Dunkelheit gnadenlos als Waffe gegen die Leere selbst und verteidigt Silbermond mit eiskalter Präzision."
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].zones = {"Die Leerenspitze", "Leerensturm", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].source = "Quest: Der Telogrusriss"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].race = "Leerenelfe"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].lore = [[Maella war einst eine Zauberbrecherin – eine Kriegerin, die darauf spezialisiert war, Magier zu bekämpfen –, als sie noch in Silbermond lebte. Heimlich lernte sie von Magister Umbric etwas über die Leere, weil sie glaubte, dass diese verbotene Magie der Schlüssel sein könnte, um den leidenden Blutelfen zu helfen. Doch sie wurde entdeckt, und anstatt sie zu verleugnen, nahm Umbric die Schuld auf sich. Daraufhin wurden der Magister und seine Anhänger aus ihrer Heimat verbannt.
+
+Maella ist ihm nun zutiefst loyal und folgte Umbric in den Telogrusriss, wo sie unfreiwillig von der Leere durchdrungen wurde. Ohne einen anderen Ausweg zu sehen, wurde sie zu einer Rissklinge und dient nun der Sache der Ren'dorei, wohin auch immer dieser Weg sie führen mag.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].zones = {"Insel von Quel'Danas", "Silbermond", "Sunkiller-Sanktum", "Die Leerenspitze", "Leerensturm"}
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].timeline = {
-    {era = "BfA", text = "Wurde in den Geisterlanden transformiert und im Telogrusriss zur Rissklinge ausgebildet, um die Leere auf dem Schlachtfeld zu meistern."},
-    {era = "Midnight", text = "Führt die Nahkampf-Vorhut der Ren'dorei im Leerensturm und in der Leerenspitze an, um den Sonnenbrunnen zu schützen."},
+    {
+        era = "Pre-WotLK",
+        text = [[Wurde bei dem Versuch entdeckt, ein Leerenritual durchzuführen, und daraufhin aus Quel'Thalas durch Großmagister Rommath und Lor'themar Theron verbannt.]],
+    },
+    {
+        era = "Legion",
+        text = [[Folgte Magister Umbric in den Telogrusriss und wurde dort in eine Ren'dorei verwandelt. Schloss sich der Allianz an, nachdem Alleria Windläufer sie gerettet hatte.]],
+    },
+    {
+        era = "DF",
+        text = [[Verteidigte den Telogrusriss gegen die Astralen der Schattenwache.]],
+    },
+    {
+        era = "TWW",
+        text = [[Kämpfte auf K'aresh gegen die Streitkräfte von Dimensius. Beschützte Shan'dorah im Ungebundenen Raum vor Saboteuren.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Blieb zurück, um über den Telogrusriss zu wachen, während Umbric nach Quel'Thalas reiste, um zu verhandeln. Bekämpfte den Kult der Zwielichtklinge in den Schattenhochlanden.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Kämpfte gemeinsam mit ihren Mitstreitern der Ren'dorei im Leerensturm gegen Xal'ataths Streitkräfte. Bannte instabile Singularitäten, die von Xal'ataths Dienern in der Sturmarionzitadelle gewoben wurden, und verhinderte dadurch katastrophale Explosionen.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].name = "Astalor Blutschwur"
@@ -450,17 +518,68 @@ IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].timeline = {
     {era = "Midnight", text = "Verteidigte den Sonnenbrunnen gegen den vordringenden Leerensturm. Gemeinsam mit Salandria rettete sie gefangene Paladine vor den Kultisten der Zwielichtsklinge und schaffte es, deren Anführer zur Strecke zu bringen."},
 }
 
+-- MOIRA THAURISSAN --
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].name = "Moira Thaurissan"
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].race = "Zwergin (Dunkeleisen)"
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].lore = "Moira Thaurissan ist die Erbin des Throns von Eisenschmiede und Regentin des Dunkeleisen-Clans. Als Mitglied des Rats der Drei Hämmer hat sie die einst zerstrittenen Zwergenvölker mit eiserner Entschlossenheit und politischem Geschick vereint. Moira ist nicht nur eine fähige Diplomatin, sondern auch eine mächtige Priesterin. In Midnight repräsentiert sie die Zwerge am Sonnenbrunnen und bringt die geballte Macht der Dunkeleisen-Magie und des Lichts ein, um Quel'Thalas vor der totalen Finsternis zu bewahren."
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].race = "Zwergin"
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].lore = [[Als langjährige und respektierte Anführerin der Bronzebart- und der Dunkeleisenklane war Königin Moira nicht immer in einer so angesehenen Position innerhalb der Reihen der Allianz. Die Zeiten, in denen sie sich in Bürgerkriege einmischte, liegen inzwischen jedoch hinter ihr.
+Geboren als einzige Erbin des ehemaligen Königs Magni und als Witwe des verstorbenen Imperators Dagran Thaurissan vom Schwarzfels, gehört sie zwei der drei herrschenden Zwergenklans an. Ihr Sohn, Dagran II., ist dazu bestimmt, der nächste König aller Klane zu werden, sobald er volljährig ist.
+
+Da sie sich mit ihrem Vater nie wirklich verstand, haben die beiden erst vor Kurzem die ersten Schritte zur Versöhnung unternommen. Die gemeinsame Familienzeit wurde jedoch rasch durch Xal’ataths Angriff unterbrochen – zuerst auf Dalaran und nun auf Silbermond.]]
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].zones = {"Insel von Quel'Danas", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].source = "warcraft.wiki.gg/wiki/Moira_Thaurissan"
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].timeline = {
-    {era = "Classic", text = "Verschwand aus Eisenschmiede und wurde die Gemahlin von Imperator Dagran Thaurissan in den Schwarzfelstiefen."},
-    {era = "Cata", text = "Kehrte nach dem Erstarren ihres Vaters Magni nach Eisenschmiede zurück und half bei der Gründung des Rats der Drei Hämmer."},
-    {era = "BfA", text = "Sicherte die offizielle Eingliederung der Dunkeleisen-Zwerge in die Allianz während des Vierten Krieges."},
-    {era = "TWW", text = "Begleitete die Expedition nach Khaz Algar und unterstützte ihren Sohn Dagran II. bei seinen ersten diplomatischen Schritten."},
-    {era = "Midnight", text = "Kämpft als führende Priesterin und Repräsentantin der Zwerge bei der Verteidigung des Sonnenbrunnens."},
+    {
+        era = "Pre-Classic",
+        text = [[Geboren als einzige Erbin von König Magni und Königin Eimear von Eisenschmiede. Ihre Mutter starb bei einem Angriff der Trolle, als Moira noch ein Kind war, wodurch ein Zerwürfnis zwischen ihr und ihrem Vater entstand. Er hätte lieber einen Sohn als eine Tochter gehabt und machte dies sowohl ihr als auch seinen Untertanen deutlich.]],
+    },
+    {
+        era = "Classic",
+        text = [[Wurde vom Dunkeleisenklan entführt, um sie im bevorstehenden Bürgerkrieg der Zwerge als Geisel zu benutzen. Sie verliebte sich in ihren Entführer, Imperator Dagran Thaurissan, heiratete ihn und bekam mit ihm einen Sohn. Nachdem ihr Ehemann auf Magnis Befehl getötet worden war, blieb Moira als Königin in der Schattenschmiede und plante die Befreiung der Dunkeleisenzwerge von Ragnaros, indem sie sich mit den Hydraxianern verbündete.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Als ihr Vater in Kristall verwandelt wurde, kehrten Moira und der kleine Dagran II. nach Eisenschmiede zurück, um den Thron zu beanspruchen. Da sie auf Widerstand stieß, nahm sie während einer Belagerung die gesamte Stadt als Geisel, darunter auch den zu Besuch weilenden Anduin Wrynn. Auf Anduins Bitte hin wurde sie nach ihrer Niederlage von König Varian verschont und Mitglied des neu gegründeten Rates der Drei Hämmer als Vertreterin der Dunkeleisenzwerge.]],
+    },
+    {
+        era = "Cata",
+        text = [[Noch immer vom Volk Eisenschmiedes misstrauisch betrachtet, entlarvte Moira Verräter des Dunkeleisenklans, die sich dem Schattenhammerkult angeschlossen hatten.]],
+    },
+    {
+        era = "MoP",
+        text = [[Schloss sich König Varian bei der Verteidigung Eisenschmiedes gegen die Frostmähnentrolle an. Deutlich bescheidener geworden, schwor sie, den Wert des Dunkeleisenklans für das Königreich und die Allianz zu beweisen. Kämpfte außerdem bei der Belagerung von Orgrimmar gegen die Truppen Garrosh Höllschreis.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[War für den Wiederaufbau der Statue der Jadeschlange verantwortlich.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Verteidigte Khaz Modan gegen dämonische Invasionen. Nach vier Jahren der Versteinerung erwachte Magni schließlich als Sprecher Azeroths wieder. Als er sah, wie gut seine Tochter trotz aller Hindernisse als Herrscherin regiert hatte, sagte Magni der zu Tränen gerührten Moira zum ersten Mal, dass er stolz auf sie sei.]],
+    },
+    {
+        era = "Legion",
+        text = [[Half als Priesterin in der Konklave während der dritten Invasion der Brennenden Legion.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Versammelte die Konklave und die Heiler von Eisenschmiede, um bei der Heilung der von Sargeras verursachten Wunden Azeroths zu helfen. Wurde von König Anduin beauftragt, mehr über die Eigenschaften von Azerit herauszufinden.]],
+    },
+    {
+        era = "BfA",
+        text = [[Schlug aufständische Untertanen nieder, die den Kult des Ragnaros gegründet hatten. Machte den Dunkeleisenklan offiziell zu einem Mitglied der Allianz.]],
+    },
+    {
+        era = "DF",
+        text = [[Unterstützte die Verteidigung von Amirdrassil.]],
+    },
+    {
+        era = "TWW",
+        text = [[Überlebte die Zerstörung von Dalaran und stellte Kontakt zu den Irdenen von Khaz Algar her. Half den Irdenen dabei, sich wieder als Volk zu vereinen, und sicherte ihre Unterstützung im Kampf gegen Xal'atath. Reiste gemeinsam mit Dagran II. und Magni nach Gundargaz, um den verräterischen Hohen Sprecher aufzuhalten. Kam ihrem Vater dabei wieder etwas näher.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen, um Silbermond zu verteidigen.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].name = "Hauptmann Fareeya"
@@ -497,15 +616,39 @@ IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].timeline = {
     }
 }
 
+-- DELAS MONDFANG --
 IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].name = "Delas Mondfang"
 IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].race = "Nachtelfe"
-IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].lore = "Delas Mondfang ist eine historische Pionierin: Als ehemalige Priesterin von Elune war sie die erste Nachtelfe, die den Weg des Paladins einschlug und sich dem Orden der Silbernen Hand anschloss. Unter der Anleitung von Mehlar Dämmerklinge lernte sie, das heilige Licht mit den Traditionen ihres Volkes in Einklang zu bringen. In Midnight dient sie als lebendiges Symbol der Einheit am Sonnenbrunnen und beweist, dass der Glaube an das Licht keine Grenzen zwischen den Elfenvölkern kennt, wenn es um die Verteidigung Azeroths geht."
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].lore = [[Delas Mondfang ist fast ihr ganzes langes Leben lang eine Priesterin von Elune gewesen. Während des Krieges der Ahnen aufgewachsen, entschied sie sich für diese heilige Berufung, um anderen zu helfen - denn in einer Zeit voller Dämonen wurde Hilfe dringend benötigt. Sie widmete ihr Leben der Heilkunst und dem Studium der Brennenden Legion und lernte sogar, Eredun zu sprechen.
+
+Als die Legion zurückkehrte, zögerte Delas keine Sekunde, sich dem Konklave unter Alonsus Faol anzuschließen. Ihren wahren Weg im Licht fand sie jedoch darin, der erste nachtelfische Paladin zu werden – wie sie erkannte, als sie dem Hochlord der Silbernen Hand begegnete. Nach all diesen Jahrtausenden hat sie endlich das Gefühl, ihre wahre Bestimmung erfüllen zu können.]]
 IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].source = "warcraft.wiki.gg/wiki/Delas_Moonfang"
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].timeline = {
-    {era = "WoD", text = "Diente als Mondpriesterin im Schattenmondtal auf Draenor und unterstützte die Allianz-Streitkräfte gegen die Eiserne Horde."},
-    {era = "Legion", text = "Trat der Silbernen Hand bei und wurde im Sanktum des Lichts zur ersten Nachtelf-Paladinin geweiht."},
-    {era = "Midnight", text = "Kämpft als erfahrene Paladinin auf der Insel von Quel'Danas für die Verteidigung des Sonnenbrunnens."},
+    {
+        era = "Ancient",
+        text = [[Während des Krieges der Ahnen wuchs sie in Val'sharah auf und trat der Schwesternschaft von Elune bei.]],
+    },
+    {
+        era = "WoD",
+        text = [[Unterstützte Khadgar dabei, Gul'dan aufzuspüren.]],
+    },
+    {
+        era = "Legion",
+        text = [[Trat als eines der ersten Mitglieder dem Konklave bei und half dabei, den Leerengott Saraka zu erlösen. Übersetzte verschiedene Texte der Brennenden Legion sowohl für das Konklave als auch für die Ritter der Silbernen Hand. Traf den Hochlord und fand ihre wahre Berufung – sie wurde ein Paladin. Später stellte sie sich ihren geisterhaften Vorfahren, die aus Verzweiflung einen Pakt mit den Dämonen geschlossen hatten.]],
+    },
+    {
+        era = "DF",
+        text = [[Zog nach Bel'ameth.]],
+    },
+    {
+        era = "TWW",
+        text = [[Kämpfte für die Allianz in Azj-Kahet gegen die Neruber von Königin Ansurek.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen und kämpfte auf der Insel Quel'Danas gegen die Leere.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].name = "Lord Grayson Schattenbruch"
@@ -630,16 +773,35 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
     {era = "Midnight", text = "Überwachte die Verteidigung des Sonnenbrunnens und stärkte die erschöpften Verteidiger mit heiliger Magie. Half Arator dabei, seine Zweifel an seinem Vater und dem Licht zu überwinden."},
 }
 
+-- TAHU WEISENWIND --
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].name = "Tahu Weisenwind"
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].lore = "Tahu Weisenwind ist der spirituelle Begründer der Seher, der Priesterschaft der Tauren. Während die Menschen das heilige Licht verehren, lehrte Tahu sein Volk, das Licht durch An'she – die Sonne und das rechte Auge der Erdenmutter – zu kanalisieren. Seine Anwesenheit in Quel'Thalas während Midnight ist von gewaltiger diplomatischer und poetischer Bedeutung: Der Meister der Sonnenmagie der Horde steht den Blutelfen zur Seite, um deren eigene Sonnenquelle vor dem alles verschlingenden Hunger der Leere zu beschützen."
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].lore = [[Die Tauren praktizieren Druidismus seit den Anfängen ihres Volkes. Diese Magie erwies Azeroths Mond, Mu’sha, einem der Augen der Erdenmutter, ihre Ehrfurcht und Huldigung. Tahu und seine Freundin Aponi Lichtmähne dachten über die Natur des anderen Auges der Erdenmutter nach – An’she, der Sonne – und fragten sich, warum die Tauren ihn so lange vernachlässigt hatten. So wurden die ersten Samen für neue Wege ihres Volkes gesät.
+
+Während Aponi zu einer Paladina wurde, gründete Tahu den priesterlichen Orden der Seher, und beide folgten An’shes Lehren des Lichts. Seitdem hat er unzählige Priester ausgebildet und Azeroth bei vielen Gelegenheiten seine Hilfe angeboten.]]
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].source = "warcraft.wiki.gg/wiki/Tahu_Sagewind"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].timeline = {
-    {era = "WotLK", text = "Diskutierte mit Aponi Lichtmähne über das Ungleichgewicht zwischen Mu'sha (Mond) und An'she (Sonne) und legte so den Grundstein für die Tauren-Paladine und -Priester."},
-    {era = "Cata", text = "Gründete offiziell den Orden der Seher und brachte den Tauren bei, die Macht von An'she zu wirken."},
-    {era = "Legion", text = "Vertrat die Tauren in der Konklave im Netherlichttempel und kämpfte Seite an Seite mit den Priestern Azeroths."},
-    {era = "Midnight", text = "Reist nach Silbermond und Quel'Danas, um das Licht von An'she in die dunkelste Schlacht der Elfen zu tragen."},
+    {
+        era = "WotLK",
+        text = [[Ergründete gemeinsam mit Aponi Lichtmähne die Natur An’shes in Donnerfels. Dort wurden die ersten Schritte zur Gründung der taurischen Orden der Seher und der Sonnenläufer unternommen.]],
+    },
+    {
+        era = "Cata",
+        text = [[Gründete offiziell die Seher, den Priesterorden der Tauren, und wurde zum wichtigsten Ausbilder für neue Rekruten.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich dem Konklave unter Alonsus Faol an. Half dem Hochlord der Silbernen Hand dabei, mit den Geistern der Vrykul zu kommunizieren, um die Artefaktwaffe Wahrheitshüter zu erlangen.]],
+    },
+    {
+        era = "TWW",
+        text = [[Unterstützte die Horde auf der Insel von Dorn im Kampf gegen Xal’atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen und kämpfte auf der Insel Quel’Danas gegen die Invasion der Leere.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].name = "Aponi Lichtmähne"
@@ -680,14 +842,27 @@ IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
     }
 }
 
+-- KRIEGSKAPLANIN SENN --
 IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].name = "Kriegskaplanin Senn"
 IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].race = "Lichtgeschmiedete Draenei"
-IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].lore = "Kriegskaplanin Senn ist eine lichtgeschmiedete Draenei und eine der loyalsten Offizierinnen von Hochexarch Turalyon. Nach dem Vierten Krieg unterstützte sie ihn im Arathihochland bei der unerbittlichen Jagd nach Sylvanas Windläufer. Dort musste sie widerwillig mit der Leerenelfe Celosel Nachtgeber kooperieren – eine Erfahrung, die bei der lichtgeschmiedeten Veteranin physischen Ekel vor der Leerenmagie auslöste. In Midnight schließt sie sich der Vorhut des Lichts an. Mit heiligem Zorn und tiefer Abscheu vor den Schatten stellt sie sich den Eindringlingen am Sonnenbrunnen und im Leerensturm entgegen."
-IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].zones = {"Die Leerenspitze", "Insel von Quel'Danas", "Leerensturm", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].source = "warcraft.wiki.gg/wiki/War_Chaplain_Senn"
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].lore = [[Als loyale Leutnantin von Turalyon kämpfte Senn über Jahrhunderte hinweg im Dienst der Armee des Lichts gegen kosmische Mächte des Bösen. Dabei entwickelte sie einen tiefen Hass auf die Kräfte der Leere und kann ihre Abscheu gegenüber ihren Verbündeten aus den Reihen der Ren’dorei kaum verbergen.
+
+Nun wurde sie vom Sonnenbrunnen erneut in den Kampf für das Licht gerufen. Doch Senn interessiert sich wenig für die Verteidigung von Silbermond. Ihre oberste Priorität ist es, Xal'atath und ihre Diener zu vernichten – koste es, was es wolle.]]
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond", "Die Leerenspitze", "Leerensturm"}
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"].timeline = {
-    {era = "BfA", text = "Jagte mit Turalyon im Arathihochland nach Sylvanas und zeigte offen ihren tiefen Ekel vor der Leerenmagie der Ren'dorei."},
-    {era = "Midnight", text = "Dient in der Vorhut des Lichts und bekämpft die absolute Finsternis in den gefährlichsten Zonen von Quel'Thalas."},
+    {
+        era = "Legion",
+        text = [[Kämpfte auf Argus gegen die Brennende Legion.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Half Turalyon und Alleria Windläufer bei der Jagd auf Sylvanas Windläufer und arbeitete dabei nur äußerst widerwillig mit den Ren’dorei zusammen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen und kämpfte auf der Parhelionplaza. Sie missbilligte es zutiefst, dass Magister Umbric freigelassen wurde, nachdem er seiner Hinrichtung entgangen war, während er versuchte, den Leerensturm zu erforschen. Später schloss sich Senn dem Angriff auf die Leerenspitze an und wurde vom Licht geblendet. In ihrem Wahn griff sie sogar ihre eigenen Verbündeten an – darunter auch Turalyon – und wurde schließlich getötet.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].name = "Faerin Lothar"
@@ -744,26 +919,51 @@ IMAGOdb.npcs.CAT_LIGHT["arator"].timeline = {
     {era = "TWW", text = "Versuchte Alleria und Sylvanas Windläufer für die bevorstehende Verteidigung von Silbermond zu mobilisieren."},
     {era = "Midnight", text = "Nachdem er vom Sonnenbrunnen gerufen wurde, kämpfte Arator an vorderster Front gegen die Leere. Er organisierte die Wiedervereinigung der Elfenmächte Azeroths, um einen gemeinsamen Feind zu bekämpfen."},
 }
+
+-- NOLAKI --
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].name = "Nolaki"
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].race = "Zandalari-Troll"
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].lore = "Nolaki ist eine Prälatin der Zandalari und das amtierende 'Vorbild der Aufopferung' in der neugegründeten Wache von Tyr. Ihre Entschlossenheit formte sich in der Schlacht von Dazar'alor: Damals blieb sie zurück, weil sie sich für zu unerfahren hielt, während ihre Mentorin Ra'wani Kanae im Kampf gegen die Allianz fiel. Von Schuldgefühlen geplagt, schwor Nolaki, das Licht bis zu ihrem letzten Atemzug zu nutzen, um Leben zu retten. Dies führte sie auf die Dracheninseln, wo sie von Travard für die Wache von Tyr rekrutiert wurde. In Midnight stellt sie sich ihrer ultimativen Prüfung: Sie reist auf die Insel von Quel'Danas, um dort an vorderster Front jede erdenkliche Aufopferung zu erbringen, damit der Sonnenbrunnen nicht der Leere anheimfällt."
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].race = "Zandalaritroll"
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].lore = [[Diese leicht zu begeisternde und nur schwer aus der Ruhe zu bringende Zandalaridame wurde unter der Führung von Ra'wani Kanae zum Paladin ausgebildet. Da sie damals noch jung war, blieb sie zurück, als die Allianz Dazar’alor angriff, weil sie überzeugt war, dass ein Krieger mehr oder weniger keinen Unterschied in der Schlacht machen würde. Doch ihre Haltung änderte sich schlagartig, als sowohl ihre Mentorin als auch König Rastakhan getötet wurden.
+
+Seitdem ist Nolaki deutlich reifer geworden und hat ihr Leben dem Dienst an anderen gewidmet. Für sie macht genau das einen Paladin aus: andere über sich selbst zu stellen. Deshalb schloss sie sich Tyrs Wache als Vorbild der Aufopferung an – bereit, sich zwischen den Feind und jene zu stellen, die ihren Schutz benötigen.]]
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].source = "warcraft.wiki.gg/wiki/Nolaki"
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].timeline = {
-    {era = "BfA", text = "Blieb während der Schlacht von Dazar'alor zurück und verlor ihre geliebte Mentorin Ra'wani Kanae, was ihren unerschütterlichen Pfad als Paladinin prägte."},
-    {era = "DF", text = "Reiste auf die Dracheninseln, trat der Wache von Tyr bei und übernahm stolz den Titel als Vorbild der Aufopferung."},
-    {era = "Midnight", text = "Kämpft als externe Unterstützung der Licht-Orden auf der Insel von Quel'Danas gegen die heranrückende Leereninvasion."},
+    {
+        era = "BfA",
+        text = [[Wurde in jungen Jahren unter dem Champion des Lichts Ra'wani Kanae zum Paladin ausgebildet. Nahm nicht an der Schlacht um Dazar’alor teil.]],
+    },
+    {
+        era = "DF",
+        text = [[Trat Tyrs Wache als das Vorbild der Aufopferung bei und beteiligte sich an der Wiederherstellung des Titanenwächters.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde nach Silbermond gerufen und kämpfte für den Schutz des Sonnenbrunnens.]],
+    }
 }
 
+-- VALUNEI --
 IMAGOdb.npcs.CAT_LIGHT["valunei"].name = "Valunei"
 IMAGOdb.npcs.CAT_LIGHT["valunei"].race = "Lichtgeschmiedete Draenei"
-IMAGOdb.npcs.CAT_LIGHT["valunei"].lore = "Valunei ist eine lichtgeschmiedete Draenei und das amtierende 'Vorbild des Mitgefühls' in der neugegründeten Wache von Tyr. Auf Argus erlernte sie die Wege des Lichts von ihrer Mentorin Verteidigerin Iriska und verbrachte unzählige Jahre damit, die Schrecken der Brennenden Legion zu bekämpfen. Sie verabscheut unnötiges Leid zutiefst und hat es sich zur Lebensaufgabe gemacht, Unschuldige zu heilen und zu beschützen. Nach ihrer Ankunft auf Azeroth wurde sie auf den Dracheninseln von Travard für die Wache von Tyr rekrutiert. In Midnight führt ihr unerschütterlicher Pfad des Mitgefühls sie auf die Insel von Quel'Danas. Dort setzt sie ihre bemerkenswerten Heilkräfte an vorderster Front ein, um das Leben der Verteidiger zu bewahren und den Sonnenbrunnen vor der Leere zu schützen."
+IMAGOdb.npcs.CAT_LIGHT["valunei"].lore = [[Valunei war schon immer gegen Gewalt und unangebrachtes Kämpfen eingestellt. Als die Brennende Legion jedoch ihre Heimatwelt eroberte, blieb ihr keine andere Wahl. Der Krieg wurde letztendlich gewonnen, doch Valunei verlor ihre beste Freundin an die Dämonen und kämpfte so lange, dass sie irgendwann nicht mehr wusste, wer sie vor all dem gewesen war.
+
+Gemeinsam mit ihren Brüdern und Schwestern kam Valunei nach Azeroth, fühlte sich dort jedoch rastlos und ohne Bestimmung. Sie wanderte durch diese neue Welt und versuchte, so vielen Menschen wie möglich zu helfen, wobei sie langsam wieder Hoffnung fand. Die Güte, die sie anderen entgegenbrachte, zog die Aufmerksamkeit von Travard auf sich, und so wurde Valunei als Vorbild des Mitgefühls in die erneuerte Tyrs Wache aufgenommen.]]
 IMAGOdb.npcs.CAT_LIGHT["valunei"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["valunei"].source = "warcraft.wiki.gg/wiki/Valunei"
+IMAGOdb.npcs.CAT_LIGHT["valunei"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["valunei"].timeline = {
-    {era = "Legion", text = "Kämpfte als Teil der Armee des Lichts auf Argus gegen die Brennende Legion und erlernte die Lehren der Paladine."},
-    {era = "DF", text = "Wurde auf den Dracheninseln in die Wache von Tyr aufgenommen und nahm den Titel 'Vorbild des Mitgefühls' an."},
-    {era = "Midnight", text = "Reist auf die Insel von Quel'Danas, um ihre Heilkunst im erbitterten Krieg gegen die Leereninvasion einzusetzen."},
+    {
+        era = "Ancient",
+        text = [[Schloss sich der Armee des Lichts an, wurde lichtgeschmiedet und kämpfte auf Argus gegen die Brennende Legion. Wurde von ihrer besten Freundin und Kommandantin, Verteidiger Iriska, zum Paladin ausgebildet. Valunei war zutiefst erschüttert, als Iriska starb.]],
+    },
+    {
+        era = "DF",
+        text = [[Trat der Tyrs Wache als Vorbild des Mitgefühls bei und half dabei, den Titanenwächter zu erneuern. Nahm am ersten Tishamaat-Fest der Draenei auf Azeroth teil.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Half dabei, den Sonnenbrunnen gegen den Leerensturm zu verteidigen.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].name = "Mariella Ward"
@@ -777,26 +977,62 @@ IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].timeline = {
     {era = "Midnight", text = "Wurde nach Silbermond gerufen, um den Sonnenbrunnen zu verteidigen, und blieb an seinen heiligen Wassern, um ihre Magie gegen den vordringenden Leerensturm einzusetzen."},
 }
 
+-- HADWIN --
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].name = "Hadwin"
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].race = "Mensch (Kul Tiraner)"
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].lore = "Hadwin ist ein stämmiger Kul Tiraner und das amtierende 'Vorbild der Gerechtigkeit' in der neugegründeten Wache von Tyr. Ursprünglich verehrte er die Gezeitenmutter und schloss sich dem Glutorden in Drustvar als Inquisitor an, um Lady Kronsteig im Kampf gegen die Hexenzirkel zu unterstützen. Zu seiner eigenen Überraschung entwickelte er dabei eine unerklärliche, aber tiefe Verbindung zum Heiligen Licht. Er ließ sich bei der Silbernen Hand zum Paladin ausbilden, verließ sie jedoch bald wieder, um seinem eigenen pragmatischen Kodex zu folgen. Auf den Dracheninseln fand er schließlich in der Wache von Tyr seine wahre Bestimmung. In Midnight steht Hadwin mit seinem massiven Schild an vorderster Front auf der Parhelionplaza, um dafür zu sorgen, dass dem unbarmherzigen Hunger der Leere mit eiserner Gerechtigkeit begegnet wird."
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].race = "Mensch"
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].lore = [[Ein kräftiger Mann einfacher Herkunft mit einer direkten, unverblümten Art. Hadwin hätte niemals gedacht, einmal Paladin zu werden. Wie die meisten Kul Tiraner wuchs er im Glauben an die Gezeitenmutter auf. Schon als kleiner Junge musste er voller Sorge mitansehen, wie der Laden seiner Mutter immer wieder ausgeraubt wurde, sobald sein Vater auf See war. Seitdem trieb ihn ein brennender Wunsch nach Gerechtigkeit an.
+
+Er schwor, für jene einzustehen, die einen starken Arm zu ihrem Schutz brauchten, und meldete sich freiwillig als Inquisitor für den Glutorden in Drustvar. Dort begann er, eine seltsame Verbindung zum Licht zu spüren – eine Verbindung, die er bis heute nicht ganz erklären kann. Aus Neugier und auf der Suche nach seinem wahren Lebenssinn begann er seine Ausbildung zum Paladin.
+
+Inzwischen ist er zum Vorbild der Gerechtigkeit in Tyrs Wache geworden, und der Sonnenbrunnen erkannte sein gutes Herz und rief ihn nach Silbermond.]]
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["hadwin"].source = "Quest: Ein Vorbild der Gerechtigkeit: Hadwin"
+IMAGOdb.npcs.CAT_LIGHT["hadwin"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["hadwin"].timeline = {
-    {era = "BfA", text = "Kämpfte als Inquisitor für den Glutorden in Drustvar gegen die Hexen, entdeckte dabei das Licht und wurde später Paladin der Silbernen Hand."},
-    {era = "DF", text = "Reiste auf die Dracheninseln, um Unrecht zu bekämpfen, und wurde von Travard als Vorbild der Gerechtigkeit in die Wache von Tyr aufgenommen."},
-    {era = "Midnight", text = "Kämpft als Vorhut der Wache von Tyr auf der Parhelionplaza und Quel'Danas gegen die Mächte der Leere."},
+    {
+        era = "BfA",
+        text = [[Meldete sich freiwillig beim Glutorden unter Luzilla Kronsteig, um die Hexen von Drustvar zu bekämpfen. Dort begann er, eine Verbindung zum Licht zu spüren.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Schloss sich kurzzeitig dem Orden der Silbernen Hand an und begann seine Ausbildung zum Paladin.]],
+    },
+    {
+        era = "DF",
+        text = [[Trat der Tyrs Wache als das Vorbild der Gerechtigkeit bei und beteiligte sich an der Wiederherstellung des Titanenwächters.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde nach Silbermond gerufen und kämpfte für den Schutz des Sonnenbrunnens.]],
+    }
 }
 
+-- TALTHIS --
 IMAGOdb.npcs.CAT_LIGHT["talthis"].name = "Talthis"
 IMAGOdb.npcs.CAT_LIGHT["talthis"].race = "Blutelf"
-IMAGOdb.npcs.CAT_LIGHT["talthis"].lore = "Talthis ist ein Blutelfen-Paladin und das amtierende 'Vorbild der Ordnung' in der neugegründeten Wache von Tyr. Als Kind musste er mitansehen, wie seine Heimat Silbermond durch den Angriff der Geißel an das absolute Chaos fiel. Diese traumatische Erfahrung sowie das Überleben zahlloser globaler Katastrophen formten in ihm den unerschütterlichen Wunsch nach Struktur, Sicherheit und Ordnung. Als Travard ihn während eines Angriffs der Primalisten auf den Dracheninseln entdeckte, zögerte Talthis nicht lange und schloss sich der Wache von Tyr an. In Midnight kehrt der Sohn von Quel'Thalas in seine Heimat zurück – jedoch nicht in den Reihen der Blutritter, sondern als Teil der elitären Eingreiftruppe des Lichts, um dem ultimativen Chaos der Leere auf der Insel von Quel'Danas Einhalt zu gebieten."
+IMAGOdb.npcs.CAT_LIGHT["talthis"].lore = [[Das Aufwachsen während des Dritten Krieges in Quel’Thalas prägte Talthis’ Sicht auf das Leben nachhaltig und beraubte ihn einer friedlichen Kindheit. Er kam zu der Überzeugung, dass die Welt aus dem Gleichgewicht geraten war und dass Mächte des Bösen und des Chaos – wie der Lichkönig und die Brennende Legion – ausgelöscht werden müssten, damit Struktur und Harmonie in die Welt zurückkehren konnten.
+
+Er schloss sich den Blutrittern an, um die Überreste der wütenden Geißel in der Todesschneise zu vernichten, und reiste später zu den Dracheninseln, um die elementare Unordnung aufzuhalten. Schließlich wurde er in Tyrs Wache aufgenommen, wo er eine tiefe Wertschätzung für die titanische Philosophie des Friedens durch Ordnung entwickelte.
+
+So wurde er zum Vorbild der Ordnung und fand Zufriedenheit in seiner Rolle innerhalb des größeren Gefüges der Welt.]]
 IMAGOdb.npcs.CAT_LIGHT["talthis"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["talthis"].source = "Quest: Ein Vorbild der Ordnung: Talthis"
+IMAGOdb.npcs.CAT_LIGHT["talthis"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["talthis"].timeline = {
-    {era = "WC3", text = "Erlebte als Kind den verheerenden Fall von Silbermond durch die Geißel, was sein lebenslanges Streben nach Ordnung prägte."},
-    {era = "DF", text = "Kämpfte beim Frostblitzangriff gegen die Primalisten auf den Dracheninseln und wurde von Travard als Vorbild der Ordnung rekrutiert."},
-    {era = "Midnight", text = "Kehrt in seine Heimat zurück, um als Teil der Wache von Tyr das Chaos der Leereninvasion auf der Insel von Quel'Danas aufzuhalten."},
+    {
+        era = "WC3",
+        text = [[Überlebte als Kind den Fall von Quel’Thalas.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Schloss sich nach dem Erreichen des Erwachsenenalters den Blutrittern als Paladin an und kämpfte in den Geisterlanden gegen die Untoten.]],
+    },
+    {
+        era = "DF",
+        text = [[Trat Tyrs Wache als das Vorbild der Ordnung bei und beteiligte sich an der Wiederherstellung des Titanenwächters.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde nach Silbermond gerufen und kämpfte für den Schutz des Sonnenbrunnens.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"].name = "Verteidiger Boros"
@@ -944,16 +1180,36 @@ IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].timeline = {
     { era = "Midnight", text = "Nachdem Orweyna ihm in Lorenhall geholfen hatte, versprach Gazlowe ihr, nach Harandar zu kommen und ihre Kultur kennenzulernen. Er genoss es, mehr über die Hara'ti zu erfahren." },
 }
 
+-- FIONA --
 IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
 IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
-IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = "Fiona ist eine Worgen-Abenteurerin, Heiligpriesterin und eine der treuesten Seelen Azeroths. Berühmt wurde sie durch ihre legendäre Karawane in den Östlichen Pestländern, mit der sie unzählige Abenteurer – allen voran ihre besten Freunde, die Paladine Gidwin Goldzopf und Tarenar Sonnenhieb – sicher durch Feindesland kutschierte. Sie ist das personifizierte Herzblut der Zivilisten und unabhängigen Helfer in Azeroth. In Midnight hat sie ihre Karawane auf die Insel von Quel'Danas gesteuert. Sie gehört zwar keinem militärischen Orden an, unterstützt die Verteidiger des Lichts jedoch unermüdlich mit ihrer Heilkunst, ihren Vorräten und ihrem Pragmatismus."
+IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = [[Fürsorglich und loyal reist diese Worgin mit ihrer Karawane seit vielen Jahren quer durch Azeroth. Ihren Lebensunterhalt verdient sie als umherziehende Kräuterkundige und Heilerin, doch ihr Herz sehnt sich vor allem nach der Gesellschaft der vielen unterschiedlichen Personen, denen sie auf ihren Abenteuern begegnet. Sie nimmt Reisende nur allzu gern in ihrer Kutsche mit und kann an hilfsbedürftigen Seelen nicht vorbeifahren, ohne anzuhalten und zu helfen, so gut sie kann. Es ist ein einfaches Leben, aber Fiona erfüllt es vollkommen.
+Ihre beiden engsten Freunde sind die Paladine Tarenar Sonnenhieb und Gidwin Goldzopf, die sie häufig begleiten.
+
+Der Sonnenbrunnen hat ihr Mitgefühl und ihre Bereitschaft, anderen zu helfen, gespürt und sie nach Silbermond gerufen, um ihn zu verteidigen. Wie immer wird Fiona alles tun, was in ihrer Macht steht.]]
 IMAGOdb.npcs.CAT_LIGHT["fiona"].zones = {"Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["fiona"].source = "warcraft.wiki.gg/wiki/Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["fiona"].timeline = {
-    {era = "Cata", text = "Kutschierte mit ihrer berühmten Karawane durch die Östlichen Pestländer und unterstützte den Silbernen Kreuzzug."},
-    {era = "WoD", text = "Schloss sich der Allianz-Expedition auf Draenor an und diente als Heiligpriesterin und Kräuterkundige in der Garnison (Schattenmondtal)."},
-    {era = "DF", text = "Reiste mit der Drachenschuppenexpedition ins Basislager der Küste des Erwachens, nachdem sie wieder mit Gidwin und Tarenar vereint war."},
-    {era = "Midnight", text = "Erscheint auf der Insel von Quel'Danas als zivile Unterstützerin und Heilerin für die vereinten Verteidiger gegen die Leere."},
+    {
+        era = "Cata",
+        text = [[Reiste gemeinsam mit Tarenar Sonnenhieb und Gidwin Goldzopf durch die Östlichen Pestländer. Sie legten mehrfach Halt ein, um den Paladinen der Kapelle des hoffnungsvollen Lichts zu helfen, bevor sie sich vorerst in dem Heiligtum niederließen. Unterwegs schloss Fiona mehrere Freundschaften und Bekanntschaften, darunter mit Argus Leuchtfeuer, dem Geist von Pamela Rotpfad und Vex'tul.]],
+    },
+    {
+        era = "WoD",
+        text = [[Reiste nach Draenor und half dabei, die Bedrohung durch die Botani im Schattenmondtal einzudämmen. Sie stellte ihre Karawane eine Zeit lang in der Garnison Mondsturz ab, um den Kommandanten der Allianz zu unterstützen. Außerdem entwickelte Fiona ein Interesse daran, die Kämpfe im Oger-Kolosseum von Hochfels zu beobachten.]],
+    },
+    {
+        era = "BfA",
+        text = [[Reiste nach Boralus und eröffnete dort für eine Weile ihr Geschäft.]],
+    },
+    {
+        era = "DF",
+        text = [[Schloss sich der Drachenschuppen-Expedition an und erkundete mit ihrer Karawane die Dracheninseln.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen und kämpfte auf der Insel von Quel'Danas.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].name = "Valeera Sanguinar"
@@ -1005,15 +1261,32 @@ IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].timeline = {
     }
 }
 
+-- FREYA --
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].name = "Freya"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].race = "Titanenwächterin"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].lore = "Freya ist eine der mächtigsten Titanenwächterinnen Azeroths, erschaffen vom Pantheon und ermächtigt von Eonar, um das Leben auf dem Planeten zu formen und zu schützen. Sie war es, die den Smaragdgrünen Traum kanalisierte und die ersten Samen pflanzte, aus denen die großen Weltenbäume hervorgingen. Nachdem sie in Ulduar vom Alten Gott Yogg-Saron korrumpiert und durch Abenteurer befreit wurde, zog sie sich weitgehend zurück. In Midnight greift sie jedoch direkt in das Geschehen ein: Harandar beherbergt ein uraltes, biolumineszierendes Ökosystem und die empfindlichen Wurzeln, die das Überleben des Lebens selbst sichern. Freya tritt aus dem Schatten der Geschichte, um diesen unberührten Dschungel als unnachgiebige Wächterin gegen den alles verschlingenden Hunger der Leere zu verteidigen."
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].race = "Titanenwächter"
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].lore = [[Seit ihrer Erschaffung erfüllt Freya als Hüterin Azeroths zuverlässig die Gebote der mächtigen Titanin Eonar. In den Aufzeichnungen der Titanen wird ihr die Erschaffung des Großteils allen Lebens auf dem Planeten zugeschrieben – darunter auch der Wilden Götter und Loa – sowie die Schaffung des Smaragdgrünen Traums.
+Andere Quellen behaupten jedoch etwas anderes und beschreiben den Traum als eine Sphäre, die schon immer existierte, und dass das Leben bereits lange vor dem Erscheinen der Titanen seinen Platz in der Welt hatte. Dennoch lässt sich Freyas Einfluss überall auf Azeroth spüren, wo die Natur gedeiht.
+
+Nach der Niederlage der Titanen durch Sargeras verfiel Freya – wie viele andere Hüter auch – zunehmend in eine gewisse Stagnation.]]
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].zones = {"Harandar"}
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].source = "warcraft.wiki.gg/wiki/Freya"
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
-    {era = "Ancient", text = "Formte den Smaragdgrünen Traum und erschuf die ersten Refugien des Lebens (wie den Un'Goro-Krater, das Sholazarbecken und das Tal der Ewigen Blüten)."},
-    {era = "WotLK", text = "Wurde von Yogg-Saron in Ulduar wahnsinnig gemacht, bis Azeroths Helden sie besiegten und von der Verderbnis reinigten."},
-    {era = "Midnight", text = "Wacht persönlich über den unberührten Dschungel von Harandar, um die Ausbreitung der Leere in das empfindliche Ökosystem zu verhindern."},
+    {
+        era = "Ancient",
+        text = [[Half dabei, das Schwarze Imperium zu besiegen, indem sie Therazane bezwang. Anschließend bevölkerte sie Azeroth erneut mit Pflanzenleben und experimentierte mit Lebensmagie im Krater von Un’Goro, im Sholazarbecken und im Tal der Ewigen Blüten. Titanenaufzeichnungen zufolge erschuf sie den Smaragdgrünen Traum und pflanzte dort den Weltenbaum G’Hanir. Aus den von ihr erschaffenen Tieren entwickelten sich später die Wilden Götter und die Loa. Außerdem half sie dabei, die Drachenaspekte mit ihrer Macht zu erfüllen.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Wurde vom verräterischen Wächter Loken besiegt und durch den Alten Gott Yogg-Saron in den Hallen von Ulduar in den Wahnsinn getrieben.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Bewachte weiterhin das Sholazarbecken durch ihren Avatar. Wurde von den Champions Azeroths von der Verderbnis befreit und half dabei, Yogg-Saron zu besiegen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Erschien als Erinnerung in den Überlieferungen der Vorfahren der Haranir. Dort wird sie als eine riesenhafte, furchteinflößende Gestalt beschrieben.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].name = "Eitrigg"
@@ -1492,14 +1765,31 @@ IMAGOdb.npcs.CAT_AMANI["zaljarra"].timeline = {
     {era = "Midnight", text = "Entschied sich, sich Lady Liadrin anzuschließen und ihre Hilfe anzunehmen, um hash'ey zu werden. Zul'jarra vereinte die Stämme von Zul'Aman und gewann das Vertrauen der Loa zurück. Danach führte sie die Schlacht gegen die Klinge der Dämmerung an und verteidigte ihr Volk erfolgreich gegen die Leere."},
 }
 
+-- NALORAKK --
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].name = "Nalorakk"
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].race = "Waldtroll"
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].lore = "Als stolzer Waldtroll wurde Nalorakk einst von Hexlord Malacrass durch dunkle Magie mit der Essenz des Bärengottes Rhunok erfüllt. Er diente als brutaler Wächter und erster Loa-Avatar im klassischen Zul'Aman, bevor er von Plünderern bezwungen wurde. In Midnight manifestiert sich der gewaltige Bären-Avatar aus ungeklärten Gründen erneut. Mit schierer physischer Gewalt und animalischer Wut schließt er sich den Amani an, um das Herz des Zorns gegen die Leere zu verteidigen."
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].zones = {"Das Herz des Zorns", "Nalorakks Bau", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].source = "warcraft.wiki.gg/wiki/Nalorakk"
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].race = "Bär (Loa)"
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].lore = [[Der Unbeugsame, der Träumer, Eisenkiefer … Der Loa des Krieges und der Erde wurde unter vielen Namen verehrt. Der gewaltige Bär war die wichtigste Gottheit des Bruchhauerstammes und schenkte seinem Volk Stärke im Kampf sowie Wohlstand bei der Ernte. Steinmetze legten ihm Opfergaben dar, und im Gegenzug verstärkte er die Mauern, die sie schützten.
+
+Dann kamen Zul'jin und Hexlord Malacrass, die seine heilige Essenz gewaltsam in ihre stärksten Krieger zwangen – als Teil eines loalästerlichen Krieges gegen die Elfen von Quel’Thalas. Als Zul’jin scheiterte und seine Armee besiegt wurde, wandte sich Nalorakk gemeinsam mit den anderen Loa von Zul’Aman von seinen einst treuen Anhängern ab.]]
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].zones = {"Nalorakks Hort", "Das Herz des Zorns", "Zul'Aman"}
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].timeline = {
-    {era = "TBC", text = "Wurde durch Malacrass zum Avatar des Bärengottes Rhunok und bewachte als erster Boss den Eingang von Zul'Aman."},
-    {era = "Midnight", text = "Kehrt in Nalorakks Bau zurück und entfesselt die Kraft des Bären gegen die einfallenden Truppen von Xal'atath."},
+    {
+        era = "TBC",
+        text = [[Wurde von Hexlord Malacrass an einen der stärksten Krieger Zul'jins gebunden. Als der Krieger von Abenteurern getötet wurde, wurde Nalorakk erneut befreit.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Half dem Hexendoktor Khufu dabei, die versklavten Loa der wahnsinnigen Drakkari in Zul’Drak zu befreien.]],
+    },
+    {
+        era = "Cata",
+        text = [[Seine Essenz wurde erneut von Malacrass gestohlen und in den Körper von Daakara versiegelt, dem Kriegsherrn und Nachfolger Zul’jins persönlich. Sein Geist wurde befreit, als die Champions von Vol'jin Daakara töteten. Da er weder den Amani noch den Bruchhauern eine dritte Chance geben wollte, hörte Nalorakk auf, die Gebete der Trolle zu erhören, und ließ nur noch wenige verbliebene loyale Bruchhauer in seine Nähe.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Gewährte Zul'jarra in seinem mystischen Bau eine spirituelle Prüfung, um ihre Würdigkeit als Hash’ey zu beurteilen. Nachdem sie erfolgreich bestand, schloss sich Nalorakk den Amani erneut als Loa des Krieges an und führte die Bruchhauer in die Schlacht gegen die Zwielichtklinge am Zerschlagenen Thron.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_AMANI["akilzon"].name = "Akil'zon"
@@ -1561,14 +1851,25 @@ IMAGOdb.npcs.CAT_AMANI["zuljan"].timeline = {
     {era = "Midnight", text = "Sicherte Lichtholzwaffen für sein Volk und kämpfte sowohl gegen die Blutelfen als auch gegen die Zwielichtklinge. Später beugte er sich widerstrebend den Befehlen seiner Schwester, sich mit den Elfen zu verbünden."},
 }
 
+-- LOASPRECHER KINDURU --
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].name = "Loasprecher Kinduru"
-IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].race = "Waldtroll (Amani)"
-IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].lore = "Loasprecher Kinduru ist der exzentrische, aber liebenswerte spirituelle Führer der Amani. Als direkter Sohn des legendären Zul'jin und Onkel von Zul'jan und Zul'jarra bildet er einen massiven Kontrast zu seiner kriegerischen Blutlinie. Während sein Neffe Zul'jan den Glauben an die Loa ablehnt, ist Kinduru ein tiefgläubiger Diener der mächtigen Amani-Götter – Akil'zon, Halazzi, Jan'alai und Nalorakk. Seine Persönlichkeit erinnert viele an einen weisen, leicht verrückten Schamanen. In Midnight ist er die treibende spirituelle Kraft in Zul'Aman. Er lehrt die Verteidiger geduldig, wie sie sich die Segnungen der Loa verdienen können, um den endlosen Hunger der Leere abzuwehren."
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].race = "Waldtroll"
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].lore = [[Kinduru, Sohn des Zul'jin, blickt nicht mit Stolz auf die berüchtigten Taten seines Vaters zurück. Schon immer war er ein Verehrer der Loa und diente sogar als Sprecher von Akil'zon. Was sich während Zul'jins letzter Schlacht ereignete, empfand er als Gräueltat. Der darauffolgende Verlust der Loa erfüllte ihn mit tiefer Trauer.
+
+Nun, da ihre Götter nicht länger an ihrer Seite stehen, dient Kinduru der Anführerin der Amani, Zul'jarra, als Berater. Als ihr Onkel hegt er große Zuneigung sowohl für seine Nichte als auch für ihren Bruder Zul'jan.
+
+Kinduru versuchte, beiden die Traditionen der Loa-Verehrung nahezubringen, und selbst nach all den Jahren hält er weiterhin an der Hoffnung fest, dass ihre Götter eines Tages zurückkehren werden.]]
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].zones = {"Atal'Aman", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].source = "warcraft.wiki.gg/wiki/Loa_Speaker_Kinduru"
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
-    {era = "Pre-MN", text = "Wuchs im Schatten seines Vaters Zul'jin auf, widmete sein Leben jedoch der spirituellen Verehrung der Loa anstatt dem blinden Hass."},
-    {era = "Midnight", text = "Agiert als Loasprecher in Zul'Aman und lehrt die Spieler am Altar der Segnungen, die Macht der Götter gegen die Leere zu nutzen."},
+    {
+        era = "TBC",
+        text = [[Nach der Niederlage und dem Tod von Zul'jin wurde Kinduru Berater des Häuptlings Zarama, der Ehefrau seines verstorbenen Bruders Man'ye. Nachdem Zarama in einem rituellen Kampf getötet worden war, trat Kinduru in den Dienst ihrer Tochter Zul'jarra.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Begleitete Zul'jarra auf ihrem Weg, eine Hash'ey zu werden. Erlebte die Rückkehr der Loa nach Zul'Aman mit und nahm erneut seine frühere Rolle als Sprecher von Akil'zon ein. Half den Hash'ura dabei, am Altar im Dorf Amani'zar verschiedene Segnungen der Loa zu erlangen.]],
+    }
 }
 
 IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"

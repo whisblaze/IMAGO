@@ -120,8 +120,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].timeline = {
     After the fall of Garrosh Hellscream, Vereesa devised a plan to assassinate him during his trial for his crimes in order to avenge her husband's death. However, she ultimately regretted her plan and did not carry it out.]]},
     {era = "Legion", text = "Traveled to Niskara to search for Alleria. However, she only found her bow, Thas'dorah. Subsequently, Vereesa led the high elves to support the Nightborne rebels in Suramar in reclaiming the city. Finally, she traveled to Argus to stop the Legion, where she was reunited with Alleria."},
     {era = "TWW", text = "After years of peace, she received several visions of the Radiant Song, which foretold a dark future for Quel'Thalas against the Void."},
-    {era = "Midnight", text = "Alongside the Silver Covenant, joined the attack on the Darkwell on the Isle of Quel'danas. Following the battle, she disbanded the Silver Coventant to form the Silversun Compact along with Aethas Sunreaver. She was then present at the purification of the Darkwell, offering the crown of Anasterian Sunstrider."}
-
+    {era = "Midnight", text = "Alongside the Silver Covenant, joined the attack on the Darkwell on the Isle of Quel'danas. Following the battle, she disbanded the Silver Coventant to form the Silversun Compact along with Aethas Sunreaver. She was then present at the purification of the Darkwell, offering the crown of Anasterian Sunstrider."},
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].name = "Shandris Feathermoon"
