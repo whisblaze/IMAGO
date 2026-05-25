@@ -2032,6 +2032,33 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
     }
 }
 
+-- TEHD SHOEMAKER --
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].name = "Tehd Shoemaker"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].race = "Undead Human"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].lore = [[Referred to as “Felbane's pet warlock” by Illidan Stormrage, this undead fel user has formed a very unlikely companionship with the demon hunter Marius Felbane. Despising each other for what they represent, the two men have begrudgingly accepted that they work together very efficiently. 
+
+After defeating one hundred and fifty demons together since the third invasion of the Burning Legion, the two comrades have now set their sights on the Devouring Host.]]
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].zones = {"Silvermoon City", "Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
+    {
+        era = "Pre-Legion",
+        text = [[Sometime before the return of the Burning Legion, the human warlock was killed by a paladin.]],
+    },
+    {
+        era = "Legion",
+        text = [[Worked together with Marius Felbane and killed or subdued various demons, occasionally helped by the Champion of Azeroth. Later fought on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kept hunting remaining demons on Zuldazar with Marius.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Unenthusiastically tried to help out the armies of Silvermoon but was promptly arrested by the Army of the Light for being a warlock. Abandoning the fight, he convinced Marius to join him for a drink in the Arcantica.]],
+    }
+}
+
 -- CECILIA CLESSINGTON --
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].name = "Cecilia Clessington"
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].race = "Human"
