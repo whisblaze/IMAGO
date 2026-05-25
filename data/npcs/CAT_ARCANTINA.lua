@@ -10,5 +10,5 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"] = {
     displayID = 249467,
     ids = {249467, 250400},
     zones = {},
-    category = "CAT_NEUTRAL",
+    category = "CAT_ARCANTINA",
 }
