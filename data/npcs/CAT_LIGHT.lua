@@ -56,8 +56,8 @@ IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"] = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"] = {
-    displayID = 251932,
-    ids = {251932, 251949, 253188, 254299, 247926},
+    displayID = 253188,
+    ids = {253188, 247926, 251932, 254299, 251949},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -119,9 +119,9 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"] = {
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"] = {
     displayID = 251939,
-    ids = {251939, 240657, 242613, 243227, 251950, 241714, 248324},
+    ids = {251939, 253191, 242613, 248324, 241714, 240657, 243227, 251950},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -133,9 +133,9 @@ IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"] = {
-    displayID = 250589,
-    ids = {250589, 249103, 240438, 246166, 248628, 246425, 247306, 243554, 244387, 246067, 249333, 247269, 246448},
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"] = {
+    displayID = 243554,
+    ids = {243554, 246166, 246067, 246448, 247269, 247306, 246425, 248628, 250589, 240438, 249333, 244387, 249103},
     zones = {},
     category = "CAT_LIGHT",
 }
