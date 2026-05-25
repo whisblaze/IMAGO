@@ -2030,3 +2030,49 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
         text = [[Enjoyed a drink in the Arcantina with his old friend Chen Stormstout.]],
     }
 }
+
+-- TEHD SHOEMAKER --
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].name = "Tehd Shoemaker"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].race = "Undead Human"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].lore = [[Referred to as “Felbane's pet warlock” by Illidan Stormrage, this undead fel user has formed a very unlikely companionship with the demon hunter Marius Felbane. Despising each other for what they represent, the two men have begrudgingly accepted that they work together very efficiently. 
+
+After defeating one hundred and fifty demons together since the third invasion of the Burning Legion, the two comrades have now set their sights on the Devouring Host.]]
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].zones = {"Silvermoon City", "Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
+    {
+        era = "Pre-Legion",
+        text = [[Sometime before the return of the Burning Legion, the human warlock was killed by a paladin.]],
+    },
+    {
+        era = "Legion",
+        text = [[Worked together with Marius Felbane and killed or subdued various demons, occasionally helped by the Champion of Azeroth. Later fought on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kept hunting remaining demons on Zuldazar with Marius.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Unenthusiastically tried to help out the armies of Silvermoon but was promptly arrested by the Army of the Light for being a warlock. Abandoning the fight, he convinced Marius to join him for a drink in the Arcantica.]],
+    }
+}
+
+-- CECILIA CLESSINGTON --
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].name = "Cecilia Clessington"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].lore = [[Cecilia Primrose Clessington the Second, only heir to Count Clessington of Stormwind's noble class. One would be mistaken to judge her the same as the other nobles of the kingdom though, as Cecilia has no interest in power, riches or influence. She sincerely wants to help the downtrodden and use her birthright to create a political voice for the farmers and workers of Westfall.
+
+Together with Vanessa VanCleef, she has founded the Breadbasket Guild and developed a friendship with the former leader of the Defias.]]
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].timeline = {
+    {
+        era = "DF",
+        text = [[Was kidnapped by Vanessa VanCleef as leverage when Cecilia's father took control of the Defias Brotherhood to rob Stormwind City. Befriended the rogue and helped her and SI:7 to stop and kill her father, Count Clessington. As the only heir to her name, she took the title of Countess and joined Stormwind's House of Nobles. Founded the Breadbasket Guild to help the people of Westfall.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina with Vanessa.]],
+    }
+}
