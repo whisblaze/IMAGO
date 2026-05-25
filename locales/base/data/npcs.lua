@@ -1338,17 +1338,34 @@ Valeera briefly struggled with addiction to fel magic and got possessed by the d
     }
 }
 
+-- FREYA --
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].name = "Freya"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].race = "Titan Keeper"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].lore = "Freya is one of the most powerful Titan Keepers of Azeroth, created by the Pantheon and empowered by Eonar to shape and protect life on the planet. It was she who channeled the Emerald Dream and planted the first seeds from which the great World Trees grew. After being corrupted by the Old God Yogg-Saron in Ulduar and freed by adventurers, she largely withdrew. In Midnight, however, she intervenes directly: Harandar harbors an ancient, bioluminescent ecosystem and the delicate roots that ensure the survival of life itself. Freya steps out of the shadows of history to defend this pristine jungle as an uncompromising guardian against the all-consuming hunger of the Void."
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].zones = {"Harandar"}
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].source = "warcraft.wiki.gg/wiki/Freya"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
-    {era = "Ancient", text = "Shaped the Emerald Dream and created the first refuges of life (such as Un'Goro Crater, Sholazar Basin, and the Vale of Eternal Blossoms)."},
-    {era = "WotLK", text = "Was driven to madness by Yogg-Saron in Ulduar until Azeroth's heroes defeated her and cleansed her of the corruption."},
-    {era = "Midnight", text = "Personally watches over the pristine jungle of Harandar to prevent the spread of the Void into the fragile ecosystem."},
-}
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].race = "Titanic watcher"
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].lore = [[Freya has reliably done the mighty titan Eonar's bidding on Azeroth as her keeper since her creation. She is credited in the records of the Titans of creating most life on the planet, including the Wild Gods and loa, and to have been the one that created the Emerald Dream. Other sources may say differently, and describe the Dream as something that has always existed, and that life has had a place in the world long before the Titans came – but it is undeniable that Freya's influence can be felt on Azeroth wherever nature sprouts.
 
+With the Titans' defeat at Sargeras' hand, Freya has become somewhat stagnant, just like most of the other keepers have.]]
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].zones = {"Harandar"}
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Helped to vanquish the Black Empire by defeating Therazane. She repopulated Azeroth with plantlife and experimented with life magic in Un'goro Crater, Sholazar Basin and the Vale of Eternal Blossom. Titan records say she created the Emerald Dream and planted the world tree G'hanir in it, and from the animals of her making evolved the Wild Gods and the loa. Helped infuse the Dragon Aspects.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Was defeated by the treacherous keeper Loken and was driven mad by the Old God Yogg-Saron in the Halls of Ulduar.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Kept safeguarding Sholazar Basin through her avatar.
+
+        Was freed of corruption by the Champions of Azeroth and helped defeat Yogg-Saron.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Appeared as a memory of the ancestors of the haranir. They remember her as a giant to be feared.]],
+    }
+}
 
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].name = "Eitrigg"
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].race = "Orc"
