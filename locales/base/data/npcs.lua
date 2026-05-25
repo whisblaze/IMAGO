@@ -803,16 +803,35 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
     {era = "Midnight", text = "Oversaw the defense of the Sunwell and provided the exhausted defenders with holy magic. Aided Arator to overcome his doubts about his father and the Light."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].name = "Tahu Sagewind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].lore = "Tahu Sagewind is the spiritual founder of the Seers, the tauren priesthood. While humans revere the Holy Light, Tahu taught his people to channel the Light through An'she—the sun and the right eye of the Earth Mother. His presence in Quel'Thalas during Midnight holds immense diplomatic and poetic significance: the Horde's master of sun magic stands alongside the blood elves to protect their own Sunwell from the all-consuming hunger of the Void."
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].source = "warcraft.wiki.gg/wiki/Tahu_Sagewind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].timeline = {
-    {era = "WotLK", text = "Discussed the imbalance between Mu'sha (Moon) and An'she (Sun) with Aponi Brightmane, laying the foundation for tauren paladins and priests."},
-    {era = "Cata", text = "Officially founded the order of the Seers, teaching the tauren to wield the power of An'she."},
-    {era = "Legion", text = "Represented the tauren in the Conclave at the Netherlight Temple, fighting alongside the priests of Azeroth."},
-    {era = "Midnight", text = "Travels to Silvermoon and Quel'Danas to bring the light of An'she into the elves' darkest battle."},
+-- TAHU SAGEWIND --
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].name = "Tahu Sagewind"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].race = "Tauren"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].lore = [[The tauren have practiced druidism since the dawn of their people. The magic showed reverence to Azeroth's moon, Mu'sha, one of the eyes of the Earth Mother. Tahu and his friend Aponi Brightmane pondered the nature of the Earth Mother's other eye, An'she – the Sun – and wondered why the tauren had been neglecting him for so long. Thus were sown the first seeds to new paths for their people.
+
+While Aponi became a paladin, Tahu founded the priestly order of the Seers and both paid heed to An'she's teachings of the Light. Since then he has trained countless priests and lent his aid to Azeroth on many occasions.]]
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].timeline = {
+    {
+        era = "WotLK",
+        text = [[Pondered the nature of An'she with Aponi Brightmane in Thunder Bluff. There, the first steps towards the creation of the tauren orders of the Seers and the Sunwalkers were made.]],
+    },
+    {
+        era = "Cata",
+        text = [[Officially founded the Seers, the tauren priest order, and became the primary trainer for new recruits.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Conclave under Alonsus Faol. Helped the Highlord of the Silver Hand to commune with the spirits of vrykul in order to acquire the artifact weapon Truthguard.]],
+    },
+    {
+        era = "TWW",
+        text = [[Aided the Horde on the Isle of Dorn against Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought on the Isle of Quel'Danas against the Devouring Host.]],
+    }
 }
 
 -- APONI BRIGHTMANE --

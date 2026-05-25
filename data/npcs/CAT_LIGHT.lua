@@ -119,9 +119,9 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"] = {
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"] = {
     displayID = 251939,
-    ids = {251939, 240657, 242613, 243227, 251950, 241714, 248324},
+    ids = {251939, 253191, 242613, 248324, 241714, 240657, 243227, 251950},
     zones = {},
     category = "CAT_LIGHT",
 }
