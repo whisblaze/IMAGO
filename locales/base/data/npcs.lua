@@ -932,15 +932,27 @@ IMAGOdb.npcs.CAT_LIGHT["arator"].timeline = {
     {era = "Midnight", text = "After being summoned by the Sunwell, Arator fought on the front lines against the Void. He organized the reunification of the elven nations of Azeroth to fight a common foe."},
 }
 
+-- NOLAKI --
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].name = "Nolaki"
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].race = "Zandalari Troll"
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].lore = "Nolaki is a Zandalari Prelate and the current 'Exemplar of Sacrifice' in the newly reformed Tyr's Guard. Her resolve was forged during the Battle of Dazar'alor: at the time, she stayed behind, feeling she was too inexperienced, while her mentor Ra'wani Kanae fell in battle against the Alliance. Plagued by guilt, Nolaki swore to use the Light until her dying breath to save lives. This led her to the Dragon Isles, where she was recruited by Travard into Tyr's Guard. In Midnight, she faces her ultimate test: traveling to the Isle of Quel'Danas to stand on the front lines and make every possible sacrifice to prevent the Sunwell from falling to the Void."
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].race = "Zandalari troll"
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].lore = [[Easy to amuse and hard to anger, this Zandalari woman became a paladin under Ra'wani Kanae. Being young, she stayed behind when the Alliance attacked Dazar'alor because she was convinced that one warrior more or less wouldn't make a difference in the battle. Her demeanor changed when both her mentor and King Rastakhan were slain.
+
+Since then, Nolaki matured a lot and dedicated her life to putting others before herself. That, to her, is what makes a paladin and she joined the Tyr's Guard as the Exemplary of Sacrifice, ready to put herself in between the enemy and whoever would need her protection.]]
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].zones = {"Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_LIGHT["nolaki"].source = "warcraft.wiki.gg/wiki/Nolaki"
+IMAGOdb.npcs.CAT_LIGHT["nolaki"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["nolaki"].timeline = {
-    {era = "BfA", text = "Stayed behind during the Battle of Dazar'alor and lost her beloved mentor Ra'wani Kanae, which shaped her unwavering path as a paladin."},
-    {era = "DF", text = "Traveled to the Dragon Isles, joined Tyr's Guard, and proudly accepted the title of Exemplar of Sacrifice."},
-    {era = "Midnight", text = "Fights as external support of the Light orders on the Isle of Quel'Danas against the advancing Void invasion."},
+    {
+        era = "BfA",
+        text = [[Trained as a young paladin under the Champion of the Light Ra'wani Kanae. Did not participate in the Battle of Dazar'alor.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Tyr's Guard as the Exemplar of Sacrifice and took part in reforming the titan keeper.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Helped to defend the Sunwell against the Voidstorm.]],
+    }
 }
 
 -- VALUNEI --
