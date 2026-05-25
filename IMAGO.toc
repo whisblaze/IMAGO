@@ -19,6 +19,7 @@ data/npcs/CAT_HARATI.lua
 data/npcs/CAT_VOID.lua
 data/npcs/CAT_EBON_BLADE.lua
 data/npcs/CAT_NEUTRAL.lua
+data/npcs/CAT_ARCANTINA.lua
 
 locales/base/data/npcs.lua
 locales/base/data/zones.lua

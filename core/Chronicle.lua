@@ -288,7 +288,8 @@ function IMAGO.Chronicle.CreateFrame()
         {id = "CAT_HARATI",     name = IMAGO.L["CAT_HARATI"] or "Die Hara'ti"},
         {id = "CAT_VOID",       name = IMAGO.L["CAT_VOID"] or "Die Leereninvasion"},
         {id = "CAT_EBON_BLADE", name = IMAGO.L["CAT_EBON_BLADE"] or "Ritter der Schwarzen Klinge"},
-        {id = "CAT_NEUTRAL",    name = IMAGO.L["CAT_NEUTRAL"] or "Unabhängig & Rätselhaft"}
+        {id = "CAT_NEUTRAL",    name = IMAGO.L["CAT_NEUTRAL"] or "Unabhängig & Rätselhaft"},
+        {id = "CAT_ARCANTINA",  name = IMAGO.L["CAT_ARCANTINA"] or "Die Arcantina"}
     }
     
     local menuY = -10
