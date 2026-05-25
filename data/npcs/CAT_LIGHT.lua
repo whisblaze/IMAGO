@@ -133,9 +133,9 @@ IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["kriegskaplanin_senn"] = {
-    displayID = 250589,
-    ids = {250589, 249103, 240438, 246166, 248628, 246425, 247306, 243554, 244387, 246067, 249333, 247269, 246448},
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"] = {
+    displayID = 243554,
+    ids = {243554, 246166, 246067, 246448, 247269, 247306, 246425, 248628, 250589, 240438, 249333, 244387, 249103},
     zones = {},
     category = "CAT_LIGHT",
 }
