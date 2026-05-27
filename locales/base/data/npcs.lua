@@ -3,13 +3,16 @@
 -- ============================================================
 
 -- CAT_QUELTHALAS
+-- LOR'THEMAR THERON --
 IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].name = "Lor'themar Theron"
 IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].aliases = {"Lor'themar"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].race = "Blood Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].lore =
 [[
 A ranger at heart, Lor'themar Theron didn't choose to lead the blood elves. When Quel'thalas fell to the Scourge in the Third War he was appointed, in absence of any other surviving candidates, to serve the fallen kingdom as regent by Prince Kael'thas.
+
 He was forced to make difficult decisions, such as allying the blood elves with the Horde, exiling the high elves to combat unrest, and leading the battle against Kael'thas after the prince's betrayal. Lor'themar's pragmatism and strategic cunning made him an inspiring leader nontheless, commanding respect from friends and foes alike. 
+
 A staunch advocate for peace, Lor'themar serves now both as regent lord of Quel'thalas and as a member of the Horde's ruling council. His loyality lies first and foremost with his people.
 
 Now, with Quel'thalas in peril once again, he will stop at nothing to defend his people and his city against the encroaching forces of the void.]]
@@ -28,6 +31,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].timeline = {
     {era = "Midnight", text = "Led the blood elf forces in Silvermoon's defense against the Void."},
 }
 
+-- FIRST ARCANIST THALYSSRA --
 IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].name = "First Arcanist Thalyssra"
 IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].aliases = {"Thalyssra", "Arcanist Thalyssra"}
 IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].race = "Nightborne"
@@ -42,13 +46,13 @@ IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].timeline = {
     {era = "Midnight", text = "Thalyssra stayed in Sunfury Spire in Silvermoon until the Sunwell’s corruption. She requested aid from Suramar City, but when no response came, she went to investigate and uncovered Twilight’s Blade infiltrators. After restoring order, she led the nightborne army to Silvermoon to aid in the assault on the Devouring Host."},
 }
 
+-- LADY LIADRIN --
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].name = "Lady Liadrin"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].aliases = {"Liadrin"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].race = "Blood Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].lore = [[Lady Liadrin lost her faith in the Light when the Scourge decimated Silvermoon. She wandered the Ghostlands, killing undead in the ruins of her former home. Eventually, the Magisters came to her with an offer to use the Naaru M'uru's energies to wield the Light once more as a paladin. In doing so, Liadrin became the first Blood Knight.
-After the renewal of the Sunwell, her conviction was restored as well and she swore to protect it henceforth.
 
-Sometimes she may still doubt her worthiness for what she did to M'uru, but her faith and devotion to her people never wavered.]]
+After the renewal of the Sunwell, her conviction was restored as well and she swore to protect it henceforth. Sometimes she may still doubt her worthiness for what she did to M'uru, but her faith and devotion to her people never wavered.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].zones = {"Atal'Aman", "Dornogal", "Eversong Woods", "Isle of Quel'Danas", "Orgrimmar", "Parhelion Plaza", "Silvermoon City", "Stormwind City", "Zul'Aman"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].timeline = {
@@ -67,10 +71,16 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].timeline = {
     {era = "Midnight", text = "Liadrin fought on the forefront in the defense of the Sunwell, recruited outside help from Zul'jarra's Amani and helped to create the Dawnwell."},
 }
 
+-- GRAND MAGISTER ROMMATH --
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].name = "Grand Magister Rommath"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].aliases = {"Magister Rommath", "Rommath"}
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].lore = "Uncompromising and confrontational, the Grand Magister of Silvermoon is a man fiercely loyal to his people. As Kael'thas' staunchest supporter after the Third War, Rommath did whatever he thought was necessary to ensure the survival of the blood elves. Even if it meant using fel magic or torturing a Naaru for its holy power, Rommath was ready and willing. His loyalty was tested when Kael'thas allied himself with the Burning Legion; in the end, he chose his people over his former prince. Having been betrayed twice already – first by his former friend Dar'khan Drathir, and second by the Kirin Tor of Dalaran – Kael'thas' treachery hardened the elf's heart even further. With the Voidstorm encroaching on his homeland, Rommath will do what he has always done – protect Silvermoon at all costs, despite everything he and his people have endured."
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].lore = [[
+Uncompromising and confrontational, the Grand Magister of Silvermoon is a man fiercely loyal to his people. As Kael'thas' staunchest supporter after the Third War, Rommath did whatever he thought was necessary to ensure the survival of the blood elves. Even if it meant using fel magic or torturing a Naaru for its holy power, Rommath was ready and willing.
+
+His loyalty was tested when Kael'thas allied himself with the Burning Legion; in the end, he chose his people over his former prince. Having been betrayed twice already – first by his former friend Dar'khan Drathir, and second by the Kirin Tor of Dalaran – Kael'thas' treachery hardened the elf's heart even further.
+
+With the Voidstorm encroaching on his homeland, Rommath will do what he has always done – protect Silvermoon at all costs, despite everything he and his people have endured.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].zones = {"Eversong Woods", "Orgrimmar", "Twilight Highlands", "Silvermoon City"}
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "Cadash & Austin - IMAGO Community"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
@@ -85,6 +95,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
     {era = "Midnight", text = "Rommath led the magisters of Silvermoon in their defense from the Devouring Host. Still wary of Umbric's use of Void magic, Rommath reluctantly agreed that his expertise is needed to defeat their common enemy."},
 }
 
+-- HALDURON BRIGHTWING --
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].name = "Halduron Brightwing"
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].aliases = {"Halduron"}
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].race = "Blood Elf"
@@ -107,6 +118,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing"].timeline = {
     {era = "Midnight", text = "Halduron was the first to notice the threat of the Lightbloom and ventured into Harandar with Orweyna. Securing a tentative alliance with the Haranir, Halduron managed to keep the Lightbloom in check and strengthened Silvermoon's defenses."},
 }
 
+-- VEREESAA WINDRUNNER --
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].name = "Vereesa Windrunner"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].aliases = {"Vereesa"}
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].race = "High Elf"
@@ -130,11 +142,14 @@ IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner"].timeline = {
 
 }
 
+-- SHANDRIS FEATHERMOON --
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].name = "Shandris Feathermoon"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].aliases = {"Shandris"}
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].race = "Night Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].lore = [[Orphaned during the War of the Ancients, Shandris has known battle for almost as long as she has lived. Adopted by Tyrande Whisperwind and Malfurion Stormrage, she trained as a huntress and has since become one of the most formidable archers on Azeroth.
+
 Shandris has led the night elven and Alliance forces as high general of the Sentinel army on more than one occasion, and after being on the front lines of defense of the new world tree Amirdrassil, she now leads the Night Elves as their ruler.
+
 Highly protective of the people she holds dear – even venturing into the realms of death itself to rescue her mother – Shandris nowadays wants peace most of all. ]]
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].zones = {"Amirdrassil", "Harandar", "Silvermoon City", "Isle of Quel'Danas"}
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].source = "Cadash - IMAGO Community"
@@ -152,6 +167,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon"].timeline = {
     {era = "Midnight", text = "Shandris has aided the Blood Elves against the threat of the Void and helped to create the Dawnwell."},
 }
 
+-- ARCHMAGE AETHAS SUNREAVER --
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].name = "Archmage Aethas Sunreaver"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].aliases = {"Aethas", "Aethas Sunreaver"}
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].race = "Blood Elf"
@@ -169,6 +185,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver"].timeline = {
     {era = "Midnight", text = "Led the Sunreavers in the defense of Silvermoon against the encroaching Void, tolerating the Silver Covenant's presence to ensure the city did not fall. Following a succesful assault against the void in Quel'Danas, he agreed to the Silversun Compact, an uneasy agreement with the Silver Covenant to set aside their differences in times of great need."},
 }
 
+-- SALANDRIA --
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].name = "Salandria"
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].aliases = {}
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].race = "Blood Elf"
@@ -184,6 +201,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["salandria"].timeline = {
     {era = "Midnight", text = "Defended the Sunwell against the encroaching Voidstorm. Alongside Taelia Fordragon, she rescued captured paladins from the Twilight's Blade cultists and managed to slay their leader."},
 }
 
+-- MAGISTER UMBRIC --
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].name = "Magister Umbric"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].aliases = {"Umbric"}
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].race = "Void Elf"
@@ -206,6 +224,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
 
 -- LADY DARKGLEN --
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].name = "Lady Darkglen"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].aliases = {"Darkglen"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].race = "Void Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen"].lore = [[Lady Darkglen is a noblewoman from Quel'Thalas and one of the ren'dorei's most expert alchemists and ritualists. Her free and sometimes reckless use of void magic can unsettle even some of her fellow comrades but she doesn't mind. She risked her sanity already as a warlock and then once more when becoming infused with the Void. So why shouldn't she go all out?
 
@@ -263,6 +282,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella"].timeline = {
     }
 }
 
+-- ASTALOR BLOODSWORN
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].name = "Astalor Bloodsworn"
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].aliases = {}
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].race = "Blood Elf"
@@ -280,7 +300,9 @@ IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn"].timeline = {
     {era = "Midnight", text = "Experimented with a new type of magic – anguish – to empower the city's defenses and ensure the survival and prosperity of the blood elves."},
 }
 
+-- LORD SALTHERIL --
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].name = "Lord Saltheril"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].aliases = {"Saltheril"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].race = "Blood Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].lore = [[A minor quel'dorei noble, Lord Saltheril is famous throughout Quel'Thalas for his lavish parties, where magical wines and extravagant food are provided to his guests. Saltheril was a patron of Lirath Windrunner, arranging musical performances for various Silvermoon nobles and royalty, including Prince Kael'thas Sunstrider and Lor'themar Theron.
 
@@ -348,6 +370,7 @@ IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
     }
 }
 
+-- DANATH TROLLBANE --
 IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].name = "Danath Trollbane"
 IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].aliases = {"Danath"}
 IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].race = "Human"
@@ -363,6 +386,7 @@ IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].timeline = {
     {era = "Midnight", text = "Helped Arator learn the history of his father, Turalyon, and his part in the events of the Second War. Introduced heroes to the Arcantina, a home away from home for adventurers from all over Azeroth."},
 }
 
+-- ANDUIN WRYNN --
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].name = "Anduin Wrynn"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].aliases = {"Anduin"}
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].race = "Human"
@@ -560,7 +584,7 @@ IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].name = "Moira Thaurissan"
-IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].aliases = {"Moira Bronzebeard", "Queen of the Dark Iron"}
+IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].aliases = {"Moira Bronzebeard", "Queen of the Dark Iron", "Dark Iron Queen"}
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].race = "Dwarf (Dark Iron)"
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].lore = "Moira Thaurissan is the heir to the throne of Ironforge and regent of the Dark Iron clan. As a member of the Council of Three Hammers, she has united the once-feuding dwarven clans through iron will and political savvy. Moira is not only a capable diplomat but also a powerful priestess. In Midnight, she represents the dwarves at the Sunwell, bringing the combined might of Dark Iron magic and the Light to save Quel'Thalas from total darkness."
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"].zones = {"Isle of Quel'Danas", "Silvermoon City"}
@@ -610,7 +634,7 @@ IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"].timeline = {
 
 -- DELAS MOONFANG --
 IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].name = "Delas Moonfang"
-IMAGOdb.npcs.CAT_LIGHT["delas_mondfang"].aliases = {"Delas"}
+IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].aliases = {"Delas"}
 IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].race = "Night elf"
 IMAGOdb.npcs.CAT_LIGHT["delas_moonfang"].lore = [[Delas Moonfang has been a priestess of Elune for almost the entirety of her long life. Growing up during the War of the Ancients, she took on the holy profession to aid others – because aid was clearly needed in a time of demons. She committed her life to healing and to the study of demons, and she even learned to speak Eredun.
 
@@ -718,7 +742,7 @@ IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
 
 -- YALIA SAGEWHISPER --
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].name = "Yalia Sagewhisper"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].aliases = {"Yalia"}
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].race = "Pandaren"
 IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].lore = [[Raised as a fisherwoman, trained as a Shado-Pan and serving as a priest and alchemist, Yalia is a woman of many talents. After having to leave her family behind at a young age, she has dedicated most of her life to healing her fellow pandaren from the Shado-Pan Monastary in Kun-Lai Summit.
 
@@ -746,6 +770,7 @@ IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].timeline = {
 
 -- FIONA --
 IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
+IMAGOdb.npcs.CAT_LIGHT["fiona"].aliases = {}
 IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
 IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = [[Caring and loyal, this worgen woman and her caravan have been traveling all over Azeroth for many years. She earns her livelihood as a traveling herbalist and healer, but her heart yearns for the companionship of the different people she meets on her adventures. She is all too happy to lend travelers a ride on her stagecoach and can't walk past souls in need without stopping to help however she can. It is a simple life, but Fiona is very fulfilled by it.  
 Her two closest friends are the paladins Tarenar Sunstrike and Gidwin Goldbraids, who frequently accompany her.
@@ -831,7 +856,7 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].name = "Tahu Sagewind"
-IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].aliases = "Tahu"
+IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].aliases = {"Tahu"}
 IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].race = "Tauren"
 IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].lore = "Tahu Sagewind is the spiritual founder of the Seers, the tauren priesthood. While humans revere the Holy Light, Tahu taught his people to channel the Light through An'she—the sun and the right eye of the Earth Mother. His presence in Quel'Thalas during Midnight holds immense diplomatic and poetic significance: the Horde's master of sun magic stands alongside the blood elves to protect their own Sunwell from the all-consuming hunger of the Void."
 IMAGOdb.npcs.CAT_LIGHT["tahu_weisenwind"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
@@ -1078,6 +1103,7 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].timeline = {
 
 -- AEONARA DAWNSHADE --
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].name = "Aeonara Dawnshade"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].aliases = {"Aeonara"}
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].race = "Void elf"
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].lore = [[As the only known void elf paladin, Aeonara Dawnshade fights against the armies of the Void. She defended Telogrus Rift from the void ethereals of the Shadowguard, and later fought against Dimensius’ forces at Manaforge Omega in K'aresh.
 
@@ -1102,7 +1128,7 @@ IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].timeline = {
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].aliases = "Allari"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].aliases = {"Allari"}
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].race = "Blood Elf"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].lore = [[With a nearly unrivaled hatred for the Burning Legion, Allari the Souleater earned her moniker by using the mighty Scythe of Souls to entrap the souls of demons within it. This dangerous weapon communicates with her, pushing her to commit even more harm to her enemies and she frequently uses it as a torture device.
 
@@ -1130,6 +1156,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
 
 -- ALLERIA WINDRUNNER --
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windrunner"
+IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].aliases = {"Alleria"}
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Void elf (former high elf)"
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Known to the people of Azeroth as one of the Alliance's greatest war heroes, Alleria has fought in the Second War and in the millennia-long crusade against the Burning Legion. She is many things - a mother, a partner, a hero, an older sister - but above all she is a huntress. Everything comes second to the mission before her and no price is too high to ensure the safety of her world. 
 
@@ -1221,8 +1248,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl"].timeline = {
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].name = "Trade Prince Monte Gazlowe"
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].aliases = {"Monte Gazlowe", "Monte"}
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].race = "Goblin"
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = [[The architect of Orgrimmar and Trade Prince of the Bilgewater Cartel is one of the Horde's most important members, even if his influence is mostly felt in the background. He isn't a fighter, doesn't consider himself a hero and is seen by most as nothing but another greedy goblin. 
-That is not what lies below the surface though, and the people that know him beyond shallow appearances know that this goblin has a great heart under all his snark. 
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = [[The architect of Orgrimmar and Trade Prince of the Bilgewater Cartel is one of the Horde's most important members, even if his influence is mostly felt in the background. He isn't a fighter, doesn't consider himself a hero and is seen by most as nothing but another greedy goblin. That is not what lies below the surface though, and the people that know him beyond shallow appearances know that this goblin has a great heart under all his snark. 
 
 His reforms have given the exploited workers of his cartel security and rights for the first time in goblin culture. He has lent monetary support to a lot of his Horde allies out of loyalty and without bartering for much in return. He was instrumental in bringing revolutionary change to the Undermine, even when he was planning on not getting involved at first.
 
@@ -1330,7 +1356,10 @@ Valeera briefly struggled with addiction to fel magic and got possessed by the d
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].name = "Freya"
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].aliases = {}
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].race = "Titan Keeper"
-IMAGOdb.npcs.CAT_NEUTRAL["freya"].lore = "Freya is one of the most powerful Titan Keepers of Azeroth, created by the Pantheon and empowered by Eonar to shape and protect life on the planet. It was she who channeled the Emerald Dream and planted the first seeds from which the great World Trees grew. After being corrupted by the Old God Yogg-Saron in Ulduar and freed by adventurers, she largely withdrew. In Midnight, however, she intervenes directly: Harandar harbors an ancient, bioluminescent ecosystem and the delicate roots that ensure the survival of life itself. Freya steps out of the shadows of history to defend this pristine jungle as an uncompromising guardian against the all-consuming hunger of the Void."
+IMAGOdb.npcs.CAT_NEUTRAL["freya"].lore = [[Freya is one of the most powerful Titan Keepers of Azeroth, created by the Pantheon and empowered by Eonar to shape and protect life on the planet. It was she who channeled the Emerald Dream and planted the first seeds from which the great World Trees grew. After being corrupted by the Old God Yogg-Saron in Ulduar and freed by adventurers, she largely withdrew.
+
+In Midnight, however, she intervenes directly: Harandar harbors an ancient, bioluminescent ecosystem and the delicate roots that ensure the survival of life itself. Freya steps out of the shadows of history to defend this pristine jungle as an uncompromising guardian against the all-consuming hunger of the Void.]]
+
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].zones = {"Harandar"}
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].source = "warcraft.wiki.gg/wiki/Freya"
 IMAGOdb.npcs.CAT_NEUTRAL["freya"].timeline = {
@@ -1363,9 +1392,12 @@ IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].timeline = {
 
 -- KURDRAN WILDHAMMER --
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].name = "Kurdran Wildhammer"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].aliases = {"Kurdran"}
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].race = "Dwarf"
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].lore = [[A thane of the Wildhammer clan and skilled gryphon rider, Kurdran was one of the first dwarves to take up arms against the invading orcs in the Second War. He joined the Alliance of Lordaeron and eventually followed general Turalyon beyond the Dark Portal into Outland. He forged a bond of true friendship with the Sons of Lothar.
+
 He returned to Azeroth after surviving two decades on the broken orcish world. Kurdran tried his hand at politics for a time - briefly acting as representative of the Wildhammer clan in Ironforge – before settling down for a time.
+
 Now, reunited with his friends of old, Kurdran is ready once again to fight for the good of Azeroth.]]
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].zones = {"Burning Steppes", "Arcantina", "Silvermoon City"}
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].source = "Cadash - IMAGO Community"
@@ -1381,6 +1413,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].timeline = {
 
 -- LIRATH WINDRUNNER --
 IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].name = "Lirath Windrunner"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].aliases = {"Lirath"}
 IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].race = "High elf"
 IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].lore = [[The youngest of the four, and only brother among the Windrunner siblings. Lirath was a brilliant singer who made a name for himself performing at Lord Saltheril's court, and was eventually named Royal Musician by Kael’thas Sunstrider.
 
@@ -1530,6 +1563,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].name = "Koltira Deathweaver"
+IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].aliases = {"Koltira"}
 IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].race = "Darkfallen Blood Elf"
 IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].lore = [[Koltira fought and died for Silvermoon when Arthas and the Scourge marched through her gates. Death was not the end for him though as he was promptly resurrected as a Death Knight. 
 
@@ -1566,6 +1600,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].name = "Thoras Trollbane"
+IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].aliases = {"Thoras",}
 IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].race = "Human"
 IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].lore = [[Loved by his people and feared by his enemies, Thoras Trollbane was the warrior king of Stromgarde, and a founding member of the Alliance of Lordaeron.
 
@@ -1665,8 +1700,10 @@ IMAGOdb.npcs.CAT_VOID["l_ura"].timeline = {
 
 -- MOR_DUUN --
 IMAGOdb.npcs.CAT_VOID["mor_duun"].name = "Mor'duun"
+IMAGOdb.npcs.CAT_VOID["mor_duun"].aliases = {}
 IMAGOdb.npcs.CAT_VOID["mor_duun"].race = "Ogre"
 IMAGOdb.npcs.CAT_VOID["mor_duun"].lore = [[As a powerful ogre mage, Mor’duun led the Twilght’s Blade, a cult devoted to Xal’atath. After his devotion drew her attention, she granted Mor’duun the power of the Void, renewing the cult’s fervor. 
+
 Mor’duun personally led the Twilight’s Blade’s invasion of Zul'Aman, leaving Atal’Aman in ruins and commanding his forces from the Broken Throne.]]
 IMAGOdb.npcs.CAT_VOID["mor_duun"].zones = {"Zul'Aman"}
 IMAGOdb.npcs.CAT_VOID["mor_duun"].source = "Travanoid"
@@ -1688,7 +1725,7 @@ IMAGOdb.npcs.CAT_VOID["mor_duun"].timeline = {
 -- CAT_AMANI
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].name = "Zul'jarra"
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].aliases = {}
-IMAGOdb.npcs.CAT_AMANI["zaljarra"].race = "Forest Troll"
+IMAGOdb.npcs.CAT_AMANI["zaljarra"].race = "Troll"
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].lore =
 [[
 The eldest of two siblings, Zul'jarra was raised a warrior. The grand-daughter of the infamous Zul'jin, she was taught the traditional ways to revere the loa and to lead her future clan with honor. The time to lead came sooner than anyone would have expected, for she was merely a child when both her grandfather and her father were slain in the temple city of Zul-Aman. Deemed too young to rule, this left her mother, Zarama, to rule the Amani for decades. When a crippled Zarama eventually tried to pass the title to her daughter, a rival chieftain challenged Zul'jarra's right to rule. Delayed in her return to the duel, Zul'jarra arrived only to watch her mother fall in her place, forcing her to avenge Zarama and claim her birthright in blood.
@@ -1799,6 +1836,7 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"
+IMAGOdb.npcs.CAT_AMANI["filo"].aliases = {"loa of children"}
 IMAGOdb.npcs.CAT_AMANI["filo"].race = "Kapara (Loa)"
 IMAGOdb.npcs.CAT_AMANI["filo"].lore = [[Worshipped in Zul’Aman as the Loa of Children, Filo never speaks on his own, instead taking the youngest child of each village as his speaker. While gentle toward those he protects, he pursues anyone who dares harm his children with a vow of vengeance.
 When a child dies before their parents, Filo will guard their spirit until their parents join them in the afterlife.]]
