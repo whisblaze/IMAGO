@@ -33,7 +33,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].timeline = {
 
 -- FIRST ARCANIST THALYSSRA --
 IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].name = "First Arcanist Thalyssra"
-IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].aliases = {"Thalyssra", "Arcanist Thalyssra"}
+IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].aliases = {"Thalyssra", "Arcanist Thalyssra", "Dusk Lily"}
 IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].race = "Nightborne"
 IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].lore = "First Arcanist Thalyssra is the leader of the nightborne elves. Once exiled from her home city of Suramar by a corrupt ruler, First Arcanist Thalyssra has liberated the shal'dorei people of their addiction to their Nightwell's power, stepping up to lead after the sacking of Suramar. She now rules her people arm in arm with Lor'themar Theron's blood elves, uniting the two cultures through unity in the Horde, and the unity of their marriage"
 IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra"].zones = {"Amirdrassil", "The Eternal Palace", "Isle of Quel'Danas", "Silvermoon City", "Suramar"}
@@ -387,10 +387,12 @@ IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].timeline = {
 
 -- ANDUIN WRYNN --
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].name = "Anduin Wrynn"
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].aliases = {"Anduin"}
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].aliases = {"Anduin","Anduin Llane Wrynn", "King Anduin", "Little Lion"}
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].lore = [[The High King-in-absentia of the Alliance, Anduin Llane Wrynn feels like he has become a mere shadow of his former radiant self.
+
 He used to wield the light like few others, healing entire battlefields and consequently inspiring his people to fight on as a staunch defender of justice, tolerance and peace.  That changed when he was dominated by the Jailer and forced to help unravel the world he had sworn to protect while fully aware but unable to control his actions. Even after breaking free, he could not escape the fear that he was capable of such evil deeds, and something in Anduin broke.  He vanished for years, leaving his people and kingdom behind.
+
 Now, with Xal'atath threatening everything he holds dear, Anduin has finally returned into the fray, slowly starting to gain back his confidence and his faith in the Light.]]
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].source = "Cadash - IMAGO Community"
@@ -823,6 +825,7 @@ IMAGOdb.npcs.CAT_LIGHT["fiona"].name = "Fiona"
 IMAGOdb.npcs.CAT_LIGHT["fiona"].aliases = {}
 IMAGOdb.npcs.CAT_LIGHT["fiona"].race = "Worgen"
 IMAGOdb.npcs.CAT_LIGHT["fiona"].lore = [[Caring and loyal, this worgen woman and her caravan have been traveling all over Azeroth for many years. She earns her livelihood as a traveling herbalist and healer, but her heart yearns for the companionship of the different people she meets on her adventures. She is all too happy to lend travelers a ride on her stagecoach and can't walk past souls in need without stopping to help however she can. It is a simple life, but Fiona is very fulfilled by it.  
+
 Her two closest friends are the paladins Tarenar Sunstrike and Gidwin Goldbraids, who frequently accompany her.
 
 The Sunwell has sensed her compassion and willingness to help others and has called her to Silvermoon to defend it. As always, Fiona will do whatever she can.]]
@@ -889,7 +892,8 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].lore = [[Formerly the Archbishop of the C
 Arthas Menethil would not let him rest and resurrected him as a mindless minion of the Scourge. When Alonsus finally broke free of the fallen paladin's control, he was shunned by the Alliance, hunted by radical servants of the Light, and met with terrible pain whenever he himself used holy magic. He retreated from the world for years.
 
 When the Legion invaded, Alonsus could not stand by and watch. Now leading the Conclave, uniting the priestly orders, he helped find various artifacts to combat the demons. One these artifacts was the Blade of the Black Empire – Xal'atath.
-Now, Alonsus fights for the Sunwell and the Light, and to correct his mistake.]]
+
+Now Alonsus fights for the Sunwell, the Light, and to correct his mistake.]]
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].zones = {"Burning Steppes", "Arathi Highlands", "Isle of Quel'Danas", "Eastern Plaguelands", "Parhelion Plaza", "Silvermoon City", "Tirisfal Glades"}
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].source = "Cadash - IMAGO Community"
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
@@ -1005,6 +1009,7 @@ IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].name = "Faerin Lothar"
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].aliases = {"Faerin"}
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].lore = [[This young paladin is a beacon of hope and optimism to her fellow soldiers, often being the first to rush into battle, protecting others with her shield and her faith in the Light. Faerin had always had a knack for danger, sneaking aboard the airship of the Arathi expedition to Hallowfall as just a mere child. In the following crash landing she lost her eye and arm but learned to fight on and live without them.
+
 Not having lived long in the Empire, Faerin is not interested in returning to her birthplace and instead wants to explore the rest of the world, especially the places important to her heritage as an Arathi and a Lothar. However, that endeavor will have to wait until after the Sunwell is secured.]]
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"].source = "Cadash - IMAGO Community"
@@ -1041,11 +1046,10 @@ IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_LIGHT["arator"].name = "Arator the Redeemer"
-IMAGOdb.npcs.CAT_LIGHT["arator"].aliases = {"Arator"}
+IMAGOdb.npcs.CAT_LIGHT["arator"].aliases = {"Arator", "Arator Windrunner"}
 IMAGOdb.npcs.CAT_LIGHT["arator"].race = "Half-Elf"
 IMAGOdb.npcs.CAT_LIGHT["arator"].lore =
-[[
-When his parents Alleria Windrunner and Turalyon left for Draenor to save Azeroth, they left their newborn behind. Raised by family, Arator only knew his parents through legend. As the child of two of the Alliance's most famous war heroes, Arator has always struggled to step out of their shadows and find his own destiny. 
+[[When his parents Alleria Windrunner and Turalyon left for Draenor to save Azeroth, they left their newborn behind. Raised by family, Arator only knew his parents through legend. As the child of two of the Alliance's most famous war heroes, Arator has always struggled to step out of their shadows and find his own destiny. 
     
 Choosing to emulate his father, he became a paladin for the Alliance and rose up in the ranks by showing true strength and faith in the Light. Now reunited with his parents, Arator struggles to hold his family together as they are pulled in different directions.]]
 IMAGOdb.npcs.CAT_LIGHT["arator"].zones = {"Amirdrassil", "Arcantina", "Burning Steppes", "Arathi Highlands", "The Void Spire", "Harandar", "Den of Masters", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Eastern Plaguelands", "Parhelion Plaza", "Silvermoon City", "Zul'Aman"}
@@ -1112,6 +1116,7 @@ IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].name = "Mariella Ward"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].aliases = {}
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].lore = [[Known as Mariella "the Heretic", she once served the Scarlet Onslaught. Disagreeing with their zealous ways to wield the Light, she was sentenced to death for her disobedience. Arriving to a timely rescue, the High Priest sent by Alonsus Faol was able to save her, and she joined the Conclave.
+
 Now, having found forgiveness for her deeds, she has been summoned by the Sunwell to protect Silvermoon as a part of the Vanguard of the Light.]]
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward"].source = "Cadash - IMAGO Community"
@@ -1208,8 +1213,7 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].name = "Sunwalker Dezco"
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].aliases = {"Dezco"}
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].race = "Tauren"
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].lore =
-[[
-Chieftain of the Dawnchaser tribe, Sunwalker Dezco is a steadfast tauren who reveres An'she, the sun, drawing his formidable power from her light. Having endured unimaginable personal tragedies that would break a lesser spirit, Dezco journeyed to distant lands in search of purpose. Though his travels have taken him across distant continents and even into the realms of the afterlife, the place he felt most at home was with the common people of Azeroth. 
+[[Chieftain of the Dawnchaser tribe, Sunwalker Dezco is a steadfast tauren who reveres An'she, the sun, drawing his formidable power from her light. Having endured unimaginable personal tragedies that would break a lesser spirit, Dezco journeyed to distant lands in search of purpose. Though his travels have taken him across distant continents and even into the realms of the afterlife, the place he felt most at home was with the common people of Azeroth. 
     
 Dedicated to service, Dezco stands as a seasoned veteran and wise elder among the Sunwalkers. As conflict brews anew, he serves as a guiding mentor, teaching allies that walking the path of the Light requires not only fervent zeal, but deep compassion as well.]]
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"].zones = {"Arathi Highlands"}
@@ -1344,15 +1348,17 @@ IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].name = "Decimus"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].aliases = {}
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].race = "Domanaar"
-IMAGOdb.npcs.CAT_NEUTRAL["decimus"].lore = [[Charismatic, dangerous, malicious - all of these adjectives could be used to describe Decimus.
+IMAGOdb.npcs.CAT_NEUTRAL["decimus"].lore = [[Charismatic, dangerous, malicious - all of these adjectives could be used to describe Decimus. 
+
 As all domanaar of the Voidstorm, he was subjugated to Xal'atath, recognizing her as the stronger being. Yet serving someone else wasn't something Decimus was planning on doing for much longer and thus they now enter a risky game - with the champions of Azeroth as their playing pieces.]]
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].zones = {"Voidstorm"}
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].timeline = {
     {
         era = "Midnight",
-        text = [[Formed an Alliance with the Void Elves, granting them a safe base of operations and aided them in their endeavours in the Voidstorm. Conveniently took out rival domanaar in the process.
-He engineered the Voidforge - a conduit of dark energy - for his new allies to use as a source of power. It remains unclear if that is it's only purpose.]],
+        text = [[Formed an Alliance with the Void Elves, granting them a safe base of operations and aided them in their endeavours in the Voidstorm. Conveniently took out rival domanaar in the process. 
+        
+        He engineered the Voidforge - a conduit of dark energy - for his new allies to use as a source of power. It remains unclear if that is it's only purpose.]],
     }
 }
 
@@ -1370,7 +1376,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].name = "Trade Prince Monte Gazlowe"
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].aliases = {"Monte Gazlowe", "Monte"}
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].aliases = {"Monte Gazlowe", "Monte", "Gazlowe"}
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].race = "Goblin"
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = [[The architect of Orgrimmar and Trade Prince of the Bilgewater Cartel is one of the Horde's most important members, even if his influence is mostly felt in the background. He isn't a fighter, doesn't consider himself a hero and is seen by most as nothing but another greedy goblin. That is not what lies below the surface though, and the people that know him beyond shallow appearances know that this goblin has a great heart under all his snark. 
 
@@ -1445,7 +1451,8 @@ IMAGOdb.npcs.CAT_NEUTRAL["valeera_sanguinar"].timeline = {
     {
         era = "Pre-WotLK",
         text = [[Caught stealing in Horde territory and was sold to Rehgar Earthfury as a gladiator slave and was forced to fight alongside Varian Wrynn and Broll Bearmantle. The three became friends and escaped together, ultimately helping Varian reclaim the Throne of Stormwind.
-Valeera briefly struggled with addiction to fel magic and got possessed by the demon Kathra'natir.]],
+
+    Valeera briefly struggled with addiction to fel magic and got possessed by the demon Kathra'natir.]],
     },
     {
         era = "WotLK",
@@ -1618,11 +1625,10 @@ IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].name = "Highlord Darion Mograine"
-IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].aliases = {"Darion Mograine", "Highlord Morgraine", "Darion"}
+IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].aliases = {"Darion Mograine", "Darion"}
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].race = "Human"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].lore =
-[[
-Darion Mograine was a paladin of the Argent Dawn who, after sacrificing his life to save the soul of his father, was resurrected as a Death Knight to serve as one of the Lich King’s most powerful commanders. Breaking free from the Lich King’s control at the Battle for Light’s Hope Chapel, he founded the Ebon Blade, a band of Death Knights committed to protecting Azeroth from any threats that come her way.
+[[Darion Mograine was a paladin of the Argent Dawn who, after sacrificing his life to save the soul of his father, was resurrected as a Death Knight to serve as one of the Lich King’s most powerful commanders. Breaking free from the Lich King’s control at the Battle for Light’s Hope Chapel, he founded the Ebon Blade, a band of Death Knights committed to protecting Azeroth from any threats that come her way.
 
 Now leading the Four Horsemen, Darion defends the home of the Argent Crusade from the Scourge whilst they assist Azeroth’s champion with the destruction of the Devouring Host.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine"].zones = {"Eastern Plaguelands"}
@@ -1660,8 +1666,11 @@ IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].name = "Nazgrim"
 IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].aliases = {}
 IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].race = "Orc"
 IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].lore = [[Honor, loyalty, courage - there is nothing more important to orcs. For Nazgrim, these were not merely mottos, but the very meaning of life.
+
 Starting as a lowly sergeant in Garrosh Hellscream's army, Nazgrim quickly rose to the rank of general through his achievements across Azeroth and became one of the closest allies of Warchief Hellscream.
+
 When the Horde rebelled against Hellscream and the moment came to choose between duty and morality, Nazgrim chose the former with grim determination, standing firm against the invaders and ultimately giving his life in service to his Warchief.
+
 However, his story did not end there, as he was risen by the Knights of the Ebon Blade as the first of the new Four Horsemen. Upon learning of the third invasion of the Burning Legion, he accepted his new role without hesitation and remained steadfast in his service to his people.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].zones = {"Eastern Plaguelands", "The Dreamrift", "The Voidspire"}
 IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim"].source = "Metrus"
@@ -1814,6 +1823,7 @@ IMAGOdb.npcs.CAT_VOID["l_ura"].name = "L'ura"
 IMAGOdb.npcs.CAT_VOID["l_ura"].aliases = {}
 IMAGOdb.npcs.CAT_VOID["l_ura"].race = "Naaru"
 IMAGOdb.npcs.CAT_VOID["l_ura"].lore = [[The naaru are perhaps the purest expression of the Light throughout the Great Dark Beyond. 
+
 L'ura was once one of these shining beacons of holy energy. It stayed behind on Argus to ensure Velen and his draenei refugees could escape Kil'jaeden's wrath and, after holding out against countless demons, L'ura was overwhelmed by the Burning Legion. 
 
 Imprisoned for millennia, the once bright creature fell into a state of Void. Guided by madness and chaos and wrath, it became a dangerous entity to most and a powerful weapon to others. 
@@ -1865,8 +1875,7 @@ IMAGOdb.npcs.CAT_AMANI["zaljarra"].name = "Zul'jarra"
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].aliases = {}
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].race = "Troll"
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].lore =
-[[
-The eldest of two siblings, Zul'jarra was raised a warrior. The grand-daughter of the infamous Zul'jin, she was taught the traditional ways to revere the loa and to lead her future clan with honor. The time to lead came sooner than anyone would have expected, for she was merely a child when both her grandfather and her father were slain in the temple city of Zul-Aman. Deemed too young to rule, this left her mother, Zarama, to rule the Amani for decades. When a crippled Zarama eventually tried to pass the title to her daughter, a rival chieftain challenged Zul'jarra's right to rule. Delayed in her return to the duel, Zul'jarra arrived only to watch her mother fall in her place, forcing her to avenge Zarama and claim her birthright in blood.
+[[The eldest of two siblings, Zul'jarra was raised a warrior. The grand-daughter of the infamous Zul'jin, she was taught the traditional ways to revere the loa and to lead her future clan with honor. The time to lead came sooner than anyone would have expected, for she was merely a child when both her grandfather and her father were slain in the temple city of Zul-Aman. Deemed too young to rule, this left her mother, Zarama, to rule the Amani for decades. When a crippled Zarama eventually tried to pass the title to her daughter, a rival chieftain challenged Zul'jarra's right to rule. Delayed in her return to the duel, Zul'jarra arrived only to watch her mother fall in her place, forcing her to avenge Zarama and claim her birthright in blood.
 
 Now years later, she attempts to finally reconnect the tribes of Zul'Aman to the loa gods, supported, though occasionally opposed, by her brother, Zul'jan.]]
 IMAGOdb.npcs.CAT_AMANI["zaljarra"].zones = {"Atal'Aman", "The Heart of Rage", "Eversong Woods", "Isle of Quel'Danas", "Den of Nalorakk", "Zul'Aman"}
@@ -1878,7 +1887,7 @@ IMAGOdb.npcs.CAT_AMANI["zaljarra"].timeline = {
 
 -- NALORAKK --
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].name = "Nalorakk"
-IMAGOdb.npcs.CAT_AMANI["nalorakk"].aliases = {"loa of war"}
+IMAGOdb.npcs.CAT_AMANI["nalorakk"].aliases = {"loa of war", "Bear Loa"}
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].race = "Loa"
 IMAGOdb.npcs.CAT_AMANI["nalorakk"].lore = [[The Unyielding One, The Dreamer, Ironjaw... The Loa of War and of the Earth was revered by many names. The great bear was the primary god of the Revantusk Tribe and granted them strength in battle and prosperity in harvest. Stonemasons laid down offerings for him and he in turn reinforced the walls around them.
 
@@ -1905,7 +1914,7 @@ IMAGOdb.npcs.CAT_AMANI["nalorakk"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["akilzon"].name = "Akil'zon"
-IMAGOdb.npcs.CAT_AMANI["akilzon"].aliases = {"loa of victory"}
+IMAGOdb.npcs.CAT_AMANI["akilzon"].aliases = {"loa of victory", "Eagle Loa"}
 IMAGOdb.npcs.CAT_AMANI["akilzon"].race = "Loa"
 IMAGOdb.npcs.CAT_AMANI["akilzon"].lore = "Akil'zon has long stood behind the Amani trolls as their loa of victory. The great eagle has close ties to the Amani tribe itself, and represents their undying spirit and ferocity. It is said that an Amani berserker blessed by Akil'zon could tear apart an entire elven battalion and return unscathed. Having returned under hash'ey Zul'jarra, Akil'zon fixes her gaze on the Twilight's Blade, talons at the ready."
 IMAGOdb.npcs.CAT_AMANI["akilzon"].zones = {"Zul'Aman"}
@@ -1919,7 +1928,7 @@ IMAGOdb.npcs.CAT_AMANI["akilzon"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["janalai"].name = "Jan'alai"
-IMAGOdb.npcs.CAT_AMANI["janalai"].aliases = {"loa of fire"}
+IMAGOdb.npcs.CAT_AMANI["janalai"].aliases = {"loa of fire", "Dragonhawk Loa"}
 IMAGOdb.npcs.CAT_AMANI["janalai"].race = "Loa"
 IMAGOdb.npcs.CAT_AMANI["janalai"].lore = [[Every year the Shadowpine trolls celebrate Fetna Alai-nazdo - Festival of the Fire Season. It's a tribute to the changing of the season, of summer, and of fire - all domains under the great, fiery wings of Jan'alai. The mighty dragonhawk loa is the patron of life, death, renewal, fire, and magic. She traces the sun across the sky and ignites a fire in Amani hearts. As death draws near, Shadowpine trolls welcome it with open arms, chanting: "Jan'alai must die. We all must die. And she will rise! And we will rise!"]]
 IMAGOdb.npcs.CAT_AMANI["janalai"].zones = {"Zul'Aman"}
@@ -1932,7 +1941,7 @@ IMAGOdb.npcs.CAT_AMANI["janalai"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["halazzi"].name = "Halazzi"
-IMAGOdb.npcs.CAT_AMANI["halazzi"].aliases = {"loa of the hunt"}
+IMAGOdb.npcs.CAT_AMANI["halazzi"].aliases = {"the Silver Shadow","Lynx Loa", "Lynx God"}
 IMAGOdb.npcs.CAT_AMANI["halazzi"].race = "Loa"
 IMAGOdb.npcs.CAT_AMANI["halazzi"].lore = [[Loa of the Hunt. The Schemer. The Silver Shadow. Long ear. Forest trolls have many names for him and yet none of them can fully capture the nature of Halazzi. Deep inside the forests of Zul'Aman, Witherbark trolls worship Halazzi and call upon his aid when they hunt. The Lynx Loa hides hunters from their prey and blesses the wilds with mist and rain, keeping them ever bountiful. Although Halazzi is a playful loa, nothing can hide from his ears and eyes - they see the unseen and reveal any lies. Should you find yourself wandering in Amani forests, tread lightly - for Halazzi is never far.]]
 IMAGOdb.npcs.CAT_AMANI["halazzi"].zones = {"Zul'Aman"}
@@ -1960,6 +1969,7 @@ IMAGOdb.npcs.CAT_AMANI["zuljan"].name = "Zul'jan"
 IMAGOdb.npcs.CAT_AMANI["zuljan"].aliases = {}
 IMAGOdb.npcs.CAT_AMANI["zuljan"].race = "Troll"
 IMAGOdb.npcs.CAT_AMANI["zuljan"].lore = [[The impulsive Zul'jan is chief advisor to the current ruler of the Amani tribes – his own sister, Zul'jarra. Unlike her though, Zul'jan distrusts the loa. As he sees it, they had abandoned the trolls in their time of greatest need. As much as he might disagree with his older sister on these matters, he genuinely cares about her and would do his utmost to protect her.
+
 Now, Zul'jan rallies the Amani to become strong by their own merits, not relying on loa or anybody else.]]
 IMAGOdb.npcs.CAT_AMANI["zuljan"].zones = {"Atal'Aman", "Eversong Woods", "Zul'Aman"}
 IMAGOdb.npcs.CAT_AMANI["zuljan"].source = "Cadash - IMAGO Community"
@@ -1991,9 +2001,10 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
 }
 
 IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"
-IMAGOdb.npcs.CAT_AMANI["filo"].aliases = {"loa of children"}
-IMAGOdb.npcs.CAT_AMANI["filo"].race = "Kapara (Loa)"
+IMAGOdb.npcs.CAT_AMANI["filo"].aliases = {"loa of children", "Kapara Loa"}
+IMAGOdb.npcs.CAT_AMANI["filo"].race = "Loa"
 IMAGOdb.npcs.CAT_AMANI["filo"].lore = [[Worshipped in Zul’Aman as the Loa of Children, Filo never speaks on his own, instead taking the youngest child of each village as his speaker. While gentle toward those he protects, he pursues anyone who dares harm his children with a vow of vengeance.
+
 When a child dies before their parents, Filo will guard their spirit until their parents join them in the afterlife.]]
 IMAGOdb.npcs.CAT_AMANI["filo"].zones = {"Zul'Aman", "Atal'Aman"}
 IMAGOdb.npcs.CAT_AMANI["filo"].source = "Travanoid"
@@ -2010,8 +2021,7 @@ IMAGOdb.npcs.CAT_HARATI["orweyna"].name = "Orweyna"
 IMAGOdb.npcs.CAT_HARATI["orweyna"].aliases = {}
 IMAGOdb.npcs.CAT_HARATI["orweyna"].race = "Haranir"
 IMAGOdb.npcs.CAT_HARATI["orweyna"].lore =
-[[
-A scout of the mysterious race called Haranir, Orweyna is quite different from most of her kind. Fascinated with the world and its people outside of her homeland, she went against her oaths of secrecy and seclusion and made contact first with the champion of Azeroth in Azj-Kahet, and now with the elves of Quel'Thalas to petition their aid.
+[[A scout of the mysterious race called Haranir, Orweyna is quite different from most of her kind. Fascinated with the world and its people outside of her homeland, she went against her oaths of secrecy and seclusion and made contact first with the champion of Azeroth in Azj-Kahet, and now with the elves of Quel'Thalas to petition their aid.
     
 She has a special connection to her goddess, Aln'hara, receiving visions of impending dangers from her that resemble the Radiant Song, and she knows that the Void that threatens Aln'hara will require more than the forces of the Haranir to vanquish.]]
 IMAGOdb.npcs.CAT_HARATI["orweyna"].zones = {"The Blinding Vale", "The Den", "Harandar", "Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
@@ -2024,7 +2034,7 @@ IMAGOdb.npcs.CAT_HARATI["orweyna"].timeline = {
 
 -- ELDER HAGAR --
 IMAGOdb.npcs.CAT_HARATI["elder_hagar"].name = "Elder Hagar"
-IMAGOdb.npcs.CAT_HARATI["elder_hagar"].aliases = {}
+IMAGOdb.npcs.CAT_HARATI["elder_hagar"].aliases = {"Hagar"}
 IMAGOdb.npcs.CAT_HARATI["elder_hagar"].race = "Haranir"
 IMAGOdb.npcs.CAT_HARATI["elder_hagar"].lore = [[The haranir have many rules and traditions and as an Elder in the ruling council, it is Hagar's duty to enforce them. However, she does not agree with many of the old customs anymore.
 
@@ -2064,6 +2074,7 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
 -- CAT_ARCANTINA
 -- REXXAR --
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].name = "Rexxar"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].aliases = {}
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].race = "Half-Ogre, Half-Orc"
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].lore = [[Born as neither orc nor ogre, the Mok'Nathal hunter Rexxar, son of chieftain Leoroxx, has never cared much for the squabbles of others. He witnessed the descent of the Old Horde into fel-corrupted madness and pledged himself to Warchief Blackhand in order to have his clan spared. 
 
@@ -2129,6 +2140,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
 
 -- TEHD SHOEMAKER --
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].name = "Tehd Shoemaker"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].aliases = {"Tehd"}
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].race = "Undead Human"
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].lore = [[Referred to as “Felbane's pet warlock” by Illidan Stormrage, this undead fel user has formed a very unlikely companionship with the demon hunter Marius Felbane. Despising each other for what they represent, the two men have begrudgingly accepted that they work together very efficiently. 
 
@@ -2156,6 +2168,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
 
 -- CECILIA CLESSINGTON --
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].name = "Cecilia Clessington"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].aliases = {"Cecilia"}
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].race = "Human"
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].lore = [[Cecilia Primrose Clessington the Second, only heir to Count Clessington of Stormwind's noble class. One would be mistaken to judge her the same as the other nobles of the kingdom though, as Cecilia has no interest in power, riches or influence. She sincerely wants to help the downtrodden and use her birthright to create a political voice for the farmers and workers of Westfall.
 
