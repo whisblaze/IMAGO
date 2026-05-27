@@ -288,7 +288,8 @@ function IMAGO.Chronicle.CreateFrame()
         {id = "CAT_HARATI",     name = IMAGO.L["CAT_HARATI"] or "Die Hara'ti"},
         {id = "CAT_VOID",       name = IMAGO.L["CAT_VOID"] or "Die Leereninvasion"},
         {id = "CAT_EBON_BLADE", name = IMAGO.L["CAT_EBON_BLADE"] or "Ritter der Schwarzen Klinge"},
-        {id = "CAT_NEUTRAL",    name = IMAGO.L["CAT_NEUTRAL"] or "Unabhängig & Rätselhaft"}
+        {id = "CAT_NEUTRAL",    name = IMAGO.L["CAT_NEUTRAL"] or "Unabhängig & Rätselhaft"},
+        {id = "CAT_ARCANTINA",  name = IMAGO.L["CAT_ARCANTINA"] or "Die Arcantina"}
     }
     
     local menuY = -10
@@ -2047,7 +2048,7 @@ elseif activeTab == 2 then
                 local restLore = lore:sub(2)
                 local formattedLore = "|cffffd700" .. firstLetter .. "|r" .. restLore .. "\n\n"
                 
-                if zoneData.pointsOfInterest then
+                if zoneData.pointsOfInterest and next(zoneData.pointsOfInterest) then
                     formattedLore = formattedLore .. "|cffffd700" .. (IMAGO.L["ZONE_POI_HEADER"] or "INTERESSANTE ORTE") .. "|r\n_________________________________\n\n"
                     for _, poi in ipairs(zoneData.pointsOfInterest) do
                         local pName = poi.name or ""
