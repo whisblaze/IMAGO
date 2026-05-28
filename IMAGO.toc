@@ -32,7 +32,7 @@ locales\[TextLocale]\data\snippets.lua
 locales\[TextLocale]\chronicle.lua
 
 
-core\NPCLinker.lua
+core\TextLinker.lua
 core\MiniLorePopup.lua
 core\LoreSnippetSystem.lua
 core\Options.lua
