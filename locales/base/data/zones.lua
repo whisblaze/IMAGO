@@ -3,6 +3,7 @@
 -- ============================================================
 
 IMAGOdb.zones[2405].name = "Voidstorm"
+IMAGOdb.zones[2405].aliases = {}
 IMAGOdb.zones[2405].lore = "Not much is known about the scarred landscape now known as the Voidstorm. Hostile and alien, this broken world once knew life and peace. In times past, the hills and crags were part of a world called Predacea. A society of knowledge and scientific progress, Predacea was not immune to the drums of war. In seeking an end to all conflict, a weapon of mass destruction was unleashed that ended their civilization entirely. Untold years later, the remnants of this planet have become the staging ground for Xal’atath’s war on Azeroth."
 IMAGOdb.zones[2405].pointsOfInterest = {
     {
@@ -20,6 +21,7 @@ IMAGOdb.zones[2405].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2413].name = "Harandar"
+IMAGOdb.zones[2413].aliases = {}
 IMAGOdb.zones[2413].lore = "Harandar is the home of the haranir, concealed deep beneath the massive rootways of the world trees. This bioluminescent fungal jungle is a place of primordial magic, whose inhabitants live as secret guardians of Azeroth in perfect harmony with nature. However, the peaceful existence of the Hara'ti tribe is on the brink: The Rift of Aln, a primordial wound, blurs the line between dream and reality, spewing forth terrifying nightmares. Simultaneously, the destructive and fanatical power of the Lightbloom overgrows the land, corrupting the native flora."
 IMAGOdb.zones[2413].pointsOfInterest = {
     {
@@ -37,6 +39,7 @@ IMAGOdb.zones[2413].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2437].name = "Zul'Aman"
+IMAGOdb.zones[2437].aliases = {}
 IMAGOdb.zones[2437].lore = "The towering forests of Zul’Aman have been home to the Amani trolls since long before the high elves ever established Quel’Thalas. Border skirmishes have defined the relationship between the two factions for as long as anyone can remember. Under the leadership of Zul’jin, the Amani twisted the magic of their loa to violent ends. In response, the wild gods went silent, abandoning the Amani tribe to their own fate for decades. Now, with the Twilight’s Blade infesting their woods, the trolls look to their neighbors for aid. Zul’jin’s grandchildren, Zul’jarra and Zul’jan, seek to guide the Amani back to their former glory."
 IMAGOdb.zones[2437].pointsOfInterest = {
     {
@@ -54,6 +57,7 @@ IMAGOdb.zones[2437].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2395].name = "Eversong Woods"
+IMAGOdb.zones[2395].aliases = {"Eversong"}
 IMAGOdb.zones[2395].lore = "Eversong Woods, the golden heart of Quel'thalas and home of the blood elves. These breathtaking lands have been marred by many tragedies, most caused by the potent magic of the Sunwell tempting those who would use its power to their own nefarious ends. After Arthas carved a path of death and decay through the center of the woods, many believed the land would never recover. Over decades, however, blood elf magisters were able to cultivate life anew, returning Eversong to its former glory. Still, with the Devouring Host threatening from above and the Lightbloom bursting from below, Eversong Woods is beset by threats on all sides."
 IMAGOdb.zones[2395].pointsOfInterest = {
     {
@@ -71,6 +75,7 @@ IMAGOdb.zones[2395].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2424].name = "Isle of Quel'Danas"
+IMAGOdb.zones[2424].aliases = {"Quel'Danas"}
 IMAGOdb.zones[2424].lore = [[The northernmost part of the kingdom is primarily known as the site of the Sunwell, the sacred heart of Quel'Thalas. Both a blessing and a curse to the elves, this font of arcane and holy magic has kept them alive for millennia but also has made them a target for malign forces that covet the well. Thus the Isle of Quel'Danas has been left devastated and the Sunwell corrupted twice in the last few decades – first by death from the north and the Scourge that heeded it's command, second by the Burning Legion during prince Kael'thas's betrayal. 
 
 Now, the Void threatens to lay the Sunwell to waste once more and the upheaval of the Voidstorm in the sky above Quel'Danas is ample reason to fight once more... or to despair. 
@@ -93,6 +98,7 @@ IMAGOdb.zones[2424].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2393].name = "Silvermoon City"
+IMAGOdb.zones[2393].aliases = {"Silvermoon", "Quel'thalas"}
 IMAGOdb.zones[2393].lore = "Silvermoon City, the eternal crown jewel of the blood elves, has risen from the ashes to become a thriving metropolis once more. The scars of both the Scourge and the Burning Legion left little intact, but the talented artisans and magisters of the grand city have returned it to its former glory. Now, with the threat of the Voidstorm looming overhead, the sin'dorei rally their allies to push back the darkness threatening to raze the city once again."
 IMAGOdb.zones[2393].pointsOfInterest = {
     {
@@ -110,6 +116,7 @@ IMAGOdb.zones[2393].pointsOfInterest = {
 }
 
 IMAGOdb.zones[10473].name = "The Arcantina"
+IMAGOdb.zones[10473].aliases = {}
 IMAGOdb.zones[10473].lore = [[Created as a pocket dimension by a Kirin Tor archmage long before this time, the Arcantina now opens its doors to the Champions of Azeroth. This cozy tavern offers refuge far removed from the turmoil of war and the burdens of the outside world. Originally a meeting place for the Sons of Lothar during the Second War, the inn has since grown lively with travelers and visitors from all across Azeroth.
 
 Unofficially, the Arcantina belongs to Archmage Khadgar, though many friendly souls have made their stay here permanent. Behind the counter stands Bartender Bob, serving only the finest brews with a warmth that can put even the most battle-worn souls at ease. Everyone is allowed to stay for as long as they like and share in tales with both old friends and newfound companions.

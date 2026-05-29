@@ -445,8 +445,13 @@ function IMAGO.Chronicle.CreateFrame()
     f.loreBody:SetJustifyH("LEFT")
     f.loreBody:SetTextColor(0.9, 0.9, 0.9)
     f.loreBody:SetSpacing(6)
-
--- ==========================================
+    f.infoContent:SetHyperlinksEnabled(true)
+    f.infoContent:SetScript("OnHyperlinkClick", function(self, link, text, button)
+        if IMAGO.TextLinker and IMAGO.TextLinker.OnHyperlinkClick then
+            IMAGO.TextLinker.OnHyperlinkClick(self, link, text, button)
+        end
+    end)
+    -- ==========================================
     -- BILD FÜR DIE ZONEN-DETAILANSICHT (PANORAMA)
     -- ==========================================
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
@@ -1764,8 +1769,13 @@ function IMAGO.Chronicle.UpdateList()
                                 local lore = npc.data.lore or ""
                                 local firstLetter = lore:sub(1,1)
                                 local restLore = lore:sub(2)
-                                f.loreBody:SetText("|cffffd700" .. firstLetter .. "|r" .. restLore)
+                                -- Pass selfSlug so the NPC doesn't link their own name,
+                                local linked = IMAGO.TextLinker.LinkNames("|cffffd700" .. firstLetter .. "|r" .. restLore,
+                                    npc.slug,
+                                    nil
+                                )
                                 
+                                f.loreBody:SetText(linked)
                                 f.detailModel:ClearModel()
                                 local modelID = GetValidModelID(npc.data)
                                 if modelID then 
@@ -1891,7 +1901,7 @@ elseif activeTab == 2 then
 
     f.startPage.rankLabel:SetText(IMAGO.L["STARTPAGE_ZONES_RANK"])
     f.startPage.rankName:SetText(rankTitle)
-    f.startPage.completedLabel:SetText(IMAGO.L["STARTPAGE_COMPLETED"]) -- Wiederverwendung des existierenden Strings!
+    f.startPage.completedLabel:SetText(IMAGO.L["STARTPAGE_COMPLETED"])
     f.startPage.nextLabel:SetText(IMAGO.L["STARTPAGE_ZONES_NEXT"])
 
     local completedRanksStr, nextRanksStr = "", ""
@@ -1922,7 +1932,7 @@ elseif activeTab == 2 then
         local overviewBtn = IMAGO.Chronicle.zoneOverviewBtn
         if not overviewBtn then
             overviewBtn = CreateFrame("Button", nil, f.content)
-            overviewBtn:SetSize(230, 40) -- Etwas schmaler in der Höhe als normale Zonen
+            overviewBtn:SetSize(230, 40)
             
             overviewBtn.bg = overviewBtn:CreateTexture(nil, "BACKGROUND")
             overviewBtn.bg:SetAllPoints()
@@ -1960,7 +1970,7 @@ elseif activeTab == 2 then
         end)
         overviewBtn:Show()
 
-        yOffset = yOffset + 45 -- Platz machen, damit die Zonen darunter sauber anreihen
+        yOffset = yOffset + 45
 
     for _, zoneObj in ipairs(sortedZones) do
         local mapID = zoneObj.id
@@ -1998,6 +2008,9 @@ elseif activeTab == 2 then
         end
 
         btn:SetPoint("TOPLEFT", f.content, "TOPLEFT", 5, -yOffset)
+        -- Tag the button with its mapID so OpenToZoneMapID can locate it
+        btn.mapID = mapID
+        btn._listScrollY = yOffset
 
         if isZoneVisible then
             btn.bg:SetTexture(zoneData.texturePath)
@@ -2051,7 +2064,9 @@ elseif activeTab == 2 then
                     end
                 end
                 
-                f.loreBody:SetText(formattedLore)
+                -- Pass mapID as selfMapID
+                -- so this zone doesn't link back to itself.
+                f.loreBody:SetText(IMAGO.TextLinker.LinkNames(formattedLore, nil, mapID))
                 f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("LEFT")
                 f.loreBody:Show()
@@ -2120,7 +2135,8 @@ elseif activeTab == 2 then
 
                 local warningHeader = "\n\n|cffaaaaaa" .. (IMAGO.L["ZONE_UNEXPLORED_HEADER"] or "GEBIET UNERKUNDET") .. "|r"
                 local descText = "\n\n|cff666666" .. (IMAGO.L["ZONE_UNEXPLORED_DESC"] or "Die Kartographie dieser Region ist noch unvollständig.\nReise dorthin, um ihre Geheimnisse zu offenbaren.") .. "|r"
-                f.loreBody:SetText(warningHeader .. descText)
+                -- Pass mapID as selfMapID so undiscovered zone page doesn't self-link
+                f.loreBody:SetText(IMAGO.TextLinker.LinkNames(warningHeader .. descText, nil, mapID))
                 f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("CENTER")
                 f.loreBody:Show()
@@ -2155,6 +2171,47 @@ elseif activeTab == 2 then
 
     f.content:SetHeight(math.max(1, yOffset))
 end
+end
+
+--- Opens the Chronicle directly to a specific zone by mapID.
+--- Switches to tab 2, renders the list, then fires that zone button's OnClick.
+function IMAGO.Chronicle.OpenToZoneMapID(mapID)
+    if not mapID or not IMAGOdb.zones or not IMAGOdb.zones[mapID] then
+        return false
+    end
+
+    if not IMAGO.Chronicle.frame then
+        IMAGO.Chronicle.CreateFrame()
+    end
+
+    local f = IMAGO.Chronicle.frame
+
+    -- Switch to Zones tab and show the window
+    IMAGO.Chronicle.SelectMainTab(2)
+    f:Show()
+
+    -- Defer one frame so the list has finished rendering before we search it
+    C_Timer.After(0, function()
+        if not f:IsShown() then return end
+        for _, btn in pairs(IMAGO.Chronicle.zoneButtons or {}) do
+            if btn.mapID == mapID and btn:IsShown() then
+                -- Fire the zone's click handler to populate the detail panel
+                local fn = btn:GetScript("OnClick")
+                if fn then fn(btn) end
+                -- Scroll the left list to the button
+                local scroll = f.scrollFrame
+                if scroll and btn._listScrollY then
+                    local range = math.max(0,
+                        (f.content:GetHeight() or 0) - (scroll:GetHeight() or 0))
+                    scroll:SetVerticalScroll(
+                        math.max(0, math.min(range, btn._listScrollY - 40)))
+                end
+                return
+            end
+        end
+    end)
+
+    return true
 end
 
 --- Chronik öffnen (Tab Schicksale), Liste vorbereiten und dieselbe Logik wie ein Klick auf den NPC ausführen.
