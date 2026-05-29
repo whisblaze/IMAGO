@@ -387,7 +387,7 @@ IMAGOdb.npcs.CAT_LIGHT["danath_trollbann"].timeline = {
 
 -- ANDUIN WRYNN --
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].name = "Anduin Wrynn"
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].aliases = {"Anduin","Anduin Llane Wrynn", "King Anduin", "Little Lion"}
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].aliases = {"Anduin Llane Wrynn", "King Anduin", "Little Lion"}
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn"].lore = [[The High King-in-absentia of the Alliance, Anduin Llane Wrynn feels like he has become a mere shadow of his former radiant self.
 
