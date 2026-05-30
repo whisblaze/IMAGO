@@ -45,6 +45,10 @@ local eraColors = {
 IMAGO.Chronicle.ranks = IMAGO.Chronicle.ranks or {}
 IMAGO.Chronicle.zoneRanks = IMAGO.Chronicle.zoneRanks or {}
 
+-- Navigation stack for the back button
+local navStack = {}
+local isNavigatingBack = false
+
 local function GetCrypticName(name)
     local crypt = ""
     local consonants = {"k", "z", "n", "h", "r", "t", "x", "v", "l", "s", "q", "w", "y"}
@@ -195,6 +199,10 @@ function IMAGO.Chronicle.CreateFrame()
 
     f.closeBtn = CreateFrame("Button", nil, f, "UIPanelCloseButton")
     f.closeBtn:SetPoint("TOPRIGHT", f, "TOPRIGHT", -4, -4)
+    f.closeBtn:HookScript("OnClick", function()
+        wipe(navStack)
+        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(false) end
+    end)
 
     -- 1. NEU: Header-Hintergrund (Verdunkelt den oberen Bereich für mehr Fokus)
     f.headerBg = f:CreateTexture(nil, "BACKGROUND")
@@ -445,8 +453,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.loreBody:SetJustifyH("LEFT")
     f.loreBody:SetTextColor(0.9, 0.9, 0.9)
     f.loreBody:SetSpacing(6)
-
--- ==========================================
+    -- ==========================================
     -- BILD FÜR DIE ZONEN-DETAILANSICHT (PANORAMA)
     -- ==========================================
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
@@ -914,6 +921,68 @@ function IMAGO.Chronicle.CreateFrame()
     f.modeBtn:SetScript("OnLeave", function()
         f.modeBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
     end)
+
+    -- Back button: sits to the right of modeBtn inside detailFrame
+    f.backBtn = CreateFrame("Button", nil, f.detailFrame, "BackdropTemplate")
+    f.backBtn:SetSize(70, 22)
+    f.backBtn:SetPoint("LEFT", f.modeBtn, "RIGHT", 8, 0)
+    f.backBtn:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
+    f.backBtn:SetBackdropColor(0.05, 0.05, 0.05, 0.85)
+    f.backBtn:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
+
+    f.backBtn.label = f.backBtn:CreateFontString(nil, "OVERLAY")
+    f.backBtn.label:SetFont(FONT_BODY, 11, "OUTLINE")
+    f.backBtn.label:SetPoint("CENTER", f.backBtn, "CENTER", 0, 0)
+    f.backBtn.label:SetText("< " .. (IMAGO.L and IMAGO.L["BACK"] or "Back"))
+    f.backBtn.label:SetTextColor(0.5, 0.5, 0.5)
+    f.backBtn.enabled = false
+
+    f.backBtn:SetScript("OnEnter", function(self)
+        if self.enabled then
+            self:SetBackdropBorderColor(1, 0.95, 0.4, 1)
+        end
+    end)
+    f.backBtn:SetScript("OnLeave", function(self)
+        if self.enabled then
+            self:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+        else
+            self:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
+        end
+    end)
+    f.backBtn:SetScript("OnClick", function(self)
+        if not self.enabled then return end
+        local prev = table.remove(navStack)
+        if not prev then return end
+
+        isNavigatingBack = true
+        if prev.type == "npc" then
+            IMAGO.Chronicle.OpenToNPCSlug(prev.slug, { skipDiscoveryCinematic = true })
+        elseif prev.type == "zone" then
+            IMAGO.Chronicle.OpenToZoneMapID(prev.mapID)
+        end
+        C_Timer.After(0, function()
+            isNavigatingBack = false
+        end)
+
+        if #navStack == 0 then
+            self.enabled = false
+            self:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
+            self.label:SetTextColor(0.5, 0.5, 0.5)
+        end
+    end)
+
+    IMAGO.Chronicle.SetBackEnabled = function(val)
+        local btn = IMAGO.Chronicle.frame and IMAGO.Chronicle.frame.backBtn
+        if not btn then return end
+        btn.enabled = val
+        if val then
+            btn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+            btn.label:SetTextColor(1, 0.85, 0.1)
+        else
+            btn:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
+            btn.label:SetTextColor(0.5, 0.5, 0.5)
+        end
+    end
 
     -- Dropdown bei Klick außerhalb schließen
     f:HookScript("OnMouseDown", function()
@@ -1725,6 +1794,22 @@ function IMAGO.Chronicle.UpdateList()
                         end
 
                         f.startPage:Hide()
+                        if not isNavigatingBack then
+                            local entry = nil
+                            if f.selectedNPCSlug and f.selectedNPCSlug ~= "" and f.selectedNPCSlug ~= npc.slug then
+                                entry = { type = "npc", slug = f.selectedNPCSlug }
+                            elseif f.selectedZoneMapID then
+                                entry = { type = "zone", mapID = f.selectedZoneMapID }
+                            end
+                            if entry then
+                                table.insert(navStack, entry)
+                                if IMAGO.Chronicle.SetBackEnabled then
+                                    IMAGO.Chronicle.SetBackEnabled(true)
+                                end
+                            end
+                        end
+                        f.selectedZoneMapID = nil
+
                         f.selectedNPC = npc.data
                         f.selectedNPCSlug = npc.slug
                         
@@ -1998,6 +2083,7 @@ elseif activeTab == 2 then
         end
 
         btn:SetPoint("TOPLEFT", f.content, "TOPLEFT", 5, -yOffset)
+        btn.zoneMapID = mapID  -- store for nav stack lookup
 
         if isZoneVisible then
             btn.bg:SetTexture(zoneData.texturePath)
@@ -2013,6 +2099,22 @@ elseif activeTab == 2 then
 
             btn:SetScript("OnClick", function()
                 if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) end
+
+                if not isNavigatingBack then
+                    local entry = nil
+                    if f.selectedNPCSlug and f.selectedNPCSlug ~= "" then
+                        entry = { type = "npc", slug = f.selectedNPCSlug }
+                    elseif f.selectedZoneMapID and f.selectedZoneMapID ~= mapID then
+                        entry = { type = "zone", mapID = f.selectedZoneMapID }
+                    end
+                    if entry then
+                        table.insert(navStack, entry)
+                        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+                    end
+                end
+                f.selectedNPCSlug = nil
+                f.selectedZoneMapID = mapID
+
                 f.startPage:Hide()
                 f.hintPage:Hide()
                 f.tabLore:Hide() 
@@ -2092,6 +2194,22 @@ elseif activeTab == 2 then
 
             btn:SetScript("OnClick", function()
                 if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) end
+
+                if not isNavigatingBack then
+                    local entry = nil
+                    if f.selectedNPCSlug and f.selectedNPCSlug ~= "" then
+                        entry = { type = "npc", slug = f.selectedNPCSlug }
+                    elseif f.selectedZoneMapID and f.selectedZoneMapID ~= mapID then
+                        entry = { type = "zone", mapID = f.selectedZoneMapID }
+                    end
+                    if entry then
+                        table.insert(navStack, entry)
+                        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+                    end
+                end
+                f.selectedNPCSlug = nil
+                f.selectedZoneMapID = mapID
+
                 f.startPage:Hide()
                 f.hintPage:Hide()
                 f.tabLore:Hide()
@@ -2170,6 +2288,23 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     end
 
     local f = IMAGO.Chronicle.frame
+
+    -- Push current page onto nav stack before navigating away.
+    -- Skip if navigating back, or already on this NPC.
+    if not isNavigatingBack then
+        local entry = nil
+        if f.selectedNPCSlug and f.selectedNPCSlug ~= "" and f.selectedNPCSlug ~= slug then
+            entry = { type = "npc", slug = f.selectedNPCSlug }
+        elseif f.selectedZoneMapID then
+            entry = { type = "zone", mapID = f.selectedZoneMapID }
+        end
+        if entry then
+            table.insert(navStack, entry)
+            if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+        end
+    end
+    f.selectedZoneMapID = nil
+
     local data = IMAGO.GetNPCData(slug)
 
     f.activeFilter = "ALL"
@@ -2185,6 +2320,7 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     end
 
     f.selectedNPC = data
+    f.selectedNPCSlug = slug
 
     IMAGO.Chronicle.SelectMainTab(1)
     f:Show()
@@ -2211,6 +2347,41 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
                 local fn = btn:GetScript("OnClick")
                 if fn then fn(btn) end
             end
+            C_Timer.After(0, function()
+                if f:IsShown() then scrollToButton(btn) end
+            end)
+            return true
+        end
+    end
+
+    return false
+end
+
+--- Navigate back to a zone by mapID: switches to the zones tab, finds the button, and clicks it.
+function IMAGO.Chronicle.OpenToZoneMapID(mapID)
+    if not mapID then return false end
+
+    if not IMAGO.Chronicle.frame then
+        IMAGO.Chronicle.CreateFrame()
+    end
+
+    local f = IMAGO.Chronicle.frame
+    IMAGO.Chronicle.SelectMainTab(2)
+    f:Show()
+
+    local function scrollToButton(btn)
+        if not btn or not f.scrollFrame or not f.content then return end
+        local scroll = f.scrollFrame
+        local range = math.max(0, (f.content:GetHeight() or 0) - (scroll:GetHeight() or 0))
+        local _, _, _, _, btnY = btn:GetPoint()
+        local target = math.max(0, math.min(range, -(btnY or 0) - 40))
+        scroll:SetVerticalScroll(target)
+    end
+
+    for _, btn in pairs(IMAGO.Chronicle.zoneButtons or {}) do
+        if btn.zoneMapID == mapID and btn:IsShown() then
+            local fn = btn:GetScript("OnClick")
+            if fn then fn(btn) end
             C_Timer.After(0, function()
                 if f:IsShown() then scrollToButton(btn) end
             end)

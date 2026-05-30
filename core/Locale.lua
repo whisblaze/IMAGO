@@ -157,7 +157,7 @@ if locale == "deDE" then
     L["CONFIRM_ENC_DESC"]         = "Alle Inhalte werden sichtbar,\nzählen aber nicht für deinen Fortschritt.\n\nFortfahren?"
     L["CONFIRM_UNLOCK_TITLE"]     = "Inhaltsvorschau freischalten"
     L["CONFIRM_UNLOCK_DESC"]      = "Dieser Eintrag wird für dich lesbar, zählt aber nicht für deinen Fortschritt.\n\nFreischalten?"
-
+    L["BACK"]                     = "Zurück"
 else
     -- English (default für enUS, enGB, und alle anderen)
     L["WINDOW_TITLE"]      = "Chronicle of the Unforgotten"
@@ -308,5 +308,5 @@ else
     L["CONFIRM_ENC_DESC"]         = "All content becomes visible,\nbut won't count toward your progress.\n\nContinue?"
     L["CONFIRM_UNLOCK_TITLE"]     = "Unlock Content Preview"
     L["CONFIRM_UNLOCK_DESC"]      = "This entry will become readable but won't count toward your progress.\n\nUnlock?"
-
+    L["BACK"]                     = "Back"
 end
