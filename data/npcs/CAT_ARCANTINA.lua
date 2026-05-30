@@ -6,6 +6,13 @@ IMAGOdb = IMAGOdb or {}
 IMAGOdb.npcs = IMAGOdb.npcs or {}
 IMAGOdb.npcs.CAT_ARCANTINA = IMAGOdb.npcs.CAT_ARCANTINA or {}
 
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"] = {
+    displayID = 259344,
+    ids = {259344},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"] = {
     displayID = 259334,
     ids = {259334},
