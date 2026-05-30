@@ -20,9 +20,17 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"] = {
     category = "CAT_ARCANTINA",
 }
 
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"] = {
+    displayID = 259335,
+    ids = {259335},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"] = {
     displayID = 259336,
     ids = {259336},
     zones = {},
     category = "CAT_ARCANTINA",
 }
+

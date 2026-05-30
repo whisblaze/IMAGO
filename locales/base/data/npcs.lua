@@ -2058,6 +2058,45 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
     }
 }
 
+-- VANESSA VANCLEEF --
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].name = "Vanessa VanCleef"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].lore = [[Vanessa VanCleef grew up on stories of Stormwind's horrific treatment of the Stonemasons and the greed of the noble class. Seeing her father Edwin murdered and decapitated by Alliance adventurers only hardened her beliefs. Under the guise of Hope Saldean, she became the leader of the Defias Brotherhood and sought vengeance by any means necessary.
+
+Over the years, Vanessa has realized that war with Stormwind is not the solution to what truly matters to her: her home of Westfall. Still not trusting the crown, she left the Brotherhood and now aids the Breadbasket Guild to help the people of Westfall.]]
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].timeline = {
+    {
+        era = "Classic",
+        text = [[Witnessed the death of her father, Edwin VanCleef, at the hands of hired adventurers. She was adopted by the Saldeans, took on the name Hope, yet stayed bitter.]],
+    },
+    {
+        era = "Cata",
+        text = [[Disguised as Hope Saldean, she rallied the homeless of Westfall against Stormwind, citing the war in Northrend as the reason for their poverty. Reestablished the Defias Brotherhood and prepared for an attack on Stormwind City. Was stopped by adventurers under orders of Gryan Stoutmantle and Mathias Shaw and faked her own death.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Uncrowned after losing a duel for the seat of the last Shadow to the Champion of Azeroth. Recruited new members for the organization and fought alongside the Shadowblade in the defense of the Exodar.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Made an unofficial deal with SI:7 after working with Mathias Shaw during the invasion of the Burning Legion. Vanessa became his informant and kept the Defias on a short leash in exchange for not being persecuted.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Noticed a rise in cruelty among the ranks of her Defias. Realized that after King Anduin's reforms and formal pardons most of her people had returned to the Alliance, leaving only the criminals under her command.]],
+    },
+    {
+        era = "DF",
+        text = [[Lost leadership of the Defias to the corrupt Count Clessington who rallied the Brotherhood to sack Stormwind for its wealth. Worked with Mathias Shaw to prevent this. Kidnapped Cecilia Clessington, but ultimately befriended her, sharing the same ideals. After killing Count Clessington and declining an offer to join SI:7, she returned to Westfall with Cecilia to help the Breadbasket Guild.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina with Cecilia.]],
+    }
+}
+
 -- CECILIA CLESSINGTON --
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].name = "Cecilia Clessington"
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].race = "Human"
