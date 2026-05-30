@@ -1500,6 +1500,45 @@ IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].timeline = {
     }
 }
 
+-- LORD MAXWELL TYROSUS --
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].name = "Lord Maxwell Tyrosus"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].race = "Human"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].lore = [[Ever since the Scourge ravaged the Eastern Kingdoms, Maxwell Tyrosus has made it his calling to fight the undead and protect the innocent. He has not only become the leader of the Argent Dawn, but also the Hand of the Highlord of the Order of the Silver Hand. He may not have a flashy title or performed war-winning heroics like his fellow paladins such as Turalyon or Uther the Lightbringer – yet Tyrosus has become an invaluable asset in keeping the paladin orders disciplined and battle-ready.
+
+Even though he has lived in service of the Light for decades, Tyrosus has not been summoned by the Sunwell. Not letting himself be deterred by broken pride or doubt, he now faces new threats outside of Silvermoon without hesitation.]]
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Joined Alexandros Mograine in his mission to liberate Lordaeron from the Scourge. After Mograine's death, Tyrosus strongly opposed the fanatical ideas of the Scarlet Crusade and joined the newly founded Argent Dawn and quickly became the order's leader. He later aided Darion Mograine to save his father's soul.]],
+    },
+    {
+        era = "Classic",
+        text = [[Coordinated the troops of the Argent Dawn from inside Light's Hope Chapel and held the undead at bay in the Plaguelands. Managed to help slay Baron Rivendare in Stratholme and liberated the once lively city from the Scourge.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Defended Light's Hope Chapel from Darion Mograine and his death knights together with his friend Tirion Fordring. Witnessed the liberation of the death knights from the Lich King's mind control. Merged the Argent Dawn and Tirion's Knights of the Silver Hand into a new joined order – the Argent Crusade.]],
+    },
+    {
+        era = "Cata",
+        text = [[Continued to combat the Scourge and the Cult of the Damned in the Plaguelands.]],
+    },
+    {
+        era = "Legion",
+        text = [[Lost many comrades when the Burning Legion decimated the Argent Crusade – including Tirion Fording. Secured the Ashbringer for the Silver Hand and made the Champion of the Light its new leader. Later helped defend the Exodar and the Netherlight Temple from the Burning Legion.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Proudly promoted his protegé Arator Windrunner with a medal after the latter defeated the demon Sarothar and stopped another demon invasion.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Tyrosus paradoxically was not summoned to Quel'Thalas. He fought the emboldened Scourge in the Plaguelands and, with so few paladins now left in Light's Hope Chapel, recruited Darion Mograine's Ebon Blade to hold the lines at his side.]],
+    }
+}
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
