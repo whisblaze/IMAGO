@@ -13,6 +13,13 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"] = {
     category = "CAT_ARCANTINA",
 }
 
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"] = {
+    displayID = 250410,
+    ids = {250410},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"] = {
     displayID = 249467,
     ids = {249467, 250400},
