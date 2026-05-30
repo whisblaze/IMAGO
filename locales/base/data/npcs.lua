@@ -2076,3 +2076,44 @@ IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].timeline = {
         text = [[Enjoyed a drink in the Arcantina with Vanessa.]],
     }
 }
+
+-- FLYNN FAIRWIND --
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].name = "Flynn Fairwind"
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].lore = [[The dashing swashbuckler Captain Flynn Fairwind is seldom found without a drink in his hand and a quip on his lips. Forced into piracy from an early age, his street-smarts and charm quickly made him a recognized name on the seas of Kul Tiras. Even though he was living a life of crime, he never could let go entirely of his inherent sense of justice. 
+
+Now, he works for the Kul Tiran admiralty both as captain of two ships and as an expert for some of the more stealthy jobs that require more creative solutions. When the Fourth War broke out, he undertook various missions with the Alliance's own spies, the SI:7. He met Stormwind's spymaster Mathias Shaw and the two eventually fell in love – after a somewhat relentless pursuit from Flynn. 
+
+With the war over, Flynn now enjoys a calmer life, living in Stormwind City and going on the occasional adventure. His aid to Alliance is greatly appreciated, despite the habitual smuggling now and then.]]
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Was orphaned as a child when his mother was publicly executed for thievery. Was forced to join a street gang and eventually took to piracy.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Became captain of a pirate crew and made quite a reputation. Met Taelia Fordragon and developed a crush on her. He eventually left his crew when they became increasingly ruthless, and joined the Admiralty of Kul Tiras as a smuggler for hire.]],
+    },
+    {
+        era = "BfA",
+        text = [[Freed the Champion of Azeroth from Tol Dagor and helped Taelia uncover the treachery of Priscilla Ashvane.  Confronted and stopped his old crew – the Irontide Raiders led by his former first mate, Harlan Sweete. Worked with Mathias Shaw to infiltrate the Dazar'alor treasury and steal the Abyssal Scepter.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Worked with Shaw again to track Sylvanas Windrunner. After purposefully annoying the spymaster, the two bonded during the sea voyage to Zandalar. Flynn later helped free Shaw from Horde imprisonment and convinced him to go treasure hunting together in Duskwood. They stopped a necromancer and saved the Night Watch and fell in love. They traveled the Eastern Kingdoms to inventory various artifacts.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Moved to Stormwind City.]],
+    },
+    {
+        era = "TWW",
+        text = [[Was in Dalaran during the city's destruction and was captured by the nerubians of Azj-Kahet. Helped free the other captives and worked for the Weaver against Queen Ansurek.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina.]],
+    }
+}
