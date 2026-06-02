@@ -29,7 +29,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"] = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"] = {
     displayID = 236583,
-    ids = {236583, 249270, 240261, 260415, 237504, 246158, 236614, 240532, 241650},
+    ids = {236583, 249270, 240261, 260415, 237504, 246158, 236614, 240532, 241650, 264552},
     zones = {},
     category = "CAT_QUELTHALAS",
 }
