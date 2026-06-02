@@ -445,6 +445,13 @@ function IMAGO.CreateMinimapButton()
     -- Reagiert auf UI-Skalierung und Änderungen am Edit-Mode
     dragFrame:SetScript("OnEvent", UpdatePosition)
     UpdatePosition()
+    
+     -- Apply saved hide state
+    if IMAGOSaved.hideMinimap then
+        dragFrame:Hide()
+    end
+
+    IMAGO.minimapButton = dragFrame
 end
 
 -- ============================================================
