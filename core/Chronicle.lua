@@ -1847,7 +1847,7 @@ function IMAGO.Chronicle.UpdateList()
                                 f.ShowTab("lore")
 
                                 IMAGO.Chronicle.SetDetailAction(nil)
-
+                            end         
                             IMAGOSaved.viewedNPCs = IMAGOSaved.viewedNPCs or {}
                             if isSeen and not IMAGOSaved.viewedNPCs[npc.slug] then
                                 IMAGOSaved.viewedNPCs[npc.slug] = true
