@@ -762,6 +762,55 @@ function IMAGO.Chronicle.CreateFrame()
         f.modeBtn.label:SetText(IMAGO.L["MODE_LABEL"])
     end
 
+     -- ==========================================
+    -- DETAIL ACTION ICON (top-right, clickable texture)
+    -- ==========================================
+    f.detailActionBtn = CreateFrame("Button", nil, f.detailFrame)
+    f.detailActionBtn:SetSize(22, 22)
+    f.detailActionBtn:SetPoint("TOPRIGHT", f.detailFrame, "TOPRIGHT", -14, -14)
+    f.detailActionBtn:SetFrameLevel(f.detailFrame:GetFrameLevel() + 2)
+
+    f.detailActionBtn.icon = f.detailActionBtn:CreateTexture(nil, "ARTWORK")
+    f.detailActionBtn.icon:SetAllPoints()
+    f.detailActionBtn.icon:SetAlpha(0.7)
+
+    local hl = f.detailActionBtn:CreateTexture(nil, "HIGHLIGHT")
+    hl:SetAllPoints()
+    hl:SetColorTexture(1, 1, 1, 0.15)
+
+    f.detailActionBtn:SetScript("OnEnter", function(self)
+        self.icon:SetAlpha(1.0)
+        if self._tooltip then
+            GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
+            GameTooltip:AddLine(self._tooltip, 1, 0.85, 0.1)
+            GameTooltip:Show()
+        end
+    end)
+    f.detailActionBtn:SetScript("OnLeave", function(self)
+        self.icon:SetAlpha(0.7)
+        GameTooltip:Hide()
+    end)
+    f.detailActionBtn:Hide()
+
+    function IMAGO.Chronicle.SetDetailAction(config)
+        local btn = IMAGO.Chronicle.frame and IMAGO.Chronicle.frame.detailActionBtn
+        if not btn then return end
+        if not config then
+            btn:Hide()
+            btn:SetScript("OnClick", nil)
+            btn._tooltip = nil
+            return
+        end
+        btn._tooltip = config.tooltip
+        if config.atlas then
+            btn.icon:SetAtlas(config.atlas, true)
+        elseif config.texture then
+            btn.icon:SetTexture(config.texture)
+            btn.icon:SetTexCoord(0, 1, 0, 1)
+        end
+        btn:SetScript("OnClick", config.onClick)
+        btn:Show()
+    end
     -- ==========================================
     -- CONFIRM DIALOG (wiederverwendbar)
     -- ==========================================
@@ -1007,6 +1056,7 @@ function IMAGO.Chronicle.CreateFrame()
         if f.detailSeparator then f.detailSeparator:Hide() end
         if f.creditsPage then f.creditsPage:Hide() end
         if f.creditsHeader then f.creditsHeader:Hide() end
+        IMAGO.Chronicle.SetDetailAction(nil)
         
         if index == 1 or index == 2 then
             -- Haupt-UI anzeigen
@@ -1214,6 +1264,7 @@ f.ShowDashboard = function()
         if f.detailImage then f.detailImage:Hide() end
         if f.detailImageBorder then f.detailImageBorder:Hide() end
         if f.detailSeparator then f.detailSeparator:Hide() end
+        IMAGO.Chronicle.SetDetailAction(nil)
         f.startPage:Show()
     end
 
@@ -1515,6 +1566,7 @@ function IMAGO.Chronicle.UpdateList()
                 for _, b in pairs(IMAGO.Chronicle.buttons) do
                     if b.selected then b.selected:Hide() end
                 end
+                IMAGO.Chronicle.SetDetailAction(nil)
                 if f.ShowDashboard then f.ShowDashboard() end
             end)
             IMAGO.Chronicle.homeBtn = homeBtn
@@ -1793,7 +1845,8 @@ function IMAGO.Chronicle.UpdateList()
                                 
                                 btn.newTag:Hide()
                                 f.ShowTab("lore")
-                            end
+
+                                IMAGO.Chronicle.SetDetailAction(nil)
 
                             IMAGOSaved.viewedNPCs = IMAGOSaved.viewedNPCs or {}
                             if isSeen and not IMAGOSaved.viewedNPCs[npc.slug] then
@@ -1822,6 +1875,7 @@ function IMAGO.Chronicle.UpdateList()
                             f.hintPage:Show()
                             
                             -- NPC-PHANTOM: Aura wieder einschalten und Icon zurücksetzen
+                            IMAGO.Chronicle.SetDetailAction(nil)
                             f.hintPage.aura:Show() -- HIER WIRD SIE WIEDER AKTIVIERT!
                             f.hintPage.warning:SetText(IMAGO.L["HINT_IDENTITY_HIDDEN"] or "IDENTITÄT VERBORGEN")
                             f.hintPage.icon:SetTexture("Interface\\AddOns\\IMAGO\\Media\\undiscovered.tga")
@@ -1944,6 +1998,8 @@ elseif activeTab == 2 then
         overviewBtn:SetPoint("TOPLEFT", f.content, "TOPLEFT", 5, -yOffset)
         overviewBtn:SetScript("OnClick", function()
             if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) end
+
+            IMAGO.Chronicle.SetDetailAction(nil)
             
             -- Rechte Seite aufräumen
             f.detailTitle:Hide()
@@ -2062,6 +2118,14 @@ elseif activeTab == 2 then
                 f.infoScroll:SetPoint("BOTTOM", f.detailFrame, "BOTTOM", 0, 100)
                 f.infoScroll:Show()
                 f.infoScroll:SetVerticalScroll(0)
+
+                -- Action button: open this zone on the World Map
+                IMAGO.Chronicle.SetDetailAction({
+                    label   = IMAGO.L["ACTION_OPEN_MAP"] or "World Map",
+                    tooltip = IMAGO.L["ACTION_OPEN_MAP_TIP"] or "Open this zone on the World Map",
+                    texture   = "Interface\\Icons\\icon_treasuremap",
+                    onClick = function() OpenWorldMap(mapID) end,
+                })
             end)
 
             btn:SetScript("OnMouseUp", function(self, mouseBtn)
@@ -2106,6 +2170,7 @@ elseif activeTab == 2 then
                 if f.detailSeparator then f.detailSeparator:Hide() end
 
                 f.detailTitle:Show()
+                IMAGO.Chronicle.SetDetailAction(nil)
                 f.detailTitle:SetText(IMAGO.L["ZONE_UNDISCOVERED"] or "Unentdeckt")
                 f.detailTitle:SetTextColor(0.4, 0.4, 0.4)
 

@@ -301,6 +301,10 @@ else
     L["MODE_ENCYCLOPEDIA"] = "Encyclopedia Mode"
     L["MODE_MANUAL_UNLOCK"]= "Manually unlock"
 
+    -- Map Toggle --
+    L["ACTION_OPEN_MAP"] = "Open World Map"
+    L["ACTION_OPEN_MAP_TIP"] = "Open this zone on the World Map"
+
     -- Confirm Dialogs
     L["CONFIRM_YES"]              = "Yes"
     L["CONFIRM_NO"]               = "No"
