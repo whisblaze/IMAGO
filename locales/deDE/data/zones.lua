@@ -111,7 +111,8 @@ IMAGOdb.zones[2393].pointsOfInterest = {
 }
 
 -- DIE ARKANTINE --
-IMAGOdb.zones[10473].name = "Die Arkantine"
-IMAGOdb.zones[10473].lore = [[Erschaffen als eine Taschendimension von einem Erzmagier der Kirin Tor lange vor dieser Zeit, öffnet die Arkantine nun ihre Türen für die Abenteurer Azeroths. Diese gemütliche Taverne bietet Zuflucht weit entfernt vom Chaos des Krieges und den Lasten der Welt. Ursprünglich ein Treffpunkt der Söhne Lothars während des Zweiten Krieges, ist das Gasthaus inzwischen zu einem lebhaften Ort voller Reisender und Besucher aus ganz Azeroth geworden.
+IMAGOdb.zones[2541].name = "Die Arkantine"
+IMAGOdb.zones[2541].lore = [[Erschaffen als eine Taschendimension von einem Erzmagier der Kirin Tor lange vor dieser Zeit, öffnet die Arkantine nun ihre Türen für die Abenteurer Azeroths. Diese gemütliche Taverne bietet Zuflucht weit entfernt vom Chaos des Krieges und den Lasten der Welt. Ursprünglich ein Treffpunkt der Söhne Lothars während des Zweiten Krieges, ist das Gasthaus inzwischen zu einem lebhaften Ort voller Reisender und Besucher aus ganz Azeroth geworden.
 
 Inoffiziell gehört die Arkantine dem Erzmagier Khadgar, auch wenn viele freundliche Seelen beschlossen haben, dauerhaft hierzubleiben. Hinter dem Tresen steht Schankkellner Bob und serviert nur die feinsten Getränke – mit einer Herzlichkeit, die selbst die kampferprobtesten Seelen zur Ruhe kommen lässt. Jeder darf so lange bleiben, wie er möchte, und Geschichten mit alten Freunden ebenso wie mit neu gewonnenen Gefährten teilen.]]
+
