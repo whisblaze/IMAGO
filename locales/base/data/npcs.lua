@@ -2031,6 +2031,49 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
     }
 }
 
+-- GORGONNA --
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].name = "Gorgonna"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].race = "Orc"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].lore = [[Gorgonna is the current chieftain of the Warsong Clan and values strength and honor in battle above all other virtues.
+
+Loyal to the New Horde since being freed from the internment camps by Thrall, Gorgonna has learned from and internalized the mistakes of the Horde of old. After the fall of Garrosh Hellscream, she vowed to never lead the Warsong Clan down a similar dark path again.]]
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].timeline = {
+    {
+        era = "WC2",
+        text = [[Brought to Azeroth by her parents alongside her sister, Krenna, when both were children. Chieftain Grommash Hellscream consequently exiled the family. Gorgonna's parents were killed by humans after that and the young sisters grew up in Durnholde Keep.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Freed by Thrall and later followed him loyally to Kalimdor.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Interrupted a heated argument between Krenna and Garrosh Hellscream. Tried to explain to Garrosh the need for the New Horde to atone for its past deeds in the First and Second Wars,  but was met with dismissal.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Served under Krenna's command as her advisor in Conquest Hold during the war campaign in Northrend. Undermined her sister's exceedingly cruel commands and was challenged to a Mak'gora by her sibling. Gorgonna won but deeply regretted having to kill her own blood.]],
+    },
+    {
+        era = "WoD",
+        text = [[After Garrosh's fall from grace, Gorgonna rejoined the Warsong Clan in Ashenvale. Won the Mak'gora for leadership.]],
+    },
+    {
+        era = "DF",
+        text = [[Represented the Warsong Clan at the first Kosh'harg Festival on Azeroth and gathered new recruits.]],
+    },
+    {
+        era = "TWW",
+        text = [[Joined Horde forces on Khaz Algar in the war against Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Took a moment to relax in the Arcantina.]],
+    }
+}
+
 -- TEHD SHOEMAKER --
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].name = "Tehd Shoemaker"
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].race = "Undead Human"
