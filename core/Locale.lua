@@ -32,6 +32,7 @@ if locale == "deDE" then
     L["OPT_MAIN_LORE_NO_TIMER"] = "Discovery Card offen lassen (kein Timer)"
     L["OPT_SNIPPET_NO_TIMER"] = "Idle Flashcards offen lassen (kein Timer)"
     L["OPT_OPAQUE_UI"] = "100% intransparente Fenster und Popups"
+    L["OPT_SHOW_MINIMAP"] = "Minimap-Symbol anzeigen"
     L["CONTEXT_LORE_BTN"]  = "IMAGO Lore"
     L["CONTEXT_LORE_NONE"] = "|cFF888888IMAGO:|r Keine Lore für diesen NPC gefunden."
     L["CONTEXT_LORE_COMBAT"] = "|cFF888888IMAGO:|r Lore-Anzeige im Kampf nicht verfügbar."
