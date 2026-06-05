@@ -1966,6 +1966,57 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
 
 
 -- CAT_ARCANTINA
+-- GARONA HALFORCEN --
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].name = "Garona Halforcen"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].race = "Half-orc, half-draenei"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].lore = [[Garona will always be known for assassinating King Llane Wrynn of Stormwind and deciding the First War for the Old Horde. She mostly remembers it as being a near mindless puppet for Gul'dan and betraying the humans who had shown her more kindness than the ruthless Horde had all her life.  As her name implies, Garona was born to a draenei mother and an orc father and her heritage makes her an unusual individual. 
+
+Her strained relationship with the Horde was mended over the years and she now serves her people once more as an assassin and spy, yet occasionally has worked with the Alliance when it served her goals.]]
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].timeline = {
+    {
+        era = "Pre-WC1",
+        text = [[Born to a draenei prisoner as half-orc and half-draenei. Survived as a half-breed in the ruthless Bladewind clan and was later mind controlled by Gul'dan to become his perfect assassin. Was convinced by Gul'dan that she was half human, making her the ideal candidate to infiltrate Stormwind once the orcs would march to war.]],
+    },
+    {
+        era = "WC1",
+        text = [[Fought for the Horde in the first skirmishes on Azeroth. Successfully infiltrated Stormwind and spied on the Guardian, Medivh. Ended up genuinely befriending the humans and rumors state that she and Medivh developed more than a friendship. Helped the Alliance against the Horde but ended up shaken after Medivh's betrayal and failed to resist Gul'dan's mind control. Was forced to kill King Llane.]],
+    },
+    {
+        era = "WC2",
+        text = [[Remained friends with Khadgar and vowed to hunt down all remaining members of the Shadow Council.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Confronted Cho'gall but lost to the ogre mage and was once more mind controlled. Was ordered to assassinate King Varian Wrynn during a peace meeting between Horde and Alliance. While Varian fended off her assault, he saw the attack as a betrayal from the Horde and tensions between the factions worsened considerably.]],
+    },
+    {
+        era = "Cata",
+        text = [[Helped rescue Lirastrasza and deal a severe blow to the Twilight's Hammer. Out for revenge, she infiltrated the Twilight Citadel alongside an adventurer, and managed to finally help kill Cho'gall.]],
+    },
+    {
+        era = "Legion",
+        text = [[Slew the traitorous Althea Ebonlocke and infiltrated Stormwind during lockdown to thwart an attack of the Burning Legion. Entrusted the Kingslayers to the Shadowblade and joined the Uncrowned in Dalaran.]],
+    },
+    {
+        era = "BfA",
+        text = [[Was conscripted by Warchief Sylvanas Windrunner to fight in the Fourth War. Unwilling, she faked her loyalty and did her duty, but eagerly retreated from the war when Saurfang's rebellion arose.]],
+    },
+    {
+        era = "DF",
+        text = [[Was invited to the Kosh'harg Festival by Thrall and invited into the Shattered Hand Clan. Surprised to be accepted as a half-blooded orc and an outcast, she felt relieved and happy at how much the Horde had changed, and was inclined to take the offer.]],
+    },
+    {
+        era = "TWW",
+        text = [[Still a member of the Uncrowned, she survived the destruction of Dalaran and settled in Dornogal for a while.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Visited the Arcantina.]],
+    }
+}
+
 -- REXXAR --
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].name = "Rexxar"
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].race = "Half-Ogre, Half-Orc"
