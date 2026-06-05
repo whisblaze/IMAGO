@@ -32,6 +32,7 @@ if locale == "deDE" then
     L["OPT_MAIN_LORE_NO_TIMER"] = "Discovery Card offen lassen (kein Timer)"
     L["OPT_SNIPPET_NO_TIMER"] = "Idle Flashcards offen lassen (kein Timer)"
     L["OPT_OPAQUE_UI"] = "100% intransparente Fenster und Popups"
+    L["OPT_SHOW_MINIMAP"] = "Minimap-Symbol anzeigen"
     L["CONTEXT_LORE_BTN"]  = "IMAGO Lore"
     L["CONTEXT_LORE_NONE"] = "|cFF888888IMAGO:|r Keine Lore für diesen NPC gefunden."
     L["CONTEXT_LORE_COMBAT"] = "|cFF888888IMAGO:|r Lore-Anzeige im Kampf nicht verfügbar."
@@ -150,6 +151,10 @@ if locale == "deDE" then
     L["MODE_ENCYCLOPEDIA"] = "Enzyklopädie-Modus"
     L["MODE_MANUAL_UNLOCK"]= "Manuell freischalten"
 
+    -- Map Toggle --
+    L["ACTION_OPEN_MAP"] = "Weltkarte öffnen"
+    L["ACTION_OPEN_MAP_TIP"] = "Diese Zone auf der Weltkarte öffnen"
+
     -- Confirm Dialogs
     L["CONFIRM_YES"]              = "Ja"
     L["CONFIRM_NO"]               = "Nein"
@@ -157,7 +162,7 @@ if locale == "deDE" then
     L["CONFIRM_ENC_DESC"]         = "Alle Inhalte werden sichtbar,\nzählen aber nicht für deinen Fortschritt.\n\nFortfahren?"
     L["CONFIRM_UNLOCK_TITLE"]     = "Inhaltsvorschau freischalten"
     L["CONFIRM_UNLOCK_DESC"]      = "Dieser Eintrag wird für dich lesbar, zählt aber nicht für deinen Fortschritt.\n\nFreischalten?"
-
+    L["BACK"]                     = "Zurück"
 else
     -- English (default für enUS, enGB, und alle anderen)
     L["WINDOW_TITLE"]      = "Chronicle of the Unforgotten"
@@ -183,6 +188,7 @@ else
     L["OPT_MAIN_LORE_NO_TIMER"] = "Keep Discovery Card open (no timer)"
     L["OPT_SNIPPET_NO_TIMER"] = "Keep Idle Flashcards open (no timer)"
     L["OPT_OPAQUE_UI"] = "100% opaque windows and popups"
+    L["OPT_SHOW_MINIMAP"] = "Show Minimap Icon"
     L["CONTEXT_LORE_BTN"]  = "IMAGO Lore"
     L["CONTEXT_LORE_NONE"] = "|cFF888888IMAGO:|r No lore found for this NPC."
     L["CONTEXT_LORE_COMBAT"] = "|cFF888888IMAGO:|r Lore view is unavailable in combat."
@@ -301,6 +307,10 @@ else
     L["MODE_ENCYCLOPEDIA"] = "Encyclopedia Mode"
     L["MODE_MANUAL_UNLOCK"]= "Manually unlock"
 
+    -- Map Toggle --
+    L["ACTION_OPEN_MAP"] = "Open World Map"
+    L["ACTION_OPEN_MAP_TIP"] = "Open this zone on the World Map"
+
     -- Confirm Dialogs
     L["CONFIRM_YES"]              = "Yes"
     L["CONFIRM_NO"]               = "No"
@@ -308,5 +318,5 @@ else
     L["CONFIRM_ENC_DESC"]         = "All content becomes visible,\nbut won't count toward your progress.\n\nContinue?"
     L["CONFIRM_UNLOCK_TITLE"]     = "Unlock Content Preview"
     L["CONFIRM_UNLOCK_DESC"]      = "This entry will become readable but won't count toward your progress.\n\nUnlock?"
-
+    L["BACK"]                     = "Back"
 end

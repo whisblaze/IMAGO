@@ -22,20 +22,37 @@ IMAGOdb.zones[2405].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2413].name = "Harandar"
-IMAGOdb.zones[2413].lore = "Harandar ist die Heimat der Haranir, tief verborgen unter den gewaltigen Wurzelpfaden der Weltenbäume. Dieser biolumineszente Pilzdschungel ist ein Ort von urtümlicher Magie, dessen Bewohner als geheime Wächter Azeroths in vollkommener Harmonie mit der Natur leben. Doch die friedliche Existenz des Hara'ti-Stammes steht am Abgrund: Der Riss von Aln, eine urzeitliche Wunde, lässt die Grenze zwischen Traum und Realität verschwimmen und speit furchterregende Albträume aus. Gleichzeitig überwuchert die zerstörerische und fanatische Macht der Lichtblüte das Land, welche die heimische Flora korrumpiert."
+IMAGOdb.zones[2413].lore = [[Tief verborgen im Inneren Azeroths war die geheimnisvolle Heimat der Haranir bis heute vor der Außenwelt verborgen. Hier vereinen sich die Wurzeln der Weltenbäume zur Wiege der Göttin Aln’hara. Die Gottheit ist schon seit langer Zeit verschwunden, doch die Wurzeln bestehen fort, und die Haranir sehen es als ihre heilige Pflicht an, sie zu schützen und zu nähren.
+
+Trotz des ersten Eindrucks herrscht hier nicht nur Frieden. Der Ausbruch des Sonnenbrunnens hat selbst in dieser großen Entfernung ein rasantes Wachstum der Pflanzenwelt ausgelöst, und die Anwesenheit von Außenseitern in Harandar könnte die politische Stabilität der Hara’ti gefährden, die sie seit Generationen aufrechterhalten.]]
+
 IMAGOdb.zones[2413].pointsOfInterest = {
     {
+        name = "Die Wiege",
+        lore = "Hoch über dem üppigen Pilzdschungel von Harandar leuchtet die Wiege wie eine Sonne. Die Wurzeln der verschiedenen Weltenbäume verschlingen sich hier zu einem natürlichen Nest, geeignet, eine Seele von gewaltigen Ausmaßen zu beherbergen. Das Lied, das die Haranir vor all den Jahrtausenden in die Tiefen der Erde lockte, entsprang genau diesem Ort. Und obwohl das Lied noch immer nachhallt, liegt die Wiege nun leer."
+    },
+    {
+        name = "Die Wurzeln der Weltenbäume",
+        lore = [[Die Wurzeln sämtlicher Weltenbäume vereinen sich in Harandar, und jedem Baum wird von den Hara’ti ein Wurzelhüter zugewiesen.
+
+Amirdrassil, der jüngste der Bäume und ein Symbol der Hoffnung für die Nachtelfen in Bel’ameth. 
+
+Shaladrassil, der einst verdorbene Baum der Verheerten Inseln. Durch die anhaltende Schwäche, die der Smaragdgrüne Alptraum hinterließ, konnte die Lichtblüte sich von hier aus entfalten.
+
+Teldrassil, dessen ewig brennende Wurzelreste noch immer die Tragödie des Vierten Krieges bezeugen. 
+
+Nordrassil, dessen Wurzeln als wiedergeborener Baum des Hyjals immer stärker wachsen. 
+
+Vordrassil, der dritte Weltenbaum, der jemals auf der Welt spross, wurde von Yogg-Saron korrumpiert, und seine Wurzeln wurden gekappt, um die Ausbreitung des Alptraums zu verhindern. Keine Spur von ihm ist in Harandar verblieben.]]
+    },
+    {
+        name = "Die Höhle",
+        lore = "Der Ältestenrat versammelt sich an diesem uralten Ort nahe dem Licht der Wiege, hält heilige Traditionen aufrecht und wahrt den Frieden. Dieser Ort gehört nicht nur den Haranir, sondern auch den Fungarianern und den Ruutani. Sollten die Außenseiter aus Silbermond die Hilfe der Hara’ti wünschen, wird sie ihnen hier gewährt – oder verweigert."
+    },
+    {
         name = "Der Riss von Aln",
-        lore = "Eine urzeitliche Wunde im Gefüge von Azeroth. Hier ist die Barriere zur Ebene der Träume so dünn, dass die Echos des Schmerzes der Göttin mächtig genug sind, um selbst den stärksten Geist in den Wahnsinn zu treiben."
-    },
-    {
-        name = "Das Tal der Blendung",
-        lore = "Ein schreckliches Zeugnis der jüngsten Bedrohung. Die Lichtblüte ist hier explosionsartig herangewachsen und verwandelt die einst friedlichen Rutaani unter der Führung des machthungrigen Lichthüters Ruia in blinde Fanatiker."
-    },
-    {
-        name = "Der Bau der Echos",
-        lore = "Das spirituelle und politische Herz von Harandar. Hier versammelt sich der Ältestenrat um Naynar, bewahrt die magischen Gemälde der Ahnen und orchestriert die Rettung der Wurzelpfade."
-    },
+        lore = "Qual, Leid und Wahnsinn sind alles, was man an diesem seltsamen Ort findet, dieser Wunde im Gefüge der Welt. Grauenhafte Kreaturen aus den Albträumen Aln’haras strömen aus diesem Ort hervor und werden nur durch die tapferen Shul’ka zurückgehalten. Der Riss von Aln existiert physisch am tiefsten Punkt Harandars, doch schon vor langer Zeit ist er in den Smaragdgrünen Traum übergegangen und hat die Grenze zwischen Traum und Wirklichkeit ausgedünnt."
+    }
 }
 
 IMAGOdb.zones[2437].name = "Zul'Aman"
@@ -111,7 +128,8 @@ IMAGOdb.zones[2393].pointsOfInterest = {
 }
 
 -- DIE ARKANTINE --
-IMAGOdb.zones[10473].name = "Die Arkantine"
-IMAGOdb.zones[10473].lore = [[Erschaffen als eine Taschendimension von einem Erzmagier der Kirin Tor lange vor dieser Zeit, öffnet die Arkantine nun ihre Türen für die Abenteurer Azeroths. Diese gemütliche Taverne bietet Zuflucht weit entfernt vom Chaos des Krieges und den Lasten der Welt. Ursprünglich ein Treffpunkt der Söhne Lothars während des Zweiten Krieges, ist das Gasthaus inzwischen zu einem lebhaften Ort voller Reisender und Besucher aus ganz Azeroth geworden.
+IMAGOdb.zones[2541].name = "Die Arkantine"
+IMAGOdb.zones[2541].lore = [[Erschaffen als eine Taschendimension von einem Erzmagier der Kirin Tor lange vor dieser Zeit, öffnet die Arkantine nun ihre Türen für die Abenteurer Azeroths. Diese gemütliche Taverne bietet Zuflucht weit entfernt vom Chaos des Krieges und den Lasten der Welt. Ursprünglich ein Treffpunkt der Söhne Lothars während des Zweiten Krieges, ist das Gasthaus inzwischen zu einem lebhaften Ort voller Reisender und Besucher aus ganz Azeroth geworden.
 
 Inoffiziell gehört die Arkantine dem Erzmagier Khadgar, auch wenn viele freundliche Seelen beschlossen haben, dauerhaft hierzubleiben. Hinter dem Tresen steht Schankkellner Bob und serviert nur die feinsten Getränke – mit einer Herzlichkeit, die selbst die kampferprobtesten Seelen zur Ruhe kommen lässt. Jeder darf so lange bleiben, wie er möchte, und Geschichten mit alten Freunden ebenso wie mit neu gewonnenen Gefährten teilen.]]
+
