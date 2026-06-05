@@ -1584,6 +1584,45 @@ IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].timeline = {
     }
 }
 
+-- LORD MAXWELL TYROSUS --
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].name = "Lord Maxwell Tyrosus"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].race = "Human"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].lore = [[Ever since the Scourge ravaged the Eastern Kingdoms, Maxwell Tyrosus has made it his calling to fight the undead and protect the innocent. He has not only become the leader of the Argent Dawn, but also the Hand of the Highlord of the Order of the Silver Hand. He may not have a flashy title or performed war-winning heroics like his fellow paladins such as Turalyon or Uther the Lightbringer – yet Tyrosus has become an invaluable asset in keeping the paladin orders disciplined and battle-ready.
+
+Even though he has lived in service of the Light for decades, Tyrosus has not been summoned by the Sunwell. Not letting himself be deterred by broken pride or doubt, he now faces new threats outside of Silvermoon without hesitation.]]
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].zones = {"Eastern Plaguelands"}
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Joined Alexandros Mograine in his mission to liberate Lordaeron from the Scourge. After Mograine's death, Tyrosus strongly opposed the fanatical ideas of the Scarlet Crusade and joined the newly founded Argent Dawn and quickly became the order's leader. He later aided Darion Mograine to save his father's soul.]],
+    },
+    {
+        era = "Classic",
+        text = [[Coordinated the troops of the Argent Dawn from inside Light's Hope Chapel and held the undead at bay in the Plaguelands. Managed to help slay Baron Rivendare in Stratholme and liberated the once lively city from the Scourge.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Defended Light's Hope Chapel from Darion Mograine and his death knights together with his friend Tirion Fordring. Witnessed the liberation of the death knights from the Lich King's mind control. Merged the Argent Dawn and Tirion's Knights of the Silver Hand into a new joined order – the Argent Crusade.]],
+    },
+    {
+        era = "Cata",
+        text = [[Continued to combat the Scourge and the Cult of the Damned in the Plaguelands.]],
+    },
+    {
+        era = "Legion",
+        text = [[Lost many comrades when the Burning Legion decimated the Argent Crusade – including Tirion Fording. Secured the Ashbringer for the Silver Hand and made the Champion of the Light its new leader. Later helped defend the Exodar and the Netherlight Temple from the Burning Legion.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Proudly promoted his protegé Arator Windrunner with a medal after the latter defeated the demon Sarothar and stopped another demon invasion.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Tyrosus paradoxically was not summoned to Quel'Thalas. He fought the emboldened Scourge in the Plaguelands and, with so few paladins now left in Light's Hope Chapel, recruited Darion Mograine's Ebon Blade to hold the lines at his side.]],
+    }
+}
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].aliases = {"Sally Whitemane", "Whitemane"}
@@ -2072,6 +2111,57 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
 }
 
 -- CAT_ARCANTINA
+-- GARONA HALFORCEN --
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].name = "Garona Halforcen"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].race = "Half-orc, half-draenei"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].lore = [[Garona will always be known for assassinating King Llane Wrynn of Stormwind and deciding the First War for the Old Horde. She mostly remembers it as being a near mindless puppet for Gul'dan and betraying the humans who had shown her more kindness than the ruthless Horde had all her life.  As her name implies, Garona was born to a draenei mother and an orc father and her heritage makes her an unusual individual. 
+
+Her strained relationship with the Horde was mended over the years and she now serves her people once more as an assassin and spy, yet occasionally has worked with the Alliance when it served her goals.]]
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].timeline = {
+    {
+        era = "Pre-WC1",
+        text = [[Born to a draenei prisoner as half-orc and half-draenei. Survived as a half-breed in the ruthless Bladewind clan and was later mind controlled by Gul'dan to become his perfect assassin. Was convinced by Gul'dan that she was half human, making her the ideal candidate to infiltrate Stormwind once the orcs would march to war.]],
+    },
+    {
+        era = "WC1",
+        text = [[Fought for the Horde in the first skirmishes on Azeroth. Successfully infiltrated Stormwind and spied on the Guardian, Medivh. Ended up genuinely befriending the humans and rumors state that she and Medivh developed more than a friendship. Helped the Alliance against the Horde but ended up shaken after Medivh's betrayal and failed to resist Gul'dan's mind control. Was forced to kill King Llane.]],
+    },
+    {
+        era = "WC2",
+        text = [[Remained friends with Khadgar and vowed to hunt down all remaining members of the Shadow Council.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Confronted Cho'gall but lost to the ogre mage and was once more mind controlled. Was ordered to assassinate King Varian Wrynn during a peace meeting between Horde and Alliance. While Varian fended off her assault, he saw the attack as a betrayal from the Horde and tensions between the factions worsened considerably.]],
+    },
+    {
+        era = "Cata",
+        text = [[Helped rescue Lirastrasza and deal a severe blow to the Twilight's Hammer. Out for revenge, she infiltrated the Twilight Citadel alongside an adventurer, and managed to finally help kill Cho'gall.]],
+    },
+    {
+        era = "Legion",
+        text = [[Slew the traitorous Althea Ebonlocke and infiltrated Stormwind during lockdown to thwart an attack of the Burning Legion. Entrusted the Kingslayers to the Shadowblade and joined the Uncrowned in Dalaran.]],
+    },
+    {
+        era = "BfA",
+        text = [[Was conscripted by Warchief Sylvanas Windrunner to fight in the Fourth War. Unwilling, she faked her loyalty and did her duty, but eagerly retreated from the war when Saurfang's rebellion arose.]],
+    },
+    {
+        era = "DF",
+        text = [[Was invited to the Kosh'harg Festival by Thrall and invited into the Shattered Hand Clan. Surprised to be accepted as a half-blooded orc and an outcast, she felt relieved and happy at how much the Horde had changed, and was inclined to take the offer.]],
+    },
+    {
+        era = "TWW",
+        text = [[Still a member of the Uncrowned, she survived the destruction of Dalaran and settled in Dornogal for a while.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Visited the Arcantina.]],
+    }
+}
+
 -- REXXAR --
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].name = "Rexxar"
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].aliases = {}
@@ -2138,6 +2228,49 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
     }
 }
 
+-- GORGONNA --
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].name = "Gorgonna"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].race = "Orc"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].lore = [[Gorgonna is the current chieftain of the Warsong Clan and values strength and honor in battle above all other virtues.
+
+Loyal to the New Horde since being freed from the internment camps by Thrall, Gorgonna has learned from and internalized the mistakes of the Horde of old. After the fall of Garrosh Hellscream, she vowed to never lead the Warsong Clan down a similar dark path again.]]
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].timeline = {
+    {
+        era = "WC2",
+        text = [[Brought to Azeroth by her parents alongside her sister, Krenna, when both were children. Chieftain Grommash Hellscream consequently exiled the family. Gorgonna's parents were killed by humans after that and the young sisters grew up in Durnholde Keep.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Freed by Thrall and later followed him loyally to Kalimdor.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Interrupted a heated argument between Krenna and Garrosh Hellscream. Tried to explain to Garrosh the need for the New Horde to atone for its past deeds in the First and Second Wars,  but was met with dismissal.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Served under Krenna's command as her advisor in Conquest Hold during the war campaign in Northrend. Undermined her sister's exceedingly cruel commands and was challenged to a Mak'gora by her sibling. Gorgonna won but deeply regretted having to kill her own blood.]],
+    },
+    {
+        era = "WoD",
+        text = [[After Garrosh's fall from grace, Gorgonna rejoined the Warsong Clan in Ashenvale. Won the Mak'gora for leadership.]],
+    },
+    {
+        era = "DF",
+        text = [[Represented the Warsong Clan at the first Kosh'harg Festival on Azeroth and gathered new recruits.]],
+    },
+    {
+        era = "TWW",
+        text = [[Joined Horde forces on Khaz Algar in the war against Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Took a moment to relax in the Arcantina.]],
+    }
+}
+
 -- TEHD SHOEMAKER --
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].name = "Tehd Shoemaker"
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].aliases = {"Tehd"}
@@ -2163,6 +2296,45 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
     {
         era = "Midnight",
         text = [[Unenthusiastically tried to help out the armies of Silvermoon but was promptly arrested by the Army of the Light for being a warlock. Abandoning the fight, he convinced Marius to join him for a drink in the Arcantica.]],
+    }
+}
+
+-- VANESSA VANCLEEF --
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].name = "Vanessa VanCleef"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].lore = [[Vanessa VanCleef grew up on stories of Stormwind's horrific treatment of the Stonemasons and the greed of the noble class. Seeing her father Edwin murdered and decapitated by Alliance adventurers only hardened her beliefs. Under the guise of Hope Saldean, she became the leader of the Defias Brotherhood and sought vengeance by any means necessary.
+
+Over the years, Vanessa has realized that war with Stormwind is not the solution to what truly matters to her: her home of Westfall. Still not trusting the crown, she left the Brotherhood and now aids the Breadbasket Guild to help the people of Westfall.]]
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].timeline = {
+    {
+        era = "Classic",
+        text = [[Witnessed the death of her father, Edwin VanCleef, at the hands of hired adventurers. She was adopted by the Saldeans, took on the name Hope, yet stayed bitter.]],
+    },
+    {
+        era = "Cata",
+        text = [[Disguised as Hope Saldean, she rallied the homeless of Westfall against Stormwind, citing the war in Northrend as the reason for their poverty. Reestablished the Defias Brotherhood and prepared for an attack on Stormwind City. Was stopped by adventurers under orders of Gryan Stoutmantle and Mathias Shaw and faked her own death.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Uncrowned after losing a duel for the seat of the last Shadow to the Champion of Azeroth. Recruited new members for the organization and fought alongside the Shadowblade in the defense of the Exodar.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Made an unofficial deal with SI:7 after working with Mathias Shaw during the invasion of the Burning Legion. Vanessa became his informant and kept the Defias on a short leash in exchange for not being persecuted.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Noticed a rise in cruelty among the ranks of her Defias. Realized that after King Anduin's reforms and formal pardons most of her people had returned to the Alliance, leaving only the criminals under her command.]],
+    },
+    {
+        era = "DF",
+        text = [[Lost leadership of the Defias to the corrupt Count Clessington who rallied the Brotherhood to sack Stormwind for its wealth. Worked with Mathias Shaw to prevent this. Kidnapped Cecilia Clessington, but ultimately befriended her, sharing the same ideals. After killing Count Clessington and declining an offer to join SI:7, she returned to Westfall with Cecilia to help the Breadbasket Guild.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina with Cecilia.]],
     }
 }
 

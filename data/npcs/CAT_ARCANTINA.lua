@@ -6,9 +6,23 @@ IMAGOdb = IMAGOdb or {}
 IMAGOdb.npcs = IMAGOdb.npcs or {}
 IMAGOdb.npcs.CAT_ARCANTINA = IMAGOdb.npcs.CAT_ARCANTINA or {}
 
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"] = {
+    displayID = 259344,
+    ids = {259344},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"] = {
     displayID = 259334,
     ids = {259334},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"] = {
+    displayID = 250410,
+    ids = {250410},
     zones = {},
     category = "CAT_ARCANTINA",
 }
@@ -20,9 +34,17 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"] = {
     category = "CAT_ARCANTINA",
 }
 
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"] = {
+    displayID = 259335,
+    ids = {259335},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"] = {
     displayID = 259336,
     ids = {259336},
     zones = {},
     category = "CAT_ARCANTINA",
 }
+
