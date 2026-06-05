@@ -150,6 +150,10 @@ if locale == "deDE" then
     L["MODE_ENCYCLOPEDIA"] = "Enzyklopädie-Modus"
     L["MODE_MANUAL_UNLOCK"]= "Manuell freischalten"
 
+    -- Map Toggle --
+    L["ACTION_OPEN_MAP"] = "Weltkarte öffnen"
+    L["ACTION_OPEN_MAP_TIP"] = "Diese Zone auf der Weltkarte öffnen"
+
     -- Confirm Dialogs
     L["CONFIRM_YES"]              = "Ja"
     L["CONFIRM_NO"]               = "Nein"
