@@ -20,20 +20,37 @@ IMAGOdb.zones[2405].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2413].name = "Harandar"
-IMAGOdb.zones[2413].lore = "Harandar is the home of the haranir, concealed deep beneath the massive rootways of the world trees. This bioluminescent fungal jungle is a place of primordial magic, whose inhabitants live as secret guardians of Azeroth in perfect harmony with nature. However, the peaceful existence of the Hara'ti tribe is on the brink: The Rift of Aln, a primordial wound, blurs the line between dream and reality, spewing forth terrifying nightmares. Simultaneously, the destructive and fanatical power of the Lightbloom overgrows the land, corrupting the native flora."
+IMAGOdb.zones[2413].lore = [[Hidden deep within Azeroth, the mysterious home of the haranir has been a secret to the outside world until now. Here, the roots of the world trees converge to form the Cradle of the goddess Aln'hara. The deity has been gone for a long time, but the roots remain, and the haranir have made it their sacred charge to guard and nurture them. Not all is peaceful here, despite first appearances. The eruption of the Sunwell has sparked rapid plant life growth even this far away from the font, and the presence of outsiders in Harandar might just threaten the political stability of the Hara'ti that they have maintained for generations. ]]
 IMAGOdb.zones[2413].pointsOfInterest = {
     {
         name = "The Rift of Aln",
-        lore = "A primordial wound in the fabric of Azeroth. Here, the barrier to the plane of dreams is so thin that the echoes of the Goddess' anguish are powerful enough to drive even the strongest mind to madness."
+        lore = "Anguish, suffering and madness are the only things one will find in this strange place, this wound in the fabric of the world. Horrific creatures from Aln'hara's nightmares are spewed forth from here, held only at bay by the brave Shul'ka. The Rift of Aln exists physically at the bottom of Harandar, but it has bled into the Emerald Dream long ago, thinning the barrier between dream and reality. "
     },
     {
-        name = "The Blinding Vale",
-        lore = "A terrifying testament to the recent threat. The Lightbloom sprouted instantly here, transforming the once-peaceful Rutaani into blind zealots under the command of the power-hungry Lightkeeper Ruia."
+        name = "The Den",
+        lore = "The Council of Elders reconvenes in this ancient place so close to the light of the Cradle, maintaining sacred traditions and upholding the peace. Not only is it a place for the haranir, but also the fungarians and the ruutani. If the outsiders from Silvermoon want the aid of the Hara'ti, they will receive it from here – or be denied."
     },
     {
-        name = "The Den of Echoes",
-        lore = "The spiritual and political heart of Harandar. Here, the Elder Council gathers around Naynar to preserve the magical paintings of the ancestors and orchestrate the salvation of the rootways."
+        name = "The Roots of the World Trees",
+        lore = [[Every world tree's roots join the branches in Harandar, and every tree is assigned a Rootwarden by the Hara'ti. 
+
+    Amirdrassil, the youngest of the trees and symbol of hope for the night elves in Bel'ameth.
+
+    Shaladrassil, the once-corrupted tree of the Broken Isles. Through its lingering weakness left by the Emerald Nightmare, the Lightbloom was able to take hold.
+
+    Teldrassil, the tragedy of the Fourth War is still evident in the eternally-burning remains of its roots.
+
+    Nordrassil, the roots of the reborn tree of Mount Hyjal grow ever strong.
+
+    Vordrassil, the third tree to have ever sprouted in the world has been corrupted by Yogg-Saron and its roots were cut to prevent the spread of the Nightmare. No trace remains in Harandar.
+
+Those are the world trees of Azeroth that have been known, protected and revered by her people, most of all the night elves. Yet there are at least seven sets of roots reaching towards the Cradle, leaving their origins a mystery for now. 
+]]
     },
+    {
+        name = "The Cradle",
+        lore = "High above the lush fungal jungle of Harandar, not unlike a sun, shines the Cradle. The roots of the various world trees entwine here to form a natural nest, fit to host a soul of mighty proportions. The song that drew the haranir underground all these millennia ago originated from here, and even though the song lingers, the Cradle lies empty now."
+    }
 }
 
 IMAGOdb.zones[2437].name = "Zul'Aman"
