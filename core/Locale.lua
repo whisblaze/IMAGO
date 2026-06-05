@@ -183,6 +183,7 @@ else
     L["OPT_MAIN_LORE_NO_TIMER"] = "Keep Discovery Card open (no timer)"
     L["OPT_SNIPPET_NO_TIMER"] = "Keep Idle Flashcards open (no timer)"
     L["OPT_OPAQUE_UI"] = "100% opaque windows and popups"
+    L["OPT_SHOW_MINIMAP"] = "Show Minimap Icon"
     L["CONTEXT_LORE_BTN"]  = "IMAGO Lore"
     L["CONTEXT_LORE_NONE"] = "|cFF888888IMAGO:|r No lore found for this NPC."
     L["CONTEXT_LORE_COMBAT"] = "|cFF888888IMAGO:|r Lore view is unavailable in combat."
