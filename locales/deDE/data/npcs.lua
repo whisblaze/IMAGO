@@ -1940,3 +1940,137 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
     }
 }
 
+-- CAT_ARCANTINA --
+-- VANESSA VANCLEEF --
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].name = "Vanessa van Cleef"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].race = "Mensch"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].lore = [[Vanessa van Cleef wuchs mit Geschichten über Sturmwinds grausame Behandlung der Steinmetze und über die Gier der Adelsklasse auf. Mit ansehen zu müssen, wie ihr Vater Edwin von angeheuerten Abenteurern ermordet und enthauptet wurde, verhärtete ihre Überzeugungen nur noch weiter. Unter der Identität von Hope Saldean wurde sie zur Anführerin der Bruderschaft der Defias und suchte nach Rache ohne Rücksicht auf Verluste.
+
+Im Laufe der Jahre erkannte Vanessa jedoch, dass ein Krieg gegen Sturmwind keine Lösung für das ist, was ihr wirklich am Herzen liegt: ihre Heimat Westfall. Da sie der Krone weiterhin misstraut, verließ sie die Bruderschaft und unterstützt nun die Brotkorb-Gilde, um den Menschen von Westfall zu helfen.]]
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].zones = {"Die Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].timeline = {
+    {
+        era = "Classic",
+        text = [[Wurde Zeugin des Todes ihres Vaters Edwin van Cleef durch angeheuerte Abenteurer. Sie wurde von den Saldeans adoptiert, nahm den Namen Hope - wie die Hoffnung - an, blieb jedoch verbittert.]],
+    },
+    {
+        era = "Cata",
+        text = [[Als Hope Saldean hetzte sie die Obdachlosen von Westfall gegen Sturmwind auf und machte den Krieg in Nordend für ihre Armut verantwortlich. Sie baute die Bruderschaft der Defias erneut auf und bereitete einen Angriff auf die Stadt Sturmwind vor. Wurde von Abenteurern unter dem Kommando von Gryan Starkmantel und Mathias Shaw aufgehalten und täuschte ihren eigenen Tod vor.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich den Ungekrönten an, nachdem sie ein Duell um den Platz des letzten Schattens gegen den Champion Azeroths verloren hatte. Rekrutierte neue Mitglieder für die Organisation und kämpfte an der Seite der Schattenklinge bei der Verteidigung der Exodar.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Traf eine inoffizielle Vereinbarung mit SI:7, nachdem sie während der Invasion der Brennenden Legion mit Mathias Shaw zusammengearbeitet hatte. Vanessa wurde seine Informantin und hielt die Defias im Gegenzug dafür, nicht verfolgt zu werden, an kurzer Leine.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Bemerkte zunehmende Grausamkeit innerhalb der Reihen der Defias. Sie erkannte, dass nach König Anduins Reformen und offiziellen Begnadigungen die meisten ihrer Leute zur Allianz zurückgekehrt waren und nur noch Kriminelle unter ihrem Kommando geblieben waren.]],
+    },
+    {
+        era = "DF",
+        text = [[Verlor die Führung der Defias an den korrupten Grafen Clessington, der die Bruderschaft dazu aufrief, Sturmwind wegen seiner Reichtümer zu plündern. Arbeitete mit Mathias Shaw zusammen, um dies zu verhindern. Entführte Cecilia Clessington, freundete sich letztlich jedoch mit ihr an, da beide dieselben Ideale teilten. Nachdem sie Graf Clessington getötet und ein Angebot ausgeschlagen hatte, SI:7 beizutreten, kehrte sie gemeinsam mit Cecilia nach Westfall zurück, um der Brotkorb-Gilde zu helfen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Trank und plauderte mit Cecilia in der Arkantine.]],
+    }
+}
+
+-- GORGONNA --
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].name = "Gorgonna"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].race = "Orc"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].lore = [[Gorgonna ist die derzeitige Häuptlingin des Kriegshymnenclans und schätzt Stärke sowie Ehre im Kampf über alle anderen Tugenden.
+
+Seit ihrer Befreiung aus den Internierungslagern durch Thrall ist sie der Neuen Horde loyal ergeben. Gorgonna hat aus den Fehlern der alten Horde gelernt und diese Lehren verinnerlicht. Nach dem Sturz von Garrosh Höllschrei schwor sie, den Kriegshymnenclan niemals wieder einen ähnlich düsteren Pfad beschreiten zu lassen.]]
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].zones = {"Die Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].timeline = {
+    {
+        era = "WC2",
+        text = [[Wurde gemeinsam mit ihrer Schwester Krenna als Kind von ihren Eltern nach Azeroth gebracht. Häuptling Grommash Höllschrei verbannte die Familie daraufhin. Gorgonnas Eltern wurden danach von Menschen getötet, und die jungen Schwestern wuchsen in Burg Durnholde auf.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Wurde von Thrall befreit und folgte ihm später loyal nach Kalimdor.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Unterbrach einen hitzigen Streit zwischen Krenna und Garrosh Höllschrei. Versuchte Garrosh die Notwendigkeit zu erklären, dass die neue Horde für ihre Taten im Ersten und Zweiten Krieg büßen müsse, traf jedoch auf Unverständnis.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Diente unter Krennas Kommando als ihre Beraterin in Burg Siegeswall während des Feldzugs in Nordend. Untergrub die außergewöhnlich grausamen Befehle ihrer Schwester und wurde von ihr zu einem Mak’gora herausgefordert. Gorgonna gewann, bereute es jedoch zutiefst, ihr eigenes Blut getötet zu haben.]],
+    },
+    {
+        era = "WoD",
+        text = [[Nach Garroshs Sturz kehrte Gorgonna zum Kriegshymnenclan im Eschental zurück. Gewann das Mak’gora um die Führung des Clans.]],
+    },
+    {
+        era = "DF",
+        text = [[Vertrat den Kriegshymnenclan beim ersten Kosh’harg-Fest auf Azeroth und sammelte neue Rekruten.]],
+    },
+    {
+        era = "TWW",
+        text = [[Schloss sich den Streitkräften der Horde in Khaz Algar im Krieg gegen Xal’atath an.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Nahm sich einen Moment Zeit, um in der Arkantine zu entspannen.]],
+    }
+}
+
+-- GARONA DIE HALBORCIN --
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].name = "Garona die Halborcin"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].race = "Halborc, Halbdraenei"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].lore = [[Garona wird für immer dafür bekannt sein, König Llane Wrynn von Sturmwind ermordet und damit den Ersten Krieg zugunsten der Alten Horde entschieden zu haben. Sie selbst erinnert sich daran vor allem als eine Zeit, in der sie Gul’dan als nahezu willenlose Marionette diente und die Menschen verriet, die ihr mehr Freundlichkeit entgegengebracht hatten, als die unbarmherzige Horde es je getan hatte.
+
+Wie ihr Name bereits andeutet, wurde Garona als Tochter einer Draeneimutter und eines orcischen Vaters geboren, was sie zu einer ungewöhnlichen Persönlichkeit macht.
+Ihre angespannte Beziehung zur Horde heilte im Laufe der Jahre allmählich. Heute dient sie ihrem Volk erneut als Assassinin und Spionin, arbeitet jedoch gelegentlich auch mit der Allianz zusammen, wenn dies ihren Zielen dienlich ist.]]
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].zones = {"Die Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].timeline = {
+    {
+        era = "Pre-WC1",
+        text = [[Als Tochter einer gefangenen Draenei wurde Garona als Halborcin und Halbdraenei geboren. Sie überlebte als Mischling im grausamen Klingenwindclan und wurde später von Gul’dan aufgenommen, um zu seiner perfektesten Assassinin zu werden. Gul’dan überzeugte sie davon, halb Mensch zu sein, wodurch sie zur idealen Kandidatin wurde, um Sturmwind zu infiltrieren, sobald die Orcs in den Krieg ziehen würden.]],
+    },
+    {
+        era = "WC1",
+        text = [[Kämpfte für die Horde in den ersten Gefechten auf Azeroth. Infiltrierte erfolgreich Sturmwind und spionierte den Wächter Medivh aus. Dabei freundete sie sich aufrichtig mit den Menschen an, und Gerüchten zufolge entwickelte sich zwischen ihr und Medivh sogar mehr als nur Freundschaft. Sie half der Allianz gegen die Horde, wurde jedoch durch Medivhs Verrat erschüttert und konnte sich Gul’dans Gedankenkontrolle nicht mehr widersetzen. Schließlich wurde sie gezwungen, König Llane Wrynn zu töten.]],
+    },
+    {
+        era = "WC2",
+        text = [[Blieb mit Khadgar befreundet und schwor, alle verbliebenen Mitglieder des Schattenrats zu jagen.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[Stellte sich Cho’gall entgegen, unterlag jedoch dem Oger-Magier und geriet erneut unter Gedankenkontrolle. Sie erhielt den Auftrag, König Varian Wrynn während eines Friedensgipfels zwischen Horde und Allianz zu ermorden. Obwohl Varian den Anschlag abwehren konnte, betrachtete er ihn als einen Verrat der Horde, wodurch sich die Spannungen zwischen den Fraktionen erheblich verschärften.]],
+    },
+    {
+        era = "Cata",
+        text = [[Half dabei, Lirastrasza zu retten und dem Schattenhammerkult einen schweren Schlag zu versetzen. Auf Rache aus, infiltrierte sie gemeinsam mit einem Abenteurer die Bastion des Zwielichts und trug schließlich dazu bei, Cho’gall endgültig zu töten.]],
+    },
+    {
+        era = "Legion",
+        text = [[Tötete die Verräterin Althea Schwarzhaupt und infiltrierte ein abgeriegeltes Sturmwind, um einen Angriff der Brennenden Legion zu vereiteln. Übergab die Königsmörder an die Schattenklinge und schloss sich den Ungekrönten in Dalaran an.]],
+    },
+    {
+        era = "BfA",
+        text = [[Wurde von Kriegshäuptling Sylvanas Windläufer zum Dienst im Vierten Krieg eingezogen. Widerwillig täuschte sie Loyalität vor und erfüllte ihre Pflicht, zog sich jedoch aus dem Krieg zurück, als Saurfangs Rebellion begann.]],
+    },
+    {
+        era = "DF",
+        text = [[Wurde von Thrall zum Kosh’harg-Fest eingeladen und erhielt ein Angebot, dem Clan der Zerschmetterten Hand beizutreten. Überrascht, als halbblütige Orcin und Außenseiterin akzeptiert zu werden, empfand sie Erleichterung und Freude darüber, wie sehr sich die Horde verändert hatte, und war geneigt, das Angebot anzunehmen.]],
+    },
+    {
+        era = "TWW",
+        text = [[Noch immer Mitglied der Ungekrönten, überlebte sie die Zerstörung Dalarans und ließ sich für einige Zeit in Dornogal nieder.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Besuchte die Arkantine.]],
+    }
+}
