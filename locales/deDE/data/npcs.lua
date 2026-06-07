@@ -1354,6 +1354,45 @@ IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].timeline = {
     }
 }
 
+-- LORD MAXWELL TYROSUS --
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].name = "Lord Maxwell Tyrosus"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].race = "Mensch"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].lore = [[Seit die Geißel die Östlichen Königreiche verheerte, hat Maxwell Tyrosus es sich zur Aufgabe gemacht, die Untoten zu bekämpfen und die Unschuldigen zu beschützen. Er wurde nicht nur zum Anführer der Argentumdämmerung, sondern auch zur Rechten Hand des Hochlords des Ordens der Silbernen Hand. Vielleicht trägt er keinen glanzvollen Titel und vollbrachte keine kriegsentscheidenden Heldentaten wie seine Mitstreiter Turalyon oder Uther Lichtbringer – dennoch ist Tyrosus zu einer unverzichtbaren Stütze geworden, wenn es darum geht, die Paladinorden diszipliniert und kampfbereit zu halten.
+
+Obwohl Tyrosus seit Jahrzehnten im Dienst des Lichts steht, wurde er nicht vom Sonnenbrunnen gerufen. Ohne sich von gekränktem Stolz oder Zweifeln entmutigen zu lassen, stellt er sich nun ohne Zögern neuen Bedrohungen außerhalb von Silbermond.]]
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].zones = {"Östliche Pestländer"}
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Schloss sich Alexandros Mograine bei dessen Mission an, Lordaeron von der Geißel zu befreien. Nach Mograines Tod stellte sich Lord Maxwell Tyrosus entschieden gegen die fanatischen Ideale des Scharlachroten Kreuzzuges und trat der neu gegründeten Argentumdämmerung bei, deren Anführer er rasch wurde. Später half er Darion Mograine dabei, die Seele seines Vaters zu retten.]],
+    },
+    {
+        era = "Classic",
+        text = [[Koordinierte die Truppen der Argentumdämmerung innerhalb der Kapelle des hoffnungsvollen Lichts und hielt die Untoten in den Pestländern in Schach. Half dabei, Baron Totenschwur in Stratholme zu besiegen und die einst lebendige Stadt von der Geißel zu befreien.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Verteidigte gemeinsam mit seinem Freund Tirion Fordring die Kapelle des hoffnungsvollen Lichts gegen Darion Mograine und dessen Todesritter. Wurde Zeuge der Befreiung der Todesritter von der Gedankenkontrolle des Lichkönigs. Vereinte die Argentumdämmerung und Tirions Ritter der Silbernen Hand zu einem neuen gemeinsamen Orden – dem Argentumkreuzzug.]],
+    },
+    {
+        era = "Cata",
+        text = [[Setzte den Kampf gegen die Geißel und den Kult der Verdammten in den Pestländern fort.]],
+    },
+    {
+        era = "Legion",
+        text = [[Verlor viele Gefährten, als die Brennende Legion den Argentumkreuzzug vernichtend schlug – darunter auch Tirion Fordring. Sicherte den Aschenbringer für die Silberne Hand und ernannte den Champion des Lichts zu ihrem neuen Anführer. Half später dabei, die Exodar und den Netherlichttempel gegen die Brennende Legion zu verteidigen.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Beförderte stolz seinen Schützling Arator Windläufer, nachdem dieser den Dämon Sarothar besiegt und eine weitere Dämoneninvasion verhindert hatte.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Paradoxerweise wurde Tyrosus nicht nach Quel'Thalas gerufen. Stattdessen bekämpfte er die erstarkte Geißel in den Pestländern und rekrutierte – da nur noch wenige Paladine in der Kapelle des hoffnungsvollen Lichts verblieben waren – Darion Mograines Schwarze Klinge, um gemeinsam mit ihnen die Fronten zu halten.]],
+    }
+}
+
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windläufer"
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Leerenelfe"
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Den Völkern Azeroths ist Alleria als eine der größten Kriegsheldinnen der Allianz bekannt. Sie kämpfte im Zweiten Krieg gegen die Horde sowie im jahrtausendelangen Kreuzzug gegen die Brennende Legion. Sie ist vieles - eine Mutter, eine Liebende, eine Heldin, eine ältere Schwester - doch vor allem ist sie eine Jägerin. Alles steht hinter ihren Missionen zurück, und kein Preis ist zu hoch, um die Sicherheit ihrer Welt zu gewährleisten.
