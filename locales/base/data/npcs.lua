@@ -2249,6 +2249,33 @@ IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].timeline = {
     }
 }
 
+-- MARIUS FELBANE --
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].name = "Marius Felbane"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].race = "Night Elf"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].lore = [[Demon hunter Marius Felbane harbors a hatred for the Burning Legion rivaled by few others. His abhorrence runs deep enough that he was willing to team up with the warlock Tehd Shoemaker, despite despising what his undead companion represents. He barely saw him as a person at first but had to begrudgingly admit that they fight exceptionally well together. 
+
+After slaying over one hundred and fifty demons since the Legion's invasion of the Broken Shore, the two have now set their sights on new enemies.]]
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].timeline = {
+    {
+        era = "TBC",
+        text = [[Pledged his loyalty to Illidan Stormrage in Outland. Invaded Mardum at his behest, but upon returning was captured and imprisoned alongside his fellow Illidari by Maiev Shadowsong.]],
+    },
+    {
+        era = "Legion",
+        text = [[After being locked in stasis for 6 years, Marius and the other demon hunters were freed by their captor as a last resort to combat Gul'dan. Joined the battle against the Burning Legion, worked together with Tehd Shoemaker and killed or subdued various demons, occasionally helped by the Champion of Azeroth. Later fought on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kept hunting remaining demons on Zuldazar with Tehd.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Begrudgingly accepted Tehd's request to rest and relax for a while in the Arcantina.]],
+    }
+}
+
 -- FLYNN FAIRWIND --
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].name = "Flynn Fairwind"
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].race = "Human"
