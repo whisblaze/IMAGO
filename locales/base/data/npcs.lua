@@ -1182,6 +1182,41 @@ IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].timeline = {
     }
 }
 
+-- TARENAR SUNSTRIKE --
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].name = "Tarenar Sunstrike"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].lore = [[Since they were kids, Tarenar and his best friend Gidwin Goldbraids pretended to be heroes. As the 'Paladin Pals' they wanted to combat evil side by side. At Light's Hope Chapel, they made that dream reality and joined the Argent Crusade.
+
+With his recklessness and tendency to not take things seriously, Tarenar frequently incites frustration in both Gidwin and their mutual friend Fiona. However, he never hesitates to make up for his mistakes and take responsibility.]]
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].zones = {"Arcantina", "Silvermoon City", "Isle of Quel'Danas", "Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].timeline = {
+    {
+        era = "Cata",
+        text = [[Traveled with Gidwin on Fiona's caravan to become paladins at Light's Hope Chapel. Rescued Gidwin from being turned into a death knight, and both were admitted into the Argent Crusade.]],
+    },
+    {
+        era = "WoD",
+        text = [[Accompanied Fiona and Gidwin to Draenor. Helped out the Alliance army against rampaging botani despite being a blood elf.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the reformed Knights of the Silver Hand and fought against the Burning Legion on the Broken Shore.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Celebrated the Legion's defeat with Gidwin by amassing bar tabs in Silvermoon City. Had to sneak out when the Fourth War erupted.]],
+    },
+    {
+        era = "DF",
+        text = [[Went traveling with Fiona once more on the Dragon Isles.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was called by the Sunwell to defend his homeland. Paid back his and Gidwin's drinking debts. Being banned from most inns of Quel'Thalas, the two friends were happy to spend time in the magical Arcantina.]],
+    }
+}
+
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
