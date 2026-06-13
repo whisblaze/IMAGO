@@ -2230,6 +2230,37 @@ IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].timeline = {
     }
 }
 
+--SCALECOMMANDER AZUREATHEL --
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].name = "Scalecommander Azurathel"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].lore = [[Azurathel was one of the first dracthyr created by Neltharion and was hand-picked by his maker to lead the Obsidian Warders – the shield on the front lines protecting the other dracthyr. After awakening from stasis during the rise of the Incarnates, he led his weyrn into the ranks of the Alliance. 
+
+Even though he has vowed to keep Azeroth safe from danger, he has chosen to remember Neltharion with fondness, preferring to hold him in his memory as a father instead of the tyrant he became as Deathwing.]]
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Created by Neltharion to serve as a protector to his fellow dracthyr. Was in charge of defending the black dragonflight's strongholds on the Dragon Isles. When Raszageth destroyed the titan relic Oathbinder, used by Neltharion to mind control the dracthyr, Azurathel, along with his companions, was imprisoned.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Awoke thousands of years later to a changed world. Witnessed Raszageth's reawakening and was unable to stop it. At the behest of the black dragons Wrathion and Ebyssian, the dracthyr split up to join the Horde and the Alliance. Azurathel led the Obsidian Warders to Stormwind and joined the Alliance.]],
+    },
+    {
+        era = "DF",
+        text = [[Agreed with High Exarch Turalyon to send Alliance forces to aid the dragon aspects on the Dragon Isles but to remain peaceful with the Horde. Fought the Primal Incarnates on the Isles and later in the Emerald Dream.]],
+    },
+    {
+        era = "TWW",
+        text = [[Greeted newly-awakened dracthyr that chose to join him in the Alliance.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Had a drink with fellow Scalecommander Emberthal in the Arcantina.]],
+    }
+}
+
 -- CECILIA CLESSINGTON --
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].name = "Cecilia Clessington"
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].race = "Human"
