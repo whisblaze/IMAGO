@@ -2164,6 +2164,67 @@ IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].timeline = {
     }
 }
 
+-- LILLIAN VOSS --
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].name = "Lillian Voss"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].race = "Undead"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].lore = [[When she was alive, Lillian Voss was part of the Scarlet Crusade. Her enemies were the undead, and she made no distinction between Forsaken and Scourge. She hunted them, she hated them. And then she became one of them.
+
+It took her a long time to accept what she had become and let go of her self-hatred. In the end, she found kinship among the ranks of the Forsaken of the Horde and brought solace to newly risen members by helping them accept their new unlife. 
+
+She uses her considerable abilities for the sake of her people and is not above applying underhanded tactics. Even though she is so used to fighting, she now embraces the peace between the factions.]]
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].timeline = {
+    {
+        era = "Pre-Cata",
+        text = [[Raised by her father, High Priest Benedictus Voss, to be an efficient killing machine for the Scarlet Crusade. Sometime before the Cataclysm, Lillian died and was laid to rest in a mass grave.]],
+    },
+    {
+        era = "Cata",
+        text = [[Was raised as a Forsaken but fled in horror at what she had become. She tried to return to the Crusade, but was imprisoned and put up for execution. Developed a hatred for her former friends and family and went on a killing spree which included her father.]],
+    },
+    {
+        era = "MoP",
+        text = [[Eradicated the reforming Scarlet Crusade in the Scarlet Monastery. Combated Darkmaster Gandling in Scholomance.]],
+    },
+    {
+        era = "WoD",
+        text = [[Helped Horde and Alliance forces against the undead of Draenor.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Uncrowned in Dalaran and fought alongside the Shadowblade on the Broken Shore. Took out dangerous undead homunculi of the Legion.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[With Sylvanas raising more and more Forsaken, and with the Alliance continuing to harbor hatred for their fallen kin, Lillian officially joined the Horde.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought against the Alliance on Kul Tiras and helped new Forsaken troops to adapt to their fate as undead in the Horde. After Sylvanas' betrayal, Voss joined the new Horde Council as representative of the Forsaken. Met Calia Menethil and considered her a worthy ruler of Lordaeron.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[As interim leader of the Forsaken, Lillian began plans to secure a future for the Forsaken.]],
+    },
+    {
+        era = "SL",
+        text = [[Managed to reclaim the Undercity from the blight of the Fourth War. Proposed the formation of the Desolate Council - the new ruling body of the Forsaken - and joined it. Successfully encouraged Calia Menethil to also step up as a co-ruler.]],
+    },
+    {
+        era = "DF",
+        text = [[Led the Forsaken strike force against the Scarlet Crusade, took back Fenris Isle and killed Commander Forsythe. Later distracted the Scarlet Crusade in Gilneas to help the worgen reclaim their city. Worked with Shandris Feathermoon to help defend Amirdrassil from Fyrakk's forces.]],
+    },
+    {
+        era = "TWW",
+        text = [[Spied on the ascended nerubians of Azj-Kahet and discovered Queen Neferess' true fate. Fought, then saved Y'tekhi after they were mind-controlled by Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Spent a peaceful while in the Arcantina.]],
+    }
+}
+
 -- TEHD SHOEMAKER --
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].name = "Tehd Shoemaker"
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].race = "Undead Human"
