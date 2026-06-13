@@ -327,7 +327,7 @@ IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
     },
     {
         era = "DF",
-        text = [[Was present at the reformation of Tyr and the founding of Tyr's Hand Order.]],
+        text = [[Was present at the reformation of Tyr and the founding of Tyr's Guard.]],
     },
     {
         era = "TWW",

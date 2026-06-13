@@ -65,7 +65,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin"].timeline = {
     {era = "SL", text = "Verteidigte Silbermond an der Seite von Großmagister Rommath und Aethas Sonnenhäscher gegen neue Übergriffe der Geißel."},
     {era = "Pre-DF", text = "Führte die Trauung von Lor'themar und Thalyssra durch."},
     {era = "TWW", text = "Half bei der Verteidigung von Heilsturz gegen Xal'ataths Streitkräfte und koordinierte die Ausbildung neuer Rekruten der Irdenen für die Horde."},
-    {era = "Pre-Midnight", text = "Versammelte gemeinsam mit Alonsus Faol die Priester von Azeroth in Silbermond, in Erwartung von Xal'ataths Angriff."},
+    {era = "Pre-MN", text = "Versammelte gemeinsam mit Alonsus Faol die Priester von Azeroth in Silbermond, in Erwartung von Xal'ataths Angriff."},
     {era = "Midnight", text = "Liadrin kämpfte an vorderster Front bei der Verteidigung des Sonnenbrunnens, rekrutierte externe Hilfe von Zul'jarras Amani und half bei der Erschaffung des Düsterbrunnens."},
 }
 
@@ -774,7 +774,7 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"].timeline = {
     {era = "Pre-BfA", text = "Führte Calia Menethil zurück in die Welt. Auf Geheiß von König Anduin half er bei der Organisation der Zusammenkunft, um die Verlassenen und die lebenden Menschen einander wieder näherzubringen. Während der Verhandlungen lehnte Alonsus es ab, der Horde beizutreten. Half dabei, Calia als vom Licht berührte Untote wiederzuerwecken, nachdem sie beim Massaker der Zusammenkunft getötet worden war."},
     {era = "BfA", text = "Unterstützte die Nachtelfen-Flüchtlinge von Teldrassil bei der Bereitstellung von Notunterkünften und entsandte Priester, um die Verwundeten zu heilen."},
     {era = "SL", text = "Half den Verlassenen dabei, Unterstadt von der Seuche des Vierten Krieges zu befreien, und war bei der Gründung des Desolaten Rates anwesend."},
-    {era = "Pre-Midnight", text = "Versammelte auf Lady Liadrins Ersuchen die Priester in Silbermond, in Erwartung von Xal'ataths Angriff auf den Sonnenbrunnen."},
+    {era = "Pre-MN", text = "Versammelte auf Lady Liadrins Ersuchen die Priester in Silbermond, in Erwartung von Xal'ataths Angriff auf den Sonnenbrunnen."},
     {era = "Midnight", text = "Überwachte die Verteidigung des Sonnenbrunnens und stärkte die erschöpften Verteidiger mit heiliger Magie. Half Arator dabei, seine Zweifel an seinem Vater und dem Licht zu überwinden."},
 }
 
@@ -1126,7 +1126,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
         text = [[Nachdem sie sechs Jahre lang in Stasis gefangen gewesen war, wurden Allari und die anderen Dämonenjäger von ihrer einstigen Kerkermeisterin als letztes Mittel gegen Gul'dan befreit. Half dabei, die Streitkräfte der Illidari wiederaufzubauen, indem sie Dämonenseelen einfing, um den Teufelshammer wiederherzustellen, und unterstützte die Bergung der Kriegsklingen der Aldrachi. Half außerdem dabei, die Seele Illidan Sturmgrimms zurückzuholen, und kämpfte für den Rest des Krieges an seiner Seite.]],
     },
     {
-        era = "Pre-Midnight",
+        era = "Pre-MN",
         text = [[Nahm Leona Dunkelstreifer und andere willige Ren'dorei als Schüler auf, um sie in den Wegen der Illidari zu unterweisen.]],
     },
     {
@@ -1311,7 +1311,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["eitrigg"].timeline = {
     {era = "BfA", text = "Half Handelsprinz Gallywix beim Aufbau eines Stützpunktes der Horde in Drustvar. Zu einem späteren Zeitpunkt reiste er mit dem Champion in das alternative Draenor, um die Mag'har-Orcs zu rekrutieren. Später nahm er an der Schlacht um Stromgarde gegen die Anführer der Allianz teil."},
     {era = "DF", text = "Nun Häuptling des Schwarzfelsclans, war er maßgeblich an der Wiederbelebung des Kosh'harg-Festes beteiligt – einer jährlichen Feierlichkeit, bei der Orcs aller Clans zusammenkommen."},
     {era = "TWW", text = "Agierte als Berater für Geya'rah, der Anführerin der Mag'har, und spielte eine aktive Rolle bei der Entlarvung des wahren Feindes im Arathihochland: Der Roten Dämmerung. Gemeinsam besiegten sie deren Anführer, Marran Trollbann."},
-    {era = "Pre-Midnight", text = "Wurde schließlich zum Mitglied der Söhne Lothars ernannt und wird seither zu deren Versammlungen herbeigerufen, um über die Bedrohungen für Azeroth zu beraten."}
+    {era = "Pre-MN", text = "Wurde schließlich zum Mitglied der Söhne Lothars ernannt und wird seither zu deren Versammlungen herbeigerufen, um über die Bedrohungen für Azeroth zu beraten."}
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer"].name = "Kurdran Wildhammer"
@@ -1449,7 +1449,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
         text = [[Sie überlebte die Zerstörung von Dalaran und jagte Xal'atath rücksichtslos durch ganz Khaz Algar und dessen Tiefen. Dabei gelang es ihr, das Dunkle Herz zu beschädigen. Widerwillig arbeitete sie später mit Xal'atath und Raumgänger zusammen, um Dimensius den Allesverschlingenden zu besiegen.]],
     },
     {
-        era = "Pre-Midnight",
+        era = "Pre-MN",
         text = [[Gemeinsam mit Turalyon und Arator vereitelte sie ein Wiedererstarken der Brennenden Legion und schien ihrer Familie wieder näherzukommen. Sie akzeptierte Turalyons Heiratsantrag, schaffte es jedoch nicht, inneren Frieden zu finden. Schweren Herzens ließ sie Turalyon schließlich am Altar zurück und nahm auch nicht an der Beförderungszeremonie seines Sohnes teil. Später weigerte sie sich, mit Arator nach Silbermond zu reisen, und folgte stattdessen Xal'atath in den Leerensturm.]],
     },
     {
@@ -1509,7 +1509,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
         text = [[Sie überlebte die Zerstörung von Dalaran und jagte Xal'atath rücksichtslos durch ganz Khaz Algar und dessen Tiefen. Dabei gelang es ihr, das Dunkle Herz zu beschädigen. Widerwillig arbeitete sie später mit Xal'atath und Raumgänger zusammen, um Dimensius den Allesverschlingenden zu besiegen.]],
     },
     {
-        era = "Pre-Midnight",
+        era = "Pre-MN",
         text = [[Gemeinsam mit Turalyon und Arator vereitelte sie ein Wiedererstarken der Brennenden Legion und schien ihrer Familie wieder näherzukommen. Sie akzeptierte Turalyons Heiratsantrag, schaffte es jedoch nicht, inneren Frieden zu finden. Schweren Herzens ließ sie Turalyon schließlich am Altar zurück und nahm auch nicht an der Beförderungszeremonie seines Sohnes teil. Später weigerte sie sich, mit Arator nach Silbermond zu reisen, und folgte stattdessen Xal'atath in den Leerensturm.]],
     },
     {
@@ -1785,7 +1785,7 @@ IMAGOdb.npcs.CAT_VOID["mor_duun"].timeline = {
         text = [[Gründete die Zwielichtklinge aus den Überresten des Schattenhammers und verschrieb sich dem Dienste Xal'ataths.]],
     },
     {
-        era = "Pre-Midnight",
+        era = "Pre-MN",
         text = [[Befahl der Zwielichtklinge, neue Mitglieder in Sturmwind und Orgrimmar anzuwerben, wobei sie die Hoffnungslosigkeit und Verwirrung ausnutzten, die durch den Strahlenden Gesang verursacht worden waren.]],
     },
     {
