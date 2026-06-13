@@ -163,6 +163,110 @@ if locale == "deDE" then
     L["CONFIRM_UNLOCK_TITLE"]     = "Inhaltsvorschau freischalten"
     L["CONFIRM_UNLOCK_DESC"]      = "Dieser Eintrag wird für dich lesbar, zählt aber nicht für deinen Fortschritt.\n\nFreischalten?"
     L["BACK"]                     = "Zurück"
+elseif locale == "ruRU" then
+    -- Russian
+    L["WINDOW_TITLE"]                   = "Хроники Незабытых"
+    L["UNDISCOVERED"]                   = "Не известно"
+    L["UNDISCOVERED_LORE"]              = "Найдите этого персонажа, чтобы раскрыть его судьбу."
+    L["ADDON_ENABLED"]                  = "IMAGO включен."
+    L["ADDON_DISABLED"]                 = "IMAGO отключен."
+    L["RESET_DONE"]                     = "Все найденные записи были сброшены."
+    L["SETTINGS_TITLE"]                 = "IMAGO - Настройки"
+    L["SETTINGS_DESC"]                  = "Мир полон историй. IMAGO их записывает."
+    L["SETTINGS_SEC_GENERAL"]           = "Общие"
+    L["SETTINGS_SEC_DISCOVERY_CARD"]    = "Карточка Исследования (Всплывающие окна Персонажей/Зон)"
+    L["SETTINGS_SEC_IDLE_FLASHCARDS"]   = "Флеш-карточки в режиме ожидания (фрагменты)"
+    L["SETTINGS_SEC_MOTD"]              = "Сообшение дня IMAGO (чат)"
+    L["OPT_ENABLE"]                     = "Включить IMAGO"
+    L["SETTINGS_SEC_UI"]                = "UI"
+    L["OPT_ENABLE_IDLE_FLASHCARDS"]     = "Включить флеш-карточки в режиме ожидания"
+    L["OPT_ENABLE_MOTD"]                = "Включить сообщения дня IMAGO (\"А вы знали?\" в чате)"
+    L["OPT_ONCE_ONLY_NPC"]              = "Показывать лор Персонажей только при первом исследовании"
+    L["OPT_ONCE_ONLY_ZONE"]             = "Показывать лор Зон только при первом исследовании"
+    L["OPT_RESET_BTN"]                  = "Сбросить историю"
+    L["OPT_SCALE"]                      = "Размер окна"
+    L["OPT_MAIN_LORE_NO_TIMER"]         = "Держать Карточки Исследования открытыми (без таймера)"
+    L["OPT_SNIPPET_NO_TIMER"]           = "Держать флеш-карточки в режиме ожидания открытыми (без таймера)"
+    L["OPT_OPAQUE_UI"]                  = "100% непрозрачность окон и всплывающих окон"
+    L["OPT_SHOW_MINIMAP"]               = "Показывать иконку у миникарты"
+    L["CONTEXT_LORE_BTN"]               = "IMAGO Лор"
+    L["CONTEXT_LORE_NONE"]              = "Лор этого Персонажа не найден."
+    L["CONTEXT_LORE_COMBAT"]            = "Просмотр лора недоступен во время боя."
+    L["CONTEXT_LORE_CHRONICLE_FAIL"]    = "Хроники не смогли сфокусироваться на этой записи."
+    L["DISPLAY_PROGRESS_NPC"]           = "Прогресс: Персонажи"
+    L["DISPLAY_PROGRESS_ZONE"]          = "Прогресс: Зоны"
+    L["CMD_HELP_OPEN"]                  = "/imago open   — Открыть Хроники"
+    L["CMD_HELP_UNLOCK"]                = "/imago unlock — Изменить размер"
+    L["CMD_HELP_TEST"]                  = "/imago test   — Тест экрана"
+    L["CMD_HELP_RESET"]                 = "/imago reset  — Сбросить найденные записи"
+    L["CMD_HELP_OPEN_DESC"]             = "Открывает или закрывает Хроники"
+    L["CMD_HELP_SETTINGS_DESC"]         = "Открывает настройки аддона"
+    L["CMD_HELP_HELP_DESC"]             = "Показывает это сообщение"
+
+    -- Categories (Midnight Factions)
+    L["CAT_QUELTHALAS"]    = "Защитники Кель’Таласа"
+    L["CAT_LIGHT"]         = "Передовые силы Света"
+    L["CAT_AMANI"]         = "Племя Амани"
+    L["CAT_HARATI"]        = "Хара’ти"
+    L["CAT_VOID"]          = "Вторжение Бездны"
+    L["CAT_EBON_BLADE"]    = "Рыцари Черного Клинка"
+    L["CAT_NEUTRAL"]       = "Независимые и Незабываемые"
+    L["CAT_ARCANTINA"]     = "Тайная таверна"
+
+    -- ============================================================
+    -- TAB 2: ZONES (DASHBOARD & DETAILS)
+    -- ============================================================
+    L["FOOTER_ZONES_PROGRESS"]      = " Зон исследовано "
+    L["STARTPAGE_ZONES_RANK"]       = "РАНГ ИССЛЕДОВАТЕЛЯ"
+    L["STARTPAGE_ZONES_NEXT"]       = "СЛЕДУЮЩИЕ РАНГИ:"
+    L["ZONE_UNKNOWN_NAME"]          = "Неизвестный регион"
+    L["ZONE_UNEXPLORED_HEADER"]     = "ОБЛАСТЬ НЕ ИССЛЕДОВАНА"
+    L["ZONE_UNEXPLORED_DESC"]       = "Местность этого региона исследована не до конца. Отправьтесь туда, чтобы расскрыть его секреты."
+    L["ZONE_POI_HEADER"]            = "ОСНОВНЫЕ МЕСТА"
+    L["ZONE_UNDISCOVERED"]          = "Не исследовано"
+
+    -- ============================================================
+    -- TAB 3: INSTANCES (COMING SOON)
+    -- ============================================================
+    L["COMING_SOON_INSTANCES_TITLE"]= "СКРЫТЫЕ ПОДЗОНЫ"
+    L["COMING_SOON_INSTANCES_DESC"] = "Подземелья, рейды и вылазки. Отголоски могущственных противников ждут своего часа.[ В РАЗРАБОТКЕ ]"
+
+    -- Scanner & Tooltip
+    L["TOOLTIP_KNOWN"]     = "IMAGO: Записан в Хрониках"
+    L["TOOLTIP_UNKNOWN"]   = "IMAGO: Судьба не раскрыта (Цель для обнаружения)"
+    L["CHAT_DISCOVERY"]    = "[IMAGO] Ваши Хроники содрогнулись... новый отголоск добавлен: "
+    L["CHAT_KNOWN"]        = "[IMAGO] Запись уже существует: "
+    
+    -- Validation
+    L["VAL_START"]         = "[IMAGO] Запускаю валидацию базы знаний..."
+    L["VAL_ERR_ID"]        = "Ошибка: отсутствуют массивы displayID и ids!"
+    L["VAL_WARN_LORE"]     = "Предупреждение: отстутвует лор на текущем языке!"
+    L["VAL_DONE"]          = "Валидация завершена.  Персонажей проверено.  критических ошибок,  предупреждений."
+
+    L["CINEMATIC_CONTINUE"]             = "< Нажмите, чтобы раскрыть их судьбу >"
+    L["FILTER_ALL"]                     = "Все Отголоски"
+    L["FILTER_HIST"]                    = "Недавно исследованные"
+    L["FILTER_FAV"]                     = "Избранные"
+    L["HINT_IDENTITY_HIDDEN"]           = "ЛИЧНОСТЬ СКРЫТА"
+    L["DASHBOARD_FATES_UNCOVERED"]      = "Судьбы раскрыты"
+    L["DASHBOARD_TITLE"]                = "ОБЗОР ХРОНИК"
+    L["LOGIN_DID_YOU_KNOW"]             = "А вы знали?"
+    L["FUN_FACT"]                       = "Интересный факт"
+    L["DID_YOU_KNOW"]                   = "А вы знали?"
+    L["HISTORICAL_FACT"]                = "Исторический факт"
+    L["NEXT"]                           = "Далее"
+    L["LOGIN_EMPTY_CHRONICLE"]          = "Ваши Хроники все еще пусты..."
+    L["LOGIN_ALL_UNCOVERED"]            = "Все секреты раскрыты!"
+    L["FOOTER_PROGRESS"]                = "Судеб раскрыто"
+    L["TAB_FATES"]                      = "Судьбы"
+    L["TAB_ZONES"]                      = "Зоны"
+    L["TAB_INSTANCES"]                  = "Подзоны"
+    L["STARTPAGE_RANK"]                 = "Ваш ранг Хроник:"
+    L["STARTPAGE_COMPLETED"]            = "ДОСТИГНУТО РАНГОВ:"
+    L["STARTPAGE_NEXT"]                 = "СЛЕДУЮЩИЕ РАНГИ:"
+
+
+
 else
     -- English (default für enUS, enGB, und alle anderen)
     L["WINDOW_TITLE"]      = "Chronicle of the Unforgotten"
