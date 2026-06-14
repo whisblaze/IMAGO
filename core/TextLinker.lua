@@ -122,11 +122,11 @@ end
 -- @param selfMapID  number?  Zone mapID of the page being shown (skipped)
 -- @return           string
 -- ============================================================
-function IMAGO.TextLinker.LinkNames(text, selfSlug, selfMapID)
+function IMAGO.TextLinker.LinkNames(text, selfSlug, selfMapID, sharedNPCLinks, sharedZoneLinks)
     if not text or text == "" then return text end
 
     -- ---- 1. NPC links ----------------------------------------
-    local linkedNPCSlugs = {}
+    local linkedNPCSlugs = sharedNPCLinks or {}
 
     for _, entry in ipairs(npcList or {}) do
         local slug = entry.slug
@@ -141,7 +141,7 @@ function IMAGO.TextLinker.LinkNames(text, selfSlug, selfMapID)
     end
 
     -- ---- 2. Zone links ----------------------------------------
-    local linkedZoneIDs = {}
+    local linkedZoneIDs = sharedZoneLinks or {}
 
     for _, entry in ipairs(zoneList or {}) do
         local mapID = entry.mapID
