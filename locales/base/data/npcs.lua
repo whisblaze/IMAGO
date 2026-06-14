@@ -2113,6 +2113,7 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
 -- CAT_ARCANTINA
 -- GARONA HALFORCEN --
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].name = "Garona Halforcen"
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].aliases = {"Garona"}
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].race = "Half-orc, half-draenei"
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].lore = [[Garona will always be known for assassinating King Llane Wrynn of Stormwind and deciding the First War for the Old Horde. She mostly remembers it as being a near mindless puppet for Gul'dan and betraying the humans who had shown her more kindness than the ruthless Horde had all her life.  As her name implies, Garona was born to a draenei mother and an orc father and her heritage makes her an unusual individual. 
 
@@ -2230,6 +2231,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
 
 -- GORGONNA --
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].name = "Gorgonna"
+IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].aliases = {}
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].race = "Orc"
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].lore = [[Gorgonna is the current chieftain of the Warsong Clan and values strength and honor in battle above all other virtues.
 
@@ -2301,6 +2303,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
 
 -- VANESSA VANCLEEF --
 IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].name = "Vanessa VanCleef"
+IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].aliases = {"Vanessa"}
 IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].race = "Human"
 IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].lore = [[Vanessa VanCleef grew up on stories of Stormwind's horrific treatment of the Stonemasons and the greed of the noble class. Seeing her father Edwin murdered and decapitated by Alliance adventurers only hardened her beliefs. Under the guise of Hope Saldean, she became the leader of the Defias Brotherhood and sought vengeance by any means necessary.
 
@@ -2360,6 +2363,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].timeline = {
 
 -- FLYNN FAIRWIND --
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].name = "Flynn Fairwind"
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].aliases = {"Flynn"}
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].race = "Human"
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].lore = [[The dashing swashbuckler Captain Flynn Fairwind is seldom found without a drink in his hand and a quip on his lips. Forced into piracy from an early age, his street-smarts and charm quickly made him a recognized name on the seas of Kul Tiras. Even though he was living a life of crime, he never could let go entirely of his inherent sense of justice. 
 
