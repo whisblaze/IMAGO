@@ -177,8 +177,8 @@ elseif locale == "ruRU" then
     L["SETTINGS_SEC_DISCOVERY_CARD"]    = "Карточка Исследования (Всплывающие окна Персонажей/Зон)"
     L["SETTINGS_SEC_IDLE_FLASHCARDS"]   = "Флеш-карточки в режиме ожидания (фрагменты)"
     L["SETTINGS_SEC_MOTD"]              = "Сообшение дня IMAGO (чат)"
+    L["SETTINGS_SEC_UI"] = "UI"
     L["OPT_ENABLE"]                     = "Включить IMAGO"
-    L["SETTINGS_SEC_UI"]                = "UI"
     L["OPT_ENABLE_IDLE_FLASHCARDS"]     = "Включить флеш-карточки в режиме ожидания"
     L["OPT_ENABLE_MOTD"]                = "Включить сообщения дня IMAGO (\"А вы знали?\" в чате)"
     L["OPT_ONCE_ONLY_NPC"]              = "Показывать лор Персонажей только при первом исследовании"
@@ -264,9 +264,61 @@ elseif locale == "ruRU" then
     L["STARTPAGE_RANK"]                 = "Ваш ранг Хроник:"
     L["STARTPAGE_COMPLETED"]            = "ДОСТИГНУТО РАНГОВ:"
     L["STARTPAGE_NEXT"]                 = "СЛЕДУЮЩИЕ РАНГИ:"
+    L["WORD_AT"]                        = "при"
+    L["STARTPAGE_NO_MILESTONES"]        = "Достигнутых рангов нет."
+    L["STARTPAGE_MAX_REACHED"]          = "Достигнут максимум!"
+    L["TAG_NEW"]                        = "[ НОВИНКА ]"
+    L["HINT_SCOUTS"]                    = "Замечен разведчиками в следующих областях:"
+    L["HINT_UNKNOWN_LOC"]               = "Отсутствуют записи о местонахождении. Ищите зацепки, исследуя мир."
+    L["TAB_DETAIL_LORE"]                = "Лор"
+    L["TAB_DETAIL_TIMELINE"]            = "Хронология"
+    L["CMD_UNLOCKALL_SUCCESS"]          = "Успех: все отголоски прошлого открыты в Хрониках!"
 
+    -- Minimap Tooltip
+    L["MINIMAP_TOOLTIP_TITLE"]       = "IMAGO"
+    L["MINIMAP_TOOLTIP_LEFTCLICK"]   = "ЛКМ: Открыть Хроники"
+    L["MINIMAP_TOOLTIP_RIGHTCLICK"]  = "ПКМ: Флеш-карточки в режиме ожидания"
 
+    -- Combat & Break Contact Settings
+    L["OPT_CLOSE_ON_COMBAT"]         = "Закрыть Карточку Исследования при входе в бой"
+    L["OPT_ENABLE_BREAK_CONTACT"]    = "Закрыть Карточку Исследования при отдалении от Персонажа"
+    L["OPT_BREAK_CONTACT_DISTANCE"]  = "Пороговая дистанция (метры)"
 
+    -- Credits
+    L["TAB_CREDITS"]                = "Благодарности"
+    L["CREDITS_TITLE"]              = "ВНЕСШИЕ ВКЛАД"
+    L["CREDITS_DESC"]               = "Огромная благодарность всему сообществу Discord сервера IMAGO - их знания и энтузиазм наполнили этот аддон жизнью."
+    L["CREDITS_TOP_HINT"]           = "Выделенные имена принадлежат участникам, привнесшим особенно большой вклад в базу знаний."
+    L["CREDITS_ROLE_SCRIBE"]        = "Хранители знаний"
+    L["CREDITS_ROLE_ARCHIVIST"]     = "Архивисты"
+    L["CREDITS_ROLE_MINER"]         = "Датамайнеры"
+    L["CREDITS_ROLE_TRANSLATOR"]    = "Переводчики"
+    L["CREDITS_ROLE_TESTER"]        = "Тестировщики"
+
+    -- Midnight Spoiler Protection
+    L["SPOILER_MIDNIGHT_TITLE"]     = "События Midnight"
+    L["SPOILER_MIDNIGHT_HINT"]      = "Нажмите для раскрытия"
+    L["SPOILER_TOOLTIP_TITLE"]      = "СПОЙЛЕР"
+    L["SPOILER_TOOLTIP_DESC"]       = "Дополнение Midnight"
+
+    -- Mode Toggle
+    L["MODE_LABEL"]        = "Режим"
+    L["MODE_EXPLORER"]     = "Режим Исследователя"
+    L["MODE_ENCYCLOPEDIA"] = "Режим Энциклопедии"
+    L["MODE_MANUAL_UNLOCK"]= "Ручная разблокировка"
+
+    -- Map Toggle --
+    L["ACTION_OPEN_MAP"]        = "Открыть карту мира"
+    L["ACTION_OPEN_MAP_TIP"]    = "Открыть данную зону на карте мира"
+
+    -- Confirm Dialogs
+    L["CONFIRM_YES"]              = "Да"
+    L["CONFIRM_NO"]               = "Нет"
+    L["CONFIRM_ENC_TITLE"]        = "Включить Режим Энциклопедии"
+    L["CONFIRM_ENC_DESC"]         = "Весь контент будет раскрыт,\nно не будет учтен в вашем прогрессе.\n\nПродолжить?"
+    L["CONFIRM_UNLOCK_TITLE"]     = "Разблокировать запись"
+    L["CONFIRM_UNLOCK_DESC"]      = "Данная запись будет доступна для чтения, но не будет учтена в вашем прогрессе.\n\nРазблокировать?"
+    L["BACK"]                     = "Назад"
 else
     -- English (default für enUS, enGB, und alle anderen)
     L["WINDOW_TITLE"]      = "Chronicle of the Unforgotten"
