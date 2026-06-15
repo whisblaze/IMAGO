@@ -2306,3 +2306,33 @@ IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].timeline = {
         text = [[Enjoyed a drink in the Arcantina.]],
     }
 }
+
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].name = "Scalecommander Emberthal"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].lore = [[Emberthal is the leader of the Ebon Scales, the weyrn of dracthyr empowered with the magics of the black dragonflight. Like her fellow soldiers she was created by Neltharion before he gave in to corruption, and even after being imprisoned by him for thousands of years, she couldn't help but feel sadness and confusion at her father's fate. 
+
+Unlike her former friend Sarkareth, Emberthal rejected Deathwing's legacy and has united the dracthyr in harmony and a desire for peace on Azeroth.]]
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Fought as Scalecommander against her creator Neltharion's foes. When Raszageth destroyed the titan relic Oathbinder, used by Neltharion to mind control the dracthyr, Emberthal, along with her companions, was imprisoned.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Awoke thousands of years later to a changed world. Witnessed Raszageth's reawakening and was unable to stop it. At the behest of the black dragons Wrathion and Ebyssian, the dracthyr split up to join the Horde and the Alliance while Emberthal remained as a neutral leader on the Dragon Isles.]],
+    },
+    {
+        era = "DF",
+        text = [[Was briefed by Nozdormu about Neltharion's legacy and the state of the world and helped him find out more about her creator's corruption. Emberthal disagreed and fought with Sarkareth because the latter chose to follow in Deathwing's footsteps and embraced the Void. After killing him, Emberthal reformed the Ebon Scales. Fought against Fyrakk's forces in the Emerald Dream.]],
+    },
+    {
+        era = "TWW",
+        text = [[Returned to the Forbidden Reach to aid the few remaining dormant dracthyr begin their new lives on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina.]],
+    }
+}
