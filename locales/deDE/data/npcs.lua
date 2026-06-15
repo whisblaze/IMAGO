@@ -1354,6 +1354,45 @@ IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner"].timeline = {
     }
 }
 
+-- LORD MAXWELL TYROSUS --
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].name = "Lord Maxwell Tyrosus"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].race = "Mensch"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].lore = [[Seit die Geißel die Östlichen Königreiche verheerte, hat Maxwell Tyrosus es sich zur Aufgabe gemacht, die Untoten zu bekämpfen und die Unschuldigen zu beschützen. Er wurde nicht nur zum Anführer der Argentumdämmerung, sondern auch zur Rechten Hand des Hochlords des Ordens der Silbernen Hand. Vielleicht trägt er keinen glanzvollen Titel und vollbrachte keine kriegsentscheidenden Heldentaten wie seine Mitstreiter Turalyon oder Uther Lichtbringer – dennoch ist Tyrosus zu einer unverzichtbaren Stütze geworden, wenn es darum geht, die Paladinorden diszipliniert und kampfbereit zu halten.
+
+Obwohl Tyrosus seit Jahrzehnten im Dienst des Lichts steht, wurde er nicht vom Sonnenbrunnen gerufen. Ohne sich von gekränktem Stolz oder Zweifeln entmutigen zu lassen, stellt er sich nun ohne Zögern neuen Bedrohungen außerhalb von Silbermond.]]
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].zones = {"Östliche Pestländer"}
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Schloss sich Alexandros Mograine bei dessen Mission an, Lordaeron von der Geißel zu befreien. Nach Mograines Tod stellte sich Lord Maxwell Tyrosus entschieden gegen die fanatischen Ideale des Scharlachroten Kreuzzuges und trat der neu gegründeten Argentumdämmerung bei, deren Anführer er rasch wurde. Später half er Darion Mograine dabei, die Seele seines Vaters zu retten.]],
+    },
+    {
+        era = "Classic",
+        text = [[Koordinierte die Truppen der Argentumdämmerung innerhalb der Kapelle des hoffnungsvollen Lichts und hielt die Untoten in den Pestländern in Schach. Half dabei, Baron Totenschwur in Stratholme zu besiegen und die einst lebendige Stadt von der Geißel zu befreien.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Verteidigte gemeinsam mit seinem Freund Tirion Fordring die Kapelle des hoffnungsvollen Lichts gegen Darion Mograine und dessen Todesritter. Wurde Zeuge der Befreiung der Todesritter von der Gedankenkontrolle des Lichkönigs. Vereinte die Argentumdämmerung und Tirions Ritter der Silbernen Hand zu einem neuen gemeinsamen Orden – dem Argentumkreuzzug.]],
+    },
+    {
+        era = "Cata",
+        text = [[Setzte den Kampf gegen die Geißel und den Kult der Verdammten in den Pestländern fort.]],
+    },
+    {
+        era = "Legion",
+        text = [[Verlor viele Gefährten, als die Brennende Legion den Argentumkreuzzug vernichtend schlug – darunter auch Tirion Fordring. Sicherte den Aschenbringer für die Silberne Hand und ernannte den Champion des Lichts zu ihrem neuen Anführer. Half später dabei, die Exodar und den Netherlichttempel gegen die Brennende Legion zu verteidigen.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Beförderte stolz seinen Schützling Arator Windläufer, nachdem dieser den Dämon Sarothar besiegt und eine weitere Dämoneninvasion verhindert hatte.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Paradoxerweise wurde Tyrosus nicht nach Quel'Thalas gerufen. Stattdessen bekämpfte er die erstarkte Geißel in den Pestländern und rekrutierte – da nur noch wenige Paladine in der Kapelle des hoffnungsvollen Lichts verblieben waren – Darion Mograines Schwarze Klinge, um gemeinsam mit ihnen die Fronten zu halten.]],
+    }
+}
+
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windläufer"
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Leerenelfe"
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Den Völkern Azeroths ist Alleria als eine der größten Kriegsheldinnen der Allianz bekannt. Sie kämpfte im Zweiten Krieg gegen die Horde sowie im jahrtausendelangen Kreuzzug gegen die Brennende Legion. Sie ist vieles - eine Mutter, eine Liebende, eine Heldin, eine ältere Schwester - doch vor allem ist sie eine Jägerin. Alles steht hinter ihren Missionen zurück, und kein Preis ist zu hoch, um die Sicherheit ihrer Welt zu gewährleisten.
@@ -1980,6 +2019,33 @@ IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].timeline = {
     }
 }
 
+-- TEHD SCHUMAKER --
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].name = "Tehd Schumaker"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].race = "Verlassener"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].lore = [[Von Illidan Sturmgrimm auch als „Teufelsbanns Schoßhexenmeister“ bezeichnet, hat dieser untote Hexenmeister eine äußerst ungewöhnliche Kameradschaft mit dem Dämonenjäger Marius Teufelsbann aufgebaut. Obwohl sie einander für das verabscheuen, wofür der jeweils andere steht, haben die beiden Männer widerwillig akzeptiert, dass sie als Mannschaft äußerst effizient zusammenarbeiten.
+
+Nachdem sie seit der dritten Invasion der Brennenden Legion gemeinsam einhundertfünfzig Dämonen besiegt haben, richten die beiden Gefährten nun ihr Augenmerk auf die Leere in Silbermond.]]
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].zones = {"Silbermond", "Die Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
+    {
+        era = "Pre-Legion",
+        text = [[Irgendwann vor der Rückkehr der Brennenden Legion wurde der damals menschliche Hexenmeister von einem Paladin getötet.]],
+    },
+    {
+        era = "Legion",
+        text = [[Arbeitete mit Marius Teufelsbann zusammen und tötete oder unterwarf verschiedene Dämonen, gelegentlich unterstützt vom Champion Azeroths. Später kämpfte er an der Verheerten Küste.]],
+    },
+    {
+        era = "BfA",
+        text = [[Jagte gemeinsam mit Marius weiterhin verbliebene Dämonen in Zuldazar.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Versuchte wenig begeistert, den Armeen von Silbermond zu helfen, wurde jedoch umgehend von der Armee des Lichts verhaftet, aufgrund seiner Profession als Hexenmeister. Gab den Kampf gegen die Leere dadurch erst einmal auf und überzeugte Marius, sich ihm für einen Drink in der Arkantine anzuschließen.]],
+    }
+}
+
 -- GORGONNA --
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].name = "Gorgonna"
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].race = "Orc"
@@ -2068,6 +2134,131 @@ IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].timeline = {
     {
         era = "TWW",
         text = [[Noch immer Mitglied der Ungekrönten, überlebte sie die Zerstörung Dalarans und ließ sich für einige Zeit in Dornogal nieder.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Besuchte die Arkantine.]],
+    }
+}
+
+-- REXXAR --
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].name = "Rexxar"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].race = "Halborc, Halboger"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].lore = [[Als weder richtiger Orc noch Oger geboren, hat sich der Mok’Nathal-Jäger Rexxar, Sohn des Häuptlings Leoroxx, nie besonders für die Streitigkeiten anderer interessiert. Er wurde Zeuge des Niedergangs der Alten Horde durch Höllenfeuerkorruption und Wahnsinn und schwor Kriegshäuptling Schwarzfaust die Treue, damit sein Clan verschont bliebe.
+
+Nachdem der Zweite Krieg verloren war, verließ Rexxar die Horde. Von seinem Clan verstoßen, von der Allianz gefürchtet und ohne jeden Wunsch, sich seinem Volk wieder anzuschließen, begann er, in der Wildnis Kalimdors zu leben. Stets an seiner Seite waren seine treuen tierischen Gefährten, unter denen die Bärin Misha seine engste Freundin war. Diese Bestien sind für ihn weder Haustiere noch Waffen – sie sind seine Familie.
+
+Mit die Zeit hat Rexxar sich der Neuen Horde und der Gesellschaft als solche teilweise wieder angeschlossen, doch man wird ihn niemals lange in einer Stadt antreffen.]]
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].zones = {"Die Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
+    {
+        era = "WC1",
+        text = [[Schwor Kriegshäuptling Schwarzfaust die Treue, um ihn davon abzuhalten, den pazifistischen Mok’Nathal-Clan auszulöschen. Durchschritt das Dunkle Portal und kämpfte für die Alte Horde während des Ersten Krieges.]],
+    },
+    {
+        era = "WC2",
+        text = [[Wurde unter Grommash Höllschrei am Dunklen Portal stationiert und fühlte sich zunehmend von der ständigen Grausamkeit der Horde abgestoßen. Verlor seinen Gefährten, den Wolf Haratha, an einen orcischen Hexenmeister. Wurde nach der Zerstörung Draenors auf Azeroth gestrandet und verließ die Horde.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Fand seinen Weg nach Kalimdor und lebte als Jäger in der Wildnis von Feralas. Rettete und freundete sich mit einem verwaisten Bärenjunges an, das er später Misha nannte.]],
+    },
+    {
+        era = "WC3",
+        text = [[Stieß auf einen tödlich verwundeten orcischen Späher, der ihm eine Botschaft an Kriegshäuptling Thrall übergab. Neugierig geworden half Rexxar Thrall bei der Verteidigung des neu gegründeten Orgrimmar und rettete den jungen Baine Bluthuf vor Zentauren. Später tötete er Daelin Prachtmeer und wurde von Thrall zum Champion der Horde ernannt.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Bemerkte, dass der Clan der brennenden Klinge Orcs in Durotar ermordete, und half, einen kleineren Konflikt zwischen Orgrimmar und Theramore zu lösen.]],
+    },
+    {
+        era = "Classic",
+        text = [[Durchstreifte mit Misha die Wildnis von Desolace.]],
+    },
+    {
+        era = "TBC",
+        text = [[Kehrte nach Draenor zurück und beschützte seinen ehemaligen Clan vor den Blutschläger-Ogern. Versöhnte sich nicht mit seinem Vater, da dieser immer noch verbittert darüber war, dass son sich der Alten Horde angeschlossen hatte. Rexxar freundete sich mit Baron Zobelmähne an, ohne seine Drachenidentität zu erkennen, und half ihm, die Söhne Gruuls zu töten.]],
+    },
+    {
+        era = "Cata",
+        text = [[Verteidigte Durotar gegen tobende Elementare.]],
+    },
+    {
+        era = "Legion",
+        text = [[Forderte den Meisterjäger des Unsichtbaren Pfads heraus, eine Nacht in der Wildnis von Hochberg zu überleben. Dieser bestand die Prüfung und gewann Rexxars Vertrauen und Unterstützung, und der Mok’Nathal schloss sich dem Kampf gegen die Brennenden Legion an.]],
+    },
+    {
+        era = "BfA",
+        text = [[Aus Pflichtgefühl kämpfte er für die Horde im Vierten Krieg und half beim Aufbau militärischer Außenposten in Kul Tiras. Helped bei der Rekrutierung von Thomas Zelling. Barg die Gezeitenperle aus dem Schrein des Sturms. Half, Priscilla Aschenwind zu befreien. Später schloss er sich Saurfangs Rebellion gegen Kriegshäuptling Sylvanas Windläufer an.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Reiste gemeinsam mit dem jungen Zekhan durch Kalimdor, um einen vollständigen Bericht über verbliebene Hordenstützpunkte zu erstellen. Betrauerte seinen Wolfsfreund Huelo, der im Vierten Krieg gefallen war.]],
+    },
+    {
+        era = "DF",
+        text = [[Vereinigte sich mit alten Freunden Baine Bluthuf, Rokhan und Chen Sturmbräu, um das Dorf Toghusuq wiederaufzubauen. Kämpfte gegen Fyrakks Streitkräfte bei der Verteidigung von Amirdrassil. War überrascht, von Thrall zum orcischen Kosh’harg-Fest eingeladen zu werden, und versöhnte sich dort endlich wieder mit seinem Vater.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Trank gemeinsam mit seinem alten Freund Chen Sturmbräu in der Arkantine.]],
+    }
+}
+
+-- CECILIA CLESSINGTON --
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].name = "Cecilia Clessington"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].race = "Mensch"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].lore = [[Cecilia Primula Clessington die Zweite, einzige Erbin des Grafen Clessington aus dem Adelshaus von Sturmwind. Allerdings würde man sich irren, wenn man sie für genauso hielte wie die anderen Adligen des Königreichs, denn Cecilia hat kein Interesse an Macht, Reichtum oder Einfluss. Sie möchte aufrichtig den Unterdrückten helfen und ihr Geburtsrecht nutzen, um den Bauern und Arbeitern von Westfall eine politische Stimme zu geben.
+
+Gemeinsam mit Vanessa van Cleef gründete sie die Brotkorb-Gilde und entwickelte eine Freundschaft mit der ehemaligen Anführerin der Defias.]]
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].zones = {"Die Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].timeline = {
+    {
+        era = "DF",
+        text = [[Wurde von Vanessa van Cleef entführt, um Druckmittel zu haben, nachdem Cecilias Vater die Kontrolle über die Bruderschaft der Defias übernommen hatte, um Sturmwind auszurauben. Sie freundete sich mit der Schurkin an und half ihr sowie SI:7 dabei, ihren Vater, Graf Clessington, aufzuhalten und zu töten. Als einzige Erbin ihres Namens übernahm sie den Titel der Gräfin und trat dem Adelshaus von Sturmwind bei. Sie gründete die Brotkorb-Gilde, um den Menschen in Westfall zu helfen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Genoss gemeinsam mit Vanessa gute Getränke in der Arkantine.]],
+    }
+}
+
+-- FINN SCHÖNWIND --
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].name = "Finn Schönwind"
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].race = "Mensch"
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].lore = [[Der charmante Haudegen und Freibeuter Kapitän Finn Schönwind ist nur selten ohne ein Getränk in der Hand und einen flotten Spruch auf den Lippen anzutreffen. Schon in jungen Jahren zur Piraterie gezwungen, machten ihn seine Intuition und sein Charme schnell zu einem bekannten Namen auf den Meeren von Kul Tiras. Obwohl er ein Leben als Krimineller führte, konnte er seinen angeborenen Sinn für Gerechtigkeit nie ganz ablegen.
+
+Heute arbeitet er für die Admiralität von Kul Tiras – sowohl als Kapitän zweier Schiffe als auch als Spezialist für verdeckte Einsätze, die kreative Lösungen erfordern. Als der Vierte Krieg ausbrach, übernahm er verschiedene Missionen gemeinsam mit den Spionen der Allianz, den SI:7. Dabei lernte er Sturmwinds Meisterspion, Mathias Shaw, kennen, und die beiden verliebten sich schließlich ineinander – nachdem Finn ihn mit bemerkenswerter Hartnäckigkeit umworben hatte.
+
+Seit dem Ende des Krieges genießt Finn nun ein ruhigeres Leben, lebt in der Stadt Sturmwind und begibt sich nur noch gelegentlich auf Abenteuer. Seine Hilfe für die Allianz wird sehr geschätzt, trotz der vereinzelten Schmuggelgeschäfte, denen er hin und wieder noch nachgeht.]]
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].zones = {"Die Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].timeline = {
+    {
+        era = "Pre-Classic",
+        text = [[Wurde als Kind zur Waise, nachdem seine Mutter öffentlich wegen Diebstahls gehängt wurde. Wurde gezwungen, sich einer Straßengang anzuschließen, und wandte sich schließlich der Piraterie zu.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Wurde Kapitän einer Piratencrew und erlangte einen beachtlichen Ruf. Traf Taelia Fordragon und entwickelte Gefühle für sie. Schließlich verließ er seine Mannschaft, als diese immer skrupelloser wurde, und schlosst sich der Admiralität von Kul Tiras als Schmuggler auf Bezahlung an.]],
+    },
+    {
+        era = "BfA",
+        text = [[Befreite den Champion Azeroths aus Tol Dagor und half Taelia dabei, die Machenschaften von Priscilla Aschenwind aufzudecken. Stellte sich seiner alten Crew – den Eisenfluträubern unter der Führung seines ehemaligen Ersten Maaten Harlan dem Schmierigen – entgegen und stoppte sie. Arbeitete mit Mathias Shaw zusammen, um die Schatzkammer von Dazar’alor zu infiltrieren und das Abyssische Szepter zu stehlen.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Arbeitete erneut mit Shaw zusammen, um Sylvanas Windläufer aufzuspüren. Nachdem er dem Meisterspion absichtlich auf die Nerven gegangen war, kamen sich die beiden während der Seereise nach Zandalar näher. Später half Finn dabei, Shaw aus der Gefangenschaft der Horde zu befreien, und überredete ihn, gemeinsam im Dämmerwald auf Schatzsuche zu gehen. Dort stoppten sie eine Nekromantin, retteten die Nachtwache und verliebten sich ineinander. Anschließend reisten sie durch die Östlichen Königreiche, um verschiedene Artefakte zu katalogisieren.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Zog nach Sturmwind.]],
+    },
+    {
+        era = "TWW",
+        text = [[Befand sich während der Zerstörung der Stadt in Dalaran und wurde von den Nerubern von Azj-Kahet gefangen genommen. Half dabei, die anderen Gefangenen zu befreien, und arbeitete für die Weberin gegen Königin Ansurek.]],
     },
     {
         era = "Midnight",

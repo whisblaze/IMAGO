@@ -61,3 +61,10 @@ IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"] = {
     zones = {},
     category = "CAT_ARCANTINA",
 }
+
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"] = {
+    displayID = 259339,
+    ids = {259339},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
