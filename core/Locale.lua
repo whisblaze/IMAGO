@@ -348,7 +348,7 @@ else
     L["CONTEXT_LORE_BTN"]  = "IMAGO Lore"
     L["CONTEXT_LORE_NONE"] = "|cFF888888IMAGO:|r No lore found for this NPC."
     L["CONTEXT_LORE_COMBAT"] = "|cFF888888IMAGO:|r Lore view is unavailable in combat."
-    L["CONTEXT_LORE_CHRONICLE_FAIL"] = "|cFF888888IMAGO:|r The Chronicle could not focus this entry."
+    L["CONTEXT_LORE_CHRONICLE_FAIL"] = "|cFF888888IMAGO:|r The Chronicle could not focus on this entry."
     L["DISPLAY_PROGRESS_NPC"]  = "Progress: %d%% (%d/%d NPCs)"
     L["DISPLAY_PROGRESS_ZONE"] = "Progress: %d%% (%d/%d zones)"
     L["CMD_HELP_OPEN"]     = "/imago open   — Open the Chronicle"

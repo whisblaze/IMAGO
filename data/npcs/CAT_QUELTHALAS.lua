@@ -103,3 +103,10 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"] = {
     zones = {},
     category = "CAT_QUELTHALAS",
 }
+
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"] = {
+    displayID = 245004,
+    ids = {245004, 246717, 252352, 250247, 245960, 258730, 236101},
+    zones = {},
+    category = "CAT_QUELTHALAS",
+}
