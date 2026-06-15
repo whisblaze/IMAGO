@@ -2282,6 +2282,41 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
     }
 }
 
+-- TAOSHI --
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].name = "Taoshi"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].race = "Pandaren"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].lore = [[The number two of the Shado-Pan, this roguish pandaren is one of the deadliest spies and assassins the land in the mists has to offer. Taoshi was front and center in defending Pandaria from the mantid, the sha, the Thunder King, and N'Zoth's forces. She rarely shies away from risky plans and sometimes it seems like a part of her lives for the danger her job tends to bring. The only person capable of reining her in is Shado-Pan leader Taran Zhu, to whom Taoshi is fiercely loyal.
+
+Since Azeroth was threatened by the return of the Burning Legion, Taoshi helped to defend the world beyond her homeland as a high ranking member of the Uncrowned in Dalaran. Both Horde and Alliance can count on her assistance when needed, knowing full well that she has her allies' backs no matter what stands against them.]]
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].timeline = {
+    {
+        era = "MoP",
+        text = [[Stopped the mantid in the Townlong Steppes and defeated the Sha of Hatred alongside Taran Zhu and the Champion. Fought on the Isle of Thunder against Lei Shen's forces, helping both the warring Horde and Alliance.]],
+    },
+    {
+        era = "WoD",
+        text = [[Was sent by the Shado-Pan to Draenor to combat the Iron Horde.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Uncrowned in Dalaran as one of the Shadows. Formulated and executed the plan to rescue Mathias Shaw from Legion captivity and later infiltrated Stormwind alongside Shaw and the Shadowblade to kill Detheroc.]],
+    },
+    {
+        era = "BfA",
+        text = [[Defended the Vale of Eternal Blossom from N'Zoth's minions and helped combat the void corruption of the land.]],
+    },
+    {
+        era = "TWW",
+        text = [[Survived the destruction of Dalaran and managed to save the Uncrowned's archives during the crash. Settled in Dornogal with her fellow Uncrowned.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Met with Kelsey Steelspark in the Arcantina for a mission.]],
+    }
+}
+
 -- VANESSA VANCLEEF --
 IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].name = "Vanessa VanCleef"
 IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].race = "Human"
