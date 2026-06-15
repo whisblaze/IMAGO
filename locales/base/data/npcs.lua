@@ -24,6 +24,8 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].timeline = {
     {era = "BfA", text = "Successfully invited the nightborne of Suramar to join the Horde. He later personally led the Horde forces in the campaign against Queen Aszhara and joined the rebellion against Sylvanas Windrunner. After the Fourth War he joined the newly-formed Horde council as one of its leaders."},
     {era = "Pre-DF", text = "Married Thalyssra and invited both Horde and Alliance leaders to the wedding in a show of support for peace between the factions."},
     {era = "DF", text = "Joined in the defense of Amirdrassil."},
+    {era = "Pre-TWW", text = " Traversed the Islands and Isles of Azeroth with Thalyssra during a belated honeymoon. Heard the Radiant Song while being shown around the Dragon Isles by Wrathion."},
+    {era = "Pre-MN", text = "Helped Thalyssra to keep Suramar safe from a resurgence of the Burning Legion. Encouraged and helped host Turalyon's and Alleria's wedding which ended up being broken off."},
     {era = "Midnight", text = "Led the blood elf forces in Silvermoon's defense against the Void."},
 }
 
@@ -72,12 +74,14 @@ IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "Cadash & Austin 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
     {era = "Pre-WC1", text = "Studied the arcane in the mage capital of Dalaran alongside his friends Umbric and Dar'khan Drathir."},
     {era = "WC3", text = "Survived Silvermoon's destruction and joined Kael'thas Sunstrider in his defense of Dalaran. Followed the prince to Outland after escaping the dungeons of the Kirin Tor and learned how to combat the blood elves' addiction to magic from Illidan Stormrage. He returned to Silvermoon as Grand Magister."},
-    {era = "TBC", text = "Helped found the order of the Blood Knights and joined the civil war against Kael'thas Sunstrider. Sometime after the prince's defeat, Rommath exiled Magister Umbric and his followers for practicing void magic."},
+    {era = "Pre-TBC", text = "Helped found the order of the Blood Knights and rose to political power with Kael'thas' approval. Controlled the consumption of magic of the blood elves, ensuring that as few as possible succumbed to their addictions."},
+    {era = "TBC", text = "Opposed accepting help from Sylvanas Windrunner in the reclamation of the Ghostlands but was outvoted by Lor'themar and Halduron. Joined the civil war against Kael'thas Sunstrider when the prince allied with the Burning Legion. Sometime after the prince's defeat, Rommath exiled Magister Umbric and his followers for practicing void magic."},
     {era = "WotLK", text = "Attempted to dissuade Lor'themar from sending the diminished blood elves to war in Northrend, ultimately failing. Helped in the restoration of the weapon Quel'delar."},
-    {era = "MoP", text = "Rescued Aethas Sunreaver and many other mages from the purge of Dalaran. He fought for the Horde as part of the Sunreavers on the Isle of Thunder."},
+    {era = "MoP", text = "Investigated mogu artifacts and the properties of sha corruption. Rescued Aethas Sunreaver and many other mages from the Purge of Dalaran. He fought for the Horde as part of the Sunreaver Onslaught on the Isle of Thunder."},
     {era = "Legion", text = "Helped to free Suramar from the occupation of the Burning Legion."},
     {era = "BfA", text = "Took part in welcoming the nightborne into the Horde and defended the Sunwell from Alleria's influence."},
     {era = "SL", text = "Defended Silvermoon from new Scourge incursions alongside Lady Liadrin and Aethas Sunreaver."},
+    {era = "Pre-MN", text = "Relented when his former friend, Magister Umbric, pleaded with him to allow him to stay in Eversong Woods to prepare for the coming assault by the Void. Reluctantly worked with the ren'dorei to combat the Twilight's Blade in the Twilight Highlands."},
     {era = "Midnight", text = "Rommath led the magisters of Silvermoon in their defense from the Devouring Host. Still wary of Umbric's use of Void magic, Rommath reluctantly agreed that his expertise is needed to defeat their common enemy."},
 }
 
@@ -187,9 +191,10 @@ IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
     {era = "Pre-WC1", text = "Studied the Arcane in Dalaran alongside his friends Rommath and Dar'Khan Drathir."},
     {era = "Pre-WotLK", text = "Exiled from Silvermoon for practicing forbidden void magic."},
     {era = "Legion", text = "Discovered Telogrus Rift and turned into ren'dorei along with his followers. Joined Alleria Windrunner after she offered them a place in the Alliance."},
-    {era = "BfA", text = "Fought in the Fourth War and proved his worth to the Alliance."},
+    {era = "BfA", text = "Fought for the Alliance in the Fourth War and was eager to prove his worth. He weakened Zandalari defenses by transporting troops via portals and he almost managed to kill Jastor Gallywix. Reanimated revered dinosaurs and made them fight the Zandalari, dealing a heavy blow to enemy morale."},
     {era = "DF", text = "Began the hunt for Xal'atath alongside Alleria Windrunner and defended Telogrus Rift from the Harbinger's void forces."},
     {era = "TWW", text = "Established an outpost on K'aresh, lending the ren'dorei's strength in the fight against Dimensius."},
+    {era = "Pre-MN", text = "After hearing of Vereesa's visions, he managed to regain entry into Eversong Woods. Reluctantly worked with his former friend, Grand Magister Rommath, to combat the Twilight's Blade in the Twilight Highlands."},
     {era = "Midnight", text = "With Silvermoon in danger, Umbric returned to his former homeland to combat the Void. He managed to open a passage into the Voidstorm and later helped to create the Dawnwell. For his efforts he was readmitted into Silvermoon with a full pardon."},
 }
 
@@ -339,7 +344,7 @@ IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
     },
     {
         era = "DF",
-        text = [[Was present at the reformation of Tyr and the founding of Tyr's Hand Order.]],
+        text = [[Was present at the reformation of Tyr and the founding of Tyr's Guard.]],
     },
     {
         era = "TWW",

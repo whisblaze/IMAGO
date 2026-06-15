@@ -28,6 +28,8 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].timeline = {
     {era = "BfA", text = "Führte die Nachtgeborenen in die Horde; kämpfte gegen Königin Azshara; wurde Mitglied des Hordenrats."},
     {era = "Pre-DF", text = "Heiratete die Erste Arkanistin Thalyssra als Symbol des Friedens."},
     {era = "DF", text = "Half bei der Verteidigung von Amirdrassil."},
+    {era = "Pre-TWW", text = "Gemeinsam mit Thalyssra bereiste er während verspäteter Flitterwochen die Inseln und Archipele Azeroths. Während Furorion ihnen die Dracheninseln zeigte, vernahm er den Strahlenden Gesang."},
+    {era = "Pre-MN", text = " Er half Thalyssra dabei, Suramar vor einem Wiedererstarken der Brennenden Legion zu schützen. Zudem unterstützte er Turalyon und Alleria bei den Vorbereitungen ihrer Hochzeit und half dabei, die Feierlichkeiten auszurichten – auch wenn die geplante Vermählung letztlich abgesagt wurde."},
     {era = "Midnight", text = "Führte die Verteidigung von Silbermond gegen die vordringende Leere an."},
 }
 
@@ -75,12 +77,14 @@ IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "Cadash & Austin 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
     {era = "Pre-WC1", text = "Studierte das Arkanum in der Magierhauptstadt Dalaran an der Seite seiner Freunde Umbric und Dar'khan Drathir."},
     {era = "WC3", text = "Überlebte die Zerstörung von Silbermond und schloss sich Kael'thas Sonnenwanderer bei der Verteidigung von Dalaran an. Er folgte dem Prinzen in die Scherbenwelt, nachdem er aus den Verliesen der Kirin Tor entkommen war, und lernte von Illidan Sturmgrimm, wie man den Magiedurst der Blutelfen bekämpft. Er kehrte als Großmagister nach Silbermond zurück."},
-    {era = "TBC", text = "Half bei der Gründung des Ordens der Blutritter und beteiligte sich am Bürgerkrieg gegen Kael'thas Sonnenwanderer. Einige Zeit nach der Niederlage des Prinzen verbannte Rommath Magister Umbric und dessen Anhänger für das Praktizieren von Leerenmagie."},
+    {era = "Pre-TBC", text = "Rommath half bei der Gründung des Ordens der Blutritter und gewann mit Kael'thas Sonnenwanderers Zustimmung zunehmend politischen Einfluss. Er überwachte den Umgang der Blutelfen mit ihrer Sucht nach Magie und sorgte dafür, dass möglichst wenige von ihnen ihrer Abhängigkeit erlagen."},
+    {era = "TBC", text = "Sprach sich dagegen aus, Sylvanas Windläufers Hilfe bei der Rückeroberung der Geisterlande anzunehmen, wurde jedoch von Lor'themar Theron und Halduron Wolkenglanz überstimmt. Als Kael'thas Sonnenwanderer sich mit der Brennenden Legion verbündete, schloss sich Rommath dem Bürgerkrieg gegen den Prinzen an. Einige Zeit nach der Niederlage des Prinzen verbannte Rommath Magister Umbric und dessen Anhänger, weil sie Leerenmagie praktizierten."},
     {era = "WotLK", text = "Versuchte erfolglos, Lor'themar davon abzubringen, die geschwächten Blutelfen in den Krieg nach Nordend zu schicken. Half bei der Wiederherstellung der Waffe Quel'Delar."},
-    {era = "MoP", text = "Rettete Aethas Sonnenhäscher und viele andere Magier während der Säuberung von Dalaran. Er kämpfte für die Horde als Teil der Sonnenhäscher auf der Insel des Donners."},
+    {era = "MoP", text = "Er untersuchte Mogu-Artefakte und die Eigenschaften der Verderbnis durch die Sha. Während der Säuberung von Dalaran rettete er Aethas Sonnenhäscher sowie zahlreiche andere Magier. Anschließend kämpfte er für die Horde als Teil des Sonnenhäscheransturms auf der Insel des Donners."},
     {era = "Legion", text = "Half dabei, Suramar von der Besatzung der Brennenden Legion zu befreien."},
     {era = "BfA", text = "Beteiligte sich an der Aufnahme der Nachtgeborenen in die Horde und verteidigte den Sonnenbrunnen vor Allerias Einfluss."},
     {era = "SL", text = "Verteidigte Silbermond an der Seite von Lady Liadrin und Aethas Sonnenhäscher gegen neue Übergriffe der Geißel."},
+    {era = "Pre-MN", text = "Gab schließlich nach, als sein ehemaliger Freund Magister Umbric ihn anflehte, ihm zu gestatten, im Immersangwald zu bleiben, um sich auf den bevorstehenden Angriff der Leere vorzubereiten. Widerwillig arbeitete er mit den Ren'dorei zusammen, um die Zwielichtsklinge in den Schattenhochlanden zu bekämpfen."},
     {era = "Midnight", text = "Rommath führte die Magister von Silbermond bei ihrer Verteidigung gegen die Verschlingende Schar an. Er steht Umbrics Einsatz von Leerenmagie zwar immer noch skeptisch gegenüber, stimmte jedoch widerstrebend zu, dass dessen Expertise notwendig ist, um ihren gemeinsamen Feind zu besiegen."},
 }
 
@@ -225,9 +229,10 @@ IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
     {era = "Pre-WC1", text = "Studierte das Arkane in Dalaran an der Seite seiner Freunde Rommath und Dar'Khan Drathir."},
     {era = "Pre-WotLK", text = "Wurde wegen des Praktizierens verbotener Leerenmagie aus Silbermond verbannt."},
     {era = "Legion", text = "Entdeckte den Telogrusriss und wurde zusammen mit seinen Anhängern in Ren'dorei verwandelt. Schloss sich Alleria Windläufer an, nachdem sie ihnen einen Platz in der Allianz angeboten hatte."},
-    {era = "BfA", text = "Kämpfte im Vierten Krieg und bewies der Allianz seinen Wert."},
+    {era = "BfA", text = "Er kämpfte im Vierten Krieg auf Seiten der Allianz und war fest entschlossen, seinen Wert unter Beweis zu stellen. Durch den Einsatz von Portalen schwächte er die Verteidigung der Zandalari, indem er Truppen hinter ihre Linien brachte. Beinahe gelang es ihm sogar, Jastor Gallywix zu töten. Zudem erweckte er verehrte Dinosaurier wieder zum Leben und ließ sie gegen die Zandalari kämpfen, was der Moral des Feindes einen schweren Schlag versetzte."},
     {era = "DF", text = "Begann an der Seite von Alleria Windläufer die Jagd auf Xal'atath und verteidigte den Telogrusriss vor den Leerenstreitkräften der Heroldin."},
     {era = "TWW", text = "Errichtete einen Außenposten auf K'aresh und stellte die Stärke der Ren'dorei im Kampf gegen Dimensius zur Verfügung."},
+    {era = "Pre-MN", text = "Nachdem er von Vereesas Visionen erfahren hatte, gelang es ihm, erneut Zutritt zum Immersangwald zu erhalten. Widerwillig arbeitete er mit seinem ehemaligen Freund, Großmagister Rommath, zusammen, um die Zwielichtsklinge in den Schattenhochlanden zu bekämpfen."},
     {era = "Midnight", text = "Da Silbermond in Gefahr war, kehrte Umbric in seine alte Heimat zurück, um die Leere zu bekämpfen. Es gelang ihm, einen Durchgang in den Leerensturm zu öffnen, und später half er bei der Erschaffung des Dämmerbrunnens. Für seine Verdienste wurde er vollständig begnadigt und wieder in Silbermond aufgenommen."},
 }
 
