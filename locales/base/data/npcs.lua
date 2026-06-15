@@ -1234,7 +1234,6 @@ IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].timeline = {
     }
 }
 
-
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].race = "Blood Elf"
@@ -2037,6 +2036,7 @@ IMAGOdb.npcs.CAT_HARATI["elder_hagar"].timeline = {
     }
 }
 
+-- AMARAKK --
 IMAGOdb.npcs.CAT_HARATI["amarakk"].name = "Amarakk"
 IMAGOdb.npcs.CAT_HARATI["amarakk"].race = "Haranir"
 IMAGOdb.npcs.CAT_HARATI["amarakk"].lore = [[When Amarakk was young, he still heard the song of the goddess. A good son from a good family, he preferred to go on adventures with his best friend Orweyna and didn't take life very seriously. When their adventures led them into the Rift of Aln though, Amarakk saw the madness and horror of what lurked under their very homes.
@@ -2055,6 +2055,20 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
     }
 }
 
+-- ROOTWARDEN RUIA --
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].name = "Rootwarden Ruia"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].race = "Haranir"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].lore = [[As the Rootwarden of Shaladrassil, Ruia has seen the effects of the Lightbloom all too well when the infection spread from his world tree's roots into Harandar. With his village of Har'alnor in grave peril, he is thinking of taking desperate measures.
+
+Always having been a bit standoffish, the Elder has now laid the blame for the blight of the Lightbloom on the elves' meddling with the Sunwell and strongly disapproves of working with the outsiders.]]
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].zones = {"The Blinding Vale", "Eversong Woods", "The Den", "Harandar"}
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].source = "Cadash"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].timeline = {
+    {
+        era = "Midnight",
+        text = [[Tried to battle the Lightbloom when it overwhelmed his village of Har'alnor. He failed, was corrupted by it, and his love for his people turned to hatred. As Lightwarden Ruia he deliberately spread the infection to Eversong Woods, using it as a weapon against the blood elves. Was stopped by an alliance of elves and Hara'ti and was killed by Orweyna and the Champion of Azeroth.]],
+    }
+}
 
 -- CAT_ARCANTINA
 -- GARONA HALFORCEN --
