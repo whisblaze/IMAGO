@@ -8,7 +8,8 @@
 ## IconTexture: 5341597
 
 IMAGO.lua
-core/Locale.lua
+locales/base/locale.lua
+locales/[TextLocale]/locale.lua
 
 data/LoreSnippets_static.lua
 data/zones_static.lua

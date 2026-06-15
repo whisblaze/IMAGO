@@ -1,3 +1,7 @@
+-- ============================================================
+-- IMAGO — locales/ruRU/chronicle.lua
+-- ============================================================
+
 if GetLocale() ~= "ruRU" then return end
 
 IMAGO.Chronicle = IMAGO.Chronicle or {}
