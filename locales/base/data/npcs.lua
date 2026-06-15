@@ -2187,6 +2187,31 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
     }
 }
 
+-- KELSEY STEELSPARK --
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].name = "Kelsey Steelspark"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].race = "Gnome"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].lore = [[Agent Steelspark is the most prominent member of the Gnomeregan Covert Ops and an inventor by profession. Even though she owns a knife collection and is a member of the rogue order known as the Uncrowned, she isn't particularly proficient in hand-to-hand combat and prefers to use gadgets and explosives to take out her foes.]]
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].timeline = {
+    {
+        era = "Cata",
+        text = [[Was stationed in Gadgetzan in civilian guise to negotiate a trade deal between Marin Noggenfogger and Gnomeregan.]],
+    },
+    {
+        era = "Legion",
+        text = [[Defended Tanaris from Legion invasions. Served the Uncrowned in Dalaran as quartermaster and later helped sabotage goblin mining operations in Silithus.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought under Halford Wyrmbane for the Alliance during the Fourth War as a stealth agent in enemy territory. Severely weakened Zandalari harbor defenses by planting hidden bombs on their warships. Secured the Mechagnomes' help to save King Mekkatorque's life after the Siege of Dazar'alor.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Still a member of the Uncrowned, Kelsey loudly discussed a mission with Taoshi.]],
+    }
+}
+
 -- GORGONNA --
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].name = "Gorgonna"
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].race = "Orc"
