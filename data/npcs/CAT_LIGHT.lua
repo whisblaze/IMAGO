@@ -216,3 +216,10 @@ IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"] = {
     zones = {},
     category = "CAT_LIGHT",
 }
+
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"] = {
+    displayID = 238730,
+    ids = {238730, 250403, 238765, 239489, 240461, 241385, 240597, 256038},
+    zones = {},
+    category = "CAT_LIGHT",
+}
