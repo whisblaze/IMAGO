@@ -289,6 +289,23 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].name = "Lord Antenorian"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].lore = [[Originally a magister from Silvermoon, Antenorian has always preferred the quiet of the fittingly-named Tranquilien. When he learned of Magister Umbric's research into the threat of the Voidstorm, he invited the ren'dorei into town.
+
+As Tranquilien's governor, he is deeply protective of his citizens. With the Void darkening their skies, waiting to devour them all, Antenorian is prepared to pay any price to keep them safe.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].zones = {"Eversong Wood", "The Shadow Enclave"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].timeline = {
+    {
+        era = "Pre-MN",
+        text = [[After serving the magistrate for many years, he moved to Tranquilien to become the town's governor.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Despaired when Xal'atath attacked Silvermoon and secretly joined the Twilight's Blade. Invited Umbric under the pretense of helping him, but tried to kill the magister and managed to destroy his research. His plan to bring Eversong Woods under the cult's control was thwarted by Umbric, Arator and the Champion when they infiltrated Deathholme. Abandoned by his Void allies, he was eventually slain.]],
+    }
+}
 
 -- CAT_LIGHT
 -- MEHLAR DAWNBLADE --
@@ -1182,18 +1199,38 @@ IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].timeline = {
     }
 }
 
--- ROOTWARDEN RUIA --
-IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].name = "Rootwarden Ruia"
-IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].race = "Haranir"
-IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].lore = [[As the Rootwarden of Shaladrassil, Ruia has seen the effects of the Lightbloom all too well when the infection spread from his world tree's roots into Harandar. With his village of Har'alnor in grave peril, he is thinking of taking desperate measures.
+-- TARENAR SUNSTRIKE --
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].name = "Tarenar Sunstrike"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].lore = [[Since they were kids, Tarenar and his best friend Gidwin Goldbraids pretended to be heroes. As the 'Paladin Pals' they wanted to combat evil side by side. At Light's Hope Chapel, they made that dream reality and joined the Argent Crusade.
 
-Always having been a bit standoffish, the Elder has now laid the blame for the blight of the Lightbloom on the elves' meddling with the Sunwell and strongly disapproves of working with the outsiders.]]
-IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].zones = {"The Blinding Vale", "Eversong Woods", "The Den", "Harandar"}
-IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].source = "Cadash"
-IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].timeline = {
+With his recklessness and tendency to not take things seriously, Tarenar frequently incites frustration in both Gidwin and their mutual friend Fiona. However, he never hesitates to make up for his mistakes and take responsibility.]]
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].zones = {"Arcantina", "Silvermoon City", "Isle of Quel'Danas", "Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].timeline = {
+    {
+        era = "Cata",
+        text = [[Traveled with Gidwin on Fiona's caravan to become paladins at Light's Hope Chapel. Rescued Gidwin from being turned into a death knight, and both were admitted into the Argent Crusade.]],
+    },
+    {
+        era = "WoD",
+        text = [[Accompanied Fiona and Gidwin to Draenor. Helped out the Alliance army against rampaging botani despite being a blood elf.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the reformed Knights of the Silver Hand and fought against the Burning Legion on the Broken Shore.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Celebrated the Legion's defeat with Gidwin by amassing bar tabs in Silvermoon City. Had to sneak out when the Fourth War erupted.]],
+    },
+    {
+        era = "DF",
+        text = [[Went traveling with Fiona once more on the Dragon Isles.]],
+    },
     {
         era = "Midnight",
-        text = [[Tried to battle the Lightbloom when it overwhelmed his village of Har'alnor. He failed, was corrupted by it, and his love for his people turned to hatred. As Lightwarden Ruia he deliberately spread the infection to Eversong Woods, using it as a weapon against the blood elves. Was stopped by an alliance of elves and Hara'ti and was killed by Orweyna and the Champion of Azeroth.]],
+        text = [[Was called by the Sunwell to defend his homeland. Paid back his and Gidwin's drinking debts. Being banned from most inns of Quel'Thalas, the two friends were happy to spend time in the magical Arcantina.]],
     }
 }
 
@@ -1999,6 +2036,7 @@ IMAGOdb.npcs.CAT_HARATI["elder_hagar"].timeline = {
     }
 }
 
+-- AMARAKK --
 IMAGOdb.npcs.CAT_HARATI["amarakk"].name = "Amarakk"
 IMAGOdb.npcs.CAT_HARATI["amarakk"].race = "Haranir"
 IMAGOdb.npcs.CAT_HARATI["amarakk"].lore = [[When Amarakk was young, he still heard the song of the goddess. A good son from a good family, he preferred to go on adventures with his best friend Orweyna and didn't take life very seriously. When their adventures led them into the Rift of Aln though, Amarakk saw the madness and horror of what lurked under their very homes.
@@ -2017,6 +2055,20 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
     }
 }
 
+-- ROOTWARDEN RUIA --
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].name = "Rootwarden Ruia"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].race = "Haranir"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].lore = [[As the Rootwarden of Shaladrassil, Ruia has seen the effects of the Lightbloom all too well when the infection spread from his world tree's roots into Harandar. With his village of Har'alnor in grave peril, he is thinking of taking desperate measures.
+
+Always having been a bit standoffish, the Elder has now laid the blame for the blight of the Lightbloom on the elves' meddling with the Sunwell and strongly disapproves of working with the outsiders.]]
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].zones = {"The Blinding Vale", "Eversong Woods", "The Den", "Harandar"}
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].source = "Cadash"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].timeline = {
+    {
+        era = "Midnight",
+        text = [[Tried to battle the Lightbloom when it overwhelmed his village of Har'alnor. He failed, was corrupted by it, and his love for his people turned to hatred. As Lightwarden Ruia he deliberately spread the infection to Eversong Woods, using it as a weapon against the blood elves. Was stopped by an alliance of elves and Hara'ti and was killed by Orweyna and the Champion of Azeroth.]],
+    }
+}
 
 -- CAT_ARCANTINA
 -- GARONA HALFORCEN --
@@ -2263,6 +2315,33 @@ IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].timeline = {
     }
 }
 
+-- MARIUS FELBANE --
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].name = "Marius Felbane"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].race = "Night Elf"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].lore = [[Demon hunter Marius Felbane harbors a hatred for the Burning Legion rivaled by few others. His abhorrence runs deep enough that he was willing to team up with the warlock Tehd Shoemaker, despite despising what his undead companion represents. He barely saw him as a person at first but had to begrudgingly admit that they fight exceptionally well together. 
+
+After slaying over one hundred and fifty demons since the Legion's invasion of the Broken Shore, the two have now set their sights on new enemies.]]
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].timeline = {
+    {
+        era = "TBC",
+        text = [[Pledged his loyalty to Illidan Stormrage in Outland. Invaded Mardum at his behest, but upon returning was captured and imprisoned alongside his fellow Illidari by Maiev Shadowsong.]],
+    },
+    {
+        era = "Legion",
+        text = [[After being locked in stasis for 6 years, Marius and the other demon hunters were freed by their captor as a last resort to combat Gul'dan. Joined the battle against the Burning Legion, worked together with Tehd Shoemaker and killed or subdued various demons, occasionally helped by the Champion of Azeroth. Later fought on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kept hunting remaining demons on Zuldazar with Tehd.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Begrudgingly accepted Tehd's request to rest and relax for a while in the Arcantina.]],
+    }
+}
+
 -- FLYNN FAIRWIND --
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].name = "Flynn Fairwind"
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].race = "Human"
@@ -2297,6 +2376,36 @@ IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].timeline = {
     {
         era = "TWW",
         text = [[Was in Dalaran during the city's destruction and was captured by the nerubians of Azj-Kahet. Helped free the other captives and worked for the Weaver against Queen Ansurek.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina.]],
+    }
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].name = "Scalecommander Emberthal"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].lore = [[Emberthal is the leader of the Ebon Scales, the weyrn of dracthyr empowered with the magics of the black dragonflight. Like her fellow soldiers she was created by Neltharion before he gave in to corruption, and even after being imprisoned by him for thousands of years, she couldn't help but feel sadness and confusion at her father's fate. 
+
+Unlike her former friend Sarkareth, Emberthal rejected Deathwing's legacy and has united the dracthyr in harmony and a desire for peace on Azeroth.]]
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Fought as Scalecommander against her creator Neltharion's foes. When Raszageth destroyed the titan relic Oathbinder, used by Neltharion to mind control the dracthyr, Emberthal, along with her companions, was imprisoned.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Awoke thousands of years later to a changed world. Witnessed Raszageth's reawakening and was unable to stop it. At the behest of the black dragons Wrathion and Ebyssian, the dracthyr split up to join the Horde and the Alliance while Emberthal remained as a neutral leader on the Dragon Isles.]],
+    },
+    {
+        era = "DF",
+        text = [[Was briefed by Nozdormu about Neltharion's legacy and the state of the world and helped him find out more about her creator's corruption. Emberthal disagreed and fought with Sarkareth because the latter chose to follow in Deathwing's footsteps and embraced the Void. After killing him, Emberthal reformed the Ebon Scales. Fought against Fyrakk's forces in the Emerald Dream.]],
+    },
+    {
+        era = "TWW",
+        text = [[Returned to the Forbidden Reach to aid the few remaining dormant dracthyr begin their new lives on Azeroth.]],
     },
     {
         era = "Midnight",
