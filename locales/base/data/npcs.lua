@@ -28,6 +28,8 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron"].timeline = {
     {era = "BfA", text = "Successfully invited the nightborne of Suramar to join the Horde. He later personally led the Horde forces in the campaign against Queen Aszhara and joined the rebellion against Sylvanas Windrunner. After the Fourth War he joined the newly-formed Horde council as one of its leaders."},
     {era = "Pre-DF", text = "Married Thalyssra and invited both Horde and Alliance leaders to the wedding in a show of support for peace between the factions."},
     {era = "DF", text = "Joined in the defense of Amirdrassil."},
+    {era = "Pre-TWW", text = " Traversed the Islands and Isles of Azeroth with Thalyssra during a belated honeymoon. Heard the Radiant Song while being shown around the Dragon Isles by Wrathion."},
+    {era = "Pre-MN", text = "Helped Thalyssra to keep Suramar safe from a resurgence of the Burning Legion. Encouraged and helped host Turalyon's and Alleria's wedding which ended up being broken off."},
     {era = "Midnight", text = "Led the blood elf forces in Silvermoon's defense against the Void."},
 }
 
@@ -86,12 +88,14 @@ IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].source = "Cadash & Austin 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath"].timeline = {
     {era = "Pre-WC1", text = "Studied the arcane in the mage capital of Dalaran alongside his friends Umbric and Dar'khan Drathir."},
     {era = "WC3", text = "Survived Silvermoon's destruction and joined Kael'thas Sunstrider in his defense of Dalaran. Followed the prince to Outland after escaping the dungeons of the Kirin Tor and learned how to combat the blood elves' addiction to magic from Illidan Stormrage. He returned to Silvermoon as Grand Magister."},
-    {era = "TBC", text = "Helped found the order of the Blood Knights and joined the civil war against Kael'thas Sunstrider. Sometime after the prince's defeat, Rommath exiled Magister Umbric and his followers for practicing void magic."},
+    {era = "Pre-TBC", text = "Helped found the order of the Blood Knights and rose to political power with Kael'thas' approval. Controlled the consumption of magic of the blood elves, ensuring that as few as possible succumbed to their addictions."},
+    {era = "TBC", text = "Opposed accepting help from Sylvanas Windrunner in the reclamation of the Ghostlands but was outvoted by Lor'themar and Halduron. Joined the civil war against Kael'thas Sunstrider when the prince allied with the Burning Legion. Sometime after the prince's defeat, Rommath exiled Magister Umbric and his followers for practicing void magic."},
     {era = "WotLK", text = "Attempted to dissuade Lor'themar from sending the diminished blood elves to war in Northrend, ultimately failing. Helped in the restoration of the weapon Quel'delar."},
-    {era = "MoP", text = "Rescued Aethas Sunreaver and many other mages from the purge of Dalaran. He fought for the Horde as part of the Sunreavers on the Isle of Thunder."},
+    {era = "MoP", text = "Investigated mogu artifacts and the properties of sha corruption. Rescued Aethas Sunreaver and many other mages from the Purge of Dalaran. He fought for the Horde as part of the Sunreaver Onslaught on the Isle of Thunder."},
     {era = "Legion", text = "Helped to free Suramar from the occupation of the Burning Legion."},
     {era = "BfA", text = "Took part in welcoming the nightborne into the Horde and defended the Sunwell from Alleria's influence."},
     {era = "SL", text = "Defended Silvermoon from new Scourge incursions alongside Lady Liadrin and Aethas Sunreaver."},
+    {era = "Pre-MN", text = "Relented when his former friend, Magister Umbric, pleaded with him to allow him to stay in Eversong Woods to prepare for the coming assault by the Void. Reluctantly worked with the ren'dorei to combat the Twilight's Blade in the Twilight Highlands."},
     {era = "Midnight", text = "Rommath led the magisters of Silvermoon in their defense from the Devouring Host. Still wary of Umbric's use of Void magic, Rommath reluctantly agreed that his expertise is needed to defeat their common enemy."},
 }
 
@@ -215,9 +219,10 @@ IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric"].timeline = {
     {era = "Pre-WC1", text = "Studied the Arcane in Dalaran alongside his friends Rommath and Dar'Khan Drathir."},
     {era = "Pre-WotLK", text = "Exiled from Silvermoon for practicing forbidden void magic."},
     {era = "Legion", text = "Discovered Telogrus Rift and turned into ren'dorei along with his followers. Joined Alleria Windrunner after she offered them a place in the Alliance."},
-    {era = "BfA", text = "Fought in the Fourth War and proved his worth to the Alliance."},
+    {era = "BfA", text = "Fought for the Alliance in the Fourth War and was eager to prove his worth. He weakened Zandalari defenses by transporting troops via portals and he almost managed to kill Jastor Gallywix. Reanimated revered dinosaurs and made them fight the Zandalari, dealing a heavy blow to enemy morale."},
     {era = "DF", text = "Began the hunt for Xal'atath alongside Alleria Windrunner and defended Telogrus Rift from the Harbinger's void forces."},
     {era = "TWW", text = "Established an outpost on K'aresh, lending the ren'dorei's strength in the fight against Dimensius."},
+    {era = "Pre-MN", text = "After hearing of Vereesa's visions, he managed to regain entry into Eversong Woods. Reluctantly worked with his former friend, Grand Magister Rommath, to combat the Twilight's Blade in the Twilight Highlands."},
     {era = "Midnight", text = "With Silvermoon in danger, Umbric returned to his former homeland to combat the Void. He managed to open a passage into the Voidstorm and later helped to create the Dawnwell. For his efforts he was readmitted into Silvermoon with a full pardon."},
 }
 
@@ -323,6 +328,23 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].name = "Lord Antenorian"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].lore = [[Originally a magister from Silvermoon, Antenorian has always preferred the quiet of the fittingly-named Tranquilien. When he learned of Magister Umbric's research into the threat of the Voidstorm, he invited the ren'dorei into town.
+
+As Tranquilien's governor, he is deeply protective of his citizens. With the Void darkening their skies, waiting to devour them all, Antenorian is prepared to pay any price to keep them safe.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].zones = {"Eversong Wood", "The Shadow Enclave"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].timeline = {
+    {
+        era = "Pre-MN",
+        text = [[After serving the magistrate for many years, he moved to Tranquilien to become the town's governor.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Despaired when Xal'atath attacked Silvermoon and secretly joined the Twilight's Blade. Invited Umbric under the pretense of helping him, but tried to kill the magister and managed to destroy his research. His plan to bring Eversong Woods under the cult's control was thwarted by Umbric, Arator and the Champion when they infiltrated Deathholme. Abandoned by his Void allies, he was eventually slain.]],
+    }
+}
 
 -- CAT_LIGHT
 -- MEHLAR DAWNBLADE --
@@ -357,7 +379,7 @@ IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
     },
     {
         era = "DF",
-        text = [[Was present at the reformation of Tyr and the founding of Tyr's Hand Order.]],
+        text = [[Was present at the reformation of Tyr and the founding of Tyr's Guard.]],
     },
     {
         era = "TWW",
@@ -1253,6 +1275,40 @@ IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].timeline = {
     }
 }
 
+-- TARENAR SUNSTRIKE --
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].name = "Tarenar Sunstrike"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].lore = [[Since they were kids, Tarenar and his best friend Gidwin Goldbraids pretended to be heroes. As the 'Paladin Pals' they wanted to combat evil side by side. At Light's Hope Chapel, they made that dream reality and joined the Argent Crusade.
+
+With his recklessness and tendency to not take things seriously, Tarenar frequently incites frustration in both Gidwin and their mutual friend Fiona. However, he never hesitates to make up for his mistakes and take responsibility.]]
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].zones = {"Arcantina", "Silvermoon City", "Isle of Quel'Danas", "Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].timeline = {
+    {
+        era = "Cata",
+        text = [[Traveled with Gidwin on Fiona's caravan to become paladins at Light's Hope Chapel. Rescued Gidwin from being turned into a death knight, and both were admitted into the Argent Crusade.]],
+    },
+    {
+        era = "WoD",
+        text = [[Accompanied Fiona and Gidwin to Draenor. Helped out the Alliance army against rampaging botani despite being a blood elf.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the reformed Knights of the Silver Hand and fought against the Burning Legion on the Broken Shore.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Celebrated the Legion's defeat with Gidwin by amassing bar tabs in Silvermoon City. Had to sneak out when the Fourth War erupted.]],
+    },
+    {
+        era = "DF",
+        text = [[Went traveling with Fiona once more on the Dragon Isles.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was called by the Sunwell to defend his homeland. Paid back his and Gidwin's drinking debts. Being banned from most inns of Quel'Thalas, the two friends were happy to spend time in the magical Arcantina.]],
+    }
+}
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
@@ -2091,6 +2147,7 @@ IMAGOdb.npcs.CAT_HARATI["elder_hagar"].timeline = {
     }
 }
 
+-- AMARAKK --
 IMAGOdb.npcs.CAT_HARATI["amarakk"].name = "Amarakk"
 IMAGOdb.npcs.CAT_HARATI["amarakk"].aliases = {}
 IMAGOdb.npcs.CAT_HARATI["amarakk"].race = "Haranir"
@@ -2107,6 +2164,21 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"].timeline = {
     {
         era = "Midnight",
         text = [[Helped Orweyna and the Champion venture into the Rift of Aln to acquire Alndust as a weapon against the Lightbloom.]],
+    }
+}
+
+-- ROOTWARDEN RUIA --
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].name = "Rootwarden Ruia"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].race = "Haranir"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].lore = [[As the Rootwarden of Shaladrassil, Ruia has seen the effects of the Lightbloom all too well when the infection spread from his world tree's roots into Harandar. With his village of Har'alnor in grave peril, he is thinking of taking desperate measures.
+
+Always having been a bit standoffish, the Elder has now laid the blame for the blight of the Lightbloom on the elves' meddling with the Sunwell and strongly disapproves of working with the outsiders.]]
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].zones = {"The Blinding Vale", "Eversong Woods", "The Den", "Harandar"}
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].source = "Cadash"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"].timeline = {
+    {
+        era = "Midnight",
+        text = [[Tried to battle the Lightbloom when it overwhelmed his village of Har'alnor. He failed, was corrupted by it, and his love for his people turned to hatred. As Lightwarden Ruia he deliberately spread the infection to Eversong Woods, using it as a weapon against the blood elves. Was stopped by an alliance of elves and Hara'ti and was killed by Orweyna and the Champion of Azeroth.]],
     }
 }
 
@@ -2160,6 +2232,49 @@ IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].timeline = {
     {
         era = "Midnight",
         text = [[Visited the Arcantina.]],
+    }
+}
+
+-- ZEN TABRA --
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].name = "Zen'tabra"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].race = "Troll"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].lore = [[Zen'tabra was one of the first trolls of the Darkspear tribe to learn the art of druidism when the raptor loa Gonk contacted her through the Emerald Dream. With this newfound power, she helped keep the Echo Isles safe from enemies multiple times and negotiated entry for the Darkspear druids into the Cenarion Circle. 
+
+After helping put a stop to Fyrakk's forces in the Emerald Dream during Amirdrassil's birth, Zen'tabra is now taking things a bit slower until the next threat to nature inevitably arrives.]]
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].timeline = {
+    {
+        era = "WotLK",
+        text = [[As a witch doctor, she felt the loa retreat from Darkspear society but failed to realize that the traitorous Zalazane was cutting the connection. Fled south when Zalazane conquered the Echo Isles, and was contacted by Gonk. She learned druidism in the Emerald Dream and joined Vol'jin in the fight to take back the Isles.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Successfully negotiated the Darkspear trolls' admission into the Cenarion Circle.]],
+    },
+    {
+        era = "Cata",
+        text = [[As a member of the Circle, she fought Ragnaros' forces on Mount Hyjal. Began to train new Darkspear druids.]],
+    },
+    {
+        era = "MoP",
+        text = [[Joined Vol'jin's rebellion against Warchief Garrosh Hellscream and was taken as a prisoner of war. Was rescued by SI:7 and introduced the Champion of the Alliance to the rebellion.]],
+    },
+    {
+        era = "Legion",
+        text = [[Fought the Burning Legion in Val'sharah alongside the other members of the Cenarion Circle. Protected the Well of Eternity and helped slay Destromath. Cleansed the branch of G'hanir to use as a mighty weapon for the Archdruid. She later protected the Exodar from the demons.]],
+    },
+    {
+        era = "BfA",
+        text = [[Defended the Echo Isles once more from Zalazane, when he returned as an undead lich.]],
+    },
+    {
+        era = "DF",
+        text = [[Aided the green dragonflight in the Ohn'ahran Plains and fought Fyrakk's forces in the Emerald Dream by halting the spread of the fire and closing Flame Portals.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina with fellow druid Thisalee Crow.]],
     }
 }
 
@@ -2229,6 +2344,31 @@ IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].timeline = {
     }
 }
 
+-- KELSEY STEELSPARK --
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].name = "Kelsey Steelspark"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].race = "Gnome"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].lore = [[Agent Steelspark is the most prominent member of the Gnomeregan Covert Ops and an inventor by profession. Even though she owns a knife collection and is a member of the rogue order known as the Uncrowned, she isn't particularly proficient in hand-to-hand combat and prefers to use gadgets and explosives to take out her foes.]]
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark"].timeline = {
+    {
+        era = "Cata",
+        text = [[Was stationed in Gadgetzan in civilian guise to negotiate a trade deal between Marin Noggenfogger and Gnomeregan.]],
+    },
+    {
+        era = "Legion",
+        text = [[Defended Tanaris from Legion invasions. Served the Uncrowned in Dalaran as quartermaster and later helped sabotage goblin mining operations in Silithus.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought under Halford Wyrmbane for the Alliance during the Fourth War as a stealth agent in enemy territory. Severely weakened Zandalari harbor defenses by planting hidden bombs on their warships. Secured the Mechagnomes' help to save King Mekkatorque's life after the Siege of Dazar'alor.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Still a member of the Uncrowned, Kelsey loudly discussed a mission with Taoshi.]],
+    }
+}
+
 -- GORGONNA --
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].name = "Gorgonna"
 IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].aliases = {}
@@ -2273,6 +2413,67 @@ IMAGOdb.npcs.CAT_ARCANTINA["gorgonna"].timeline = {
     }
 }
 
+-- LILLIAN VOSS --
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].name = "Lillian Voss"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].race = "Undead"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].lore = [[When she was alive, Lillian Voss was part of the Scarlet Crusade. Her enemies were the undead, and she made no distinction between Forsaken and Scourge. She hunted them, she hated them. And then she became one of them.
+
+It took her a long time to accept what she had become and let go of her self-hatred. In the end, she found kinship among the ranks of the Forsaken of the Horde and brought solace to newly risen members by helping them accept their new unlife. 
+
+She uses her considerable abilities for the sake of her people and is not above applying underhanded tactics. Even though she is so used to fighting, she now embraces the peace between the factions.]]
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss"].timeline = {
+    {
+        era = "Pre-Cata",
+        text = [[Raised by her father, High Priest Benedictus Voss, to be an efficient killing machine for the Scarlet Crusade. Sometime before the Cataclysm, Lillian died and was laid to rest in a mass grave.]],
+    },
+    {
+        era = "Cata",
+        text = [[Was raised as a Forsaken but fled in horror at what she had become. She tried to return to the Crusade, but was imprisoned and put up for execution. Developed a hatred for her former friends and family and went on a killing spree which included her father.]],
+    },
+    {
+        era = "MoP",
+        text = [[Eradicated the reforming Scarlet Crusade in the Scarlet Monastery. Combated Darkmaster Gandling in Scholomance.]],
+    },
+    {
+        era = "WoD",
+        text = [[Helped Horde and Alliance forces against the undead of Draenor.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Uncrowned in Dalaran and fought alongside the Shadowblade on the Broken Shore. Took out dangerous undead homunculi of the Legion.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[With Sylvanas raising more and more Forsaken, and with the Alliance continuing to harbor hatred for their fallen kin, Lillian officially joined the Horde.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought against the Alliance on Kul Tiras and helped new Forsaken troops to adapt to their fate as undead in the Horde. After Sylvanas' betrayal, Voss joined the new Horde Council as representative of the Forsaken. Met Calia Menethil and considered her a worthy ruler of Lordaeron.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[As interim leader of the Forsaken, Lillian began plans to secure a future for the Forsaken.]],
+    },
+    {
+        era = "SL",
+        text = [[Managed to reclaim the Undercity from the blight of the Fourth War. Proposed the formation of the Desolate Council - the new ruling body of the Forsaken - and joined it. Successfully encouraged Calia Menethil to also step up as a co-ruler.]],
+    },
+    {
+        era = "DF",
+        text = [[Led the Forsaken strike force against the Scarlet Crusade, took back Fenris Isle and killed Commander Forsythe. Later distracted the Scarlet Crusade in Gilneas to help the worgen reclaim their city. Worked with Shandris Feathermoon to help defend Amirdrassil from Fyrakk's forces.]],
+    },
+    {
+        era = "TWW",
+        text = [[Spied on the ascended nerubians of Azj-Kahet and discovered Queen Neferess' true fate. Fought, then saved Y'tekhi after they were mind-controlled by Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Spent a peaceful while in the Arcantina.]],
+    }
+}
+
 -- TEHD SHOEMAKER --
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].name = "Tehd Shoemaker"
 IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].aliases = {"Tehd"}
@@ -2298,6 +2499,41 @@ IMAGOdb.npcs.CAT_ARCANTINA["tehd_shoemaker"].timeline = {
     {
         era = "Midnight",
         text = [[Unenthusiastically tried to help out the armies of Silvermoon but was promptly arrested by the Army of the Light for being a warlock. Abandoning the fight, he convinced Marius to join him for a drink in the Arcantica.]],
+    }
+}
+
+-- TAOSHI --
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].name = "Taoshi"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].race = "Pandaren"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].lore = [[The number two of the Shado-Pan, this roguish pandaren is one of the deadliest spies and assassins the land in the mists has to offer. Taoshi was front and center in defending Pandaria from the mantid, the sha, the Thunder King, and N'Zoth's forces. She rarely shies away from risky plans and sometimes it seems like a part of her lives for the danger her job tends to bring. The only person capable of reining her in is Shado-Pan leader Taran Zhu, to whom Taoshi is fiercely loyal.
+
+Since Azeroth was threatened by the return of the Burning Legion, Taoshi helped to defend the world beyond her homeland as a high ranking member of the Uncrowned in Dalaran. Both Horde and Alliance can count on her assistance when needed, knowing full well that she has her allies' backs no matter what stands against them.]]
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi"].timeline = {
+    {
+        era = "MoP",
+        text = [[Stopped the mantid in the Townlong Steppes and defeated the Sha of Hatred alongside Taran Zhu and the Champion. Fought on the Isle of Thunder against Lei Shen's forces, helping both the warring Horde and Alliance.]],
+    },
+    {
+        era = "WoD",
+        text = [[Was sent by the Shado-Pan to Draenor to combat the Iron Horde.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the Uncrowned in Dalaran as one of the Shadows. Formulated and executed the plan to rescue Mathias Shaw from Legion captivity and later infiltrated Stormwind alongside Shaw and the Shadowblade to kill Detheroc.]],
+    },
+    {
+        era = "BfA",
+        text = [[Defended the Vale of Eternal Blossom from N'Zoth's minions and helped combat the void corruption of the land.]],
+    },
+    {
+        era = "TWW",
+        text = [[Survived the destruction of Dalaran and managed to save the Uncrowned's archives during the crash. Settled in Dornogal with her fellow Uncrowned.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Met with Kelsey Steelspark in the Arcantina for a mission.]],
     }
 }
 
@@ -2341,6 +2577,37 @@ IMAGOdb.npcs.CAT_ARCANTINA["vanessa_vancleef"].timeline = {
     }
 }
 
+--SCALECOMMANDER AZUREATHEL --
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].name = "Scalecommander Azurathel"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].lore = [[Azurathel was one of the first dracthyr created by Neltharion and was hand-picked by his maker to lead the Obsidian Warders – the shield on the front lines protecting the other dracthyr. After awakening from stasis during the rise of the Incarnates, he led his weyrn into the ranks of the Alliance. 
+
+Even though he has vowed to keep Azeroth safe from danger, he has chosen to remember Neltharion with fondness, preferring to hold him in his memory as a father instead of the tyrant he became as Deathwing.]]
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Created by Neltharion to serve as a protector to his fellow dracthyr. Was in charge of defending the black dragonflight's strongholds on the Dragon Isles. When Raszageth destroyed the titan relic Oathbinder, used by Neltharion to mind control the dracthyr, Azurathel, along with his companions, was imprisoned.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Awoke thousands of years later to a changed world. Witnessed Raszageth's reawakening and was unable to stop it. At the behest of the black dragons Wrathion and Ebyssian, the dracthyr split up to join the Horde and the Alliance. Azurathel led the Obsidian Warders to Stormwind and joined the Alliance.]],
+    },
+    {
+        era = "DF",
+        text = [[Agreed with High Exarch Turalyon to send Alliance forces to aid the dragon aspects on the Dragon Isles but to remain peaceful with the Horde. Fought the Primal Incarnates on the Isles and later in the Emerald Dream.]],
+    },
+    {
+        era = "TWW",
+        text = [[Greeted newly-awakened dracthyr that chose to join him in the Alliance.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Had a drink with fellow Scalecommander Emberthal in the Arcantina.]],
+    }
+}
+
 -- CECILIA CLESSINGTON --
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].name = "Cecilia Clessington"
 IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].aliases = {"Cecilia"}
@@ -2358,6 +2625,33 @@ IMAGOdb.npcs.CAT_ARCANTINA["cecilia_clessington"].timeline = {
     {
         era = "Midnight",
         text = [[Enjoyed a drink in the Arcantina with Vanessa.]],
+    }
+}
+
+-- MARIUS FELBANE --
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].name = "Marius Felbane"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].race = "Night Elf"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].lore = [[Demon hunter Marius Felbane harbors a hatred for the Burning Legion rivaled by few others. His abhorrence runs deep enough that he was willing to team up with the warlock Tehd Shoemaker, despite despising what his undead companion represents. He barely saw him as a person at first but had to begrudgingly admit that they fight exceptionally well together. 
+
+After slaying over one hundred and fifty demons since the Legion's invasion of the Broken Shore, the two have now set their sights on new enemies.]]
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane"].timeline = {
+    {
+        era = "TBC",
+        text = [[Pledged his loyalty to Illidan Stormrage in Outland. Invaded Mardum at his behest, but upon returning was captured and imprisoned alongside his fellow Illidari by Maiev Shadowsong.]],
+    },
+    {
+        era = "Legion",
+        text = [[After being locked in stasis for 6 years, Marius and the other demon hunters were freed by their captor as a last resort to combat Gul'dan. Joined the battle against the Burning Legion, worked together with Tehd Shoemaker and killed or subdued various demons, occasionally helped by the Champion of Azeroth. Later fought on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kept hunting remaining demons on Zuldazar with Tehd.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Begrudgingly accepted Tehd's request to rest and relax for a while in the Arcantina.]],
     }
 }
 
@@ -2396,6 +2690,36 @@ IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].timeline = {
     {
         era = "TWW",
         text = [[Was in Dalaran during the city's destruction and was captured by the nerubians of Azj-Kahet. Helped free the other captives and worked for the Weaver against Queen Ansurek.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina.]],
+    }
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].name = "Scalecommander Emberthal"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].lore = [[Emberthal is the leader of the Ebon Scales, the weyrn of dracthyr empowered with the magics of the black dragonflight. Like her fellow soldiers she was created by Neltharion before he gave in to corruption, and even after being imprisoned by him for thousands of years, she couldn't help but feel sadness and confusion at her father's fate. 
+
+Unlike her former friend Sarkareth, Emberthal rejected Deathwing's legacy and has united the dracthyr in harmony and a desire for peace on Azeroth.]]
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Fought as Scalecommander against her creator Neltharion's foes. When Raszageth destroyed the titan relic Oathbinder, used by Neltharion to mind control the dracthyr, Emberthal, along with her companions, was imprisoned.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Awoke thousands of years later to a changed world. Witnessed Raszageth's reawakening and was unable to stop it. At the behest of the black dragons Wrathion and Ebyssian, the dracthyr split up to join the Horde and the Alliance while Emberthal remained as a neutral leader on the Dragon Isles.]],
+    },
+    {
+        era = "DF",
+        text = [[Was briefed by Nozdormu about Neltharion's legacy and the state of the world and helped him find out more about her creator's corruption. Emberthal disagreed and fought with Sarkareth because the latter chose to follow in Deathwing's footsteps and embraced the Void. After killing him, Emberthal reformed the Ebon Scales. Fought against Fyrakk's forces in the Emerald Dream.]],
+    },
+    {
+        era = "TWW",
+        text = [[Returned to the Forbidden Reach to aid the few remaining dormant dracthyr begin their new lives on Azeroth.]],
     },
     {
         era = "Midnight",
