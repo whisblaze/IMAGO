@@ -2122,6 +2122,49 @@ IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"].timeline = {
     }
 }
 
+-- ZEN TABRA --
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].name = "Zen'tabra"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].race = "Troll"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].lore = [[Zen'tabra was one of the first trolls of the Darkspear tribe to learn the art of druidism when the raptor loa Gonk contacted her through the Emerald Dream. With this newfound power, she helped keep the Echo Isles safe from enemies multiple times and negotiated entry for the Darkspear druids into the Cenarion Circle. 
+
+After helping put a stop to Fyrakk's forces in the Emerald Dream during Amirdrassil's birth, Zen'tabra is now taking things a bit slower until the next threat to nature inevitably arrives.]]
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"].timeline = {
+    {
+        era = "WotLK",
+        text = [[As a witch doctor, she felt the loa retreat from Darkspear society but failed to realize that the traitorous Zalazane was cutting the connection. Fled south when Zalazane conquered the Echo Isles, and was contacted by Gonk. She learned druidism in the Emerald Dream and joined Vol'jin in the fight to take back the Isles.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Successfully negotiated the Darkspear trolls' admission into the Cenarion Circle.]],
+    },
+    {
+        era = "Cata",
+        text = [[As a member of the Circle, she fought Ragnaros' forces on Mount Hyjal. Began to train new Darkspear druids.]],
+    },
+    {
+        era = "MoP",
+        text = [[Joined Vol'jin's rebellion against Warchief Garrosh Hellscream and was taken as a prisoner of war. Was rescued by SI:7 and introduced the Champion of the Alliance to the rebellion.]],
+    },
+    {
+        era = "Legion",
+        text = [[Fought the Burning Legion in Val'sharah alongside the other members of the Cenarion Circle. Protected the Well of Eternity and helped slay Destromath. Cleansed the branch of G'hanir to use as a mighty weapon for the Archdruid. She later protected the Exodar from the demons.]],
+    },
+    {
+        era = "BfA",
+        text = [[Defended the Echo Isles once more from Zalazane, when he returned as an undead lich.]],
+    },
+    {
+        era = "DF",
+        text = [[Aided the green dragonflight in the Ohn'ahran Plains and fought Fyrakk's forces in the Emerald Dream by halting the spread of the fire and closing Flame Portals.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed a drink in the Arcantina with fellow druid Thisalee Crow.]],
+    }
+}
+
 -- REXXAR --
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].name = "Rexxar"
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"].race = "Half-Ogre, Half-Orc"

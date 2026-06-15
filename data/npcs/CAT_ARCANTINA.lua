@@ -13,6 +13,13 @@ IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"] = {
     category = "CAT_ARCANTINA",
 }
 
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"] = {
+    displayID = 250406,
+    ids = {250406, 259792},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar"] = {
     displayID = 259334,
     ids = {259334},
