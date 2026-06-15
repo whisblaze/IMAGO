@@ -289,6 +289,23 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].name = "Lord Antenorian"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].lore = [[Originally a magister from Silvermoon, Antenorian has always preferred the quiet of the fittingly-named Tranquilien. When he learned of Magister Umbric's research into the threat of the Voidstorm, he invited the ren'dorei into town.
+
+As Tranquilien's governor, he is deeply protective of his citizens. With the Void darkening their skies, waiting to devour them all, Antenorian is prepared to pay any price to keep them safe.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].zones = {"Eversong Wood", "The Shadow Enclave"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].timeline = {
+    {
+        era = "Pre-MN",
+        text = [[After serving the magistrate for many years, he moved to Tranquilien to become the town's governor.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Despaired when Xal'atath attacked Silvermoon and secretly joined the Twilight's Blade. Invited Umbric under the pretense of helping him, but tried to kill the magister and managed to destroy his research. His plan to bring Eversong Woods under the cult's control was thwarted by Umbric, Arator and the Champion when they infiltrated Deathholme. Abandoned by his Void allies, he was eventually slain.]],
+    }
+}
 
 -- CAT_LIGHT
 -- MEHLAR DAWNBLADE --
