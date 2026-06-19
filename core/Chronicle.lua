@@ -1921,8 +1921,10 @@ function IMAGO.Chronicle.UpdateList()
                                 f.detailTitle:SetShadowOffset(2, -2)
 
                                 local lore = npc.data.lore or ""
-                                local firstLetter = lore:sub(1,1)
-                                local restLore = lore:sub(2)
+                                local firstByte = string.byte(lore, 1)
+                                local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
+                                local firstLetter = lore:sub(1, charLen)
+                                local restLore = lore:sub(charLen + 1)
                                 f.loreBody:SetText("|cffffd700" .. firstLetter .. "|r" .. restLore)
                                 
                                 f.detailModel:ClearModel()
@@ -2218,9 +2220,12 @@ elseif activeTab == 2 then
                     if f.detailSeparator then f.detailSeparator:Show() end
                 end
 
-                local firstLetter = lore:sub(1,1)
-                local restLore = lore:sub(2)
-                local formattedLore = "|cffffd700" .. firstLetter .. "|r" .. restLore .. "\n\n"
+                -- Some languages take 2 bytes for their characters
+                local firstByte = string.byte(lore, 1)
+                local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
+                local firstLetter = lore:sub(1, charLen)
+                local restLore = lore:sub(charLen + 1)
+                f.loreBody:SetText("|cffffd700" .. firstLetter .. "|r" .. restLore)
                 
                 if zoneData.pointsOfInterest and next(zoneData.pointsOfInterest) then
                     formattedLore = formattedLore .. "|cffffd700" .. (IMAGO.L["ZONE_POI_HEADER"] or "INTERESSANTE ORTE") .. "|r\n_________________________________\n\n"
