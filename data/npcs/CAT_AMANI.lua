@@ -18,6 +18,7 @@ IMAGOdb.npcs.CAT_AMANI["nalorakk"] = {
     ids = {258877, 235949, 235911, 249376, 244895, 261451, 256024, 247301, 246404, 249407, 241287, 261002, 248916},
     zones = {},
     category = "CAT_AMANI",
+    encounter_journal_id = 2778,
 }
 
 IMAGOdb.npcs.CAT_AMANI["akilzon"] = {
@@ -60,4 +61,12 @@ IMAGOdb.npcs.CAT_AMANI["filo"] = {
     ids = {256170, 264374, 248726},
     zones = {},
     category = "CAT_AMANI",
+}
+
+IMAGOdb.npcs.CAT_AMANI["shadra"] = {
+    displayID = 247268,
+    ids = {251142, 247268, 247263},
+    zones = {"Zul'aman"},
+    category = "CAT_AMANI",
+    quest_ids = {91406},
 }

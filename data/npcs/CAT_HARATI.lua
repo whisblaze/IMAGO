@@ -26,3 +26,11 @@ IMAGOdb.npcs.CAT_HARATI["amarakk"] = {
     zones = {},
     category = "CAT_HARATI",
 }
+
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia"] = {
+    displayID = 245912,
+    ids = {245912, 239525, 237836, 241160, 241386, 237793, 241020, 256917, 254234},
+    zones = {},
+    category = "CAT_HARATI",
+    encounter_journal_id = 2771,
+}

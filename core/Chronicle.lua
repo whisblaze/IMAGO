@@ -1846,7 +1846,29 @@ function IMAGO.Chronicle.UpdateList()
                                 btn.newTag:Hide()
                                 f.ShowTab("lore")
 
-                                IMAGO.Chronicle.SetDetailAction(nil)
+                                -- Encounter Journal action button
+                                local raidID = npc.data.raidEncounterID
+                                local dungeonID = npc.data.dungeonEncounterID
+                                local encounterID = npc.data.encounter_journal_id
+                                
+                                if encounterID then
+                                    IMAGO.Chronicle.SetDetailAction({
+                                        tooltip = IMAGO.L["ACTION_OPEN_EJ"] or "Open in Encounter Journal",
+                                        texture = "Interface\\Icons\\INV_Misc_Book_09",
+                                        onClick = function()
+                                            f:Hide()
+                                            local name, desc, jEncID, rootSectionID, journalLink, journalInstanceID, dungeonEncounterID, instanceID = EJ_GetEncounterInfo(encounterID)
+                                            local instanceType = string.match(journalLink, "journal:%d+:%d+:(%d+)")
+                                            UIParentLoadAddOn("Blizzard_EncounterJournal")
+                                            if EncounterJournal_OpenJournal then
+                                                EncounterJournal_OpenJournal(instanceType,journalInstanceID,encounterID)
+                                            end
+                                        end,
+                                    })
+                                else
+                                    IMAGO.Chronicle.SetDetailAction(nil)
+                                end
+                                
                             end         
                             IMAGOSaved.viewedNPCs = IMAGOSaved.viewedNPCs or {}
                             if isSeen and not IMAGOSaved.viewedNPCs[npc.slug] then
