@@ -1854,7 +1854,7 @@ function IMAGO.Chronicle.UpdateList()
                                 if encounterID then
                                     IMAGO.Chronicle.SetDetailAction({
                                         tooltip = IMAGO.L["ACTION_OPEN_EJ"] or "Open in Encounter Journal",
-                                        texture = "Interface\\Icons\\INV_Misc_Book_09",
+                                        texture = "Interface\\Icons\\inv_misc_book_07",
                                         onClick = function()
                                             f:Hide()
                                             local name, desc, jEncID, rootSectionID, journalLink, journalInstanceID, dungeonEncounterID, instanceID = EJ_GetEncounterInfo(encounterID)

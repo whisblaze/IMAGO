@@ -475,6 +475,94 @@ local function ShowLoginFact()
 end
 
 -- ============================================================
+-- ENCOUNTER JOURNAL INTEGRATION
+-- ============================================================
+
+-- Build reverse lookup: encounter_journal_id -> slug
+local function BuildEJLookup()
+    IMAGO.ejIDToSlug = {}
+    for catKey, entries in pairs(IMAGOdb.npcs) do
+        if type(entries) == "table" then
+            for slug, data in pairs(entries) do
+                if data.encounter_journal_id then
+                    local id = data.encounter_journal_id
+                    if type(id) == "table" then id = id[1] end
+                    IMAGO.ejIDToSlug[id] = slug
+                end
+            end
+        end
+    end
+end
+
+local function InjectIMAGOButton(encounterID)
+    if not EncounterJournal then return end
+
+    local encounterFrame = EncounterJournal.encounter
+    if not encounterFrame then return end
+
+    if not encounterFrame.imagoBtn then
+        local btn = CreateFrame("Button", nil, encounterFrame)
+        btn:SetSize(22, 22)
+        btn:SetPoint("TOPRIGHT", encounterFrame.info.difficulty, "TOPLEFT", -4, 0)
+
+        btn.icon = btn:CreateTexture(nil, "ARTWORK")
+        btn.icon:SetAllPoints()
+        btn.icon:SetTexture("Interface\\Icons\\INV_Misc_Book_09")
+        btn.icon:SetAlpha(0.7)
+
+        local hl = btn:CreateTexture(nil, "HIGHLIGHT")
+        hl:SetAllPoints()
+        hl:SetColorTexture(1, 1, 1, 0.15)
+
+        btn:SetScript("OnEnter", function(self)
+            self.icon:SetAlpha(1.0)
+            GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
+            GameTooltip:AddLine("Open in IMAGO Chronicle", 1, 0.85, 0.1)
+            GameTooltip:Show()
+        end)
+        btn:SetScript("OnLeave", function(self)
+            self.icon:SetAlpha(0.7)
+            GameTooltip:Hide()
+        end)
+
+        encounterFrame.imagoBtn = btn
+    end
+
+    local slug = encounterID and IMAGO.ejIDToSlug and IMAGO.ejIDToSlug[encounterID]
+
+    if slug and (
+        (IMAGOSaved.seenNPCs and IMAGOSaved.seenNPCs[slug]) or
+        (IMAGOSaved.encyclopediaMode)
+    ) then
+        encounterFrame.imagoBtn:SetScript("OnClick", function()
+            EncounterJournal:Hide()
+            IMAGO.Chronicle.OpenToNPCSlug(slug)
+        end)
+        encounterFrame.imagoBtn:Show()
+    else
+        encounterFrame.imagoBtn:Hide()
+    end
+end
+
+-- Wait for Blizzard_EncounterJournal to load before hooking
+local ejHookFrame = CreateFrame("Frame")
+ejHookFrame:RegisterEvent("ADDON_LOADED")
+ejHookFrame:SetScript("OnEvent", function(self, event, addonName)
+    if addonName == "Blizzard_EncounterJournal" then
+        hooksecurefunc("EJ_SelectEncounter", InjectIMAGOButton)
+        self:UnregisterEvent("ADDON_LOADED")
+    end
+end)
+
+-- Register a PLAYER_LOGIN hook to build the lookup once the DB is ready
+local ejLoginFrame = CreateFrame("Frame")
+ejLoginFrame:RegisterEvent("PLAYER_LOGIN")
+ejLoginFrame:SetScript("OnEvent", function(self)
+    BuildEJLookup()
+    self:UnregisterEvent("PLAYER_LOGIN")
+end)
+
+-- ============================================================
 -- EVENTS & INITIALISIERUNG
 -- ============================================================
 local initFrame = CreateFrame("Frame")
