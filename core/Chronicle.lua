@@ -1857,11 +1857,13 @@ function IMAGO.Chronicle.UpdateList()
                                         texture = "Interface\\Icons\\inv_misc_book_07",
                                         onClick = function()
                                             f:Hide()
-                                            local name, desc, jEncID, rootSectionID, journalLink, journalInstanceID, dungeonEncounterID, instanceID = EJ_GetEncounterInfo(encounterID)
-                                            local instanceType = string.match(journalLink, "journal:%d+:%d+:(%d+)")
+                                            local name, desc, jEncID, rootSectionID, journalLink, journalInstanceID, _, _ = EJ_GetEncounterInfo(encounterID)
                                             UIParentLoadAddOn("Blizzard_EncounterJournal")
+                                            local _, _, _, _, _, _, _, _, _, _, _, isRaid = EJ_GetInstanceInfo(journalInstanceID)
+                                            local difficulty = isRaid and 15 or 2
                                             if EncounterJournal_OpenJournal then
-                                                EncounterJournal_OpenJournal(instanceType,journalInstanceID,encounterID)
+                                                EJ_SetDifficulty(difficulty)
+                                                EncounterJournal_OpenJournal(difficulty, journalInstanceID, encounterID)
                                             end
                                         end,
                                     })
