@@ -63,10 +63,10 @@ IMAGOdb.npcs.CAT_AMANI["filo"] = {
     category = "CAT_AMANI",
 }
 
-IMAGOdb.npcs.CAT_AMANI["shadra"] = {
-    displayID = 247268,
-    ids = {251142, 247268, 247263},
-    zones = {"Zul'aman"},
-    category = "CAT_AMANI",
-    quest_ids = {91406},
-}
+--IMAGOdb.npcs.CAT_AMANI["shadra"] = {
+  --  displayID = 247268,
+  --  ids = {251142, 247268, 247263},
+  --  zones = {"Zul'aman"},
+  --  category = "CAT_AMANI",
+  --  quest_ids = {91406},
+--}
