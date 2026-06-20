@@ -815,6 +815,11 @@ function IMAGO.Chronicle.CreateFrame()
             btn.icon:SetTexture(config.texture)
             btn.icon:SetTexCoord(0, 1, 0, 1)
         end
+        btn:SetSize(22, 22)
+        btn.border = btn:CreateTexture(nil, "OVERLAY")
+        btn.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+        btn.border:SetSize(58, 58)
+        btn.border:SetPoint("TOPLEFT", -7, 7)
         btn:SetScript("OnClick", config.onClick)
         btn:Show()
     end

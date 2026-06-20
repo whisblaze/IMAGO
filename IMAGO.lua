@@ -510,12 +510,16 @@ local function InjectIMAGOButton(encounterID)
     if not encounterFrame.imagoBtn then
         local btn = CreateFrame("Button", nil, encounterFrame)
         btn:SetSize(22, 22)
-        btn:SetPoint("TOPRIGHT", encounterFrame.info.difficulty, "TOPLEFT", -4, 0)
+        btn:SetPoint("TOPRIGHT", encounterFrame.info.difficulty, "TOPLEFT", -6, 0)
 
         btn.icon = btn:CreateTexture(nil, "ARTWORK")
         btn.icon:SetAllPoints()
         btn.icon:SetTexture("Interface\\Icons\\INV_Misc_Book_09")
         btn.icon:SetAlpha(0.7)
+        btn.border = btn:CreateTexture(nil, "OVERLAY")
+        btn.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+        btn.border:SetSize(58, 58)
+        btn.border:SetPoint("TOPLEFT", -7, 7)
 
         local hl = btn:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
@@ -573,27 +577,50 @@ end)
 -- WORLD MAP INTEGRATION
 -- ============================================================
 
+-- IMAGO Icon will go below all other map icons (even other addon ones) if they are parented under the WorldMapFrame
+local function GetLowestMapButton(f)
+    local excludeBtn = f.SidePanelToggle
+
+    local lowestBtn = f.imagoAnchorBtn
+    local lowestBottom = lowestBtn and lowestBtn:GetBottom() or nil
+
+    local children = {f:GetChildren()}
+    for _, child in ipairs(children) do
+        if child ~= f.imagoBtn and child ~= excludeBtn and child:IsObjectType("Button") and child:IsShown() then
+            local top = child:GetTop()
+            local left = child:GetLeft()
+            if top and left and lowestBtn and math.abs(left - lowestBtn:GetLeft()) < 10 then
+                local bottom = child:GetBottom()
+                if bottom and (not lowestBottom or bottom < lowestBottom) then
+                    lowestBottom = bottom
+                    lowestBtn = child
+                end
+            end
+        end
+    end
+
+    return lowestBtn
+end
+
 local function InjectIMAGOMapButton()
     local f = WorldMapFrame
     if not f then return end
 
-    -- Locate the pin/filter buttons once and cache them
     if not f.imagoAnchorBtn then
         local children = {f:GetChildren()}
-        f.imagoAnchorBtn = children[7]  -- the lower of the two (filter icon)
+        f.imagoAnchorBtn = children[7]
     end
     if not f.imagoAnchorBtn then return end
 
     if not f.imagoBtn then
         local btn = CreateFrame("Button", nil, f)
         btn:SetSize(31, 31)
-        btn:SetPoint("TOPRIGHT", f.imagoAnchorBtn, "BOTTOMRIGHT", 0, -2)
         btn:SetFrameStrata("DIALOG")
         btn:SetFrameLevel(f:GetFrameLevel() + 50)
         btn:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
 
         btn.icon = btn:CreateTexture(nil, "BACKGROUND")
-        btn.icon:SetTexture("Interface\\Icons\\inv_misc_book_07")
+        btn.icon:SetTexture("Interface\\Icons\\inv_misc_book_09")
         btn.icon:SetSize(20, 20)
         btn.icon:SetPoint("CENTER", 0, 0)
 
@@ -613,6 +640,11 @@ local function InjectIMAGOMapButton()
 
         f.imagoBtn = btn
     end
+
+    -- Recalculate anchor each time, in case other addons added buttons
+    local anchorBtn = GetLowestMapButton(f)
+    f.imagoBtn:ClearAllPoints()
+    f.imagoBtn:SetPoint("TOPRIGHT", anchorBtn, "BOTTOMRIGHT", 0, -2)
 
     local mapID = f:GetMapID()
     local zoneData = mapID and IMAGOdb.zones and IMAGOdb.zones[mapID]
