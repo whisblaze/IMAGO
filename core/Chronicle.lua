@@ -2250,7 +2250,10 @@ elseif activeTab == 2 then
                     label   = IMAGO.L["ACTION_OPEN_MAP"] or "World Map",
                     tooltip = IMAGO.L["ACTION_OPEN_MAP_TIP"] or "Open this zone on the World Map",
                     texture   = "Interface\\Icons\\icon_treasuremap",
-                    onClick = function() OpenWorldMap(mapID) end,
+                    onClick = function() 
+                        f:Hide()
+                        OpenWorldMap(mapID)
+                    end,
                 })
             end)
 

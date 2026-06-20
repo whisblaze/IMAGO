@@ -570,6 +570,70 @@ ejLoginFrame:SetScript("OnEvent", function(self)
 end)
 
 -- ============================================================
+-- WORLD MAP INTEGRATION
+-- ============================================================
+
+local function InjectIMAGOMapButton()
+    local f = WorldMapFrame
+    if not f then return end
+
+    -- Locate the pin/filter buttons once and cache them
+    if not f.imagoAnchorBtn then
+        local children = {f:GetChildren()}
+        f.imagoAnchorBtn = children[7]  -- the lower of the two (filter icon)
+    end
+    if not f.imagoAnchorBtn then return end
+
+    if not f.imagoBtn then
+        local btn = CreateFrame("Button", nil, f)
+        btn:SetSize(31, 31)
+        btn:SetPoint("TOPRIGHT", f.imagoAnchorBtn, "BOTTOMRIGHT", 0, -2)
+        btn:SetFrameStrata("DIALOG")
+        btn:SetFrameLevel(f:GetFrameLevel() + 50)
+        btn:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
+
+        btn.icon = btn:CreateTexture(nil, "BACKGROUND")
+        btn.icon:SetTexture("Interface\\Icons\\inv_misc_book_07")
+        btn.icon:SetSize(20, 20)
+        btn.icon:SetPoint("CENTER", 0, 0)
+
+        btn.border = btn:CreateTexture(nil, "OVERLAY")
+        btn.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+        btn.border:SetSize(53, 53)
+        btn.border:SetPoint("TOPLEFT", 0, 0)
+
+        btn:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+            GameTooltip:AddLine("Open in IMAGO Chronicle", 1, 0.85, 0.1)
+            GameTooltip:Show()
+        end)
+        btn:SetScript("OnLeave", function(self)
+            GameTooltip:Hide()
+        end)
+
+        f.imagoBtn = btn
+    end
+
+    local mapID = f:GetMapID()
+    local zoneData = mapID and IMAGOdb.zones and IMAGOdb.zones[mapID]
+    local isSeen = mapID and IMAGOSaved.seenZones and IMAGOSaved.seenZones[mapID]
+    local isManual = mapID and IMAGOSaved.manualZoneUnlocks and IMAGOSaved.manualZoneUnlocks[mapID]
+
+    if zoneData and (isSeen or isManual or IMAGOSaved.encyclopediaMode) then
+        f.imagoBtn:SetScript("OnClick", function()
+            f:Hide()
+            IMAGO.Chronicle.OpenToZoneMapID(mapID)
+        end)
+        f.imagoBtn:Show()
+    else
+        f.imagoBtn:Hide()
+    end
+end
+
+hooksecurefunc(WorldMapFrame, "OnMapChanged", InjectIMAGOMapButton)
+WorldMapFrame:HookScript("OnShow", InjectIMAGOMapButton)
+
+-- ============================================================
 -- EVENTS & INITIALISIERUNG
 -- ============================================================
 local initFrame = CreateFrame("Frame")
