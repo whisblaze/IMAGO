@@ -746,6 +746,7 @@ IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].name = "Lord Grayson Shadow
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].aliases = {"Grayson Shadowbreaker"}
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].race = "Human"
 IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].lore = [[The primary human paladin trainer and a veteran fighter of the Order of the Silver Hand, Lord Grayson Shadowbreaker has been an indispensable asset to the Alliance for decades. 
+
 He is not only in charge of training new recruits and helping them become beacons of righteousness, but he also oversees threats all across Azeroth and sends out reinforcements as needed.
 
 Shadowbreaker can be considered a paladin of very traditional values and still holds the undead in high contempt. Never one to be too friendly or forgiving with both his trainees and his foes, he ultimately wants what is best for the Alliance and for the Order of the Silver Hand.]]
@@ -1404,7 +1405,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].name = "Decimus"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].aliases = {}
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].race = "Domanaar"
-IMAGOdb.npcs.CAT_NEUTRAL["decimus"].lore = [[Charismatic, dangerous, malicious - all of these adjectives could be used to describe Decimus. 
+IMAGOdb.npcs.CAT_NEUTRAL["decimus"].lore = [[Charismatic, dangerous, malicious - all of these adjectives could be used to describe Decimus.
 
 As all domanaar of the Voidstorm, he was subjugated to Xal'atath, recognizing her as the stronger being. Yet serving someone else wasn't something Decimus was planning on doing for much longer and thus they now enter a risky game - with the champions of Azeroth as their playing pieces.]]
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"].zones = {"Voidstorm"}
@@ -1434,7 +1435,9 @@ IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl"].timeline = {
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].name = "Trade Prince Monte Gazlowe"
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].aliases = {"Monte Gazlowe", "Monte", "Gazlowe"}
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].race = "Goblin"
-IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = [[The architect of Orgrimmar and Trade Prince of the Bilgewater Cartel is one of the Horde's most important members, even if his influence is mostly felt in the background. He isn't a fighter, doesn't consider himself a hero and is seen by most as nothing but another greedy goblin. That is not what lies below the surface though, and the people that know him beyond shallow appearances know that this goblin has a great heart under all his snark. 
+IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe"].lore = [[The architect of Orgrimmar and Trade Prince of the Bilgewater Cartel is one of the Horde's most important members, even if his influence is mostly felt in the background. He isn't a fighter, doesn't consider himself a hero and is seen by most as nothing but another greedy goblin. 
+
+That is not what lies below the surface though, and the people that know him beyond shallow appearances know that this goblin has a great heart under all his snark. 
 
 His reforms have given the exploited workers of his cartel security and rights for the first time in goblin culture. He has lent monetary support to a lot of his Horde allies out of loyalty and without bartering for much in return. He was instrumental in bringing revolutionary change to the Undermine, even when he was planning on not getting involved at first.
 
@@ -1743,7 +1746,9 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].name = "Thassarian"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].aliases = {}
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].race = "Human"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].lore =
-[[As a young man, Thassarian joined the Lordaeron army hoping to follow in his father’s footsteps, and followed Prince Arthas on his expedition to Northrend. It was there he was slain and reanimated as a death knight. During his time under the Lich King’s control, he committed many atrocities, even killing his mother. After being freed from the Lich King’s control, he joined the Knights of the Ebon Blade and became the first death knight to serve the Alliance, showing unwavering loyalty to humanity once more. Despite the faction divide, Thassarian maintains a powerful, complicated brotherhood with the Horde death knight Koltira Deathweaver, a bond forged in death that heavily influences his path.]]
+[[As a young man, Thassarian joined the Lordaeron army hoping to follow in his father’s footsteps, and followed Prince Arthas on his expedition to Northrend. It was there he was slain and reanimated as a death knight. During his time under the Lich King’s control, he committed many atrocities, even killing his mother. After being freed from the Lich King’s control, he joined the Knights of the Ebon Blade and became the first death knight to serve the Alliance, showing unwavering loyalty to humanity once more. 
+
+Despite the faction divide, Thassarian maintains a powerful, complicated brotherhood with the Horde death knight Koltira Deathweaver, a bond forged in death that heavily influences his path.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].zones = {"Eastern Plaguelands"}
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].source = "druidian - IMAGO Community"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian"].timeline = {

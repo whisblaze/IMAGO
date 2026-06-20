@@ -15,7 +15,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen"] = {
 
 IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra"] = {
     displayID = 250406,
-    ids = {250406, 259792},
+    ids = {250406, 259792, 261427},
     zones = {},
     category = "CAT_ARCANTINA",
 }
