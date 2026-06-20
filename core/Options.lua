@@ -167,9 +167,26 @@ function IMAGO.Options.Init()
         IMAGOSaved.opaqueUI = self:GetChecked() and true or false
     end)
 
+    -- Checkbox: Minimap-Icon anzeigen
+    local cbMinimap = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
+    cbMinimap:SetPoint("TOPLEFT", cbOpaqueUI, "BOTTOMLEFT", 0, -10)
+    cbMinimap.Text:SetText(IMAGO.L["OPT_SHOW_MINIMAP"])
+    cbMinimap:SetChecked(not IMAGOSaved.hideMinimap)
+    cbMinimap:SetScript("OnClick", function(self)
+        local hide = not (self:GetChecked() and true or false)
+        IMAGOSaved.hideMinimap = hide
+        if IMAGO.minimapButton then
+            if hide then
+                IMAGO.minimapButton:Hide()
+            else
+                IMAGO.minimapButton:Show()
+            end
+        end
+    end)
+
     -- Slider: Skalierung (Lokalisiert)
     local sliderScale = CreateFrame("Slider", "IMAGOScaleSlider", content, "OptionsSliderTemplate")
-    sliderScale:SetPoint("TOPLEFT", cbOpaqueUI, "BOTTOMLEFT", 0, -40)
+    sliderScale:SetPoint("TOPLEFT", cbMinimap, "BOTTOMLEFT", 0, -40)
     sliderScale:SetMinMaxValues(0.5, 2.0)
     sliderScale:SetValueStep(0.05)
     sliderScale:SetObeyStepOnDrag(true)
