@@ -676,14 +676,15 @@ IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].timeline = {
     {era = "Midnight", text = "Er wurde vom Sonnenbrunnen gerufen und verteidigte Silbermond gegen den Leerensturm."},
 }
 
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].name = "Eadric der Reine"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].race = "Mensch"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].lore = [[Als Paladin und Quartiermeister des Argentumkreuzzuges ist Eadric vor allem für seine Verdienste um den Orden während des Krieges gegen den Lichkönig in Nordend bekannt. Die Spannungen zwischen der Allianz und der Horde nahmen erneut zu, und Hochlord Tirion Fordring schlug vor, ein freundschaftliches Turnier auszurichten, um einen größeren Konflikt zu verhindern. Sein Großchampion Eadric war für den Großteil der Organisation dieses Turniers verantwortlich.
+-- EADRIC THE PURE -- 
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].name = "Eadric der Reine"
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].race = "Mensch"
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].lore = [[Als Paladin und Quartiermeister des Argentumkreuzzuges ist Eadric vor allem für seine Verdienste um den Orden während des Krieges gegen den Lichkönig in Nordend bekannt. Die Spannungen zwischen der Allianz und der Horde nahmen erneut zu, und Hochlord Tirion Fordring schlug vor, ein freundschaftliches Turnier auszurichten, um einen größeren Konflikt zu verhindern. Sein Großchampion Eadric war für den Großteil der Organisation dieses Turniers verantwortlich.
 
 Seitdem ist er meistens in Nordend stationiert, doch wie jeder wahre Paladin geht er dorthin, wohin das Licht ihn ruft.]]
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].zones = {"Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].zones = {"Parhelionplaza"}
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].timeline = {
     {
         era = "WotLK",
         text = [[Diente dem Argentumkreuzzug und Tirion Fordring als Großchampion. Er war für die Organisation des Argentumturniers im nördlichen Teil von Eiskrone verantwortlich, indem er das Turniergelände sicherte und mit Vorräten versorgte sowie das Training der Kämpfer überwachte. Er diente als Quartiermeister und nahm gelegentlich selbst als Kämpfer am Turnier teil.]],
@@ -1395,66 +1396,6 @@ IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = {
     {
         era = "Midnight",
         text = [[Paradoxerweise wurde Tyrosus nicht nach Quel'Thalas gerufen. Stattdessen bekämpfte er die erstarkte Geißel in den Pestländern und rekrutierte – da nur noch wenige Paladine in der Kapelle des hoffnungsvollen Lichts verblieben waren – Darion Mograines Schwarze Klinge, um gemeinsam mit ihnen die Fronten zu halten.]],
-    }
-}
-
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].name = "Alleria Windläufer"
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].race = "Leerenelfe"
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].lore = [[Den Völkern Azeroths ist Alleria als eine der größten Kriegsheldinnen der Allianz bekannt. Sie kämpfte im Zweiten Krieg gegen die Horde sowie im jahrtausendelangen Kreuzzug gegen die Brennende Legion. Sie ist vieles - eine Mutter, eine Liebende, eine Heldin, eine ältere Schwester - doch vor allem ist sie eine Jägerin. Alles steht hinter ihren Missionen zurück, und kein Preis ist zu hoch, um die Sicherheit ihrer Welt zu gewährleisten.
-
-Krieg ist das einzige Leben, das sie kennt, und auf dem vertrauten Schlachtfeld findet sie mehr Trost als in Zeiten des Friedens. Als sie ihren jüngeren Bruder und ihre Eltern im Krieg gegen die Horde verlor, gab Alleria sich selbst die Schuld und stürzte sich rücksichtslos in den Kampf, auf der Suche nach Sinn durch Gewalt. Von dem Trauma dieser Verluste hat sie sich nie wirklich erholt. Obwohl sie mit Turalyon und ihrem Sohn Arator nun eine eigene Familie gegründet hat, kann sie sich nicht dazu bringen, sich emotional erneut zu öffnen - auch wenn es sie bis ins Innerste schmerzt, mitzuerleben, wie die beiden Männer zu Fremden werden.
-
-Im Kampf gegen die Brennende Legion fand Alleria eine Waffe in der Leere. Sie wurde mit der gefallenen Naaru L'ura erfüllt und nutzt nun deren dunkle Kräfte zum Wohl Azeroths. Ständig am Rand des Wahnsinns, während unaufhörliche Stimmen ihren Geist bedrängen, hat Alleria sich nun darauf eingeschworen, Xal'atath zu jagen. Wie bei all ihren Jagden ist die Verfolgung zu einer Besessenheit geworden, und sie wird nicht ruhen, bis ihre Feindin besiegt am Boden liegt.]]
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].zones = {"Die Leerenspitze", "Leerensturm"}
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"].timeline = {
-    {
-        era = "Pre-WC2",
-        text = [[Sie lehnte den Titel der zukünftigen Waldläufergeneralin von Silbermond ab und verließ ihre Heimat, um die Welt jenseits davon kennenzulernen. Dabei knüpfte sie Kontakte und Bündnisse innerhalb der Allianz von Lordaeron. Während ihrer Abwesenheit wurden ihre Eltern von der orcischen Horde ermordet.]],
-    },
-    {
-        era = "WC2",
-        text = [[An der Seite der Armeen von Lordaeron verteidigte sie erfolgreich Quel'Thalas gegen die Horde. Während der Schlacht starb ihr Bruder Lirath, und Alleria gab sich selbst die Schuld daran. Sie blieb bei den Streitkräften der Allianz und half schließlich dabei, den Krieg zu gewinnen. Sie lernte Turalyon kennen, sie zeugten einen Sohn und reisten in die Scherbenwelt, wo sie letztlich gestrandet wurden.]],
-    },
-    {
-        era = "Pre-WC3",
-        text = [[Gemeinsam mit Turalyon reiste sie durch den Wirbelnden Nether und wurde in die Armee des Lichts eingezogen, um gegen die Brennende Legion zu kämpfen. Was auf Azeroth nur einige Jahrzehnte gewesen wären, bedeutete für sie tausend Jahre Krieg. Alleria traf auf Raumgänger und lernte, die Magie der Leere zu nutzen. Aufgrund dessen wurde sie zeitweise von Xe'ra und der Armee des Lichts eingesperrt.]],
-    },
-    {
-        era = "Legion",
-        text = [[Sie erfuhr mehr über die Leere und darüber, wie man ihrem Flüstern widersteht. Dabei wurde sie mit der Naaru L'ura erfüllt. Sie kämpfte in der finalen Schlacht gegen die Legion in der Festung Antorus und siegte. Nachdem der Kreuzzug endlich beendet war, wurden sie und Turalyon mit ihrem Sohn Arator wiedervereint. Außerdem fand sie die verbannten Ren'dorei und rekrutierte sie für die Allianz.]],
-    },
-    {
-        era = "Pre-BfA",
-        text = [[Sie kehrte nach Silbermond zurück, wurde jedoch umgehend verbannt, da allein ihre dunkle Präsenz beinahe den Sonnenbrunnen verdorben hätte. Sie traf ihre Schwestern Vereesa und Sylvanas, doch das Wiedersehen endete in einem Streit.]],
-    },
-    {
-        era = "BfA",
-        text = [[Sie kämpfte bei der Belagerung von Lordaeron gegen Sylvanas und später im Vierten Krieg für die Allianz.]],
-    },
-    {
-        era = "Pre-SL",
-        text = [[Sie führte die Jagd auf Sylvanas Windläufer an. Um Informationen von Zivilisten der Horde zu erhalten, griff sie sogar zu Folter.]],
-    },
-    {
-        era = "SL",
-        text = [[Sie nahm an dem Prozess gegen Sylvanas in Oribos teil.]],
-    },
-    {
-        era = "DF",
-        text = [[Auf Khadgars Bitte hin begann sie die Jagd auf „die Vorbotin“, die sich als Xal'atath entpuppte. Gemeinsam mit Raumgänger und Magister Umbric verteidigte sie den Telogrusriss gegen Xal'ataths Schattenwache.]],
-    },
-    {
-        era = "TWW",
-        text = [[Sie überlebte die Zerstörung von Dalaran und jagte Xal'atath rücksichtslos durch ganz Khaz Algar und dessen Tiefen. Dabei gelang es ihr, das Dunkle Herz zu beschädigen. Widerwillig arbeitete sie später mit Xal'atath und Raumgänger zusammen, um Dimensius den Allesverschlingenden zu besiegen.]],
-    },
-    {
-        era = "Pre-MN",
-        text = [[Gemeinsam mit Turalyon und Arator vereitelte sie ein Wiedererstarken der Brennenden Legion und schien ihrer Familie wieder näherzukommen. Sie akzeptierte Turalyons Heiratsantrag, schaffte es jedoch nicht, inneren Frieden zu finden. Schweren Herzens ließ sie Turalyon schließlich am Altar zurück und nahm auch nicht an der Beförderungszeremonie seines Sohnes teil. Später weigerte sie sich, mit Arator nach Silbermond zu reisen, und folgte stattdessen Xal'atath in den Leerensturm.]],
-    },
-    {
-        era = "Midnight",
-        text = [[Sie führte den Kampf gegen die Leere im Leerensturm an. In Xal'ataths Leerenspitze stellte sie sich ihrer Feindin entgegen, wurde jedoch vom Wahnsinn der Stimmen in ihrem Kopf überwältigt und wandte sich gegen ihre Verbündeten. Daraufhin schnitt Xal'atath L'ura gewaltvoll aus Alleria heraus, und die kaum noch bei Bewusstsein befindliche Elfe ging gemeinsam mit Turalyon im Dunkelbrunnen verloren.]],
     }
 }
 
