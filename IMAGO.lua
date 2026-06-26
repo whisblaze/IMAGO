@@ -47,11 +47,8 @@ local DEV_PLAYERS = {
 
 function IMAGO.IsDeveloper()
     local name, realm = UnitName("player")
-    print("Not name:", name)
     if not name then return false end
     name = tostring(name):lower()
-    print("DEV NAME:",name)
-    print("DEV PLAYERS NAMe", DEV_PLAYERS[name])
     if DEV_PLAYERS[name] then return true end
     if realm and realm ~= "" then
         local full = name .. "-" .. tostring(realm):lower()
