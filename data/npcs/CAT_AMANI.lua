@@ -67,5 +67,4 @@ IMAGOdb.npcs.CAT_AMANI["shadra"] = {
     ids = {247268, 251142, 247263},
     zones = {},
     category = "CAT_AMANI",
-    quest_ids = {91406}
 }

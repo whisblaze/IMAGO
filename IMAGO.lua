@@ -125,7 +125,7 @@ end
 -- ============================================================
 IMAGO.Scanner = {}
 
-function IMAGO.Scanner.DiscoverNPC(npcID)
+function IMAGO.Scanner.DiscoverNPC(npcID, questName)
     if not IMAGOSaved.enabled then return false end
     if not IMAGOdb or not IMAGOdb.idToSlug then return false end
     
@@ -140,7 +140,12 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
             IMAGOSaved.seenNPCs[slug] = true
             IMAGO.AddToHistory(slug)
             
-            local msg = IMAGO.L["CHAT_DISCOVERY"] and string.format(IMAGO.L["CHAT_DISCOVERY"], name) or ("|cFF9370DB[IMAGO]|r Echo gebunden: |cFFFFD700" .. name .. "|r")
+            local msg
+            if questName then
+                msg = IMAGO.L["QUEST_DISCOVERY"] and string.format(IMAGO.L["QUEST_DISCOVERY"], questName, name)
+            else
+                msg = IMAGO.L["CHAT_DISCOVERY"] and string.format(IMAGO.L["CHAT_DISCOVERY"], name)
+            end
             print(msg)
             PlaySound(3175, "Master")
             
@@ -167,22 +172,16 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
     return false, false
 end
 
---- Scans all NPCs with a quest_ids and unlocks those whose quest is completed.
+--- Scans all quest_ids with an NPC they unlock and reveal those whose quest is completed.
 function IMAGO.Scanner.SweepQuestUnlocks()
-    if not IMAGOdb or not IMAGOdb.npcs then return end
-    for cat, entries in pairs(IMAGOdb.npcs) do
-        if type(entries) == "table" then
-            for slug, data in pairs(entries) do
-                if data.quest_ids and not IMAGOSaved.seenNPCs[slug] then
-                    -- Check all quest IDs in an NPC for if their quest has completed
-                    for _, qid in ipairs(data.quest_ids) do
-                        if C_QuestLog.IsQuestFlaggedCompleted(qid) then
-                            local npcID = data.ids and data.ids[1] and (type(data.ids[1]) == "table" and data.ids[1][1] or data.ids[1])
-                            if npcID then IMAGO.Scanner.DiscoverNPC(npcID) end
-                            break
-                        end
-                    end
-                end
+    if not IMAGOdb or not IMAGOdb.questToSlug then return end
+    for questID, slug in pairs(IMAGOdb.questToSlug) do
+        if not IMAGOSaved.seenNPCs[slug] and C_QuestLog.IsQuestFlaggedCompleted(questID) then
+            local questName = QuestUtils_GetQuestName(questID) or "Unknown Quest"
+            local data = IMAGO.GetNPCData(slug)
+            local npcID = data and data.ids and data.ids[1] and (type(data.ids[1]) == "table" and data.ids[1][1] or data.ids[1])
+            if npcID then
+                IMAGO.Scanner.DiscoverNPC(npcID, questName)
             end
         end
     end
@@ -543,20 +542,13 @@ initFrame:SetScript("OnEvent", function(self, event, ...)
         end)
     elseif event == "QUEST_TURNED_IN" then
         local questID = ...
-        print("QUEST TURNED IN: ", questID)
-        for cat, entries in pairs(IMAGOdb.npcs or {}) do
-            if type(entries) == "table" then
-                for slug, data in pairs(entries) do
-                    if data.quest_ids then
-                        for _, qid in ipairs(data.quest_ids) do
-                            if qid == questID then
-                                local npcID = data.ids and data.ids[1] and (type(data.ids[1]) == "table" and data.ids[1][1] or data.ids[1])
-                                if npcID then IMAGO.Scanner.DiscoverNPC(npcID) end
-                                break
-                            end
-                        end
-                    end
-                end
+        local slug = IMAGOdb.questToSlug and IMAGOdb.questToSlug[questID]
+        if slug and not IMAGOSaved.seenNPCs[slug] then
+            local questName = QuestUtils_GetQuestName(questID) or "Unknown Quest"
+            local data = IMAGO.GetNPCData(slug)
+            local npcID = data and data.ids and data.ids[1] and (type(data.ids[1]) == "table" and data.ids[1][1] or data.ids[1])
+            if npcID then
+                IMAGO.Scanner.DiscoverNPC(npcID, questName)
             end
         end
         if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then

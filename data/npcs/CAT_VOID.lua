@@ -32,5 +32,4 @@ IMAGOdb.npcs.CAT_VOID["xal_atath"] = {
     ids = {241146, 243765, 260246, 256679, 253342, 258536, 242619, 244264, 257427},
     zones = {},
     category = "CAT_VOID",
-    quest_ids = {88719}
 }
