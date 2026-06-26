@@ -6,7 +6,7 @@ IMAGOdb = IMAGOdb or {}
 IMAGOdb.npcs = IMAGOdb.npcs or {}
 IMAGOdb.npcs.CAT_NEUTRAL = IMAGOdb.npcs.CAT_NEUTRAL or {}
 
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"] = {
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"] = {
     displayID = 256285,
     ids = {256285, 252109, 252617, 252623, 252628, 253430, 253581, 254315, 254748},
     zones = {},

@@ -6,7 +6,7 @@ IMAGOdb = IMAGOdb or {}
 IMAGOdb.npcs = IMAGOdb.npcs or {}
 IMAGOdb.npcs.CAT_LIGHT = IMAGOdb.npcs.CAT_LIGHT or {}
 
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"] = {
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"] = {
     displayID = 248321,
     ids = {248321, 239858, 240769, 242611},
     zones = {},
@@ -83,14 +83,14 @@ IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"] = {
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"] = {
     displayID = 247159,
     ids = {247159, 239508, 241708},
     zones = {},
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"] = {
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"] = {
     displayID = 240646,
     ids = {240646, 241705, 247161, 239503},
     zones = {},
@@ -126,7 +126,7 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"] = {
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"] = {
     displayID = 247925,
     ids = {247925, 239483, 238277, 240777, 243432, 246672},
     zones = {},

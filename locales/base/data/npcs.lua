@@ -314,14 +314,14 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].timeline = {
 
 -- CAT_LIGHT
 -- MEHLAR DAWNBLADE --
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dawnblade"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].lore = [[Once a student of Uther the Lightbringer, Mehlar Dawnblade was a paladin of the Silver Hand before the Third War. He was known to follow a strict moral codex and heeded the commands of the order to the letter. When Uther's most prominent pupil – Arthas Menethil – strayed from the path of the Light and decimated Mehlar's homeland of Quel'Thalas, the blood elf's compassion turned into rage and a desire for vengeance.
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].name = "Mehlar Dawnblade"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].lore = [[Once a student of Uther the Lightbringer, Mehlar Dawnblade was a paladin of the Silver Hand before the Third War. He was known to follow a strict moral codex and heeded the commands of the order to the letter. When Uther's most prominent pupil – Arthas Menethil – strayed from the path of the Light and decimated Mehlar's homeland of Quel'Thalas, the blood elf's compassion turned into rage and a desire for vengeance.
 
 He joined the Blood Knights under Lady Liadrin and fought in exemplary unity with his fellow paladins against the Scourge. He defiled Uther's tomb in a fit of rage, only to be confronted by the spirit of his former mentor. Receiving only forgiveness from the fallen paladin, Mehlar vowed to rethink his outlook and now tries to not be swayed by hatred as easily anymore.]]
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].timeline = {
     {
         era = "Pre-WC3",
         text = [[Trained under Uther the Lightbringer as a Knight of the Silver Hand.]],
@@ -737,14 +737,14 @@ IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch"].timeline = {
 }
 
 -- EADRIC THE PURE --
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].name = "Eadric the Pure"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].lore = [[A paladin and quartermaster of the Argent Crusade, Eadric is mostly known for his contributions to the order during the war against the Lich King in Northrend. Tensions between the Alliance and the Horde were rising once again, and Highlord Tirion Fordring proposed to host a friendly tournament to prevent a conflict. His champion Eadric was the one responsible for organizing most of this tournament.
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].name = "Eadric the Pure"
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].race = "Human"
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].lore = [[A paladin and quartermaster of the Argent Crusade, Eadric is mostly known for his contributions to the order during the war against the Lich King in Northrend. Tensions between the Alliance and the Horde were rising once again, and Highlord Tirion Fordring proposed to host a friendly tournament to prevent a conflict. His champion Eadric was the one responsible for organizing most of this tournament.
 
 He has since mostly been stationed in Northrend, but as any true paladin, he goes where the Light calls him.]]
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].zones = {"Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].zones = {"Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].timeline = {
     {
         era = "WotLK",
         text = [[Served the Argent Crusade and Tirion Fordring as Grand Champion. Was in charge of organizing the Grand Argent Tournament in northern Icecrown by keeping the grounds safe and supplied and overseeing the combatants' training. He served as quartermaster and occasionally participated in the tournament as a fighter himself.]],
@@ -764,14 +764,14 @@ IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine"].timeline = {
 }
 
 -- YALIA SAGEWHISPER --
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].name = "Yalia Sagewhisper"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].race = "Pandaren"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].lore = [[Raised as a fisherwoman, trained as a Shado-Pan and serving as a priest and alchemist, Yalia is a woman of many talents. After having to leave her family behind at a young age, she has dedicated most of her life to healing her fellow pandaren from the Shado-Pan Monastary in Kun-Lai Summit.
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].name = "Yalia Sagewhisper"
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].race = "Pandaren"
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].lore = [[Raised as a fisherwoman, trained as a Shado-Pan and serving as a priest and alchemist, Yalia is a woman of many talents. After having to leave her family behind at a young age, she has dedicated most of her life to healing her fellow pandaren from the Shado-Pan Monastary in Kun-Lai Summit.
 
 After lending her support to combat foes such as Lei Shen and the Burning Legion, Yalia's wisdom and need to make the world a better place were recognized by the Holy Light. She now has been called to Silvermoon to once again fight for her world.]]
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].zones = {"Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].zones = {"Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].timeline = {
     {
         era = "Pre-WC3",
         text = [[With two young pandaren boys getting into a ceaseless rivalry to gain her hand in future marriage, Yalia saw no other choice than to leave her home and family behind. She joined the Shado-Pan Order at five years old.]],
@@ -906,14 +906,14 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].timeline = {
 }
 
 -- APONI BRIGHTMANE --
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].name = "Aponi Brightmane"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].lore = [[During the war against the Lich King in Northrend, the tauren warrior Aponi Brightmane had an epiphany. She wanted to help her people and the Horde with more than just her strength. After a discussion with her friend Tahu Sagewind, Aponi incorporated the teachings of the deity An'she – the sun – into her fighting. Thus, she became the first tauren paladin.
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].name = "Aponi Brightmane"
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].race = "Tauren"
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].lore = [[During the war against the Lich King in Northrend, the tauren warrior Aponi Brightmane had an epiphany. She wanted to help her people and the Horde with more than just her strength. After a discussion with her friend Tahu Sagewind, Aponi incorporated the teachings of the deity An'she – the sun – into her fighting. Thus, she became the first tauren paladin.
 
 Since joining the Order of the Silver Hand in battle during the third and final invasion of the Burning Legion, Aponi's Sunwalkers can be found far and wide across Azeroth, helping anyone in need.]]
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].timeline = {
     {
         era = "WotLK",
         text = [[Fought as a warrior in Northrend against the armies of the Lich King but was gravely wounded and returned to Thunder Bluff. Here, she and Tahu Sagewind laid the foundations to the creations of the first tauren paladin and priestly orders. After being healed, Aponi returned to the war and now fought with An'she's light at her side.]],
@@ -1240,14 +1240,14 @@ IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].timeline = {
 }
 
 -- CAT_NEUTRAL
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].race = "Blood Elf"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].lore = [[With a nearly unrivaled hatred for the Burning Legion, Allari the Souleater earned her moniker by using the mighty Scythe of Souls to entrap the souls of demons within it. This dangerous weapon communicates with her, pushing her to commit even more harm to her enemies and she frequently uses it as a torture device.
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].name = "Allari the Souleater"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].race = "Blood Elf"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].lore = [[With a nearly unrivaled hatred for the Burning Legion, Allari the Souleater earned her moniker by using the mighty Scythe of Souls to entrap the souls of demons within it. This dangerous weapon communicates with her, pushing her to commit even more harm to her enemies and she frequently uses it as a torture device.
 
 Yet even though her methods are extreme, Allari fights for the good of Azeroth. With the Legion's final defeat, she now has made it her mission to teach willing ren'dorei the ways of the demon hunters and aids them in the battle against the Void.]]
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].zones = {"Voidstorm", "K'aresh"}
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].zones = {"Voidstorm", "K'aresh"}
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].timeline = {
     {
         era = "TBC",
         text = [[Pledged her loyalty to Illidan Stormrage in Outland. Successfully retrieved the Sargerite Keystone artifact at his behest, but upon returning was captured and imprisoned alongside her fellow Illidari by Maiev Shadowsong.]],
@@ -1788,17 +1788,18 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].timeline = {
     }
 }
 
--- CAT_VOID
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexus-King Salhadaar"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Void Ethereal"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].lore = [[For a long time, Nexus-King Salhadaar has known only desperation and suffering. Thousands of years ago, he ruled the people of the planet K'aresh before it was devoured by the Void.
+-- CAT_VOID --
+-- NEXUS-KING SALHADAAR --
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].name = "Nexus-King Salhadaar"
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].race = "Void Ethereal"
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].lore = [[For a long time, Nexus-King Salhadaar has known only desperation and suffering. Thousands of years ago, he ruled the people of the planet K'aresh before it was devoured by the Void.
 
 Losing one's world and one's physical body is enough to turn the strongest soul to madness – and Salhadaar was no exeption. He led his people, now called the Ethereals, into the service of Dimensius the All-Devouring, the very void lord that had taken all he had known.
 
 After being defeated by the Champions of Azeroth, Salhadaar was conscripted by Xal'atath and forced to obey yet another being of the Void. Unwilling but without hope for a way out of this bargain, the Nexus-King and his Shadowguard Ethereals once again oppose the united forces of Azeroth.]]
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].zones = {"The Voidspire", "Voidstorm"}
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].source = "Cadash"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].timeline = {
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].zones = {"The Voidspire", "Voidstorm"}
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].source = "Cadash"
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].timeline = {
     {
         era = "Ancient",
         text = [[Ruled as High Priest over the people of K'aresh and chose to ignore Locus Walker's warnings of the encroaching Void, ultimately blaming him for what would happen next. When Dimensius came, Salhadaar lost his physical body and K'aresh was destroyed. He fled with his people into the Twisting Nether.]],

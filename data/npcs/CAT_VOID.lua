@@ -6,7 +6,7 @@ IMAGOdb = IMAGOdb or {}
 IMAGOdb.npcs = IMAGOdb.npcs or {}
 IMAGOdb.npcs.CAT_VOID = IMAGOdb.npcs.CAT_VOID or {}
 
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"] = {
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"] = {
     displayID = 240432,
     ids = {240432, 235475},
     zones = {},

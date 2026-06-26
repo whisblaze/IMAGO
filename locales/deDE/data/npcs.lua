@@ -333,14 +333,14 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril"].timeline = {
 
 
 -- CAT_LIGHT
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dämmerklinge"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].race = "Blutelf"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].lore = [[Einst war Mehlar Dämmerklinge Uther Lichtbringers Schüler und diente vor dem Dritten Krieg der Silbernen Hand als Paladin. Er folgte einem strengen Moralkodex und führte die Befehle des Ordens buchstabengetreu aus. Als Uthers berüchtigtster Schüler - Arthas Menethil - vom Pfad des Lichts abkam und Mehlars Heimat Quel'Thalas verwüstete, verwandelte sich das Mitgefühl des Blutelfen in Zorn und ihn überkam der Durst nach Rache.
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].name = "Mehlar Dämmerklinge"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].race = "Blutelf"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].lore = [[Einst war Mehlar Dämmerklinge Uther Lichtbringers Schüler und diente vor dem Dritten Krieg der Silbernen Hand als Paladin. Er folgte einem strengen Moralkodex und führte die Befehle des Ordens buchstabengetreu aus. Als Uthers berüchtigtster Schüler - Arthas Menethil - vom Pfad des Lichts abkam und Mehlars Heimat Quel'Thalas verwüstete, verwandelte sich das Mitgefühl des Blutelfen in Zorn und ihn überkam der Durst nach Rache.
 
 Er schloss sich Lady Liadrin und ihren Blutrittern an und kämpfte in vorbildlicher Einheit mit seinen Mitpaladinen gegen die Geißel. In einem Anfall von Wut entweihte er Uthers Grab, nur um dort dem Geist seines ehemaligen Mentors gegenüberzutreten. Da er von dem gefallenen Paladin nichts als Vergebung erhielt, schwor Mehlar, seine Sichtweise zu überdenken, und bemüht sich fortan, sich nicht mehr von Hass leiten zu lassen.]]
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].timeline = {
     {era = "Pre-WC3", text = "Wurde von Uther Lichtbringer als Ritter der Silbernen Hand ausgebildet."},
     {era = "WC3", text = "Er kämpfte an vielen Fronten gegen die Geißel und schloss sich später den Blutrittern an."},
     {era = "Classic", text = "Er entweihte Uthers Grab und stellte sich dem Geist seines Mentors. Dabei erkannte er, dass Zorn und Gewalt nicht die Gefühle waren, von denen er sich leiten lassen wollte. Gemeinsam mit Sylvanas Windläufer arbeitete er an der Herstellung des Schmuckstücks „Geißelbann“."},
@@ -703,14 +703,14 @@ IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure"].timeline = {
     }
 }
 
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].name = "Yalia Weisenwisper"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].race = "Pandaren"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].lore = [[Als Fischerin aufgewachsen, bei den Shado-Pan ausgebildet und als Priesterin sowie Alchemistin tätig, ist Yalia eine Frau mit vielen Talenten. Nachdem sie ihre Familie schon in jungen Jahren zurücklassen musste, widmete sie den Großteil ihres Lebens der Heilung ihrer Mitpandaren im Shado-Pan-Kloster im Gipfel von Kun-Lai.
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].name = "Yalia Weisenwisper"
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].race = "Pandaren"
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].lore = [[Als Fischerin aufgewachsen, bei den Shado-Pan ausgebildet und als Priesterin sowie Alchemistin tätig, ist Yalia eine Frau mit vielen Talenten. Nachdem sie ihre Familie schon in jungen Jahren zurücklassen musste, widmete sie den Großteil ihres Lebens der Heilung ihrer Mitpandaren im Shado-Pan-Kloster im Gipfel von Kun-Lai.
 
 Nachdem sie im Kampf gegen Feinde wie Lei Shen und die Brennende Legion ihre Unterstützung gewährt hatte, wurden Yalias Weisheit und ihr Wunsch, die Welt zu einem besseren Ort zu machen, vom Heiligen Licht erkannt. Nun wurde sie nach Silbermond gerufen, um erneut für ihre Welt zu kämpfen.]]
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].zones = {"Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].zones = {"Parhelionplaza"}
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper"].timeline = {
     {
         era = "Pre-WC3",
         text = [[Da zwei Pandarenjungen in eine gefährliche Rivalität verfielen, um eines Tages ihre Hand zu gewinnen, sah Yalia keinen anderen Ausweg, als ihre Heimat und ihre Familie hinter sich zu lassen. Bereits im Alter von fünf Jahren schloss sie sich dem Orden der Shado-Pan an.]],
@@ -810,14 +810,14 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"].timeline = {
     }
 }
 
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].name = "Aponi Lichtmähne"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].lore = [[Während des Krieges gegen den Lichkönig in Nordend hatte die Taurenkriegerin Aponi Lichtmähne eine Eingebung. Sie wollte ihrem Volk und der Horde mit mehr als nur ihrer Stärke helfen. Nach einem Gespräch mit ihrem Freund Tahu Weisenwind verband Aponi die Lehren der Gottheit An'she - der Sonne - mit ihrem Kampfstil. So wurde sie zum ersten Taurenpaladin.
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].name = "Aponi Lichtmähne"
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].race = "Tauren"
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].lore = [[Während des Krieges gegen den Lichkönig in Nordend hatte die Taurenkriegerin Aponi Lichtmähne eine Eingebung. Sie wollte ihrem Volk und der Horde mit mehr als nur ihrer Stärke helfen. Nach einem Gespräch mit ihrem Freund Tahu Weisenwind verband Aponi die Lehren der Gottheit An'she - der Sonne - mit ihrem Kampfstil. So wurde sie zum ersten Taurenpaladin.
 
 Seit sie sich während der dritten und letzten Invasion der Brennenden Legion dem Orden der Silbernen Hand angeschlossen hat, sind Aponis Sonnenläufer in ganz Azeroth anzutreffen und helfen jedem, der ihre Unterstützung benötigt.]]
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].source = "Cadash"
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"].timeline = {
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane"].timeline = {
     {
         era = "WotLK",
         text = [[Kämpfte als Kriegerin in Nordend gegen die Armeen des Lichkönigs, wurde jedoch schwer verwundet und kehrte nach Donnerfels zurück. Dort legten sie und Tahu Weisenwind den Grundstein für die ersten taurischen Paladin- und Priesterorden. Nachdem sie geheilt worden war, kehrte Aponi in den Krieg zurück und kämpfte nun mit dem Licht An'shes an ihrer Seite.]],
@@ -1657,16 +1657,16 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane"].timeline = {
 }
 
 -- CAT_VOID
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].name = "Nexuskönig Salhadaar"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].race = "Leerenastraler"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].lore = [[Für lange Zeit kannte Nexuskönig Salhadaar nichts außer Verzweiflung und Leid. Vor Jahrtausenden herrschte er über die Bewohner des Planeten K'aresh, bevor dieser von der Leere verschlungen wurde.
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].name = "Nexuskönig Salhadaar"
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].race = "Leerenastraler"
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].lore = [[Für lange Zeit kannte Nexuskönig Salhadaar nichts außer Verzweiflung und Leid. Vor Jahrtausenden herrschte er über die Bewohner des Planeten K'aresh, bevor dieser von der Leere verschlungen wurde.
 
 Den Verlust der eigenen Welt und des eigenen Körpers zu ertragen, genügt, um selbst die stärkste Seele in den Wahnsinn zu treiben - und Salhadaar bildete dabei keine Ausnahme. Er führte sein Volk, das nun als Astrale bekannt wurde, in den Dienst von Dimensius den alles Verschlingenden, jenem Leerenfürsten, der ihm alles genommen hatte, was er einst gekannt hatte.
 
 Nachdem er von den Helden Azeroths besiegt worden war, wurde Salhadaar von Xal'atath in ihren Dienst gezwungen und musste erneut einem Wesen der Leere gehorchen. Widerwillig und ohne Hoffnung auf einen Ausweg aus diesem Pakt stellen sich der Nexuskönig und seine Astralen der Schattenwache nun erneut den vereinten Streitkräften Azeroths entgegen.]]
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].zones = {"Die Leerenspitze", "Leerensturm"}
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].source = "Cadash"
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"].timeline = {
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].zones = {"Die Leerenspitze", "Leerensturm"}
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].source = "Cadash"
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar"].timeline = {
     {
         era = "Ancient",
         text = [[Herrschte als Hohepriester über die Bewohner K'areshs und entschied sich, die Warnungen von Raumgänger vor der herannahenden Leere zu ignorieren. Letztlich machte er ihn sogar für das verantwortlich, was folgen sollte. Als Dimensius der alles Verschlingende erschien, verlor Salhadaar seinen physischen Körper und K'aresh wurde zerstört. Gemeinsam mit seinem Volk floh er in den Wirbelnden Nether.]],
