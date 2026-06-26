@@ -5,8 +5,26 @@
 
 IMAGO.Display = {}
 
-local FONT_TITLE   = "Fonts\\MORPHEUS.TTF"
-local FONT_BODY    = "Fonts\\FRIZQT__.TTF"
+local FONT_TITLE, FONT_BODY
+local locale = GetLocale()
+if locale == "ruRU" then
+    -- Cyrillic
+    FONT_TITLE = "Fonts\\FRIZQT___CYR.TTF"
+    FONT_BODY  = "Fonts\\FRIZQT___CYR.TTF"
+elseif locale == "koKR" then
+    FONT_TITLE = "Fonts\\2002.TTF"
+    FONT_BODY  = "Fonts\\2002.TTF"
+elseif locale == "zhCN" then
+    FONT_TITLE = "Fonts\\ARKai_T.TTF"
+    FONT_BODY  = "Fonts\\ARKai_C.TTF"
+elseif locale == "zhTW" then
+    FONT_TITLE = "Fonts\\blei00d.TTF"
+    FONT_BODY  = "Fonts\\blei00d.TTF"
+else
+    -- Default Latin (deDE, enUS, frFR, esES, etc.)
+    FONT_TITLE = "Fonts\\MORPHEUS.TTF"
+    FONT_BODY  = "Fonts\\FRIZQT__.TTF"
+end
 local FADE_IN_TIME = 0.6
 local closeTimer = nil
 
