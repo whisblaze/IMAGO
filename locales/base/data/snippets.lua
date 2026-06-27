@@ -101,6 +101,16 @@ IMAGO.LoreSnippets["FUN_FACT"] = {
     { text = "Chen Stormstout calls the Darkspear trolls living in Thunder Bluff \"Blue Tauren\"." },
     { text = "Finely-ground draenei tail is a potent ingredient for necromantic experiments." },
     { text = "Void elves find the chiming noises made by Naaru very irritating." },
+    { text = "Despite being known as the 'son of Deathwing', Wrathion is actually his grandson."},
+    { text = "Jaina Proudmoore began her studies as a fire mage in Dalaran. After almost burning down the university rooms and Kael'thas Sunstrider by accident, she decided to focus on ice magic instead."},
+    { text = "Some animals on Azeroth live normal lives despite missing important organs such as their livers or hearts. While fascinating, this can be frustrating for hunters and gatherers."},
+    { text = "Illidan's iconic lines such as 'You are not prepared' or 'I am my scars' have been repeated by adventurers for decades. Illidan is very much aware of this and can be convinced to repeat some of them in an annoyed tone if poked long enough."},
+    { text = "Notice how your mail gets delivered even if you left your loot in the most dangerous of places? This feat is accomplished by the Postmaster and a few assistants. They operate from Dalaran and would appreciate a visit."},
+    { text = "Phoenixes are not birds but actually elementals. That is why fire mages can summon them."},
+    { text = "Despite being named 'Blood Mages', these specific Silvermoon spellcasters use Arcane and Fel magic instead of blood."},
+    { text = "The Dalaran Fountain is said to grant wishes for coins thrown into it."},
+    { text = "Just like his former mentor Medivh, Archmage Khadgar is said to cheat at chess."},
+    { text = "There are rumors going around that a cat named Jenafur roams the haunted halls of Karazhan. Her whispers should be ignored."},
 }
 
 IMAGO.LoreSnippets["DID_YOU_KNOW"] = {
@@ -141,6 +151,18 @@ IMAGO.LoreSnippets["DID_YOU_KNOW"] = {
     { text = "There have been seven Warchiefs of the Horde: Blackhand the Destroyer, Orgrim Doomhammer, Ner'zhul, Thrall, Garrosh Hellscream, Vol'jin, and Sylvanas Windrunner. Now, it is ruled by a council of leaders." },
     { text = "The Sunwell used to have a human manifestation named Anveena Teague." },
     { text = "There are at least six derivative dragonflights that are corrupted or experimental offshoots of the main five." },
+    { text = "Slavery is still legal in most nations of the Horde and the Alliance, despite the factions' former leaders Thrall and Varian being freed slaves themselves."},
+    { text = "Most members of the blue dragonflight only exist today because the red dragon Korialstrasz meddled with the timeways during the War of the Ancients. Instead of letting the abandoned eggs of Malygos wither away as he was supposed to, he instead saved their lives."},
+    { text = "At one point or another in time, the Champions of Azeroth have fought and killed every one of the original Dragon Aspects except for Alexstrasza."},
+    { text = "Dragons are inherently polyamorous. For the longest time, Alexstrasza had four consorts at once."},
+    { text = "Grand Magister Rommath was supposed become a villain during the Cataclysm expansion as a traitor for the Twilight's Hammer. This was changed last minute and the role was given to Archbishop Benedictus, even though Rommath's voice lines were already recorded."},
+    { text = "Paladins traditionally name their horses after virtues they follow. Prominent examples are Uther's horse 'Steadfast', Arthas' steed 'Invincible', and Anduin's companion 'Reverence'."},
+    { text = "Have you heard the tales and songs about Azeroth from the Hearthstone Inn? Take a seat, warm your boots by the fire and have a listen and a laugh. The Inn is always open to everyone."},
+    { text = "Stormwind's spymaster Mathias Shaw once sneaked into the Undercity through the front entrance. He does not elaborate how he managed that."},
+    { text = "The orc shaman Ner'zhul mastered four of the six cosmic forces: Life - as a shaman, Fel – as a warlock, Arcane – when shattering Draenor, and Death – as the Lich King. His alternate version in the Iron Horde wielded the Void as well."},
+    { text = "Various races from Azeroth and beyond are able to reproduce despite having no shared genetic heritage such as elves and humans, or orcs and draenei."},
+    { text = "Thrall's mother tongue is common. He began learning orcish as a teenager and has since lost his accent."},
+    { text = "The Rift of Aln has bled into the Twisting Nether itself. This is not common knowledge, as the Rift is mostly associated with the Emerald Dream."},
 }
 
 IMAGO.LoreSnippets["HISTORICAL_FACT"] = {
@@ -168,4 +190,16 @@ IMAGO.LoreSnippets["HISTORICAL_FACT"] = {
     { text = "Around 2,600 years ago, the first Guardian of Tirisfal was created. They were mages imbued with immense power and the responsibility to defend Azeroth from demon invasion." },
     { text = "After the First War, the event was declared so significant that the calendar was reset. Year 0 marked when the Horde invaded Azeroth for the first time." },
     { text = "There exists a \"one true timeline\", and the Bronze Dragonflight is dedicated to its preservation." },
+    { text = "Kalimdor used to refer to the entire giant landmass that existed before the Sundering split it apart into the continents we know today."},
+    { text = "The Zandalari Empire is the oldest nation on Azeroth, having existed for over 16,000 years."},
+    { text = "Legends state that the first world tree, Elun'ahir, was ripped out of the earth by the titan Aman'Thul during the war against the Black Empire. The roots are said to have survived, but no trace has been found of them as of yet."},
+    { text = "The only Old God that is considered fully dead is Y'Shaarj. He was killed by Aman'Thul, but his death caused much damage to Azeroth, and thus the other Old Gods were merely imprisoned."},
+    { text = "There exist four Old Gods: Y'Shaarj, N'Zoth, Yogg-Saron, and C'Thun. However, there is some older literature that refers to the existence of a fifth Old God."},
+    { text = "The Dark Heart is a prototype of the Dragon Soul."},
+    { text = "Silvermoon used to be adorned with many statues of its leader, Kael'thas Sunstrider. Following his betrayal, all of them were destroyed or dumped in the harbor."},
+    { text = "Before settling on Azeroth, the draenei tried to hide from the Legion on many other planets, including Draenor and Naigtal."},
+    { text = "The Burning Legion tried to create the Scourge for thousands of years, but without the Lich King, they were unsuccessful. Crude attempts at using the living dead as a weapon have been witnessed during the War of the Ancients."},
+    { text = "Maiev once tried to murder Malfurion."},
+    { text = "The Elemental Lords were subdued when the Old Gods came to Azeroth, and served as their lieutenants. Some, like Ragnaros the Firelord, stayed loyal even long after the Black Empire had fallen."},
+    { text = "The Elemental Plane consists of four interlinked domains – the Firelands, Skywall, the Abyssal Maw, and Deepholm. It is an artificial titan-made pocket dimension, meant to imprison Azeroth's elements."},
 }
