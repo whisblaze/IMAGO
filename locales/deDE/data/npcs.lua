@@ -1110,14 +1110,14 @@ IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"].timeline = {
 }
 
 -- CAT_NEUTRAL
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari die Seelenfresserin"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].race = "Blutelf"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].lore = [[Mit einem beinahe unübertroffenen Hass auf die Brennende Legion verdiente sich Allari die Seelenfresserin ihren Beinamen, indem sie die mächtige Seelensense nutzte, um die Seelen von Dämonen darin einzusperren. Diese gefährliche Waffe kommuniziert mit ihr und drängt sie dazu, ihren Feinden noch mehr Leid zuzufügen, weshalb Allari sie häufig auch als Folterinstrument einsetzt.
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].name = "Allari die Seelenfresserin"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].race = "Blutelf"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].lore = [[Mit einem beinahe unübertroffenen Hass auf die Brennende Legion verdiente sich Allari die Seelenfresserin ihren Beinamen, indem sie die mächtige Seelensense nutzte, um die Seelen von Dämonen darin einzusperren. Diese gefährliche Waffe kommuniziert mit ihr und drängt sie dazu, ihren Feinden noch mehr Leid zuzufügen, weshalb Allari sie häufig auch als Folterinstrument einsetzt.
 
 Trotz ihrer extremen Methoden kämpft Allari jedoch für das Wohl Azeroths. Nach der endgültigen Niederlage der Legion hat sie es sich zur Aufgabe gemacht, willige Ren'dorei in den Wegen der Dämonenjäger zu unterweisen und ihnen im Kampf gegen die Leere beizustehen.]]
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].zones = {"Leerensturm", "K'aresh"}
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].timeline = {
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].zones = {"Leerensturm", "K'aresh"}
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].timeline = {
     {
         era = "TBC",
         text = [[Schwor Illidan Sturmgrimm in der Scherbenwelt ihre Loyalität. Holte auf seinen Befehl hin erfolgreich das Artefakt Sargeritschlüsselstein zurück, wurde nach ihrer Rückkehr jedoch gemeinsam mit ihren Mitstreitern der Illidari von Maiev Schattensang gefangen genommen und eingesperrt.]],
