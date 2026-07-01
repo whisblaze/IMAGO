@@ -67,3 +67,21 @@ IMAGOdb.zones[2541] = {
     lore = "",
     pointsOfInterest = {},
 }
+
+IMAGOdb.zones[2599] = {
+    id = 2599,
+    texturePath = "Interface\\Addons\\IMAGO\\media\\val.tga",
+    factionControl = "CAT_CONTESTED",
+    name = "",
+    lore = "",
+    pointsOfInterest = {},
+}
+
+IMAGOdb.zones[2600] = {
+    id = 2600,
+    texturePath = "Interface\\Addons\\IMAGO\\media\\naigtal.tga",
+    factionControl = "CAT_CONTESTED",
+    name = "",
+    lore = "",
+    pointsOfInterest = {},
+}
