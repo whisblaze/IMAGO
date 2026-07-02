@@ -2724,6 +2724,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].timeline = {
     }
 }
 
+-- SCALECOMMANDER EMBERTHAL --
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].name = "Scalecommander Emberthal"
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].race = "Dracthyr"
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].lore = [[Emberthal is the leader of the Ebon Scales, the weyrn of dracthyr empowered with the magics of the black dragonflight. Like her fellow soldiers she was created by Neltharion before he gave in to corruption, and even after being imprisoned by him for thousands of years, she couldn't help but feel sadness and confusion at her father's fate. 
@@ -2811,6 +2812,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].timeline = {
 IMAGOdb.npcs.CAT_ARCANTINA["travard"].name = "Travard"
 IMAGOdb.npcs.CAT_ARCANTINA["travard"].race = "Human"
 IMAGOdb.npcs.CAT_ARCANTINA["travard"].lore = [[Travard is an old paladin and the last survivor of the original Tyr's Guard – an order dedicated to defending the fallen titan keeper, Tyr, after his sacrifice against the Old Gods. 
+
 Since the rise of the Primalists, he has reestablished the Tyr's Guard, recruiting new members on the Dragon Isles. Working with the bronze and the infinite dragonflight, Travard and his group of paladins managed to restore Tyr back to life.
 
 Their mission now is to guide their hero in this new world and help him find his place as her protector once more.]]
