@@ -110,3 +110,10 @@ IMAGOdb.npcs.CAT_ARCANTINA["wrathion"] = {
     zones = {},
     category = "CAT_ARCANTINA",
 }
+
+IMAGOdb.npcs.CAT_ARCANTINA["travard"] = {
+    displayID = 237744,
+    ids = {237744, 259347},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}

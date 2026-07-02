@@ -2806,3 +2806,30 @@ IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].timeline = {
         text = [[Enjoyed more than one drink in the Arcantina.]],
     }
 }
+
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].name = "Travard"
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].lore = [[Travard is an old paladin and the last survivor of the original Tyr's Guard – an order dedicated to defending the fallen titan keeper, Tyr, after his sacrifice against the Old Gods. 
+Since the rise of the Primalists, he has reestablished the Tyr's Guard, recruiting new members on the Dragon Isles. Working with the bronze and the infinite dragonflight, Travard and his group of paladins managed to restore Tyr back to life.
+
+Their mission now is to guide their hero in this new world and help him find his place as her protector once more.]]
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].timeline = {
+    {
+        era = "WC3",
+        text = [[Survived the onslaught of the Scourge of Lordaeron alongside a handful of comrades. Travard became the leader of the Tyr's Guard.]],
+    },
+    {
+        era = "Legion",
+        text = [[Lost his remaining comrades when the Twilight's Blade attacked the tomb. Petitioned the Champions of Dalaran for aid and defeated the cultists who tried to resurrect Zakajz the Corruptor – the C'Thraxxi general imprisoned in the Tomb of Tyr. Gave Tyr's Hand to the Highlord and stayed behind to guard what remained of the tomb, now buried under rubble.]],
+    },
+    {
+        era = "DF",
+        text = [[Reforged the Tyr's Guard by recruiting the paladins Talthis, Valunei, Hadwin, and Nolaki. Worked alongside Chromie and Eternus and journeyed through the timeways to reawaken Tyr himself. Succeeded and vowed to aid Tyr in finding his bearings in the changed world.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Spent some peaceful time in the Arcantina.]],
+    }
+}
