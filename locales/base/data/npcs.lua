@@ -317,6 +317,28 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].name = "Leona Darkstrider"
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].race = "Void elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].lore = [[To be ren'dorei means to live in constant danger from the whispers of the Void - a high price for great power. For young Leona, this wasn't enough. Fiercely loyal to and protective of her people, she sought out the Illidari to combine her dark talents with the ways of the demon hunters.
+
+After a bit of a setback on K'aresh, she has now found a willing teacher in Allari the Souleater. Like her, Leona is prepared to sacrifice everything to become the perfect weapon against her enemies.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].zones = {"Silvermoon City", "Voidstorm", "Naigtal", "Eredath"}
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].timeline = {
+    {
+        era = "TWW",
+        text = [[Fought on K'aresh as Magister Umbric's apprentice. Offered to infuse the demon hunter Adarus with the Void in exchange for being taught the ways of the Illidari. Adarus did not withstand the allures of the whispers of the Void and had to be taken out, leaving Leona's training unfinished.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Met Allari the Souleater, who volunteered to show Leona how to become a demon hunter.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Fought in the Voidstorm alongside her fellow ren'dorei. Got her demon hunter tattoos from Allari and completed her training by consuming a domanaar's soul. Was part of the strike teams at Naigtal and Val.]],
+    }
+}
+
 -- CAT_LIGHT
 -- MEHLAR DAWNBLADE --
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dawnblade"
