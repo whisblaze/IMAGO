@@ -2857,3 +2857,30 @@ IMAGOdb.npcs.CAT_ARCANTINA["nisha"].timeline = {
         text = [[Got drunk in the Arcantina and befriended her former Kul Tiran enemy, Cyrus Crestfall.]],
     }
 }
+
+-- CYRUS CRESTFALL --
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].name = "Cyrus Crestfall"
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].lore = [[This man is a true patriot of Kul Tiras and a veteran of the Second War. He fought loyally under Daelin Proudmoore and, when asked, will readily share lengthy tales about every battle he braved. While he is still saddened by the loss of all the friends and comrades who fell against the Horde, he still longs for the fight and was taken aback when his Lord Admiral ordered him to stay behind during the assault on Theramore to care for a little girl. As always, however, he followed his lord's orders.
+
+His young charge grew up to become a valiant paladin named Taelia Fordragon, and he couldn't be prouder of who she has become under his tutelage. Because of her, he no longer regrets having been forced to take on a desk job and proudly continues serving Kul Tiras as the harbormaster of Boralus. He played a key role in Kul Tiras's re-entry into the Alliance, and although he no longer expects to fight for his nation, his sword still feels right in his hand should he ever need to draw it again.]]
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].timeline = {
+    {
+        era = "WC2",
+        text = [[Served as a knight under Lord Admiral Daelin Proudmoore during the Second War. Barely survived a battle against Varok Saurfang.]],
+    },
+    {
+        era = "WC3",
+        text = [[Was prohibited from following Daelin to Theramore and forced against his wishes to become harbormaster. Was tasked to raise Taelia Fordragon.]],
+    },
+    {
+        era = "BfA",
+        text = [[Tasked Taelia and hired rogue Flynn Fairwind with rescuing the Champion of the Alliance from Tol Dagor. Used his authority to allow the Alliance to dock in Boralus Harbor and invited Genn Greymane into his office to use it as a war room. Continued to serve Kul Tiras while aiding the Alliance as the two factions became united again.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Shared war stories in the Arcantina.]],
+    }
+}
