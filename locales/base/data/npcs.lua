@@ -317,6 +317,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].timeline = {
     }
 }
 
+-- LEONA DARKSTRIDER --
 IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].name = "Leona Darkstrider"
 IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].race = "Void elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].lore = [[To be ren'dorei means to live in constant danger from the whispers of the Void - a high price for great power. For young Leona, this wasn't enough. Fiercely loyal to and protective of her people, she sought out the Illidari to combine her dark talents with the ways of the demon hunters.
@@ -336,6 +337,37 @@ IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].timeline = {
     {
         era = "Midnight",
         text = [[Fought in the Voidstorm alongside her fellow ren'dorei. Got her demon hunter tattoos from Allari and completed her training by consuming a domanaar's soul. Was part of the strike teams at Naigtal and Val.]],
+    }
+}
+
+-- CHIEF TELEMANCER OCULETH --
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].name = "Chief Telemancer Oculeth"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].race = "Nightborne"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].lore = [[Every Horde citizen has probably used one of Oculeth's portals before. The Suramarian mage is an expert telemancer and established the teleportation nexuses of capital cities like Orgrimmar and Dazar'alor. His skills proved of great use to his people during Thalyssra's rebellion against Grand Magistrix Elisande and to the Horde in the Fourth War.
+
+He may come off as cranky or absent-minded at times, but one would be a fool to dismiss his eccentricities  as imprudence. Even being more of a scholar than a fighter, Oculeth has won battles against mages more adept in combat, simply by thinking outside the box and finding creative ways to bend spells in his favor.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].zones = {"Silvermoon City", "Suramar", "Amirdrassil", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Built and maintained Suramar's teleportation network and tinkered with new spells before the War of the Ancients. Found refuge under Suramar's protective barrier during the Sundering.]],
+    },
+    {
+        era = "Legion",
+        text = [[Refused to bow to the Burning Legion and was banished from Suramar by Grand Magistrix Elisande. Almost lost his mind and withered due to magical withdrawal, but was saved by Thalyssra and the Champion and joined the rebellion against his former liege. Re-established his portal network and was a key figure in the rebellion's eventual success.]],
+    },
+    {
+        era = "BfA",
+        text = [[After the nightborne joined the Horde, Oculeth established a bureau of telemancy and remade the Horde capitals' portal networks safer and more efficient. Transported troops during the Fourth War and fought for the Horde in Nazjatar. With exceptional skill, he managed to open a portal to Draenor from the Iron Horde's timeline and allowed the Mag'har to cross over to Azeroth.]],
+    },
+    {
+        era = "DF",
+        text = [[Visited Algeth'ar Academy and was fascinated by the dragons' ways of using magic. Spent his free time fishing in the Azure Span.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Provided portals from Silvermoon to Bel'ameth, Suramar and the Silverglade Refuge to mass-teleport the united elven armies to Quel'Thalas. Joined the fight against the Void on the Isle of Quel'Danas.]],
     }
 }
 

@@ -117,3 +117,10 @@ IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"] = {
     zones = {},
     category = "CAT_QUELTHALAS",
 }
+
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"] = {
+    displayID = 240265,
+    ids = {240265, 251337, 245458, 254396, 248842},
+    zones = {},
+    category = "CAT_QUELTHALAS",
+}
