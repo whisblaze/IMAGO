@@ -103,3 +103,10 @@ IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"] = {
     zones = {},
     category = "CAT_ARCANTINA",
 }
+
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"] = {
+    displayID = 259340,
+    ids = {259340},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}

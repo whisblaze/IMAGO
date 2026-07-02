@@ -1613,6 +1613,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = {
     }
 }
 
+-- MAIEV SHADOWSONG --
 IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].name = "Maiev Shadowsong"
 IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].race = "Night elf"
 IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].lore = [[Illidan Stormrage has for the longest part of her life been the focus of Maiev's ire. As leader of the Watchers, she was tasked with ensuring the Betrayer never left his prison and for ten thousand years she succeeded. Her own isolation during her long vigil made her become obsessed with her prisoner and when he was freed to combat the Burning Legion, Maiev became restless. 
@@ -2696,5 +2697,58 @@ IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].timeline = {
     {
         era = "Midnight",
         text = [[Enjoyed a drink in the Arcantina.]],
+    }
+}
+
+-- WRATHION --
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].name = "Wrathion"
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].race = "Black Dragon"
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].lore = [[Son of Deathwing, heir to a corrupted dragonflight – Wrathion had heard of his evil heritage before he had even hatched from his egg. Born without the taint of the Old Gods, the young dragon made a conscious effort to protect Azeroth from malign forces rather than seek her destruction like the rest of his dragonflight.
+
+His ambitious plans included setting the Alliance up for total victory over the Horde to unite the world against the Burning Legion, allying with the infinite dragonflight to create armies in other dimensions, and creating a network of spies to systematically take out corrupted black dragons. He regrets many of the actions of his past, now that he has matured, and has since managed to save the world from the Old God, N'Zoth, and united with the other dragons against the Primal Incarnates. Most Azerothians now see him as an ally and hero, but his past and Deathwing's legacy are still haunting him.
+
+Being hunted since he was a whelpling, Wrathion didn't have friends or family to rely on, and a part of him will never shake the feeling of being alone and unworthy of love. He betrayed the only friend he ever had – Anduin Wrynn – and his draconic kin lay dead. On the Dragon Isles he finally found a place of acceptance and peace. He forged bonds with his older brothers and helped lead his reformed flight back into Azeroth's service.]]
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].timeline = {
+    {
+        era = "Cata",
+        text = [[Wrathion's egg was created in an experiment fusing together corrupted black dragon eggs and a whelp's corpse with titan magic. He was the first uncorrupted black dragon in millennia and was held by the red dragonflight. Conscious in his shell, he hired rogue mercenaries and hatched in Ravenholdt. In hiding, he sent out assassins to decimate the black dragonflight, even helping to kill Deathwing.]],
+    },
+    {
+        era = "MoP",
+        text = [[Had a premonition about the Burning Legion destroying Azeroth and planned to have the Alliance subjugate the Horde to unite the world against the demons. Settled in the Tavern of the Mists and befriended Anduin Wrynn while the latter recovered there. Sent out his own champions to help take down Garrosh Hellscream. Was furious when King Varian chose not to take Orgrimmar and let the Horde live.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[With the help of the bronze dragon Kairozdormu, he freed Garrosh during his trial and sent him to an alternate universe of Draenor. Knocked out his friend Anduin when he tried to stop him.]],
+    },
+    {
+        era = "WoD",
+        text = [[Remained in alternate Draenor and briefly stayed in Admiral Taylor's garrison.]],
+    },
+    {
+        era = "Legion",
+        text = [[Stayed in Northrend during the invasion of the Burning Legion and was briefly confronted by Chromie while she was seeking her future killer.]],
+    },
+    {
+        era = "BfA",
+        text = [[With N'Zoth freed from his prison, Wrathion returned and became King Anduin's advisor. Guided the Champion of Azeroth through Horrific Visions to strengthen their resolve against Old God madness. Cleansed his brother Ebyssian from corruption and finally journeyed into Ny'alotha itself. Wielded Xal'atath and used it to hurt N'Zoth directly, thus giving the Champion the opening to kill the Old God.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Was surprised to be invited to Lor'themar and Thalyssra's wedding and was attacked by Kurog Grimtotem for being an 'abomination'. Heard the call of the Dragon Isles alongside the other dragons and finally felt a sense of belonging.]],
+    },
+    {
+        era = "DF",
+        text = [[Helped restore the black dragonflight and defended the Dragon Isles against the Primal Incarnates. Met his older brother Sabellian and relentlessly fought for leadership with him. Braved the depths of Aberrus and confronted the legacy of his father. Ceded leadership of the black dragonflight to Ebyssian. Fought in the Emerald Dream alongside the other dragons and vowed to hunt down Iridikron.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Guided his friends Thalyssra and Lor'themar through the Dragon Isles. Heard the Radiant Song and was very distressed by it.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed more than one drink in the Arcantina.]],
     }
 }
