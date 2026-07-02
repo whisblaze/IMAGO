@@ -82,3 +82,10 @@ IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"] = {
     zones = {},
     category = "CAT_NEUTRAL",
 }
+
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"] = {
+    displayID = 249136,
+    ids = {249136, 253569, 244084, 253567, 253568, 254412},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}

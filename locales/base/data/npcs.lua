@@ -1613,6 +1613,65 @@ IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].name = "Maiev Shadowsong"
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].race = "Night elf"
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].lore = [[Illidan Stormrage has for the longest part of her life been the focus of Maiev's ire. As leader of the Watchers, she was tasked with ensuring the Betrayer never left his prison and for ten thousand years she succeeded. Her own isolation during her long vigil made her become obsessed with her prisoner and when he was freed to combat the Burning Legion, Maiev became restless. 
+
+She needed time to forge a new purpose for herself in the world and her quick temper and sometimes radical disposition often made her clash with her fellow night elves. After years of adjustment and letting bygones be bygones on both sides, Maiev now once more serves her people under Shandris Feathermoon's leadership.]]
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].zones = {"Amirdrassil"}
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Fought in the War of the Ancients as a priestess of Elune. After the Legion was defeated, Maiev volunteered to watch over Illidan Stormrage after he was deemed a betrayer to his kind.]],
+    },
+    {
+        era = "WC3",
+        text = [[After 10.000 years, Tyrande Whisperwind freed Illidan to combat the Burning Legion once again against Maiev's harsh protests. She later recklessly hunted him down and fought with the Betrayer on the Broken Isles and the Eastern Kingdoms, where she left Tyrande to die in order to pursue her target faster. Eventually followed and almost captured Illidan on Outland.]],
+    },
+    {
+        era = "Pre-TBC",
+        text = [[Stayed on Outland and entered an alliance with Akama to take down Illidan at the Black Temple. Trained new recruits and led strike teams against Illidan's forces. When Akama's soul was bound by Illidan to obey him, the broken draenei led Maiev into an ambush. With her entire army killed, a guilt-ridden Maiev was imprisoned by Illidan.]],
+    },
+    {
+        era = "TBC",
+        text = [[Was freed by Akama and immediately left to confront Illidan on top of the Black Temple. Together with a band of adventurers, she managed to finally slay her former prisoner but realized in horror that she felt hollow and without a sense of purpose or self without him. Took Illidan's body back to the Vault of the Wardens and also imprisoned his demon hunter followers.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Was permitted by Tyrande to return to Darnassus and reconnect with her brother Jarod. Was furious when she learned how night elven society had progressed under Malfurion and Tyrande's leadership. She began to murder the Highborne, who she felt should never have been let back into Darnassus, and even almost killed Malfurion himself. Was stopped by Jarod and driven off.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Reluctantly joined forces with Khadgar to stop Gul'dan from commencing the third invasion of the Burning Legion. They failed and had to flee for their lives.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was forced to release the demon hunters when Gul'dan and the Legion assaulted the Vault of the Wardens. When Illidan's body was stolen, Maiev pursued the attackers but was overwhelmed and imprisoned in Black Rook Hold. Was freed by Jarod and later fought on the Broken Shore. Was forced to fight alongside a revived Illidan and only barely managed to not kill him again.]],
+    },
+    {
+        era = "BfA",
+        text = [[After the Burning of Teldrassil, Maiev rejoined her people. Commanded the night elven forces during the Battle of Darkshore and helped Tyrande become the Night Warrior.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Convinced Tyrande to not execute the traitorous Sira Moonwarden because she pitied her fallen comrade.]],
+    },
+    {
+        era = "SL",
+        text = [[Witnessed Sylvanas' trial and had to acknowledge Tyrande as a worthy leader for the night elves. Realized that she, too, had a penance to make after what she did before the Cataclysm.]],
+    },
+    {
+        era = "DF",
+        text = [[Trained new recruits for the Sentinels and Wardens and stopped a resurgence of demons in Felwood. Fought in the Emerald Dream against Fyrakk's forces.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Strongly opposed helping the blood elves retake the Sunwell but joined the night elven forces on the Isle of Quel'Danas nonetheless when Shandris Feathermoon ordered her to.]],
+    }
+}
+
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
