@@ -117,3 +117,10 @@ IMAGOdb.npcs.CAT_ARCANTINA["travard"] = {
     zones = {},
     category = "CAT_ARCANTINA",
 }
+
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"] = {
+    displayID = 250411,
+    ids = {250411},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}

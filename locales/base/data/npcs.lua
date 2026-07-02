@@ -2807,6 +2807,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].timeline = {
     }
 }
 
+-- TRAVARD --
 IMAGOdb.npcs.CAT_ARCANTINA["travard"].name = "Travard"
 IMAGOdb.npcs.CAT_ARCANTINA["travard"].race = "Human"
 IMAGOdb.npcs.CAT_ARCANTINA["travard"].lore = [[Travard is an old paladin and the last survivor of the original Tyr's Guard – an order dedicated to defending the fallen titan keeper, Tyr, after his sacrifice against the Old Gods. 
@@ -2831,5 +2832,28 @@ IMAGOdb.npcs.CAT_ARCANTINA["travard"].timeline = {
     {
         era = "Midnight",
         text = [[Spent some peaceful time in the Arcantina.]],
+    }
+}
+
+-- NISHA --
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].name = "Nisha"
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].race = "Vulpera"
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].lore = [[The 'Fury of the Vulpera' has always been the shield other vulpera could hide behind when their caravans were still roaming the desert of Vol'dun. Unlike her reserved leader and friend, Kiro, Nisha prefers to use offense as the best defense when dealing with her enemies. It goes without saying that she was enthusiastic to join the Horde.
+
+After the end of the Fourth War, Nisha now spends her time exploring the world, brawling, drinking, making new friends, and generally living her best life.]]
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].timeline = {
+    {
+        era = "BfA",
+        text = [[Rescued the Speaker of the Horde from sethrak captivity when she was destroying a Faithless camp. Convinced Kiro to launch an offensive against the sethrak to prevent further attacks on the caravan. Eventually succeeded and helped kill Emperor Korthek. Defended Vol'dun against Alliance assaults and became a member of the Horde.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Dragonscale Expedition and camped with the centaur of Maruukai. Frequently participated in Fight Night at the Dragon's Hoard.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Got drunk in the Arcantina and befriended her former Kul Tiran enemy, Cyrus Crestfall.]],
     }
 }
