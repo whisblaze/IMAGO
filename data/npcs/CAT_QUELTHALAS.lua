@@ -110,3 +110,17 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"] = {
     zones = {},
     category = "CAT_QUELTHALAS",
 }
+
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"] = {
+    displayID = 252110,
+    ids = {252110, 263525, 253948, 254266, 256017, 263988, 263984, 253367, 255719, 244746, 254316, 265959, 257278, 254268, 267877, 254306, 256287, 252999, 265334, 253362},
+    zones = {},
+    category = "CAT_QUELTHALAS",
+}
+
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"] = {
+    displayID = 240265,
+    ids = {240265, 251337, 245458, 254396, 248842},
+    zones = {},
+    category = "CAT_QUELTHALAS",
+}

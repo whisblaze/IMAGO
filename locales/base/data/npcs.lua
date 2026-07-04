@@ -317,6 +317,60 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian"].timeline = {
     }
 }
 
+-- LEONA DARKSTRIDER --
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].name = "Leona Darkstrider"
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].race = "Void elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].lore = [[To be ren'dorei means to live in constant danger from the whispers of the Void - a high price for great power. For young Leona, this wasn't enough. Fiercely loyal to and protective of her people, she sought out the Illidari to combine her dark talents with the ways of the demon hunters.
+
+After a bit of a setback on K'aresh, she has now found a willing teacher in Allari the Souleater. Like her, Leona is prepared to sacrifice everything to become the perfect weapon against her enemies.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].zones = {"Silvermoon City", "Voidstorm", "Naigtal", "Eredath"}
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["leona_darkstrider"].timeline = {
+    {
+        era = "TWW",
+        text = [[Fought on K'aresh as Magister Umbric's apprentice. Offered to infuse the demon hunter Adarus with the Void in exchange for being taught the ways of the Illidari. Adarus did not withstand the allures of the whispers of the Void and had to be taken out, leaving Leona's training unfinished.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Met Allari the Souleater, who volunteered to show Leona how to become a demon hunter.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Fought in the Voidstorm alongside her fellow ren'dorei. Got her demon hunter tattoos from Allari and completed her training by consuming a domanaar's soul. Was part of the strike teams at Naigtal and Val.]],
+    }
+}
+
+-- CHIEF TELEMANCER OCULETH --
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].name = "Chief Telemancer Oculeth"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].race = "Nightborne"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].lore = [[Every Horde citizen has probably used one of Oculeth's portals before. The Suramarian mage is an expert telemancer and established the teleportation nexuses of capital cities like Orgrimmar and Dazar'alor. His skills proved of great use to his people during Thalyssra's rebellion against Grand Magistrix Elisande and to the Horde in the Fourth War.
+
+He may come off as cranky or absent-minded at times, but one would be a fool to dismiss his eccentricities  as imprudence. Even being more of a scholar than a fighter, Oculeth has won battles against mages more adept in combat, simply by thinking outside the box and finding creative ways to bend spells in his favor.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].zones = {"Silvermoon City", "Suramar", "Amirdrassil", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Built and maintained Suramar's teleportation network and tinkered with new spells before the War of the Ancients. Found refuge under Suramar's protective barrier during the Sundering.]],
+    },
+    {
+        era = "Legion",
+        text = [[Refused to bow to the Burning Legion and was banished from Suramar by Grand Magistrix Elisande. Almost lost his mind and withered due to magical withdrawal, but was saved by Thalyssra and the Champion and joined the rebellion against his former liege. Re-established his portal network and was a key figure in the rebellion's eventual success.]],
+    },
+    {
+        era = "BfA",
+        text = [[After the nightborne joined the Horde, Oculeth established a bureau of telemancy and remade the Horde capitals' portal networks safer and more efficient. Transported troops during the Fourth War and fought for the Horde in Nazjatar. With exceptional skill, he managed to open a portal to Draenor from the Iron Horde's timeline and allowed the Mag'har to cross over to Azeroth.]],
+    },
+    {
+        era = "DF",
+        text = [[Visited Algeth'ar Academy and was fascinated by the dragons' ways of using magic. Spent his free time fishing in the Azure Span.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Provided portals from Silvermoon to Bel'ameth, Suramar and the Silverglade Refuge to mass-teleport the united elven armies to Quel'Thalas. Joined the fight against the Void on the Isle of Quel'Danas.]],
+    }
+}
+
 -- CAT_LIGHT
 -- MEHLAR DAWNBLADE --
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dawnblade"
@@ -1613,6 +1667,66 @@ IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = {
     }
 }
 
+-- MAIEV SHADOWSONG --
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].name = "Maiev Shadowsong"
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].race = "Night elf"
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].lore = [[Illidan Stormrage has for the longest part of her life been the focus of Maiev's ire. As leader of the Watchers, she was tasked with ensuring the Betrayer never left his prison and for ten thousand years she succeeded. Her own isolation during her long vigil made her become obsessed with her prisoner and when he was freed to combat the Burning Legion, Maiev became restless. 
+
+She needed time to forge a new purpose for herself in the world and her quick temper and sometimes radical disposition often made her clash with her fellow night elves. After years of adjustment and letting bygones be bygones on both sides, Maiev now once more serves her people under Shandris Feathermoon's leadership.]]
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].zones = {"Amirdrassil"}
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Fought in the War of the Ancients as a priestess of Elune. After the Legion was defeated, Maiev volunteered to watch over Illidan Stormrage after he was deemed a betrayer to his kind.]],
+    },
+    {
+        era = "WC3",
+        text = [[After 10.000 years, Tyrande Whisperwind freed Illidan to combat the Burning Legion once again against Maiev's harsh protests. She later recklessly hunted him down and fought with the Betrayer on the Broken Isles and the Eastern Kingdoms, where she left Tyrande to die in order to pursue her target faster. Eventually followed and almost captured Illidan on Outland.]],
+    },
+    {
+        era = "Pre-TBC",
+        text = [[Stayed on Outland and entered an alliance with Akama to take down Illidan at the Black Temple. Trained new recruits and led strike teams against Illidan's forces. When Akama's soul was bound by Illidan to obey him, the broken draenei led Maiev into an ambush. With her entire army killed, a guilt-ridden Maiev was imprisoned by Illidan.]],
+    },
+    {
+        era = "TBC",
+        text = [[Was freed by Akama and immediately left to confront Illidan on top of the Black Temple. Together with a band of adventurers, she managed to finally slay her former prisoner but realized in horror that she felt hollow and without a sense of purpose or self without him. Took Illidan's body back to the Vault of the Wardens and also imprisoned his demon hunter followers.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Was permitted by Tyrande to return to Darnassus and reconnect with her brother Jarod. Was furious when she learned how night elven society had progressed under Malfurion and Tyrande's leadership. She began to murder the Highborne, who she felt should never have been let back into Darnassus, and even almost killed Malfurion himself. Was stopped by Jarod and driven off.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Reluctantly joined forces with Khadgar to stop Gul'dan from commencing the third invasion of the Burning Legion. They failed and had to flee for their lives.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was forced to release the demon hunters when Gul'dan and the Legion assaulted the Vault of the Wardens. When Illidan's body was stolen, Maiev pursued the attackers but was overwhelmed and imprisoned in Black Rook Hold. Was freed by Jarod and later fought on the Broken Shore. Was forced to fight alongside a revived Illidan and only barely managed to not kill him again.]],
+    },
+    {
+        era = "BfA",
+        text = [[After the Burning of Teldrassil, Maiev rejoined her people. Commanded the night elven forces during the Battle of Darkshore and helped Tyrande become the Night Warrior.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Convinced Tyrande to not execute the traitorous Sira Moonwarden because she pitied her fallen comrade.]],
+    },
+    {
+        era = "SL",
+        text = [[Witnessed Sylvanas' trial and had to acknowledge Tyrande as a worthy leader for the night elves. Realized that she, too, had a penance to make after what she did before the Cataclysm.]],
+    },
+    {
+        era = "DF",
+        text = [[Trained new recruits for the Sentinels and Wardens and stopped a resurgence of demons in Felwood. Fought in the Emerald Dream against Fyrakk's forces.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Strongly opposed helping the blood elves retake the Sunwell but joined the night elven forces on the Isle of Quel'Danas nonetheless when Shandris Feathermoon ordered her to.]],
+    }
+}
+
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
@@ -2610,6 +2724,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind"].timeline = {
     }
 }
 
+-- SCALECOMMANDER EMBERTHAL --
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].name = "Scalecommander Emberthal"
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].race = "Dracthyr"
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].lore = [[Emberthal is the leader of the Ebon Scales, the weyrn of dracthyr empowered with the magics of the black dragonflight. Like her fellow soldiers she was created by Neltharion before he gave in to corruption, and even after being imprisoned by him for thousands of years, she couldn't help but feel sadness and confusion at her father's fate. 
@@ -2637,5 +2752,137 @@ IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"].timeline = {
     {
         era = "Midnight",
         text = [[Enjoyed a drink in the Arcantina.]],
+    }
+}
+
+-- WRATHION --
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].name = "Wrathion"
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].race = "Black Dragon"
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].lore = [[Son of Deathwing, heir to a corrupted dragonflight – Wrathion had heard of his evil heritage before he had even hatched from his egg. Born without the taint of the Old Gods, the young dragon made a conscious effort to protect Azeroth from malign forces rather than seek her destruction like the rest of his dragonflight.
+
+His ambitious plans included setting the Alliance up for total victory over the Horde to unite the world against the Burning Legion, allying with the infinite dragonflight to create armies in other dimensions, and creating a network of spies to systematically take out corrupted black dragons. He regrets many of the actions of his past, now that he has matured, and has since managed to save the world from the Old God, N'Zoth, and united with the other dragons against the Primal Incarnates. Most Azerothians now see him as an ally and hero, but his past and Deathwing's legacy are still haunting him.
+
+Being hunted since he was a whelpling, Wrathion didn't have friends or family to rely on, and a part of him will never shake the feeling of being alone and unworthy of love. He betrayed the only friend he ever had – Anduin Wrynn – and his draconic kin lay dead. On the Dragon Isles he finally found a place of acceptance and peace. He forged bonds with his older brothers and helped lead his reformed flight back into Azeroth's service.]]
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"].timeline = {
+    {
+        era = "Cata",
+        text = [[Wrathion's egg was created in an experiment fusing together corrupted black dragon eggs and a whelp's corpse with titan magic. He was the first uncorrupted black dragon in millennia and was held by the red dragonflight. Conscious in his shell, he hired rogue mercenaries and hatched in Ravenholdt. In hiding, he sent out assassins to decimate the black dragonflight, even helping to kill Deathwing.]],
+    },
+    {
+        era = "MoP",
+        text = [[Had a premonition about the Burning Legion destroying Azeroth and planned to have the Alliance subjugate the Horde to unite the world against the demons. Settled in the Tavern of the Mists and befriended Anduin Wrynn while the latter recovered there. Sent out his own champions to help take down Garrosh Hellscream. Was furious when King Varian chose not to take Orgrimmar and let the Horde live.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[With the help of the bronze dragon Kairozdormu, he freed Garrosh during his trial and sent him to an alternate universe of Draenor. Knocked out his friend Anduin when he tried to stop him.]],
+    },
+    {
+        era = "WoD",
+        text = [[Remained in alternate Draenor and briefly stayed in Admiral Taylor's garrison.]],
+    },
+    {
+        era = "Legion",
+        text = [[Stayed in Northrend during the invasion of the Burning Legion and was briefly confronted by Chromie while she was seeking her future killer.]],
+    },
+    {
+        era = "BfA",
+        text = [[With N'Zoth freed from his prison, Wrathion returned and became King Anduin's advisor. Guided the Champion of Azeroth through Horrific Visions to strengthen their resolve against Old God madness. Cleansed his brother Ebyssian from corruption and finally journeyed into Ny'alotha itself. Wielded Xal'atath and used it to hurt N'Zoth directly, thus giving the Champion the opening to kill the Old God.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Was surprised to be invited to Lor'themar and Thalyssra's wedding and was attacked by Kurog Grimtotem for being an 'abomination'. Heard the call of the Dragon Isles alongside the other dragons and finally felt a sense of belonging.]],
+    },
+    {
+        era = "DF",
+        text = [[Helped restore the black dragonflight and defended the Dragon Isles against the Primal Incarnates. Met his older brother Sabellian and relentlessly fought for leadership with him. Braved the depths of Aberrus and confronted the legacy of his father. Ceded leadership of the black dragonflight to Ebyssian. Fought in the Emerald Dream alongside the other dragons and vowed to hunt down Iridikron.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Guided his friends Thalyssra and Lor'themar through the Dragon Isles. Heard the Radiant Song and was very distressed by it.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Enjoyed more than one drink in the Arcantina.]],
+    }
+}
+
+-- TRAVARD --
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].name = "Travard"
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].lore = [[Travard is an old paladin and the last survivor of the original Tyr's Guard – an order dedicated to defending the fallen titan keeper, Tyr, after his sacrifice against the Old Gods. 
+
+Since the rise of the Primalists, he has reestablished the Tyr's Guard, recruiting new members on the Dragon Isles. Working with the bronze and the infinite dragonflight, Travard and his group of paladins managed to restore Tyr back to life.
+
+Their mission now is to guide their hero in this new world and help him find his place as her protector once more.]]
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["travard"].timeline = {
+    {
+        era = "WC3",
+        text = [[Survived the onslaught of the Scourge of Lordaeron alongside a handful of comrades. Travard became the leader of the Tyr's Guard.]],
+    },
+    {
+        era = "Legion",
+        text = [[Lost his remaining comrades when the Twilight's Blade attacked the tomb. Petitioned the Champions of Dalaran for aid and defeated the cultists who tried to resurrect Zakajz the Corruptor – the C'Thraxxi general imprisoned in the Tomb of Tyr. Gave Tyr's Hand to the Highlord and stayed behind to guard what remained of the tomb, now buried under rubble.]],
+    },
+    {
+        era = "DF",
+        text = [[Reforged the Tyr's Guard by recruiting the paladins Talthis, Valunei, Hadwin, and Nolaki. Worked alongside Chromie and Eternus and journeyed through the timeways to reawaken Tyr himself. Succeeded and vowed to aid Tyr in finding his bearings in the changed world.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Spent some peaceful time in the Arcantina.]],
+    }
+}
+
+-- NISHA --
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].name = "Nisha"
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].race = "Vulpera"
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].lore = [[The 'Fury of the Vulpera' has always been the shield other vulpera could hide behind when their caravans were still roaming the desert of Vol'dun. Unlike her reserved leader and friend, Kiro, Nisha prefers to use offense as the best defense when dealing with her enemies. It goes without saying that she was enthusiastic to join the Horde.
+
+After the end of the Fourth War, Nisha now spends her time exploring the world, brawling, drinking, making new friends, and generally living her best life.]]
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"].timeline = {
+    {
+        era = "BfA",
+        text = [[Rescued the Speaker of the Horde from sethrak captivity when she was destroying a Faithless camp. Convinced Kiro to launch an offensive against the sethrak to prevent further attacks on the caravan. Eventually succeeded and helped kill Emperor Korthek. Defended Vol'dun against Alliance assaults and became a member of the Horde.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the Dragonscale Expedition and camped with the centaur of Maruukai. Frequently participated in Fight Night at the Dragon's Hoard.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Got drunk in the Arcantina and befriended her former Kul Tiran enemy, Cyrus Crestfall.]],
+    }
+}
+
+-- CYRUS CRESTFALL --
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].name = "Cyrus Crestfall"
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].race = "Human"
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].lore = [[This man is a true patriot of Kul Tiras and a veteran of the Second War. He fought loyally under Daelin Proudmoore and, when asked, will readily share lengthy tales about every battle he braved. While he is still saddened by the loss of all the friends and comrades who fell against the Horde, he still longs for the fight and was taken aback when his Lord Admiral ordered him to stay behind during the assault on Theramore to care for a little girl. As always, however, he followed his lord's orders.
+
+His young charge grew up to become a valiant paladin named Taelia Fordragon, and he couldn't be prouder of who she has become under his tutelage. Because of her, he no longer regrets having been forced to take on a desk job and proudly continues serving Kul Tiras as the harbormaster of Boralus. He played a key role in Kul Tiras's re-entry into the Alliance, and although he no longer expects to fight for his nation, his sword still feels right in his hand should he ever need to draw it again.]]
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].timeline = {
+    {
+        era = "WC2",
+        text = [[Served as a knight under Lord Admiral Daelin Proudmoore during the Second War. Barely survived a battle against Varok Saurfang.]],
+    },
+    {
+        era = "WC3",
+        text = [[Was prohibited from following Daelin to Theramore and forced against his wishes to become harbormaster. Was tasked to raise Taelia Fordragon.]],
+    },
+    {
+        era = "BfA",
+        text = [[Tasked Taelia and hired rogue Flynn Fairwind with rescuing the Champion of the Alliance from Tol Dagor. Used his authority to allow the Alliance to dock in Boralus Harbor and invited Genn Greymane into his office to use it as a war room. Continued to serve Kul Tiras while aiding the Alliance as the two factions became united again.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Shared war stories in the Arcantina.]],
     }
 }
