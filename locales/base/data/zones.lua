@@ -131,3 +131,36 @@ IMAGOdb.zones[2541].lore = [[Created as a pocket dimension by a Kirin Tor archma
 
 Unofficially, the Arcantina belongs to Archmage Khadgar, though many friendly souls have made their stay here permanent. Behind the counter stands Bartender Bob, serving only the finest brews with a warmth that can put even the most battle-worn souls at ease. Everyone is allowed to stay for as long as they like and share in tales with both old friends and newfound companions.
 ]]
+
+IMAGOdb.zones[2599].name = "Val"
+IMAGOdb.zones[2599].lore = [[A hostile world of perpetual ice, where the cold freezes to the bone and storms can rip through the hulls of spaceships. The Legion once used this world to interrogate resilient prisoners and even the demons stationed here wished to leave as soon as possible. Now, Imperator Pertinax uses Val as a hideout, amassing power to unleash more Void Assaults on Azeroth.
+
+It seems a sheer wonder that natural life can exist in a place like this, and yet frost elementals and spiders thrive here, making it even less hospitable. There is something else here - a presence emanating from deep underground - that remains undefined but has everyone on edge.]]
+IMAGOdb.zones[2599].pointsOfInterest = {
+    {
+        name = "The Void Acropolis",
+        lore = "Imperator Pertinax's fortress looms over the otherwise frozen wasteland, its dark energies impossible to miss even from afar. It is said that the acropolis extends deep underground. The place is teeming with Pertinax's subordinates and stands heavily fortified."
+    },
+    {
+        name = "The Forgotten Depths",
+        lore ="Fearsome creatures dwell on Val, horrors of the Void that have nothing to do with the recently arrived domanaar. The cave system deep beneath the Beast Pens is one such place where these creatures can be found. It would be ill-advised to venture down there without a quick way out, for one would either become lost in the caves or be consumed by the whispers.",
+    }
+}
+
+
+IMAGOdb.zones[2600].name = "Naigtal"
+IMAGOdb.zones[2600].lore = [[A fungal planet rich in arcane energies. Naigtal means 'Endless stars on water' but the civilizations that named it have long since been wiped out. Long ago, this world was one of the many that fell to the Burning Legion and the demons maintained it until their eventual defeat. Traces of the former tyrants still remain but with the cosmic balance tilting towards the Void, Naigtal has now been made a target by the Hal'hadar ethereals.]]
+IMAGOdb.zones[2600].pointsOfInterest = {
+    {
+        name = "Manaforge Arcvein",
+        lore = "The Hal'hadar under Nexus-Captain Leth'ir have constructed this station to siphon mana from the vast network of leylines in Naigtal's oceans. Dismantling their operations would certainly weaken the ethereals and put a stop to their Void Assaults on Azeroth.",
+    },
+    {
+        name = "Vilaldoun",
+        lore = "Being a conquered world, Naigtal is full of the ruins of past civilizations. This ancient mausoleum is not a remnant of the locals however – it is of draenei make. In their millennia-long flight from the Burning Legion, the draenei must have stopped on Naigtal for quite a while. Did they inadvertently bring the demons here when they were followed?",
+    },
+    {
+        name = "Wreck of the Vennorax",
+        lore = "To the north of the Umbral Base Camp lies the wreckage of a demonic spaceship. The Vennorax used to be a prison transport vessel and was stocked full of weapons and offensive systems. The Hal'hadar seem keen to acquire what remains of the Legion's technology.",
+    }
+}
