@@ -94,6 +94,7 @@ local L = IMAGO.L
     L["FUN_FACT"]                       = "Fun Fact"
     L["DID_YOU_KNOW"]                   = "Did you know?"
     L["HISTORICAL_FACT"]                = "Historical Fact"
+    L["BEHIND_THE_SCENES"]              = "Behind the Scenes"
     L["NEXT"]                           = "Next"
     L["LOGIN_EMPTY_CHRONICLE"]          = "Your chronicle is still empty..."
     L["LOGIN_ALL_UNCOVERED"]            = "All secrets have been revealed!"
