@@ -3,7 +3,7 @@ IMAGO.Snippets = IMAGO.Snippets or {}
 local COOLDOWN_SECONDS = 15
 local lastAutoAt = 0
 
-local CATEGORIES = { "FUN_FACT", "DID_YOU_KNOW", "HISTORICAL_FACT" }
+local CATEGORIES = { "FUN_FACT", "DID_YOU_KNOW", "HISTORICAL_FACT", "BEHIND_THE_SCENES"}
 
 local FISHING_SPELL_IDS = {
     [51294] = true,
