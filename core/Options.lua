@@ -203,8 +203,47 @@ function IMAGO.Options.Init()
         end
     end)
 
+    -- --------------------------------------------------------
+    -- Sprache / Language
+    -- --------------------------------------------------------
+    local langHeader = CreateSectionHeader(IMAGO.L["SETTINGS_SEC_LANGUAGE"], sliderScale, 0, -22)
+
+    local languages = {
+        { code = "enUS", label = "English" },
+        { code = "deDE", label = "Deutsch" },
+        { code = "ruRU", label = "\208\160\209\131\209\129\209\129\208\186\208\184\208\185" },
+    }
+
+    local currentLang = IMAGOSaved.language or IMAGO.currentLocale or "enUS"
+    local langButtons = {}
+    local lastLangBtn = nil
+
+    for i, lang in ipairs(languages) do
+        local rb = CreateFrame("CheckButton", "IMAGOLangRadio_" .. lang.code, content, "UIRadioButtonTemplate")
+        if lastLangBtn then
+            rb:SetPoint("TOPLEFT", lastLangBtn, "BOTTOMLEFT", 0, -10)
+        else
+            rb:SetPoint("TOPLEFT", langHeader, "BOTTOMLEFT", 0, -10)
+        end
+        rb.text:SetText(lang.label)
+        rb:SetChecked(currentLang == lang.code)
+        rb:SetScript("OnClick", function()
+            IMAGOSaved.language = lang.code
+            for _, btn in ipairs(langButtons) do
+                btn:SetChecked(btn.langCode == lang.code)
+            end
+        end)
+        rb.langCode = lang.code
+        langButtons[i] = rb
+        lastLangBtn = rb
+    end
+
+    local langNote = content:CreateFontString(nil, "ARTWORK", "GameFontHighlightSmall")
+    langNote:SetPoint("TOPLEFT", lastLangBtn, "BOTTOMLEFT", 0, -8)
+    langNote:SetText("|cFFAAAAAA" .. IMAGO.L["OPT_LANGUAGE_NOTE"] .. "|r")
+
     -- Content-Höhe festlegen (genug Platz für alle Elemente)
-    content:SetHeight(700)
+    content:SetHeight(900)
 
     -- In das WoW Settings-Menü registrieren
     local category = Settings.RegisterCanvasLayoutCategory(panel, panel.name)
