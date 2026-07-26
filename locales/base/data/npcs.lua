@@ -2382,6 +2382,29 @@ IMAGOdb.npcs.CAT_AMANI["filo"].timeline = {
     }
 }
 
+-- TORUNDO THE GRIZZLED --
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].name = "Torundo the Grizzled"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].race = "Forest troll"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].lore = [[When Torundo was but a mere child, his home of Zen'tamani was burned down by the Farstriders of Quel'Thalas, leaving the few survivors helpless and bitter. He fled to Amani'Zar and grew up a formidable warrior loyal to the Amani warlord Zul'jin, who promised his people revenge and glory. Even after Zul'jin's defeat, Torundo remained in service to his bloodline.
+
+Now, he serves Chieftain Zul'jarra as her war advisor, defending Zul'Aman from the Twilight's Blade. While he has mellowed somewhat with age, the sight of a dead enemy still brings a smile to his grizzled face.]]
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].zones = {"Zul'Aman", "Atal'Aman", "The Den"}
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].source = "Cadash"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].timeline = {
+    {
+        era = "Pre-WC1",
+        text = [[Grew up and lived in Zen'tamani Village when it was razed by the Farstriders under Ranger-General Lireesa Windrunner and had to flee to Amani'Zar as a child.]],
+    },
+    {
+        era = "TBC",
+        text = [[Fought under Zul'jin during his battles with Quel'Thalas. After his death, Torundo served Zul'jin's daughter-in-law, Zarama.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Defended civilians during the Twilight's Blade's sudden attack on Atal'Aman, and later took care of the refugees in Amani'Zar. Helped defeat the Void cultists and was in charge of cleansing Atal'Aman of the lingering malicious energies. After Hagar revealed the trolls' and elves' shared ancestry, Torundo came to blows with Lor'themar Theron.]],
+    }
+}
+
 -- CAT_HARATI
 IMAGOdb.npcs.CAT_HARATI["orweyna"].name = "Orweyna"
 IMAGOdb.npcs.CAT_HARATI["orweyna"].race = "Haranir"
