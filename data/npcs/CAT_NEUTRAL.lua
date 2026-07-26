@@ -89,3 +89,10 @@ IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"] = {
     zones = {},
     category = "CAT_NEUTRAL",
 }
+
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"] = {
+    displayID = 254592,
+    ids = {254592, 257541, 255063},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}

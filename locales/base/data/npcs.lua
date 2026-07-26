@@ -1756,6 +1756,61 @@ IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].name = "Brann Bronzebeard"
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].race = "Dwarf"
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].lore = [[Everyone who considers themselves an archaeologist or historian has heard of Brann Bronzebeard. The youngest of the three Bronzebeard brothers has no claim to, or interest in, the High Seat of Ironforge and instead carved out a reputation as one of Azeroth's most famous explorers. The first complete maps of Kalimdor and the Eastern Kingdoms were made by his hand, showing that he even ventured deep into enemy territory to make them as precise as possible. 
+
+Whenever a new continent or ruin is discovered – especially if it's of Titan origin – Brann can be found at the forefront, wherever the action is.]]
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].zones = {"Silvermoon City"}
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].timeline = {
+    {
+        era = "WC2",
+        text = [[Fought for the Alliance during the Siege of Ironforge and stayed with the army until the final battle of the Second War against the Old Horde.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Founded the Explorers' League with the help of his brother, King Magni. Mapped out the entire Eastern Kingdoms and, after its discovery, Kalimdor as well.]],
+    },
+    {
+        era = "Classic",
+        text = [[Investigated the rumors about the Old God C'Thun and found a tunnel leading to the ancient kingdom of Ahn'Qiraj.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Uncovered the true fate of his brother, Muradin, and helped bring him home to Ironforge. Investigated the Halls of Ulduar, finding more information about the Titans and the Old Gods. Uncovered Yogg-Saron's corrupting influence over Ulduar's keepers and rallied an army to defeat him.]],
+    },
+    {
+        era = "Cata",
+        text = [[Put an end to Commander Schnottz's operations in Uldum and later discovered and explored the Halls of Origination.]],
+    },
+    {
+        era = "MoP",
+        text = [[Established a museum of archaeology at the Seat of Knowledge. Aided the Alliance war effort by researching the sha.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was reunited with his awakened brother, Magni, and together they found out that Magni had been made the Speaker of Azeroth. Helped Magni and the High Priest discover the Primordial Observatory and gain the seekers' support. Brann later uncovered various archaeological artifacts on the Broken Isles.]],
+    },
+    {
+        era = "BfA",
+        text = [[Unsuccessfully tried to forge an alliance with the blood trolls of Nazmir. Ventured through the Underrot and discovered the entrance to Uldir alongside Alliance adventurers. Helped Magni acquire MOTHER's help and brought her to the Chamber of Heart. Fought N'Zoth's minions in Uldum.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Revisited Northrend with Magni and Muradin to note changes in the land and check on old allies, like the Frostborn. Most of all, though, the brothers were happy to spend time together in peace again.]],
+    },
+    {
+        era = "TWW",
+        text = [[Brought his nephew, Dagran, to Dalaran to check on Magni and survived the city's subsequent destruction. Established the Delver's Headquarters in Dornogal and explored Khaz Algar's hidden caves and ruins alongside the Champion. Helped kill Xal'atath's lieutenant, Zekvir, recovered his priceless hat from the Underpin, and defeated the bounty hunter Ky'veza.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Assisted the Reliquary in Silvermoon City as an archaeology expert.]],
+    }
+}
+
+locales_enUS_data_npcs.lua
 
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
