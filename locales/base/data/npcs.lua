@@ -1306,6 +1306,36 @@ IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].name = "Grand Artificer Romuul"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].race = "Draenei"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].lore = [[The leader of the artificers – draenei engineers and architects – and Velen's main confidant in the Exodar's organizational affairs, Romuul has stayed loyally at Velen's side since they first fled from Argus thousands of years ago. He was in charge of repairing, maintaining, and piloting the Vindicaar during the third invasion of the Burning Legion, and outfitted the vessel to be the base of operations of the Army of the Light even after the Legion's defeat.
+
+During the Tishamaat, Velen and Romuul announced their plans for the construction of a new city on Azeroth, giving the draenei a chance to finally settle on a world they could once again call home. The work has to be put on hold, however, as the Grand Artificer has been called by the Sunwell to combat the Void. Ready to serve, he exchanges his chisel for his holy hammer and fights for the Light, for a new dawn for his people, and for all of Azeroth.]]
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Voidstorm"}
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Worked as an artificer on Argus and was an apprentice of Exarch Hataaru. Joined Velen's cause and fled his homeland when the Burning Legion took over.]],
+    },
+    {
+        era = "Legion",
+        text = [[Repaired the Vindicaar and piloted it through the Twisting Nether, successfully reaching Argus. Helped with teleportation on Argus through Lightforged beacons and upgraded the Vindicaar's defensive and offensive systems. Used the vessel to bypass Antorus' shields and gave the Champions the chance to strike at Sargeras. Evaded the Dark Titan's attacks and steered the Vindicaar back to Azeroth.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kept maintaining the Vindicaar when it became the main base of operations for the Army of the Light.]],
+    },
+    {
+        era = "DF",
+        text = [[Sent out formal invitations to the Tishamaat celebration in the Exodar. Together with Velen, he announced plans for the construction of a new draenei city on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was called to Silvermoon and fought on the Isle of Quel'Danas as part of the Vanguard of the Light. Helped the ren'dorei stabilize the Singularity Anchor in the Voidstorm, preventing a destructive implosion.]],
+    }
+}
+
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].name = "Allari the Souleater"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin"].race = "Blood Elf"
