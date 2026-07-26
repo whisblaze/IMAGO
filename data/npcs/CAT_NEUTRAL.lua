@@ -124,10 +124,3 @@ IMAGOdb.npcs.CAT_NEUTRAL["zekhan"] = {
     zones = {},
     category = "CAT_NEUTRAL",
 }
-
-IMAGOdb.npcs.CAT_NEUTRAL["lord_darius_crowley"] = {
-    displayID = 250413,
-    ids = {250413},
-    zones = {},
-    category = "CAT_NEUTRAL",
-}
