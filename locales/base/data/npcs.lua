@@ -371,6 +371,37 @@ IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].timeline = {
     }
 }
 
+-- ARCANIST VALTROIS --
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].name = "Arcanist Valtrois"
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].race = "Nightborne"
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].lore = [[An expert on the study of ley lines and a powerful mage with a strategic mind, Arcanist Valtrois was one of Thalyssra's main supporters during her rebellion against Grand Magistrix Elisande. Now, she serves as one of the leaders of the nightborne. 
+
+Valtrois may come off as brusque and even outright rude, especially to those she has just met, but once her trust is earned, she has proven to be an invaluable ally time and time again. With the war against the Burning Legion won, she now spends her time exploring and studying the world beyond her home of Suramar alongside her lover, the blue dragon Stellagosa.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].zones = {"Isle of Quel'Danas", "The Den"}
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].timeline = {
+    {
+        era = "Pre-Legion",
+        text = [[Was renowned as an arcanist in Suramar for her knowledge of the ley lines. Was exiled and withered due to magical withdrawal, after Thalyssra's rebellion against Grand Magistrix Elisande when the nightborne leader chose to ally Suramar with the Burning Legion.]],
+    },
+    {
+        era = "Legion",
+        text = [[Rejoined the rebellion under Thalyssra in Shal'Aran and reactivated the leyline grid of Suramar. Summoned a concentrated manastorm to help the arcan'dor grow fruit to restore the nightborne to their former strength. Befriended the dragon Stellagosa and later devised the plan to breach the Nighthold to stop Elisande once and for all.]],
+    },
+    {
+        era = "BfA",
+        text = [[Accompanied Thalyssra during her diplomatic visit to Silvermoon, helped defend the Sunwell from Alleria, and agreed to join the Horde. Fought in the Fourth War and freed Lady Ashvane under orders of Warchief Sylvanas Windrunner.]],
+    },
+    {
+        era = "TWW",
+        text = [[Remained in contact with Stellagosa and traveled the world with her. The two eventually became lovers.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Joined the united elven armies on the Isle of Quel'Danas against the Devouring Host. Accompanied Thalyssra to Harandar to witness Hagar's revelation about the trolls' and elves' shared ancestry.]],
+    }
+}
+
 -- CAT_LIGHT
 -- MEHLAR DAWNBLADE --
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge"].name = "Mehlar Dawnblade"
@@ -2336,6 +2367,7 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
     }
 }
 
+-- FILO --
 IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"
 IMAGOdb.npcs.CAT_AMANI["filo"].race = "Kapara (Loa)"
 IMAGOdb.npcs.CAT_AMANI["filo"].lore = [[Worshipped in Zul’Aman as the Loa of Children, Filo never speaks on his own, instead taking the youngest child of each village as his speaker. While gentle toward those he protects, he pursues anyone who dares harm his children with a vow of vengeance.
