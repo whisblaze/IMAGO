@@ -1961,6 +1961,33 @@ IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].timeline = {
     }
 }
 
+-- ZEKHAN --
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].name = "Zekhan"
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].race = "Jungle troll"
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].lore = [[This young, honest, and idealistic jungle troll became a key player during the Fourth War as Varok Saurfang's first supporter and closest confidant. After Saurfang's sacrifice, Zekhan swore to carry on the legacy of honor his fatherly friend left behind. He has been made ambassador of the Horde for his heroics and has earned the unconditional trust of various leaders of the Horde, Queen Talanji, Rokhan and Thrall chief among them. 
+
+Now, the young shaman has been invited to Harandar, and remains optimistic for whatever Hagar's revelation might bring for the future.]]
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].zones = {"The Den"}
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].timeline = {
+    {
+        era = "Pre-BfA",
+        text = [[Grew up on the Echo Isles and was inspired by the tales his father Hekazi used to tell him about the great heroes of the Horde, such as Varok Saurfang.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought for the Horde during the Siege of Lordaeron. After Saurfang escaped Alliance captivity, Zekhan joined him and became his closest confidant in his revolution. Zekhan trusted the Champion with details of their plans, hopeful that they would not remain loyal to Sylvanas. After witnessing Saurfang's sacrifice at the gates of Orgrimmar, he vowed to continue his legacy.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Was guided by Bwonsamdi to save Queen Talanji's life. Was made ambassador of the Horde and was sent to Zandalar to aid the queen against the Widow's Bite. Risked his life to save children being used as living sacrifices, and saw a vision of the Maw. Remained close friends with Talanji after the Widow's Bite was defeated. Later, he traveled Kalimdor with Rexxar to give a report on Horde holdouts.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Accompanied Rokhan to a meeting of the elf and troll leaders in Harandar. Was optimistic for the future after hearing Hagar's revelation of shared ancestry, but was met with skepticism from both Rokhan and Talanji.]],
+    }
+}
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
