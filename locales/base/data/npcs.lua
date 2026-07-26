@@ -1842,6 +1842,40 @@ IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].name = "Queen Talanji"
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].race = "Zandalari Troll"
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].lore = [[Thousands of years ago, the trolls ruled over Azeroth. Now, only one of their great empires remains: Zandalar, to which all other troll tribes look in respect. Talanji reigns as queen of the Zandalari and although she is young, her authority and royal lineage are beyond dispute.  Temperamental and headstrong, and with the power of the Loa of Death on her side, she is a force to be reckoned with.
+
+After she came to power when Alliance adventurers murdered her father, King Rastakhan, Talanji allied with the Horde, swearing vengeance. While she honors the truce between the factions, she doesn't hide her lingering disdain for the Alliance and makes it quite clear that if war was ever to break out again, she would not argue for peace long.]]
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].zones = {"The Den"}
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].timeline = {
+    {
+        era = "Cata",
+        text = [[Grew up as the princess of Zandalar with her friend Apari.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Noticed the blood troll uprising in Nazmir and warned her father. When the king dismissed the matter, Talanji contacted the Horde for aid. En route to Orgrimmar, she was intercepted by the Alliance and sent to prison in Stormwind City.]],
+    },
+    {
+        era = "BfA",
+        text = [[Was rescued by the Horde and persuaded her father to establish an embassy for the new allies in Dazar'alor. She put an end to the blood trolls' schemes in Uldir and helped kill the artificial Old God G'huun. Fought at the forefront in the Battle of Dazar'alor but had to witness her father being slain. Was forced into a pact with Bwonsamdi, the Loa of Death. Joined the Horde as queen.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Survived an assassination attempt during a Horde meeting. Led the efforts to rescue Bwonsamdi from the Widow's Bite and Nathanos Blightcaller and managed to pressure the loa into revoking the pact her father made with him, working together as equals instead. Had to kill her former friend Apari when she revealed herself a traitor. Formed a friendship with the young Darkspear troll Zekhan.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Hosted Lor'themar and Thalyssra in Zandalar and organized a romantic tour of her kingdom for the two elves.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Witnessed Elder Hagar's revelation about the trolls' and elves' shared history.]],
+    }
+}
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
