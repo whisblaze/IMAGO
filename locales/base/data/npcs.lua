@@ -2886,3 +2886,49 @@ IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].timeline = {
         text = [[Shared war stories in the Arcantina.]],
     }
 }
+
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].name = "Misha"
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].race = "Bear"
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].lore = [[Never far from Rexxar's side is his loyal friend and companion, Misha. She was orphaned as a little cub in Feralas and found by the wandering Mok'Nathal by chance. Both were alone and without family or kin, and quickly became inseparable. 
+
+It would be unwise to mistake her cuddly appearance for harmlessness. Get on Rexxar's bad side, and if the hunter doesn't end you, Misha certainly will.]]
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].timeline = {
+    {
+        era = "Pre-WC3",
+        text = [[Was found by Rexxar as a young cub beside her dead mother. Rexxar named her Misha, and she soon began following her new friend wherever he went.]],
+    },
+    {
+        era = "WC3",
+        text = [[Fought side by side with Rexxar against Daelin Proudmoore in the aftermath of the Third War.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Carried the wounded orc scout Byrok on her back to Orgrimmar.]],
+    },
+    {
+        era = "Classic",
+        text = [[Roamed the wilderness of Desolace with Rexxar.]],
+    },
+    {
+        era = "TBC",
+        text = [[Helped Rexxar defend Thunderlord Stronghold in the Blade's Edge Mountains.]],
+    },
+    {
+        era = "Legion",
+        text = [[Officially joined the Unseen Path alongside Rexxar and occasionally helped the Huntmaster on missions.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Ventured across Kalimdor with Rexxar and Zekhan and mourned the loss of Huelo, Rexxar's late wolf companion.]],
+    },
+    {
+        era = "DF",
+        text = [[Fought at Rexxar's side in the Ohn'ahran Plains and the Emerald Dream. Attended the first orcish Kosh'harg on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Relaxed in front of the fireplace in the Arcantina and even let the Champion pet her.]],
+    }
+}
