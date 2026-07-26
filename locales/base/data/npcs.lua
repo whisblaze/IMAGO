@@ -1810,7 +1810,37 @@ IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].timeline = {
     }
 }
 
-locales_enUS_data_npcs.lua
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].name = "Soridormi"
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].race = "Bronze Dragon"
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].lore = [[As a bronze dragon, Soridormi's chief directive is to protect and maintain the Titans' one true timeline. She is the prime consort of the Timeless One, Nozdormu, and thus in charge of many matters concerning the bronze flight as a whole. Wherever history teeters on the brink of unraveling or dragonkind stands in need of protection, Soridormi is never far behind.]]
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].zones = {"Silvermoon City"}
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Fought the Primalists during the War of the Scaleborn. Infused the Dragon Soul with her own and Nozdormu's essence and represented the bronze dragonflight during the War of the Ancients.]],
+    },
+    {
+        era = "TBC",
+        text = [[Commanded the Scale of the Sands and defended the true timeline of the Battle of Mount Hyjal from the infinite dragonflight.]],
+    },
+    {
+        era = "MoP",
+        text = [[The Vision of Time showed Soridormi's death, yet her future killer remained unknown.]],
+    },
+    {
+        era = "DF",
+        text = [[Led the Timewalkers on the Dragon Isles to preserve the future. Ventured into the Primalist Tomorrow to stop the Infinites, and managed to neutralize various Time Rifts. Witnessed Amirdrassil's awakening.]],
+    },
+    {
+        era = "TWW",
+        text = [[Opened portals to re-experience the avoided future of N'Zoth's victory. Studied the effects of the Black Blood, once destined to be used by N'Zoth, but now wielded by Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Stayed at the Wayfarer's Rest Inn in Silvermoon City and aided confused Champions in aligning their timelines.]],
+    }
+}
 
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
