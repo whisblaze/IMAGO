@@ -110,3 +110,10 @@ IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"] = {
     zones = {},
     category = "CAT_NEUTRAL",
 }
+
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"] = {
+    displayID = 253661,
+    ids = {253661},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}

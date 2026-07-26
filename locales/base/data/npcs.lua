@@ -1756,6 +1756,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].timeline = {
     }
 }
 
+-- BRANN BRONZEBEARD --
 IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].name = "Brann Bronzebeard"
 IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].race = "Dwarf"
 IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].lore = [[Everyone who considers themselves an archaeologist or historian has heard of Brann Bronzebeard. The youngest of the three Bronzebeard brothers has no claim to, or interest in, the High Seat of Ironforge and instead carved out a reputation as one of Azeroth's most famous explorers. The first complete maps of Kalimdor and the Eastern Kingdoms were made by his hand, showing that he even ventured deep into enemy territory to make them as precise as possible. 
@@ -1810,6 +1811,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].timeline = {
     }
 }
 
+-- SORIDORMI --
 IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].name = "Soridormi"
 IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].race = "Bronze Dragon"
 IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].lore = [[As a bronze dragon, Soridormi's chief directive is to protect and maintain the Titans' one true timeline. She is the prime consort of the Timeless One, Nozdormu, and thus in charge of many matters concerning the bronze flight as a whole. Wherever history teeters on the brink of unraveling or dragonkind stands in need of protection, Soridormi is never far behind.]]
@@ -1842,6 +1844,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].timeline = {
     }
 }
 
+-- QUEEN TALANJI --
 IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].name = "Queen Talanji"
 IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].race = "Zandalari Troll"
 IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].lore = [[Thousands of years ago, the trolls ruled over Azeroth. Now, only one of their great empires remains: Zandalar, to which all other troll tribes look in respect. Talanji reigns as queen of the Zandalari and although she is young, her authority and royal lineage are beyond dispute.  Temperamental and headstrong, and with the power of the Loa of Death on her side, she is a force to be reckoned with.
@@ -1869,6 +1872,57 @@ IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].timeline = {
     {
         era = "Pre-TWW",
         text = [[Hosted Lor'themar and Thalyssra in Zandalar and organized a romantic tour of her kingdom for the two elves.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Witnessed Elder Hagar's revelation about the trolls' and elves' shared history.]],
+    }
+}
+
+-- ROKHAN --
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].name = "Rokhan"
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].race = "Jungle troll"
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].lore = [[Rokhan has been a proud and loyal member of the Darkspear Tribe and the Horde since the Third War. Through exceptional skill as a shadow hunter and tracker, he worked his way up the ranks, and when Warchief Vol'jin fell to the Burning Legion, Rokhan was elected to replace him as chieftain of the Darkspear. 
+
+Since then, he has been instrumental in bringing the Zandalari into the ranks of the Horde, remaining friends with Queen Talanji to this day, and in bringing the lost Loa of the Darkspear back into their society. Rokhan has fought, and always will fight, for what is best for his people.]]
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].zones = {"The Den"}
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].timeline = {
+    {
+        era = "WC3",
+        text = [[Joined Thrall's New Horde and fled to Kalimdor alongside his tribe. He later led the raid against Daelin Proudmoore at Theramore after the Kul Tirans had attacked Orgrimmar without provocation. Battled Daelin's elite forces while Rexxar slew the Lord Admiral.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Was stationed in Dragonblight and kept the undead frost wyrms from advancing on the main Horde army at the Wrathgate.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Safeguarded his trapped people during the War Against the Nightmare.]],
+    },
+    {
+        era = "WoD",
+        text = [[Helped stop the Iron Horde's assault in the Blasted Lands and accompanied Azeroth's forces to the other Draenor. Served as the Horde Commander's right-hand man, overseeing and handling various threats on Draenor.]],
+    },
+    {
+        era = "Legion",
+        text = [[Acted as unofficial representative of the Darkspear trolls after Vol'jin's death on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Freed Princess Talanji from Alliance captivity and later joined her in her expedition to Nazmir. Formed a friendship with her and helped her stop the blood troll threat. Learned from Vol'jin's spirit that the Shadowlands were in turmoil. Fought in the Battle of Dazar'alor and sided with Saurfang in his rebellion against Sylvanas. Was elected chieftain of the Darkspear and joined the Horde Council.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Joined Horde forces on Zandalar to come to Queen Talanji's aid against the Widow's Bite.]],
+    },
+    {
+        era = "SL",
+        text = [[Took up temporary leadership of Orgrimmar when Thrall and Baine Bloodhoof were abducted and trapped in the Shadowlands.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined his old friends Baine Bloodhoof, Chen Stormstout, and Rexxar in the Ohn'ahran Plains and helped restore Toghusuq Village while all four reminisced and mourned the fallen Bovan Windtotem. Later helped battle Fyrakk in the Emerald Dream. On the Echo Isles, he stopped worshipers of Mueh'zala and established Bwonsamdi, Lukou, Kevo ya Siti, and Jani as the Darkspear's primary loa.]],
     },
     {
         era = "Midnight",
