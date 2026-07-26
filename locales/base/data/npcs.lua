@@ -1988,6 +1988,49 @@ IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].timeline = {
     }
 }
 
+-- LORD DARIUS CROWLEY --
+IMAGOdb.npcs.CAT_NEUTRAL["lord_darius_crowley"].name = "Lord Darius Crowley"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_darius_crowley"].race = "Worgen"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_darius_crowley"].lore = [[A proud and selfless Gilnean nobleman and once the closest friend of King Genn Greymane. Darius was branded a traitor to his homeland shortly after the Third War, when he incited a rebellion against his king in protest of the isolationist course Genn had set for the nation. Never losing his idealism, Crowley fought for Gilneas without hesitation once more when the worgen curse and Forsaken takeover sealed the declining kingdom's fate. He even gave up his humanity for the cause.
+
+Now, with Gilneas liberated and at peace, Darius can finally take a moment to rest and take pride in seeing his daughter grow up in the world they both fought for.]]
+IMAGOdb.npcs.CAT_NEUTRAL["lord_darius_crowley"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_NEUTRAL["lord_darius_crowley"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_darius_crowley"].timeline = {
+    {
+        era = "WC2",
+        text = [[Convinced King Genn Greymane to send Gilnean troops to aid the newly-formed Alliance of Lordaeron against the orcish Horde. Strongly opposed Gilneas leaving the Alliance after the war.]],
+    },
+    {
+        era = "WC3",
+        text = [[Went against Genn's orders and sent troops to the aid of Jaina Proudmoore when the former ally asked for help during the Third War.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[After King Genn refused to aid Lordaeron during the fallout of Arthas' betrayal and constructed the Greymane Wall to further isolate Gilneas, Darius started the Northgate Rebellion. He saw his former friend as a tyrant and led the rebels into the capital city. The rebellion failed and Crowley and his loyalists were thrown into prison as traitors.]],
+    },
+    {
+        era = "Cata",
+        text = [[Was freed by Genn when both the Forsaken and the worgen besieged Gilneas. Was prepared to die, ensuring the evacuation of civilians, but became afflicted with the worgen curse instead. Made contact with the night elves, but stayed in Gilneas while Genn's people sought to rejoin the Alliance. Formed the Gilneas Liberation Front but had to retreat when Sylvanas took the city after many battles.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined Genn and Tess Greymane aboard the Skyfire and aided the Alliance on the Broken Isles. Worked with Odyn's Valarjar to combat the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Made new attempts to liberate Gilneas from Forsaken occupation after the Battle of Lordaeron. Later joined the Alliance during the Battle at the Gates of Orgrimmar.]],
+    },
+    {
+        era = "DF",
+        text = [[Fought the Scarlet Crusade and drove them out of Gilneas, following the Forsaken's show of goodwill by withdrawing their troops. Was finally able to breathe freely again and was glad to see Gilneas back in Alliance control.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Spoke proudly of his daughter, Lorna, and reminisced about old times with his former enemy, Eitrigg, in the Arcantina.]],
+    }
+}
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].race = "Human"
