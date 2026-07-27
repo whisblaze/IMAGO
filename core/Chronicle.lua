@@ -1003,15 +1003,23 @@ function IMAGO.Chronicle.CreateFrame()
         local prev = table.remove(navStack)
         if not prev then return end
 
-        isNavigatingBack = true
-        if prev.type == "npc" then
-            IMAGO.Chronicle.OpenToNPCSlug(prev.slug, { skipDiscoveryCinematic = true })
-        elseif prev.type == "zone" then
-            IMAGO.Chronicle.OpenToZoneMapID(prev.mapID)
+        if prev.type == "eras" then
+            -- Zurück zum Eras-Tab mit gespeichertem Zustand
+            IMAGO.Chronicle.SelectMainTab(3)
+            if IMAGO.Eras and IMAGO.Eras.OpenToEra then
+                IMAGO.Eras.OpenToEra(prev.erasSlug, prev.erasSubTab, prev.erasScrollY)
+            end
+        else
+            isNavigatingBack = true
+            if prev.type == "npc" then
+                IMAGO.Chronicle.OpenToNPCSlug(prev.slug, { skipDiscoveryCinematic = true })
+            elseif prev.type == "zone" then
+                IMAGO.Chronicle.OpenToZoneMapID(prev.mapID)
+            end
+            C_Timer.After(0, function()
+                isNavigatingBack = false
+            end)
         end
-        C_Timer.After(0, function()
-            isNavigatingBack = false
-        end)
 
         if #navStack == 0 then
             self.enabled = false
@@ -2385,7 +2393,17 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
 
     -- Push current page onto nav stack before navigating away.
     -- Skip if navigating back, or already on this NPC.
-    if not isNavigatingBack then
+    if opts.fromEras then
+        -- Navigation kommt vom Eras-Tab: Stack leeren, Eras-Entry mit Zustand pushen
+        wipe(navStack)
+        table.insert(navStack, {
+            type        = "eras",
+            erasSlug    = opts.erasSlug,
+            erasSubTab  = opts.erasSubTab,
+            erasScrollY = opts.erasScrollY,
+        })
+        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+    elseif not isNavigatingBack then
         local entry = nil
         if f.selectedNPCSlug and f.selectedNPCSlug ~= "" and f.selectedNPCSlug ~= slug then
             entry = { type = "npc", slug = f.selectedNPCSlug }

@@ -1203,7 +1203,7 @@ function IMAGO.Eras.RenderOverview(data)
     hookBorder:SetColorTexture(C_GOLD_DIM[1], C_GOLD_DIM[2], C_GOLD_DIM[3], 0.9)
 
     local hookFS = PoolFS(pool, "hookFS", content)
-    hookFS:SetFont(FONT_BODY, 14, "")
+    hookFS:SetFont(FONT_BODY, 15, "")
     hookFS:ClearAllPoints()
     hookFS:SetPoint("TOPLEFT", content, "TOPLEFT", PAD + 12, -y)
     hookFS:SetWidth(INNER - 14)
@@ -1244,10 +1244,11 @@ function IMAGO.Eras.RenderOverview(data)
         card:SetPoint("TOPLEFT", content, "TOPLEFT", PAD + (i-1)*(KF_W+GAP), -y)
 
         local lFS = PoolFS(pool, kf.key.."L", card)
-        lFS:SetFont(FONT_BODY, 11, "")
+        lFS:SetFont(FONT_BODY, 14, "")
         lFS:SetWidth(KF_W - KF_IPAD * 2)
         lFS:SetText(string.upper(kf.lbl))
-        lFS:SetTextColor(unpack(C_TEXT_MUTED))
+        lFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
+        lFS:SetJustifyH("CENTER")
         lFS:SetWordWrap(false)
         lFS:Show()
 
@@ -1255,7 +1256,8 @@ function IMAGO.Eras.RenderOverview(data)
         vFS:SetFont(FONT_BODY, 15, "")
         vFS:SetWidth(KF_W - KF_IPAD * 2)
         vFS:SetText(kf.val)
-        vFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
+        vFS:SetTextColor(unpack(C_TEXT_PRI))
+        vFS:SetJustifyH("CENTER")
         vFS:SetWordWrap(true)
         vFS:Show()
 
@@ -1279,6 +1281,15 @@ function IMAGO.Eras.RenderOverview(data)
             lf:SetPoint("TOPLEFT", c, "TOPLEFT", KF_IPAD, -topPad)
             vf:ClearAllPoints()
             vf:SetPoint("TOPLEFT", c, "TOPLEFT", KF_IPAD, -(topPad + KF_LBL_H + KF_GAP_LV))
+            local lu = PoolTex(pool, kf.key.."LU", c)
+            lu:SetHeight(1)
+            lu:SetColorTexture(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.7)
+            lu:ClearAllPoints()
+            local textW = lf:GetStringWidth()
+            local xOff  = math.floor((lf:GetWidth() - textW) / 2)
+            lu:SetPoint("TOPLEFT", lf, "BOTTOMLEFT", xOff, -1)
+            lu:SetWidth(textW)
+            lu:Show()
         end
     end
     y = y + kfMaxH + VSEP
@@ -1301,19 +1312,20 @@ function IMAGO.Eras.RenderOverview(data)
         local BQ_IPAD   = 11
 
         local bqLbl = PoolFS(pool, "bqLbl", bqCard)
-        bqLbl:SetFont(FONT_BODY, 11, "")
+        bqLbl:SetFont(FONT_BODY, 14, "")
         bqLbl:SetWidth(INNER - BQ_IPAD * 2)
         bqLbl:SetText(string.upper(IMAGO.L["ERAS_BIG_QUESTION"] or "The Central Question"))
         bqLbl:SetTextColor(unpack(C_GOLD))
+        bqLbl:SetJustifyH("CENTER")
         bqLbl:SetWordWrap(false)
         bqLbl:Show()
 
         local bqFS = PoolFS(pool, "bqFS", bqCard)
-        bqFS:SetFont(FONT_BODY, 18, "")
+        bqFS:SetFont(FONT_BODY, 16, "")
         bqFS:SetWidth(INNER - BQ_IPAD * 2)
         bqFS:SetText(bqText)
-        bqFS:SetTextColor(unpack(C_GOLD_BRIGHT))
-        bqFS:SetJustifyH("LEFT")
+        bqFS:SetTextColor(unpack(C_PURPLE_TEXT))
+        bqFS:SetJustifyH("CENTER")
         bqFS:SetSpacing(3)
         bqFS:SetWordWrap(true)
         bqFS:Show()
@@ -1325,6 +1337,15 @@ function IMAGO.Eras.RenderOverview(data)
         local topPad   = math.floor((bqH - contentH) / 2)
         bqLbl:ClearAllPoints()
         bqLbl:SetPoint("TOPLEFT", bqCard, "TOPLEFT", BQ_IPAD, -topPad)
+        local bqLU = PoolTex(pool, "bqLU", bqCard)
+        bqLU:SetHeight(1)
+        bqLU:SetColorTexture(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.7)
+        bqLU:ClearAllPoints()
+        local bqLblW = bqLbl:GetStringWidth()
+        local bqXOff = math.floor(((INNER - BQ_IPAD * 2) - bqLblW) / 2)
+        bqLU:SetPoint("TOPLEFT", bqLbl, "BOTTOMLEFT", bqXOff, -1)
+        bqLU:SetWidth(bqLblW)
+        bqLU:Show()
         bqFS:ClearAllPoints()
         bqFS:SetPoint("TOPLEFT", bqCard, "TOPLEFT", BQ_IPAD, -(topPad + BQ_LBL_H + BQ_GAP_LV))
 
@@ -1359,10 +1380,11 @@ function IMAGO.Eras.RenderOverview(data)
             card:SetPoint("TOPLEFT", content, "TOPLEFT", PAD + (i-1)*(P_W+GAP), -y)
 
             local lFS = PoolFS(pool, pd.key.."L", card)
-            lFS:SetFont(FONT_BODY, 11, "")
+            lFS:SetFont(FONT_BODY, 14, "")
             lFS:SetWidth(P_W - P_IPAD * 2)
             lFS:SetText(string.upper(pd.lbl))
-            lFS:SetTextColor(unpack(C_TEXT_MUTED))
+            lFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
+            lFS:SetJustifyH("CENTER")
             lFS:SetWordWrap(false)
             lFS:Show()
 
@@ -1370,8 +1392,8 @@ function IMAGO.Eras.RenderOverview(data)
             tFS:SetFont(FONT_BODY, 13, "")
             tFS:SetWidth(P_W - P_IPAD * 2)
             tFS:SetText(pd.val)
-            tFS:SetTextColor(unpack(C_TEXT_SEC))
-            tFS:SetJustifyH("LEFT")
+            tFS:SetTextColor(unpack(C_TEXT_PRI))
+            tFS:SetJustifyH("CENTER")
             tFS:SetSpacing(2)
             tFS:SetWordWrap(true)
             tFS:Show()
@@ -1396,6 +1418,15 @@ function IMAGO.Eras.RenderOverview(data)
                 lf:SetPoint("TOPLEFT", c, "TOPLEFT", P_IPAD, -topPad)
                 tf:ClearAllPoints()
                 tf:SetPoint("TOPLEFT", c, "TOPLEFT", P_IPAD, -(topPad + P_LBL_H + P_GAP_LV))
+                local lu = PoolTex(pool, pd.key.."LU", c)
+                lu:SetHeight(1)
+                lu:SetColorTexture(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.7)
+                lu:ClearAllPoints()
+                local textW = lf:GetStringWidth()
+                local xOff  = math.floor((lf:GetWidth() - textW) / 2)
+                lu:SetPoint("TOPLEFT", lf, "BOTTOMLEFT", xOff, -1)
+                lu:SetWidth(textW)
+                lu:Show()
             end
         end
         y = y + pMaxH + VSEP
@@ -1411,7 +1442,7 @@ end
 function IMAGO.Eras.ShowLorePopup(text, title)
     if not IMAGO.Eras.lorePopup then
         local p = CreateFrame("Frame", "IMAGOErasLorePopup", UIParent, "BackdropTemplate")
-        p:SetSize(400, 260)
+        p:SetSize(620, 400)
         p:SetFrameStrata("DIALOG")
         local LORE_BACKDROP = {
             bgFile   = "Interface\\Buttons\\WHITE8X8",
@@ -1421,8 +1452,6 @@ function IMAGO.Eras.ShowLorePopup(text, title)
         }
         p._backdrop = LORE_BACKDROP
         p:SetBackdrop(LORE_BACKDROP)
-        p:SetBackdropColor(C_BG_CARD[1], C_BG_CARD[2], C_BG_CARD[3], 1)
-        p:SetBackdropBorderColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.9)
         p:SetMovable(true)
         p:EnableMouse(true)
         p:RegisterForDrag("LeftButton")
@@ -1435,63 +1464,138 @@ function IMAGO.Eras.ShowLorePopup(text, title)
         cb:SetPoint("TOPRIGHT", p, "TOPRIGHT", 2, 2)
         cb:SetScript("OnClick", function() p:Hide() end)
 
-        -- Titel
+        -- Zwei Theme-Buttons: Dunkel | Pergament
+        local function MakeThemeBtn(xOff)
+            local btn = CreateFrame("Button", nil, p, "BackdropTemplate")
+            btn:SetSize(18, 18)
+            btn:SetPoint("TOPRIGHT", p, "TOPRIGHT", xOff, -4)
+            btn:SetBackdrop({ bgFile="Interface\\Buttons\\WHITE8X8",
+                              edgeFile="Interface\\Buttons\\WHITE8X8", edgeSize=1 })
+            local hl = btn:CreateTexture(nil, "HIGHLIGHT")
+            hl:SetAllPoints()
+            hl:SetColorTexture(1, 1, 1, 0.18)
+            return btn
+        end
+        p._darkBtn  = MakeThemeBtn(-52)
+        p._parchBtn = MakeThemeBtn(-32)
+        -- Dunkel-Button: C_BG_CARD Farbe
+        p._darkBtn:SetBackdropColor(C_BG_CARD[1], C_BG_CARD[2], C_BG_CARD[3], 1)
+        -- Pergament-Button: warmes Creme
+        p._parchBtn:SetBackdropColor(0.84, 0.78, 0.60, 1)
+
+        -- Headline (lesbare Schrift)
+        p.headlineFS = p:CreateFontString(nil, "OVERLAY")
+        p.headlineFS:SetFont(FONT_BODY, 14, "")
+        p.headlineFS:SetPoint("TOPLEFT",  p, "TOPLEFT",  12, -10)
+        p.headlineFS:SetPoint("TOPRIGHT", p, "TOPRIGHT", -76, -10)
+        p.headlineFS:SetWordWrap(false)
+        p.headlineFS:SetText(IMAGO.L["ERAS_LORE_HEADLINE"] or "Would you like to know the whole story?")
+
+        -- Subtitle (Kampagnenname)
         p.titleFS = p:CreateFontString(nil, "OVERLAY")
-        p.titleFS:SetFont(FONT_TITLE, 13, "")
-        p.titleFS:SetPoint("TOPLEFT", p, "TOPLEFT", 12, -10)
-        p.titleFS:SetPoint("TOPRIGHT", p, "TOPRIGHT", -28, -10)
-        p.titleFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
+        p.titleFS:SetFont(FONT_BODY, 11, "")
+        p.titleFS:SetPoint("TOPLEFT",  p, "TOPLEFT",  12, -28)
+        p.titleFS:SetPoint("TOPRIGHT", p, "TOPRIGHT", -76, -28)
         p.titleFS:SetWordWrap(false)
 
         -- Trennlinie
         local div = p:CreateTexture(nil, "ARTWORK")
         div:SetHeight(1)
-        div:SetPoint("TOPLEFT",  p, "TOPLEFT",  6, -28)
-        div:SetPoint("TOPRIGHT", p, "TOPRIGHT", -6, -28)
-        div:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+        div:SetPoint("TOPLEFT",  p, "TOPLEFT",  6, -46)
+        div:SetPoint("TOPRIGHT", p, "TOPRIGHT", -6, -46)
+        p._div = div
 
         -- ScrollFrame für langen Text
         local sf = CreateFrame("ScrollFrame", "IMAGOLoreScroll", p, "UIPanelScrollFrameTemplate")
-        sf:SetPoint("TOPLEFT",     p, "TOPLEFT",     8, -34)
+        sf:SetPoint("TOPLEFT",     p, "TOPLEFT",     8, -52)
         sf:SetPoint("BOTTOMRIGHT", p, "BOTTOMRIGHT", -24, 8)
         StyleScrollBar("IMAGOLoreScroll")
 
         local sc = CreateFrame("Frame", nil, sf)
-        sc:SetWidth(sf:GetWidth() or 350)
+        sc:SetWidth(sf:GetWidth() or 570)
         sc:SetHeight(1)
         sf:SetScrollChild(sc)
 
         p.textFS = sc:CreateFontString(nil, "OVERLAY")
         p.textFS:SetFont(FONT_BODY, 13, "")
-        p.textFS:SetPoint("TOPLEFT",  sc, "TOPLEFT",  4, -6)
-        p.textFS:SetPoint("TOPRIGHT", sc, "TOPRIGHT", -4, -6)
+        p.textFS:SetPoint("TOPLEFT",  sc, "TOPLEFT",  4, -8)
+        p.textFS:SetPoint("TOPRIGHT", sc, "TOPRIGHT", -4, -8)
         p.textFS:SetTextColor(unpack(C_TEXT_PRI))
         p.textFS:SetJustifyH("LEFT")
-        p.textFS:SetSpacing(3)
+        p.textFS:SetSpacing(4)
         p.textFS:SetWordWrap(true)
 
         p._sc = sc
+        p._sf = sf
+        p._darkMode = true
+
+        -- Inline-Farben im Text je nach Theme ersetzen
+        local function ProcessLoreText(raw, darkMode)
+            if darkMode or not raw then return raw end
+            local t = raw:gsub("|cFFc8a84b", "|cFF3D1A00")  -- Gold → Dunkelbraun (Sektion)
+                         :gsub("|cFFe0c06a", "|cFF5C2E00")  -- Hell-Gold → Braun (Questname)
+            return t
+        end
+        p._processText = ProcessLoreText
+
+        local function ApplyTheme()
+            p:SetBackdrop(p._backdrop)
+            if p._darkMode then
+                p:SetBackdropColor(C_BG_CARD[1], C_BG_CARD[2], C_BG_CARD[3], 1)
+                p:SetBackdropBorderColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.9)
+                p.headlineFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
+                p.titleFS:SetTextColor(C_GOLD_DIM[1], C_GOLD_DIM[2], C_GOLD_DIM[3])
+                p.textFS:SetTextColor(unpack(C_TEXT_PRI))
+                p._div:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+                -- Dunkel-Button: aktiv (gold Rahmen), Pergament-Button: inaktiv
+                p._darkBtn:SetBackdropBorderColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 1)
+                p._parchBtn:SetBackdropBorderColor(0.40, 0.32, 0.18, 0.45)
+            else
+                p:SetBackdropColor(0.84, 0.78, 0.60, 1)
+                p:SetBackdropBorderColor(0.50, 0.36, 0.14, 0.9)
+                p.headlineFS:SetTextColor(0.28, 0.18, 0.04, 1)
+                p.titleFS:SetTextColor(0.46, 0.32, 0.10, 1)
+                p.textFS:SetTextColor(0.10, 0.06, 0.02, 1)
+                p._div:SetColorTexture(0.50, 0.38, 0.18, 0.6)
+                -- Pergament-Button: aktiv (dunkelbraun Rahmen), Dunkel-Button: inaktiv
+                p._parchBtn:SetBackdropBorderColor(0.30, 0.16, 0.04, 1)
+                p._darkBtn:SetBackdropBorderColor(C_BG_CARD[1]+0.15, C_BG_CARD[2]+0.15, C_BG_CARD[3]+0.15, 0.45)
+            end
+            if p._rawText then
+                p.textFS:SetText(ProcessLoreText(p._rawText, p._darkMode))
+            end
+        end
+        p._applyTheme = ApplyTheme
+
+        p._darkBtn:SetScript("OnClick", function()
+            p._darkMode = true
+            p._applyTheme()
+        end)
+        p._parchBtn:SetScript("OnClick", function()
+            p._darkMode = false
+            p._applyTheme()
+        end)
+
         p:Hide()
         IMAGO.Eras.lorePopup = p
     end
 
     local p   = IMAGO.Eras.lorePopup
     local PAD = 12
-    p.titleFS:SetText((IMAGO.L["ERAS_LORE_POPUP_TITLE"] or "Wusstest du...") .. "  —  " .. (title or ""))
-    p.textFS:SetText(text or "")
+    p._rawText = text or ""
+    p.titleFS:SetText(title or "")
+    p.textFS:SetText(p._processText(p._rawText, p._darkMode))
 
-    -- Breite des textFS aus ScrollFrame ableiten
     local sfW = p:GetWidth() - 32
     p.textFS:SetWidth(sfW - 8)
     p._sc:SetWidth(sfW)
 
-    -- Höhe anpassen (capped)
     local textH = math.max(p.textFS:GetStringHeight(), 20)
-    p._sc:SetHeight(textH + 14)
-    p:SetHeight(math.min(34 + textH + 14 + PAD, 420))
-    p:SetBackdrop(p._backdrop)
-    p:SetBackdropColor(C_BG_CARD[1], C_BG_CARD[2], C_BG_CARD[3], 1)
-    p:SetBackdropBorderColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.9)
+    p._sc:SetHeight(textH + 16)
+    p:SetHeight(math.min(52 + textH + 16 + PAD, 580))
+    p._applyTheme()
+
+    if p._sf then p._sf:SetVerticalScroll(0) end
 
     p:ClearAllPoints()
     p:SetPoint("CENTER", UIParent, "CENTER", 0, 40)
@@ -1553,7 +1657,7 @@ function IMAGO.Eras.ShowImagePopup(texturePath, logo_w, logo_h)
 
     local p       = IMAGO.Eras.imagePopup
     local overlay = IMAGO.Eras.imagePopupOverlay
-    local MAX_W, MAX_H = 400, 300
+    local MAX_W, MAX_H = 900, 560
     local PADDING = 24
 
     local ratio = logo_w / logo_h
@@ -1912,16 +2016,16 @@ function IMAGO.Eras.RenderStory(data)
             card:EnableMouse(true)
             card:SetScript("OnHyperlinkClick", function(self, link, text, button)
                 local slug = link:match("^imago_npc:(.+)$")
-                if slug and IMAGO.Chronicle then
-                    IMAGO.Chronicle.OpenToNPCSlug(slug)
+                if slug then
+                    IMAGO.Eras.NavigateToNPC(slug)
                 end
             end)
         end
 
         -- Zone-Tag Pill-Badge (dynamische Breite)
         local zBG = GetCard(pool, key .. "_zbg", card)
-        zBG:SetBackdropColor(0.10, 0.08, 0.05, 1)
-        zBG:SetBackdropBorderColor(C_BORDER[1], C_BORDER[2], C_BORDER[3], 0.6)
+        zBG:SetBackdropColor(C_GOLD[1]*0.18, C_GOLD[2]*0.18, C_GOLD[3]*0.10, 1)
+        zBG:SetBackdropBorderColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.8)
         zBG:ClearAllPoints()
         zBG:SetPoint("TOPLEFT", card, "TOPLEFT", 10, -BADGE_YOFF)
 
@@ -1930,7 +2034,7 @@ function IMAGO.Eras.RenderStory(data)
         zFS:SetWordWrap(false)
         zFS:SetWidth(500)  -- unkonstrained für Messung
         zFS:SetText(string.upper(cam.zoneName or ""))
-        zFS:SetTextColor(unpack(C_TEXT_MUTED))
+        zFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
         zFS:SetJustifyH("CENTER")
         local zBadgeW = math.max(46, math.min(math.ceil(zFS:GetStringWidth()) + 18, math.floor(INNER * 0.38)))
         zBG:SetSize(zBadgeW, BADGE_H)
@@ -1944,11 +2048,12 @@ function IMAGO.Eras.RenderStory(data)
         local fFS = PoolFS(pool, key .. "_f", card)
         fFS:SetFont(FONT_BODY, 13, "")
         fFS:ClearAllPoints()
-        fFS:SetPoint("TOPLEFT",  card, "TOPLEFT",  0, -12)
-        fFS:SetPoint("TOPRIGHT", card, "TOPRIGHT", 0, -12)
+        fFS:SetPoint("TOPLEFT",     card, "TOPLEFT",  0,  0)
+        fFS:SetPoint("BOTTOMRIGHT", card, "TOPRIGHT", 0, -HEADER_H)
         fFS:SetText(string.upper(cam.heading or cam.flavorTeaser or ""))
         fFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
         fFS:SetJustifyH("CENTER")
+        fFS:SetJustifyV("MIDDLE")
         fFS:SetWordWrap(false)
         fFS:Show()
 
@@ -2053,7 +2158,7 @@ function IMAGO.Eras.RenderStory(data)
                 nb:SetPoint("TOPLEFT", card, "TOPLEFT", btnX, -btnY)
                 local theSlug = slug
                 nb:SetScript("OnClick", function()
-                    if IMAGO.Chronicle then IMAGO.Chronicle.OpenToNPCSlug(theSlug) end
+                    IMAGO.Eras.NavigateToNPC(theSlug)
                 end)
                 nb:Show()
                 btnX = btnX + btnW + 5
@@ -2138,8 +2243,8 @@ function IMAGO.Eras.RenderPatches(data)
         -- Zone-Badge (rechts vom Version-Badge, hover bei mehreren Zonen)
         local newZones = patch.newZones or {}
         local zBG = GetCard(pool, key .. "_zbg", card)
-        zBG:SetBackdropColor(0.10, 0.08, 0.05, 1)
-        zBG:SetBackdropBorderColor(C_BORDER[1], C_BORDER[2], C_BORDER[3], 0.6)
+        zBG:SetBackdropColor(C_GOLD[1]*0.18, C_GOLD[2]*0.18, C_GOLD[3]*0.10, 1)
+        zBG:SetBackdropBorderColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.8)
         local zFS = PoolFS(pool, key .. "_z", zBG)
         zFS:SetFont(FONT_BODY, 9, "")
         zFS:SetWordWrap(false)
@@ -2151,7 +2256,7 @@ function IMAGO.Eras.RenderPatches(data)
             zLabel = #newZones .. " " .. string.upper(IMAGO.L["ERAS_ZONES"] or "ZONES")
         end
         zFS:SetText(zLabel)
-        zFS:SetTextColor(unpack(C_TEXT_MUTED))
+        zFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
         zFS:SetJustifyH("CENTER")
         local zBadgeW = math.max(46, math.min(math.ceil(zFS:GetStringWidth()) + 18, math.floor(INNER * 0.35)))
         zBG:SetSize(zBadgeW, BADGE_H)
@@ -2186,11 +2291,12 @@ function IMAGO.Eras.RenderPatches(data)
         local tFS = PoolFS(pool, key .. "_t", card)
         tFS:SetFont(FONT_BODY, 13, "")
         tFS:ClearAllPoints()
-        tFS:SetPoint("TOPLEFT",  card, "TOPLEFT",  0, -12)
-        tFS:SetPoint("TOPRIGHT", card, "TOPRIGHT", 0, -12)
+        tFS:SetPoint("TOPLEFT",     card, "TOPLEFT",  0,  0)
+        tFS:SetPoint("BOTTOMRIGHT", card, "TOPRIGHT", 0, -HEADER_H)
         tFS:SetText(string.upper(patch.title or ""))
         tFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
         tFS:SetJustifyH("CENTER")
+        tFS:SetJustifyV("MIDDLE")
         tFS:SetWordWrap(false)
         tFS:Show()
 
@@ -2256,8 +2362,8 @@ function IMAGO.Eras.RenderPatches(data)
             card:EnableMouse(true)
             card:SetScript("OnHyperlinkClick", function(self, link, text, button)
                 local slug = link:match("^imago_npc:(.+)$")
-                if slug and IMAGO.Chronicle then
-                    IMAGO.Chronicle.OpenToNPCSlug(slug)
+                if slug then
+                    IMAGO.Eras.NavigateToNPC(slug)
                 end
             end)
         end
@@ -2307,7 +2413,7 @@ function IMAGO.Eras.RenderPatches(data)
                 nb:SetPoint("TOPLEFT", card, "TOPLEFT", btnX, -btnY)
                 local theSlug = slug
                 nb:SetScript("OnClick", function()
-                    if IMAGO.Chronicle then IMAGO.Chronicle.OpenToNPCSlug(theSlug) end
+                    IMAGO.Eras.NavigateToNPC(theSlug)
                 end)
                 nb:Show()
                 btnX = btnX + btnW + 5
@@ -2395,11 +2501,11 @@ function IMAGO.Eras.RenderCharacters(data)
             arcFS:SetFont(FONT_BODY, 10, "")
             arcFS:SetText(string.upper(fig.arcLabel or ""))
             arcFS:SetTextColor(C_PURPLE_TEXT[1], C_PURPLE_TEXT[2], C_PURPLE_TEXT[3])
-            arcFS:SetJustifyH("LEFT")
+            arcFS:SetJustifyH("CENTER")
             arcFS:SetWordWrap(false)
+            arcFS:SetWidth(CARD_W - PAD * 2)
             arcFS:ClearAllPoints()
-            arcFS:SetPoint("LEFT",  arcRow, "LEFT",  PAD, 0)
-            arcFS:SetPoint("RIGHT", arcRow, "RIGHT", -PAD, 0)
+            arcFS:SetPoint("CENTER", arcRow, "CENTER", 0, 0)
             arcFS:Show()
 
             -- Untere Trennlinie der Arc-Zeile (lila)
@@ -2511,16 +2617,15 @@ function IMAGO.Eras.NavigateToNPC(slug)
     local sf      = E.scrollFrames[IMAGO.Eras.activeSubTab]
     local scrollY = (sf and sf:IsShown()) and sf:GetVerticalScroll() or 0
 
-    table.insert(erasViewHistory, {
-        slug    = IMAGO.Eras.selectedEra,
-        subTab  = IMAGO.Eras.activeSubTab,
-        scrollY = scrollY,
-    })
-
-    IMAGO.Eras.UpdateBackBtn()
-    IMAGO.Chronicle.SelectMainTab(1)
+    -- Zustand direkt in opts, da erasViewHistory von ClearHistory() geleert wird
     if IMAGO.Chronicle.OpenToNPCSlug then
-        IMAGO.Chronicle.OpenToNPCSlug(slug, {skipDiscoveryCinematic = true})
+        IMAGO.Chronicle.OpenToNPCSlug(slug, {
+            skipDiscoveryCinematic = true,
+            fromEras    = true,
+            erasSlug    = IMAGO.Eras.selectedEra,
+            erasSubTab  = IMAGO.Eras.activeSubTab,
+            erasScrollY = scrollY,
+        })
     end
 end
 
