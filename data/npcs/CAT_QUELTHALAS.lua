@@ -124,3 +124,10 @@ IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"] = {
     zones = {},
     category = "CAT_QUELTHALAS",
 }
+
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"] = {
+    displayID = 254400,
+    ids = {254400, 261423},
+    zones = {},
+    category = "CAT_QUELTHALAS",
+}
