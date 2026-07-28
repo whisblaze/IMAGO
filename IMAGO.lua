@@ -125,7 +125,7 @@ end
 -- ============================================================
 IMAGO.Scanner = {}
 
-function IMAGO.Scanner.DiscoverNPC(npcID)
+function IMAGO.Scanner.DiscoverNPC(npcID, questName)
     if not IMAGOSaved.enabled then return false end
     if not IMAGOdb or not IMAGOdb.idToSlug then return false end
     
@@ -142,7 +142,12 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
             IMAGOSaved.seenNPCs[slug] = true
             IMAGO.AddToHistory(slug)
             
-            local msg = IMAGO.L["CHAT_DISCOVERY"] and string.format(IMAGO.L["CHAT_DISCOVERY"], name) or ("|cFF9370DB[IMAGO]|r Echo gebunden: |cFFFFD700" .. name .. "|r")
+            local msg
+            if questName then
+                msg = IMAGO.L["QUEST_DISCOVERY"] and string.format(IMAGO.L["QUEST_DISCOVERY"], questName, name)
+            else
+                msg = IMAGO.L["CHAT_DISCOVERY"] and string.format(IMAGO.L["CHAT_DISCOVERY"], name)
+            end
             print(msg)
             PlaySound(3175, "Master")
             
@@ -161,6 +166,8 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
                     local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
                     print(msgKnown)
                     IMAGO.Display.Show(name, lore, "npc", false, slug)
+                    local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
+                    print(msgKnown)
                 end
             end
         end
@@ -180,6 +187,21 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
         return true, isNewDiscovery
     end
     return false, false
+end
+
+--- Scans all quest_ids with an NPC they unlock and reveal those whose quest is completed.
+function IMAGO.Scanner.SweepQuestUnlocks()
+    if not IMAGOdb or not IMAGOdb.questToSlug then return end
+    for questID, slug in pairs(IMAGOdb.questToSlug) do
+        if not IMAGOSaved.seenNPCs[slug] and C_QuestLog.IsQuestFlaggedCompleted(questID) then
+            local questName = QuestUtils_GetQuestName(questID) or "Unknown Quest"
+            local data = IMAGO.GetNPCData(slug)
+            local npcID = data and data.ids and data.ids[1] and (type(data.ids[1]) == "table" and data.ids[1][1] or data.ids[1])
+            if npcID then
+                IMAGO.Scanner.DiscoverNPC(npcID, questName)
+            end
+        end
+    end
 end
 
 local lastNPCID = nil
@@ -695,6 +717,7 @@ initFrame:RegisterEvent("PLAYER_DEAD")
 initFrame:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START")
 initFrame:RegisterEvent("PLAYER_CONTROL_LOST")
 initFrame:RegisterEvent("PLAYER_REGEN_DISABLED")
+initFrame:RegisterEvent("QUEST_TURNED_IN")
 
 initFrame:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" then
@@ -703,8 +726,13 @@ initFrame:SetScript("OnEvent", function(self, event, ...)
     elseif event == "PLAYER_ENTERING_WORLD" then
         local isInitialLogin, isReloadingUi = ...
         IMAGO.Scanner.EnsureZoneProgressTables()
-        if isInitialLogin and IMAGOSaved and IMAGOSaved.enableMotD then
-            C_Timer.After(4, ShowLoginFact)
+        if isInitialLogin then
+            C_Timer.After(2, function()
+                IMAGO.Scanner.SweepQuestUnlocks()
+            end)
+            if IMAGOSaved and IMAGOSaved.enableMotD then
+                C_Timer.After(4, ShowLoginFact)
+            end
         end
         C_Timer.After(0.5, function()
             IMAGO.Scanner.CheckZone()
@@ -713,6 +741,21 @@ initFrame:SetScript("OnEvent", function(self, event, ...)
             IMAGO.Scanner.CheckZone()
             IMAGO.Scanner.CheckInstance()
         end)
+    elseif event == "QUEST_TURNED_IN" then
+        local questID = ...
+        local slug = IMAGOdb.questToSlug and IMAGOdb.questToSlug[questID]
+        if slug and not IMAGOSaved.seenNPCs[slug] then
+            local questName = QuestUtils_GetQuestName(questID) or "Unknown Quest"
+            local data = IMAGO.GetNPCData(slug)
+            local npcID = data and data.ids and data.ids[1] and (type(data.ids[1]) == "table" and data.ids[1][1] or data.ids[1])
+            if npcID then
+                IMAGO.Scanner.DiscoverNPC(npcID, questName)
+            end
+        end
+        if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
+            IMAGO.Chronicle.UpdateList()
+    end
+
     elseif event == "ZONE_CHANGED_NEW_AREA" then
         C_Timer.After(1, function() IMAGO.Scanner.CheckZone() end)
     elseif event == "PLAYER_TARGET_CHANGED" then
@@ -786,6 +829,7 @@ function IMAGO.Init()
         TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(tooltip, data)
             if not IMAGOSaved.enabled then return end
             if InCombatLockdown() then return end
+            if tooltip ~= GameTooltip then return end
 
             securecall(function()
                 local guid = data and data.guid
@@ -838,6 +882,7 @@ function IMAGO.Init()
             print("|cFFFFD700/imago resetera <name>|r - Einzelne Era zurücksetzen (Test)")
             print("|cFFFFD700/imago help|r - " .. (IMAGO.L["CMD_HELP_HELP_DESC"] or "Zeigt diese Hilfe an"))
         elseif msg == "dev" then
+            print("dev command:", isDev)
             if not isDev then return end
             print("|cFFFFD700[IMAGO DEV]|r Befehle:")
             print("|cFFFFD700/imago debugmap|r - Zonen-Debug an/aus (Chat-Ausgabe)")
@@ -845,6 +890,8 @@ function IMAGO.Init()
             print("|cFFFFD700/imago validate|r - Datenbank-Validierung (IDs/Lore)")
             print("|cFFFFD700/imago unlockall|r - Alles freischalten (Test)")
             print("|cFFFFD700/imago scan <id>|r - NPC per ID testen/anzeigen")
+            print("|cFFFFD700/imago unsee npc <slug>|r - Remove NPC from seenNPCs")
+            print("|cFFFFD700/imago unsee zone <mapID>|r - Remove zone from seenZones")
         elseif msg == "debugmap" then
             if not isDev then return end
             IMAGOSaved.debugMap = not IMAGOSaved.debugMap
@@ -877,7 +924,6 @@ function IMAGO.Init()
             else
                 print("|cFFFF0000[IMAGO DEV]|r Konnte Map ID nicht ermitteln.")
             end
-            
         elseif msg == "validate" then
             if not isDev then return end
             print(IMAGO.L["VAL_START"] or "|cFFFFD700[IMAGO]|r Starte Datenbank-Validierung...")
@@ -902,7 +948,6 @@ function IMAGO.Init()
         elseif msg == "unlockall" then
             if not isDev then return end
             local count = 0
-            
             -- 1. NPCs freischalten
             for cat, entries in pairs(IMAGOdb.npcs or {}) do
                 if type(entries) == "table" then
@@ -967,6 +1012,31 @@ function IMAGO.Init()
             local id = tonumber(msg:match("^scan (%d+)"))
             local isRelevant = IMAGO.Scanner.DiscoverNPC(id)
             if not isRelevant then print("|cFFFF0000IMAGO:|r ID " .. id .. " ist nicht in der Datenbank.") end
+        elseif msg:match("^unsee npc .+") then
+            --if not isDev then return end
+            local slug = msg:match("^unsee npc (.+)")
+            if IMAGOSaved.seenNPCs[slug] then
+                IMAGOSaved.seenNPCs[slug] = nil
+                IMAGOSaved.viewedNPCs[slug] = nil
+                print("|cFFFFD700[IMAGO DEV]|r Removed NPC from seenNPCs: " .. slug)
+            else
+                print("|cFFFFD700[IMAGO DEV]|r NPC not in seenNPCs: " .. slug)
+            end
+            if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
+                IMAGO.Chronicle.UpdateList()
+            end
+        elseif msg:match("^unsee zone %d+") then
+            --if not isDev then return end
+            local mapID = tonumber(msg:match("^unsee zone (%d+)"))
+            if IMAGOSaved.seenZones[mapID] then
+                IMAGOSaved.seenZones[mapID] = nil
+                print("|cFFFFD700[IMAGO DEV]|r Removed zone from seenZones: " .. mapID)
+            else
+                print("|cFFFFD700[IMAGO DEV]|r Zone not in seenZones: " .. mapID)
+            end
+            if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
+                IMAGO.Chronicle.UpdateList()
+            end
         end
     end
 end

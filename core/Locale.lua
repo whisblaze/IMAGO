@@ -317,10 +317,11 @@ L = L_EN
     L["COMING_SOON_INSTANCES_DESC"] = "Dungeons, raids, and delves.\nThe echoes of the most powerful enemies await their discovery.\n\n|cFF9370DB[ IN DEVELOPMENT ]|r"
 
     -- Scanner & Tooltip
-    L["TOOLTIP_KNOWN"]     = "IMAGO: |cFFFFD700Recorded in Chronicle|r"
-    L["TOOLTIP_UNKNOWN"]   = "IMAGO: |cFF888888Fate hidden (Target to uncover)|r"
-    L["CHAT_DISCOVERY"]    = "|cFF9370DB[IMAGO]|r Your chronicle trembles... a new echo is bound: |cFFFFD700%s|r"
-    L["CHAT_KNOWN"]        = "|cFF888888[IMAGO]|r Archive entry accessed: |cFFCCCCCC%s|r"
+    L["TOOLTIP_KNOWN"]      = "IMAGO: |cFFFFD700Recorded in Chronicle|r"
+    L["TOOLTIP_UNKNOWN"]    = "IMAGO: |cFF888888Fate hidden (Target to uncover)|r"
+    L["CHAT_DISCOVERY"]     = "|cFF9370DB[IMAGO]|r Your chronicle trembles... a new echo is bound: |cFFFFD700%s|r"
+    L["QUEST_DISCOVERY"]    = "|cFF9370DB[IMAGO]|r Your chronicle trembles after completing the quest: |cFFFFD700%s|r... a new echo is bound: |cFFFFD700%s|r"
+    L["CHAT_KNOWN"]         = "|cFF888888[IMAGO]|r Archive entry accessed: |cFFCCCCCC%s|r"
     
     -- Validation
     L["VAL_START"]         = "|cFFFFD700[IMAGO]|r Starting database validation..."

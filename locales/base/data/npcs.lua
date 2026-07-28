@@ -2268,6 +2268,68 @@ IMAGOdb.npcs.CAT_VOID["mor_duun"].timeline = {
     }
 }
 
+-- XAL'ATATH --
+IMAGOdb.npcs.CAT_VOID["xal_atath"].name = "Xal'atath"
+IMAGOdb.npcs.CAT_VOID["xal_atath"].race = "Unknown"
+IMAGOdb.npcs.CAT_VOID["xal_atath"].lore = [[Her smile is a threat, her whispers are warnings, and her promises are lies. The Harbinger of the Void has manipulated the people of Azeroth for millennia, and as easily as she elevated her allies to great power, she abandoned them to their doom.
+
+For the longest time, she was trapped within the Blade of the Black Empire, a punishment imposed by the Old Gods after she opposed them.
+
+With the help of the Champions of Azeroth, she is now free once more.
+
+Xal'atath seeks the world-soul, and with the Dark Heart empowered, she assaults the Sunwell in an attempt to reach it. It remains a mystery why she pursues it, and even her origins are shrouded in ambiguity. All that is certain is that she must be stopped at all costs.
+
+The fate of the universe may depend on the Champions of Azeroth.]]
+IMAGOdb.npcs.CAT_VOID["xal_atath"].zones = {"The Voidspire", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_VOID["xal_atath"].source = "Cadash"
+IMAGOdb.npcs.CAT_VOID["xal_atath"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Claims to have been mortal before her world was destroyed and she was made a being of the Void. Heralded Dimensius' coming before he devoured world after world, including K'aresh. Confronted the Old Gods on Azeroth during the reign of the Black Empire, but lost and was imprisoned in the Blade of the Black Empire. 
+        
+        Whoever wielded her fell to madness.]],
+    },
+    {
+        era = "Pre-WC1",
+        text = [[Was delivered to Queen Modgud during the War of the Three Hammers. The queen became smitten with the blade and used Xal'atath to perform a ritual at Grim Batol to defeat the Wildhammer Clan. Xal'atath abandoned Modgud to die, and the queen's sorcery cursed Grim Batol.]],
+    },
+    {
+        era = "WC2",
+        text = [[Was claimed by the human bishop Natalie Seline and promptly corrupted the once pious woman. Taught Seline how to wield void magic and incited her followers to murder her for power.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Archbishop Benedictus came into possession of the blade sometime afterward but dared not wield her.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was used by Benedictus' successor, Twilight Deacon Farthing, in order to resurrect Zakajz the Corruptor. He was stopped by the High Priest who then wielded Xal'atath against the Burning Legion. She witnessed Alleria Windrunner's transformation into a void elf and was intrigued. The High Priest later drained her power to heal the world from the wound inflicted by Sargeras' sword.]],
+    },
+    {
+        era = "BfA",
+        text = [[Was restored to power through living sacrifices by the High Priest and was able to gain the physical body of a dead high elf. Convinced the priest to go to the Crucible of Storms where she betrayed them and struck a bargain with N'Zoth in order to regain her freedom.]],
+    },
+    {
+        era = "DF",
+        text = [[Allied with Iridikron and obtained the Dark Heart from him. Attacked Telogrus Rift and drew the ire of Alleria Windrunner. Delighted in toying with Alleria's emotions by sending her twisted visions of her past.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Allied with the nerubians of Azj-Kahet by manipulating Ansurek into murdering her own mother, the queen.]],
+    },
+    {
+        era = "TWW",
+        text = [[Destroyed Dalaran and crippled Khadgar for life. Began her mission to empower the Dark Heart with various cosmic energies. Alleria pursued her relentlessly and managed to damage the Dark Heart. Xal'atath allied with Gallywix and left him for dead after he gave the Dark Heart to the Shadowguard ethereals. Allied with Alleria to stop Dimensius' return and took his power for herself.]],
+    },
+    {
+        era = "Pre-Midnight",
+        text = [[With the powers of a Void Lord, she united the ever-warring forces of the Void under her command, including Nexus-King Salhadaar and the domanaar. Drained the Dark Heart to create the Voidspire and bring the Voidstorm to the skies above Silvermoon.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Overwhelmed the defenders of Quel'Thalas but was halted by the sudden eruption of the Sunwell. Defeated Alleria at the Voidspire and severed the naaru L'ura from her to finally corrupt the Sunwell. Witnessed L'ura's defeat but vanished into the Darkwell.]],
+    }
+}
 
 
 -- CAT_AMANI
@@ -2429,6 +2491,43 @@ IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].timeline = {
     {
         era = "Midnight",
         text = [[Defended civilians during the Twilight's Blade's sudden attack on Atal'Aman, and later took care of the refugees in Amani'Zar. Helped defeat the Void cultists and was in charge of cleansing Atal'Aman of the lingering malicious energies. After Hagar revealed the trolls' and elves' shared ancestry, Torundo came to blows with Lor'themar Theron.]],
+    }
+}
+
+-- SHADRA --
+IMAGOdb.npcs.CAT_AMANI["shadra"].name = "Shadra"
+IMAGOdb.npcs.CAT_AMANI["shadra"].race = "Spider (Loa)"
+IMAGOdb.npcs.CAT_AMANI["shadra"].lore = [[The Venom Queen is a loa worshiped by nearly all of the troll tribes, from the Echo Isles, through Zandalar, and to the deserts of Zul'farrak. Her followers are granted deadly poison to coat their weapons, and stealth to spy on their enemies undetected.
+
+For many, the Loa of Spiders is considered a force of evil. But while she shows no mercy to her enemies, her cruelty never affects her allies - a trait that has cost Shadra dearly more than once already. Her own followers murdered her for her power during the Fourth War and her soul was sent to the Maw, to suffer in damnation.
+
+Now, the Mistress of Spies has been reborn once more.]]
+IMAGOdb.npcs.CAT_AMANI["shadra"].zones = {"Zul'Aman"}
+IMAGOdb.npcs.CAT_AMANI["shadra"].source = "Cadash"
+IMAGOdb.npcs.CAT_AMANI["shadra"].timeline = {
+    {
+        era = "Classic",
+        text = [[The Forsaken, under Master Apothecary Faranell, noticed the Witherbark tribe's potent weapon poisons and wanted them for their own concoctions. They summoned and killed Shadra at her altar in the Hinterlands to harvest her venom.]],
+    },
+    {
+        era = "Cata",
+        text = [[Willingly gave her blood to the Vilebranch tribe in Jintha'alor, whose members then committed mass sacrifices in her name. She was killed once more by adventurers]],
+    },
+    {
+        era = "MoP",
+        text = [[Communicated with Vol'jin through visions when the Zandalari invaded Pandaria. They had stopped worshiping her in favor for the mogu, and she wished to see them punished. When Vol'jin and his allies did so, Shadra was pleased.]],
+    },
+    {
+        era = "BfA",
+        text = [[Was killed and her power consumed by her own high priestess, Yazma. Shadra was believed permanently dead by the remaining loyal Zandalari when it became apparent that she wouldn't be reborn this time.]],
+    },
+    {
+        era = "SL",
+        text = [[With the Arbiter out of commission, Shadra's soul was sent to the Maw, where she was tortured and prevented to return to the world as she had after every previous death. Was rescued by Vol'jin and the Maw Walker and placed in the care of the Winter Queen in Ardenweald.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was finally reborn once more with the help of Revantusk and Witherbark loyalists in Zul'Aman. Still small and not as powerful as she once was, she allied herself with her rival Halazzi to aid the forest trolls in their fight against the Void.]],
     }
 }
 
