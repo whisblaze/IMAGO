@@ -815,6 +815,11 @@ function IMAGO.Chronicle.CreateFrame()
             btn.icon:SetTexture(config.texture)
             btn.icon:SetTexCoord(0, 1, 0, 1)
         end
+        btn:SetSize(22, 22)
+        btn.border = btn:CreateTexture(nil, "OVERLAY")
+        btn.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+        btn.border:SetSize(58, 58)
+        btn.border:SetPoint("TOPLEFT", -7, 7)
         btn:SetScript("OnClick", config.onClick)
         btn:Show()
     end
@@ -1967,7 +1972,31 @@ function IMAGO.Chronicle.UpdateList()
                                 btn.newTag:Hide()
                                 f.ShowTab("lore")
 
-                                IMAGO.Chronicle.SetDetailAction(nil)
+                                -- Encounter Journal action button
+                                local raidID = npc.data.raidEncounterID
+                                local dungeonID = npc.data.dungeonEncounterID
+                                local encounterID = npc.data.encounter_journal_id
+                                
+                                if encounterID then
+                                    IMAGO.Chronicle.SetDetailAction({
+                                        tooltip = IMAGO.L["ACTION_OPEN_EJ"] or "Open in Encounter Journal",
+                                        texture = "Interface\\Icons\\inv_misc_book_07",
+                                        onClick = function()
+                                            f:Hide()
+                                            local name, desc, jEncID, rootSectionID, journalLink, journalInstanceID, _, _ = EJ_GetEncounterInfo(encounterID)
+                                            UIParentLoadAddOn("Blizzard_EncounterJournal")
+                                            local _, _, _, _, _, _, _, _, _, _, _, isRaid = EJ_GetInstanceInfo(journalInstanceID)
+                                            local difficulty = isRaid and 15 or 2
+                                            if EncounterJournal_OpenJournal then
+                                                EJ_SetDifficulty(difficulty)
+                                                EncounterJournal_OpenJournal(difficulty, journalInstanceID, encounterID)
+                                            end
+                                        end,
+                                    })
+                                else
+                                    IMAGO.Chronicle.SetDetailAction(nil)
+                                end
+                                
                             end         
                             IMAGOSaved.viewedNPCs = IMAGOSaved.viewedNPCs or {}
                             if isSeen and not IMAGOSaved.viewedNPCs[npc.slug] then
@@ -2262,7 +2291,10 @@ function IMAGO.Chronicle.UpdateList()
                     label   = IMAGO.L["ACTION_OPEN_MAP"] or "World Map",
                     tooltip = IMAGO.L["ACTION_OPEN_MAP_TIP"] or "Open this zone on the World Map",
                     texture   = "Interface\\Icons\\icon_treasuremap",
-                    onClick = function() OpenWorldMap(mapID) end,
+                    onClick = function() 
+                        f:Hide()
+                        OpenWorldMap(mapID)
+                    end,
                 })
                 end
             )
