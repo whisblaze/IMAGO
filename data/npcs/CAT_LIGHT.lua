@@ -223,3 +223,10 @@ IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"] = {
     zones = {},
     category = "CAT_LIGHT",
 }
+
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"] = {
+    displayID = 259406,
+    ids = {259406, 253350, 253472, 244976, 244741, 253453, 242346},
+    zones = {},
+    category = "CAT_LIGHT",
+}

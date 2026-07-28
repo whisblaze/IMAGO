@@ -1,0 +1,5 @@
+-- ============================================================
+-- IMAGO — locales/esES/data/eras.lua
+-- Spanish (ES) overrides for Eras lore texts.
+-- No overrides yet — enUS fallback is used.
+-- ============================================================

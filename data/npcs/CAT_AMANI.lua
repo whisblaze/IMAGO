@@ -62,6 +62,13 @@ IMAGOdb.npcs.CAT_AMANI["filo"] = {
     category = "CAT_AMANI",
 }
 
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"] = {
+    displayID = 236591,
+    ids = {236591, 241082, 254783, 252936, 241077, 256067, 264562, 245620, 256647},
+    zones = {},
+    category = "CAT_AMANI",
+}
+  
 IMAGOdb.npcs.CAT_AMANI["shadra"] = {
     displayID = 247268,
     ids = {247268, 251142, 247263},

@@ -82,3 +82,45 @@ IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"] = {
     zones = {},
     category = "CAT_NEUTRAL",
 }
+
+IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"] = {
+    displayID = 249136,
+    ids = {249136, 253569, 244084, 253567, 253568, 254412},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"] = {
+    displayID = 254592,
+    ids = {254592, 257541, 255063},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"] = {
+    displayID = 259153,
+    ids = {259153},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"] = {
+    displayID = 253660,
+    ids = {253660, 259877},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"] = {
+    displayID = 253661,
+    ids = {253661},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"] = {
+    displayID = 259790,
+    ids = {259790, 257934},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}

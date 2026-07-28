@@ -1003,15 +1003,23 @@ function IMAGO.Chronicle.CreateFrame()
         local prev = table.remove(navStack)
         if not prev then return end
 
-        isNavigatingBack = true
-        if prev.type == "npc" then
-            IMAGO.Chronicle.OpenToNPCSlug(prev.slug, { skipDiscoveryCinematic = true })
-        elseif prev.type == "zone" then
-            IMAGO.Chronicle.OpenToZoneMapID(prev.mapID)
+        if prev.type == "eras" then
+            -- Zurück zum Eras-Tab mit gespeichertem Zustand
+            IMAGO.Chronicle.SelectMainTab(3)
+            if IMAGO.Eras and IMAGO.Eras.OpenToEra then
+                IMAGO.Eras.OpenToEra(prev.erasSlug, prev.erasSubTab, prev.erasScrollY)
+            end
+        else
+            isNavigatingBack = true
+            if prev.type == "npc" then
+                IMAGO.Chronicle.OpenToNPCSlug(prev.slug, { skipDiscoveryCinematic = true })
+            elseif prev.type == "zone" then
+                IMAGO.Chronicle.OpenToZoneMapID(prev.mapID)
+            end
+            C_Timer.After(0, function()
+                isNavigatingBack = false
+            end)
         end
-        C_Timer.After(0, function()
-            isNavigatingBack = false
-        end)
 
         if #navStack == 0 then
             self.enabled = false
@@ -1040,12 +1048,12 @@ function IMAGO.Chronicle.CreateFrame()
 
     f.UpdateModeBtn = UpdateModeBtn
 
--- ==-- ==========================================
+    -- ==-- ==========================================
     -- NEU: HAUPT-REITER (BOTTOM TABS) LOKALISIERT
     -- ==========================================
-    f.numTabs = 4
+    f.numTabs = 5
     local locale = GetLocale()
-    local tabNames = {IMAGO.L["TAB_FATES"], IMAGO.L["TAB_ZONES"], IMAGO.L["TAB_INSTANCES"], IMAGO.L["TAB_CREDITS"]}
+    local tabNames = {IMAGO.L["TAB_FATES"], IMAGO.L["TAB_ZONES"], IMAGO.L["TAB_ERAS"], IMAGO.L["TAB_INSTANCES"], IMAGO.L["TAB_CREDITS"]}
     
     for i, name in ipairs(tabNames) do
         local tab = CreateFrame("Button", f:GetName().."Tab"..i, f, "PanelTabButtonTemplate")
@@ -1135,6 +1143,11 @@ function IMAGO.Chronicle.CreateFrame()
             f.detailFrame:Show()
             f.vLine:Show()
             f.comingSoonPage:Hide()
+            -- Eras-Frames verstecken und History leeren
+            if IMAGO.Eras and IMAGO.Eras.frame then
+                IMAGO.Eras.frame.wrapper:Hide()
+                IMAGO.Eras.ClearHistory()
+            end
             
             IMAGO.Chronicle.UpdateList()
             
@@ -1143,7 +1156,22 @@ function IMAGO.Chronicle.CreateFrame()
                 f.ShowDashboard() 
             end
         elseif index == 3 then
-            -- Haupt-UI verstecken (Für Instanzen-Tab 3)
+            -- ERAS-Tab
+            f.searchBox:Hide()
+            f.filterBtn:Hide()
+            f.scrollFrame:Hide()
+            f.detailFrame:Hide()
+            f.vLine:Hide()
+            f.comingSoonPage:Hide()
+            if f.creditsPage   then f.creditsPage:Hide() end
+            if f.creditsHeader then f.creditsHeader:Hide() end
+            if not IMAGO.Eras.frame then
+                IMAGO.Eras.CreateFrame()
+                IMAGO.Eras.SetTabIndex(3)
+            end
+            IMAGO.Eras.ShowDashboard()
+        elseif index == 4 then
+            -- Haupt-UI verstecken (Für Instanzen-Tab)
             f.searchBox:Hide()
             f.filterBtn:Hide()
             f.scrollFrame:Hide()
@@ -1153,7 +1181,11 @@ function IMAGO.Chronicle.CreateFrame()
             f.comingSoonPage.title:SetText(IMAGO.L["COMING_SOON_INSTANCES_TITLE"])
             f.comingSoonPage.desc:SetText(IMAGO.L["COMING_SOON_INSTANCES_DESC"])
             f.comingSoonPage:Show()
-        elseif index == 4 then
+            -- Eras-Frames verstecken
+            if IMAGO.Eras and IMAGO.Eras.frame then
+                IMAGO.Eras.frame.wrapper:Hide()
+            end
+        elseif index == 5 then
             -- Credits-Tab
             f.searchBox:Hide()
             f.filterBtn:Hide()
@@ -1161,6 +1193,10 @@ function IMAGO.Chronicle.CreateFrame()
             f.detailFrame:Hide()
             f.vLine:Hide()
             f.comingSoonPage:Hide()
+            -- Eras-Frames verstecken
+            if IMAGO.Eras and IMAGO.Eras.frame then
+                IMAGO.Eras.frame.wrapper:Hide()
+            end
             
             if not f.creditsPage then
                 -- Statischer Header-Bereich (nicht scrollbar)
@@ -1224,46 +1260,46 @@ function IMAGO.Chronicle.CreateFrame()
                     end
                 end
 
-local contributors = {
-                {name = "Cadash", roles = "Lore Scribe, Translator", top = true},
-                {name = "austin", roles = "Archivist, Lore Scribe", top = true},
-                {name = "Elanor", roles = "Data Miner, Translator, Moderator", top = true},
-                {name = "DeMaa", roles = "Lua Developer, Moderator", top = true},
-                {name = "druidian", roles = "Archivist, Lore Scribe", top = true},
-                {name = "Minorou", roles = "Lore Scribe", top = true},
-                {name = "MayaWoW", roles = "Data Miner, Translator", top = true},
-                {name = "Lewi", roles = "Archivist, Lore Scribe, Translator", top = true},
-                {name = "Nebb", roles = "Lore Scribe", top = true},
-                {name = "Metrus", roles = "Lore Scribe, Translator", top = true},
-                {name = "Karstan", roles = "Lore Scribe, Translator"},
-                {name = "Elsafan (Crazycat).", roles = "Archivist, Data Miner"},
-                {name = "Travanoid", roles = "Lore Scribe"},
-                {name = "Lemurensohn", roles = "Archivist, Translator"},
-                {name = "zeerocool11", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
-                {name = "ALI4S", roles = "Lua Developer"},
-                {name = "Remu", roles = "Data Miner, Translator"},
-                {name = "zelkaris", roles = "Lore Scribe, Data Miner, Lua Developer"},
-                {name = "Duschgell", roles = "Archivist"},
-                {name = "Nihilea", roles = "Data Miner, Translator"},
-                {name = "Saljourn", roles = "Lore Scribe, Data Miner"},
-                {name = "Riknar", roles = "Lore Scribe"},
-                {name = "MortiousPrime", roles = "Archivist, Lore Scribe, Data Miner"},
-                {name = "LeoColpas", roles = "Translator"},
-                {name = "Chadson Chappo", roles = "Archivist"},
-                {name = "ruffboi", roles = "Lore Scribe"},
-                {name = "Echo_Delta_Golf", roles = "Lore Scribe"},
-                {name = "Lilith", roles = "Translator"},
-                {name = "LowRoars", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
-                {name = "咪嚕", roles = "Archivist, Translator"},
-                {name = "Silver_Wind809", roles = "Data Miner, Lua Developer"},
-                {name = "William Orr", roles = "Data Miner"},
-                {name = "Nuise_16094", roles = "Translator"},
-                {name = "Nuise", roles = "Translator"},
-                {name = "Jay! :P", roles = "Lore Scribe, Data Miner"},
-                {name = "!pxrty193", roles = "Lua Developer"},
-                {name = "johnnyd2", roles = "Tester"},
-                {name = "Kittywulfe", roles = "Tester"},
-}
+                local contributors = {
+                    {name = "Cadash", roles = "Lore Scribe, Translator", top = true},
+                    {name = "austin", roles = "Archivist, Lore Scribe", top = true},
+                    {name = "Elanor", roles = "Data Miner, Translator, Moderator", top = true},
+                    {name = "DeMaa", roles = "Lua Developer, Moderator", top = true},
+                    {name = "druidian", roles = "Archivist, Lore Scribe", top = true},
+                    {name = "Minorou", roles = "Lore Scribe", top = true},
+                    {name = "MayaWoW", roles = "Data Miner, Translator", top = true},
+                    {name = "Lewi", roles = "Archivist, Lore Scribe, Translator", top = true},
+                    {name = "Nebb", roles = "Lore Scribe", top = true},
+                    {name = "Metrus", roles = "Lore Scribe, Translator", top = true},
+                    {name = "Karstan", roles = "Lore Scribe, Translator"},
+                    {name = "Elsafan (Crazycat).", roles = "Archivist, Data Miner"},
+                    {name = "Travanoid", roles = "Lore Scribe"},
+                    {name = "Lemurensohn", roles = "Archivist, Translator"},
+                    {name = "zeerocool11", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
+                    {name = "ALI4S", roles = "Lua Developer"},
+                    {name = "Remu", roles = "Data Miner, Translator"},
+                    {name = "zelkaris", roles = "Lore Scribe, Data Miner, Lua Developer"},
+                    {name = "Duschgell", roles = "Archivist"},
+                    {name = "Nihilea", roles = "Data Miner, Translator"},
+                    {name = "Saljourn", roles = "Lore Scribe, Data Miner"},
+                    {name = "Riknar", roles = "Lore Scribe"},
+                    {name = "MortiousPrime", roles = "Archivist, Lore Scribe, Data Miner"},
+                    {name = "LeoColpas", roles = "Translator"},
+                    {name = "Chadson Chappo", roles = "Archivist"},
+                    {name = "ruffboi", roles = "Lore Scribe"},
+                    {name = "Echo_Delta_Golf", roles = "Lore Scribe"},
+                    {name = "Lilith", roles = "Translator"},
+                    {name = "LowRoars", roles = "Archivist, Lore Scribe, Data Miner, Lua Developer"},
+                    {name = "咪嚕", roles = "Archivist, Translator"},
+                    {name = "Silver_Wind809", roles = "Data Miner, Lua Developer"},
+                    {name = "William Orr", roles = "Data Miner"},
+                    {name = "Nuise_16094", roles = "Translator"},
+                    {name = "Nuise", roles = "Translator"},
+                    {name = "Jay! :P", roles = "Lore Scribe, Data Miner"},
+                    {name = "!pxrty193", roles = "Lua Developer"},
+                    {name = "johnnyd2", roles = "Tester"},
+                    {name = "Kittywulfe", roles = "Tester"},
+                }
 
                 local yOffset = -40 -- Mehr Platz nach der Trennlinie
                 local spacing = 25
@@ -1320,7 +1356,7 @@ local contributors = {
     IMAGO.Chronicle.buttons = {}
     IMAGO.Chronicle.headers = {}
 
-f.ShowDashboard = function()
+    f.ShowDashboard = function()
         f.detailTitle:Hide()
         f.detailLineLeft:Hide()
         f.detailLineRight:Hide()
@@ -1506,7 +1542,7 @@ function IMAGO.Chronicle.UpdateList()
     for _, zb in pairs(IMAGO.Chronicle.zoneButtons or {}) do zb:Hide() end
     if IMAGO.Chronicle.homeBtn then IMAGO.Chronicle.homeBtn:Hide() end
 
--- ============================================================
+    -- ============================================================
     -- CLEANUP: Versteckt Custom-Buttons, bevor neue Tabs laden
     -- ============================================================
     if IMAGO.Chronicle.zoneOverviewBtn then
@@ -2008,100 +2044,100 @@ function IMAGO.Chronicle.UpdateList()
     -- ============================================================
     -- TAB 2: ZONEN DER ERINNERUNG
     -- ============================================================
-elseif activeTab == 2 then
-    local zIdx = 1
-    local totalZones, seenZones = 0, 0
+    elseif activeTab == 2 then
+        local zIdx = 1
+        local totalZones, seenZones = 0, 0
 
-    for mapID, _ in pairs(IMAGOdb.zones or {}) do
-        totalZones = totalZones + 1
-        if IMAGOSaved.seenZones[mapID] then seenZones = seenZones + 1 end
-    end
-
-    local perc = totalZones > 0 and (seenZones / totalZones) * 100 or 0
-
-    local rankTitle = IMAGO.Chronicle.zoneRanks[1] and IMAGO.Chronicle.zoneRanks[1].title or ""
-    for _, r in ipairs(IMAGO.Chronicle.zoneRanks) do 
-        if perc >= r.perc then rankTitle = r.title end 
-    end
-
-    f.footer.bar:SetValue(perc)
-    f.footer.rankText:SetText(rankTitle)
-    f.footer.progText:SetText(string.format(IMAGO.L["FOOTER_ZONES_PROGRESS"] or "%d / %d Zonen entdeckt (%d%%)", seenZones, totalZones, math.floor(perc)))
-
-    f.startPage.rankLabel:SetText(IMAGO.L["STARTPAGE_ZONES_RANK"])
-    f.startPage.rankName:SetText(rankTitle)
-    f.startPage.completedLabel:SetText(IMAGO.L["STARTPAGE_COMPLETED"]) -- Wiederverwendung des existierenden Strings!
-    f.startPage.nextLabel:SetText(IMAGO.L["STARTPAGE_ZONES_NEXT"])
-
-    local completedRanksStr, nextRanksStr = "", ""
-            
-    for _, r in ipairs(IMAGO.Chronicle.zoneRanks) do
-        local rTitle = r.title or ""
-        if r.perc <= perc then
-            completedRanksStr = completedRanksStr .. string.format("|cFFFFD700%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
-        else
-            nextRanksStr = nextRanksStr .. string.format("|cFF888888%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
-        end
-    end
-
-    f.startPage.completedMilestones:SetText(completedRanksStr == "" and IMAGO.L["STARTPAGE_NO_MILESTONES"] or completedRanksStr)
-    f.startPage.milestones:SetText(nextRanksStr == "" and "|cFF00FF00" .. (IMAGO.L["STARTPAGE_MAX_REACHED"] or "MAXIMALRANG ERREICHT!") .. "|r" or nextRanksStr)
-
-    local sortedZones = {}
-    for mapID, data in pairs(IMAGOdb.zones or {}) do 
-        table.insert(sortedZones, {id = mapID, data = data}) 
-    end
-    table.sort(sortedZones, function(a, b) 
-        return (a.data["name_" .. locale] or "") < (b.data["name_" .. locale] or "") 
-    end)
-
--- ============================================================
-        -- NEU: ÜBERSICHTS-BUTTON (ZURÜCK ZUM DASHBOARD)
-        -- ============================================================
-        local overviewBtn = IMAGO.Chronicle.zoneOverviewBtn
-        if not overviewBtn then
-            overviewBtn = CreateFrame("Button", nil, f.content)
-            overviewBtn:SetSize(230, 40) -- Etwas schmaler in der Höhe als normale Zonen
-            
-            overviewBtn.bg = overviewBtn:CreateTexture(nil, "BACKGROUND")
-            overviewBtn.bg:SetAllPoints()
-            overviewBtn.bg:SetColorTexture(0.08, 0.08, 0.08, 0.9)
-            
-            local hl = overviewBtn:CreateTexture(nil, "HIGHLIGHT")
-            hl:SetAllPoints()
-            hl:SetColorTexture(1, 0.85, 0.1, 0.15)
-            
-            overviewBtn.t = overviewBtn:CreateFontString(nil, "OVERLAY")
-            overviewBtn.t:SetFont(FONT_TITLE, 14, "OUTLINE")
-            overviewBtn.t:SetPoint("CENTER", 0, 0)
-            overviewBtn.t:SetText(locale == "deDE" and "ZONEN ÜBERSICHT" or "ZONES OVERVIEW")
-            overviewBtn.t:SetTextColor(1, 0.85, 0.1)
-            
-            IMAGO.Chronicle.zoneOverviewBtn = overviewBtn
+        for mapID, _ in pairs(IMAGOdb.zones or {}) do
+            totalZones = totalZones + 1
+            if IMAGOSaved.seenZones[mapID] then seenZones = seenZones + 1 end
         end
 
-        overviewBtn:SetPoint("TOPLEFT", f.content, "TOPLEFT", 5, -yOffset)
-        overviewBtn:SetScript("OnClick", function()
-            if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) end
+        local perc = totalZones > 0 and (seenZones / totalZones) * 100 or 0
 
-            IMAGO.Chronicle.SetDetailAction(nil)
-            
-            -- Rechte Seite aufräumen
-            f.detailTitle:Hide()
-            f.detailLineLeft:Hide()
-            f.detailLineRight:Hide()
-            f.loreBody:Hide()
-            f.infoScroll:Hide()
-            if f.detailImage then f.detailImage:Hide() end
-            if f.detailImageBorder then f.detailImageBorder:Hide() end
-            if f.detailSeparator then f.detailSeparator:Hide() end
-            
-            -- Dashboard wieder einblenden
-            f.startPage:Show()
+        local rankTitle = IMAGO.Chronicle.zoneRanks[1] and IMAGO.Chronicle.zoneRanks[1].title or ""
+        for _, r in ipairs(IMAGO.Chronicle.zoneRanks) do 
+            if perc >= r.perc then rankTitle = r.title end 
+        end
+
+        f.footer.bar:SetValue(perc)
+        f.footer.rankText:SetText(rankTitle)
+        f.footer.progText:SetText(string.format(IMAGO.L["FOOTER_ZONES_PROGRESS"] or "%d / %d Zonen entdeckt (%d%%)", seenZones, totalZones, math.floor(perc)))
+
+        f.startPage.rankLabel:SetText(IMAGO.L["STARTPAGE_ZONES_RANK"])
+        f.startPage.rankName:SetText(rankTitle)
+        f.startPage.completedLabel:SetText(IMAGO.L["STARTPAGE_COMPLETED"]) -- Wiederverwendung des existierenden Strings!
+        f.startPage.nextLabel:SetText(IMAGO.L["STARTPAGE_ZONES_NEXT"])
+
+        local completedRanksStr, nextRanksStr = "", ""
+                
+        for _, r in ipairs(IMAGO.Chronicle.zoneRanks) do
+            local rTitle = r.title or ""
+            if r.perc <= perc then
+                completedRanksStr = completedRanksStr .. string.format("|cFFFFD700%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
+            else
+                nextRanksStr = nextRanksStr .. string.format("|cFF888888%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
+            end
+        end
+
+        f.startPage.completedMilestones:SetText(completedRanksStr == "" and IMAGO.L["STARTPAGE_NO_MILESTONES"] or completedRanksStr)
+        f.startPage.milestones:SetText(nextRanksStr == "" and "|cFF00FF00" .. (IMAGO.L["STARTPAGE_MAX_REACHED"] or "MAXIMALRANG ERREICHT!") .. "|r" or nextRanksStr)
+
+        local sortedZones = {}
+        for mapID, data in pairs(IMAGOdb.zones or {}) do 
+            table.insert(sortedZones, {id = mapID, data = data}) 
+        end
+        table.sort(sortedZones, function(a, b) 
+            return (a.data["name_" .. locale] or "") < (b.data["name_" .. locale] or "") 
         end)
-        overviewBtn:Show()
 
-        yOffset = yOffset + 45 -- Platz machen, damit die Zonen darunter sauber anreihen
+    -- ============================================================
+    -- NEU: ÜBERSICHTS-BUTTON (ZURÜCK ZUM DASHBOARD)
+    -- ============================================================
+    local overviewBtn = IMAGO.Chronicle.zoneOverviewBtn
+    if not overviewBtn then
+        overviewBtn = CreateFrame("Button", nil, f.content)
+        overviewBtn:SetSize(230, 40) -- Etwas schmaler in der Höhe als normale Zonen
+        
+        overviewBtn.bg = overviewBtn:CreateTexture(nil, "BACKGROUND")
+        overviewBtn.bg:SetAllPoints()
+        overviewBtn.bg:SetColorTexture(0.08, 0.08, 0.08, 0.9)
+        
+        local hl = overviewBtn:CreateTexture(nil, "HIGHLIGHT")
+        hl:SetAllPoints()
+        hl:SetColorTexture(1, 0.85, 0.1, 0.15)
+        
+        overviewBtn.t = overviewBtn:CreateFontString(nil, "OVERLAY")
+        overviewBtn.t:SetFont(FONT_TITLE, 14, "OUTLINE")
+        overviewBtn.t:SetPoint("CENTER", 0, 0)
+        overviewBtn.t:SetText(locale == "deDE" and "ZONEN ÜBERSICHT" or "ZONES OVERVIEW")
+        overviewBtn.t:SetTextColor(1, 0.85, 0.1)
+        
+        IMAGO.Chronicle.zoneOverviewBtn = overviewBtn
+    end
+
+    overviewBtn:SetPoint("TOPLEFT", f.content, "TOPLEFT", 5, -yOffset)
+    overviewBtn:SetScript("OnClick", function()
+        if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION_CHECKBOX_ON) end
+
+        IMAGO.Chronicle.SetDetailAction(nil)
+        
+        -- Rechte Seite aufräumen
+        f.detailTitle:Hide()
+        f.detailLineLeft:Hide()
+        f.detailLineRight:Hide()
+        f.loreBody:Hide()
+        f.infoScroll:Hide()
+        if f.detailImage then f.detailImage:Hide() end
+        if f.detailImageBorder then f.detailImageBorder:Hide() end
+        if f.detailSeparator then f.detailSeparator:Hide() end
+        
+        -- Dashboard wieder einblenden
+        f.startPage:Show()
+    end)
+    overviewBtn:Show()
+
+    yOffset = yOffset + 45 -- Platz machen, damit die Zonen darunter sauber anreihen
 
     for _, zoneObj in ipairs(sortedZones) do
         local mapID = zoneObj.id
@@ -2228,7 +2264,8 @@ elseif activeTab == 2 then
                     texture   = "Interface\\Icons\\icon_treasuremap",
                     onClick = function() OpenWorldMap(mapID) end,
                 })
-            end)
+                end
+            )
 
             btn:SetScript("OnMouseUp", function(self, mouseBtn)
                 if mouseBtn == "RightButton" and not isSeen and not isEncyclopedia then
@@ -2337,7 +2374,7 @@ elseif activeTab == 2 then
     end
 
     f.content:SetHeight(math.max(1, yOffset))
-end
+    end
 end
 
 --- Chronik öffnen (Tab Schicksale), Liste vorbereiten und dieselbe Logik wie ein Klick auf den NPC ausführen.
@@ -2356,7 +2393,17 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
 
     -- Push current page onto nav stack before navigating away.
     -- Skip if navigating back, or already on this NPC.
-    if not isNavigatingBack then
+    if opts.fromEras then
+        -- Navigation kommt vom Eras-Tab: Stack leeren, Eras-Entry mit Zustand pushen
+        wipe(navStack)
+        table.insert(navStack, {
+            type        = "eras",
+            erasSlug    = opts.erasSlug,
+            erasSubTab  = opts.erasSubTab,
+            erasScrollY = opts.erasScrollY,
+        })
+        if IMAGO.Chronicle.SetBackEnabled then IMAGO.Chronicle.SetBackEnabled(true) end
+    elseif not isNavigatingBack then
         local entry = nil
         if f.selectedNPCSlug and f.selectedNPCSlug ~= "" and f.selectedNPCSlug ~= slug then
             entry = { type = "npc", slug = f.selectedNPCSlug }

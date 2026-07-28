@@ -103,3 +103,45 @@ IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal"] = {
     zones = {},
     category = "CAT_ARCANTINA",
 }
+
+IMAGOdb.npcs.CAT_ARCANTINA["wrathion"] = {
+    displayID = 259340,
+    ids = {259340},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["travard"] = {
+    displayID = 237744,
+    ids = {237744, 259347},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["nisha"] = {
+    displayID = 250411,
+    ids = {250411},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"] = {
+    displayID = 250412,
+    ids = {250412},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["misha"] = {
+    displayID = 259847,
+    ids = {259847},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["lord_darius_crowley"] = {
+    displayID = 250413,
+    ids = {250413},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
