@@ -34,6 +34,9 @@ local defaults = {
     -- Mode Toggle
     encyclopediaMode = false,
     manualUnlocks = {},
+    -- Eras Progress
+    seenEras             = {},
+    erasEncyclopediaMode = false,
 }
 
 -- ============================================================
@@ -42,6 +45,7 @@ local defaults = {
 
 local DEV_PLAYERS = {
     ["lyvienne"] = true,
+    ["avesa"] = true,
 }
 
 function IMAGO.IsDeveloper()
@@ -127,11 +131,13 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
     
     local slug = IMAGOdb.idToSlug[npcID]
     local cat = IMAGOdb.idToSlug[tostring(npcID) .. "_cat"]
+
     if slug then
         local npcData = cat and IMAGOdb.npcs[cat] and IMAGOdb.npcs[cat][slug] or IMAGO.GetNPCData(slug)
         local name = npcData and npcData.name
         local lore = npcData and npcData.lore
-        
+        local isNewDiscovery = false
+
         if not IMAGOSaved.seenNPCs[slug] then
             IMAGOSaved.seenNPCs[slug] = true
             IMAGO.AddToHistory(slug)
@@ -148,18 +154,32 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
                 IMAGO.Chronicle.UpdateList()
             end
 
-            return true, true
+            isNewDiscovery = true
         else
-            local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
-            print(msgKnown)
-
             if not IMAGO.Scanner.IsShowOnceOnlyEnabled("npc") then
                 if IMAGO.Display and IMAGO.Display.Show then
+                    local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
+                    print(msgKnown)
                     IMAGO.Display.Show(name, lore, "npc", false, slug)
                 end
             end
-            return true, false
         end
+
+        -- Era-Discovery prüfen
+        local eraSlug = IMAGOdb.eraByNPCSlug and IMAGOdb.eraByNPCSlug[slug]
+        if eraSlug and not (IMAGOSaved.seenEras or {})[eraSlug] then
+            print("INSIDE DISCOVERY")
+            local eData = IMAGOdb.eras and IMAGOdb.eras[eraSlug]
+            print(eData)
+            if eData and not eData.coming_soon then
+                C_Timer.After(2.5, function()
+                    if IMAGO.Eras and IMAGO.Eras.ShowEraDiscoveryDialog then
+                        IMAGO.Eras.ShowEraDiscoveryDialog(eraSlug, npcData)
+                    end
+                end)
+            end
+        end
+        return true, isNewDiscovery
     end
     return false, false
 end
@@ -555,6 +575,9 @@ function IMAGO.Init()
     IMAGOSaved.hideMinimap = (IMAGOSaved.hideMinimap == true or IMAGOSaved.hideMinimap == 1)
     IMAGOSaved.debugMap = (IMAGOSaved.debugMap == true or IMAGOSaved.debugMap == 1)
 
+    -- Locale initialisieren (liest IMAGOSaved.language Override)
+    if IMAGO.Locale.Init then IMAGO.Locale.Init() end
+
     IMAGO.isDeveloper = IMAGO.IsDeveloper()
     if not IMAGO.isDeveloper then
         IMAGOSaved.debugMap = false
@@ -563,6 +586,14 @@ function IMAGO.Init()
     IMAGO.Scanner.EnsureZoneProgressTables()
 
     if IMAGO.BuildReverseLookup then IMAGO.BuildReverseLookup() end
+
+    -- Era-Unlock-NPC Reverse-Lookup aufbauen
+    IMAGOdb.eraByNPCSlug = {}
+    for eraSlug, eraData in pairs(IMAGOdb.eras or {}) do
+        if eraData.unlock_npc and eraData.unlock_npc ~= "" then
+            IMAGOdb.eraByNPCSlug[eraData.unlock_npc] = eraSlug
+        end
+    end
     if IMAGO.Options and IMAGO.Options.Init then IMAGO.Options.Init() end
     
     if IMAGO.Display and IMAGO.Display.CreateFrame then IMAGO.Display.CreateFrame() end
@@ -624,6 +655,7 @@ function IMAGO.Init()
             print("|cFF9370DBIMAGO Slash Commands:|r")
             print("|cFFFFD700/imago|r - " .. (IMAGO.L["CMD_HELP_OPEN_DESC"] or "Öffnet oder schließt die Chronik"))
             print("|cFFFFD700/imago settings|r - " .. (IMAGO.L["CMD_HELP_SETTINGS_DESC"] or "Öffnet die Addon-Einstellungen"))
+            print("|cFFFFD700/imago resetera <name>|r - Einzelne Era zurücksetzen (Test)")
             print("|cFFFFD700/imago help|r - " .. (IMAGO.L["CMD_HELP_HELP_DESC"] or "Zeigt diese Hilfe an"))
         elseif msg == "dev" then
             if not isDev then return end
@@ -721,6 +753,35 @@ function IMAGO.Init()
                 IMAGO.Chronicle.UpdateList()
             end
 
+        elseif msg:match("^resetera ") then
+            if not isDev then return end
+            local input = msg:match("^resetera%s+(.+)")
+
+            -- Try exact slug match first, then fall back to matching by display name
+            local eraSlug = nil
+            if IMAGOdb.eras and IMAGOdb.eras[input] then
+                eraSlug = input
+            else
+                for slug, data in pairs(IMAGOdb.eras or {}) do
+                    local name = data.name and data.name:lower() or ""
+                    if slug:lower() == input or name == input then
+                        eraSlug = slug
+                        break
+                    end
+                end
+            end
+
+            if eraSlug then
+                IMAGOSaved.seenEras = IMAGOSaved.seenEras or {}
+                IMAGOSaved.seenEras[eraSlug] = nil
+                print(string.format("|cFFFFD700[IMAGO DEV]|r Era zurückgesetzt: |cFF00FF00%s|r", eraSlug))
+
+                if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
+                    IMAGO.Chronicle.UpdateList()
+                end
+            else
+                print(string.format("|cFFFF0000[IMAGO DEV]|r Keine Era gefunden für: '%s'", input))
+            end
         elseif msg:match("^scan %d+") then
             if not isDev then return end
             local id = tonumber(msg:match("^scan (%d+)"))
