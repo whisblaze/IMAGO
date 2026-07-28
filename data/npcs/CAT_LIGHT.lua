@@ -64,7 +64,7 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya"] = {
     displayID = 248318,
-    ids = {248318, 242614, 245605, 242507, 263563},
+    ids = {248318, 242614, 245605, 242507, 263563, 268330},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -122,14 +122,14 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind"] = {
     displayID = 251939,
-    ids = {251939, 253191, 242613, 248324, 241714, 240657, 243227, 251950},
+    ids = {251939, 253191, 242613, 248324, 241714, 240657, 243227, 251950, 267751},
     zones = {},
     category = "CAT_LIGHT",
 }
 
 IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne"] = {
     displayID = 247925,
-    ids = {247925, 239483, 238277, 240777, 243432, 246672},
+    ids = {247925, 239483, 238277, 240777, 243432, 246672, 267749},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -208,7 +208,7 @@ IMAGOdb.npcs.CAT_LIGHT["vindicator_boros"] = {
 
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco"] = {
     displayID = 247299,
-    ids = {247299, 245186, 238072},
+    ids = {247299, 245186, 238072, 267750},
     zones = {},
     category = "CAT_LIGHT",
 }
@@ -223,6 +223,13 @@ IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"] = {
 IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"] = {
     displayID = 238730,
     ids = {238730, 250403, 238765, 239489, 240461, 241385, 240597, 256038},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"] = {
+    displayID = 259406,
+    ids = {259406, 253350, 253472, 244976, 244741, 253453, 242346},
     zones = {},
     category = "CAT_LIGHT",
 }
