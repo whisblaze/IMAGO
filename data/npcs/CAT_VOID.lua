@@ -11,6 +11,8 @@ IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar"] = {
     ids = {240432, 235475},
     zones = {},
     category = "CAT_VOID",
+    encounter_journal_id = 2736,
+    instance_id = 1307,
 }
 
 IMAGOdb.npcs.CAT_VOID["l_ura"] = {
@@ -18,6 +20,8 @@ IMAGOdb.npcs.CAT_VOID["l_ura"] = {
     ids = {257959, 249617, 258268, 250368, 258296, 261963, 257957, 260859, 253979, 258304, 240391, 248195},
     zones = {},
     category = "CAT_VOID",
+    encounter_journal_id = 2740,
+    instance_id = 1308,
 }
 
 IMAGOdb.npcs.CAT_VOID["mor_duun"] = {

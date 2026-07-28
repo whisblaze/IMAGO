@@ -175,9 +175,7 @@ function IMAGO.Scanner.DiscoverNPC(npcID, questName)
         -- Era-Discovery prüfen
         local eraSlug = IMAGOdb.eraByNPCSlug and IMAGOdb.eraByNPCSlug[slug]
         if eraSlug and not (IMAGOSaved.seenEras or {})[eraSlug] then
-            print("INSIDE DISCOVERY")
             local eData = IMAGOdb.eras and IMAGOdb.eras[eraSlug]
-            print(eData)
             if eData and not eData.coming_soon then
                 C_Timer.After(2.5, function()
                     if IMAGO.Eras and IMAGO.Eras.ShowEraDiscoveryDialog then
@@ -522,6 +520,190 @@ local function ShowLoginFact()
         print("|cFF9370DB[IMAGO]|r |cFF888888" .. IMAGO.L["LOGIN_EMPTY_CHRONICLE"] .. "|r")
     end
 end
+
+-- ============================================================
+-- ENCOUNTER JOURNAL INTEGRATION
+-- ============================================================
+
+-- Build reverse lookup: encounter_journal_id -> slug
+local function BuildEJLookup()
+    IMAGO.ejIDToSlug = {}
+    for catKey, entries in pairs(IMAGOdb.npcs) do
+        if type(entries) == "table" then
+            for slug, data in pairs(entries) do
+                if data.encounter_journal_id then
+                    local id = data.encounter_journal_id
+                    if type(id) == "table" then id = id[1] end
+                    IMAGO.ejIDToSlug[id] = slug
+                end
+            end
+        end
+    end
+end
+
+local function InjectIMAGOButton(encounterID)
+    if not EncounterJournal then return end
+
+    local encounterFrame = EncounterJournal.encounter
+    if not encounterFrame then return end
+
+    if not encounterFrame.imagoBtn then
+        local btn = CreateFrame("Button", nil, encounterFrame)
+        btn:SetSize(22, 22)
+        btn:SetPoint("TOPRIGHT", encounterFrame.info.difficulty, "TOPLEFT", -6, 0)
+
+        btn.icon = btn:CreateTexture(nil, "ARTWORK")
+        btn.icon:SetAllPoints()
+        btn.icon:SetTexture("Interface\\Icons\\INV_Misc_Book_09")
+        btn.icon:SetAlpha(0.7)
+        btn.border = btn:CreateTexture(nil, "OVERLAY")
+        btn.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+        btn.border:SetSize(58, 58)
+        btn.border:SetPoint("TOPLEFT", -7, 7)
+
+        local hl = btn:CreateTexture(nil, "HIGHLIGHT")
+        hl:SetAllPoints()
+        hl:SetColorTexture(1, 1, 1, 0.15)
+
+        btn:SetScript("OnEnter", function(self)
+            self.icon:SetAlpha(1.0)
+            GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
+            GameTooltip:AddLine("Open in IMAGO Chronicle", 1, 0.85, 0.1)
+            GameTooltip:Show()
+        end)
+        btn:SetScript("OnLeave", function(self)
+            self.icon:SetAlpha(0.7)
+            GameTooltip:Hide()
+        end)
+
+        encounterFrame.imagoBtn = btn
+    end
+
+    local slug = encounterID and IMAGO.ejIDToSlug and IMAGO.ejIDToSlug[encounterID]
+
+    if slug and (
+        (IMAGOSaved.seenNPCs and IMAGOSaved.seenNPCs[slug]) or
+        (IMAGOSaved.encyclopediaMode)
+    ) then
+        encounterFrame.imagoBtn:SetScript("OnClick", function()
+            EncounterJournal:Hide()
+            IMAGO.Chronicle.OpenToNPCSlug(slug)
+        end)
+        encounterFrame.imagoBtn:Show()
+    else
+        encounterFrame.imagoBtn:Hide()
+    end
+end
+
+-- Wait for Blizzard_EncounterJournal to load before hooking
+local ejHookFrame = CreateFrame("Frame")
+ejHookFrame:RegisterEvent("ADDON_LOADED")
+ejHookFrame:SetScript("OnEvent", function(self, event, addonName)
+    if addonName == "Blizzard_EncounterJournal" then
+        hooksecurefunc("EJ_SelectEncounter", InjectIMAGOButton)
+        self:UnregisterEvent("ADDON_LOADED")
+    end
+end)
+
+-- Register a PLAYER_LOGIN hook to build the lookup once the DB is ready
+local ejLoginFrame = CreateFrame("Frame")
+ejLoginFrame:RegisterEvent("PLAYER_LOGIN")
+ejLoginFrame:SetScript("OnEvent", function(self)
+    BuildEJLookup()
+    self:UnregisterEvent("PLAYER_LOGIN")
+end)
+
+-- ============================================================
+-- WORLD MAP INTEGRATION
+-- ============================================================
+
+-- IMAGO Icon will go below all other map icons (even other addon ones) if they are parented under the WorldMapFrame
+local function GetLowestMapButton(f)
+    local excludeBtn = f.SidePanelToggle
+
+    local lowestBtn = f.imagoAnchorBtn
+    local lowestBottom = lowestBtn and lowestBtn:GetBottom() or nil
+
+    local children = {f:GetChildren()}
+    for _, child in ipairs(children) do
+        if child ~= f.imagoBtn and child ~= excludeBtn and child:IsObjectType("Button") and child:IsShown() then
+            local top = child:GetTop()
+            local left = child:GetLeft()
+            if top and left and lowestBtn and math.abs(left - lowestBtn:GetLeft()) < 10 then
+                local bottom = child:GetBottom()
+                if bottom and (not lowestBottom or bottom < lowestBottom) then
+                    lowestBottom = bottom
+                    lowestBtn = child
+                end
+            end
+        end
+    end
+
+    return lowestBtn
+end
+
+local function InjectIMAGOMapButton()
+    local f = WorldMapFrame
+    if not f then return end
+
+    if not f.imagoAnchorBtn then
+        local children = {f:GetChildren()}
+        f.imagoAnchorBtn = children[7]
+    end
+    if not f.imagoAnchorBtn then return end
+
+    if not f.imagoBtn then
+        local btn = CreateFrame("Button", nil, f)
+        btn:SetSize(31, 31)
+        btn:SetFrameStrata("DIALOG")
+        btn:SetFrameLevel(f:GetFrameLevel() + 50)
+        btn:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
+
+        btn.icon = btn:CreateTexture(nil, "BACKGROUND")
+        btn.icon:SetTexture("Interface\\Icons\\inv_misc_book_09")
+        btn.icon:SetSize(20, 20)
+        btn.icon:SetPoint("CENTER", 0, 0)
+
+        btn.border = btn:CreateTexture(nil, "OVERLAY")
+        btn.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+        btn.border:SetSize(53, 53)
+        btn.border:SetPoint("TOPLEFT", 0, 0)
+
+        btn:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+            GameTooltip:AddLine("Open in IMAGO Chronicle", 1, 0.85, 0.1)
+            GameTooltip:Show()
+        end)
+        btn:SetScript("OnLeave", function(self)
+            GameTooltip:Hide()
+        end)
+
+        f.imagoBtn = btn
+    end
+
+    -- Recalculate anchor each time, in case other addons added buttons
+    local anchorBtn = GetLowestMapButton(f)
+    f.imagoBtn:ClearAllPoints()
+    f.imagoBtn:SetPoint("TOPRIGHT", anchorBtn, "BOTTOMRIGHT", 0, -2)
+
+    local mapID = f:GetMapID()
+    local zoneData = mapID and IMAGOdb.zones and IMAGOdb.zones[mapID]
+    local isSeen = mapID and IMAGOSaved.seenZones and IMAGOSaved.seenZones[mapID]
+    local isManual = mapID and IMAGOSaved.manualZoneUnlocks and IMAGOSaved.manualZoneUnlocks[mapID]
+
+    if zoneData and (isSeen or isManual or IMAGOSaved.encyclopediaMode) then
+        f.imagoBtn:SetScript("OnClick", function()
+            f:Hide()
+            IMAGO.Chronicle.OpenToZoneMapID(mapID)
+        end)
+        f.imagoBtn:Show()
+    else
+        f.imagoBtn:Hide()
+    end
+end
+
+hooksecurefunc(WorldMapFrame, "OnMapChanged", InjectIMAGOMapButton)
+WorldMapFrame:HookScript("OnShow", InjectIMAGOMapButton)
 
 -- ============================================================
 -- EVENTS & INITIALISIERUNG
