@@ -24,7 +24,7 @@ IMAGOdb.eras["midnight"].summary =
 
 IMAGOdb.eras["midnight"].fastFacts = {
     cosmicForces = "The Void vs. the Light",
-    casualties   = "- Alleria and Turalyon - Lost in the Darkwell\n- Lothraxion - Consumed by light-blinded rage and killed by his allies",
+    casualties   = "- Alleria and Turalyon: Lost in the Darkwell\n- Lothraxion: Consumed by light-blinded rage and killed by his allies",
     worldScar    = "The Sunwell's corruption and reformation as the Dawnwell",
     bigQuestion  = "Will the Sunwell endure as Quel'Thalas' lifeline - or become the Void's most devastating weapon against all of Azeroth?",
 }
@@ -40,7 +40,7 @@ IMAGOdb.eras["midnight"].campaigns = {
         npcLinks     = {"turalyon"},
         text         = "The Voidstorm was unleashed upon the Isle of Quel'Danas, forcing the blood elves of Silvermoon to fight " ..
                        "for survival against the full might of Xal'atath's army - the Devouring Host. The Sunwell itself aided " ..
-                       "its people when it summoned an army of paladins and priests, led by High Exarch {npc:turalyon}, to wield " ..
+                       "its people when it summoned an army of paladins and priests, led by {npc:turalyon}, to wield " ..
                        "the Light against the Darkness. In the end, the Sunwell erupted in a beam of holy energy, holding the " ..
                        "encroaching Void at bay.",
         loreBits     =

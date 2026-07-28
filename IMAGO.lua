@@ -168,9 +168,7 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
         -- Era-Discovery prüfen
         local eraSlug = IMAGOdb.eraByNPCSlug and IMAGOdb.eraByNPCSlug[slug]
         if eraSlug and not (IMAGOSaved.seenEras or {})[eraSlug] then
-            print("INSIDE DISCOVERY")
             local eData = IMAGOdb.eras and IMAGOdb.eras[eraSlug]
-            print(eData)
             if eData and not eData.coming_soon then
                 C_Timer.After(2.5, function()
                     if IMAGO.Eras and IMAGO.Eras.ShowEraDiscoveryDialog then

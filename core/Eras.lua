@@ -139,7 +139,7 @@ local function BuildRichText(text)
     return (text:gsub("{npc:([^}]+)}", function(slug)
         local d = IMAGO.GetNPCData and IMAGO.GetNPCData(slug)
         local name = (d and d.name) or (slug:gsub("_", " "):gsub("(%a)([%w_']*)", function(a, b) return a:upper() .. b end))
-        return "|Himago_npc:" .. slug .. "|h|cFFBB88FF" .. name .. "|r|h"
+        return "|Himago_npc:" .. slug .. "|h|cFFc8a84b" .. name .. "|r|h"
     end))
 end
 
