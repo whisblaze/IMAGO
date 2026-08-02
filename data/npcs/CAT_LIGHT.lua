@@ -110,6 +110,7 @@ IMAGOdb.npcs.CAT_LIGHT["lothraxion"] = {
     ids = {249268, 250581, 235477, 236657, 241546, 235713, 235606, 235648, 235504, 235530, 235394, 235522, 235649, 235486, 250265, 235777, 235473, 235603, 235535, 240381, 242531, 243688, 240673, 240230, 235647, 239980, 235725, 252738, 239416, 244034, 246121, 240020},
     zones = {},
     category = "CAT_LIGHT",
+    encounter_journal_id = 2815,
 }
 
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol"] = {
@@ -138,6 +139,7 @@ IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn"] = {
     ids = {243554, 246166, 246067, 246448, 247269, 247306, 246425, 248628, 250589, 240438, 249333, 244387, 249103},
     zones = {},
     category = "CAT_LIGHT",
+    encounter_journal_id = 2737,
 }
 
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar"] = {
@@ -152,6 +154,7 @@ IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy"] = {
     ids = {248629, 250587, 240431, 246165, 244386, 249331, 247303, 249101, 247270, 246076, 246424, 246449, 241395},
     zones = {},
     category = "CAT_LIGHT",
+    encounter_journal_id = 2737,
 }
 
 IMAGOdb.npcs.CAT_LIGHT["arator"] = {
@@ -220,6 +223,13 @@ IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade"] = {
 IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"] = {
     displayID = 238730,
     ids = {238730, 250403, 238765, 239489, 240461, 241385, 240597, 256038},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"] = {
+    displayID = 259406,
+    ids = {259406, 253350, 253472, 244976, 244741, 253453, 242346},
     zones = {},
     category = "CAT_LIGHT",
 }

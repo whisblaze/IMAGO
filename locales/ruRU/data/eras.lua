@@ -1,0 +1,5 @@
+-- ============================================================
+-- IMAGO — locales/ruRU/data/eras.lua
+-- Russian overrides for Eras lore texts.
+-- No overrides yet — enUS fallback is used.
+-- ============================================================

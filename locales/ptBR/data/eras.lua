@@ -1,0 +1,5 @@
+-- ============================================================
+-- IMAGO — locales/ptBR/data/eras.lua
+-- Portuguese (BR) overrides for Eras lore texts.
+-- No overrides yet — enUS fallback is used.
+-- ============================================================
