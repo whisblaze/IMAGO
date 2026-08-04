@@ -49,6 +49,11 @@ IMAGO.Chronicle.zoneRanks = IMAGO.Chronicle.zoneRanks or {}
 local navStack = {}
 local isNavigatingBack = false
 
+local EXPANSION_SUFFIX = {
+    ["midnight"]       = "_midnight",
+    ["the_war_within"] = "_tww",
+}
+
 local function GetCrypticName(name)
     local crypt = ""
     local consonants = {"k", "z", "n", "h", "r", "t", "x", "v", "l", "s", "q", "w", "y"}
@@ -286,45 +291,75 @@ function IMAGO.Chronicle.CreateFrame()
     f.filterMenu:SetBackdropColor(0.05, 0.05, 0.05, (IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.98)
     f.filterMenu:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
 
-    local filters = {
-        {id = "ALL",            name = IMAGO.L["FILTER_ALL"] or "Alle Echos"},
-        {id = "HIST",           name = IMAGO.L["FILTER_HIST"] or "Zuletzt entdeckt"},
-        {id = "FAV",            name = IMAGO.L["FILTER_FAV"] or "Favoriten"},
-        {id = "CAT_QUELTHALAS", name = IMAGO.L["CAT_QUELTHALAS"] or "Verteidiger von Quel'Thalas"},
-        {id = "CAT_LIGHT",      name = IMAGO.L["CAT_LIGHT"] or "Vorhut des Lichts"},
-        {id = "CAT_AMANI",      name = IMAGO.L["CAT_AMANI"] or "Der Amani-Stamm"},
-        {id = "CAT_HARATI",     name = IMAGO.L["CAT_HARATI"] or "Die Hara'ti"},
-        {id = "CAT_VOID",       name = IMAGO.L["CAT_VOID"] or "Die Leereninvasion"},
-        {id = "CAT_EBON_BLADE", name = IMAGO.L["CAT_EBON_BLADE"] or "Ritter der Schwarzen Klinge"},
-        {id = "CAT_NEUTRAL",    name = IMAGO.L["CAT_NEUTRAL"] or "Unabhängig & Rätselhaft"},
-        {id = "CAT_ARCANTINA",  name = IMAGO.L["CAT_ARCANTINA"] or "Die Arcantina"}
-    }
-    
-    local menuY = -10
-    for _, flt in ipairs(filters) do
+    -- Pool of reusable filter buttons — rebuilt dynamically each time the menu opens
+    f.filterMenu.pool = {}
+
+    local function GetOrCreateMenuBtn(idx)
+        if f.filterMenu.pool[idx] then return f.filterMenu.pool[idx] end
         local btn = CreateFrame("Button", nil, f.filterMenu)
-        btn:SetSize(140, 20)
-        btn:SetPoint("TOP", f.filterMenu, "TOP", 0, menuY)
+        btn:SetSize(180, 20)
         local hl = btn:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
         hl:SetColorTexture(1, 0.78, 0.1, 0.2)
         btn.t = btn:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
         btn.t:SetPoint("LEFT", 10, 0)
-        btn.t:SetText(flt.name)
-        if flt.id == "FAV" then btn.t:SetTextColor(1.0, 0.85, 0.1) end
-        
         btn:SetScript("OnClick", function()
-            f.activeFilter = flt.id
-            f.filterBtn:SetText(flt.name)    -- SO IST ES SAUBER
+            f.activeFilter = btn._filterId
+            f.filterBtn:SetText(btn.t:GetText())
             f.filterMenu:Hide()
             IMAGO.Chronicle.UpdateList()
         end)
-        menuY = menuY - 20
+        f.filterMenu.pool[idx] = btn
+        return btn
     end
-    f.filterMenu:SetHeight(math.abs(menuY) + 10)
+
+    f.filterMenu.Rebuild = function()
+        for _, b in ipairs(f.filterMenu.pool) do b:Hide() end
+        local allItems = {
+            {id = "ALL",  name = IMAGO.L["FILTER_ALL"]  or "All Echoes"},
+            {id = "HIST", name = IMAGO.L["FILTER_HIST"] or "Recently Discovered"},
+            {id = "FAV",  name = IMAGO.L["FILTER_FAV"]  or "Favorites"},
+        }
+        local sfx = f.activeExpansion and EXPANSION_SUFFIX[f.activeExpansion]
+        if sfx then
+            local catSet, catList = {}, {}
+            for cat, entries in pairs(IMAGOdb.npcs or {}) do
+                if type(entries) == "table" then
+                    for slug in pairs(entries) do
+                        if slug:sub(-#sfx) == sfx and not catSet[cat] then
+                            catSet[cat] = true
+                            table.insert(catList, {id = cat, name = IMAGO.L[cat] or cat})
+                        end
+                    end
+                end
+            end
+            table.sort(catList, function(a, b) return a.name < b.name end)
+            for _, c in ipairs(catList) do table.insert(allItems, c) end
+        end
+        local menuY = -8
+        for i, item in ipairs(allItems) do
+            local btn = GetOrCreateMenuBtn(i)
+            btn._filterId = item.id
+            btn.t:SetText(item.name)
+            if item.id == "FAV" then
+                btn.t:SetTextColor(1.0, 0.85, 0.1)
+            else
+                btn.t:SetTextColor(0.88, 0.82, 0.70)
+            end
+            btn:SetPoint("TOP", f.filterMenu, "TOP", 0, menuY)
+            btn:Show()
+            menuY = menuY - 22
+        end
+        f.filterMenu:SetSize(200, math.abs(menuY) + 10)
+    end
 
     f.filterBtn:SetScript("OnClick", function()
-        if f.filterMenu:IsShown() then f.filterMenu:Hide() else f.filterMenu:Show() end
+        if f.filterMenu:IsShown() then
+            f.filterMenu:Hide()
+        else
+            f.filterMenu.Rebuild()
+            f.filterMenu:Show()
+        end
     end)
 
     f.scrollFrame = CreateFrame("ScrollFrame", "IMAGOChronicleScroll", f, "UIPanelScrollFrameTemplate")
@@ -1112,6 +1147,245 @@ function IMAGO.Chronicle.CreateFrame()
     f.comingSoonPage.desc:SetSpacing(8)
 
     -- ==========================================
+    -- EXPANSION GRID — Fates Tab Startseite
+    -- ==========================================
+    f.expansionGrid = CreateFrame("Frame", nil, f)
+    f.expansionGrid:SetPoint("TOPLEFT",     f, "TOPLEFT",      8, -50)
+    f.expansionGrid:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -8,  15)
+    f.expansionGrid:Hide()
+
+    f.expansionGrid.bg = f.expansionGrid:CreateTexture(nil, "BACKGROUND")
+    f.expansionGrid.bg:SetAllPoints()
+    f.expansionGrid.bg:SetColorTexture(0.03, 0.03, 0.04, 0.94)
+
+    f.expansionGrid.titleLabel = f.expansionGrid:CreateFontString(nil, "OVERLAY")
+    f.expansionGrid.titleLabel:SetFont(FONT_TITLE, 17, "OUTLINE")
+    f.expansionGrid.titleLabel:SetPoint("TOP", f.expansionGrid, "TOP", 0, -13)
+    f.expansionGrid.titleLabel:SetTextColor(0.62, 0.57, 0.43)
+    f.expansionGrid.titleLabel:SetText(IMAGO.L["FATES_CHOOSE_EXP"] or "Choose an Expansion")
+
+    f.expansionGrid.divLine = f.expansionGrid:CreateTexture(nil, "ARTWORK")
+    f.expansionGrid.divLine:SetSize(420, 1)
+    f.expansionGrid.divLine:SetPoint("TOP", f.expansionGrid.titleLabel, "BOTTOM", 0, -5)
+    f.expansionGrid.divLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+    f.expansionGrid.divLine:SetGradient("HORIZONTAL",
+        CreateColor(1,0.78,0.1,0), CreateColor(1,0.78,0.1,0.32), CreateColor(1,0.78,0.1,0))
+
+    do
+        local TILE_W, TILE_H = 330, 134
+        local HGAP,  VGAP   = 12,  10
+        local COLS           = 3
+        local GRID_L, GRID_T = 35, -60  -- left=(1084-(3*330+2*12))/2, below title
+
+        local sortedEras = {}
+        for slug, data in pairs(IMAGOdb.eras or {}) do
+            table.insert(sortedEras, { slug=slug, data=data })
+        end
+        table.sort(sortedEras, function(a,b)
+            return (a.data.order or 99) < (b.data.order or 99)
+        end)
+
+        f.expansionGrid.tiles = {}
+
+        for i, era in ipairs(sortedEras) do
+            local col = (i-1) % COLS
+            local row = math.floor((i-1) / COLS)
+            local tx  = GRID_L + col*(TILE_W+HGAP)
+            local ty  = GRID_T - row*(TILE_H+VGAP)
+            local sfx = EXPANSION_SUFFIX[era.slug]
+            local hasData = false
+            if sfx then
+                for _, entries in pairs(IMAGOdb.npcs or {}) do
+                    if hasData then break end
+                    if type(entries) == "table" then
+                        for slug in pairs(entries) do
+                            if slug:sub(-#sfx) == sfx then hasData = true; break end
+                        end
+                    end
+                end
+            end
+
+            local tile = CreateFrame("Button", nil, f.expansionGrid, "BackdropTemplate")
+            tile:SetSize(TILE_W, TILE_H)
+            tile:SetPoint("TOPLEFT", f.expansionGrid, "TOPLEFT", tx, ty)
+            tile:SetBackdrop({
+                bgFile="Interface\\Tooltips\\UI-Tooltip-Background",
+                edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",
+                edgeSize=12, insets={left=3,right=3,top=3,bottom=3},
+            })
+            tile:SetBackdropColor(0.07, 0.06, 0.08, 0.97)
+            tile:SetBackdropBorderColor(
+                hasData and 0.45 or 0.20, hasData and 0.38 or 0.16,
+                hasData and 0.18 or 0.08, hasData and 0.70 or 0.28)
+
+            tile.bgTex = tile:CreateTexture(nil, "BACKGROUND")
+            tile.bgTex:SetPoint("TOPLEFT",     tile, "TOPLEFT",     3, -3)
+            tile.bgTex:SetPoint("BOTTOMRIGHT", tile, "BOTTOMRIGHT", -3,  3)
+            local bgP = era.data.bgPath or ""
+            if bgP ~= "" then
+                tile.bgTex:SetTexture(bgP)
+                tile.bgTex:SetTexCoord(0, 1, 0.14, 0.86)  -- undistorted center-crop for 1920x1080 on 330x134
+                tile.bgTex:SetAlpha(hasData and 0.48 or 0.08)
+            end
+
+            tile.overlay = tile:CreateTexture(nil, "BORDER")
+            tile.overlay:SetPoint("TOPLEFT",     tile, "TOPLEFT",     3, -3)
+            tile.overlay:SetPoint("BOTTOMRIGHT", tile, "BOTTOMRIGHT", -3,  3)
+            tile.overlay:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+            tile.overlay:SetGradient("VERTICAL",
+                CreateColor(0,0,0, hasData and 0.48 or 0.80),
+                CreateColor(0,0,0, hasData and 0.18 or 0.60))
+
+            local logoP = era.data.logoPath or ""
+            if logoP ~= "" then
+                tile.logo = tile:CreateTexture(nil, "ARTWORK")
+                tile.logo:SetSize(115, 90)               -- natural aspect ratio (1280:1000)
+                tile.logo:SetPoint("CENTER", tile, "CENTER", 0, 12)  -- centered, shifted up for text
+                tile.logo:SetTexture(logoP)
+                tile.logo:SetAlpha(hasData and 0.95 or 0.18)
+            end
+
+            tile.nameLabel = tile:CreateFontString(nil, "OVERLAY")
+            tile.nameLabel:SetFont(FONT_TITLE, 13, "OUTLINE")
+            tile.nameLabel:SetPoint("BOTTOM", tile, "BOTTOM", 0, 28)
+            tile.nameLabel:SetWidth(TILE_W - 14)
+            tile.nameLabel:SetJustifyH("CENTER")
+            tile.nameLabel:SetWordWrap(false)
+            local rawNm = era.data.name or era.slug
+            local nm    = rawNm:gsub("^[Ww]orld of [Ww]arcraft:?%s*", "")
+            if nm == "" then nm = era.slug:gsub("_", " ") end
+            tile.nameLabel:SetText(nm)
+            tile.nameLabel:SetTextColor(
+                hasData and 1.0 or 0.36, hasData and 0.85 or 0.32, hasData and 0.10 or 0.12)
+
+            tile.subLabel = tile:CreateFontString(nil, "OVERLAY")
+            tile.subLabel:SetFont(FONT_BODY, 10)
+            tile.subLabel:SetPoint("BOTTOM", tile, "BOTTOM", 0, 11)
+            tile.subLabel:SetWidth(TILE_W - 14)
+            tile.subLabel:SetJustifyH("CENTER")
+            if hasData then
+                tile.subLabel:SetTextColor(0.55, 0.50, 0.32)
+            else
+                tile.subLabel:SetText(IMAGO.L["COMING_SOON_SHORT"] or "Coming Soon")
+                tile.subLabel:SetTextColor(0.30, 0.28, 0.22)
+            end
+
+            tile.eraSlug   = era.slug
+            tile.expSuffix = sfx
+            tile.hasData   = hasData
+            tile._bgAlpha  = hasData and 0.48 or 0.08
+
+            if hasData then
+                tile:SetScript("OnEnter", function(self)
+                    self:SetBackdropBorderColor(1.0, 0.85, 0.1, 1.0)
+                    self.bgTex:SetAlpha(0.62)
+                    self.overlay:SetGradient("VERTICAL",
+                        CreateColor(0,0,0,0.30), CreateColor(0,0,0,0.10))
+                end)
+                tile:SetScript("OnLeave", function(self)
+                    self:SetBackdropBorderColor(0.45, 0.38, 0.18, 0.70)
+                    self.bgTex:SetAlpha(self._bgAlpha)
+                    self.overlay:SetGradient("VERTICAL",
+                        CreateColor(0,0,0,0.48), CreateColor(0,0,0,0.18))
+                end)
+                tile:SetScript("OnClick", function(self)
+                    if SOUNDKIT and SOUNDKIT.IG_CHARACTER_INFO_TAB then
+                        PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB)
+                    end
+                    f.activeExpansion = self.eraSlug
+                    f.activeFilter    = "ALL"
+                    if f.filterBtn then f.filterBtn:SetText(IMAGO.L["FILTER_ALL"] or "All") end
+                    f.expansionGrid:Hide()
+                    f.scrollFrame:Show(); f.detailFrame:Show(); f.vLine:Show()
+                    f.searchBox:Show(); f.filterBtn:Show()
+                    if f.expansionBackBtn then
+                        f.expansionBackBtn:Show()
+                    end
+                    IMAGO.Chronicle.UpdateList()
+                    if f.ShowDashboard then f.ShowDashboard() end
+                end)
+            else
+                tile:EnableMouse(false)
+            end
+            table.insert(f.expansionGrid.tiles, tile)
+        end
+
+        f.expansionGrid.RefreshCounts = function()
+            IMAGOSaved.seenNPCs = IMAGOSaved.seenNPCs or {}
+            for _, tile in ipairs(f.expansionGrid.tiles) do
+                if tile.hasData and tile.expSuffix then
+                    local tot, sn = 0, 0
+                    local sfx2 = tile.expSuffix
+                    for _, entries in pairs(IMAGOdb.npcs or {}) do
+                        if type(entries) == "table" then
+                            for slug in pairs(entries) do
+                                if slug:sub(-#sfx2) == sfx2 then
+                                    tot = tot + 1
+                                    if IMAGOSaved.seenNPCs[slug] then sn = sn + 1 end
+                                end
+                            end
+                        end
+                    end
+                    tile.subLabel:SetText(string.format("%d / %d", sn, tot))
+                    tile.subLabel:SetTextColor(
+                        sn == tot and 0.80 or 0.55,
+                        sn == tot and 0.75 or 0.50,
+                        0.28)
+                end
+            end
+        end
+    end  -- do
+
+    f.expansionBackBtn = CreateFrame("Button", nil, f, "BackdropTemplate")
+    f.expansionBackBtn:SetSize(95, 20)
+    f.expansionBackBtn:SetPoint("LEFT", f.settingsBtn, "RIGHT", 8, 0)
+    f.expansionBackBtn:SetBackdrop({
+        bgFile="Interface\\ChatFrame\\ChatFrameBackground",
+        edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",
+        edgeSize=8, insets={left=2,right=2,top=2,bottom=2},
+    })
+    f.expansionBackBtn:SetBackdropColor(0.05, 0.05, 0.05, 0.88)
+    f.expansionBackBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.60)
+    f.expansionBackBtn:Hide()
+    f.expansionBackBtn.label = f.expansionBackBtn:CreateFontString(nil, "OVERLAY")
+    f.expansionBackBtn.label:SetFont(FONT_BODY, 11, "OUTLINE")
+    f.expansionBackBtn.label:SetPoint("CENTER", f.expansionBackBtn, "CENTER", 0, 0)
+    f.expansionBackBtn.label:SetTextColor(1, 0.85, 0.1)
+    f.expansionBackBtn.label:SetText(IMAGO.L["FATES_BACK_EXPANSIONS"] or "\226\134\144 Expansions")
+    f.expansionBackBtn:SetScript("OnEnter", function(self)
+        self:SetBackdropBorderColor(1, 0.95, 0.4, 1)
+    end)
+    f.expansionBackBtn:SetScript("OnLeave", function(self)
+        self:SetBackdropBorderColor(1, 0.78, 0.1, 0.60)
+    end)
+    f.expansionBackBtn:SetScript("OnClick", function()
+        if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION) end
+        f.activeExpansion = nil
+        f.activeFilter    = "ALL"
+        if f.filterBtn then f.filterBtn:SetText(IMAGO.L["FILTER_ALL"] or "All") end
+        f.expansionBackBtn:Hide()
+        f.searchBox:Hide(); f.filterBtn:Hide()
+        f.scrollFrame:Hide(); f.detailFrame:Hide(); f.vLine:Hide()
+        f.expansionGrid.RefreshCounts()
+        f.expansionGrid:Show()
+    end)
+
+    function IMAGO.Chronicle.ShowExpansionGrid()
+        local fr = IMAGO.Chronicle.frame
+        if not fr then return end
+        fr.activeExpansion = nil
+        fr.activeFilter    = "ALL"
+        if fr.filterBtn then fr.filterBtn:SetText(IMAGO.L["FILTER_ALL"] or "All") end
+        fr.searchBox:Hide(); fr.filterBtn:Hide()
+        fr.scrollFrame:Hide(); fr.detailFrame:Hide(); fr.vLine:Hide()
+        if fr.expansionBackBtn then fr.expansionBackBtn:Hide() end
+        if fr.expansionGrid then
+            fr.expansionGrid.RefreshCounts()
+            fr.expansionGrid:Show()
+        end
+    end
+
+    -- ==========================================
     -- NEU: LOGIK ZUM WECHSELN DER TABS (LOKALISIERT)
     -- ==========================================
     function IMAGO.Chronicle.SelectMainTab(index)
@@ -1139,26 +1413,32 @@ function IMAGO.Chronicle.CreateFrame()
         if f.creditsPage then f.creditsPage:Hide() end
         if f.creditsHeader then f.creditsHeader:Hide() end
         IMAGO.Chronicle.SetDetailAction(nil)
+        if f.expansionGrid    then f.expansionGrid:Hide()    end
+        if f.expansionBackBtn then f.expansionBackBtn:Hide() end
         
         if index == 1 or index == 2 then
-            -- Haupt-UI anzeigen
-            f.searchBox:SetShown(index == 1)
-            f.filterBtn:SetShown(index == 1)
-            f.scrollFrame:Show()
-            f.detailFrame:Show()
-            f.vLine:Show()
             f.comingSoonPage:Hide()
-            -- Eras-Frames verstecken und History leeren
             if IMAGO.Eras and IMAGO.Eras.frame then
                 IMAGO.Eras.frame.wrapper:Hide()
                 IMAGO.Eras.ClearHistory()
             end
-            
-            IMAGO.Chronicle.UpdateList()
-            
-            -- Dashboard anzeigen, wenn ein Tab gewechselt wird
-            if f.ShowDashboard then 
-                f.ShowDashboard() 
+            if index == 1 and not f.activeExpansion then
+                -- Fates: Expansion-Grid anzeigen
+                f.searchBox:Hide(); f.filterBtn:Hide()
+                f.scrollFrame:Hide(); f.detailFrame:Hide(); f.vLine:Hide()
+                if f.expansionGrid then
+                    f.expansionGrid.RefreshCounts()
+                    f.expansionGrid:Show()
+                end
+                IMAGO.Chronicle.UpdateList()  -- Footer aktualisieren
+            else
+                -- Tab 1 mit Expansion oder Tab 2 (Zonen)
+                f.searchBox:SetShown(index == 1)
+                f.filterBtn:SetShown(index == 1)
+                if index == 1 and f.expansionBackBtn then f.expansionBackBtn:Show() end
+                f.scrollFrame:Show(); f.detailFrame:Show(); f.vLine:Show()
+                IMAGO.Chronicle.UpdateList()
+                if f.ShowDashboard then f.ShowDashboard() end
             end
         elseif index == 3 then
             -- ERAS-Tab
@@ -1565,8 +1845,15 @@ function IMAGO.Chronicle.UpdateList()
         for _, entries in pairs(IMAGOdb.npcs) do
             if type(entries) == "table" then
                 for slug, _ in pairs(entries) do
-                    total = total + 1
-                    if IMAGOSaved.seenNPCs[slug] then seen = seen + 1 end
+                    local countIt = true
+                    if f.activeExpansion then
+                        local exSfx = EXPANSION_SUFFIX[f.activeExpansion]
+                        if exSfx and slug:sub(-#exSfx) ~= exSfx then countIt = false end
+                    end
+                    if countIt then
+                        total = total + 1
+                        if IMAGOSaved.seenNPCs[slug] then seen = seen + 1 end
+                    end
                 end
             end
         end
@@ -1639,6 +1926,10 @@ function IMAGO.Chronicle.UpdateList()
                         local matchesFilter = true
                         if activeFilter == "FAV" and not IMAGOSaved.favorites[slug] then matchesFilter = false end
                         if activeFilter:find("CAT_") and catKey ~= activeFilter then matchesFilter = false end
+                        if f.activeExpansion then
+                            local exSfx = EXPANSION_SUFFIX[f.activeExpansion]
+                            if exSfx and slug:sub(-#exSfx) ~= exSfx then matchesFilter = false end
+                        end
                         
                         if matchesSearch and matchesFilter then
                             if not categories[catKey] then 
@@ -2466,6 +2757,14 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     f.selectedNPC = data
     f.selectedNPCSlug = slug
 
+    -- Auto-detect expansion from slug suffix
+    for eraSlug, suffix in pairs(EXPANSION_SUFFIX) do
+        if slug:sub(-#suffix) == suffix then
+            f.activeExpansion = eraSlug
+            break
+        end
+    end
+
     IMAGO.Chronicle.SelectMainTab(1)
     f:Show()
 
@@ -2541,10 +2840,10 @@ function IMAGO.Chronicle.Toggle()
     local f = IMAGO.Chronicle.frame
     if f:IsShown() then 
         f:Hide() 
-    else 
-        IMAGO.Chronicle.UpdateList()
-        if f.ShowDashboard then f.ShowDashboard() end
+    else
+        local tabIdx = f.activeTabIndex or 1
+        IMAGO.Chronicle.SelectMainTab(tabIdx)
         if f.UpdateModeBtn then f.UpdateModeBtn() end
-        f:Show() 
+        f:Show()
     end
 end
