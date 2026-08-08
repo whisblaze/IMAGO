@@ -1079,22 +1079,17 @@ function IMAGO.Chronicle.CreateFrame()
     -- NEU: HAUPT-REITER (BOTTOM TABS) LOKALISIERT
     -- ==========================================
     f.numTabs = 5
-    local locale = GetLocale()
     local tabNames = {IMAGO.L["TAB_FATES"], IMAGO.L["TAB_ZONES"], IMAGO.L["TAB_ERAS"], IMAGO.L["TAB_INSTANCES"], IMAGO.L["TAB_CREDITS"]}
-    
-    for i, name in ipairs(tabNames) do
+    for i = 1, f.numTabs do
+        local name = tabNames[i] or ("Tab " .. i) -- fallback so a missing locale string can never break tab creation
         local tab = CreateFrame("Button", f:GetName().."Tab"..i, f, "PanelTabButtonTemplate")
         tab:SetText(name)
-        
-        -- Zwingt das Tab, sich elegant an die Textlänge anzupassen
         PanelTemplates_TabResize(tab, 0)
-        
         if i == 1 then
             tab:SetPoint("TOPLEFT", f, "BOTTOMLEFT", 15, 2)
         else
-            tab:SetPoint("LEFT", _G[f:GetName().."Tab"..(i-1)], "RIGHT", 0, 0) 
+            tab:SetPoint("LEFT", _G[f:GetName().."Tab"..(i-1)], "RIGHT", 0, 0)
         end
-        
         tab:SetScript("OnClick", function()
             IMAGO.Chronicle.SelectMainTab(i)
             if SOUNDKIT and SOUNDKIT.IG_CHARACTER_INFO_TAB then PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB) end

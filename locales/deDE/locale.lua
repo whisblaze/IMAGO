@@ -1,11 +1,13 @@
 -- ============================================================
--- IMAGO — locales/deDE/locale.lua
+-- IMAGO — core/Locale_deDE.lua
+-- Deutsche Lokalisierung
 -- ============================================================
 
-if GetLocale() ~= "deDE" then return end
+IMAGO = IMAGO or {}
+IMAGO.LocaleData = IMAGO.LocaleData or {}
 
-IMAGO.L = {}
-local L = IMAGO.L
+local L = {}
+IMAGO.LocaleData.deDE = L
 
 -- UI-Texte
 L["WINDOW_TITLE"]                   = "Chronik der Unvergessenen"

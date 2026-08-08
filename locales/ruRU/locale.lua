@@ -1,13 +1,15 @@
 -- ============================================================
--- IMAGO — locales/ruRU/locale.lua
+-- IMAGO — core/Locale_ruRU.lua
+-- Russische Lokalisierung (UI-Chrome nur — Lore bleibt EN/DE)
 -- ============================================================
-
-if GetLocale() ~= "ruRU" then return end
-
-IMAGO.L = {}
-local L = IMAGO.L
-
--- UI текст
+ 
+IMAGO = IMAGO or {}
+IMAGO.LocaleData = IMAGO.LocaleData or {}
+ 
+local L = {}
+IMAGO.LocaleData.ruRU = L
+ 
+-- UI-Texte (übersetzt)
 L["WINDOW_TITLE"]                   = "Хроники Незабытых"
 L["UNDISCOVERED"]                   = "Не известно"
 L["UNDISCOVERED_LORE"]              = "Найдите этого персонажа, чтобы раскрыть его судьбу."

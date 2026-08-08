@@ -10,9 +10,10 @@
 
 data/quest_unlocks.lua
 
-IMAGO.lua
+
 locales/base/locale.lua
 locales/[TextLocale]/locale.lua
+IMAGO.lua
 
 data/LoreSnippets_static.lua
 data/zones_static.lua
