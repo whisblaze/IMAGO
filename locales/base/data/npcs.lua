@@ -371,6 +371,37 @@ IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth"].timeline = {
     }
 }
 
+-- ARCANIST VALTROIS --
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].name = "Arcanist Valtrois"
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].race = "Nightborne"
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].lore = [[An expert on the study of ley lines and a powerful mage with a strategic mind, Arcanist Valtrois was one of Thalyssra's main supporters during her rebellion against Grand Magistrix Elisande. Now, she serves as one of the leaders of the nightborne. 
+
+Valtrois may come off as brusque and even outright rude, especially to those she has just met, but once her trust is earned, she has proven to be an invaluable ally time and time again. With the war against the Burning Legion won, she now spends her time exploring and studying the world beyond her home of Suramar alongside her lover, the blue dragon Stellagosa.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].zones = {"Isle of Quel'Danas", "The Den"}
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois"].timeline = {
+    {
+        era = "Pre-Legion",
+        text = [[Was renowned as an arcanist in Suramar for her knowledge of the ley lines. Was exiled and withered due to magical withdrawal, after Thalyssra's rebellion against Grand Magistrix Elisande when the nightborne leader chose to ally Suramar with the Burning Legion.]],
+    },
+    {
+        era = "Legion",
+        text = [[Rejoined the rebellion under Thalyssra in Shal'Aran and reactivated the leyline grid of Suramar. Summoned a concentrated manastorm to help the arcan'dor grow fruit to restore the nightborne to their former strength. Befriended the dragon Stellagosa and later devised the plan to breach the Nighthold to stop Elisande once and for all.]],
+    },
+    {
+        era = "BfA",
+        text = [[Accompanied Thalyssra during her diplomatic visit to Silvermoon, helped defend the Sunwell from Alleria, and agreed to join the Horde. Fought in the Fourth War and freed Lady Ashvane under orders of Warchief Sylvanas Windrunner.]],
+    },
+    {
+        era = "TWW",
+        text = [[Remained in contact with Stellagosa and traveled the world with her. The two eventually became lovers.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Joined the united elven armies on the Isle of Quel'Danas against the Devouring Host. Accompanied Thalyssra to Harandar to witness Hagar's revelation about the trolls' and elves' shared ancestry.]],
+    }
+}
+
 -- CAT_LIGHT
 -- MEHLAR DAWNBLADE --
 IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade"].name = "Mehlar Dawnblade"
@@ -1306,6 +1337,36 @@ IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].name = "Grand Artificer Romuul"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].race = "Draenei"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].lore = [[The leader of the artificers – draenei engineers and architects – and Velen's main confidant in the Exodar's organizational affairs, Romuul has stayed loyally at Velen's side since they first fled from Argus thousands of years ago. He was in charge of repairing, maintaining, and piloting the Vindicaar during the third invasion of the Burning Legion, and outfitted the vessel to be the base of operations of the Army of the Light even after the Legion's defeat.
+
+During the Tishamaat, Velen and Romuul announced their plans for the construction of a new city on Azeroth, giving the draenei a chance to finally settle on a world they could once again call home. The work has to be put on hold, however, as the Grand Artificer has been called by the Sunwell to combat the Void. Ready to serve, he exchanges his chisel for his holy hammer and fights for the Light, for a new dawn for his people, and for all of Azeroth.]]
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Voidstorm"}
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Worked as an artificer on Argus and was an apprentice of Exarch Hataaru. Joined Velen's cause and fled his homeland when the Burning Legion took over.]],
+    },
+    {
+        era = "Legion",
+        text = [[Repaired the Vindicaar and piloted it through the Twisting Nether, successfully reaching Argus. Helped with teleportation on Argus through Lightforged beacons and upgraded the Vindicaar's defensive and offensive systems. Used the vessel to bypass Antorus' shields and gave the Champions the chance to strike at Sargeras. Evaded the Dark Titan's attacks and steered the Vindicaar back to Azeroth.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kept maintaining the Vindicaar when it became the main base of operations for the Army of the Light.]],
+    },
+    {
+        era = "DF",
+        text = [[Sent out formal invitations to the Tishamaat celebration in the Exodar. Together with Velen, he announced plans for the construction of a new draenei city on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was called to Silvermoon and fought on the Isle of Quel'Danas as part of the Vanguard of the Light. Helped the ren'dorei stabilize the Singularity Anchor in the Voidstorm, preventing a destructive implosion.]],
+    }
+}
+
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].name = "Allari the Souleater"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater"].race = "Blood Elf"
@@ -1726,6 +1787,206 @@ IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"].timeline = {
     }
 }
 
+-- BRANN BRONZEBEARD --
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].name = "Brann Bronzebeard"
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].race = "Dwarf"
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].lore = [[Everyone who considers themselves an archaeologist or historian has heard of Brann Bronzebeard. The youngest of the three Bronzebeard brothers has no claim to, or interest in, the High Seat of Ironforge and instead carved out a reputation as one of Azeroth's most famous explorers. The first complete maps of Kalimdor and the Eastern Kingdoms were made by his hand, showing that he even ventured deep into enemy territory to make them as precise as possible. 
+
+Whenever a new continent or ruin is discovered – especially if it's of Titan origin – Brann can be found at the forefront, wherever the action is.]]
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].zones = {"Silvermoon City"}
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"].timeline = {
+    {
+        era = "WC2",
+        text = [[Fought for the Alliance during the Siege of Ironforge and stayed with the army until the final battle of the Second War against the Old Horde.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Founded the Explorers' League with the help of his brother, King Magni. Mapped out the entire Eastern Kingdoms and, after its discovery, Kalimdor as well.]],
+    },
+    {
+        era = "Classic",
+        text = [[Investigated the rumors about the Old God C'Thun and found a tunnel leading to the ancient kingdom of Ahn'Qiraj.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Uncovered the true fate of his brother, Muradin, and helped bring him home to Ironforge. Investigated the Halls of Ulduar, finding more information about the Titans and the Old Gods. Uncovered Yogg-Saron's corrupting influence over Ulduar's keepers and rallied an army to defeat him.]],
+    },
+    {
+        era = "Cata",
+        text = [[Put an end to Commander Schnottz's operations in Uldum and later discovered and explored the Halls of Origination.]],
+    },
+    {
+        era = "MoP",
+        text = [[Established a museum of archaeology at the Seat of Knowledge. Aided the Alliance war effort by researching the sha.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was reunited with his awakened brother, Magni, and together they found out that Magni had been made the Speaker of Azeroth. Helped Magni and the High Priest discover the Primordial Observatory and gain the seekers' support. Brann later uncovered various archaeological artifacts on the Broken Isles.]],
+    },
+    {
+        era = "BfA",
+        text = [[Unsuccessfully tried to forge an alliance with the blood trolls of Nazmir. Ventured through the Underrot and discovered the entrance to Uldir alongside Alliance adventurers. Helped Magni acquire MOTHER's help and brought her to the Chamber of Heart. Fought N'Zoth's minions in Uldum.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Revisited Northrend with Magni and Muradin to note changes in the land and check on old allies, like the Frostborn. Most of all, though, the brothers were happy to spend time together in peace again.]],
+    },
+    {
+        era = "TWW",
+        text = [[Brought his nephew, Dagran, to Dalaran to check on Magni and survived the city's subsequent destruction. Established the Delver's Headquarters in Dornogal and explored Khaz Algar's hidden caves and ruins alongside the Champion. Helped kill Xal'atath's lieutenant, Zekvir, recovered his priceless hat from the Underpin, and defeated the bounty hunter Ky'veza.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Assisted the Reliquary in Silvermoon City as an archaeology expert.]],
+    }
+}
+
+-- SORIDORMI --
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].name = "Soridormi"
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].race = "Bronze Dragon"
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].lore = [[As a bronze dragon, Soridormi's chief directive is to protect and maintain the Titans' one true timeline. She is the prime consort of the Timeless One, Nozdormu, and thus in charge of many matters concerning the bronze flight as a whole. Wherever history teeters on the brink of unraveling or dragonkind stands in need of protection, Soridormi is never far behind.]]
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].zones = {"Silvermoon City"}
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Fought the Primalists during the War of the Scaleborn. Infused the Dragon Soul with her own and Nozdormu's essence and represented the bronze dragonflight during the War of the Ancients.]],
+    },
+    {
+        era = "TBC",
+        text = [[Commanded the Scale of the Sands and defended the true timeline of the Battle of Mount Hyjal from the infinite dragonflight.]],
+    },
+    {
+        era = "MoP",
+        text = [[The Vision of Time showed Soridormi's death, yet her future killer remained unknown.]],
+    },
+    {
+        era = "DF",
+        text = [[Led the Timewalkers on the Dragon Isles to preserve the future. Ventured into the Primalist Tomorrow to stop the Infinites, and managed to neutralize various Time Rifts. Witnessed Amirdrassil's awakening.]],
+    },
+    {
+        era = "TWW",
+        text = [[Opened portals to re-experience the avoided future of N'Zoth's victory. Studied the effects of the Black Blood, once destined to be used by N'Zoth, but now wielded by Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Stayed at the Wayfarer's Rest Inn in Silvermoon City and aided confused Champions in aligning their timelines.]],
+    }
+}
+
+-- QUEEN TALANJI --
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].name = "Queen Talanji"
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].race = "Zandalari Troll"
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].lore = [[Thousands of years ago, the trolls ruled over Azeroth. Now, only one of their great empires remains: Zandalar, to which all other troll tribes look in respect. Talanji reigns as queen of the Zandalari and although she is young, her authority and royal lineage are beyond dispute.  Temperamental and headstrong, and with the power of the Loa of Death on her side, she is a force to be reckoned with.
+
+After she came to power when Alliance adventurers murdered her father, King Rastakhan, Talanji allied with the Horde, swearing vengeance. While she honors the truce between the factions, she doesn't hide her lingering disdain for the Alliance and makes it quite clear that if war was ever to break out again, she would not argue for peace long.]]
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].zones = {"The Den"}
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"].timeline = {
+    {
+        era = "Cata",
+        text = [[Grew up as the princess of Zandalar with her friend Apari.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Noticed the blood troll uprising in Nazmir and warned her father. When the king dismissed the matter, Talanji contacted the Horde for aid. En route to Orgrimmar, she was intercepted by the Alliance and sent to prison in Stormwind City.]],
+    },
+    {
+        era = "BfA",
+        text = [[Was rescued by the Horde and persuaded her father to establish an embassy for the new allies in Dazar'alor. She put an end to the blood trolls' schemes in Uldir and helped kill the artificial Old God G'huun. Fought at the forefront in the Battle of Dazar'alor but had to witness her father being slain. Was forced into a pact with Bwonsamdi, the Loa of Death. Joined the Horde as queen.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Survived an assassination attempt during a Horde meeting. Led the efforts to rescue Bwonsamdi from the Widow's Bite and Nathanos Blightcaller and managed to pressure the loa into revoking the pact her father made with him, working together as equals instead. Had to kill her former friend Apari when she revealed herself a traitor. Formed a friendship with the young Darkspear troll Zekhan.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Hosted Lor'themar and Thalyssra in Zandalar and organized a romantic tour of her kingdom for the two elves.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Witnessed Elder Hagar's revelation about the trolls' and elves' shared history.]],
+    }
+}
+
+-- ROKHAN --
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].name = "Rokhan"
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].race = "Jungle troll"
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].lore = [[Rokhan has been a proud and loyal member of the Darkspear Tribe and the Horde since the Third War. Through exceptional skill as a shadow hunter and tracker, he worked his way up the ranks, and when Warchief Vol'jin fell to the Burning Legion, Rokhan was elected to replace him as chieftain of the Darkspear. 
+
+Since then, he has been instrumental in bringing the Zandalari into the ranks of the Horde, remaining friends with Queen Talanji to this day, and in bringing the lost Loa of the Darkspear back into their society. Rokhan has fought, and always will fight, for what is best for his people.]]
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].zones = {"The Den"}
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"].timeline = {
+    {
+        era = "WC3",
+        text = [[Joined Thrall's New Horde and fled to Kalimdor alongside his tribe. He later led the raid against Daelin Proudmoore at Theramore after the Kul Tirans had attacked Orgrimmar without provocation. Battled Daelin's elite forces while Rexxar slew the Lord Admiral.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Was stationed in Dragonblight and kept the undead frost wyrms from advancing on the main Horde army at the Wrathgate.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Safeguarded his trapped people during the War Against the Nightmare.]],
+    },
+    {
+        era = "WoD",
+        text = [[Helped stop the Iron Horde's assault in the Blasted Lands and accompanied Azeroth's forces to the other Draenor. Served as the Horde Commander's right-hand man, overseeing and handling various threats on Draenor.]],
+    },
+    {
+        era = "Legion",
+        text = [[Acted as unofficial representative of the Darkspear trolls after Vol'jin's death on the Broken Shore.]],
+    },
+    {
+        era = "BfA",
+        text = [[Freed Princess Talanji from Alliance captivity and later joined her in her expedition to Nazmir. Formed a friendship with her and helped her stop the blood troll threat. Learned from Vol'jin's spirit that the Shadowlands were in turmoil. Fought in the Battle of Dazar'alor and sided with Saurfang in his rebellion against Sylvanas. Was elected chieftain of the Darkspear and joined the Horde Council.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Joined Horde forces on Zandalar to come to Queen Talanji's aid against the Widow's Bite.]],
+    },
+    {
+        era = "SL",
+        text = [[Took up temporary leadership of Orgrimmar when Thrall and Baine Bloodhoof were abducted and trapped in the Shadowlands.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined his old friends Baine Bloodhoof, Chen Stormstout, and Rexxar in the Ohn'ahran Plains and helped restore Toghusuq Village while all four reminisced and mourned the fallen Bovan Windtotem. Later helped battle Fyrakk in the Emerald Dream. On the Echo Isles, he stopped worshipers of Mueh'zala and established Bwonsamdi, Lukou, Kevo ya Siti, and Jani as the Darkspear's primary loa.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Witnessed Elder Hagar's revelation about the trolls' and elves' shared history.]],
+    }
+}
+
+-- ZEKHAN --
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].name = "Zekhan"
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].race = "Jungle troll"
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].lore = [[This young, honest, and idealistic jungle troll became a key player during the Fourth War as Varok Saurfang's first supporter and closest confidant. After Saurfang's sacrifice, Zekhan swore to carry on the legacy of honor his fatherly friend left behind. He has been made ambassador of the Horde for his heroics and has earned the unconditional trust of various leaders of the Horde, Queen Talanji, Rokhan and Thrall chief among them. 
+
+Now, the young shaman has been invited to Harandar, and remains optimistic for whatever Hagar's revelation might bring for the future.]]
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].zones = {"The Den"}
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"].timeline = {
+    {
+        era = "Pre-BfA",
+        text = [[Grew up on the Echo Isles and was inspired by the tales his father Hekazi used to tell him about the great heroes of the Horde, such as Varok Saurfang.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought for the Horde during the Siege of Lordaeron. After Saurfang escaped Alliance captivity, Zekhan joined him and became his closest confidant in his revolution. Zekhan trusted the Champion with details of their plans, hopeful that they would not remain loyal to Sylvanas. After witnessing Saurfang's sacrifice at the gates of Orgrimmar, he vowed to continue his legacy.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Was guided by Bwonsamdi to save Queen Talanji's life. Was made ambassador of the Horde and was sent to Zandalar to aid the queen against the Widow's Bite. Risked his life to save children being used as living sacrifices, and saw a vision of the Maw. Remained close friends with Talanji after the Widow's Bite was defeated. Later, he traveled Kalimdor with Rexxar to give a report on Horde holdouts.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Accompanied Rokhan to a meeting of the elf and troll leaders in Harandar. Was optimistic for the future after hearing Hagar's revelation of shared ancestry, but was met with skepticism from both Rokhan and Talanji.]],
+    }
+}
 
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane"].name = "High Inquisitor Whitemane"
@@ -2008,6 +2269,68 @@ IMAGOdb.npcs.CAT_VOID["mor_duun"].timeline = {
     }
 }
 
+-- XAL'ATATH --
+IMAGOdb.npcs.CAT_VOID["xal_atath"].name = "Xal'atath"
+IMAGOdb.npcs.CAT_VOID["xal_atath"].race = "Unknown"
+IMAGOdb.npcs.CAT_VOID["xal_atath"].lore = [[Her smile is a threat, her whispers are warnings, and her promises are lies. The Harbinger of the Void has manipulated the people of Azeroth for millennia, and as easily as she elevated her allies to great power, she abandoned them to their doom.
+
+For the longest time, she was trapped within the Blade of the Black Empire, a punishment imposed by the Old Gods after she opposed them.
+
+With the help of the Champions of Azeroth, she is now free once more.
+
+Xal'atath seeks the world-soul, and with the Dark Heart empowered, she assaults the Sunwell in an attempt to reach it. It remains a mystery why she pursues it, and even her origins are shrouded in ambiguity. All that is certain is that she must be stopped at all costs.
+
+The fate of the universe may depend on the Champions of Azeroth.]]
+IMAGOdb.npcs.CAT_VOID["xal_atath"].zones = {"The Voidspire", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_VOID["xal_atath"].source = "Cadash"
+IMAGOdb.npcs.CAT_VOID["xal_atath"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Claims to have been mortal before her world was destroyed and she was made a being of the Void. Heralded Dimensius' coming before he devoured world after world, including K'aresh. Confronted the Old Gods on Azeroth during the reign of the Black Empire, but lost and was imprisoned in the Blade of the Black Empire. 
+        
+        Whoever wielded her fell to madness.]],
+    },
+    {
+        era = "Pre-WC1",
+        text = [[Was delivered to Queen Modgud during the War of the Three Hammers. The queen became smitten with the blade and used Xal'atath to perform a ritual at Grim Batol to defeat the Wildhammer Clan. Xal'atath abandoned Modgud to die, and the queen's sorcery cursed Grim Batol.]],
+    },
+    {
+        era = "WC2",
+        text = [[Was claimed by the human bishop Natalie Seline and promptly corrupted the once pious woman. Taught Seline how to wield void magic and incited her followers to murder her for power.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Archbishop Benedictus came into possession of the blade sometime afterward but dared not wield her.]],
+    },
+    {
+        era = "Legion",
+        text = [[Was used by Benedictus' successor, Twilight Deacon Farthing, in order to resurrect Zakajz the Corruptor. He was stopped by the High Priest who then wielded Xal'atath against the Burning Legion. She witnessed Alleria Windrunner's transformation into a void elf and was intrigued. The High Priest later drained her power to heal the world from the wound inflicted by Sargeras' sword.]],
+    },
+    {
+        era = "BfA",
+        text = [[Was restored to power through living sacrifices by the High Priest and was able to gain the physical body of a dead high elf. Convinced the priest to go to the Crucible of Storms where she betrayed them and struck a bargain with N'Zoth in order to regain her freedom.]],
+    },
+    {
+        era = "DF",
+        text = [[Allied with Iridikron and obtained the Dark Heart from him. Attacked Telogrus Rift and drew the ire of Alleria Windrunner. Delighted in toying with Alleria's emotions by sending her twisted visions of her past.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Allied with the nerubians of Azj-Kahet by manipulating Ansurek into murdering her own mother, the queen.]],
+    },
+    {
+        era = "TWW",
+        text = [[Destroyed Dalaran and crippled Khadgar for life. Began her mission to empower the Dark Heart with various cosmic energies. Alleria pursued her relentlessly and managed to damage the Dark Heart. Xal'atath allied with Gallywix and left him for dead after he gave the Dark Heart to the Shadowguard ethereals. Allied with Alleria to stop Dimensius' return and took his power for herself.]],
+    },
+    {
+        era = "Pre-Midnight",
+        text = [[With the powers of a Void Lord, she united the ever-warring forces of the Void under her command, including Nexus-King Salhadaar and the domanaar. Drained the Dark Heart to create the Voidspire and bring the Voidstorm to the skies above Silvermoon.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Overwhelmed the defenders of Quel'Thalas but was halted by the sudden eruption of the Sunwell. Defeated Alleria at the Voidspire and severed the naaru L'ura from her to finally corrupt the Sunwell. Witnessed L'ura's defeat but vanished into the Darkwell.]],
+    }
+}
 
 
 -- CAT_AMANI
@@ -2134,6 +2457,7 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru"].timeline = {
     }
 }
 
+-- FILO --
 IMAGOdb.npcs.CAT_AMANI["filo"].name = "Filo"
 IMAGOdb.npcs.CAT_AMANI["filo"].race = "Kapara (Loa)"
 IMAGOdb.npcs.CAT_AMANI["filo"].lore = [[Worshipped in Zul’Aman as the Loa of Children, Filo never speaks on his own, instead taking the youngest child of each village as his speaker. While gentle toward those he protects, he pursues anyone who dares harm his children with a vow of vengeance.
@@ -2145,6 +2469,66 @@ IMAGOdb.npcs.CAT_AMANI["filo"].timeline = {
     {
         era = "Midnight",
         text = [[Watched over Kanza, an Amani child who sought him out in an attempt to reunite with the spirit of her twin sister. Filo lent his power to the adventurer who helped prepare the ritual - so long as they left his children undisturbed.]],
+    }
+}
+
+-- TORUNDO THE GRIZZLED --
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].name = "Torundo the Grizzled"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].race = "Forest troll"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].lore = [[When Torundo was but a mere child, his home of Zen'tamani was burned down by the Farstriders of Quel'Thalas, leaving the few survivors helpless and bitter. He fled to Amani'Zar and grew up a formidable warrior loyal to the Amani warlord Zul'jin, who promised his people revenge and glory. Even after Zul'jin's defeat, Torundo remained in service to his bloodline.
+
+Now, he serves Chieftain Zul'jarra as her war advisor, defending Zul'Aman from the Twilight's Blade. While he has mellowed somewhat with age, the sight of a dead enemy still brings a smile to his grizzled face.]]
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].zones = {"Zul'Aman", "Atal'Aman", "The Den"}
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].source = "Cadash"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled"].timeline = {
+    {
+        era = "Pre-WC1",
+        text = [[Grew up and lived in Zen'tamani Village when it was razed by the Farstriders under Ranger-General Lireesa Windrunner and had to flee to Amani'Zar as a child.]],
+    },
+    {
+        era = "TBC",
+        text = [[Fought under Zul'jin during his battles with Quel'Thalas. After his death, Torundo served Zul'jin's daughter-in-law, Zarama.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Defended civilians during the Twilight's Blade's sudden attack on Atal'Aman, and later took care of the refugees in Amani'Zar. Helped defeat the Void cultists and was in charge of cleansing Atal'Aman of the lingering malicious energies. After Hagar revealed the trolls' and elves' shared ancestry, Torundo came to blows with Lor'themar Theron.]],
+    }
+}
+
+-- SHADRA --
+IMAGOdb.npcs.CAT_AMANI["shadra"].name = "Shadra"
+IMAGOdb.npcs.CAT_AMANI["shadra"].race = "Spider (Loa)"
+IMAGOdb.npcs.CAT_AMANI["shadra"].lore = [[The Venom Queen is a loa worshiped by nearly all of the troll tribes, from the Echo Isles, through Zandalar, and to the deserts of Zul'farrak. Her followers are granted deadly poison to coat their weapons, and stealth to spy on their enemies undetected.
+
+For many, the Loa of Spiders is considered a force of evil. But while she shows no mercy to her enemies, her cruelty never affects her allies - a trait that has cost Shadra dearly more than once already. Her own followers murdered her for her power during the Fourth War and her soul was sent to the Maw, to suffer in damnation.
+
+Now, the Mistress of Spies has been reborn once more.]]
+IMAGOdb.npcs.CAT_AMANI["shadra"].zones = {"Zul'Aman"}
+IMAGOdb.npcs.CAT_AMANI["shadra"].source = "Cadash"
+IMAGOdb.npcs.CAT_AMANI["shadra"].timeline = {
+    {
+        era = "Classic",
+        text = [[The Forsaken, under Master Apothecary Faranell, noticed the Witherbark tribe's potent weapon poisons and wanted them for their own concoctions. They summoned and killed Shadra at her altar in the Hinterlands to harvest her venom.]],
+    },
+    {
+        era = "Cata",
+        text = [[Willingly gave her blood to the Vilebranch tribe in Jintha'alor, whose members then committed mass sacrifices in her name. She was killed once more by adventurers]],
+    },
+    {
+        era = "MoP",
+        text = [[Communicated with Vol'jin through visions when the Zandalari invaded Pandaria. They had stopped worshiping her in favor for the mogu, and she wished to see them punished. When Vol'jin and his allies did so, Shadra was pleased.]],
+    },
+    {
+        era = "BfA",
+        text = [[Was killed and her power consumed by her own high priestess, Yazma. Shadra was believed permanently dead by the remaining loyal Zandalari when it became apparent that she wouldn't be reborn this time.]],
+    },
+    {
+        era = "SL",
+        text = [[With the Arbiter out of commission, Shadra's soul was sent to the Maw, where she was tortured and prevented to return to the world as she had after every previous death. Was rescued by Vol'jin and the Maw Walker and placed in the care of the Winter Queen in Ardenweald.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was finally reborn once more with the help of Revantusk and Witherbark loyalists in Zul'Aman. Still small and not as powerful as she once was, she allied herself with her rival Halazzi to aid the forest trolls in their fight against the Void.]],
     }
 }
 
@@ -2885,5 +3269,94 @@ IMAGOdb.npcs.CAT_ARCANTINA["cyrus_crestfall"].timeline = {
     {
         era = "Midnight",
         text = [[Shared war stories in the Arcantina.]],
+    }
+}
+
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].name = "Misha"
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].race = "Bear"
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].lore = [[Never far from Rexxar's side is his loyal friend and companion, Misha. She was orphaned as a little cub in Feralas and found by the wandering Mok'Nathal by chance. Both were alone and without family or kin, and quickly became inseparable. 
+
+It would be unwise to mistake her cuddly appearance for harmlessness. Get on Rexxar's bad side, and if the hunter doesn't end you, Misha certainly will.]]
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["misha"].timeline = {
+    {
+        era = "Pre-WC3",
+        text = [[Was found by Rexxar as a young cub beside her dead mother. Rexxar named her Misha, and she soon began following her new friend wherever he went.]],
+    },
+    {
+        era = "WC3",
+        text = [[Fought side by side with Rexxar against Daelin Proudmoore in the aftermath of the Third War.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Carried the wounded orc scout Byrok on her back to Orgrimmar.]],
+    },
+    {
+        era = "Classic",
+        text = [[Roamed the wilderness of Desolace with Rexxar.]],
+    },
+    {
+        era = "TBC",
+        text = [[Helped Rexxar defend Thunderlord Stronghold in the Blade's Edge Mountains.]],
+    },
+    {
+        era = "Legion",
+        text = [[Officially joined the Unseen Path alongside Rexxar and occasionally helped the Huntmaster on missions.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Ventured across Kalimdor with Rexxar and Zekhan and mourned the loss of Huelo, Rexxar's late wolf companion.]],
+    },
+    {
+        era = "DF",
+        text = [[Fought at Rexxar's side in the Ohn'ahran Plains and the Emerald Dream. Attended the first orcish Kosh'harg on Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Relaxed in front of the fireplace in the Arcantina and even let the Champion pet her.]],
+    }
+}
+
+-- LORD DARIUS CROWLEY --
+IMAGOdb.npcs.CAT_ARCANTINA["lord_darius_crowley"].name = "Lord Darius Crowley"
+IMAGOdb.npcs.CAT_ARCANTINA["lord_darius_crowley"].race = "Worgen"
+IMAGOdb.npcs.CAT_ARCANTINA["lord_darius_crowley"].lore = [[A proud and selfless Gilnean nobleman and once the closest friend of King Genn Greymane. Darius was branded a traitor to his homeland shortly after the Third War, when he incited a rebellion against his king in protest of the isolationist course Genn had set for the nation. Never losing his idealism, Crowley fought for Gilneas without hesitation once more when the worgen curse and Forsaken takeover sealed the declining kingdom's fate. He even gave up his humanity for the cause.
+
+Now, with Gilneas liberated and at peace, Darius can finally take a moment to rest and take pride in seeing his daughter grow up in the world they both fought for.]]
+IMAGOdb.npcs.CAT_ARCANTINA["lord_darius_crowley"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["lord_darius_crowley"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["lord_darius_crowley"].timeline = {
+    {
+        era = "WC2",
+        text = [[Convinced King Genn Greymane to send Gilnean troops to aid the newly-formed Alliance of Lordaeron against the orcish Horde. Strongly opposed Gilneas leaving the Alliance after the war.]],
+    },
+    {
+        era = "WC3",
+        text = [[Went against Genn's orders and sent troops to the aid of Jaina Proudmoore when the former ally asked for help during the Third War.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[After King Genn refused to aid Lordaeron during the fallout of Arthas' betrayal and constructed the Greymane Wall to further isolate Gilneas, Darius started the Northgate Rebellion. He saw his former friend as a tyrant and led the rebels into the capital city. The rebellion failed and Crowley and his loyalists were thrown into prison as traitors.]],
+    },
+    {
+        era = "Cata",
+        text = [[Was freed by Genn when both the Forsaken and the worgen besieged Gilneas. Was prepared to die, ensuring the evacuation of civilians, but became afflicted with the worgen curse instead. Made contact with the night elves, but stayed in Gilneas while Genn's people sought to rejoin the Alliance. Formed the Gilneas Liberation Front but had to retreat when Sylvanas took the city after many battles.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined Genn and Tess Greymane aboard the Skyfire and aided the Alliance on the Broken Isles. Worked with Odyn's Valarjar to combat the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Made new attempts to liberate Gilneas from Forsaken occupation after the Battle of Lordaeron. Later joined the Alliance during the Battle at the Gates of Orgrimmar.]],
+    },
+    {
+        era = "DF",
+        text = [[Fought the Scarlet Crusade and drove them out of Gilneas, following the Forsaken's show of goodwill by withdrawing their troops. Was finally able to breathe freely again and was glad to see Gilneas back in Alliance control.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Spoke proudly of his daughter, Lorna, and reminisced about old times with his former enemy, Eitrigg, in the Arcantina.]],
     }
 }

@@ -1,0 +1,5 @@
+-- ============================================================
+-- IMAGO — locales/koKR/data/eras.lua
+-- Korean overrides for Eras lore texts.
+-- No overrides yet — enUS fallback is used.
+-- ============================================================

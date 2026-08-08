@@ -18,6 +18,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner"] = {
     ids = {238386, 239826, 235502, 235765, 235763, 236945, 235532, 235389, 235662, 238296, 235726, 235471, 235715, 239574, 240232, 240378, 235521, 235717, 240455, 239978, 235609, 235660, 235544, 235664, 240393, 235601, 244300, 244761},
     zones = {},
     category = "CAT_NEUTRAL",
+    encounter_journal_id = 2738,
 }
 
 IMAGOdb.npcs.CAT_NEUTRAL["decimus"] = {
@@ -86,6 +87,41 @@ IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"] = {
 IMAGOdb.npcs.CAT_NEUTRAL["maiev_shadowsong"] = {
     displayID = 249136,
     ids = {249136, 253569, 244084, 253567, 253568, 254412},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["brann_bronzebeard"] = {
+    displayID = 254592,
+    ids = {254592, 257541, 255063},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["soridormi"] = {
+    displayID = 259153,
+    ids = {259153},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["queen_talanji"] = {
+    displayID = 253660,
+    ids = {253660, 259877},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["rokhan"] = {
+    displayID = 253661,
+    ids = {253661},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["zekhan"] = {
+    displayID = 259790,
+    ids = {259790, 257934},
     zones = {},
     category = "CAT_NEUTRAL",
 }
