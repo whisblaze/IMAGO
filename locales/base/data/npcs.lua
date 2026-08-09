@@ -403,6 +403,41 @@ IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"].timeline = {
 }
 
 -- CAT_LIGHT
+
+IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].name = "Gidwin Goldbraids"
+IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].race = "Dwarf"
+IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].lore = [[Wanting to become a paladin since he was a lad, Gidwin and his best friend Tarenar Sunstrike pretended their entire childhoods to be heroes. At Light's Hope Chapel, they made that dream reality and joined the Argent Crusade. 
+
+Unlike Tarenar, Gidwin - "Giddy" to his friends - is meticulous when it comes to his training. He keeps his armor and weapons in pristine condition, diligently studies texts of the Holy Light, and takes his duties seriously. Outside of battle, however, he is every bit as chaotic as his best friend, especially when drinks are involved.]]
+IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].zones = {"Silvermoon City", "Parhelion Plaza", "Isle of Quel'Danas", "Arcantina"}
+IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].timeline = {
+    {
+        era = "Cata",
+        text = [[Traveled with Tarenar on Fiona's caravan to become paladins at Light's Hope Chapel. Left to fight alone after Tarenar didn't take their mission seriously, but was caught and almost made a death knight by the Scourge. After being rescued, he forgave his friend and both were accepted into the Argent Crusade.]],
+    },
+    {
+        era = "WoD",
+        text = [[Accompanied Fiona and Tarenar to Draenor. Was poisoned and paralyzed during a botani attack, but Fiona nursed him back to health.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the reformed Knights of the Silver Hand and fought against the Burning Legion on the Broken Shore.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Celebrated the Legion's defeat with Tarenar by running up enormous bar tabs in Silvermoon City, Tarenar's home. Had to sneak out when the Fourth War erupted.]],
+    },
+    {
+        era = "DF",
+        text = [[Went traveling with Fiona once more on the Dragon Isles.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Answered the Sunwell's call to defend Silvermoon. Finally settled the mountain of drinking debts he and Tarenar had accumulated over the years. Since most inns in Quel'Thalas had long since banned them, the Arcantina became their new favorite establishment.]],
+    }
+}
+
 -- MEHLAR DAWNBLADE --
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge_midnight"].name = "Mehlar Dawnblade"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge_midnight"].race = "Blood Elf"
@@ -1988,6 +2023,98 @@ IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"].timeline = {
     }
 }
 
+IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].name = "Commander Jarod Shadowsong"
+IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].race = "Night elf"
+IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].lore = [[Jarod Shadowsong was once called “the Hope of the Elves” during the War of the Ancients. As one superior after another fell in battle, due to his sheer skill and determination, he could have become the leader of the Kaldorei after the war was won. Never one to crave power or seek that kind of responsibility, he left his people and lived in self-exile with his wife, Shalasyr, for ten thousand years.
+
+He rejoined night elven society when Shalasyr passed away and repaired his relationship with his sister, Maiev. He has since served as an army commander again during the Fourth War and the war against Fyrakk in the Emerald Dream.]]
+IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].zones = {"Amirdrassil", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].timeline = {
+    {
+        era = "Ancient",
+        text = [[Fought under Kur'talos Ravencrest and then Desdel Stareye during the War of the Ancients. Rose through the ranks and became the military leader of the Kaldorei resistance, with even Malfurion and Tyrande deferring to him. Burdened by survivor's guilt and disillusioned by how the Kaldorei moved on as a people, he left society with his wife Shalasyr after the war was won.]],
+    },
+    {
+        era = "WC3",
+        text = [[Heard rumors that the night elves, himself and his wife included, had become mortal.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[After living together for ten thousand years, Shalasyr fell ill and passed away. Distraught, Jarod rejoined the night elves in Darnassus and reconnected with his sister Maiev and former war companions. Uncovered Maiev's killing spree of Highborne and Worgen victims, and drove her off into exile.]],
+    },
+    {
+        era = "Cata",
+        text = [[Fought Ragnaros and the Twilight's Hammer on Mount Hyjal. Was captured by the cult and saved by an Adventurer. Commanded the night elven military and once more fought alongside dragons and Wild Gods.]],
+    },
+    {
+        era = "Legion",
+        text = [[Freed Maiev from Black Rook Hold and fought alongside her to defeat the ghost of Lord Desdel Stareye. Later, together with Cenarius, led the defense of Black Rook Hold when it came under assault from the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought under Maiev during the Battle of Darkshore against the Horde.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the united forces of Azeroth in the Emerald Dream to defeat Fyrakk the Blazing. Helped establish Bel'ameth and chose to remain there.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Fought on the Isle of Quel'Danas against the Devouring Host.]],
+    }
+}
+
+-- BELATH_DAWNBLADE --
+IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"].name = "Belath Dawnblade"
+IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"].race = "Blood elf"
+IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"].lore = [[The Illidari are mostly known as reckless but efficient hunters of demons. Belath shares their tenacity, but his strength lies in a stealthy and creative approach to combat. A blood elven scout by trade, he stands out as a calm and capable mind who has risen in the ranks through results alone. 
+
+Just because the Legion has been defeated doesn't mean that Belath now rests on his laurels. He has returned to Silvermoon to eradicate the Void besieging it – and any traces of Fel magic left.]]
+IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"].zones = {"Silvermoon City", "Murder Row", "Val", "Naigtal"}
+IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"].timeline = {
+    {
+        era = "TBC",
+        text = [[Participated in the invasion of Mardum and briefly got captured by demons of the Burning Legion. Was later imprisoned alongside his fellow Illidari by Maiev Shadowsong.]],
+    },
+    {
+        era = "Legion",
+        text = [[After being freed to fight in the Third Invasion of the Burning Legion, he worked alongside the Wardens to track down any other demons that had escaped from the Vault of the Wardens. He coordinated scouting missions to the Black Temple, Stormheim, and Niskara and fought as the Slayer's Champion.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Stopped an illegal operation in Murder Row that supplied the frightened citizens of Silvermoon with Fel Magic. After Xal'atath's disappearance through the Darkwell, Belath tracked down the new ethereal and domanaar leaders of the Devouring Host to the formerly Legion-occupied worlds of Val and Naigtal. Joined Decimus' and Maella's strike teams on both worlds.]],
+    }
+}
+
+-- WARDRUID LOTI --
+IMAGOdb.npcs.CAT_NEUTRAL["wardruid_loti_midnight"].name = "Wardruid Loti"
+IMAGOdb.npcs.CAT_NEUTRAL["wardruid_loti_midnight"].race = "Zandalari troll"
+IMAGOdb.npcs.CAT_NEUTRAL["wardruid_loti_midnight"].lore = [[Under King Rastakhan, four of the six members of the Zanchuli Council turned traitors. Loti was not among them and faithfully served the king until his death. Now she advises his daughter, Queen Talanji, with equal loyalty. 
+
+Loti is responsible for a resurgence of druidism in Zandalar, and as the High Priestess of Gonk, the Great Hunter, she has inspired the young generations of warriors, hunters and druids of her homeland. Her tenacity in battle is second only to her loa himself.]]
+IMAGOdb.npcs.CAT_NEUTRAL["wardruid_loti_midnight"].zones = {"The Den"}
+IMAGOdb.npcs.CAT_NEUTRAL["wardruid_loti_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["wardruid_loti_midnight"].timeline = {
+    {
+        era = "Pre-BfA",
+        text = [[Earned her place in the Zanchuli Council as one of its younger members through the overwhelming support from Zandalar's hunters and warriors. Druidism saw a rise in popularity in the empire after she was appointed.]],
+    },
+    {
+        era = "BfA",
+        text = [[Investigated the use of illegal blood magic in Dazar'alor and frequently empowered the Horde Champion with Gonk's power. Remained loyal to Rastakhan when Yazma and Zul betrayed the crown and helped defend the kingdom against Mythrax the Unraveler. Fought against the Alliance in the Battle of Dazar'alor. Attended Queen Talanji's coronation and swore loyalty to her.]],
+    },
+    {
+        era = "DF",
+        text = [[Met with Zen'tabra of the Darkspear Tribe in the Ohn'ahran Plains and aided the green dragonflight to reclaim the portal on the Ancient Bough from the Primalists.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Accompanied Queen Talanji to Harandar.]],
+    }
+}
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane_midnight"].name = "High Inquisitor Whitemane"
 IMAGOdb.npcs.CAT_EBON_BLADE["high_inquisitor_whitemane_midnight"].race = "Human"
@@ -2601,6 +2728,49 @@ IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"].timeline = {
 }
 
 -- CAT_ARCANTINA
+
+IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].name = "Thisalee Crow"
+IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].race = "Night elf"
+IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].lore = [[One of the younger night elven Druids of the Talon, Thisalee has fought for both nature and the Alliance through many of Azeroth's greatest conflicts. Patience has never been one of her virtues, and she tends to treat her superiors' orders as little more than suggestions. Her results speak for themselves, however, as her “kill first, ask questions later” attitude proved instrumental in saving the Wild God Aviana during the Cataclysm.
+
+Despite her recklessness, Thisalee knows when she is out of her depth and can be counted on when it matters most.]]
+IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].zones = {"Arcantina"}
+IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].timeline = {
+    {
+        era = "Cata",
+        text = [[Fought and slew the harpies on Mount Hyjal by the dozen against Skylord Omnuron's orders when she uncovered they were working with the black dragonflight. Found and safeguarded the egg of Aviana. Later overestimated her own abilities fighting the Firelands' elementals and regrouped with the other druids under Malfurion Stormrage during the invasion.]],
+    },
+    {
+        era = "WoD",
+        text = [[Fought under the Alliance commander against the Iron Horde in Gorgrond. Sent for reinforcements to take the fight to Warchief Grommash Hellscream.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the druids in the Dreamgrove in the fight against the Burning Legion. Defended the Shrine of Aviana and saved Goldrinn. Helped the Archdruid slay the eredar commander Katith'rax after uncovering his plot to vanquish the Ancients.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought in the Battle of Darkshore and kept watch over the Twilight's Hammer, who sought to exploit the chaos of the Fourth War.]],
+    },
+    {
+        era = "SL",
+        text = [[Remained in Bashal'Aran until the Alliance's final victory against the Horde invaders in Darkshore.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the green dragonflight in their defense of the Ancient Bough from the Primalists' attacks. Moved to Bel'ameth after Amirdrassil bloomed.]],
+    },
+    {
+        era = "TWW",
+        text = [[Joined the Alliance army in the fight against Xal'atath on the Isle of Dorn.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Shared a drink in the Arcantina with fellow druid Zen'tabra.]],
+    }
+}
+
 -- GARONA HALFORCEN --
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].name = "Garona Halforcen"
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].race = "Half-orc, half-draenei"
