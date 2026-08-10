@@ -248,7 +248,7 @@ local L = L_DE
     L["CAT_HARANIR"]     = "Die Haraniir"
 
     -- Expansion Grid Navigation
-    L["FATES_BACK_EXPANSIONS"] = "\226\134\144 Erweiterungen"
+    L["FATES_BACK_EXPANSIONS"] = "< Erweiterungen"
 
     -- Credits
     L["TAB_CREDITS"] = "Credits"
@@ -504,7 +504,7 @@ L = L_EN
     L["CAT_HARANIR"]     = "The Haraniir"
 
     -- Expansion Grid Navigation
-    L["FATES_BACK_EXPANSIONS"] = "\226\134\144 Expansions"
+    L["FATES_BACK_EXPANSIONS"] = "< Expansions"
 
 -- ============================================================
 -- RUSSISCH (ruRU) - UI-Chrome nur (Lore bleibt EN/DE)
