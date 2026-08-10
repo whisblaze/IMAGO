@@ -544,9 +544,9 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].timeline = IMAGOdb.timelines.
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].name = "Aeonara Dawnshade"
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].aliases = {"Aeonara"}
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].race = "Void elf"
-IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].lore = [[As the only known void elf paladin, Aeonara Dawnshade fights against the armies of the Void. She defended Telogrus Rift from the void ethereals of the Shadowguard, and later fought against Dimensius’ forces at Manaforge Omega in K'aresh.
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].lore = [[As the only known void elf paladin, Aeonara Dawnshade fights against the armies of the Void. She defended Telogrus Rift from the void ethereals of the Shadowguard, and later fought against Dimensius' forces at Manaforge Omega in K'aresh.
 
-She has now been summoned as part of the Vanguard of the Light in order to defend the Sunwell from Xal’atath’s Devouring Host.]]
+She has now been summoned as part of the Vanguard of the Light in order to defend the Sunwell from Xal'atath's Devouring Host.]]
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].zones = {"Parhelion Plaza"}
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].timeline = IMAGOdb.timelines.AEONARA_DAWNSHADE
@@ -609,7 +609,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["decimus_midnight"].timeline = IMAGOdb.timelines.DECIMU
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].name = "King Mrgl-Mrgl"
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].race = "Murloc"
-IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].lore = "Behind King Mrgl-Mrgl’s grand murloc facade lies a simple night elf researcher. Originally a part of a druidic research group, King Mrgl-Mrgl has grown far beyond his humble beginnings. After disguising himself as a murloc to observe their populations in Northrend, Mrgl-Mrgl was revered by the creatures and chosen as their king. Though originally reluctant, he accepted the role and never looked back. Ever since, King Mrgl-Mrgl has been found aiding the murlocs of Azeroth and protecting them from outside threats."
+IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].lore = "Behind King Mrgl-Mrgl's grand murloc facade lies a simple night elf researcher. Originally a part of a druidic research group, King Mrgl-Mrgl has grown far beyond his humble beginnings. After disguising himself as a murloc to observe their populations in Northrend, Mrgl-Mrgl was revered by the creatures and chosen as their king. Though originally reluctant, he accepted the role and never looked back. Ever since, King Mrgl-Mrgl has been found aiding the murlocs of Azeroth and protecting them from outside threats."
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].zones = {"Zul'Aman"}
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].source = "austin - IMAGO Community"
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].timeline = IMAGOdb.timelines.KING_MRGL_MRGL
@@ -678,7 +678,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].timeline = IMAGOdb.timel
 IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].name = "Lirath Windrunner"
 IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].aliases = {"Lirath"}
 IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].race = "High elf"
-IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].lore = [[The youngest of the four, and only brother among the Windrunner siblings. Lirath was a brilliant singer who made a name for himself performing at Lord Saltheril's court, and was eventually named Royal Musician by Kael’thas Sunstrider.
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].lore = [[The youngest of the four, and only brother among the Windrunner siblings. Lirath was a brilliant singer who made a name for himself performing at Lord Saltheril's court, and was eventually named Royal Musician by Kael'thas Sunstrider.
 
 After the death of their parents, Lirath demanded his sisters train him as a ranger. Lirath was killed while defending Windrunner Village from orcs during the burning of Quel'thalas.]]
 IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].zones = {"Windrunner Spire"}
@@ -769,9 +769,9 @@ IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].aliases = {"Darion Mogra
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].race = "Human"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].lore =
 [[
-Darion Mograine was a paladin of the Argent Dawn who, after sacrificing his life to save the soul of his father, was resurrected as a Death Knight to serve as one of the Lich King’s most powerful commanders. Breaking free from the Lich King’s control at the Battle for Light’s Hope Chapel, he founded the Ebon Blade, a band of Death Knights committed to protecting Azeroth from any threats that come her way.
+Darion Mograine was a paladin of the Argent Dawn who, after sacrificing his life to save the soul of his father, was resurrected as a Death Knight to serve as one of the Lich King's most powerful commanders. Breaking free from the Lich King's control at the Battle for Light's Hope Chapel, he founded the Ebon Blade, a band of Death Knights committed to protecting Azeroth from any threats that come her way.
 
-Now leading the Four Horsemen, Darion defends the home of the Argent Crusade from the Scourge whilst they assist Azeroth’s champion with the destruction of the Devouring Host.]]
+Now leading the Four Horsemen, Darion defends the home of the Argent Crusade from the Scourge whilst they assist Azeroth's champion with the destruction of the Devouring Host.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].zones = {"Eastern Plaguelands"}
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].source = "Nebb - IMAGO Community"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].timeline = IMAGOdb.timelines.DARION_MOGRAINE
@@ -780,7 +780,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].name = "Thassarian"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].race = "Human"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].lore =
-[[As a young man, Thassarian joined the Lordaeron army hoping to follow in his father’s footsteps, and followed Prince Arthas on his expedition to Northrend. It was there he was slain and reanimated as a death knight. During his time under the Lich King’s control, he committed many atrocities, even killing his mother. After being freed from the Lich King’s control, he joined the Knights of the Ebon Blade and became the first death knight to serve the Alliance, showing unwavering loyalty to humanity once more. 
+[[As a young man, Thassarian joined the Lordaeron army hoping to follow in his father's footsteps, and followed Prince Arthas on his expedition to Northrend. It was there he was slain and reanimated as a death knight. During his time under the Lich King's control, he committed many atrocities, even killing his mother. After being freed from the Lich King's control, he joined the Knights of the Ebon Blade and became the first death knight to serve the Alliance, showing unwavering loyalty to humanity once more. 
 
 Despite the faction divide, Thassarian maintains a powerful, complicated brotherhood with the Horde death knight Koltira Deathweaver, a bond forged in death that heavily influences his path.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].zones = {"Eastern Plaguelands"}
@@ -822,7 +822,7 @@ After the defeat of the orcs in the Second War, Thoras disagreed with the policy
 
 At some point after the death of King Terenas Menethil, Thoras was murdered by his son Galen.
 
-During the Burning Legion’s third invasion, the Knights of the Ebon Blade raised Thoras as a member of the Four Horsemen. Believing that he had failed as a father and as a king, Thoras joined them in order to preserve peace in Azeroth.]]
+During the Burning Legion's third invasion, the Knights of the Ebon Blade raised Thoras as a member of the Four Horsemen. Believing that he had failed as a father and as a king, Thoras joined them in order to preserve peace in Azeroth.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane_midnight"].zones = {"The Dreamrift", "The Voidspire", "Eastern Plaguelands"}
 IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane_midnight"].timeline = IMAGOdb.timelines.THORAS_TROLLBANE
@@ -849,7 +849,7 @@ L'ura was once one of these shining beacons of holy energy. It stayed behind on 
 
 Imprisoned for millennia, the once bright creature fell into a state of Void. Guided by madness and chaos and wrath, it became a dangerous entity to most and a powerful weapon to others. 
 
-In the Seat of the Triumvirate, Alleria Windrunner eventually confronted the fallen naaru and subdued it, binding its essence within herself. Now the void-touched ranger wields L’ura’s power as her own, yet the darkened naaru still endures within her, waiting for the moment it may be unleashed once again.]]
+In the Seat of the Triumvirate, Alleria Windrunner eventually confronted the fallen naaru and subdued it, binding its essence within herself. Now the void-touched ranger wields L'ura's power as her own, yet the darkened naaru still endures within her, waiting for the moment it may be unleashed once again.]]
 IMAGOdb.npcs.CAT_VOID["l_ura_midnight"].zones = {"Isle of Quel'Danas"}
 IMAGOdb.npcs.CAT_VOID["l_ura_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_VOID["l_ura_midnight"].timeline = IMAGOdb.timelines.L_URA
@@ -858,16 +858,16 @@ IMAGOdb.npcs.CAT_VOID["l_ura_midnight"].timeline = IMAGOdb.timelines.L_URA
 IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].name = "Mor'duun"
 IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].race = "Ogre"
-IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].lore = [[As a powerful ogre mage, Mor’duun led the Twilght’s Blade, a cult devoted to Xal’atath. After his devotion drew her attention, she granted Mor’duun the power of the Void, renewing the cult’s fervor. 
+IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].lore = [[As a powerful ogre mage, Mor'duun led the Twilght's Blade, a cult devoted to Xal'atath. After his devotion drew her attention, she granted Mor'duun the power of the Void, renewing the cult's fervor. 
 
-Mor’duun personally led the Twilight’s Blade’s invasion of Zul'Aman, leaving Atal’Aman in ruins and commanding his forces from the Broken Throne.]]
+Mor'duun personally led the Twilight's Blade's invasion of Zul'Aman, leaving Atal'Aman in ruins and commanding his forces from the Broken Throne.]]
 IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].zones = {"Zul'Aman"}
 IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].timeline = IMAGOdb.timelines.MOR_DUUN
 
 -- XAL'ATATH --
 IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].name = "Xal'atath"
-IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].aliases = {"Xal’atath"}
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].race = "Unknown"
 IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].lore = [[Her smile is a threat, her whispers are warnings, and her promises are lies. The Harbinger of the Void has manipulated the people of Azeroth for millennia, and as easily as she elevated her allies to great power, she abandoned them to their doom.
 
@@ -931,8 +931,8 @@ IMAGOdb.npcs.CAT_AMANI["halazzi_midnight"].zones = {"Zul'Aman"}
 IMAGOdb.npcs.CAT_AMANI["halazzi_midnight"].source = "Metrus"
 IMAGOdb.npcs.CAT_AMANI["halazzi_midnight"].timeline = IMAGOdb.timelines.HALAZZI
 
+-- Zul'Jan --
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].name = "Zul'jan"
-
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].race = "Troll"
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].lore = [[The impulsive Zul'jan is chief advisor to the current ruler of the Amani tribes – his own sister, Zul'jarra. Unlike her though, Zul'jan distrusts the loa. As he sees it, they had abandoned the trolls in their time of greatest need. As much as he might disagree with his older sister on these matters, he genuinely cares about her and would do his utmost to protect her.
@@ -959,7 +959,7 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].timeline = IMAGOdb.timeli
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].name = "Filo"
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].aliases = {"loa of children", "Kapara Loa"}
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].race = "Kapara (Loa)"
-IMAGOdb.npcs.CAT_AMANI["filo_midnight"].lore = [[Worshipped in Zul’Aman as the Loa of Children, Filo never speaks on his own, instead taking the youngest child of each village as his speaker. While gentle toward those he protects, he pursues anyone who dares harm his children with a vow of vengeance.
+IMAGOdb.npcs.CAT_AMANI["filo_midnight"].lore = [[Worshipped in Zul'Aman as the Loa of Children, Filo never speaks on his own, instead taking the youngest child of each village as his speaker. While gentle toward those he protects, he pursues anyone who dares harm his children with a vow of vengeance.
 
 When a child dies before their parents, Filo will guard their spirit until their parents join them in the afterlife.]]
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].zones = {"Zul'Aman", "Atal'Aman"}

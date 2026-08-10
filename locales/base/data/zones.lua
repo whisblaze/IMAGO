@@ -4,19 +4,19 @@
 
 IMAGOdb.zones[2405].name = "Voidstorm"
 IMAGOdb.zones[2405].aliases = {"Voidspire", "Stormarion Citadel", "Slayer's Rise"}
-IMAGOdb.zones[2405].lore = "Not much is known about the scarred landscape now known as the Voidstorm. Hostile and alien, this broken world once knew life and peace. In times past, the hills and crags were part of a world called Predacea. A society of knowledge and scientific progress, Predacea was not immune to the drums of war. In seeking an end to all conflict, a weapon of mass destruction was unleashed that ended their civilization entirely. Untold years later, the remnants of this planet have become the staging ground for Xal’atath’s war on Azeroth."
+IMAGOdb.zones[2405].lore = "Not much is known about the scarred landscape now known as the Voidstorm. Hostile and alien, this broken world once knew life and peace. In times past, the hills and crags were part of a world called Predacea. A society of knowledge and scientific progress, Predacea was not immune to the drums of war. In seeking an end to all conflict, a weapon of mass destruction was unleashed that ended their civilization entirely. Untold years later, the remnants of this planet have become the staging ground for Xal'atath's war on Azeroth."
 IMAGOdb.zones[2405].pointsOfInterest = {
     {
         name = "Slayer's Rise",
-        lore = "The stench of fresh blood fills the air across the plains of Slayer’s Rise. Two domanaar, Vidious and Ziadan, wage war on one another. Ostensibly, the two battle for control of the territory, but the glee each seems to take in the bloodshed certainly plays a role in their schemes. The two foes have recruited equally bloodthirsty members of the Horde and Alliance, sending them to battle in their names for glory… or for sport."
+        lore = "The stench of fresh blood fills the air across the plains of Slayer's Rise. Two domanaar, Vidious and Ziadan, wage war on one another. Ostensibly, the two battle for control of the territory, but the glee each seems to take in the bloodshed certainly plays a role in their schemes. The two foes have recruited equally bloodthirsty members of the Horde and Alliance, sending them to battle in their names for glory… or for sport."
     },
     {
         name = "Stormarion Citadel",
-        lore = "Stormarion Citadel rests on the southwest edge of the Voidstorm, peering out over an endless expanse of jagged canyons and dead earth. An outfit of ren’dorei researchers now occupy the area, attempting to stabilize the multitude of singularities scattered around the citadel. Threatened on all sides by the Xal’atath’s forces, these brave void elves continue their work no matter the cost."
+        lore = "Stormarion Citadel rests on the southwest edge of the Voidstorm, peering out over an endless expanse of jagged canyons and dead earth. An outfit of ren'dorei researchers now occupy the area, attempting to stabilize the multitude of singularities scattered around the citadel. Threatened on all sides by the Xal'atath's forces, these brave void elves continue their work no matter the cost."
     },
     {
         name = "Voidspire",
-        lore = "Xal’atath’s grand design brought to fruition, the Voidspire looms over the entirety of the Voidstorm. Created with the captured essence of Dimensius the All-Devouring, the Voidspire is a focus of dark energy unlike any Azeroth has ever seen. Here, the Devouring Host marshals their forces in preparation for their inevitable final assault on Quel’Thalas"
+        lore = "Xal'atath's grand design brought to fruition, the Voidspire looms over the entirety of the Voidstorm. Created with the captured essence of Dimensius the All-Devouring, the Voidspire is a focus of dark energy unlike any Azeroth has ever seen. Here, the Devouring Host marshals their forces in preparation for their inevitable final assault on Quel'Thalas"
     }
 }
 
@@ -56,20 +56,20 @@ Those are the world trees of Azeroth that have been known, protected and revered
 }
 
 IMAGOdb.zones[2437].name = "Zul'Aman"
-IMAGOdb.zones[2437].aliases = {"Zul’Aman", "Amani’Zar Village", "Loa Temples", "Atal'Aman", "Atal’Aman"}
-IMAGOdb.zones[2437].lore = "The towering forests of Zul’Aman have been home to the Amani trolls since long before the high elves ever established Quel’Thalas. Border skirmishes have defined the relationship between the two factions for as long as anyone can remember. Under the leadership of Zul’jin, the Amani twisted the magic of their loa to violent ends. In response, the wild gods went silent, abandoning the Amani tribe to their own fate for decades. Now, with the Twilight’s Blade infesting their woods, the trolls look to their neighbors for aid. Zul’jin’s grandchildren, Zul’jarra and Zul’jan, seek to guide the Amani back to their former glory."
+IMAGOdb.zones[2437].aliases = {"Amani'Zar Village", "Loa Temples", "Atal'Aman"}
+IMAGOdb.zones[2437].lore = "The towering forests of Zul'Aman have been home to the Amani trolls since long before the high elves ever established Quel'Thalas. Border skirmishes have defined the relationship between the two factions for as long as anyone can remember. Under the leadership of Zul'jin, the Amani twisted the magic of their loa to violent ends. In response, the wild gods went silent, abandoning the Amani tribe to their own fate for decades. Now, with the Twilight's Blade infesting their woods, the trolls look to their neighbors for aid. Zul'jin's grandchildren, Zul'jarra and Zul'jan, seek to guide the Amani back to their former glory."
 IMAGOdb.zones[2437].pointsOfInterest = {
     {
-        name = "Amani’Zar Village",
-        lore = "As the largest village in Zul’Aman and de facto capital of the Amani people, Amani’Zar Village has become a melting pot of troll culture. Many tribes fall under the Amani banner, including the Witherbark, Shadowpine, and Revantusk. Members of each of these tribes make their home in Amani’Zar, uniting their people against threats like the Viletusk and Twilight’s Blade."
+        name = "Amani'Zar Village",
+        lore = "As the largest village in Zul'Aman and de facto capital of the Amani people, Amani'Zar Village has become a melting pot of troll culture. Many tribes fall under the Amani banner, including the Witherbark, Shadowpine, and Revantusk. Members of each of these tribes make their home in Amani'Zar, uniting their people against threats like the Viletusk and Twilight's Blade."
     },
     {
         name = "The Loa Temples",
-        lore = "Dedicated temples to each of the major Amani loa dot the landscape throughout Zul’Aman. Halazzi the lynx, Jan’alai the dragonhawk, Nalorakk the bear, and Akil’zon the eagle each had major structures built in their honor. Though they were once spiritual centers of the Amani empire, they went silent after Zul’jin’s betrayal. Under Zul’jarra, the voices of the loa have returned to their people, and their temples have reawakened."
+        lore = "Dedicated temples to each of the major Amani loa dot the landscape throughout Zul'Aman. Halazzi the lynx, Jan'alai the dragonhawk, Nalorakk the bear, and Akil'zon the eagle each had major structures built in their honor. Though they were once spiritual centers of the Amani empire, they went silent after Zul'jin's betrayal. Under Zul'jarra, the voices of the loa have returned to their people, and their temples have reawakened."
     },
     {
         name = "Atal'Aman",
-        lore = "The city of Atal'Aman was once a sacred site for the Amani. The temples built throughout were a gathering place for many disciples of the loa. Though still inhabited by the Amani, the spiritual meaning of the temple city has been all but lost. After Zul’jin betrayed the loa and stole their power for himself, the gods vanished, and their worshippers with them. The site has seen frequent bloodshed, being raided by opportunistic adventurers on two separate occasions. Even today, the spirits of those assaults run rampant across these sacred grounds."
+        lore = "The city of Atal'Aman was once a sacred site for the Amani. The temples built throughout were a gathering place for many disciples of the loa. Though still inhabited by the Amani, the spiritual meaning of the temple city has been all but lost. After Zul'jin betrayed the loa and stole their power for himself, the gods vanished, and their worshippers with them. The site has seen frequent bloodshed, being raided by opportunistic adventurers on two separate occasions. Even today, the spirits of those assaults run rampant across these sacred grounds."
     },
 }
 

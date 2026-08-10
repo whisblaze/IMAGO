@@ -133,7 +133,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].name = "Lord Saltheril"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].race = "Blutelf"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].lore = [[Als unbeträchtlicher Adliger der Blutelfen ist Lord Saltheril in ganz Quel'Thalas für seine prunkvollen Feste bekannt, bei denen seine Gäste mit magischen Weinen und extravaganten Speisen bewirtet werden. Saltheril war zudem ein Förderer von Lirath Windläufer und organisierte musikalische Darbietungen für verschiedene Adlige und Mitglieder des Königshauses von Silbermond, darunter Prinz Kael'thas Sonnenwanderer und Lor'themar Theron.
 
-Als Überlebender zahlreicher Katastrophen – darunter des Zweiten Krieges und der Invasion der Geißel – hat Saltheril niemals aufgehört, Feste zu veranstalten. Fürstregent Lor’themar bemerkte einst, dass nicht einmal Arthas Menethil ihn lange davon abhalten konnte.]]
+Als Überlebender zahlreicher Katastrophen – darunter des Zweiten Krieges und der Invasion der Geißel – hat Saltheril niemals aufgehört, Feste zu veranstalten. Fürstregent Lor'themar bemerkte einst, dass nicht einmal Arthas Menethil ihn lange davon abhalten konnte.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].zones = {"Immersangwald"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].timeline = IMAGOdb.timelines.LORD_SALTHERIL
@@ -222,7 +222,7 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].race = "Zwergin"
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].lore = [[Als langjährige und respektierte Anführerin der Bronzebart- und der Dunkeleisenklane war Königin Moira nicht immer in einer so angesehenen Position innerhalb der Reihen der Allianz. Die Zeiten, in denen sie sich in Bürgerkriege einmischte, liegen inzwischen jedoch hinter ihr.
 Geboren als einzige Erbin des ehemaligen Königs Magni und als Witwe des verstorbenen Imperators Dagran Thaurissan vom Schwarzfels, gehört sie zwei der drei herrschenden Zwergenklans an. Ihr Sohn, Dagran II., ist dazu bestimmt, der nächste König aller Klane zu werden, sobald er volljährig ist.
 
-Da sie sich mit ihrem Vater nie wirklich verstand, haben die beiden erst vor Kurzem die ersten Schritte zur Versöhnung unternommen. Die gemeinsame Familienzeit wurde jedoch rasch durch Xal’ataths Angriff unterbrochen – zuerst auf Dalaran und nun auf Silbermond.]]
+Da sie sich mit ihrem Vater nie wirklich verstand, haben die beiden erst vor Kurzem die ersten Schritte zur Versöhnung unternommen. Die gemeinsame Familienzeit wurde jedoch rasch durch Xal'ataths Angriff unterbrochen – zuerst auf Dalaran und nun auf Silbermond.]]
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].zones = {"Insel von Quel'Danas", "Silbermond"}
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].timeline = IMAGOdb.timelines.MOIRA_THAURISSAN
@@ -279,7 +279,7 @@ IMAGOdb.npcs.CAT_LIGHT["lothraxion_midnight"].name = "Lothraxion"
 IMAGOdb.npcs.CAT_LIGHT["lothraxion_midnight"].race = "Lichtgeschmiedeter Nathrezim"
 IMAGOdb.npcs.CAT_LIGHT["lothraxion_midnight"].lore = [[Man sagt, dass Schreckenslords grausame, sadistische und manipulative Wesen seien - entweder Spione der Brennenden Legion oder der Reiche des Todes selbst. Gestaltwandler, die die Reihen ihrer Feinde infiltrieren und selbst die edelsten Seelen gegeneinander aufbringen. Man sagt, man könne ihnen nicht vertrauen.
 
-Lothraxion ist die eine Ausnahme von dieser Regel. Er zerstörte unzählige Welten im Dienst von Sargeras’ großer Vision und machte die Leere zu seinem größten Feind. Als der Kreuzzug der Dämonen ihn mit den Draenei zusammenführte, ließ sich Lothraxion dazu bewegen, seine früheren Herren zu verraten. Er schloss sich der Armee des Lichts an und wurde lichtgeschmiedet.
+Lothraxion ist die eine Ausnahme von dieser Regel. Er zerstörte unzählige Welten im Dienst von Sargeras' großer Vision und machte die Leere zu seinem größten Feind. Als der Kreuzzug der Dämonen ihn mit den Draenei zusammenführte, ließ sich Lothraxion dazu bewegen, seine früheren Herren zu verraten. Er schloss sich der Armee des Lichts an und wurde lichtgeschmiedet.
 
 Da er all die Schrecken kennt, die sowohl das Fel als auch die Leere über den Kosmos gebracht haben, akzeptiert Lothraxion keinerlei Kompromisse im Umgang mit Wesen, die diesen Mächten dienen. Er ist überzeugt, dass einzig das Licht diese Übel besiegen kann. Nun wurde Lothraxion unter dem Befehl seines Hochexarchen Turalyon zum Sonnenbrunnen gerufen, um erneut gegen die Mächte der Dunkelheit zu kämpfen.]]
 IMAGOdb.npcs.CAT_LIGHT["lothraxion_midnight"].zones = {"Insel von Quel'Danas", "Nexuspunkt Xenas", "Parhelionplaza", "Silbermond", "Leerensturm"}
@@ -300,9 +300,9 @@ IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].timeline = IMAGOdb.timelines.ALO
 -- TAHU WEISENWIND --
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind_midnight"].name = "Tahu Weisenwind"
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind_midnight"].race = "Tauren"
-IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind_midnight"].lore = [[Die Tauren praktizieren Druidismus seit den Anfängen ihres Volkes. Diese Magie erwies Azeroths Mond, Mu’sha, einem der Augen der Erdenmutter, ihre Ehrfurcht und Huldigung. Tahu und seine Freundin Aponi Lichtmähne dachten über die Natur des anderen Auges der Erdenmutter nach – An’she, der Sonne – und fragten sich, warum die Tauren ihn so lange vernachlässigt hatten. So wurden die ersten Samen für neue Wege ihres Volkes gesät.
+IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind_midnight"].lore = [[Die Tauren praktizieren Druidismus seit den Anfängen ihres Volkes. Diese Magie erwies Azeroths Mond, Mu'sha, einem der Augen der Erdenmutter, ihre Ehrfurcht und Huldigung. Tahu und seine Freundin Aponi Lichtmähne dachten über die Natur des anderen Auges der Erdenmutter nach – An'she, der Sonne – und fragten sich, warum die Tauren ihn so lange vernachlässigt hatten. So wurden die ersten Samen für neue Wege ihres Volkes gesät.
 
-Während Aponi zu einer Paladina wurde, gründete Tahu den priesterlichen Orden der Seher, und beide folgten An’shes Lehren des Lichts. Seitdem hat er unzählige Priester ausgebildet und Azeroth bei vielen Gelegenheiten seine Hilfe angeboten.]]
+Während Aponi zu einer Paladina wurde, gründete Tahu den priesterlichen Orden der Seher, und beide folgten An'shes Lehren des Lichts. Seitdem hat er unzählige Priester ausgebildet und Azeroth bei vielen Gelegenheiten seine Hilfe angeboten.]]
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind_midnight"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond"}
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind_midnight"].timeline = IMAGOdb.timelines.TAHU_SAGEWIND
@@ -319,7 +319,7 @@ IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne_midnight"].timeline = IMAGOdb.timeline
 -- KRIEGSKAPLANIN SENN --
 IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn_midnight"].name = "Kriegskaplanin Senn"
 IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn_midnight"].race = "Lichtgeschmiedete Draenei"
-IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn_midnight"].lore = [[Als loyale Leutnantin von Turalyon kämpfte Senn über Jahrhunderte hinweg im Dienst der Armee des Lichts gegen kosmische Mächte des Bösen. Dabei entwickelte sie einen tiefen Hass auf die Kräfte der Leere und kann ihre Abscheu gegenüber ihren Verbündeten aus den Reihen der Ren’dorei kaum verbergen.
+IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn_midnight"].lore = [[Als loyale Leutnantin von Turalyon kämpfte Senn über Jahrhunderte hinweg im Dienst der Armee des Lichts gegen kosmische Mächte des Bösen. Dabei entwickelte sie einen tiefen Hass auf die Kräfte der Leere und kann ihre Abscheu gegenüber ihren Verbündeten aus den Reihen der Ren'dorei kaum verbergen.
 
 Nun wurde sie vom Sonnenbrunnen erneut in den Kampf für das Licht gerufen. Doch Senn interessiert sich wenig für die Verteidigung von Silbermond. Ihre oberste Priorität ist es, Xal'atath und ihre Diener zu vernichten – koste es, was es wolle.]]
 IMAGOdb.npcs.CAT_LIGHT["war_chaplain_senn_midnight"].zones = {"Insel von Quel'Danas", "Parhelionplaza", "Silbermond", "Die Leerenspitze", "Leerensturm"}
@@ -365,7 +365,7 @@ IMAGOdb.npcs.CAT_LIGHT["arator_midnight"].timeline = IMAGOdb.timelines.ARATOR
 -- NOLAKI --
 IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].name = "Nolaki"
 IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].race = "Zandalaritroll"
-IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].lore = [[Diese leicht zu begeisternde und nur schwer aus der Ruhe zu bringende Zandalaridame wurde unter der Führung von Ra'wani Kanae zum Paladin ausgebildet. Da sie damals noch jung war, blieb sie zurück, als die Allianz Dazar’alor angriff, weil sie überzeugt war, dass ein Krieger mehr oder weniger keinen Unterschied in der Schlacht machen würde. Doch ihre Haltung änderte sich schlagartig, als sowohl ihre Mentorin als auch König Rastakhan getötet wurden.
+IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].lore = [[Diese leicht zu begeisternde und nur schwer aus der Ruhe zu bringende Zandalaridame wurde unter der Führung von Ra'wani Kanae zum Paladin ausgebildet. Da sie damals noch jung war, blieb sie zurück, als die Allianz Dazar'alor angriff, weil sie überzeugt war, dass ein Krieger mehr oder weniger keinen Unterschied in der Schlacht machen würde. Doch ihre Haltung änderte sich schlagartig, als sowohl ihre Mentorin als auch König Rastakhan getötet wurden.
 
 Seitdem ist Nolaki deutlich reifer geworden und hat ihr Leben dem Dienst an anderen gewidmet. Für sie macht genau das einen Paladin aus: andere über sich selbst zu stellen. Deshalb schloss sie sich Tyrs Wache als Vorbild der Aufopferung an – bereit, sich zwischen den Feind und jene zu stellen, die ihren Schutz benötigen.]]
 IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].zones = {"Insel von Quel'Danas"}
@@ -405,7 +405,7 @@ IMAGOdb.npcs.CAT_LIGHT["hadwin_midnight"].timeline = IMAGOdb.timelines.HADWIN
 -- TALTHIS --
 IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].name = "Talthis"
 IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].race = "Blutelf"
-IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].lore = [[Das Aufwachsen während des Dritten Krieges in Quel’Thalas prägte Talthis’ Sicht auf das Leben nachhaltig und beraubte ihn einer friedlichen Kindheit. Er kam zu der Überzeugung, dass die Welt aus dem Gleichgewicht geraten war und dass Mächte des Bösen und des Chaos – wie der Lichkönig und die Brennende Legion – ausgelöscht werden müssten, damit Struktur und Harmonie in die Welt zurückkehren konnten.
+IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].lore = [[Das Aufwachsen während des Dritten Krieges in Quel'Thalas prägte Talthis' Sicht auf das Leben nachhaltig und beraubte ihn einer friedlichen Kindheit. Er kam zu der Überzeugung, dass die Welt aus dem Gleichgewicht geraten war und dass Mächte des Bösen und des Chaos – wie der Lichkönig und die Brennende Legion – ausgelöscht werden müssten, damit Struktur und Harmonie in die Welt zurückkehren konnten.
 
 Er schloss sich den Blutrittern an, um die Überreste der wütenden Geißel in der Todesschneise zu vernichten, und reiste später zu den Dracheninseln, um die elementare Unordnung aufzuhalten. Schließlich wurde er in Tyrs Wache aufgenommen, wo er eine tiefe Wertschätzung für die titanische Philosophie des Friedens durch Ordnung entwickelte.
 
@@ -620,7 +620,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver_midnight"].name = "Koltira Tode
 IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver_midnight"].race = "Untoter Hochelf"
 IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver_midnight"].lore = [[Koltira Todesweber kämpfte und starb für Silbermond, als Arthas Menethil und die Geißel durch ihre Tore marschierten. Der Tod bedeutete jedoch nicht das Ende für ihn, denn schon bald wurde er als Todesritter wiedererweckt.
 
-Unter Arthas’ Kontrolle war er gezwungen, für genau jene Armee zu töten, die alles zerstört hatte, was er einst gekannt und geliebt hatte. Trotz ihrer grausamen Umstände entwickelte er eine echte Freundschaft zu Thassarian – dem Mann, der ihn getötet hatte. Beide wurden schließlich von der Gedankenkontrolle des Lichkönigs befreit und entschieden sich, für die neu gegründeten Ritter der schwarzen Klinge zu kämpfen, und schworen, ganz Azeroth vor den Untoten zu beschützen.
+Unter Arthas' Kontrolle war er gezwungen, für genau jene Armee zu töten, die alles zerstört hatte, was er einst gekannt und geliebt hatte. Trotz ihrer grausamen Umstände entwickelte er eine echte Freundschaft zu Thassarian – dem Mann, der ihn getötet hatte. Beide wurden schließlich von der Gedankenkontrolle des Lichkönigs befreit und entschieden sich, für die neu gegründeten Ritter der schwarzen Klinge zu kämpfen, und schworen, ganz Azeroth vor den Untoten zu beschützen.
 Koltira schloss sich der Horde an und fungierte als Gesandter seiner Mitstreiter, den Todesrittern.
 
 Obwohl sie sich im Verlauf der Fraktionskriege zeitweise auf gegnerischen Seiten wiederfanden, blieben Koltira Todesweber und Thassarian enge Freunde.]]
@@ -690,7 +690,7 @@ IMAGOdb.npcs.CAT_AMANI["nalorakk_midnight"].name = "Nalorakk"
 IMAGOdb.npcs.CAT_AMANI["nalorakk_midnight"].race = "Bär (Loa)"
 IMAGOdb.npcs.CAT_AMANI["nalorakk_midnight"].lore = [[Der Unbeugsame, der Träumer, Eisenkiefer … Der Loa des Krieges und der Erde wurde unter vielen Namen verehrt. Der gewaltige Bär war die wichtigste Gottheit des Bruchhauerstammes und schenkte seinem Volk Stärke im Kampf sowie Wohlstand bei der Ernte. Steinmetze legten ihm Opfergaben dar, und im Gegenzug verstärkte er die Mauern, die sie schützten.
 
-Dann kamen Zul'jin und Hexlord Malacrass, die seine heilige Essenz gewaltsam in ihre stärksten Krieger zwangen – als Teil eines loalästerlichen Krieges gegen die Elfen von Quel’Thalas. Als Zul’jin scheiterte und seine Armee besiegt wurde, wandte sich Nalorakk gemeinsam mit den anderen Loa von Zul’Aman von seinen einst treuen Anhängern ab.]]
+Dann kamen Zul'jin und Hexlord Malacrass, die seine heilige Essenz gewaltsam in ihre stärksten Krieger zwangen – als Teil eines loalästerlichen Krieges gegen die Elfen von Quel'Thalas. Als Zul'jin scheiterte und seine Armee besiegt wurde, wandte sich Nalorakk gemeinsam mit den anderen Loa von Zul'Aman von seinen einst treuen Anhängern ab.]]
 IMAGOdb.npcs.CAT_AMANI["nalorakk_midnight"].zones = {"Nalorakks Hort", "Das Herz des Zorns", "Zul'Aman"}
 IMAGOdb.npcs.CAT_AMANI["nalorakk_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["nalorakk_midnight"].timeline = IMAGOdb.timelines.NALORAKK
@@ -810,7 +810,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["gorgonna_midnight"].timeline = IMAGOdb.timelines.GOR
 -- GARONA DIE HALBORCIN --
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].name = "Garona die Halborcin"
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].race = "Halborc, Halbdraenei"
-IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].lore = [[Garona wird für immer dafür bekannt sein, König Llane Wrynn von Sturmwind ermordet und damit den Ersten Krieg zugunsten der Alten Horde entschieden zu haben. Sie selbst erinnert sich daran vor allem als eine Zeit, in der sie Gul’dan als nahezu willenlose Marionette diente und die Menschen verriet, die ihr mehr Freundlichkeit entgegengebracht hatten, als die unbarmherzige Horde es je getan hatte.
+IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].lore = [[Garona wird für immer dafür bekannt sein, König Llane Wrynn von Sturmwind ermordet und damit den Ersten Krieg zugunsten der Alten Horde entschieden zu haben. Sie selbst erinnert sich daran vor allem als eine Zeit, in der sie Gul'dan als nahezu willenlose Marionette diente und die Menschen verriet, die ihr mehr Freundlichkeit entgegengebracht hatten, als die unbarmherzige Horde es je getan hatte.
 
 Wie ihr Name bereits andeutet, wurde Garona als Tochter einer Draeneimutter und eines orcischen Vaters geboren, was sie zu einer ungewöhnlichen Persönlichkeit macht.
 Ihre angespannte Beziehung zur Horde heilte im Laufe der Jahre allmählich. Heute dient sie ihrem Volk erneut als Assassinin und Spionin, arbeitet jedoch gelegentlich auch mit der Allianz zusammen, wenn dies ihren Zielen dienlich ist.]]
@@ -821,7 +821,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].timeline = IMAGOdb.timel
 -- REXXAR --
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar_midnight"].name = "Rexxar"
 IMAGOdb.npcs.CAT_ARCANTINA["rexxar_midnight"].race = "Halborc, Halboger"
-IMAGOdb.npcs.CAT_ARCANTINA["rexxar_midnight"].lore = [[Als weder richtiger Orc noch Oger geboren, hat sich der Mok’Nathal-Jäger Rexxar, Sohn des Häuptlings Leoroxx, nie besonders für die Streitigkeiten anderer interessiert. Er wurde Zeuge des Niedergangs der Alten Horde durch Höllenfeuerkorruption und Wahnsinn und schwor Kriegshäuptling Schwarzfaust die Treue, damit sein Clan verschont bliebe.
+IMAGOdb.npcs.CAT_ARCANTINA["rexxar_midnight"].lore = [[Als weder richtiger Orc noch Oger geboren, hat sich der Mok'Nathal-Jäger Rexxar, Sohn des Häuptlings Leoroxx, nie besonders für die Streitigkeiten anderer interessiert. Er wurde Zeuge des Niedergangs der Alten Horde durch Höllenfeuerkorruption und Wahnsinn und schwor Kriegshäuptling Schwarzfaust die Treue, damit sein Clan verschont bliebe.
 
 Nachdem der Zweite Krieg verloren war, verließ Rexxar die Horde. Von seinem Clan verstoßen, von der Allianz gefürchtet und ohne jeden Wunsch, sich seinem Volk wieder anzuschließen, begann er, in der Wildnis Kalimdors zu leben. Stets an seiner Seite waren seine treuen tierischen Gefährten, unter denen die Bärin Misha seine engste Freundin war. Diese Bestien sind für ihn weder Haustiere noch Waffen – sie sind seine Familie.
 
