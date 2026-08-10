@@ -16,6 +16,7 @@ local defaults = {
     viewedNPCs    = {},
     favorites     = {},
     history       = {},
+    migratedSlugSuffix = false,
     showOnceOnlyNPC = false,
     showOnceOnlyZone = true,
     noMainLoreTimerClose = false,
@@ -34,6 +35,9 @@ local defaults = {
     -- Mode Toggle
     encyclopediaMode = false,
     manualUnlocks = {},
+    -- Eras Progress
+    seenEras             = {},
+    erasEncyclopediaMode = false,
 }
 
 -- ============================================================
@@ -42,6 +46,7 @@ local defaults = {
 
 local DEV_PLAYERS = {
     ["lyvienne"] = true,
+    ["avesa"] = true,
 }
 
 function IMAGO.IsDeveloper()
@@ -121,22 +126,29 @@ end
 -- ============================================================
 IMAGO.Scanner = {}
 
-function IMAGO.Scanner.DiscoverNPC(npcID)
+function IMAGO.Scanner.DiscoverNPC(npcID, questName)
     if not IMAGOSaved.enabled then return false end
     if not IMAGOdb or not IMAGOdb.idToSlug then return false end
     
     local slug = IMAGOdb.idToSlug[npcID]
     local cat = IMAGOdb.idToSlug[tostring(npcID) .. "_cat"]
+
     if slug then
         local npcData = cat and IMAGOdb.npcs[cat] and IMAGOdb.npcs[cat][slug] or IMAGO.GetNPCData(slug)
         local name = npcData and npcData.name
         local lore = npcData and npcData.lore
-        
+        local isNewDiscovery = false
+
         if not IMAGOSaved.seenNPCs[slug] then
             IMAGOSaved.seenNPCs[slug] = true
             IMAGO.AddToHistory(slug)
             
-            local msg = IMAGO.L["CHAT_DISCOVERY"] and string.format(IMAGO.L["CHAT_DISCOVERY"], name) or ("|cFF9370DB[IMAGO]|r Echo gebunden: |cFFFFD700" .. name .. "|r")
+            local msg
+            if questName then
+                msg = IMAGO.L["QUEST_DISCOVERY"] and string.format(IMAGO.L["QUEST_DISCOVERY"], questName, name)
+            else
+                msg = IMAGO.L["CHAT_DISCOVERY"] and string.format(IMAGO.L["CHAT_DISCOVERY"], name)
+            end
             print(msg)
             PlaySound(3175, "Master")
             
@@ -148,20 +160,49 @@ function IMAGO.Scanner.DiscoverNPC(npcID)
                 IMAGO.Chronicle.UpdateList()
             end
 
-            return true, true
+            isNewDiscovery = true
         else
-            local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
-            print(msgKnown)
-
             if not IMAGO.Scanner.IsShowOnceOnlyEnabled("npc") then
                 if IMAGO.Display and IMAGO.Display.Show then
+                    local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
+                    print(msgKnown)
                     IMAGO.Display.Show(name, lore, "npc", false, slug)
+                    local msgKnown = IMAGO.L["CHAT_KNOWN"] and string.format(IMAGO.L["CHAT_KNOWN"], name) or ("|cFF888888[IMAGO]|r Archiv-Eintrag abgerufen: |cFFCCCCCC" .. name .. "|r")
+                    print(msgKnown)
                 end
             end
-            return true, false
         end
+
+        -- Era-Discovery prüfen
+        local eraSlug = IMAGOdb.eraByNPCSlug and IMAGOdb.eraByNPCSlug[slug]
+        if eraSlug and not (IMAGOSaved.seenEras or {})[eraSlug] then
+            local eData = IMAGOdb.eras and IMAGOdb.eras[eraSlug]
+            if eData and not eData.coming_soon then
+                C_Timer.After(2.5, function()
+                    if IMAGO.Eras and IMAGO.Eras.ShowEraDiscoveryDialog then
+                        IMAGO.Eras.ShowEraDiscoveryDialog(eraSlug, npcData)
+                    end
+                end)
+            end
+        end
+        return true, isNewDiscovery
     end
     return false, false
+end
+
+--- Scans all quest_ids with an NPC they unlock and reveal those whose quest is completed.
+function IMAGO.Scanner.SweepQuestUnlocks()
+    if not IMAGOdb or not IMAGOdb.questToSlug then return end
+    for questID, slug in pairs(IMAGOdb.questToSlug) do
+        if not IMAGOSaved.seenNPCs[slug] and C_QuestLog.IsQuestFlaggedCompleted(questID) then
+            local questName = QuestUtils_GetQuestName(questID) or "Unknown Quest"
+            local data = IMAGO.GetNPCData(slug)
+            local npcID = data and data.ids and data.ids[1] and (type(data.ids[1]) == "table" and data.ids[1][1] or data.ids[1])
+            if npcID then
+                IMAGO.Scanner.DiscoverNPC(npcID, questName)
+            end
+        end
+    end
 end
 
 local lastNPCID = nil
@@ -482,6 +523,190 @@ local function ShowLoginFact()
 end
 
 -- ============================================================
+-- ENCOUNTER JOURNAL INTEGRATION
+-- ============================================================
+
+-- Build reverse lookup: encounter_journal_id -> slug
+local function BuildEJLookup()
+    IMAGO.ejIDToSlug = {}
+    for catKey, entries in pairs(IMAGOdb.npcs) do
+        if type(entries) == "table" then
+            for slug, data in pairs(entries) do
+                if data.encounter_journal_id then
+                    local id = data.encounter_journal_id
+                    if type(id) == "table" then id = id[1] end
+                    IMAGO.ejIDToSlug[id] = slug
+                end
+            end
+        end
+    end
+end
+
+local function InjectIMAGOButton(encounterID)
+    if not EncounterJournal then return end
+
+    local encounterFrame = EncounterJournal.encounter
+    if not encounterFrame then return end
+
+    if not encounterFrame.imagoBtn then
+        local btn = CreateFrame("Button", nil, encounterFrame)
+        btn:SetSize(22, 22)
+        btn:SetPoint("TOPRIGHT", encounterFrame.info.difficulty, "TOPLEFT", -6, 0)
+
+        btn.icon = btn:CreateTexture(nil, "ARTWORK")
+        btn.icon:SetAllPoints()
+        btn.icon:SetTexture("Interface\\Icons\\INV_Misc_Book_09")
+        btn.icon:SetAlpha(0.7)
+        btn.border = btn:CreateTexture(nil, "OVERLAY")
+        btn.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+        btn.border:SetSize(58, 58)
+        btn.border:SetPoint("TOPLEFT", -7, 7)
+
+        local hl = btn:CreateTexture(nil, "HIGHLIGHT")
+        hl:SetAllPoints()
+        hl:SetColorTexture(1, 1, 1, 0.15)
+
+        btn:SetScript("OnEnter", function(self)
+            self.icon:SetAlpha(1.0)
+            GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
+            GameTooltip:AddLine("Open in IMAGO Chronicle", 1, 0.85, 0.1)
+            GameTooltip:Show()
+        end)
+        btn:SetScript("OnLeave", function(self)
+            self.icon:SetAlpha(0.7)
+            GameTooltip:Hide()
+        end)
+
+        encounterFrame.imagoBtn = btn
+    end
+
+    local slug = encounterID and IMAGO.ejIDToSlug and IMAGO.ejIDToSlug[encounterID]
+
+    if slug and (
+        (IMAGOSaved.seenNPCs and IMAGOSaved.seenNPCs[slug]) or
+        (IMAGOSaved.encyclopediaMode)
+    ) then
+        encounterFrame.imagoBtn:SetScript("OnClick", function()
+            EncounterJournal:Hide()
+            IMAGO.Chronicle.OpenToNPCSlug(slug)
+        end)
+        encounterFrame.imagoBtn:Show()
+    else
+        encounterFrame.imagoBtn:Hide()
+    end
+end
+
+-- Wait for Blizzard_EncounterJournal to load before hooking
+local ejHookFrame = CreateFrame("Frame")
+ejHookFrame:RegisterEvent("ADDON_LOADED")
+ejHookFrame:SetScript("OnEvent", function(self, event, addonName)
+    if addonName == "Blizzard_EncounterJournal" then
+        hooksecurefunc("EJ_SelectEncounter", InjectIMAGOButton)
+        self:UnregisterEvent("ADDON_LOADED")
+    end
+end)
+
+-- Register a PLAYER_LOGIN hook to build the lookup once the DB is ready
+local ejLoginFrame = CreateFrame("Frame")
+ejLoginFrame:RegisterEvent("PLAYER_LOGIN")
+ejLoginFrame:SetScript("OnEvent", function(self)
+    BuildEJLookup()
+    self:UnregisterEvent("PLAYER_LOGIN")
+end)
+
+-- ============================================================
+-- WORLD MAP INTEGRATION
+-- ============================================================
+
+-- IMAGO Icon will go below all other map icons (even other addon ones) if they are parented under the WorldMapFrame
+local function GetLowestMapButton(f)
+    local excludeBtn = f.SidePanelToggle
+
+    local lowestBtn = f.imagoAnchorBtn
+    local lowestBottom = lowestBtn and lowestBtn:GetBottom() or nil
+
+    local children = {f:GetChildren()}
+    for _, child in ipairs(children) do
+        if child ~= f.imagoBtn and child ~= excludeBtn and child:IsObjectType("Button") and child:IsShown() then
+            local top = child:GetTop()
+            local left = child:GetLeft()
+            if top and left and lowestBtn and math.abs(left - lowestBtn:GetLeft()) < 10 then
+                local bottom = child:GetBottom()
+                if bottom and (not lowestBottom or bottom < lowestBottom) then
+                    lowestBottom = bottom
+                    lowestBtn = child
+                end
+            end
+        end
+    end
+
+    return lowestBtn
+end
+
+local function InjectIMAGOMapButton()
+    local f = WorldMapFrame
+    if not f then return end
+
+    if not f.imagoAnchorBtn then
+        local children = {f:GetChildren()}
+        f.imagoAnchorBtn = children[7]
+    end
+    if not f.imagoAnchorBtn then return end
+
+    if not f.imagoBtn then
+        local btn = CreateFrame("Button", nil, f)
+        btn:SetSize(31, 31)
+        btn:SetFrameStrata("DIALOG")
+        btn:SetFrameLevel(f:GetFrameLevel() + 50)
+        btn:SetHighlightTexture("Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight")
+
+        btn.icon = btn:CreateTexture(nil, "BACKGROUND")
+        btn.icon:SetTexture("Interface\\Icons\\inv_misc_book_09")
+        btn.icon:SetSize(20, 20)
+        btn.icon:SetPoint("CENTER", 0, 0)
+
+        btn.border = btn:CreateTexture(nil, "OVERLAY")
+        btn.border:SetTexture("Interface\\Minimap\\MiniMap-TrackingBorder")
+        btn.border:SetSize(53, 53)
+        btn.border:SetPoint("TOPLEFT", 0, 0)
+
+        btn:SetScript("OnEnter", function(self)
+            GameTooltip:SetOwner(self, "ANCHOR_LEFT")
+            GameTooltip:AddLine("Open in IMAGO Chronicle", 1, 0.85, 0.1)
+            GameTooltip:Show()
+        end)
+        btn:SetScript("OnLeave", function(self)
+            GameTooltip:Hide()
+        end)
+
+        f.imagoBtn = btn
+    end
+
+    -- Recalculate anchor each time, in case other addons added buttons
+    local anchorBtn = GetLowestMapButton(f)
+    f.imagoBtn:ClearAllPoints()
+    f.imagoBtn:SetPoint("TOPRIGHT", anchorBtn, "BOTTOMRIGHT", 0, -2)
+
+    local mapID = f:GetMapID()
+    local zoneData = mapID and IMAGOdb.zones and IMAGOdb.zones[mapID]
+    local isSeen = mapID and IMAGOSaved.seenZones and IMAGOSaved.seenZones[mapID]
+    local isManual = mapID and IMAGOSaved.manualZoneUnlocks and IMAGOSaved.manualZoneUnlocks[mapID]
+
+    if zoneData and (isSeen or isManual or IMAGOSaved.encyclopediaMode) then
+        f.imagoBtn:SetScript("OnClick", function()
+            f:Hide()
+            IMAGO.Chronicle.OpenToZoneMapID(mapID)
+        end)
+        f.imagoBtn:Show()
+    else
+        f.imagoBtn:Hide()
+    end
+end
+
+hooksecurefunc(WorldMapFrame, "OnMapChanged", InjectIMAGOMapButton)
+WorldMapFrame:HookScript("OnShow", InjectIMAGOMapButton)
+
+-- ============================================================
 -- EVENTS & INITIALISIERUNG
 -- ============================================================
 local initFrame = CreateFrame("Frame")
@@ -493,6 +718,7 @@ initFrame:RegisterEvent("PLAYER_DEAD")
 initFrame:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START")
 initFrame:RegisterEvent("PLAYER_CONTROL_LOST")
 initFrame:RegisterEvent("PLAYER_REGEN_DISABLED")
+initFrame:RegisterEvent("QUEST_TURNED_IN")
 
 initFrame:SetScript("OnEvent", function(self, event, ...)
     if event == "ADDON_LOADED" then
@@ -501,8 +727,13 @@ initFrame:SetScript("OnEvent", function(self, event, ...)
     elseif event == "PLAYER_ENTERING_WORLD" then
         local isInitialLogin, isReloadingUi = ...
         IMAGO.Scanner.EnsureZoneProgressTables()
-        if isInitialLogin and IMAGOSaved and IMAGOSaved.enableMotD then
-            C_Timer.After(4, ShowLoginFact)
+        if isInitialLogin then
+            C_Timer.After(2, function()
+                IMAGO.Scanner.SweepQuestUnlocks()
+            end)
+            if IMAGOSaved and IMAGOSaved.enableMotD then
+                C_Timer.After(4, ShowLoginFact)
+            end
         end
         C_Timer.After(0.5, function()
             IMAGO.Scanner.CheckZone()
@@ -511,6 +742,21 @@ initFrame:SetScript("OnEvent", function(self, event, ...)
             IMAGO.Scanner.CheckZone()
             IMAGO.Scanner.CheckInstance()
         end)
+    elseif event == "QUEST_TURNED_IN" then
+        local questID = ...
+        local slug = IMAGOdb.questToSlug and IMAGOdb.questToSlug[questID]
+        if slug and not IMAGOSaved.seenNPCs[slug] then
+            local questName = QuestUtils_GetQuestName(questID) or "Unknown Quest"
+            local data = IMAGO.GetNPCData(slug)
+            local npcID = data and data.ids and data.ids[1] and (type(data.ids[1]) == "table" and data.ids[1][1] or data.ids[1])
+            if npcID then
+                IMAGO.Scanner.DiscoverNPC(npcID, questName)
+            end
+        end
+        if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
+            IMAGO.Chronicle.UpdateList()
+    end
+
     elseif event == "ZONE_CHANGED_NEW_AREA" then
         C_Timer.After(1, function() IMAGO.Scanner.CheckZone() end)
     elseif event == "PLAYER_TARGET_CHANGED" then
@@ -555,6 +801,9 @@ function IMAGO.Init()
     IMAGOSaved.hideMinimap = (IMAGOSaved.hideMinimap == true or IMAGOSaved.hideMinimap == 1)
     IMAGOSaved.debugMap = (IMAGOSaved.debugMap == true or IMAGOSaved.debugMap == 1)
 
+    -- Locale initialisieren (liest IMAGOSaved.language Override)
+    if IMAGO.Locale.Init then IMAGO.Locale.Init() end
+
     IMAGO.isDeveloper = IMAGO.IsDeveloper()
     if not IMAGO.isDeveloper then
         IMAGOSaved.debugMap = false
@@ -563,6 +812,52 @@ function IMAGO.Init()
     IMAGO.Scanner.EnsureZoneProgressTables()
 
     if IMAGO.BuildReverseLookup then IMAGO.BuildReverseLookup() end
+
+    -- Migration v1.5: seenNPCs/viewedNPCs/favorites/history slugs -> slug_midnight
+    if not IMAGOSaved.migratedSlugSuffix then
+        -- seenNPCs + viewedNPCs (both keyed by slug)
+        local toMigrate = {}
+        for slug, val in pairs(IMAGOSaved.seenNPCs or {}) do
+            if not slug:find("_midnight$") and IMAGO.GetNPCData(slug .. "_midnight") then
+                toMigrate[slug] = val
+            end
+        end
+        for slug, val in pairs(toMigrate) do
+            IMAGOSaved.seenNPCs[slug .. "_midnight"] = val
+            IMAGOSaved.seenNPCs[slug] = nil
+            if IMAGOSaved.viewedNPCs[slug] then
+                IMAGOSaved.viewedNPCs[slug .. "_midnight"] = IMAGOSaved.viewedNPCs[slug]
+                IMAGOSaved.viewedNPCs[slug] = nil
+            end
+        end
+        -- favorites (keyed by slug)
+        local favMigrate = {}
+        for slug, val in pairs(IMAGOSaved.favorites or {}) do
+            if not slug:find("_midnight$") and IMAGO.GetNPCData(slug .. "_midnight") then
+                favMigrate[slug] = val
+            end
+        end
+        for slug, val in pairs(favMigrate) do
+            IMAGOSaved.favorites[slug .. "_midnight"] = val
+            IMAGOSaved.favorites[slug] = nil
+        end
+        -- history (array of slugs or zone-tables)
+        local hist = IMAGOSaved.history or {}
+        for i, slug in ipairs(hist) do
+            if type(slug) == "string" and not slug:find("_midnight$") and IMAGO.GetNPCData(slug .. "_midnight") then
+                hist[i] = slug .. "_midnight"
+            end
+        end
+        IMAGOSaved.migratedSlugSuffix = true
+    end
+
+    -- Era-Unlock-NPC Reverse-Lookup aufbauen
+    IMAGOdb.eraByNPCSlug = {}
+    for eraSlug, eraData in pairs(IMAGOdb.eras or {}) do
+        if eraData.unlock_npc and eraData.unlock_npc ~= "" then
+            IMAGOdb.eraByNPCSlug[eraData.unlock_npc] = eraSlug
+        end
+    end
     if IMAGO.Options and IMAGO.Options.Init then IMAGO.Options.Init() end
     
     if IMAGO.Display and IMAGO.Display.CreateFrame then IMAGO.Display.CreateFrame() end
@@ -575,6 +870,7 @@ function IMAGO.Init()
         TooltipDataProcessor.AddTooltipPostCall(Enum.TooltipDataType.Unit, function(tooltip, data)
             if not IMAGOSaved.enabled then return end
             if InCombatLockdown() then return end
+            if tooltip ~= GameTooltip then return end
 
             securecall(function()
                 local guid = data and data.guid
@@ -624,8 +920,10 @@ function IMAGO.Init()
             print("|cFF9370DBIMAGO Slash Commands:|r")
             print("|cFFFFD700/imago|r - " .. (IMAGO.L["CMD_HELP_OPEN_DESC"] or "Öffnet oder schließt die Chronik"))
             print("|cFFFFD700/imago settings|r - " .. (IMAGO.L["CMD_HELP_SETTINGS_DESC"] or "Öffnet die Addon-Einstellungen"))
+            print("|cFFFFD700/imago resetera <name>|r - Einzelne Era zurücksetzen (Test)")
             print("|cFFFFD700/imago help|r - " .. (IMAGO.L["CMD_HELP_HELP_DESC"] or "Zeigt diese Hilfe an"))
         elseif msg == "dev" then
+            print("dev command:", isDev)
             if not isDev then return end
             print("|cFFFFD700[IMAGO DEV]|r Befehle:")
             print("|cFFFFD700/imago debugmap|r - Zonen-Debug an/aus (Chat-Ausgabe)")
@@ -633,6 +931,8 @@ function IMAGO.Init()
             print("|cFFFFD700/imago validate|r - Datenbank-Validierung (IDs/Lore)")
             print("|cFFFFD700/imago unlockall|r - Alles freischalten (Test)")
             print("|cFFFFD700/imago scan <id>|r - NPC per ID testen/anzeigen")
+            print("|cFFFFD700/imago unsee npc <slug>|r - Remove NPC from seenNPCs")
+            print("|cFFFFD700/imago unsee zone <mapID>|r - Remove zone from seenZones")
         elseif msg == "debugmap" then
             if not isDev then return end
             IMAGOSaved.debugMap = not IMAGOSaved.debugMap
@@ -665,7 +965,6 @@ function IMAGO.Init()
             else
                 print("|cFFFF0000[IMAGO DEV]|r Konnte Map ID nicht ermitteln.")
             end
-            
         elseif msg == "validate" then
             if not isDev then return end
             print(IMAGO.L["VAL_START"] or "|cFFFFD700[IMAGO]|r Starte Datenbank-Validierung...")
@@ -690,7 +989,6 @@ function IMAGO.Init()
         elseif msg == "unlockall" then
             if not isDev then return end
             local count = 0
-            
             -- 1. NPCs freischalten
             for cat, entries in pairs(IMAGOdb.npcs or {}) do
                 if type(entries) == "table" then
@@ -721,11 +1019,65 @@ function IMAGO.Init()
                 IMAGO.Chronicle.UpdateList()
             end
 
+        elseif msg:match("^resetera ") then
+            if not isDev then return end
+            local input = msg:match("^resetera%s+(.+)")
+
+            -- Try exact slug match first, then fall back to matching by display name
+            local eraSlug = nil
+            if IMAGOdb.eras and IMAGOdb.eras[input] then
+                eraSlug = input
+            else
+                for slug, data in pairs(IMAGOdb.eras or {}) do
+                    local name = data.name and data.name:lower() or ""
+                    if slug:lower() == input or name == input then
+                        eraSlug = slug
+                        break
+                    end
+                end
+            end
+
+            if eraSlug then
+                IMAGOSaved.seenEras = IMAGOSaved.seenEras or {}
+                IMAGOSaved.seenEras[eraSlug] = nil
+                print(string.format("|cFFFFD700[IMAGO DEV]|r Era zurückgesetzt: |cFF00FF00%s|r", eraSlug))
+
+                if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
+                    IMAGO.Chronicle.UpdateList()
+                end
+            else
+                print(string.format("|cFFFF0000[IMAGO DEV]|r Keine Era gefunden für: '%s'", input))
+            end
         elseif msg:match("^scan %d+") then
             if not isDev then return end
             local id = tonumber(msg:match("^scan (%d+)"))
             local isRelevant = IMAGO.Scanner.DiscoverNPC(id)
             if not isRelevant then print("|cFFFF0000IMAGO:|r ID " .. id .. " ist nicht in der Datenbank.") end
+        elseif msg:match("^unsee npc .+") then
+            --if not isDev then return end
+            local slug = msg:match("^unsee npc (.+)")
+            if IMAGOSaved.seenNPCs[slug] then
+                IMAGOSaved.seenNPCs[slug] = nil
+                IMAGOSaved.viewedNPCs[slug] = nil
+                print("|cFFFFD700[IMAGO DEV]|r Removed NPC from seenNPCs: " .. slug)
+            else
+                print("|cFFFFD700[IMAGO DEV]|r NPC not in seenNPCs: " .. slug)
+            end
+            if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
+                IMAGO.Chronicle.UpdateList()
+            end
+        elseif msg:match("^unsee zone %d+") then
+            --if not isDev then return end
+            local mapID = tonumber(msg:match("^unsee zone (%d+)"))
+            if IMAGOSaved.seenZones[mapID] then
+                IMAGOSaved.seenZones[mapID] = nil
+                print("|cFFFFD700[IMAGO DEV]|r Removed zone from seenZones: " .. mapID)
+            else
+                print("|cFFFFD700[IMAGO DEV]|r Zone not in seenZones: " .. mapID)
+            end
+            if IMAGO.Chronicle and IMAGO.Chronicle.frame and IMAGO.Chronicle.frame:IsShown() then
+                IMAGO.Chronicle.UpdateList()
+            end
         end
     end
 end

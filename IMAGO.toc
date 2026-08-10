@@ -3,39 +3,39 @@
 ## Notes: The world has a story. IMAGO preserves it.
 ## Notes-deDE: Die Welt hat eine Geschichte. IMAGO bewahrt sie.
 ## Author: Whisblaze
-## Version: 1.3.7
+## Version: 1.4.0
 ## SavedVariables: IMAGOSaved
 ## IconTexture: 5341597
 
+
+data/quest_unlocks.lua
+
 IMAGO.lua
-core\Locale.lua
+core/Locale.lua
 
 data/LoreSnippets_static.lua
 data/zones_static.lua
-data/npcs/CAT_QUELTHALAS.lua
-data/npcs/CAT_LIGHT.lua
-data/npcs/CAT_AMANI.lua
-data/npcs/CAT_HARATI.lua
-data/npcs/CAT_VOID.lua
-data/npcs/CAT_EBON_BLADE.lua
-data/npcs/CAT_NEUTRAL.lua
-data/npcs/CAT_ARCANTINA.lua
+data/eras_static.lua
+data/npcs/midnight.lua
+data/npcs/the_war_within.lua
 
-locales\base\data\npcs.lua
-locales\base\data\zones.lua
-locales\base\data\snippets.lua
-locales\base\chronicle.lua
+locales/base/data/npcs.lua
+locales/base/data/zones.lua
+locales/base/data/eras.lua
+locales/base/data/snippets.lua
+locales/base/chronicle.lua
 
-locales\[TextLocale]\data\npcs.lua
-locales\[TextLocale]\data\zones.lua
-locales\[TextLocale]\data\snippets.lua
-locales\[TextLocale]\chronicle.lua
+locales/[TextLocale]/data/npcs.lua
+locales/[TextLocale]/data/zones.lua
+locales/[TextLocale]/data/eras.lua
+locales/[TextLocale]/data/snippets.lua
+locales/[TextLocale]/chronicle.lua
 
-
-core\TextLinker.lua
-core\MiniLorePopup.lua
-core\LoreSnippetSystem.lua
-core\Options.lua
-core\Chronicle.lua
-core\Display.lua
-core\UnitContextMenu.lua
+core/TextLinker.lua
+core/MiniLorePopup.lua
+core/LoreSnippetSystem.lua
+core/Options.lua
+core/Chronicle.lua
+core/Eras.lua
+core/Display.lua
+core/UnitContextMenu.lua

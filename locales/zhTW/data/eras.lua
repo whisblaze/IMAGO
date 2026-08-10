@@ -1,0 +1,5 @@
+-- ============================================================
+-- IMAGO — locales/zhTW/data/eras.lua
+-- Chinese (Traditional) overrides for Eras lore texts.
+-- No overrides yet — enUS fallback is used.
+-- ============================================================
