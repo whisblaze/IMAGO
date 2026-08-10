@@ -428,6 +428,11 @@ L = L_EN
     L["CONFIRM_UNLOCK_TITLE"]     = "Unlock Content Preview"
     L["CONFIRM_UNLOCK_DESC"]      = "This entry will become readable but won't count toward your progress.\n\nUnlock?"
     L["BACK"]                     = "Back"
+    
+    -- TextLinker Color Ids
+    L["LINK_NPC"] = "cffffe34d" -- Light Gold
+    L["LINK_ZONE"] = "cff83dbff" -- Ice Blue
+    L["LINK_EXPANSION"] = ""
 
     -- ============================================================
     -- TAB 5: ERAS (Expansion Chronicle)

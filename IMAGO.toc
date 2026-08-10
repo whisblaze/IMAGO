@@ -34,6 +34,7 @@ locales/[TextLocale]/data/eras.lua
 locales/[TextLocale]/data/snippets.lua
 locales/[TextLocale]/chronicle.lua
 
+core/TextLinker.lua
 core/MiniLorePopup.lua
 core/LoreSnippetSystem.lua
 core/Options.lua

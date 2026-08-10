@@ -22,9 +22,9 @@ IMAGOdb.zones[2405].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2413].name = "Harandar"
-IMAGOdb.zones[2413].lore = [[Tief verborgen im Inneren Azeroths war die geheimnisvolle Heimat der Haranir bis heute vor der Außenwelt verborgen. Hier vereinen sich die Wurzeln der Weltenbäume zur Wiege der Göttin Aln’hara. Die Gottheit ist schon seit langer Zeit verschwunden, doch die Wurzeln bestehen fort, und die Haranir sehen es als ihre heilige Pflicht an, sie zu schützen und zu nähren.
+IMAGOdb.zones[2413].lore = [[Tief verborgen im Inneren Azeroths war die geheimnisvolle Heimat der Haranir bis heute vor der Außenwelt verborgen. Hier vereinen sich die Wurzeln der Weltenbäume zur Wiege der Göttin Aln'hara. Die Gottheit ist schon seit langer Zeit verschwunden, doch die Wurzeln bestehen fort, und die Haranir sehen es als ihre heilige Pflicht an, sie zu schützen und zu nähren.
 
-Trotz des ersten Eindrucks herrscht hier nicht nur Frieden. Der Ausbruch des Sonnenbrunnens hat selbst in dieser großen Entfernung ein rasantes Wachstum der Pflanzenwelt ausgelöst, und die Anwesenheit von Außenseitern in Harandar könnte die politische Stabilität der Hara’ti gefährden, die sie seit Generationen aufrechterhalten.]]
+Trotz des ersten Eindrucks herrscht hier nicht nur Frieden. Der Ausbruch des Sonnenbrunnens hat selbst in dieser großen Entfernung ein rasantes Wachstum der Pflanzenwelt ausgelöst, und die Anwesenheit von Außenseitern in Harandar könnte die politische Stabilität der Hara'ti gefährden, die sie seit Generationen aufrechterhalten.]]
 
 IMAGOdb.zones[2413].pointsOfInterest = {
     {
@@ -33,9 +33,9 @@ IMAGOdb.zones[2413].pointsOfInterest = {
     },
     {
         name = "Die Wurzeln der Weltenbäume",
-        lore = [[Die Wurzeln sämtlicher Weltenbäume vereinen sich in Harandar, und jedem Baum wird von den Hara’ti ein Wurzelhüter zugewiesen.
+        lore = [[Die Wurzeln sämtlicher Weltenbäume vereinen sich in Harandar, und jedem Baum wird von den Hara'ti ein Wurzelhüter zugewiesen.
 
-Amirdrassil, der jüngste der Bäume und ein Symbol der Hoffnung für die Nachtelfen in Bel’ameth. 
+Amirdrassil, der jüngste der Bäume und ein Symbol der Hoffnung für die Nachtelfen in Bel'ameth. 
 
 Shaladrassil, der einst verdorbene Baum der Verheerten Inseln. Durch die anhaltende Schwäche, die der Smaragdgrüne Alptraum hinterließ, konnte die Lichtblüte sich von hier aus entfalten.
 
@@ -47,28 +47,28 @@ Vordrassil, der dritte Weltenbaum, der jemals auf der Welt spross, wurde von Yog
     },
     {
         name = "Die Höhle",
-        lore = "Der Ältestenrat versammelt sich an diesem uralten Ort nahe dem Licht der Wiege, hält heilige Traditionen aufrecht und wahrt den Frieden. Dieser Ort gehört nicht nur den Haranir, sondern auch den Fungarianern und den Ruutani. Sollten die Außenseiter aus Silbermond die Hilfe der Hara’ti wünschen, wird sie ihnen hier gewährt – oder verweigert."
+        lore = "Der Ältestenrat versammelt sich an diesem uralten Ort nahe dem Licht der Wiege, hält heilige Traditionen aufrecht und wahrt den Frieden. Dieser Ort gehört nicht nur den Haranir, sondern auch den Fungarianern und den Ruutani. Sollten die Außenseiter aus Silbermond die Hilfe der Hara'ti wünschen, wird sie ihnen hier gewährt – oder verweigert."
     },
     {
         name = "Der Riss von Aln",
-        lore = "Qual, Leid und Wahnsinn sind alles, was man an diesem seltsamen Ort findet, dieser Wunde im Gefüge der Welt. Grauenhafte Kreaturen aus den Albträumen Aln’haras strömen aus diesem Ort hervor und werden nur durch die tapferen Shul’ka zurückgehalten. Der Riss von Aln existiert physisch am tiefsten Punkt Harandars, doch schon vor langer Zeit ist er in den Smaragdgrünen Traum übergegangen und hat die Grenze zwischen Traum und Wirklichkeit ausgedünnt."
+        lore = "Qual, Leid und Wahnsinn sind alles, was man an diesem seltsamen Ort findet, dieser Wunde im Gefüge der Welt. Grauenhafte Kreaturen aus den Albträumen Aln'haras strömen aus diesem Ort hervor und werden nur durch die tapferen Shul'ka zurückgehalten. Der Riss von Aln existiert physisch am tiefsten Punkt Harandars, doch schon vor langer Zeit ist er in den Smaragdgrünen Traum übergegangen und hat die Grenze zwischen Traum und Wirklichkeit ausgedünnt."
     }
 }
 
 IMAGOdb.zones[2437].name = "Zul'Aman"
-IMAGOdb.zones[2437].lore = "Die hoch aufragenden Wälder von Zul’Aman sind bereits seit einer Zeit die Heimat der Amanitrolle, die weit vor der Gründung von Quel’Thalas durch die Hochelfen liegt. Grenzscharmützel prägen das Verhältnis zwischen den beiden Fraktionen seit Menschengedenken. Unter der Führung von Zul’jin missbrauchten die Amani die Magie ihrer Loa für gewaltsame Zwecke. Als Reaktion darauf verstummten die wilden Götter und überließen den Stamm der Amani für Jahrzehnte seinem eigenen Schicksal. Nun, da die Zwielichtklinge ihre Wälder heimsucht, suchen die Trolle bei ihren Nachbarn nach Hilfe. Zul’jins Enkel, Zul’jarra und Zul’jan, versuchen die Amani zu ihrem einstigen Ruhm zurückzuführen."
+IMAGOdb.zones[2437].lore = "Die hoch aufragenden Wälder von Zul'Aman sind bereits seit einer Zeit die Heimat der Amanitrolle, die weit vor der Gründung von Quel'Thalas durch die Hochelfen liegt. Grenzscharmützel prägen das Verhältnis zwischen den beiden Fraktionen seit Menschengedenken. Unter der Führung von Zul'jin missbrauchten die Amani die Magie ihrer Loa für gewaltsame Zwecke. Als Reaktion darauf verstummten die wilden Götter und überließen den Stamm der Amani für Jahrzehnte seinem eigenen Schicksal. Nun, da die Zwielichtklinge ihre Wälder heimsucht, suchen die Trolle bei ihren Nachbarn nach Hilfe. Zul'jins Enkel, Zul'jarra und Zul'jan, versuchen die Amani zu ihrem einstigen Ruhm zurückzuführen."
 IMAGOdb.zones[2437].pointsOfInterest = {
     {
-        name = "Dorf Amani’Zar",
-        lore = "Als größtes Dorf in Zul’Aman und de facto Hauptstadt des Volkes der Amani ist das Dorf Amani’Zar zu einem Schmelztiegel der Trollkultur geworden. Viele Stämme haben sich unter dem Banner der Amani versammelt, darunter die Bleichborken, die Waldschattentrolle und die Revantusk. Mitglieder all dieser Stämme sind in Amani’Zar beheimatet und vereinen ihr Volk gegen Bedrohungen wie die Gifthauer und die Zwielichtklinge."
+        name = "Dorf Amani'Zar",
+        lore = "Als größtes Dorf in Zul'Aman und de facto Hauptstadt des Volkes der Amani ist das Dorf Amani'Zar zu einem Schmelztiegel der Trollkultur geworden. Viele Stämme haben sich unter dem Banner der Amani versammelt, darunter die Bleichborken, die Waldschattentrolle und die Revantusk. Mitglieder all dieser Stämme sind in Amani'Zar beheimatet und vereinen ihr Volk gegen Bedrohungen wie die Gifthauer und die Zwielichtklinge."
     },
     {
         name = "Die Loa-Tempel",
-        lore = "Überall in Zul’Aman finden sich Tempel, die jeweils einem der großen Loa der Amani gewidmet sind. Zu Ehren von Halazzi dem Luchs, Jan’alai dem Drachenfalken, Nalorakk dem Bären und Akil’zon dem Adler wurden gewaltige Bauwerke errichtet. Obwohl sie einst die spirituellen Zentren des Amani-Imperiums waren, verstummten sie nach Zul’jins Verrat. Unter Zul’jarra sind die Stimmen der Loa zu ihrem Volk zurückgekehrt und ihre Tempel sind zu neuem Leben erwacht."
+        lore = "Überall in Zul'Aman finden sich Tempel, die jeweils einem der großen Loa der Amani gewidmet sind. Zu Ehren von Halazzi dem Luchs, Jan'alai dem Drachenfalken, Nalorakk dem Bären und Akil'zon dem Adler wurden gewaltige Bauwerke errichtet. Obwohl sie einst die spirituellen Zentren des Amani-Imperiums waren, verstummten sie nach Zul'jins Verrat. Unter Zul'jarra sind die Stimmen der Loa zu ihrem Volk zurückgekehrt und ihre Tempel sind zu neuem Leben erwacht."
     },
     {
         name = "Atal'Aman",
-        lore = "Die Stadt Atal'Aman war einst eine heilige Stätte der Amani. Die überall errichteten Tempel dienten vielen Jüngern der Loa als Versammlungsort. Obwohl sie immer noch von den Amani bewohnt wird, ist die spirituelle Bedeutung der Tempelstadt fast vollständig verloren gegangen. Nachdem Zul’jin die Loa verraten und ihre Macht für sich selbst gestohlen hatte, verschwanden die Götter und mit ihnen ihre Anbeter. Die Stätte war Schauplatz häufigen Blutvergießens und wurde bereits zweimal von opportunistischen Abenteurern geplündert. Noch heute streifen die Geister jener Überfälle unruhig über diesen heiligen Boden."
+        lore = "Die Stadt Atal'Aman war einst eine heilige Stätte der Amani. Die überall errichteten Tempel dienten vielen Jüngern der Loa als Versammlungsort. Obwohl sie immer noch von den Amani bewohnt wird, ist die spirituelle Bedeutung der Tempelstadt fast vollständig verloren gegangen. Nachdem Zul'jin die Loa verraten und ihre Macht für sich selbst gestohlen hatte, verschwanden die Götter und mit ihnen ihre Anbeter. Die Stätte war Schauplatz häufigen Blutvergießens und wurde bereits zweimal von opportunistischen Abenteurern geplündert. Noch heute streifen die Geister jener Überfälle unruhig über diesen heiligen Boden."
     },
 }
 

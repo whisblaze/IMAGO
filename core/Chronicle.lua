@@ -488,6 +488,12 @@ function IMAGO.Chronicle.CreateFrame()
     f.loreBody:SetJustifyH("LEFT")
     f.loreBody:SetTextColor(0.9, 0.9, 0.9)
     f.loreBody:SetSpacing(6)
+    f.infoContent:SetHyperlinksEnabled(true)
+    f.infoContent:SetScript("OnHyperlinkClick", function(self, link, text, button)
+        if IMAGO.TextLinker and IMAGO.TextLinker.OnHyperlinkClick then
+            IMAGO.TextLinker.OnHyperlinkClick(self, link, text, button)
+        end
+    end)
     -- ==========================================
     -- BILD FÜR DIE ZONEN-DETAILANSICHT (PANORAMA)
     -- ==========================================
@@ -1705,6 +1711,14 @@ function IMAGO.Chronicle.RenderTimeline()
         f.timelineContainer.eras = {}
         f.timelineContainer.texts = {}
         f.timelineContainer.dividers = {}
+
+        f.timelineContainer:EnableMouse(true)
+        f.timelineContainer:SetHyperlinksEnabled(true)
+        f.timelineContainer:SetScript("OnHyperlinkClick", function(self, link, text, button)
+            if IMAGO.TextLinker and IMAGO.TextLinker.OnHyperlinkClick then
+                IMAGO.TextLinker.OnHyperlinkClick(self, link, text, button)
+            end
+        end)
     end
     f.timelineContainer:Show()
 
@@ -1712,6 +1726,11 @@ function IMAGO.Chronicle.RenderTimeline()
     for _, fs in pairs(f.timelineContainer.eras) do fs:Hide() end
     for _, fs in pairs(f.timelineContainer.texts) do fs:Hide() end
     for _, div in pairs(f.timelineContainer.dividers) do div:Hide() end
+
+    -- Shared link-state for this render pass: each NPC/zone name is
+    -- hyperlinked only on its FIRST occurrence across the whole timeline.
+    local selfSlug = f.selectedNPCSlug
+    local sharedNPCLinks, sharedZoneLinks = {}, {}
 
     local y = 0
     local entryCount = #data.timeline
@@ -1754,6 +1773,12 @@ function IMAGO.Chronicle.RenderTimeline()
             f.timelineContainer.texts[i] = txt
         end
 
+        -- Link this entry's text against the shared tables, in timeline order,
+        -- so the same name/zone is never linked twice across the timeline.
+        local linkedEntryText = IMAGO.TextLinker.LinkNames(
+            entry.text or "", selfSlug, nil, sharedNPCLinks, sharedZoneLinks
+        )
+
         -- Midnight Spoiler-Schutz
         local isMidnight = (entry.era == "Midnight")
         local npcSlug = f.selectedNPCSlug or ""
@@ -1764,7 +1789,7 @@ function IMAGO.Chronicle.RenderTimeline()
             local L = IMAGO.L
             txt:SetText("[" .. L["SPOILER_MIDNIGHT_TITLE"] .. "] — " .. L["SPOILER_MIDNIGHT_HINT"])
             txt:SetTextColor(0.42, 0.0, 0.8) -- Midnight-Leeren-Violett
-            txt.realText = entry.text
+            txt.realText = linkedEntryText
             txt.npcSlug = npcSlug
             txt.isSpoiler = true
             txt:EnableMouse(true)
@@ -1773,6 +1798,10 @@ function IMAGO.Chronicle.RenderTimeline()
                 self:SetText(self.realText)
                 self:SetTextColor(0.9, 0.9, 0.9)
                 self.isSpoiler = false
+                self:EnableMouse(false)
+                self:SetScript("OnMouseUp", nil)
+                self:SetScript("OnEnter", nil)
+                self:SetScript("OnLeave", nil)
                 UIFrameFadeIn(self, 0.3, 0, 1)
             end)
             txt:SetScript("OnEnter", function(self)
@@ -1792,8 +1821,7 @@ function IMAGO.Chronicle.RenderTimeline()
                 end
             end)
         else
-            -- Normaler Text
-            txt:SetText(entry.text or "")
+            txt:SetText(linkedEntryText)
             txt:SetTextColor(0.9, 0.9, 0.9)
             txt.isSpoiler = false
             txt:EnableMouse(false)
@@ -2235,8 +2263,13 @@ function IMAGO.Chronicle.UpdateList()
                                 local lore = npc.data.lore or ""
                                 local firstLetter = lore:sub(1,1)
                                 local restLore = lore:sub(2)
-                                f.loreBody:SetText("|cffc8a84b" .. firstLetter .. "|r" .. restLore)
+                                -- Pass selfSlug so the NPC doesn't link their own name,
+                                local linked = IMAGO.TextLinker.LinkNames("|cffc8a84b" .. firstLetter .. "|r" .. restLore,
+                                    npc.slug,
+                                    nil, nil, nil
+                                )
                                 
+                                f.loreBody:SetText(linked)
                                 f.detailModel:ClearModel()
                                 local modelID = GetValidModelID(npc.data)
                                 if modelID then 
@@ -2567,7 +2600,9 @@ function IMAGO.Chronicle.UpdateList()
                     end
                 end
                 
-                f.loreBody:SetText(formattedLore)
+                -- Pass mapID as selfMapID
+                -- so this zone doesn't link back to itself.
+                f.loreBody:SetText(IMAGO.TextLinker.LinkNames(formattedLore, nil, mapID, nil, nil))
                 f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("LEFT")
                 f.loreBody:Show()
@@ -2665,7 +2700,8 @@ function IMAGO.Chronicle.UpdateList()
 
                 local warningHeader = "\n\n|cffaaaaaa" .. (IMAGO.L["ZONE_UNEXPLORED_HEADER"] or "GEBIET UNERKUNDET") .. "|r"
                 local descText = "\n\n|cff666666" .. (IMAGO.L["ZONE_UNEXPLORED_DESC"] or "Die Kartographie dieser Region ist noch unvollständig.\nReise dorthin, um ihre Geheimnisse zu offenbaren.") .. "|r"
-                f.loreBody:SetText(warningHeader .. descText)
+                -- Pass mapID as selfMapID so undiscovered zone page doesn't self-link
+                f.loreBody:SetText(IMAGO.TextLinker.LinkNames(warningHeader .. descText, nil, mapID, nil, nil))
                 f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("CENTER")
                 f.loreBody:Show()
@@ -2700,6 +2736,47 @@ function IMAGO.Chronicle.UpdateList()
 
     f.content:SetHeight(math.max(1, yOffset))
     end
+end
+
+--- Opens the Chronicle directly to a specific zone by mapID.
+--- Switches to tab 2, renders the list, then fires that zone button's OnClick.
+function IMAGO.Chronicle.OpenToZoneMapID(mapID)
+    if not mapID or not IMAGOdb.zones or not IMAGOdb.zones[mapID] then
+        return false
+    end
+
+    if not IMAGO.Chronicle.frame then
+        IMAGO.Chronicle.CreateFrame()
+    end
+
+    local f = IMAGO.Chronicle.frame
+
+    -- Switch to Zones tab and show the window
+    IMAGO.Chronicle.SelectMainTab(2)
+    f:Show()
+
+    -- Defer one frame so the list has finished rendering before we search it
+    C_Timer.After(0, function()
+        if not f:IsShown() then return end
+        for _, btn in pairs(IMAGO.Chronicle.zoneButtons or {}) do
+            if btn.mapID == mapID and btn:IsShown() then
+                -- Fire the zone's click handler to populate the detail panel
+                local fn = btn:GetScript("OnClick")
+                if fn then fn(btn) end
+                -- Scroll the left list to the button
+                local scroll = f.scrollFrame
+                if scroll and btn._listScrollY then
+                    local range = math.max(0,
+                        (f.content:GetHeight() or 0) - (scroll:GetHeight() or 0))
+                    scroll:SetVerticalScroll(
+                        math.max(0, math.min(range, btn._listScrollY - 40)))
+                end
+                return
+            end
+        end
+    end)
+
+    return true
 end
 
 --- Chronik öffnen (Tab Schicksale), Liste vorbereiten und dieselbe Logik wie ein Klick auf den NPC ausführen.
