@@ -1081,7 +1081,8 @@ function IMAGO.Chronicle.CreateFrame()
     f.numTabs = 5
     local tabNames = {IMAGO.L["TAB_FATES"], IMAGO.L["TAB_ZONES"], IMAGO.L["TAB_ERAS"], IMAGO.L["TAB_INSTANCES"], IMAGO.L["TAB_CREDITS"]}
     for i = 1, f.numTabs do
-        local name = tabNames[i] or ("Tab " .. i) -- fallback so a missing locale string can never break tab creation
+        -- Fallback so a missing/mistimed locale string can never break tab creation
+        local name = tabNames[i] or ("Tab " .. i)
         local tab = CreateFrame("Button", f:GetName().."Tab"..i, f, "PanelTabButtonTemplate")
         tab:SetText(name)
         PanelTemplates_TabResize(tab, 0)
@@ -2285,17 +2286,17 @@ function IMAGO.Chronicle.UpdateList()
                 local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
                 local firstLetter = lore:sub(1, charLen)
                 local restLore = lore:sub(charLen + 1)
-                f.loreBody:SetText("|cffffd700" .. firstLetter .. "|r" .. restLore)
+                local formattedLore = "|cffffd700" .. firstLetter .. "|r" .. restLore
                 
                 if zoneData.pointsOfInterest and next(zoneData.pointsOfInterest) then
-                    formattedLore = formattedLore .. "|cffffd700" .. (IMAGO.L["ZONE_POI_HEADER"] or "INTERESSANTE ORTE") .. "|r\n_________________________________\n\n"
+                    formattedLore = formattedLore .. "\n\n|cffffd700" .. (IMAGO.L["ZONE_POI_HEADER"] or "POINTS OF INTEREST") .. "|r\n_________________________________\n\n"
                     for _, poi in ipairs(zoneData.pointsOfInterest) do
                         local pName = poi.name or ""
                         local pLore = poi.lore or ""
                         formattedLore = formattedLore .. "|cff9370db > " .. pName .. "|r\n" .. pLore .. "\n\n"
                     end
                 end
-                
+
                 f.loreBody:SetText(formattedLore)
                 f.loreBody:SetWidth(660)
                 f.loreBody:SetJustifyH("LEFT")
