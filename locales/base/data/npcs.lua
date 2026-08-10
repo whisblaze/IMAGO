@@ -199,7 +199,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].timeline = {
 
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].name = "Magister Umbric"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].aliases = {"Umbric"}
-MAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].race = "Void Elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].race = "Void Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].lore = [[No limits – that was Umbric's desire as a student of the arcane arts in Dalaran. Yet he found the mages' studies to be too rigid, too constricting for his liking. Seeing the fall of the Sunwell and his home of Quel'Thalas, he realized that he needed to try a different approach to magic. The elves of Silvermoon needed an alternative way to survive if the need arose... and so Umbric turned to the dark energies of the Void.
 
 He gathered quite a few acolytes practicing the forbidden arts in secret before he was discovered. Exiled by his former friend, Grand Magister Rommath, Umbric and his followers continued their studies and finally found a way into a rift of space and time – Telogrus. Here, they were transformed into the ren'dorei, elves infused with the Void itself.
@@ -2340,6 +2340,7 @@ IMAGOdb.npcs.CAT_VOID["mor_duun_midnight"].timeline = {
 
 -- XAL'ATATH --
 IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].name = "Xal'atath"
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].aliases = {"Xal’atath"}
 IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].race = "Unknown"
 IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].lore = [[Her smile is a threat, her whispers are warnings, and her promises are lies. The Harbinger of the Void has manipulated the people of Azeroth for millennia, and as easily as she elevated her allies to great power, she abandoned them to their doom.
 
@@ -2530,7 +2531,7 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].timeline = {
     },
     {
         era = "Midnight",
-        text = [[Guided Zul'jarra on her path to become hash'ey. Witnessed the return of the loa to Zul'aman and took up his old role as Speaker of Akil'zon. Helped the hash'ura gain various blessings of the loa at the altar in Amani'zar village.]],
+        text = [[Guided Zul'jarra on her path to become hash'ey. Witnessed the return of the loa to Zul'Aman and took up his old role as Speaker of Akil'zon. Helped the hash'ura gain various blessings of the loa at the altar in Amani'zar village.]],
     }
 }
 
