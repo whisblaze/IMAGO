@@ -141,6 +141,27 @@ IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"] = {
 }
 -- === CAT_LIGHT ===
 
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"] = {
+    displayID = 237120,
+    ids = {237120},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"] = {
+    displayID = 259879,
+    ids = {259879, 239705, 251933, 251947, 253190, 247924},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
+IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"] = {
+    displayID = 250402,
+    ids = {250402, 238748, 239486, 238834, 238764, 238732, 238749, 240462, 240596, 256041, 242362},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
 IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge_midnight"] = {
     displayID = 248321,
     ids = {248321, 239858, 240769, 242611},
@@ -670,7 +691,36 @@ IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"] = {
     zones = {},
     category = "CAT_NEUTRAL",
 }
+
+IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"] = {
+    displayID = 254413,
+    ids = {254413, 240337, 244116},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"] = {
+    displayID = 262823,
+    ids = {262823, 263987, 263523, 245418, 245297, 235850, 244440, 244454, 265951, 245288, 263940, 265952, 236089, 263941, 244445, 263986, 244446, 264032, 248578, 244443},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
+IMAGOdb.npcs.CAT_NEUTRAL["wardruid_loti_midnight"] = {
+    displayID = 261426,
+    ids = {261426, 259878},
+    zones = {},
+    category = "CAT_NEUTRAL",
+}
+
 -- === CAT_ARCANTINA ===
+
+IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"] = {
+    displayID = 250405,
+    ids = {250405},
+    zones = {},
+    category = "CAT_ARCANTINA",
+}
 
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"] = {
     displayID = 259344,
