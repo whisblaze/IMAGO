@@ -559,9 +559,9 @@ function IMAGO.Eras.CreateFrame()
     sp.logoLine:SetPoint("TOP", sp.logo, "BOTTOM", 0, -5)
     sp.logoLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
     sp.logoLine:SetGradient("HORIZONTAL",
-        CreateColor(1.0, 0.85, 0.1, 0),
-        CreateColor(1.0, 0.85, 0.1, 0.5),
-        CreateColor(1.0, 0.85, 0.1, 0))
+        CreateColor(0.784, 0.659, 0.294, 0),
+        CreateColor(0.784, 0.659, 0.294, 0.5),
+        CreateColor(0.784, 0.659, 0.294, 0))
 
     -- Rang-Label ("LORE STATUS")
     sp.rankLabel = sp:CreateFontString(nil, "OVERLAY")
@@ -573,24 +573,22 @@ function IMAGO.Eras.CreateFrame()
     sp.rankName = sp:CreateFontString(nil, "OVERLAY")
     sp.rankName:SetFont(FONT_TITLE, 36, "OUTLINE")
     sp.rankName:SetPoint("TOP", sp.rankLabel, "BOTTOM", 0, -5)
-    sp.rankName:SetTextColor(1.0, 0.85, 0.1)
+    sp.rankName:SetTextColor(0.878, 0.753, 0.416)
     sp.rankName:SetShadowColor(0, 0, 0, 1)
     sp.rankName:SetShadowOffset(2, -2)
 
-    -- Vertikale Trennlinie zwischen den Spalten
     sp.vLine = sp:CreateTexture(nil, "ARTWORK")
     sp.vLine:SetSize(1, 200)
     sp.vLine:SetPoint("TOP", sp.rankName, "BOTTOM", 0, -35)
     sp.vLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
     sp.vLine:SetGradient("VERTICAL",
-        CreateColor(1.0, 0.85, 0.1, 0.3),
-        CreateColor(1.0, 0.85, 0.1, 0))
+        CreateColor(0.784, 0.659, 0.294, 0.3),
+        CreateColor(0.784, 0.659, 0.294, 0))
 
-    -- LINKE SPALTE (Erreichte Meilensteine)
     sp.completedLabel = sp:CreateFontString(nil, "OVERLAY")
     sp.completedLabel:SetFont(FONT_BODY, 14, "OUTLINE")
     sp.completedLabel:SetPoint("TOPRIGHT", sp.vLine, "TOPLEFT", -20, 0)
-    sp.completedLabel:SetTextColor(1.0, 0.85, 0.1)
+    sp.completedLabel:SetTextColor(0.784, 0.659, 0.294)
 
     sp.completedMilestones = sp:CreateFontString(nil, "OVERLAY")
     sp.completedMilestones:SetFont(FONT_BODY, 12, "")
@@ -598,7 +596,6 @@ function IMAGO.Eras.CreateFrame()
     sp.completedMilestones:SetJustifyH("RIGHT")
     sp.completedMilestones:SetSpacing(8)
 
-    -- RECHTE SPALTE (Kommende Entdeckungen)
     sp.nextLabel = sp:CreateFontString(nil, "OVERLAY")
     sp.nextLabel:SetFont(FONT_BODY, 14, "OUTLINE")
     sp.nextLabel:SetPoint("TOPLEFT", sp.vLine, "TOPRIGHT", 20, 0)
@@ -610,26 +607,25 @@ function IMAGO.Eras.CreateFrame()
     sp.milestones:SetJustifyH("LEFT")
     sp.milestones:SetSpacing(8)
 
-    -- FOOTER (untere Leiste mit Progressbar)
-    sp.footer = CreateFrame("Frame", nil, sp)
-    sp.footer:SetPoint("BOTTOMLEFT",  sp, "BOTTOMLEFT",  0, 0)
-    sp.footer:SetPoint("BOTTOMRIGHT", sp, "BOTTOMRIGHT", 0, 0)
-    sp.footer:SetHeight(80)
-    do
+    if not sp.footer then
+        sp.footer = CreateFrame("Frame", nil, sp)
+        sp.footer:SetSize(620, 80)
+        sp.footer:SetPoint("BOTTOM", sp, "BOTTOM", 0, 0)
+
         local hLine = sp.footer:CreateTexture(nil, "ARTWORK")
-        hLine:SetHeight(1)
         hLine:SetPoint("TOPLEFT",  sp.footer, "TOPLEFT",  0, 0)
         hLine:SetPoint("TOPRIGHT", sp.footer, "TOPRIGHT", 0, 0)
+        hLine:SetHeight(1)
         hLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
         hLine:SetGradient("HORIZONTAL",
-            CreateColor(1.0, 0.85, 0.1, 0),
-            CreateColor(1.0, 0.85, 0.1, 0.4),
-            CreateColor(1.0, 0.85, 0.1, 0))
+            CreateColor(0.784, 0.659, 0.294, 0),
+            CreateColor(0.784, 0.659, 0.294, 0.4),
+            CreateColor(0.784, 0.659, 0.294, 0))
 
         sp.footer.rankText = sp.footer:CreateFontString(nil, "OVERLAY")
         sp.footer.rankText:SetFont(FONT_TITLE, 18, "")
         sp.footer.rankText:SetPoint("TOP", sp.footer, "TOP", 0, -8)
-        sp.footer.rankText:SetTextColor(1.0, 0.85, 0.1)
+        sp.footer.rankText:SetTextColor(0.878, 0.753, 0.416)
 
         sp.footer.progText = sp.footer:CreateFontString(nil, "OVERLAY")
         sp.footer.progText:SetFont(FONT_BODY, 11, "")
@@ -643,14 +639,14 @@ function IMAGO.Eras.CreateFrame()
         sp.footer.bar:SetMinMaxValues(0, 1)
         sp.footer.bar:SetValue(0)
         sp.footer.bar:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
-        sp.footer.bar:SetStatusBarColor(1, 0.78, 0.1, 0.9)
+        sp.footer.bar:SetStatusBarColor(0.784, 0.659, 0.294, 0.9)
         local barBg = sp.footer.bar:CreateTexture(nil, "BACKGROUND")
         barBg:SetAllPoints()
         barBg:SetColorTexture(0.15, 0.13, 0.05, 0.6)
         local barBorder = CreateFrame("Frame", nil, sp.footer.bar, "BackdropTemplate")
         barBorder:SetAllPoints()
         barBorder:SetBackdrop({ edgeFile="Interface\\Buttons\\WHITE8X8", edgeSize=1 })
-        barBorder:SetBackdropBorderColor(1, 0.78, 0.1, 0.5)
+        barBorder:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.5)
         C_Timer.After(0, function()
             local bw = sp.footer.bar:GetWidth()
             if bw and bw > 10 then
@@ -699,13 +695,13 @@ function IMAGO.Eras.CreateFrame()
             btn.check:SetSize(7, 7)
             btn.check:SetPoint("LEFT", btn, "LEFT", 6, 0)
             btn.check:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-            btn.check:SetVertexColor(1, 0.78, 0.1, 1)
+            btn.check:SetVertexColor(0.784, 0.659, 0.294, 1)
             btn.check:Hide()
             btn.text = btn:CreateFontString(nil, "OVERLAY")
             btn.text:SetFont(FONT_BODY, 11, "")
             btn.text:SetPoint("LEFT", btn, "LEFT", 18, 0)
             btn.text:SetText(text)
-            btn:SetScript("OnEnter", function(self) self.text:SetTextColor(1, 0.85, 0.1) end)
+            btn:SetScript("OnEnter", function(self) self.text:SetTextColor(0.878, 0.753, 0.416) end)
             btn:SetScript("OnLeave", function(self) self.text:SetTextColor(0.9, 0.9, 0.9) end)
             return btn
         end
@@ -714,9 +710,9 @@ function IMAGO.Eras.CreateFrame()
         local function UpdateDropdownChecks()
             local isEnc = IMAGOSaved and IMAGOSaved.erasEncyclopediaMode
             entryExplorer.check:SetShown(not isEnc)
-            entryExplorer.text:SetTextColor(isEnc and 0.6 or 1, isEnc and 0.6 or 0.85, isEnc and 0.6 or 0.1)
+            entryExplorer.text:SetTextColor(isEnc and 0.6 or 0.784, isEnc and 0.6 or 0.659, isEnc and 0.6 or 0.294)
             entryEncyclopedia.check:SetShown(isEnc)
-            entryEncyclopedia.text:SetTextColor(isEnc and 1 or 0.6, isEnc and 0.85 or 0.6, isEnc and 0.1 or 0.6)
+            entryEncyclopedia.text:SetTextColor(isEnc and 0.784 or 0.6, isEnc and 0.659 or 0.6, isEnc and 0.294 or 0.6)
         end
         entryExplorer:SetScript("OnClick", function()
             IMAGOSaved.erasEncyclopediaMode = false
@@ -1796,7 +1792,7 @@ local function RenderErasOverview()
     for _, r in ipairs(IMAGO.Eras.ranks) do
         local rTitle = IMAGO.L[r.key] or r.key
         if r.perc <= pct then
-            completedStr = completedStr .. string.format("|cFFFFD700%s (%s %d%%)|r\n", rTitle, atWord, r.perc)
+            completedStr = completedStr .. string.format("|cFFC8A84B%s (%s %d%%)|r\n", rTitle, atWord, r.perc)
         else
             nextStr = nextStr .. string.format("|cFF888888%s (%s %d%%)|r\n", rTitle, atWord, r.perc)
         end

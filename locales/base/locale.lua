@@ -93,6 +93,8 @@ L["VAL_WARN_LORE"]                  = "|cFFFF8C00Warning:|r %s has no lore in th
 L["VAL_DONE"]                       = "Validation complete. %d NPCs checked. %d critical errors, %d warnings."
 
 L["CINEMATIC_CONTINUE"]             = "< Click to uncover their fate >"
+L["FATES_CHOOSE_EXP"]               = "Choose an Expansion"
+L["COMING_SOON_SHORT"]              = "Coming Soon"
 L["FILTER_ALL"]                     = "All Echoes"
 L["FILTER_HIST"]                    = "Recently Discovered"
 L["FILTER_FAV"]                     = "Favorites"
@@ -228,3 +230,22 @@ L["ERAS_LOCKED_MODEHINT"]           = "Tip: Switch to Encyclopedia Mode using th
 L["ERAS_WIP_TITLE"]                 = "In Development"
 L["ERAS_WIP_BODY"]                  = "Content for this era is still being developed.\nCheck back soon!"
 L["ERAS_ORIGINAL_GAME"]             = "Original Game"
+
+
+-- NPC Categories (Midnight / The War Within)
+L["CAT_QUELTHALAS"]                 = "Defenders of Quel'Thalas"
+L["CAT_LIGHT"]                      = "Champions of the Light"
+L["CAT_AMANI"]                      = "The Amani"
+L["CAT_HARATI"]                     = "The Harati"
+L["CAT_EBON_BLADE"]                 = "Knights of the Ebon Blade"
+L["CAT_NEUTRAL"]                    = "Neutral Forces"
+L["CAT_ARCANTINA"]                  = "The Arcantina"
+L["CAT_VOIDHUNTERS"]                = "Void Hunters"
+L["CAT_HARBINGER"]                  = "Harbingers of the Void"
+L["CAT_KIRIN_TOR"]                  = "Kirin Tor"
+L["CAT_EARTHEN"]                    = "The Earthen"
+L["CAT_ARATHI"]                     = "Children of the Arathi"
+L["CAT_HARANIR"]                    = "The Haraniir"
+
+-- Expansion Grid Navigation
+L["FATES_BACK_EXPANSIONS"]          = "< Expansions"

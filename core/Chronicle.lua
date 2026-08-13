@@ -71,6 +71,11 @@ IMAGO.Chronicle.zoneRanks = IMAGO.Chronicle.zoneRanks or {}
 local navStack = {}
 local isNavigatingBack = false
 
+local EXPANSION_SUFFIX = {
+    ["midnight"]       = "_midnight",
+    ["the_war_within"] = "_tww",
+}
+
 local function GetCrypticName(name)
     local crypt = ""
     local consonants = {"k", "z", "n", "h", "r", "t", "x", "v", "l", "s", "q", "w", "y"}
@@ -130,7 +135,7 @@ function IMAGO.Chronicle.ShowCinematic(npcData, callback)
         cf.name = cf:CreateFontString(nil, "OVERLAY")
         cf.name:SetFont(FONT_TITLE, 64, "OUTLINE")
         cf.name:SetPoint("BOTTOM", cf.model, "BOTTOM", 0, -80)
-        cf.name:SetTextColor(1.0, 0.85, 0.1)
+        cf.name:SetTextColor(0.784, 0.659, 0.294)
         cf.name:SetShadowColor(0,0,0,1)
         cf.name:SetShadowOffset(2, -2)
 
@@ -217,7 +222,7 @@ function IMAGO.Chronicle.CreateFrame()
     }
     f:SetBackdrop((IMAGOSaved and IMAGOSaved.opaqueUI) and backdropOpaque or backdropDefault)
     f:SetBackdropColor(0.05, 0.05, 0.05, (IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.95)
-    f:SetBackdropBorderColor(1.0, 0.85, 0.1, 0.9)
+    f:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.9)
 
     f.closeBtn = CreateFrame("Button", nil, f, "UIPanelCloseButton")
     f.closeBtn:SetPoint("TOPRIGHT", f, "TOPRIGHT", -4, -4)
@@ -244,13 +249,13 @@ function IMAGO.Chronicle.CreateFrame()
     f.headerLine:SetPoint("TOPRIGHT", f, "TOPRIGHT", -4, -49)
     f.headerLine:SetHeight(1)
     f.headerLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-    f.headerLine:SetGradient("HORIZONTAL", CreateColor(1.0, 0.85, 0.1, 0), CreateColor(1.0, 0.85, 0.1, 0.4), CreateColor(1.0, 0.85, 0.1, 0))
+    f.headerLine:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0), CreateColor(0.784, 0.659, 0.294, 0.4), CreateColor(0.784, 0.659, 0.294, 0))
 
     -- 3. Der Titel selbst (Minimal größer & mit Gravur-Schatten)
     f.title = f:CreateFontString(nil, "OVERLAY")
     f.title:SetFont(FONT_TITLE, 24, "OUTLINE") -- Von 22 auf 24 vergrößert für mehr Präsenz
     f.title:SetPoint("TOP", f, "TOP", 0, -16)
-    f.title:SetTextColor(1.0, 0.85, 0.1)
+    f.title:SetTextColor(0.784, 0.659, 0.294)
     f.title:SetShadowColor(0, 0, 0, 1) -- NEU: Der Drop-Shadow
     f.title:SetShadowOffset(2, -2)
     f.title:SetText("IMAGO — " .. (IMAGO.L["WINDOW_TITLE"] or "Chronik der Unvergessenen"))
@@ -306,47 +311,77 @@ function IMAGO.Chronicle.CreateFrame()
         insets = { left = 4, right = 4, top = 4, bottom = 4 }
     })
     f.filterMenu:SetBackdropColor(0.05, 0.05, 0.05, (IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.98)
-    f.filterMenu:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+    f.filterMenu:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.9)
 
-    local filters = {
-        {id = "ALL",            name = IMAGO.L["FILTER_ALL"] or "Alle Echos"},
-        {id = "HIST",           name = IMAGO.L["FILTER_HIST"] or "Zuletzt entdeckt"},
-        {id = "FAV",            name = IMAGO.L["FILTER_FAV"] or "Favoriten"},
-        {id = "CAT_QUELTHALAS", name = IMAGO.L["CAT_QUELTHALAS"] or "Verteidiger von Quel'Thalas"},
-        {id = "CAT_LIGHT",      name = IMAGO.L["CAT_LIGHT"] or "Vorhut des Lichts"},
-        {id = "CAT_AMANI",      name = IMAGO.L["CAT_AMANI"] or "Der Amani-Stamm"},
-        {id = "CAT_HARATI",     name = IMAGO.L["CAT_HARATI"] or "Die Hara'ti"},
-        {id = "CAT_VOID",       name = IMAGO.L["CAT_VOID"] or "Die Leereninvasion"},
-        {id = "CAT_EBON_BLADE", name = IMAGO.L["CAT_EBON_BLADE"] or "Ritter der Schwarzen Klinge"},
-        {id = "CAT_NEUTRAL",    name = IMAGO.L["CAT_NEUTRAL"] or "Unabhängig & Rätselhaft"},
-        {id = "CAT_ARCANTINA",  name = IMAGO.L["CAT_ARCANTINA"] or "Die Arcantina"}
-    }
-    
-    local menuY = -10
-    for _, flt in ipairs(filters) do
+    -- Pool of reusable filter buttons — rebuilt dynamically each time the menu opens
+    f.filterMenu.pool = {}
+
+    local function GetOrCreateMenuBtn(idx)
+        if f.filterMenu.pool[idx] then return f.filterMenu.pool[idx] end
         local btn = CreateFrame("Button", nil, f.filterMenu)
-        btn:SetSize(140, 20)
-        btn:SetPoint("TOP", f.filterMenu, "TOP", 0, menuY)
+        btn:SetSize(180, 20)
         local hl = btn:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
-        hl:SetColorTexture(1, 0.78, 0.1, 0.2)
+        hl:SetColorTexture(0.784, 0.659, 0.294, 0.2)
         btn.t = btn:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
         btn.t:SetPoint("LEFT", 10, 0)
-        btn.t:SetText(flt.name)
-        if flt.id == "FAV" then btn.t:SetTextColor(1.0, 0.85, 0.1) end
-        
         btn:SetScript("OnClick", function()
-            f.activeFilter = flt.id
-            f.filterBtn:SetText(flt.name)    -- SO IST ES SAUBER
+            f.activeFilter = btn._filterId
+            f.filterBtn:SetText(btn.t:GetText())
             f.filterMenu:Hide()
             IMAGO.Chronicle.UpdateList()
         end)
-        menuY = menuY - 20
+        f.filterMenu.pool[idx] = btn
+        return btn
     end
-    f.filterMenu:SetHeight(math.abs(menuY) + 10)
+
+    f.filterMenu.Rebuild = function()
+        for _, b in ipairs(f.filterMenu.pool) do b:Hide() end
+        local allItems = {
+            {id = "ALL",  name = IMAGO.L["FILTER_ALL"]  or "All Echoes"},
+            {id = "HIST", name = IMAGO.L["FILTER_HIST"] or "Recently Discovered"},
+            {id = "FAV",  name = IMAGO.L["FILTER_FAV"]  or "Favorites"},
+        }
+        local sfx = f.activeExpansion and EXPANSION_SUFFIX[f.activeExpansion]
+        if sfx then
+            local catSet, catList = {}, {}
+            for cat, entries in pairs(IMAGOdb.npcs or {}) do
+                if type(entries) == "table" then
+                    for slug in pairs(entries) do
+                        if slug:sub(-#sfx) == sfx and not catSet[cat] then
+                            catSet[cat] = true
+                            table.insert(catList, {id = cat, name = IMAGO.L[cat] or cat})
+                        end
+                    end
+                end
+            end
+            table.sort(catList, function(a, b) return a.name < b.name end)
+            for _, c in ipairs(catList) do table.insert(allItems, c) end
+        end
+        local menuY = -8
+        for i, item in ipairs(allItems) do
+            local btn = GetOrCreateMenuBtn(i)
+            btn._filterId = item.id
+            btn.t:SetText(item.name)
+            if item.id == "FAV" then
+                btn.t:SetTextColor(0.784, 0.659, 0.294)
+            else
+                btn.t:SetTextColor(0.88, 0.82, 0.70)
+            end
+            btn:SetPoint("TOP", f.filterMenu, "TOP", 0, menuY)
+            btn:Show()
+            menuY = menuY - 22
+        end
+        f.filterMenu:SetSize(200, math.abs(menuY) + 10)
+    end
 
     f.filterBtn:SetScript("OnClick", function()
-        if f.filterMenu:IsShown() then f.filterMenu:Hide() else f.filterMenu:Show() end
+        if f.filterMenu:IsShown() then
+            f.filterMenu:Hide()
+        else
+            f.filterMenu.Rebuild()
+            f.filterMenu:Show()
+        end
     end)
 
     f.scrollFrame = CreateFrame("ScrollFrame", "IMAGOChronicleScroll", f, "UIPanelScrollFrameTemplate")
@@ -359,7 +394,7 @@ function IMAGO.Chronicle.CreateFrame()
         _G["IMAGOChronicleScrollScrollBarScrollUpButton"]:Hide()
         _G["IMAGOChronicleScrollScrollBarScrollDownButton"]:Hide()
         scrollBar:SetWidth(4)
-        scrollBar:GetThumbTexture():SetColorTexture(1, 0.78, 0.1, 0.4)
+        scrollBar:GetThumbTexture():SetColorTexture(0.784, 0.659, 0.294, 0.4)
     end
 
     f.content = CreateFrame("Frame", nil, f.scrollFrame)
@@ -369,7 +404,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.vLine = f:CreateTexture(nil, "ARTWORK")
     f.vLine:SetSize(1, 600)
     f.vLine:SetPoint("TOPLEFT", f.scrollFrame, "TOPRIGHT", 10, 35)
-    f.vLine:SetGradient("VERTICAL", CreateColor(1, 0.78, 0.1, 0), CreateColor(1, 0.78, 0.1, 0.4))
+    f.vLine:SetGradient("VERTICAL", CreateColor(0.784, 0.659, 0.294, 0), CreateColor(0.784, 0.659, 0.294, 0.4))
 
     -- ============================================================
     -- RECHTE SEITE: DAS DETAIL-FRAME
@@ -384,7 +419,7 @@ function IMAGO.Chronicle.CreateFrame()
         insets = { left = 4, right = 4, top = 4, bottom = 4 }
     })
     f.detailFrame:SetBackdropColor(0.05, 0.05, 0.05, (IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.95)
-    f.detailFrame:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+    f.detailFrame:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.9)
 
     -- NEU: Das Fraktions-Icon (Fix für den aktuellen Fehler!)
     f.factionIcon = f.detailFrame:CreateTexture(nil, "ARTWORK")
@@ -396,20 +431,20 @@ function IMAGO.Chronicle.CreateFrame()
     f.detailTitle = f.detailFrame:CreateFontString(nil, "OVERLAY")
     f.detailTitle:SetFont(FONT_TITLE, 32, "OUTLINE")
     f.detailTitle:SetPoint("TOP", f.detailFrame, "TOP", 0, -15)
-    f.detailTitle:SetTextColor(1.0, 0.85, 0.1)
+    f.detailTitle:SetTextColor(0.784, 0.659, 0.294)
 
     -- Die Zierlinien unter dem Titel
     f.detailLineLeft = f.detailFrame:CreateTexture(nil, "ARTWORK")
     f.detailLineLeft:SetSize(355, 1)
     f.detailLineLeft:SetPoint("TOPRIGHT", f.detailTitle, "BOTTOM", 0, -8)
     f.detailLineLeft:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-    f.detailLineLeft:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0), CreateColor(1, 0.78, 0.1, 0.7))
+    f.detailLineLeft:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0), CreateColor(0.784, 0.659, 0.294, 0.7))
 
     f.detailLineRight = f.detailFrame:CreateTexture(nil, "ARTWORK")
     f.detailLineRight:SetSize(355, 1)
     f.detailLineRight:SetPoint("TOPLEFT", f.detailTitle, "BOTTOM", 0, -8)
     f.detailLineRight:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-    f.detailLineRight:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0.7), CreateColor(1, 0.78, 0.1, 0))
+    f.detailLineRight:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0.7), CreateColor(0.784, 0.659, 0.294, 0))
 
     -- Zonen-Elemente (Bild, Rahmen, Trenner)
     f.detailImage = f.detailFrame:CreateTexture(nil, "ARTWORK")
@@ -425,7 +460,7 @@ function IMAGO.Chronicle.CreateFrame()
         edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
         edgeSize = 12,
     })
-    f.detailImageBorder:SetBackdropBorderColor(1, 0.78, 0.1, 0.8)
+    f.detailImageBorder:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.8)
     f.detailImageBorder:Hide()
 
     f.detailSeparator = f.detailFrame:CreateTexture(nil, "ARTWORK")
@@ -449,7 +484,7 @@ function IMAGO.Chronicle.CreateFrame()
         tab.activeLine = tab:CreateTexture(nil, "ARTWORK")
         tab.activeLine:SetSize(70, 2)
         tab.activeLine:SetPoint("BOTTOM", tab, "BOTTOM", 0, 0)
-        tab.activeLine:SetColorTexture(1.0, 0.85, 0.1, 1)
+        tab.activeLine:SetColorTexture(0.784, 0.659, 0.294, 1)
         tab.activeLine:Hide()
         return tab
     end
@@ -492,7 +527,7 @@ function IMAGO.Chronicle.CreateFrame()
         edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
         edgeSize = 12,
     })
-    f.detailImageBorder:SetBackdropBorderColor(1, 0.78, 0.1, 0.8)
+    f.detailImageBorder:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.8)
     f.detailImageBorder:Hide()
     f.detailModel = CreateFrame("PlayerModel", nil, f.detailFrame)
     f.detailModel:SetSize(280, 400)
@@ -511,7 +546,7 @@ function IMAGO.Chronicle.CreateFrame()
     local function UpdateAnimButtons(activeId)
         for _, btn in ipairs(f.detailModel.animButtons) do
             if btn.animId == activeId then
-                btn.bg:SetVertexColor(1, 0.78, 0.1, 0.4)
+                btn.bg:SetVertexColor(0.784, 0.659, 0.294, 0.4)
             else
                 btn.bg:SetVertexColor(0.1, 0.1, 0.1, 0.6)
             end
@@ -544,7 +579,7 @@ function IMAGO.Chronicle.CreateFrame()
 
         -- Hover
         btn:SetScript("OnEnter", function()
-            btn.text:SetTextColor(1, 0.85, 0.1)
+            btn.text:SetTextColor(0.784, 0.659, 0.294)
         end)
         btn:SetScript("OnLeave", function()
             btn.text:SetTextColor(0.8, 0.8, 0.8)
@@ -621,18 +656,18 @@ function IMAGO.Chronicle.CreateFrame()
     f.startPage.logoLine:SetSize(400, 1)
     f.startPage.logoLine:SetPoint("TOP", f.startPage.logo, "BOTTOM", 0, -5)
     f.startPage.logoLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-    f.startPage.logoLine:SetGradient("HORIZONTAL", CreateColor(1.0, 0.85, 0.1, 0), CreateColor(1.0, 0.85, 0.1, 0.5), CreateColor(1.0, 0.85, 0.1, 0))
+    f.startPage.logoLine:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0), CreateColor(0.784, 0.659, 0.294, 0.5), CreateColor(0.784, 0.659, 0.294, 0))
 
     -- 2. HERO SECTION: Der aktuelle Rang
     f.startPage.rankLabel = f.startPage:CreateFontString(nil, "OVERLAY")
     f.startPage.rankLabel:SetFont(FONT_BODY, 13)
     f.startPage.rankLabel:SetPoint("TOP", f.startPage.logoLine, "BOTTOM", 0, -25)
-    f.startPage.rankLabel:SetTextColor(0.8, 0.7, 0.5)
+    f.startPage.rankLabel:SetTextColor(0.784, 0.659, 0.294)
 
     f.startPage.rankName = f.startPage:CreateFontString(nil, "OVERLAY")
     f.startPage.rankName:SetFont(FONT_TITLE, 36, "OUTLINE")
     f.startPage.rankName:SetPoint("TOP", f.startPage.rankLabel, "BOTTOM", 0, -5)
-    f.startPage.rankName:SetTextColor(1.0, 0.85, 0.1)
+    f.startPage.rankName:SetTextColor(0.878, 0.753, 0.416)
     f.startPage.rankName:SetShadowColor(0, 0, 0, 1)
     f.startPage.rankName:SetShadowOffset(2, -2)
 
@@ -642,13 +677,13 @@ function IMAGO.Chronicle.CreateFrame()
     f.startPage.vLine:SetSize(1, 200)
     f.startPage.vLine:SetPoint("TOP", f.startPage.rankName, "BOTTOM", 0, -35)
     f.startPage.vLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-    f.startPage.vLine:SetGradient("VERTICAL", CreateColor(1.0, 0.85, 0.1, 0.3), CreateColor(1.0, 0.85, 0.1, 0))
+    f.startPage.vLine:SetGradient("VERTICAL", CreateColor(0.784, 0.659, 0.294, 0.3), CreateColor(0.784, 0.659, 0.294, 0))
 
     -- LINKE SPALTE (Erreichtes - Rechtsbündig ausgerichtet)
     f.startPage.completedLabel = f.startPage:CreateFontString(nil, "OVERLAY")
     f.startPage.completedLabel:SetFont(FONT_BODY, 14, "OUTLINE")
     f.startPage.completedLabel:SetPoint("TOPRIGHT", f.startPage.vLine, "TOPLEFT", -20, 0)
-    f.startPage.completedLabel:SetTextColor(1.0, 0.85, 0.1)
+    f.startPage.completedLabel:SetTextColor(0.784, 0.659, 0.294)
 
     f.startPage.completedMilestones = f.startPage:CreateFontString(nil, "OVERLAY")
     f.startPage.completedMilestones:SetFont(FONT_BODY, 12)
@@ -660,7 +695,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.startPage.nextLabel = f.startPage:CreateFontString(nil, "OVERLAY")
     f.startPage.nextLabel:SetFont(FONT_BODY, 14, "OUTLINE")
     f.startPage.nextLabel:SetPoint("TOPLEFT", f.startPage.vLine, "TOPRIGHT", 20, 0)
-    f.startPage.nextLabel:SetTextColor(0.5, 0.5, 0.5)
+    f.startPage.nextLabel:SetTextColor(0.784, 0.659, 0.294)
 
     f.startPage.milestones = f.startPage:CreateFontString(nil, "OVERLAY")
     f.startPage.milestones:SetFont(FONT_BODY, 12)
@@ -682,7 +717,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.hintPage.aura:SetSize(300, 300) -- Etwas größer als das Original
     f.hintPage.aura:SetPoint("CENTER", f.hintPage.centerAnchor, "CENTER", 0, 0)
     f.hintPage.aura:SetTexture("Interface\\AddOns\\IMAGO\\Media\\undiscovered.tga") 
-    f.hintPage.aura:SetVertexColor(0.6, 0.2, 1.0) -- Magisches Void-Lila
+    f.hintPage.aura:SetVertexColor(0.784, 0.659, 0.294) -- Magisches Gold
 
     local agAura = f.hintPage.aura:CreateAnimationGroup()
     local fadeOut = agAura:CreateAnimation("Alpha")
@@ -712,7 +747,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.hintPage.warning = f.hintPage:CreateFontString(nil, "OVERLAY")
     f.hintPage.warning:SetFont(FONT_BODY, 15, "OUTLINE")
     f.hintPage.warning:SetPoint("TOP", f.hintPage.icon, "BOTTOM", 0, -20)
-    f.hintPage.warning:SetTextColor(0.8, 0.2, 0.2)
+    f.hintPage.warning:SetTextColor(0.784, 0.659, 0.294)
     f.hintPage.warning:SetText(IMAGO.L["HINT_IDENTITY_HIDDEN"])
 
     -- 5. Die Beschreibung
@@ -721,7 +756,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.hintPage.desc:SetPoint("TOP", f.hintPage.warning, "BOTTOM", 0, -15)
     f.hintPage.desc:SetWidth(400)
     f.hintPage.desc:SetJustifyH("CENTER")
-    f.hintPage.desc:SetTextColor(0.9, 0.9, 0.9)
+    f.hintPage.desc:SetTextColor(0.784, 0.659, 0.294)
     f.hintPage.desc:SetSpacing(6)
 
     f.footer = CreateFrame("Frame", nil, f.detailFrame)
@@ -732,23 +767,23 @@ function IMAGO.Chronicle.CreateFrame()
     f.footer.hLine:SetSize(620, 1)
     f.footer.hLine:SetPoint("TOP", f.footer, "TOP", 0, 0)
     f.footer.hLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-    f.footer.hLine:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0), CreateColor(1, 0.78, 0.1, 0.5), CreateColor(1, 0.78, 0.1, 0))
+    f.footer.hLine:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0), CreateColor(0.784, 0.659, 0.294, 0.5), CreateColor(0.784, 0.659, 0.294, 0))
 
     f.footer.rankText = f.footer:CreateFontString(nil, "OVERLAY")
     f.footer.rankText:SetFont(FONT_TITLE, 14, "OUTLINE")
     f.footer.rankText:SetPoint("TOP", f.footer, "TOP", 0, -15)
-    f.footer.rankText:SetTextColor(1.0, 0.85, 0.1)
+    f.footer.rankText:SetTextColor(0.878, 0.753, 0.416)
 
     f.footer.progText = f.footer:CreateFontString(nil, "OVERLAY")
     f.footer.progText:SetFont(FONT_BODY, 11, "OUTLINE")
     f.footer.progText:SetPoint("TOP", f.footer.rankText, "BOTTOM", 0, -2)
-    f.footer.progText:SetTextColor(0.8, 0.7, 0.5, 0.8)
+    f.footer.progText:SetTextColor(0.784, 0.659, 0.294, 0.8)
     
     f.footer.bar = CreateFrame("StatusBar", nil, f.footer, "BackdropTemplate")
     f.footer.bar:SetSize(580, 16)
     f.footer.bar:SetPoint("BOTTOM", f.footer, "BOTTOM", 0, 15)
     f.footer.bar:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
-    f.footer.bar:GetStatusBarTexture():SetColorTexture(1, 0.78, 0.1, 0.7)
+    f.footer.bar:GetStatusBarTexture():SetColorTexture(0.784, 0.659, 0.294, 0.7)
     f.footer.bar:SetMinMaxValues(0, 100)
     f.footer.bar:SetValue(0)
     
@@ -770,7 +805,7 @@ function IMAGO.Chronicle.CreateFrame()
         edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",
         edgeSize = 12,
     })
-    f.footer.bar.border:SetBackdropBorderColor(1, 0.78, 0.1, 0.5)
+    f.footer.bar.border:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.5)
 
     -- ==========================================
     -- MODE TOGGLE BUTTON + DROPDOWN
@@ -780,12 +815,12 @@ function IMAGO.Chronicle.CreateFrame()
     f.modeBtn:SetPoint("TOPLEFT", f.detailFrame, "TOPLEFT", 14, -14)
     f.modeBtn:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
     f.modeBtn:SetBackdropColor(0.05, 0.05, 0.05, 0.85)
-    f.modeBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+    f.modeBtn:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.6)
 
     f.modeBtn.label = f.modeBtn:CreateFontString(nil, "OVERLAY")
     f.modeBtn.label:SetFont(FONT_BODY, 11, "OUTLINE")
     f.modeBtn.label:SetPoint("CENTER", f.modeBtn, "CENTER", 0, 0)
-    f.modeBtn.label:SetTextColor(1, 0.85, 0.1)
+    f.modeBtn.label:SetTextColor(0.784, 0.659, 0.294)
 
     local function UpdateModeBtn()
         f.modeBtn.label:SetText(IMAGO.L["MODE_LABEL"])
@@ -811,7 +846,7 @@ function IMAGO.Chronicle.CreateFrame()
         self.icon:SetAlpha(1.0)
         if self._tooltip then
             GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
-            GameTooltip:AddLine(self._tooltip, 1, 0.85, 0.1)
+            GameTooltip:AddLine(self._tooltip, 0.784, 0.659, 0.294)
             GameTooltip:Show()
         end
     end)
@@ -854,19 +889,19 @@ function IMAGO.Chronicle.CreateFrame()
     f.confirmDialog:SetFrameStrata("FULLSCREEN_DIALOG")
     f.confirmDialog:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 14, insets = {left=4,right=4,top=4,bottom=4} })
     f.confirmDialog:SetBackdropColor(0.04, 0.04, 0.06, 0.97)
-    f.confirmDialog:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+    f.confirmDialog:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.9)
     f.confirmDialog:Hide()
 
     f.confirmDialog.title = f.confirmDialog:CreateFontString(nil, "OVERLAY")
     f.confirmDialog.title:SetFont(FONT_BODY, 13, "OUTLINE")
     f.confirmDialog.title:SetPoint("TOP", f.confirmDialog, "TOP", 0, -14)
-    f.confirmDialog.title:SetTextColor(1, 0.85, 0.1)
+    f.confirmDialog.title:SetTextColor(0.784, 0.659, 0.294)
 
     f.confirmDialog.line = f.confirmDialog:CreateTexture(nil, "ARTWORK")
     f.confirmDialog.line:SetSize(280, 1)
     f.confirmDialog.line:SetPoint("TOP", f.confirmDialog.title, "BOTTOM", 0, -6)
     f.confirmDialog.line:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-    f.confirmDialog.line:SetVertexColor(1, 0.78, 0.1, 0.4)
+    f.confirmDialog.line:SetVertexColor(0.784, 0.659, 0.294, 0.4)
 
     f.confirmDialog.desc = f.confirmDialog:CreateFontString(nil, "OVERLAY")
     f.confirmDialog.desc:SetFont(FONT_BODY, 11)
@@ -917,7 +952,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.modeDropdown:SetFrameStrata("DIALOG")
     f.modeDropdown:SetBackdrop({ bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", edgeSize = 10, insets = {left=3,right=3,top=3,bottom=3} })
     f.modeDropdown:SetBackdropColor(0.05, 0.05, 0.05, 0.97)
-    f.modeDropdown:SetBackdropBorderColor(1, 0.78, 0.1, 0.8)
+    f.modeDropdown:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.8)
     f.modeDropdown:Hide()
 
     local function CreateDropdownEntry(parent, text, yOffset, modeValue)
@@ -929,7 +964,7 @@ function IMAGO.Chronicle.CreateFrame()
         btn.check:SetSize(7, 7)
         btn.check:SetPoint("LEFT", btn, "LEFT", 6, 0)
         btn.check:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-        btn.check:SetVertexColor(1, 0.78, 0.1, 1)
+        btn.check:SetVertexColor(0.784, 0.659, 0.294, 1)
         btn.check:Hide()
 
         btn.text = btn:CreateFontString(nil, "OVERLAY")
@@ -939,7 +974,7 @@ function IMAGO.Chronicle.CreateFrame()
 
         btn.modeValue = modeValue
         btn:SetScript("OnEnter", function(self)
-            self.text:SetTextColor(1, 0.85, 0.1)
+            self.text:SetTextColor(0.784, 0.659, 0.294)
         end)
         btn:SetScript("OnLeave", function(self)
             self.text:SetTextColor(0.9, 0.9, 0.9)
@@ -995,7 +1030,7 @@ function IMAGO.Chronicle.CreateFrame()
         f.modeBtn:SetBackdropBorderColor(1, 0.95, 0.4, 1)
     end)
     f.modeBtn:SetScript("OnLeave", function()
-        f.modeBtn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+        f.modeBtn:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.6)
     end)
 
     -- Back button: sits to the right of modeBtn inside detailFrame
@@ -1020,7 +1055,7 @@ function IMAGO.Chronicle.CreateFrame()
     end)
     f.backBtn:SetScript("OnLeave", function(self)
         if self.enabled then
-            self:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
+            self:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.6)
         else
             self:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
         end
@@ -1060,8 +1095,8 @@ function IMAGO.Chronicle.CreateFrame()
         if not btn then return end
         btn.enabled = val
         if val then
-            btn:SetBackdropBorderColor(1, 0.78, 0.1, 0.6)
-            btn.label:SetTextColor(1, 0.85, 0.1)
+            btn:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.6)
+            btn.label:SetTextColor(0.784, 0.659, 0.294)
         else
             btn:SetBackdropBorderColor(0.4, 0.4, 0.4, 0.4)
             btn.label:SetTextColor(0.5, 0.5, 0.5)
@@ -1118,7 +1153,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.comingSoonPage.title = f.comingSoonPage:CreateFontString(nil, "OVERLAY")
     f.comingSoonPage.title:SetFont(FONT_TITLE, 36, "OUTLINE")
     f.comingSoonPage.title:SetPoint("CENTER", 0, -30)
-    f.comingSoonPage.title:SetTextColor(1.0, 0.85, 0.1)
+    f.comingSoonPage.title:SetTextColor(0.784, 0.659, 0.294)
     f.comingSoonPage.title:SetShadowColor(0, 0, 0, 1)
     f.comingSoonPage.title:SetShadowOffset(2, -2)
 
@@ -1128,6 +1163,245 @@ function IMAGO.Chronicle.CreateFrame()
     f.comingSoonPage.desc:SetTextColor(0.6, 0.6, 0.6)
     f.comingSoonPage.desc:SetJustifyH("CENTER")
     f.comingSoonPage.desc:SetSpacing(8)
+
+    -- ==========================================
+    -- EXPANSION GRID — Fates Tab Startseite
+    -- ==========================================
+    f.expansionGrid = CreateFrame("Frame", nil, f)
+    f.expansionGrid:SetPoint("TOPLEFT",     f, "TOPLEFT",      8, -50)
+    f.expansionGrid:SetPoint("BOTTOMRIGHT", f, "BOTTOMRIGHT", -8,  15)
+    f.expansionGrid:Hide()
+
+    f.expansionGrid.bg = f.expansionGrid:CreateTexture(nil, "BACKGROUND")
+    f.expansionGrid.bg:SetAllPoints()
+    f.expansionGrid.bg:SetColorTexture(0.03, 0.03, 0.04, 0.94)
+
+    f.expansionGrid.titleLabel = f.expansionGrid:CreateFontString(nil, "OVERLAY")
+    f.expansionGrid.titleLabel:SetFont(FONT_TITLE, 17, "OUTLINE")
+    f.expansionGrid.titleLabel:SetPoint("TOP", f.expansionGrid, "TOP", 0, -13)
+    f.expansionGrid.titleLabel:SetTextColor(0.62, 0.57, 0.43)
+    f.expansionGrid.titleLabel:SetText(IMAGO.L["FATES_CHOOSE_EXP"] or "Choose an Expansion")
+
+    f.expansionGrid.divLine = f.expansionGrid:CreateTexture(nil, "ARTWORK")
+    f.expansionGrid.divLine:SetSize(420, 1)
+    f.expansionGrid.divLine:SetPoint("TOP", f.expansionGrid.titleLabel, "BOTTOM", 0, -5)
+    f.expansionGrid.divLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+    f.expansionGrid.divLine:SetGradient("HORIZONTAL",
+        CreateColor(1,0.78,0.1,0), CreateColor(1,0.78,0.1,0.32), CreateColor(1,0.78,0.1,0))
+
+    do
+        local TILE_W, TILE_H = 330, 134
+        local HGAP,  VGAP   = 12,  10
+        local COLS           = 3
+        local GRID_L, GRID_T = 35, -60  -- left=(1084-(3*330+2*12))/2, below title
+
+        local sortedEras = {}
+        for slug, data in pairs(IMAGOdb.eras or {}) do
+            table.insert(sortedEras, { slug=slug, data=data })
+        end
+        table.sort(sortedEras, function(a,b)
+            return (a.data.order or 99) < (b.data.order or 99)
+        end)
+
+        f.expansionGrid.tiles = {}
+
+        for i, era in ipairs(sortedEras) do
+            local col = (i-1) % COLS
+            local row = math.floor((i-1) / COLS)
+            local tx  = GRID_L + col*(TILE_W+HGAP)
+            local ty  = GRID_T - row*(TILE_H+VGAP)
+            local sfx = EXPANSION_SUFFIX[era.slug]
+            local hasData = false
+            if sfx then
+                for _, entries in pairs(IMAGOdb.npcs or {}) do
+                    if hasData then break end
+                    if type(entries) == "table" then
+                        for slug in pairs(entries) do
+                            if slug:sub(-#sfx) == sfx then hasData = true; break end
+                        end
+                    end
+                end
+            end
+
+            local tile = CreateFrame("Button", nil, f.expansionGrid, "BackdropTemplate")
+            tile:SetSize(TILE_W, TILE_H)
+            tile:SetPoint("TOPLEFT", f.expansionGrid, "TOPLEFT", tx, ty)
+            tile:SetBackdrop({
+                bgFile="Interface\\Tooltips\\UI-Tooltip-Background",
+                edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",
+                edgeSize=12, insets={left=3,right=3,top=3,bottom=3},
+            })
+            tile:SetBackdropColor(0.07, 0.06, 0.08, 0.97)
+            tile:SetBackdropBorderColor(
+                hasData and 0.45 or 0.20, hasData and 0.38 or 0.16,
+                hasData and 0.18 or 0.08, hasData and 0.70 or 0.28)
+
+            tile.bgTex = tile:CreateTexture(nil, "BORDER")
+            tile.bgTex:SetPoint("TOPLEFT",     tile, "TOPLEFT",     3, -3)
+            tile.bgTex:SetPoint("BOTTOMRIGHT", tile, "BOTTOMRIGHT", -3,  3)
+            local bgP = era.data.bgPath or ""
+            if bgP ~= "" then
+                tile.bgTex:SetTexture(bgP)
+                tile.bgTex:SetTexCoord(0, 1, 0.14, 0.86)  -- undistorted center-crop for 1920x1080 on 330x134
+                tile.bgTex:SetAlpha(hasData and 0.48 or 0.08)
+            end
+
+            tile.overlay = tile:CreateTexture(nil, "ARTWORK")
+            tile.overlay:SetPoint("TOPLEFT",     tile, "TOPLEFT",     3, -3)
+            tile.overlay:SetPoint("BOTTOMRIGHT", tile, "BOTTOMRIGHT", -3,  3)
+            tile.overlay:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
+            tile.overlay:SetGradient("VERTICAL",
+                CreateColor(0,0,0, hasData and 0.48 or 0.80),
+                CreateColor(0,0,0, hasData and 0.18 or 0.60))
+
+            local logoP = era.data.logoPath or ""
+            if logoP ~= "" then
+                tile.logo = tile:CreateTexture(nil, "ARTWORK")
+                tile.logo:SetSize(115, 90)               -- natural aspect ratio (1280:1000)
+                tile.logo:SetPoint("CENTER", tile, "CENTER", 0, 12)  -- centered, shifted up for text
+                tile.logo:SetTexture(logoP)
+                tile.logo:SetAlpha(hasData and 0.95 or 0.18)
+            end
+
+            tile.nameLabel = tile:CreateFontString(nil, "OVERLAY")
+            tile.nameLabel:SetFont(FONT_TITLE, 13, "OUTLINE")
+            tile.nameLabel:SetPoint("BOTTOM", tile, "BOTTOM", 0, 28)
+            tile.nameLabel:SetWidth(TILE_W - 14)
+            tile.nameLabel:SetJustifyH("CENTER")
+            tile.nameLabel:SetWordWrap(false)
+            local rawNm = era.data.name or era.slug
+            local nm    = rawNm:gsub("^[Ww]orld of [Ww]arcraft:?%s*", "")
+            if nm == "" then nm = era.slug:gsub("_", " ") end
+            tile.nameLabel:SetText(nm)
+            tile.nameLabel:SetTextColor(
+                hasData and 0.878 or 0.36, hasData and 0.753 or 0.32, hasData and 0.416 or 0.12)
+
+            tile.subLabel = tile:CreateFontString(nil, "OVERLAY")
+            tile.subLabel:SetFont(FONT_BODY, 10)
+            tile.subLabel:SetPoint("BOTTOM", tile, "BOTTOM", 0, 11)
+            tile.subLabel:SetWidth(TILE_W - 14)
+            tile.subLabel:SetJustifyH("CENTER")
+            if hasData then
+                tile.subLabel:SetTextColor(0.55, 0.50, 0.32)
+            else
+                tile.subLabel:SetText(IMAGO.L["COMING_SOON_SHORT"] or "Coming Soon")
+                tile.subLabel:SetTextColor(0.30, 0.28, 0.22)
+            end
+
+            tile.eraSlug   = era.slug
+            tile.expSuffix = sfx
+            tile.hasData   = hasData
+            tile._bgAlpha  = hasData and 0.48 or 0.08
+
+            if hasData then
+                tile:SetScript("OnEnter", function(self)
+                    self:SetBackdropBorderColor(0.784, 0.659, 0.294, 1.0)
+                    self.bgTex:SetAlpha(0.62)
+                    self.overlay:SetGradient("VERTICAL",
+                        CreateColor(0,0,0,0.30), CreateColor(0,0,0,0.10))
+                end)
+                tile:SetScript("OnLeave", function(self)
+                    self:SetBackdropBorderColor(0.45, 0.38, 0.18, 0.70)
+                    self.bgTex:SetAlpha(self._bgAlpha)
+                    self.overlay:SetGradient("VERTICAL",
+                        CreateColor(0,0,0,0.48), CreateColor(0,0,0,0.18))
+                end)
+                tile:SetScript("OnClick", function(self)
+                    if SOUNDKIT and SOUNDKIT.IG_CHARACTER_INFO_TAB then
+                        PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB)
+                    end
+                    f.activeExpansion = self.eraSlug
+                    f.activeFilter    = "ALL"
+                    if f.filterBtn then f.filterBtn:SetText(IMAGO.L["FILTER_ALL"] or "All") end
+                    f.expansionGrid:Hide()
+                    f.scrollFrame:Show(); f.detailFrame:Show(); f.vLine:Show()
+                    f.searchBox:Show(); f.filterBtn:Show()
+                    if f.expansionBackBtn then
+                        f.expansionBackBtn:Show()
+                    end
+                    IMAGO.Chronicle.UpdateList()
+                    if f.ShowDashboard then f.ShowDashboard() end
+                end)
+            else
+                tile:EnableMouse(false)
+            end
+            table.insert(f.expansionGrid.tiles, tile)
+        end
+
+        f.expansionGrid.RefreshCounts = function()
+            IMAGOSaved.seenNPCs = IMAGOSaved.seenNPCs or {}
+            for _, tile in ipairs(f.expansionGrid.tiles) do
+                if tile.hasData and tile.expSuffix then
+                    local tot, sn = 0, 0
+                    local sfx2 = tile.expSuffix
+                    for _, entries in pairs(IMAGOdb.npcs or {}) do
+                        if type(entries) == "table" then
+                            for slug in pairs(entries) do
+                                if slug:sub(-#sfx2) == sfx2 then
+                                    tot = tot + 1
+                                    if IMAGOSaved.seenNPCs[slug] then sn = sn + 1 end
+                                end
+                            end
+                        end
+                    end
+                    tile.subLabel:SetText(string.format("%d / %d", sn, tot))
+                    tile.subLabel:SetTextColor(
+                        sn == tot and 0.80 or 0.55,
+                        sn == tot and 0.75 or 0.50,
+                        0.28)
+                end
+            end
+        end
+    end  -- do
+
+    f.expansionBackBtn = CreateFrame("Button", nil, f, "BackdropTemplate")
+    f.expansionBackBtn:SetSize(95, 20)
+    f.expansionBackBtn:SetPoint("LEFT", f.settingsBtn, "RIGHT", 8, 0)
+    f.expansionBackBtn:SetBackdrop({
+        bgFile="Interface\\ChatFrame\\ChatFrameBackground",
+        edgeFile="Interface\\Tooltips\\UI-Tooltip-Border",
+        edgeSize=8, insets={left=2,right=2,top=2,bottom=2},
+    })
+    f.expansionBackBtn:SetBackdropColor(0.05, 0.05, 0.05, 0.88)
+    f.expansionBackBtn:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.60)
+    f.expansionBackBtn:Hide()
+    f.expansionBackBtn.label = f.expansionBackBtn:CreateFontString(nil, "OVERLAY")
+    f.expansionBackBtn.label:SetFont(FONT_BODY, 11, "OUTLINE")
+    f.expansionBackBtn.label:SetPoint("CENTER", f.expansionBackBtn, "CENTER", 0, 0)
+    f.expansionBackBtn.label:SetTextColor(0.784, 0.659, 0.294)
+    f.expansionBackBtn.label:SetText(IMAGO.L["FATES_BACK_EXPANSIONS"] or "< Expansions")
+    f.expansionBackBtn:SetScript("OnEnter", function(self)
+        self:SetBackdropBorderColor(1, 0.95, 0.4, 1)
+    end)
+    f.expansionBackBtn:SetScript("OnLeave", function(self)
+        self:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.60)
+    end)
+    f.expansionBackBtn:SetScript("OnClick", function()
+        if SOUNDKIT and SOUNDKIT.IG_MAINMENU_OPTION then PlaySound(SOUNDKIT.IG_MAINMENU_OPTION) end
+        f.activeExpansion = nil
+        f.activeFilter    = "ALL"
+        if f.filterBtn then f.filterBtn:SetText(IMAGO.L["FILTER_ALL"] or "All") end
+        f.expansionBackBtn:Hide()
+        f.searchBox:Hide(); f.filterBtn:Hide()
+        f.scrollFrame:Hide(); f.detailFrame:Hide(); f.vLine:Hide()
+        f.expansionGrid.RefreshCounts()
+        f.expansionGrid:Show()
+    end)
+
+    function IMAGO.Chronicle.ShowExpansionGrid()
+        local fr = IMAGO.Chronicle.frame
+        if not fr then return end
+        fr.activeExpansion = nil
+        fr.activeFilter    = "ALL"
+        if fr.filterBtn then fr.filterBtn:SetText(IMAGO.L["FILTER_ALL"] or "All") end
+        fr.searchBox:Hide(); fr.filterBtn:Hide()
+        fr.scrollFrame:Hide(); fr.detailFrame:Hide(); fr.vLine:Hide()
+        if fr.expansionBackBtn then fr.expansionBackBtn:Hide() end
+        if fr.expansionGrid then
+            fr.expansionGrid.RefreshCounts()
+            fr.expansionGrid:Show()
+        end
+    end
 
     -- ==========================================
     -- NEU: LOGIK ZUM WECHSELN DER TABS (LOKALISIERT)
@@ -1157,26 +1431,33 @@ function IMAGO.Chronicle.CreateFrame()
         if f.creditsPage then f.creditsPage:Hide() end
         if f.creditsHeader then f.creditsHeader:Hide() end
         IMAGO.Chronicle.SetDetailAction(nil)
+        if f.expansionGrid    then f.expansionGrid:Hide()    end
+        if f.expansionBackBtn then f.expansionBackBtn:Hide() end
+        if f.filterMenu       then f.filterMenu:Hide()       end
         
         if index == 1 or index == 2 then
-            -- Haupt-UI anzeigen
-            f.searchBox:SetShown(index == 1)
-            f.filterBtn:SetShown(index == 1)
-            f.scrollFrame:Show()
-            f.detailFrame:Show()
-            f.vLine:Show()
             f.comingSoonPage:Hide()
-            -- Eras-Frames verstecken und History leeren
             if IMAGO.Eras and IMAGO.Eras.frame then
                 IMAGO.Eras.frame.wrapper:Hide()
                 IMAGO.Eras.ClearHistory()
             end
-            
-            IMAGO.Chronicle.UpdateList()
-            
-            -- Dashboard anzeigen, wenn ein Tab gewechselt wird
-            if f.ShowDashboard then 
-                f.ShowDashboard() 
+            if index == 1 and not f.activeExpansion then
+                -- Fates: Expansion-Grid anzeigen
+                f.searchBox:Hide(); f.filterBtn:Hide()
+                f.scrollFrame:Hide(); f.detailFrame:Hide(); f.vLine:Hide()
+                if f.expansionGrid then
+                    f.expansionGrid.RefreshCounts()
+                    f.expansionGrid:Show()
+                end
+                IMAGO.Chronicle.UpdateList()  -- Footer aktualisieren
+            else
+                -- Tab 1 mit Expansion oder Tab 2 (Zonen)
+                f.searchBox:SetShown(index == 1)
+                f.filterBtn:SetShown(index == 1)
+                if index == 1 and f.expansionBackBtn then f.expansionBackBtn:Show() end
+                f.scrollFrame:Show(); f.detailFrame:Show(); f.vLine:Show()
+                IMAGO.Chronicle.UpdateList()
+                if f.ShowDashboard then f.ShowDashboard() end
             end
         elseif index == 3 then
             -- ERAS-Tab
@@ -1236,7 +1517,7 @@ function IMAGO.Chronicle.CreateFrame()
                 f.creditsHeader.title:SetFont(FONT_TITLE, 28, "OUTLINE")
                 f.creditsHeader.title:SetPoint("TOP", f.creditsHeader.logo, "BOTTOM", 0, -5)
                 f.creditsHeader.title:SetText(IMAGO.L["CREDITS_TITLE"])
-                f.creditsHeader.title:SetTextColor(1.0, 0.85, 0.1)
+                f.creditsHeader.title:SetTextColor(0.784, 0.659, 0.294)
 
                 f.creditsHeader.desc = f.creditsHeader:CreateFontString(nil, "OVERLAY")
                 f.creditsHeader.desc:SetFont(FONT_BODY, 13)
@@ -1259,7 +1540,7 @@ function IMAGO.Chronicle.CreateFrame()
                 f.creditsHeader.separator:SetSize(400, 1)
                 f.creditsHeader.separator:SetPoint("TOP", f.creditsHeader.topHint, "BOTTOM", 0, -20)
                 f.creditsHeader.separator:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-                f.creditsHeader.separator:SetGradient("HORIZONTAL", CreateColor(1.0, 0.85, 0.1, 0), CreateColor(1.0, 0.85, 0.1, 0.4), CreateColor(1.0, 0.85, 0.1, 0))
+                f.creditsHeader.separator:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0), CreateColor(0.784, 0.659, 0.294, 0.4), CreateColor(0.784, 0.659, 0.294, 0))
 
                 -- Nur die Namensliste ist scrollbar
                 f.creditsPage = CreateFrame("ScrollFrame", "IMAGOCreditsScrollFrame", f, "UIPanelScrollFrameTemplate")
@@ -1332,7 +1613,7 @@ function IMAGO.Chronicle.CreateFrame()
                     if person.top then
                         -- Edles Gold für Top-Mitglieder
                         entry:SetFont(FONT_BODY, 16, "OUTLINE")
-                        entry:SetText(string.format("|cFFFFD700%s|r  |cFFD4AF37(%s)|r", person.name, person.roles))
+                        entry:SetText(string.format("|cFFC8A84B%s|r  |cFFD4AF37(%s)|r", person.name, person.roles))
                     else
                         -- Dezentes Silber für alle anderen
                         entry:SetFont(FONT_BODY, 14, "")
@@ -1353,7 +1634,7 @@ function IMAGO.Chronicle.CreateFrame()
         local opaque = IMAGOSaved and IMAGOSaved.opaqueUI
         f:SetBackdrop(opaque and backdropOpaque or backdropDefault)
         f:SetBackdropColor(0.05, 0.05, 0.05, opaque and 1.0 or 0.95)
-        f:SetBackdropBorderColor(1.0, 0.85, 0.1, 0.9)
+        f:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.9)
         if f.headerBg then
             if opaque then
                 f.headerBg:SetGradient("VERTICAL", CreateColor(0, 0, 0, 1), CreateColor(0, 0, 0, 1))
@@ -1364,12 +1645,12 @@ function IMAGO.Chronicle.CreateFrame()
         if f.filterMenu then
             f.filterMenu:SetBackdrop(opaque and backdropOpaque or backdropDefault)
             f.filterMenu:SetBackdropColor(0.05, 0.05, 0.05, opaque and 1.0 or 0.98)
-            f.filterMenu:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+            f.filterMenu:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.9)
         end
         if f.detailFrame then
             f.detailFrame:SetBackdrop(opaque and backdropOpaque or backdropDefault)
             f.detailFrame:SetBackdropColor(0.05, 0.05, 0.05, opaque and 1.0 or 0.95)
-            f.detailFrame:SetBackdropBorderColor(1, 0.78, 0.1, 0.9)
+            f.detailFrame:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.9)
         end
     end
 
@@ -1415,11 +1696,11 @@ function IMAGO.Chronicle.CreateFrame()
 
         if mode == "lore" then 
             f.loreBody:Show()
-            f.tabLore.text:SetTextColor(1.0, 0.85, 0.1)
+            f.tabLore.text:SetTextColor(0.784, 0.659, 0.294)
             f.tabLore.activeLine:Show()
         else 
             IMAGO.Chronicle.RenderTimeline() 
-            f.tabTime.text:SetTextColor(1.0, 0.85, 0.1)
+            f.tabTime.text:SetTextColor(0.784, 0.659, 0.294)
             f.tabTime.activeLine:Show()
         end
     end
@@ -1464,7 +1745,7 @@ function IMAGO.Chronicle.RenderTimeline()
                 f.timelineContainer.dividers[i] = divider
             end
             divider:SetPoint("TOPLEFT", 0, -y + 10)
-            divider:SetGradient("HORIZONTAL", CreateColor(1, 0.78, 0.1, 0.15), CreateColor(1, 0.78, 0.1, 0.05))
+            divider:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0.15), CreateColor(0.784, 0.659, 0.294, 0.05))
             divider:Show()
         end
 
@@ -1583,8 +1864,15 @@ function IMAGO.Chronicle.UpdateList()
         for _, entries in pairs(IMAGOdb.npcs) do
             if type(entries) == "table" then
                 for slug, _ in pairs(entries) do
-                    total = total + 1
-                    if IMAGOSaved.seenNPCs[slug] then seen = seen + 1 end
+                    local countIt = true
+                    if f.activeExpansion then
+                        local exSfx = EXPANSION_SUFFIX[f.activeExpansion]
+                        if exSfx and slug:sub(-#exSfx) ~= exSfx then countIt = false end
+                    end
+                    if countIt then
+                        total = total + 1
+                        if IMAGOSaved.seenNPCs[slug] then seen = seen + 1 end
+                    end
                 end
             end
         end
@@ -1609,7 +1897,7 @@ function IMAGO.Chronicle.UpdateList()
         for _, r in ipairs(IMAGO.Chronicle.ranks) do
             local rTitle = r.title or ""
             if r.perc <= perc then
-                completedRanksStr = completedRanksStr .. string.format("|cFFFFD700%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
+                completedRanksStr = completedRanksStr .. string.format("|cFFC8A84B%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
             else
                 nextRanksStr = nextRanksStr .. string.format("|cFF888888%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
             end
@@ -1646,7 +1934,8 @@ function IMAGO.Chronicle.UpdateList()
                         
                         local matchesSearch = true
                         if searchString ~= "" then
-                            if isSeen then
+                            local isEncyclopedia = IMAGOSaved.encyclopediaMode
+                            if isSeen or isEncyclopedia then
                                 if not name:lower():find(searchString) then matchesSearch = false end
                             else
                                 local undiscoveredText = (IMAGO.L["UNDISCOVERED"] or "unentdeckt"):lower()
@@ -1657,6 +1946,10 @@ function IMAGO.Chronicle.UpdateList()
                         local matchesFilter = true
                         if activeFilter == "FAV" and not IMAGOSaved.favorites[slug] then matchesFilter = false end
                         if activeFilter:find("CAT_") and catKey ~= activeFilter then matchesFilter = false end
+                        if f.activeExpansion then
+                            local exSfx = EXPANSION_SUFFIX[f.activeExpansion]
+                            if exSfx and slug:sub(-#exSfx) ~= exSfx then matchesFilter = false end
+                        end
                         
                         if matchesSearch and matchesFilter then
                             if not categories[catKey] then 
@@ -1678,16 +1971,16 @@ function IMAGO.Chronicle.UpdateList()
             homeBtn:SetSize(235, 35)
             homeBtn.bg = homeBtn:CreateTexture(nil, "BACKGROUND")
             homeBtn.bg:SetAllPoints()
-            homeBtn.bg:SetColorTexture(1, 0.78, 0.1, 0.05)
+            homeBtn.bg:SetColorTexture(0.784, 0.659, 0.294, 0.05)
             
             local hl = homeBtn:CreateTexture(nil, "HIGHLIGHT")
             hl:SetAllPoints()
-            hl:SetColorTexture(1, 0.78, 0.1, 0.15)
+            hl:SetColorTexture(0.784, 0.659, 0.294, 0.15)
             
             homeBtn.t = homeBtn:CreateFontString(nil, "OVERLAY")
             homeBtn.t:SetFont(FONT_TITLE, 15, "OUTLINE")
             homeBtn.t:SetPoint("CENTER", 0, 0)
-            homeBtn.t:SetTextColor(1.0, 0.85, 0.1)
+            homeBtn.t:SetTextColor(0.784, 0.659, 0.294)
             
             homeBtn:SetScript("OnClick", function()
                 f.selectedNPC = nil
@@ -1727,13 +2020,13 @@ function IMAGO.Chronicle.UpdateList()
                 local hl = hdr:CreateTexture(nil, "HIGHLIGHT")
                 hl:SetAllPoints()
                 hl:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-                hl:SetGradient("HORIZONTAL", CreateColor(1.0, 0.85, 0.1, 0.3), CreateColor(0, 0, 0, 0))
+                hl:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0.3), CreateColor(0, 0, 0, 0))
                 
                 hdr.line = hdr:CreateTexture(nil, "ARTWORK")
                 hdr.line:SetSize(210, 1)
                 hdr.line:SetPoint("BOTTOM", 0, 0)
                 hdr.line:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-                hdr.line:SetGradient("HORIZONTAL", CreateColor(1.0, 0.85, 0.1, 0.5), CreateColor(1.0, 0.85, 0.1, 0))
+                hdr.line:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0.5), CreateColor(0.784, 0.659, 0.294, 0))
                 
                 hdr.icon = hdr:CreateFontString(nil, "OVERLAY")
                 hdr.icon:SetFont(FONT_BODY, 14, "OUTLINE")
@@ -1759,14 +2052,14 @@ function IMAGO.Chronicle.UpdateList()
             
             if not IMAGO.Chronicle.expandedCats[catKey] then
                 hdr.icon:SetText("+")
-                hdr.icon:SetTextColor(1.0, 0.85, 0.1) 
+                hdr.icon:SetTextColor(0.784, 0.659, 0.294) 
                 hdr.t:SetTextColor(0.7, 0.7, 0.7) 
                 hdr.bg:SetGradient("HORIZONTAL", CreateColor(0.2, 0.2, 0.2, 0.5), CreateColor(0, 0, 0, 0))
             else
                 hdr.icon:SetText("-")
-                hdr.icon:SetTextColor(1.0, 0.85, 0.1)
-                hdr.t:SetTextColor(1.0, 0.85, 0.1) 
-                hdr.bg:SetGradient("HORIZONTAL", CreateColor(1.0, 0.85, 0.1, 0.2), CreateColor(1.0, 0.85, 0.1, 0))
+                hdr.icon:SetTextColor(0.784, 0.659, 0.294)
+                hdr.t:SetTextColor(0.784, 0.659, 0.294) 
+                hdr.bg:SetGradient("HORIZONTAL", CreateColor(0.784, 0.659, 0.294, 0.2), CreateColor(0.784, 0.659, 0.294, 0))
             end
             
             hdr:SetPoint("TOPLEFT", f.content, "TOPLEFT", 0, -yOffset)
@@ -1798,12 +2091,12 @@ function IMAGO.Chronicle.UpdateList()
                         
                         btn.selected = btn:CreateTexture(nil, "ARTWORK")
                         btn.selected:SetAllPoints()
-                        btn.selected:SetColorTexture(1, 0.78, 0.1, 0.15)
+                        btn.selected:SetColorTexture(0.784, 0.659, 0.294, 0.15)
                         btn.selected:Hide()
                         
                         local hl = btn:CreateTexture(nil, "HIGHLIGHT")
                         hl:SetAllPoints()
-                        hl:SetColorTexture(1, 0.78, 0.1, 0.1)
+                        hl:SetColorTexture(0.784, 0.659, 0.294, 0.1)
 
                         btn.fav = CreateFrame("Button", nil, btn)
                         btn.fav:SetSize(16, 16)
@@ -1822,7 +2115,7 @@ function IMAGO.Chronicle.UpdateList()
                         btn.newTag = btn:CreateFontString(nil, "OVERLAY")
                         btn.newTag:SetFont(FONT_BODY, 11, "OUTLINE")
                         btn.newTag:SetPoint("RIGHT", btn, "RIGHT", -5, 0)
-                        btn.newTag:SetTextColor(1.0, 0.85, 0.1)
+                        btn.newTag:SetTextColor(0.784, 0.659, 0.294)
                         btn.newTag:SetText(IMAGO.L["TAG_NEW"])
                         local ag = btn.newTag:CreateAnimationGroup()
                         local anim = ag:CreateAnimation("Alpha")
@@ -1953,7 +2246,7 @@ function IMAGO.Chronicle.UpdateList()
                                 end
 
                                 f.detailTitle:SetText(name)
-                                f.detailTitle:SetTextColor(1.0, 0.85, 0.1)
+                                f.detailTitle:SetTextColor(0.784, 0.659, 0.294)
                                 f.detailTitle:SetShadowColor(0, 0, 0, 1)
                                 f.detailTitle:SetShadowOffset(2, -2)
 
@@ -1962,7 +2255,7 @@ function IMAGO.Chronicle.UpdateList()
                                 local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
                                 local firstLetter = lore:sub(1, charLen)
                                 local restLore = lore:sub(charLen + 1)
-                                f.loreBody:SetText("|cffffd700" .. firstLetter .. "|r" .. restLore)
+                                f.loreBody:SetText("|cffc8a84b" .. firstLetter .. "|r" .. restLore)
                                 
                                 f.detailModel:ClearModel()
                                 local modelID = GetValidModelID(npc.data)
@@ -2123,7 +2416,7 @@ function IMAGO.Chronicle.UpdateList()
         for _, r in ipairs(IMAGO.Chronicle.zoneRanks) do
             local rTitle = r.title or ""
             if r.perc <= perc then
-                completedRanksStr = completedRanksStr .. string.format("|cFFFFD700%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
+                completedRanksStr = completedRanksStr .. string.format("|cFFC8A84B%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
             else
                 nextRanksStr = nextRanksStr .. string.format("|cFF888888%s (%s %d%%)|r\n", rTitle, IMAGO.L["WORD_AT"], r.perc)
             end
@@ -2150,17 +2443,17 @@ function IMAGO.Chronicle.UpdateList()
         
         overviewBtn.bg = overviewBtn:CreateTexture(nil, "BACKGROUND")
         overviewBtn.bg:SetAllPoints()
-        overviewBtn.bg:SetColorTexture(0.08, 0.08, 0.08, 0.9)
+        overviewBtn.bg:SetColorTexture(0.784, 0.659, 0.294, 0.05)
         
         local hl = overviewBtn:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
-        hl:SetColorTexture(1, 0.85, 0.1, 0.15)
+        hl:SetColorTexture(0.784, 0.659, 0.294, 0.15)
         
         overviewBtn.t = overviewBtn:CreateFontString(nil, "OVERLAY")
-        overviewBtn.t:SetFont(FONT_TITLE, 14, "OUTLINE")
+        overviewBtn.t:SetFont(FONT_TITLE, 14, "THICKOUTLINE")
         overviewBtn.t:SetPoint("CENTER", 0, 0)
         overviewBtn.t:SetText(locale == "deDE" and "ZONEN ÜBERSICHT" or "ZONES OVERVIEW")
-        overviewBtn.t:SetTextColor(1, 0.85, 0.1)
+        overviewBtn.t:SetTextColor(0.784, 0.659, 0.294)
         
         IMAGO.Chronicle.zoneOverviewBtn = overviewBtn
     end
@@ -2212,13 +2505,13 @@ function IMAGO.Chronicle.UpdateList()
             
             local hl = btn:CreateTexture(nil, "HIGHLIGHT")
             hl:SetAllPoints()
-            hl:SetColorTexture(1, 0.85, 0.1, 0.15)
+            hl:SetColorTexture(0.784, 0.659, 0.294, 0.15)
             
             btn.t = btn:CreateFontString(nil, "OVERLAY")
-            btn.t:SetFont(FONT_TITLE, 16, "OUTLINE")
+            btn.t:SetFont(FONT_TITLE, 16, "THICKOUTLINE")
             btn.t:SetPoint("LEFT", 15, 0)
             btn.t:SetShadowColor(0, 0, 0, 1)
-            btn.t:SetShadowOffset(1, -1)
+            btn.t:SetShadowOffset(2, -2)
             
             IMAGO.Chronicle.zoneButtons[zIdx] = btn
         end
@@ -2235,7 +2528,7 @@ function IMAGO.Chronicle.UpdateList()
             if isManual then
                 btn.t:SetTextColor(0.58, 0.40, 0.86)
             else
-                btn.t:SetTextColor(1, 0.85, 0.1)
+                btn.t:SetTextColor(0.784, 0.659, 0.294)
             end
 
             btn:SetScript("OnClick", function()
@@ -2268,7 +2561,7 @@ function IMAGO.Chronicle.UpdateList()
                 f.detailLineLeft:Show()
                 f.detailLineRight:Show()
                 f.detailTitle:SetText(name)
-                f.detailTitle:SetTextColor(1.0, 0.85, 0.1)
+                f.detailTitle:SetTextColor(0.784, 0.659, 0.294)
 
                 if f.detailImage then
                     f.detailImage:SetTexture(zoneData.texturePath)
@@ -2286,10 +2579,10 @@ function IMAGO.Chronicle.UpdateList()
                 local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
                 local firstLetter = lore:sub(1, charLen)
                 local restLore = lore:sub(charLen + 1)
-                local formattedLore = "|cffffd700" .. firstLetter .. "|r" .. restLore
+                local formattedLore = "|cffc8a84b" .. firstLetter .. "|r" .. restLore
                 
                 if zoneData.pointsOfInterest and next(zoneData.pointsOfInterest) then
-                    formattedLore = formattedLore .. "\n\n|cffffd700" .. (IMAGO.L["ZONE_POI_HEADER"] or "POINTS OF INTEREST") .. "|r\n_________________________________\n\n"
+                    formattedLore = formattedLore .. "|cffc8a84b" .. (IMAGO.L["ZONE_POI_HEADER"] or "POINTS OF INTEREST") .. "|r\n_________________________________\n\n"
                     for _, poi in ipairs(zoneData.pointsOfInterest) do
                         local pName = poi.name or ""
                         local pLore = poi.lore or ""
@@ -2489,6 +2782,14 @@ function IMAGO.Chronicle.OpenToNPCSlug(slug, opts)
     f.selectedNPC = data
     f.selectedNPCSlug = slug
 
+    -- Auto-detect expansion from slug suffix
+    for eraSlug, suffix in pairs(EXPANSION_SUFFIX) do
+        if slug:sub(-#suffix) == suffix then
+            f.activeExpansion = eraSlug
+            break
+        end
+    end
+
     IMAGO.Chronicle.SelectMainTab(1)
     f:Show()
 
@@ -2564,10 +2865,10 @@ function IMAGO.Chronicle.Toggle()
     local f = IMAGO.Chronicle.frame
     if f:IsShown() then 
         f:Hide() 
-    else 
-        IMAGO.Chronicle.UpdateList()
-        if f.ShowDashboard then f.ShowDashboard() end
+    else
+        local tabIdx = f.activeTabIndex or 1
+        IMAGO.Chronicle.SelectMainTab(tabIdx)
         if f.UpdateModeBtn then f.UpdateModeBtn() end
-        f:Show() 
+        f:Show()
     end
 end

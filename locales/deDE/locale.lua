@@ -93,6 +93,8 @@ L["VAL_WARN_LORE"]                  = "|cFFFF8C00Warnung:|r %s hat keine Lore in
 L["VAL_DONE"]                       = "Validierung beendet. %d NPCs geprüft. %d kritische Fehler, %d Warnungen."
 
 L["CINEMATIC_CONTINUE"]             = "< Klicken, um das Schicksal zu entschlüsseln >"
+L["FATES_CHOOSE_EXP"]               = "Erweiterung wählen"
+L["COMING_SOON_SHORT"]              = "Bald verfügbar"
 L["FILTER_ALL"]                     = "Alle Echos"
 L["FILTER_HIST"]                    = "Zuletzt entdeckt"
 L["FILTER_FAV"]                     = "Favoriten"
@@ -225,6 +227,24 @@ L["ERAS_LOCKED_MODEHINT"]       = "Tipp: Wechsle über den Mode-Button zum Enzyk
 L["ERAS_WIP_TITLE"]             = "In Entwicklung"
 L["ERAS_WIP_BODY"]              = "Der Inhalt für diese Ära wird noch entwickelt.\nSchau bald wieder vorbei!"
 L["ERAS_ORIGINAL_GAME"]         = "Original Game"
+
+-- NPC-Kategorien (Midnight / The War Within)
+L["CAT_QUELTHALAS"]             = "Verteidiger von Quel'Thalas"
+L["CAT_LIGHT"]                  = "Champions des Lichts"
+L["CAT_AMANI"]                  = "Die Amani"
+L["CAT_HARATI"]                 = "Die Harati"
+L["CAT_EBON_BLADE"]             = "Ritter der Onyxklinge"
+L["CAT_NEUTRAL"]                = "Neutrale Kräfte"
+L["CAT_ARCANTINA"]              = "Die Arkantina"
+L["CAT_VOIDHUNTERS"]            = "Leerenjäger"
+L["CAT_HARBINGER"]              = "Herolde der Leere"
+L["CAT_KIRIN_TOR"]              = "Kirin Tor"
+L["CAT_EARTHEN"]                = "Die Irden"
+L["CAT_ARATHI"]                 = "Kinder der Arathi"
+L["CAT_HARANIR"]                = "Die Haraniir"
+
+    -- Expansion Grid Navigation
+L["FATES_BACK_EXPANSIONS"]      = "< Erweiterungen"
 
 -- Credits
 L["TAB_CREDITS"] = "Credits"

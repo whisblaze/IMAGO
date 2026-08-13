@@ -1,4 +1,4 @@
--- ============================================================
+﻿-- ============================================================
 -- IMAGO — data/eras_static.lua  (static data, no locale strings)
 -- Expansion order: 1 = most recent, ascending toward Classic
 -- ============================================================
@@ -12,7 +12,7 @@ IMAGOdb.eras = IMAGOdb.eras or {}
 IMAGOdb.eras["midnight"] = {
     order              = 1,
     coming_soon        = false,
-    unlock_npc         = "lorthemar_theron",
+    unlock_npc = "lorthemar_theron_midnight",
     release_date       = "March 2, 2026",
     logoPath           = "Interface\\AddOns\\IMAGO\\Media\\Eras\\midnight_logo.tga",
     bgPath             = "Interface\\AddOns\\IMAGO\\Media\\Eras\\midnight_bg.tga",

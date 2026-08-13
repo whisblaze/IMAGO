@@ -19,6 +19,7 @@ local defaults = {
     viewedNPCs    = {},
     favorites     = {},
     history       = {},
+    migratedSlugSuffix = false,
     showOnceOnlyNPC = false,
     showOnceOnlyZone = true,
     noMainLoreTimerClose = false,
@@ -814,6 +815,44 @@ function IMAGO.Init()
     IMAGO.Scanner.EnsureZoneProgressTables()
 
     if IMAGO.BuildReverseLookup then IMAGO.BuildReverseLookup() end
+
+    -- Migration v1.5: seenNPCs/viewedNPCs/favorites/history slugs -> slug_midnight
+    if not IMAGOSaved.migratedSlugSuffix then
+        -- seenNPCs + viewedNPCs (both keyed by slug)
+        local toMigrate = {}
+        for slug, val in pairs(IMAGOSaved.seenNPCs or {}) do
+            if not slug:find("_midnight$") and IMAGO.GetNPCData(slug .. "_midnight") then
+                toMigrate[slug] = val
+            end
+        end
+        for slug, val in pairs(toMigrate) do
+            IMAGOSaved.seenNPCs[slug .. "_midnight"] = val
+            IMAGOSaved.seenNPCs[slug] = nil
+            if IMAGOSaved.viewedNPCs[slug] then
+                IMAGOSaved.viewedNPCs[slug .. "_midnight"] = IMAGOSaved.viewedNPCs[slug]
+                IMAGOSaved.viewedNPCs[slug] = nil
+            end
+        end
+        -- favorites (keyed by slug)
+        local favMigrate = {}
+        for slug, val in pairs(IMAGOSaved.favorites or {}) do
+            if not slug:find("_midnight$") and IMAGO.GetNPCData(slug .. "_midnight") then
+                favMigrate[slug] = val
+            end
+        end
+        for slug, val in pairs(favMigrate) do
+            IMAGOSaved.favorites[slug .. "_midnight"] = val
+            IMAGOSaved.favorites[slug] = nil
+        end
+        -- history (array of slugs or zone-tables)
+        local hist = IMAGOSaved.history or {}
+        for i, slug in ipairs(hist) do
+            if type(slug) == "string" and not slug:find("_midnight$") and IMAGO.GetNPCData(slug .. "_midnight") then
+                hist[i] = slug .. "_midnight"
+            end
+        end
+        IMAGOSaved.migratedSlugSuffix = true
+    end
 
     -- Era-Unlock-NPC Reverse-Lookup aufbauen
     IMAGOdb.eraByNPCSlug = {}
