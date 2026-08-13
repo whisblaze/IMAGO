@@ -183,7 +183,7 @@ local L = L_DE
     -- ============================================================
     L["TAB_ERAS"]                 = "Ären"
     L["ERAS_DASHBOARD_TITLE"]     = "ZEITALTER VON AZEROTH"
-    L["ERAS_PROGRESS"]            = "%d / %d Ären dokumentiert"
+    L["ERAS_PROGRESS"]            = "%d / %d Ären dokumentiert (%d%%)"
     L["ERAS_COMING_SOON"]         = "DEMNÄCHST"
     L["ERAS_TAB_OVERVIEW"]        = "Überblick"
     L["ERAS_TAB_STORY"]           = "Story"
@@ -430,8 +430,8 @@ L = L_EN
     L["BACK"]                     = "Back"
     
     -- TextLinker Color Ids
-    L["LINK_NPC"] = "cffffe34d" -- Light Gold
-    L["LINK_ZONE"] = "cff83dbff" -- Ice Blue
+    L["LINK_NPC"] = "c" .. IMAGO_HEX.GOLD_BRIGHT  -- Bright Gold
+    L["LINK_ZONE"] = "c" .. IMAGO_HEX.VOID        -- Muted Violet
     L["LINK_EXPANSION"] = ""
 
     -- ============================================================
@@ -439,7 +439,7 @@ L = L_EN
     -- ============================================================
     L["TAB_ERAS"]                 = "Eras"
     L["ERAS_DASHBOARD_TITLE"]     = "AGE OF AZEROTH"
-    L["ERAS_PROGRESS"]            = "%d / %d Eras Documented"
+    L["ERAS_PROGRESS"]            = "%d / %d Eras Documented (%d%%)"
     L["ERAS_COMING_SOON"]         = "COMING SOON"
     L["ERAS_TAB_OVERVIEW"]        = "Overview"
     L["ERAS_TAB_STORY"]           = "Story"
@@ -546,7 +546,7 @@ L["TAB_INSTANCES"] = "Instances"
 L["TAB_ERAS"] = "Eras"
 L["TAB_CREDITS"] = "Credits"
 L["ERAS_DASHBOARD_TITLE"] = "AGE OF AZEROTH"
-L["ERAS_PROGRESS"] = "%d / %d Eras Documented"
+L["ERAS_PROGRESS"] = "%d / %d Eras Documented (%d%%)"
 L["ERAS_COMING_SOON"] = "COMING SOON"
 L["ERAS_TAB_OVERVIEW"] = "Overview"
 L["ERAS_TAB_STORY"] = "Story"

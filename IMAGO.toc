@@ -12,6 +12,7 @@
 data/quest_unlocks.lua
 
 IMAGO.lua
+core/Theme.lua
 core/Locale.lua
 
 data/LoreSnippets_static.lua

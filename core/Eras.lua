@@ -14,23 +14,25 @@ IMAGO.Eras = IMAGO.Eras or {}
 local FONT_TITLE = "Fonts\\MORPHEUS.TTF"
 local FONT_BODY  = "Fonts\\FRIZQT__.TTF"
 
-local C_GOLD        = {0.784, 0.659, 0.294}      -- #c8a84b
-local C_GOLD_DIM    = {0.541, 0.431, 0.184}      -- #8a6e2f
-local C_GOLD_BRIGHT = {0.878, 0.753, 0.416}      -- #e0c06a
-local C_TEXT_PRI    = {0.910, 0.878, 0.800}      -- #e8e0cc
-local C_TEXT_SEC    = {0.820, 0.790, 0.720}      -- aufgehellt für besseren Kontrast
-local C_TEXT_MUTED  = {0.600, 0.568, 0.510}      -- sichtbar gemuted
-local C_BG_MAIN     = {0.051, 0.051, 0.051}      -- #0d0d0d
-local C_BG_SIDEBAR  = {0.059, 0.059, 0.059}      -- #0f0f0f
-local C_BG_CARD     = {0.094, 0.094, 0.094}      -- #181818
-local C_BG_TAB_ACT  = {0.102, 0.082, 0.063}      -- #1a1510
-local C_BORDER      = {0.784, 0.659, 0.294, 0.38}
-local C_BORDER_STR  = {0.784, 0.659, 0.294, 0.45}
+local C_GOLD        = IMAGO_COLORS.GOLD           -- #D0AD4D  Antique Gold
+local C_GOLD_DIM    = IMAGO_COLORS.GOLD_MUTED     -- #9E8135  Old Gold
+local C_GOLD_BRIGHT = IMAGO_COLORS.GOLD_BRIGHT    -- #E6C766  Bright Gold
+local C_TEXT_PRI    = IMAGO_COLORS.TEXT_PRIMARY   -- #E9E2D3  Warm Parchment
+local C_TEXT_SEC    = IMAGO_COLORS.TEXT_SECONDARY -- #B8AE9A  Dusty Parchment
+local C_TEXT_MUTED  = IMAGO_COLORS.TEXT_MUTED     -- #7E7669  Ash
+local C_BG_MAIN     = IMAGO_COLORS.BG_MAIN        -- #0B0A08  Obsidian
+local C_BG_SIDEBAR  = IMAGO_COLORS.BG_PANEL       -- #12100D  Black Walnut
+local C_BG_CARD     = IMAGO_COLORS.BG_RAISED      -- #1A1711  Dark Bronze
+local C_BG_TAB_ACT  = IMAGO_COLORS.BG_SELECTED    -- #2C2517  Bronze Shadow
+local C_BORDER      = {IMAGO_COLORS.BORDER[1], IMAGO_COLORS.BORDER[2], IMAGO_COLORS.BORDER[3], 0.60}
+local C_BORDER_STR  = {IMAGO_COLORS.BORDER[1], IMAGO_COLORS.BORDER[2], IMAGO_COLORS.BORDER[3], 1.00}
+local C_DIVIDER     = IMAGO_COLORS.DIVIDER
 local C_PURPLE_TEXT = {0.769, 0.651, 1.000}          -- #c4a6ff
 local C_PURPLE_BG   = {0.416, 0.298, 0.678, 0.20}   -- rgba(106,76,173,0.20)
 local C_TEAL_TEXT   = {0.478, 0.906, 0.847}          -- #7ae8d8
+local LAYOUT = IMAGO.LAYOUT
 
-local SIDEBAR_W = 230
+local SIDEBAR_W = LAYOUT.SIDEBAR_WIDTH
 local BANNER_H  = 120
 
 -- ============================================================
@@ -139,22 +141,12 @@ local function BuildRichText(text)
     return (text:gsub("{npc:([^}]+)}", function(slug)
         local d = IMAGO.GetNPCData and IMAGO.GetNPCData(slug)
         local name = (d and d.name) or (slug:gsub("_", " "):gsub("(%a)([%w_']*)", function(a, b) return a:upper() .. b end))
-        return "|Himago_npc:" .. slug .. "|h|cFFc8a84b" .. name .. "|r|h"
+        return "|Himago_npc:" .. slug .. "|h|c" .. IMAGO_HEX.GOLD .. name .. "|r|h"
     end))
 end
 
 local function StyleScrollBar(scrollName)
-    C_Timer.After(0, function()
-        local sb = _G[scrollName .. "ScrollBar"]
-        if not sb then return end
-        local up = _G[scrollName .. "ScrollBarScrollUpButton"]
-        local dn = _G[scrollName .. "ScrollBarScrollDownButton"]
-        if up then up:Hide() end
-        if dn then dn:Hide() end
-        sb:SetWidth(4)
-        local thumb = sb.GetThumbTexture and sb:GetThumbTexture()
-        if thumb then thumb:SetColorTexture(0.784, 0.659, 0.294, 0.5) end
-    end)
+    IMAGO.StyleScrollBar(scrollName .. "ScrollBar")
 end
 
 -- ============================================================
@@ -173,16 +165,15 @@ function IMAGO.Eras.CreateFrame()
     -- WRAPPER  (füllt den Chronicle-Innenbereich)
     -- --------------------------------------------------------
     E.wrapper = CreateFrame("Frame", "IMAGOErasWrapper", chronicle)
-    E.wrapper:SetPoint("TOPLEFT",     chronicle, "TOPLEFT",      10, -58)
-    E.wrapper:SetPoint("BOTTOMRIGHT", chronicle, "BOTTOMRIGHT", -10,  20)
+    E.wrapper:SetPoint("TOPLEFT",     chronicle, "TOPLEFT",      LAYOUT.SIDEBAR_OFFSET_LEFT, -LAYOUT.WORKSPACE_TOP)
+    E.wrapper:SetPoint("BOTTOMRIGHT", chronicle, "BOTTOMRIGHT", -LAYOUT.CONTENT_PADDING_RIGHT, LAYOUT.WORKSPACE_BOTTOM)
     E.wrapper:Hide()
+    E.wrapper:SetScript("OnShow", IMAGO.Eras.ApplyOpaqueUI)
 
-    do
-        local bg = E.wrapper:CreateTexture(nil, "BACKGROUND")
-        bg:SetAllPoints()
-        bg:SetColorTexture(unpack(C_BG_MAIN))
-        bg:SetAlpha(1)
-    end
+    E.wrapper.bg = E.wrapper:CreateTexture(nil, "BACKGROUND")
+    E.wrapper.bg:SetAllPoints()
+    E.wrapper.bg:SetColorTexture(unpack(C_BG_MAIN))
+    E.wrapper.bg:SetAlpha((IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.95)
 
     -- --------------------------------------------------------
     -- LINKE SIDEBAR
@@ -192,12 +183,10 @@ function IMAGO.Eras.CreateFrame()
     E.sidebar:SetPoint("BOTTOMLEFT", E.wrapper, "BOTTOMLEFT", 0, 0)
     E.sidebar:SetWidth(SIDEBAR_W)
 
-    do
-        local bg = E.sidebar:CreateTexture(nil, "BACKGROUND")
-        bg:SetAllPoints()
-        bg:SetColorTexture(unpack(C_BG_SIDEBAR))
-        bg:SetAlpha(1)
-    end
+    E.sidebar.bg = E.sidebar:CreateTexture(nil, "BACKGROUND")
+    E.sidebar.bg:SetAllPoints()
+    E.sidebar.bg:SetColorTexture(unpack(C_BG_SIDEBAR))
+    E.sidebar.bg:SetAlpha((IMAGOSaved and IMAGOSaved.opaqueUI) and 1.0 or 0.85)
 
     -- Sidebar: rechte Trennlinie (1px, gold dim)
     do
@@ -205,22 +194,21 @@ function IMAGO.Eras.CreateFrame()
         line:SetWidth(1)
         line:SetPoint("TOPRIGHT",    E.sidebar, "TOPRIGHT",    0, 0)
         line:SetPoint("BOTTOMRIGHT", E.sidebar, "BOTTOMRIGHT", 0, 0)
-        line:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+        line:SetColorTexture(IMAGO_COLORS.DIVIDER[1], IMAGO_COLORS.DIVIDER[2], IMAGO_COLORS.DIVIDER[3], 0.8)
     end
 
     -- Sidebar: Überschrift → klickbarer Overview-Button
     E.overviewBtn = CreateFrame("Button", nil, E.sidebar)
     E.overviewBtn:SetPoint("TOPLEFT",  E.sidebar, "TOPLEFT",  0, 0)
-    E.overviewBtn:SetSize(SIDEBAR_W, 24)
+    E.overviewBtn:SetSize(SIDEBAR_W, LAYOUT.SIDEBAR_HEADER_HEIGHT)
     do
         local hl = E.overviewBtn:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
-        hl:SetColorTexture(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.10)
+        hl:SetColorTexture(IMAGO_COLORS.BG_HOVER[1], IMAGO_COLORS.BG_HOVER[2], IMAGO_COLORS.BG_HOVER[3], 0.3)
         local lbl = E.overviewBtn:CreateFontString(nil, "OVERLAY")
-        lbl:SetFont(FONT_BODY, 13, "")
+        IMAGO.ApplyTextStyle(lbl, "SIDEBAR_HEADER")
         lbl:SetPoint("LEFT", E.overviewBtn, "LEFT", 12, 0)
         lbl:SetText(IMAGO.L["ERAS_SIDEBAR_HEADING"] or "ERAS OVERVIEW")
-        lbl:SetTextColor(unpack(C_GOLD))
         lbl:SetWordWrap(false)
     end
     E.overviewBtn:SetScript("OnClick", function() IMAGO.Eras.ShowErasOverview() end)
@@ -229,23 +217,19 @@ function IMAGO.Eras.CreateFrame()
     do
         local div = E.sidebar:CreateTexture(nil, "ARTWORK")
         div:SetHeight(1)
-        div:SetPoint("TOPLEFT",  E.sidebar, "TOPLEFT",  0, -24)
-        div:SetPoint("TOPRIGHT", E.sidebar, "TOPRIGHT", 0, -24)
-        div:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+        div:SetPoint("TOPLEFT",  E.sidebar, "TOPLEFT",  0, -LAYOUT.SIDEBAR_HEADER_HEIGHT)
+        div:SetPoint("TOPRIGHT", E.sidebar, "TOPRIGHT", 0, -LAYOUT.SIDEBAR_HEADER_HEIGHT)
+        div:SetColorTexture(IMAGO_COLORS.DIVIDER[1], IMAGO_COLORS.DIVIDER[2], IMAGO_COLORS.DIVIDER[3], 0.8)
     end
 
     -- Sidebar: ScrollFrame
     E.sidebar.scroll = CreateFrame("ScrollFrame", "IMAGOErasSideScroll", E.sidebar, "UIPanelScrollFrameTemplate")
-    E.sidebar.scroll:SetPoint("TOPLEFT",     E.sidebar, "TOPLEFT",     0,  -26)
+    E.sidebar.scroll:SetPoint("TOPLEFT",     E.sidebar, "TOPLEFT",     0, -LAYOUT.SIDEBAR_HEADER_HEIGHT)
     E.sidebar.scroll:SetPoint("BOTTOMRIGHT", E.sidebar, "BOTTOMRIGHT", 0, 0)
-    StyleScrollBar("IMAGOErasSideScroll")
-    C_Timer.After(0, function()
-        local sb = _G["IMAGOErasSideScrollScrollBar"]
-        if sb then sb:Hide() end
-    end)
+    IMAGO.StyleAndAnchorScrollBar("IMAGOErasSideScrollScrollBar", E.sidebar.scroll)
 
     E.sidebar.sideContent = CreateFrame("Frame", nil, E.sidebar.scroll)
-    E.sidebar.sideContent:SetWidth(SIDEBAR_W - 8)
+    E.sidebar.sideContent:SetWidth(LAYOUT.SIDEBAR_USABLE_WIDTH)
     E.sidebar.sideContent:SetHeight(1)
     E.sidebar.scroll:SetScrollChild(E.sidebar.sideContent)
 
@@ -255,7 +239,7 @@ function IMAGO.Eras.CreateFrame()
     -- RECHTE CONTENT PANE
     -- --------------------------------------------------------
     E.contentPane = CreateFrame("Frame", "IMAGOErasContentPane", E.wrapper)
-    E.contentPane:SetPoint("TOPLEFT",     E.sidebar, "TOPRIGHT",    0, 0)
+    E.contentPane:SetPoint("TOPLEFT",     E.sidebar, "TOPRIGHT",    LAYOUT.CONTENT_PADDING_LEFT, 0)
     E.contentPane:SetPoint("BOTTOMRIGHT", E.wrapper, "BOTTOMRIGHT", 0, 0)
 
     -- --------------------------------------------------------
@@ -266,11 +250,11 @@ function IMAGO.Eras.CreateFrame()
     E.banner:SetPoint("TOPRIGHT", E.contentPane, "TOPRIGHT", 0, 0)
     E.banner:SetHeight(BANNER_H)
 
-    -- Banner: Basis-Farbe (dunkelblau)
+    -- Banner: Basis-Farbe (IMAGO-Hintergrund)
     do
         local base = E.banner:CreateTexture(nil, "BACKGROUND", nil, -2)
         base:SetAllPoints()
-        base:SetColorTexture(0.04, 0.06, 0.10, 1)
+        base:SetColorTexture(unpack(C_BG_MAIN))
     end
 
     -- Banner: Era-spezifisches Artwork (bgPath)
@@ -300,7 +284,7 @@ function IMAGO.Eras.CreateFrame()
         star:SetPoint("TOPLEFT", E.banner, "TOPLEFT",
             s[1] * 800,             -- relative X (Banner-Breite ≈ 800px)
             -(s[2] * BANNER_H))
-        star:SetColorTexture(0.784, 0.659, 0.294, 0.45)
+        star:SetColorTexture(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.45)
         table.insert(E.banner.stars, star)
     end
 
@@ -308,7 +292,7 @@ function IMAGO.Eras.CreateFrame()
     E.banner.nameLabel = E.banner:CreateFontString(nil, "OVERLAY")
     E.banner.nameLabel:SetFont(FONT_TITLE, 28, "")
     E.banner.nameLabel:SetPoint("BOTTOMLEFT", E.banner, "BOTTOMLEFT", 16, 46)
-    E.banner.nameLabel:SetTextColor(1, 1, 1)
+    E.banner.nameLabel:SetTextColor(C_TEXT_PRI[1], C_TEXT_PRI[2], C_TEXT_PRI[3])
     E.banner.nameLabel:SetShadowColor(0, 0, 0, 1)
     E.banner.nameLabel:SetShadowOffset(1, -1)
     E.banner.nameLabel:SetText("")
@@ -339,7 +323,7 @@ function IMAGO.Eras.CreateFrame()
         line:SetHeight(1)
         line:SetPoint("TOPLEFT",  E.banner, "BOTTOMLEFT",  0, 0)
         line:SetPoint("TOPRIGHT", E.banner, "BOTTOMRIGHT", 0, 0)
-        line:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+        line:SetColorTexture(IMAGO_COLORS.DIVIDER[1], IMAGO_COLORS.DIVIDER[2], IMAGO_COLORS.DIVIDER[3], 0.8)
     end
 
     -- --------------------------------------------------------
@@ -428,7 +412,7 @@ function IMAGO.Eras.CreateFrame()
         line:SetHeight(1)
         line:SetPoint("TOPLEFT",  E.tabBar, "BOTTOMLEFT",  0, 0)
         line:SetPoint("TOPRIGHT", E.tabBar, "BOTTOMRIGHT", 0, 0)
-        line:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+        line:SetColorTexture(IMAGO_COLORS.DIVIDER[1], IMAGO_COLORS.DIVIDER[2], IMAGO_COLORS.DIVIDER[3], 0.8)
     end
 
     -- --------------------------------------------------------
@@ -437,6 +421,11 @@ function IMAGO.Eras.CreateFrame()
     E.contentArea = CreateFrame("Frame", nil, E.contentPane)
     E.contentArea:SetPoint("TOPLEFT",     E.tabBar,      "BOTTOMLEFT",  0, -1)
     E.contentArea:SetPoint("BOTTOMRIGHT", E.contentPane, "BOTTOMRIGHT", 0,  0)
+    do
+        local bg = E.contentArea:CreateTexture(nil, "BACKGROUND")
+        bg:SetAllPoints()
+        bg:SetColorTexture(unpack(C_BG_MAIN))
+    end
 
     -- 4 ScrollFrames, eines pro Tab
     local scrollIds = {
@@ -483,7 +472,7 @@ function IMAGO.Eras.CreateFrame()
         lockTex:SetTexture("Interface\\LFGFrame\\LFG-Lock")
         lockTex:SetAlpha(0.45)
         E.lockedPage.title = E.lockedPage:CreateFontString(nil, "OVERLAY")
-        E.lockedPage.title:SetFont(FONT_TITLE, 22, "")
+        E.lockedPage.title:SetFont(FONT_BODY, 22, "OUTLINE")
         E.lockedPage.title:SetPoint("TOP", lockTex, "BOTTOM", 0, -14)
         E.lockedPage.title:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
         local divLine = E.lockedPage:CreateTexture(nil, "ARTWORK")
@@ -496,7 +485,7 @@ function IMAGO.Eras.CreateFrame()
         E.lockedPage.body:SetWidth(500)
         E.lockedPage.body:SetJustifyH("CENTER")
         E.lockedPage.body:SetSpacing(4)
-        E.lockedPage.body:SetTextColor(0.85, 0.82, 0.75)
+        E.lockedPage.body:SetTextColor(C_TEXT_PRI[1], C_TEXT_PRI[2], C_TEXT_PRI[3])
         E.lockedPage.hint = E.lockedPage:CreateFontString(nil, "OVERLAY")
         E.lockedPage.hint:SetFont(FONT_BODY, 11, "")
         E.lockedPage.hint:SetPoint("TOP", E.lockedPage.body, "BOTTOM", 0, -20)
@@ -518,20 +507,20 @@ function IMAGO.Eras.CreateFrame()
         bg:SetAllPoints()
         bg:SetColorTexture(unpack(C_BG_MAIN))
         E.wipPage.title = E.wipPage:CreateFontString(nil, "OVERLAY")
-        E.wipPage.title:SetFont(FONT_TITLE, 22, "")
+        E.wipPage.title:SetFont(FONT_BODY, 22, "OUTLINE")
         E.wipPage.title:SetPoint("CENTER", E.wipPage, "CENTER", 0, 30)
-        E.wipPage.title:SetTextColor(0.55, 0.53, 0.48)
+        E.wipPage.title:SetTextColor(C_TEXT_MUTED[1], C_TEXT_MUTED[2], C_TEXT_MUTED[3])
         local divLine = E.wipPage:CreateTexture(nil, "ARTWORK")
         divLine:SetSize(420, 1)
         divLine:SetPoint("TOP", E.wipPage.title, "BOTTOM", 0, -14)
-        divLine:SetColorTexture(0.35, 0.33, 0.28, 0.45)
+        divLine:SetColorTexture(C_DIVIDER[1], C_DIVIDER[2], C_DIVIDER[3], 0.45)
         E.wipPage.body = E.wipPage:CreateFontString(nil, "OVERLAY")
         E.wipPage.body:SetFont(FONT_BODY, 13, "")
         E.wipPage.body:SetPoint("TOP", divLine, "BOTTOM", 0, -18)
         E.wipPage.body:SetWidth(500)
         E.wipPage.body:SetJustifyH("CENTER")
         E.wipPage.body:SetSpacing(4)
-        E.wipPage.body:SetTextColor(0.55, 0.53, 0.48)
+        E.wipPage.body:SetTextColor(C_TEXT_MUTED[1], C_TEXT_MUTED[2], C_TEXT_MUTED[3])
     end
 
     -- --------------------------------------------------------
@@ -555,25 +544,24 @@ function IMAGO.Eras.CreateFrame()
 
     -- Logo-Linie
     sp.logoLine = sp:CreateTexture(nil, "ARTWORK")
-    sp.logoLine:SetSize(400, 1)
+    sp.logoLine:SetSize(520, 1)
     sp.logoLine:SetPoint("TOP", sp.logo, "BOTTOM", 0, -5)
     sp.logoLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
     sp.logoLine:SetGradient("HORIZONTAL",
-        CreateColor(0.784, 0.659, 0.294, 0),
-        CreateColor(0.784, 0.659, 0.294, 0.5),
-        CreateColor(0.784, 0.659, 0.294, 0))
+        CreateColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0),
+        CreateColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.5))
 
     -- Rang-Label ("LORE STATUS")
     sp.rankLabel = sp:CreateFontString(nil, "OVERLAY")
     sp.rankLabel:SetFont(FONT_BODY, 13, "")
-    sp.rankLabel:SetPoint("TOP", sp.logoLine, "BOTTOM", 0, -25)
-    sp.rankLabel:SetTextColor(0.8, 0.7, 0.5)
+    sp.rankLabel:SetPoint("TOP", sp.logoLine, "BOTTOM", 0, -30)
+    sp.rankLabel:SetTextColor(C_GOLD_DIM[1], C_GOLD_DIM[2], C_GOLD_DIM[3])
 
     -- Rang-Name (groß)
     sp.rankName = sp:CreateFontString(nil, "OVERLAY")
-    sp.rankName:SetFont(FONT_TITLE, 36, "OUTLINE")
-    sp.rankName:SetPoint("TOP", sp.rankLabel, "BOTTOM", 0, -5)
-    sp.rankName:SetTextColor(0.878, 0.753, 0.416)
+    sp.rankName:SetFont(FONT_BODY, 24, "OUTLINE")
+    sp.rankName:SetPoint("TOP", sp.rankLabel, "BOTTOM", 0, -8)
+    sp.rankName:SetTextColor(C_GOLD_BRIGHT[1], C_GOLD_BRIGHT[2], C_GOLD_BRIGHT[3])
     sp.rankName:SetShadowColor(0, 0, 0, 1)
     sp.rankName:SetShadowOffset(2, -2)
 
@@ -582,13 +570,13 @@ function IMAGO.Eras.CreateFrame()
     sp.vLine:SetPoint("TOP", sp.rankName, "BOTTOM", 0, -35)
     sp.vLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
     sp.vLine:SetGradient("VERTICAL",
-        CreateColor(0.784, 0.659, 0.294, 0.3),
-        CreateColor(0.784, 0.659, 0.294, 0))
+        CreateColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.3),
+        CreateColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0))
 
     sp.completedLabel = sp:CreateFontString(nil, "OVERLAY")
     sp.completedLabel:SetFont(FONT_BODY, 14, "OUTLINE")
     sp.completedLabel:SetPoint("TOPRIGHT", sp.vLine, "TOPLEFT", -20, 0)
-    sp.completedLabel:SetTextColor(0.784, 0.659, 0.294)
+    sp.completedLabel:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
 
     sp.completedMilestones = sp:CreateFontString(nil, "OVERLAY")
     sp.completedMilestones:SetFont(FONT_BODY, 12, "")
@@ -599,7 +587,7 @@ function IMAGO.Eras.CreateFrame()
     sp.nextLabel = sp:CreateFontString(nil, "OVERLAY")
     sp.nextLabel:SetFont(FONT_BODY, 14, "OUTLINE")
     sp.nextLabel:SetPoint("TOPLEFT", sp.vLine, "TOPRIGHT", 20, 0)
-    sp.nextLabel:SetTextColor(0.5, 0.5, 0.5)
+    sp.nextLabel:SetTextColor(C_TEXT_MUTED[1], C_TEXT_MUTED[2], C_TEXT_MUTED[3])
 
     sp.milestones = sp:CreateFontString(nil, "OVERLAY")
     sp.milestones:SetFont(FONT_BODY, 12, "")
@@ -608,57 +596,7 @@ function IMAGO.Eras.CreateFrame()
     sp.milestones:SetSpacing(8)
 
     if not sp.footer then
-        sp.footer = CreateFrame("Frame", nil, sp)
-        sp.footer:SetSize(620, 80)
-        sp.footer:SetPoint("BOTTOM", sp, "BOTTOM", 0, 0)
-
-        local hLine = sp.footer:CreateTexture(nil, "ARTWORK")
-        hLine:SetPoint("TOPLEFT",  sp.footer, "TOPLEFT",  0, 0)
-        hLine:SetPoint("TOPRIGHT", sp.footer, "TOPRIGHT", 0, 0)
-        hLine:SetHeight(1)
-        hLine:SetTexture("Interface\\ChatFrame\\ChatFrameBackground")
-        hLine:SetGradient("HORIZONTAL",
-            CreateColor(0.784, 0.659, 0.294, 0),
-            CreateColor(0.784, 0.659, 0.294, 0.4),
-            CreateColor(0.784, 0.659, 0.294, 0))
-
-        sp.footer.rankText = sp.footer:CreateFontString(nil, "OVERLAY")
-        sp.footer.rankText:SetFont(FONT_TITLE, 18, "")
-        sp.footer.rankText:SetPoint("TOP", sp.footer, "TOP", 0, -8)
-        sp.footer.rankText:SetTextColor(0.878, 0.753, 0.416)
-
-        sp.footer.progText = sp.footer:CreateFontString(nil, "OVERLAY")
-        sp.footer.progText:SetFont(FONT_BODY, 11, "")
-        sp.footer.progText:SetPoint("TOP", sp.footer.rankText, "BOTTOM", 0, -2)
-        sp.footer.progText:SetTextColor(0.7, 0.7, 0.7)
-
-        sp.footer.bar = CreateFrame("StatusBar", nil, sp.footer)
-        sp.footer.bar:SetPoint("BOTTOMLEFT",  sp.footer, "BOTTOMLEFT",  20, 8)
-        sp.footer.bar:SetPoint("BOTTOMRIGHT", sp.footer, "BOTTOMRIGHT", -20, 8)
-        sp.footer.bar:SetHeight(14)
-        sp.footer.bar:SetMinMaxValues(0, 1)
-        sp.footer.bar:SetValue(0)
-        sp.footer.bar:SetStatusBarTexture("Interface\\TargetingFrame\\UI-StatusBar")
-        sp.footer.bar:SetStatusBarColor(0.784, 0.659, 0.294, 0.9)
-        local barBg = sp.footer.bar:CreateTexture(nil, "BACKGROUND")
-        barBg:SetAllPoints()
-        barBg:SetColorTexture(0.15, 0.13, 0.05, 0.6)
-        local barBorder = CreateFrame("Frame", nil, sp.footer.bar, "BackdropTemplate")
-        barBorder:SetAllPoints()
-        barBorder:SetBackdrop({ edgeFile="Interface\\Buttons\\WHITE8X8", edgeSize=1 })
-        barBorder:SetBackdropBorderColor(0.784, 0.659, 0.294, 0.5)
-        C_Timer.After(0, function()
-            local bw = sp.footer.bar:GetWidth()
-            if bw and bw > 10 then
-                local step = math.floor(bw / 10)
-                for i = 1, 9 do
-                    local tick = sp.footer.bar:CreateTexture(nil, "OVERLAY")
-                    tick:SetSize(2, 18)
-                    tick:SetPoint("LEFT", sp.footer.bar, "LEFT", i * step, -2)
-                    tick:SetColorTexture(0, 0, 0, 0.3)
-                end
-            end
-        end)
+        sp.footer = IMAGO.CreateProgressFooter(sp, 620)
     end
 
     -- --------------------------------------------------------
@@ -802,16 +740,15 @@ local function BuildSidebar()
                 div:SetHeight(1)
                 div:SetPoint("TOPLEFT",  content, "TOPLEFT",  8, -y)
                 div:SetPoint("TOPRIGHT", content, "TOPRIGHT", -8, -y)
-                div:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+                div:SetColorTexture(IMAGO_COLORS.DIVIDER[1], IMAGO_COLORS.DIVIDER[2], IMAGO_COLORS.DIVIDER[3], 0.8)
                 table.insert(E.sidebarRows, div)
                 y = y + 8
             end
 
             local glbl = content:CreateFontString(nil, "OVERLAY")
-            glbl:SetFont(FONT_BODY, 11, "")
+            IMAGO.ApplyTextStyle(glbl, "NAV_CATEGORY", IMAGO_COLORS.GOLD_MUTED)
             glbl:SetPoint("TOPLEFT", content, "TOPLEFT", 12, -y)
             glbl:SetText(string.upper(group))
-            glbl:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
             glbl:SetWordWrap(false)
             table.insert(E.sidebarRows, glbl)
             y = y + 18
@@ -824,13 +761,13 @@ local function BuildSidebar()
 
         -- Era-Item Button
         local row = CreateFrame("Button", nil, content)
-        row:SetSize(SIDEBAR_W, ROW_H)
+        row:SetSize(LAYOUT.SIDEBAR_USABLE_WIDTH, ROW_H)
         row:SetPoint("TOPLEFT", content, "TOPLEFT", 0, -y)
 
         -- Hover-BG
         local hl = row:CreateTexture(nil, "HIGHLIGHT")
         hl:SetAllPoints()
-        hl:SetColorTexture(C_GOLD[1], C_GOLD[2], C_GOLD[3], 0.12)
+        hl:SetColorTexture(IMAGO_COLORS.BG_HOVER[1], IMAGO_COLORS.BG_HOVER[2], IMAGO_COLORS.BG_HOVER[3], 0.3)
 
         -- Aktive linke Border (2px, gold)
         row.leftBorder = row:CreateTexture(nil, "OVERLAY")
@@ -848,15 +785,15 @@ local function BuildSidebar()
 
         -- Era-Name
         row.label = row:CreateFontString(nil, "OVERLAY")
-        row.label:SetFont(FONT_BODY, 13, "")
+        IMAGO.ApplyTextStyle(row.label, "NAV_ITEM")
         row.label:SetPoint("LEFT",  row.dot, "RIGHT", 8,    0)
-        row.label:SetPoint("RIGHT", row,     "RIGHT", -48,  0)
+        row.label:SetPoint("RIGHT", row,     "RIGHT", -40,  0)
         row.label:SetJustifyH("LEFT")
         row.label:SetWordWrap(false)
 
         -- Version-Tag (rechts)
         row.versionTag = row:CreateFontString(nil, "OVERLAY")
-        row.versionTag:SetFont(FONT_BODY, 9, "")
+        IMAGO.ApplyTextStyle(row.versionTag, "NAV_META")
         row.versionTag:SetPoint("RIGHT", row, "RIGHT", -10, 0)
         row.versionTag:SetJustifyH("RIGHT")
         row.versionTag:SetWordWrap(false)
@@ -866,8 +803,12 @@ local function BuildSidebar()
         -- Alle Eras immer anklickbar
         local s = slug
         row:SetScript("OnClick", function() IMAGO.Eras.OpenToEra(s) end)
-        row:SetScript("OnEnter", nil)
-        row:SetScript("OnLeave", nil)
+        row:SetScript("OnEnter", function(self)
+            IMAGO.ShowTooltipIfTruncated(self, self.label)
+        end)
+        row:SetScript("OnLeave", function()
+            GameTooltip:Hide()
+        end)
 
         -- Visueller Zustand
         local isNPCLocked = (data.unlock_npc and data.unlock_npc ~= "")
@@ -875,7 +816,7 @@ local function BuildSidebar()
             and not (IMAGOSaved.seenEras and IMAGOSaved.seenEras[slug])
         if data.coming_soon then
             row.dot:SetColorTexture(unpack(C_TEXT_MUTED))
-            row.label:SetTextColor(unpack(C_TEXT_MUTED))
+            row.label:SetTextColor(unpack(C_TEXT_SEC))
             row.versionTag:SetTextColor(unpack(C_TEXT_MUTED))
         elseif isNPCLocked then
             row.dot:SetColorTexture(0.55, 0.22, 0.15)
@@ -893,6 +834,7 @@ local function BuildSidebar()
     end
 
     content:SetHeight(math.max(1, y + 10))
+    IMAGO.UpdateScrollBarVisibility(E.sidebar.scroll)
 end
 
 -- ============================================================
@@ -915,8 +857,8 @@ local function UpdateSidebarSelection(activeSlug)
                 and not (IMAGOSaved and IMAGOSaved.erasEncyclopediaMode)
                 and not (IMAGOSaved.seenEras and IMAGOSaved.seenEras[row.slug])
             if isActive then
-                row.dot:SetColorTexture(unpack(C_GOLD))
-                row.label:SetTextColor(unpack(C_GOLD))
+                row.dot:SetColorTexture(unpack(C_GOLD_BRIGHT))
+                row.label:SetTextColor(unpack(C_GOLD_BRIGHT))
                 row.versionTag:SetTextColor(unpack(C_GOLD_DIM))
             elseif isSoon then
                 row.dot:SetColorTexture(unpack(C_TEXT_MUTED))
@@ -939,10 +881,19 @@ end
 -- DASHBOARD ANZEIGEN  (Einstiegspunkt für Chronicle Tab 4)
 -- ============================================================
 
+function IMAGO.Eras.ApplyOpaqueUI()
+    local E = IMAGO.Eras.frame
+    if not E then return end
+    local opaque = IMAGOSaved and IMAGOSaved.opaqueUI
+    if E.wrapper and E.wrapper.bg then E.wrapper.bg:SetAlpha(opaque and 1.0 or 0.95) end
+    if E.sidebar and E.sidebar.bg then E.sidebar.bg:SetAlpha(opaque and 1.0 or 0.85) end
+end
+
 function IMAGO.Eras.ShowDashboard()
     if not IMAGO.Eras.frame then IMAGO.Eras.CreateFrame() end
     local E = IMAGO.Eras.frame
     E.wrapper:Show()
+    IMAGO.Eras.ApplyOpaqueUI()
     if #E.sidebarRows == 0 then BuildSidebar() end
     -- Immer Overview als Startseite zeigen
     IMAGO.Eras.ShowErasOverview()
@@ -965,6 +916,7 @@ function IMAGO.Eras.OpenToEra(slug, subTab, scrollY)
     IMAGO.Eras.activeSubTab = subTab or "overview"
 
     E.wrapper:Show()
+    IMAGO.Eras.ApplyOpaqueUI()
     if #E.sidebarRows == 0 then BuildSidebar() end
     -- Overview/Locked/WIP ausblenden, Banner immer zeigen
     if E.overviewPage    then E.overviewPage:Hide()    end
@@ -1078,7 +1030,7 @@ function IMAGO.Eras.ShowSubTab(mode)
     for id, btn in pairs(E.tabs) do
         local active = (id == mode)
         if active then
-            btn.textFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
+            btn.textFS:SetTextColor(C_GOLD_BRIGHT[1], C_GOLD_BRIGHT[2], C_GOLD_BRIGHT[3])
         else
             btn.textFS:SetTextColor(C_TEXT_MUTED[1], C_TEXT_MUTED[2], C_TEXT_MUTED[3])
         end
@@ -1188,6 +1140,7 @@ function IMAGO.Eras.RenderOverview(data)
         fs:SetWordWrap(true)
         fs:Show()
         content:SetHeight(y + 60)
+        IMAGO.UpdateScrollBarVisibility(E.scrollFrames["overview"])
         return
     end
 
@@ -1429,6 +1382,7 @@ function IMAGO.Eras.RenderOverview(data)
     end
 
     content:SetHeight(math.max(1, y + PAD))
+    IMAGO.UpdateScrollBarVisibility(E.scrollFrames["overview"])
 end
 
 -- ============================================================
@@ -1529,7 +1483,9 @@ function IMAGO.Eras.ShowLorePopup(text, title)
         local function ProcessLoreText(raw, darkMode)
             if darkMode or not raw then return raw end
             local t = raw:gsub("|cFFc8a84b", "|cFF3D1A00")  -- Gold → Dunkelbraun (Sektion)
+                         :gsub("|c" .. IMAGO_HEX.GOLD, "|cFF3D1A00")
                          :gsub("|cFFe0c06a", "|cFF5C2E00")  -- Hell-Gold → Braun (Questname)
+                         :gsub("|c" .. IMAGO_HEX.GOLD_BRIGHT, "|cFF5C2E00")
             return t
         end
         p._processText = ProcessLoreText
@@ -1542,7 +1498,7 @@ function IMAGO.Eras.ShowLorePopup(text, title)
                 p.headlineFS:SetTextColor(C_GOLD[1], C_GOLD[2], C_GOLD[3])
                 p.titleFS:SetTextColor(C_GOLD_DIM[1], C_GOLD_DIM[2], C_GOLD_DIM[3])
                 p.textFS:SetTextColor(unpack(C_TEXT_PRI))
-                p._div:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+                p._div:SetColorTexture(IMAGO_COLORS.DIVIDER[1], IMAGO_COLORS.DIVIDER[2], IMAGO_COLORS.DIVIDER[3], 0.8)
                 -- Dunkel-Button: aktiv (gold Rahmen), Pergament-Button: inaktiv
                 p._darkBtn:SetBackdropBorderColor(C_GOLD[1], C_GOLD[2], C_GOLD[3], 1)
                 p._parchBtn:SetBackdropBorderColor(0.40, 0.32, 0.18, 0.45)
@@ -1792,21 +1748,19 @@ local function RenderErasOverview()
     for _, r in ipairs(IMAGO.Eras.ranks) do
         local rTitle = IMAGO.L[r.key] or r.key
         if r.perc <= pct then
-            completedStr = completedStr .. string.format("|cFFC8A84B%s (%s %d%%)|r\n", rTitle, atWord, r.perc)
+            completedStr = completedStr .. string.format("|c%s%s (%s %d%%)|r\n", IMAGO_HEX.GOLD, rTitle, atWord, r.perc)
         else
-            nextStr = nextStr .. string.format("|cFF888888%s (%s %d%%)|r\n", rTitle, atWord, r.perc)
+            nextStr = nextStr .. string.format("|c%s%s (%s %d%%)|r\n", IMAGO_HEX.TEXT_MUTED, rTitle, atWord, r.perc)
         end
     end
     sp.completedMilestones:SetText(completedStr == "" and (IMAGO.L["STARTPAGE_NO_MILESTONES"] or "None yet.") or completedStr)
-    sp.milestones:SetText(nextStr == "" and (IMAGO.L["STARTPAGE_MAX_REACHED"] or "|cFF00FF00MAX REACHED!|r") or nextStr)
+    sp.milestones:SetText(nextStr == "" and (IMAGO.L["STARTPAGE_MAX_REACHED"] or "|c" .. IMAGO_HEX.SUCCESS .. "MAX REACHED!|r") or nextStr)
 
-    sp.footer.rankText:SetText(rankTitle)
-    sp.footer.progText:SetText(string.format(
-        IMAGO.L["ERAS_PROGRESS"] or "%d / %d Eras Documented",
-        seen, total
-    ))
-    sp.footer.bar:SetMinMaxValues(0, math.max(1, total))
-    sp.footer.bar:SetValue(seen)
+    local progressText = string.format(
+        IMAGO.L["ERAS_PROGRESS"] or "%d / %d Eras Documented (%d%%)",
+        seen, total, math.floor(pct)
+    )
+    IMAGO.UpdateProgressFooter(sp.footer, seen, total, rankTitle, progressText)
 end
 
 function IMAGO.Eras.ShowErasOverview()
@@ -1990,6 +1944,7 @@ function IMAGO.Eras.RenderStory(data)
         fs:SetWordWrap(true)
         fs:Show()
         content:SetHeight(y + 60)
+        IMAGO.UpdateScrollBarVisibility(E.scrollFrames["story"])
         return
     end
 
@@ -2059,7 +2014,7 @@ function IMAGO.Eras.RenderStory(data)
         hdiv:ClearAllPoints()
         hdiv:SetPoint("TOPLEFT",  card, "TOPLEFT",  0, -HEADER_H)
         hdiv:SetPoint("TOPRIGHT", card, "TOPRIGHT", 0, -HEADER_H)
-        hdiv:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+        hdiv:SetColorTexture(IMAGO_COLORS.DIVIDER[1], IMAGO_COLORS.DIVIDER[2], IMAGO_COLORS.DIVIDER[3], 0.8)
         hdiv:Show()
 
         -- Plot-Text
@@ -2169,6 +2124,7 @@ function IMAGO.Eras.RenderStory(data)
     end
 
     content:SetHeight(math.max(1, y + PAD))
+    IMAGO.UpdateScrollBarVisibility(E.scrollFrames["story"])
 end
 
 -- ============================================================
@@ -2200,6 +2156,7 @@ function IMAGO.Eras.RenderPatches(data)
         fs:SetWordWrap(true)
         fs:Show()
         content:SetHeight(y + 60)
+        IMAGO.UpdateScrollBarVisibility(E.scrollFrames["patches"])
         return
     end
 
@@ -2270,7 +2227,7 @@ function IMAGO.Eras.RenderPatches(data)
             zBG:SetScript("OnEnter", function(self)
                 GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT")
                 GameTooltip:ClearLines()
-                GameTooltip:AddLine("|cFFc8a84b" .. (IMAGO.L["ERAS_NEW_ZONES"] or "New Zones") .. "|r", 1, 1, 1)
+                GameTooltip:AddLine("|c" .. IMAGO_HEX.GOLD_BRIGHT .. (IMAGO.L["ERAS_NEW_ZONES"] or "New Zones") .. "|r", 1, 1, 1)
                 for _, zn in ipairs(theZones) do
                     GameTooltip:AddLine("  \194\183 " .. zn, C_TEXT_PRI[1], C_TEXT_PRI[2], C_TEXT_PRI[3])
                 end
@@ -2302,7 +2259,7 @@ function IMAGO.Eras.RenderPatches(data)
         hdiv:ClearAllPoints()
         hdiv:SetPoint("TOPLEFT",  card, "TOPLEFT",  0, -HEADER_H)
         hdiv:SetPoint("TOPRIGHT", card, "TOPRIGHT", 0, -HEADER_H)
-        hdiv:SetColorTexture(C_BORDER[1], C_BORDER[2], C_BORDER[3], C_BORDER[4])
+        hdiv:SetColorTexture(IMAGO_COLORS.DIVIDER[1], IMAGO_COLORS.DIVIDER[2], IMAGO_COLORS.DIVIDER[3], 0.8)
         hdiv:Show()
 
         -- i-Lore-Button (oben rechts, identisch mit Story)
@@ -2424,6 +2381,7 @@ function IMAGO.Eras.RenderPatches(data)
     end
 
     content:SetHeight(math.max(1, y + PAD))
+    IMAGO.UpdateScrollBarVisibility(E.scrollFrames["patches"])
 end
 
 -- ============================================================
@@ -2455,6 +2413,7 @@ function IMAGO.Eras.RenderCharacters(data)
         fs:SetWordWrap(true)
         fs:Show()
         content:SetHeight(y + 60)
+        IMAGO.UpdateScrollBarVisibility(E.scrollFrames["characters"])
         return
     end
 
@@ -2600,6 +2559,7 @@ function IMAGO.Eras.RenderCharacters(data)
     end
 
     content:SetHeight(math.max(1, y + PAD))
+    IMAGO.UpdateScrollBarVisibility(E.scrollFrames["characters"])
 end
 
 -- ============================================================
