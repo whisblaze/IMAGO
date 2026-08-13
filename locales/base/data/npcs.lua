@@ -404,6 +404,34 @@ IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"].timeline = {
 
 -- CAT_LIGHT
 
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].name = "High Prelate Rata"
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].race = "Zandalari troll"
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].lore = [[The Zandalari do not worship the Holy Light like other cultures do, but the prelates channel it through the power bestowed upon them by the loa. Rata, High Prelate and leader of the order, has always been one of its most faithful members. 
+
+When Rezan, Loa of Kings, was slain by the traitorous Prophet Zul, most of the prelates lost their connection to the Light and were forced to leave the order. Rata retained her abilities and fought stalwartly, first under King Rastakhan's and then under Queen Talanji's orders. 
+
+With the Sunwell on the brink of destruction, Zandalar's most prominent paladin answers the call for help.]]
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].zones = {"Silvermoon City", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].timeline = {
+    {
+        era = "BfA",
+        text = [[Led the prelates during the Fourth War as the main protectors of King Rastakhan. The order was severely weakened after Rezan's death, with many members losing their connection to the Light. Rata pledged her support to Queen Talanji and joined the Zanchuli Council after the king's death.]],
+    },
+    {
+        era = "DF",
+        text = [[Traveled to the Dragon Isles after Tyr's reforging.]],
+    },
+    {
+        era = "TWW",
+        text = [[Joined the Horde forces on Khaz Algar and fought against the nerubians in Hallowfall. Learned about the Arathi's faith from Great Kyron.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought against the Void on the Isle of Quel'Danas.]],
+    }
+}
+
 IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].name = "Gidwin Goldbraids"
 IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].race = "Dwarf"
 IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"].lore = [[Wanting to become a paladin since he was a lad, Gidwin and his best friend Tarenar Sunstrike pretended their entire childhoods to be heroes. At Light's Hope Chapel, they made that dream reality and joined the Argent Crusade. 

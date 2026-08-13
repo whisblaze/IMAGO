@@ -141,6 +141,13 @@ IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"] = {
 }
 -- === CAT_LIGHT ===
 
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"] = {
+    displayID = 259879,
+    ids = {259879, 239705, 251933, 251947, 253190, 247924},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
 IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"] = {
     displayID = 250402,
     ids = {250402, 238748, 239486, 238834, 238764, 238732, 238749, 240462, 240596, 256041, 242362},
