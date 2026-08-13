@@ -404,6 +404,27 @@ IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"].timeline = {
 
 -- CAT_LIGHT
 
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].name = "The Great Kyron"
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].race = "Arathi"
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].lore = [[The Great Kyron is the leader of the Arathi Lamplighters of Hallowfall. Before the Arathi expedition to Hallowfall, Kyron served as an overseer in the Arathi army. When they aren't fending off the increasingly frequent attacks by the nerubians of the Kaheti, they can often be found in Mereldar.]]
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].zones = {"Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].timeline = {
+    {
+        era = "Pre-TWW",
+        text = [[Served as an overseer in the Arathi army. Joined the Arathi expedition to Hallowfall some time before the events in Khaz Algar.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought the Kaheti nerubians alongside Faerin Lothar, Anduin Wrynn, and an adventurer at the Aegis Wall. Shortly afterward, they assisted Anduin and Faerin in rekindling the Dawntower.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Kyron was part of the Vanguard of the Light that defended Parhelion Plaza during the Devouring Host's attack.]],
+    }
+}
+
+
 IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].name = "High Prelate Rata"
 IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].race = "Zandalari troll"
 IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].lore = [[The Zandalari do not worship the Holy Light like other cultures do, but the prelates channel it through the power bestowed upon them by the loa. Rata, High Prelate and leader of the order, has always been one of its most faithful members. 

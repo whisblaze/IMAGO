@@ -141,6 +141,13 @@ IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"] = {
 }
 -- === CAT_LIGHT ===
 
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"] = {
+    displayID = 237120,
+    ids = {237120},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
 IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"] = {
     displayID = 259879,
     ids = {259879, 239705, 251933, 251947, 253190, 247924},
