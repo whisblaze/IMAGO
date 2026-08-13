@@ -33,14 +33,14 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].lore = [[Lady Liadrin verlo
 
 Bisweilen zweifelt sie noch immer an ihrer Würdigkeit aufgrund dessen, was sie M'uru angetan hat, doch ihr Glaube und ihre Hingabe für ihr Volk wankten nie.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].zones = {"Atal'Aman", "Dornogal", "Immergesangwald", "Insel von Quel'Danas", "Orgrimmar", "Parhelionplaza", "Silbermond", "Sturmwind", "Zul'Aman"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].timeline = IMAGOdb.timelines.LADY_LIADRIN
 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].name = "Großmagister Rommath"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].race = "Blutelf"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].lore = [[Kompromisslos und streitlustig – der Großmagister von Silbermond ist ein Mann, dessen Loyalität seinem Volk gegenüber unerschütterlich ist. Als treuester Unterstützer von Kael'thas nach dem Dritten Krieg tat Rommath alles, was er für das Überleben der Blutelfen als notwendig erachtete. Selbst wenn dies bedeutete, Teufelsmagie einzusetzen oder einen Naaru für dessen heilige Macht zu foltern, war Rommath bereit und entschlossen dazu. Seine Treue wurde auf die Probe gestellt, als Kael'thas sich mit der Brennenden Legion verbündete; letztendlich entschied er sich für sein Volk und gegen seinen ehemaligen Prinzen. Nachdem er bereits zweimal verraten worden war – zuerst von seinem einstigen Freund Dar'khan Drathir und danach von den Kirin Tor von Dalaran –, verhärtete Kael'thas' Verrat das Herz des Elfen noch weiter. Während nun der Leerensturm sein Heimatland bedroht, wird Rommath das tun, was er schon immer getan hat: Silbermond um jeden Preis schützen, trotz allem, was er und sein Volk erlitten haben.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].zones = {"Immersangwald", "Orgrimmar", "Schattenhochland", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].source = "Cadash & Austin - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].source = "Cadash & Austin"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].timeline = IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH
 
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing_midnight"].name = "Halduron Wolkenglanz"
@@ -69,14 +69,14 @@ IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].lore = [[Shandris w
 Shandris hat die Streitkräfte der Nachtelfen und der Allianz bereits mehrfach als Hochgeneralin der Armee der Schildwachen angeführt. Nachdem sie bei der Verteidigung des neuen Weltenbaums Amirdrassil an vorderster Front stand, führt sie die Nachtelfen nun als deren Anführerin.
 Sie setzt sich mit großer Hingabe für die Menschen ein, die ihr am Herzen liegen. So hat sie sich sogar in die Reiche des Todes gewagt, um ihre Mutter zu retten. Heutzutage ist Shandris vor allem eines wichtig: Frieden.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].zones = {"Amirdrassil", "Harandar", "Silbermond", "Insel von Quel'Danas"}
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].timeline = IMAGOdb.timelines.SHANDRIS_FEATHERMOON
 
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].name = "Erzmagier Aethas Sonnenhäscher"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].race = "Blutelf"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].lore = [[Erzmagier Aethas Sonnenhäscher ist ein brillanter Magier der Sin'dorei, der trotz seines jungen Alters rasch in den Rat der Sechs der Kirin Tor aufstieg. Als ewiger Optimist und entschiedener Verfechter der Neutralität widmete er einen Großteil seines Lebens der Wiederherstellung des jahrtausendealten Bündnisses zwischen Silbermond und Dalaran. Seine Loyalität und seine Ideale wurden durch die Kriege zwischen den Fraktionen auf eine harte Probe gestellt. Auf seinem Weg, sein Volk zu schützen, musste er schwierige Entscheidungen treffen und erlebte Verrat sowie Gefangenschaft. Trotz immenser Entbehrungen und der wiederholten Zerstörung seiner geliebten Stadt bleibt Aethas dem Streben nach Wissen, der Zusammenarbeit und dem Fortbestand der Blutelfen tief verpflichtet.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].zones = {"Immersangwald", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].source = "Lewi - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].source = "Lewi"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].timeline = IMAGOdb.timelines.AETHAS_SUNREAVER
 
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].name = "Salandria"
@@ -85,7 +85,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].lore = [[Salandria wurde berei
 
 Eine Sache wirft jedoch einen dunklen Schatten auf Salandrias Zukunft: Als Kind wurde sie von einem Mitglied des bronzenen Drachenschwarms bei Sichtkontakt angegriffen – angeblich für eine schreckliche Tat, die sie in ihrer Zukunft begehen wird. Es bleibt ein Rätsel, was diese ominöse Prophezeiung für sie und für die Zukunft von Azeroth bedeutet.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].zones = {"Immersangwald", "Insel von Quel'Danas", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].timeline = IMAGOdb.timelines.SALANDRIA
 
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].name = "Magister Umbric"
@@ -96,7 +96,7 @@ Er scharte eine ganze Reihe von Akolythen um sich, die die verbotenen Künste im
 
 Nachdem sie sich der Allianz angeschlossen hatten, wurden Umbric und seine Ren'dorei zu einer kleinen, aber elitären Truppe von Spezialisten und standen bereits mehrfach an vorderster Front im Kampf gegen Xal'atath.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].zones = {"Amirdrassil", "Die Leerenspitze", "Immersangwald", "Insel von Quel'Danas", "Leerensturm", "Schattenhochland", "Silbermond", "Sturmwind", "Terrasse der Magister"}
-IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].timeline = IMAGOdb.timelines.MAGISTER_UMBRIC
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen_midnight"].name = "Lady Dunkeltal"
@@ -126,7 +126,7 @@ Der Magier Astalor Blutschwur, Mitbegründer der Blutritter von Silbermond, such
 
 Angesichts der Bedrohung durch den Leerensturm, die über Silbermond schwebt, ersinnt Astalor erneut ungewöhnliche Methoden, um der Gefahr zu begegnen: Er jagt gefährliche Individuen und erntet ihre Qualen, um diese in mächtige Energie umzuwandeln. Es bleibt abzuwarten, welche Ergebnisse er erzielen wird...]]
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].zones = {"Immersangwald", "Harandar", "Leerensturm", "Atal'Aman", "Silbermond"}
-IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].timeline = IMAGOdb.timelines.ASTALOR_BLOODSWORN
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].name = "Lord Saltheril"
@@ -164,7 +164,7 @@ Er konnte einst das Licht wie kaum ein anderer wirken, heilte ganze Schlachtfeld
 
 Nun, da Xal'atath alles bedroht, was ihm lieb und teuer ist, hat sich Anduin endlich wieder in den Kampf gestürzt und beginnt langsam, sein Selbstvertrauen und seinen Glauben an das Licht zurückzugewinnen.]]
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].zones = {"Insel von Quel'Danas", "Parhelionplatz", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].timeline      = IMAGOdb.timelines.ANDUIN_WRYNN
 IMAGOdb.npcs.CAT_VOIDHUNTERS["anduin_wrynn_tww"].timeline     = IMAGOdb.timelines.ANDUIN_WRYNN
 
@@ -178,7 +178,7 @@ Draenor zerbrach, und das Paar wurde fortgerissen, um als Teil der Armee des Lic
 
 Nun, da die Brennende Legion besiegt wurde, sind Turalyon und Alleria nach Azeroth zurückgekehrt - in eine veränderte Welt. Sie müssen versuchen, eine Verbindung zu einem ihnen fremden Sohn aufzubauen, zu verstehen wie sie sich als Liebende so voneinander entfernen konnten, und vor allem erneut ihre Welt zu retten.]]
 IMAGOdb.npcs.CAT_LIGHT["turalyon_midnight"].zones = {"Die Leerenspitze", "Immersangwald", "Insel von Quel'Danas", "Leerensturm", "Parhelionplaza", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["turalyon_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["turalyon_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["turalyon_midnight"].timeline = IMAGOdb.timelines.TURALYON
 
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen_midnight"].name = "Prophet Velen"
@@ -213,7 +213,7 @@ Taelia ist eine aufgeschlossene Persönlichkeit, die eine enge Freundschaft mit 
 
 Nun hat der Sonnenbrunnen Taelia gerufen, damit sie Silbermonds Verteidigung ihre Stärke leiht.]]
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon_midnight"].zones = {"Immersangwald", "Insel von Quel'Danas", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon_midnight"].timeline = IMAGOdb.timelines.TAELIA_FORDRAGON
 
 -- MOIRA THAURISSAN --
@@ -294,7 +294,7 @@ Doch Arthas Menethil ließ ihn nicht ruhen und erweckte ihn als geistlosen Diene
 
 Als die Legion einfiel, konnte Alonsus nicht länger tatenlos zusehen. Als Anführer des Konklaves vereinte er die Priesterorden und half bei der Bergung verschiedener Artefakte im Kampf gegen die Dämonen. Eines dieser Artefakte war die Klinge des Schwarzen Imperiums – Xal'atath. Heute kämpft Alonsus für den Sonnenbrunnen und das Licht, um seinen einstigen Fehler wiedergutzumachen.]]
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].zones = {"Brennende Steppe", "Das Arathihochland", "Insel von Quel'Danas", "Östliche Pestländer", "Parhelionplaza", "Silbermond", "Tirisfal"}
-IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].timeline = IMAGOdb.timelines.ALONSUS_FAOL
 
 -- TAHU WEISENWIND --
@@ -332,7 +332,7 @@ IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].lore = [[Diese junge Paladinin 
 
 Da sie nicht lange im Imperium gelebt hat, hegt Faerin kein Interesse an einer Rückkehr an ihren Geburtsort. Stattdessen möchte sie den Rest der Welt erkunden, insbesondere jene Orte, die für ihr Erbe als Arathi und eine Lothar von Bedeutung sind. Dieses Vorhaben muss jedoch warten, bis der Sonnenbrunnen gesichert ist.]]
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].zones = {"Insel von Quel'Danas", "Parhelionplatz", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].timeline = IMAGOdb.timelines.FAERIN_LOTHAR
 IMAGOdb.npcs.CAT_ARATHI["faerin_lothar_tww"].timeline    = IMAGOdb.timelines.FAERIN_LOTHAR
 
@@ -387,7 +387,7 @@ IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].race = "Mensch"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].lore = [[Bekannt als Mariella „die Häretikerin“, diente sie einst dem Scharlachroten Ansturm. Da sie die fanatische Art und Weise, wie der Orden das Licht führte, ablehnte, wurde sie wegen Ungehorsams zum Tode verurteilt. Dank einer rechtzeitigen Rettung durch den von Alonsus Faol entsandten Hohepriester konnte sie gerettet werden und schloss sich dem Konklave an.
 Nachdem sie Vergebung für ihre vergangenen Taten gefunden hat, wurde sie nun vom Sonnenbrunnen gerufen, um Silbermond als Teil der Vorhut des Lichts zu beschützen.]]
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].zones = {"Insel von Quel'Danas", "Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].timeline = IMAGOdb.timelines.MARIELLA_WARD
 
 -- HADWIN --
@@ -431,7 +431,7 @@ Als Häuptling des Stammes der Morgenwandler ist der standhafte Taure Sonnenläu
 
 Dezco, der sich dem Dienst verschrieben hat, gilt unter den Sonnenläufern als erfahrener Veteran und weiser Ältester. Da sich erneut ein Konflikt anbahnt, übernimmt er die Rolle des anleitenden Mentors und lehrt seine Verbündeten, dass das Beschreiten des Pfades des Lichts nicht nur inbrünstigen Eifer, sondern auch tiefes Mitgefühl erfordert.]]
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].zones = {"Arathihochland"}
-IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].source = "Lewi - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].source = "Lewi"
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].timeline = IMAGOdb.timelines.SUNWALKER_DEZCO
 
 IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].name = "Aeonara Dämmerschemen"
@@ -465,7 +465,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].name = "König Mrgl-Mrgl"
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].race = "Murloc"
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].lore = "Hinter der großartigen Murloc-Fassade von König Mrgl-Mrgl verbirgt sich ein einfacher Nachtelfenforscher. Ursprünglich Teil einer druidischen Forschungsgruppe, ist König Mrgl-Mrgl weit über seine bescheidenen Anfänge hinausgewachsen. Nachdem er sich als Murloc verkleidet hatte, um ihre Populationen in Nordend zu beobachten, wurde Mrgl-Mrgl von den Kreaturen verehrt und zu ihrem König erwählt. Obwohl er anfangs zögerte, nahm er die Rolle an und blickte nie zurück. Seitdem wird König Mrgl-Mrgl dabei gesehen, wie er den Murlocs Azeroths hilft und sie vor äußeren Bedrohungen schützt."
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].source = "austin - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].source = "austin"
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].timeline = IMAGOdb.timelines.KING_MRGL_MRGL
 
 IMAGOdb.npcs.CAT_NEUTRAL["monte_gazlowe_midnight"].name = "Handelsprinz Monte Gazlowe"
@@ -518,7 +518,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].name = "Eitrigg"
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].race = "Orc"
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].lore = [[Als Veteran zahlloser Schlachten ist er einer der bedeutendsten Orcs in der Geschichte der Horde – einer der wenigen, die sich noch an die finsteren Zeiten der Vergangenheit erinnern, als Unschuldigen unsagbares Leid zugefügt wurde. Er kämpfte für die Alte Horde auf Draenor und dient bis heute der Neuen Horde auf Azeroth. Nach Jahren des Krieges zwischen ihren Völkern schmiedete er ein enges Band zum Menschen Tirion Fordring. Er diente Thrall und Garrosh als Berater, erhob jedoch seine Stimme gegen Letzteren sowie gegen Sylvanas Windläufer, als es die Ehre gebot. Schließlich wurde er in den Bund der Söhne Lothars aufgenommen – als lebendiges Symbol dafür, dass Ehre in jedem Herzen zu finden sein kann.]]
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].zones = {"Brennende Steppen", "Arcantina", "Arathihochland", "Silbermond"}
-IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].source = "Karstan - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].source = "Karstan"
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].timeline = IMAGOdb.timelines.EITRIGG
 
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].name = "Kurdran Wildhammer"
@@ -529,7 +529,7 @@ Nachdem er zwei Jahrzehnte auf der zerstörten Orcwelt überlebt hatte, kehrte e
 
 Nun, wiedervereint mit seinen alten Freunden, ist Kurdran erneut bereit, für das Wohl Azeroths zu kämpfen.]]
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].zones = {"Arcantina", "Brennende Steppe", "Silbermond"}
-IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].timeline = IMAGOdb.timelines.KURDRAN_WILDHAMMER
 
 IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].name = "Lirath Windläufer"
@@ -583,14 +583,14 @@ Darion Mograine war ein Paladin der Argentumdämmerung, der, nachdem er sein Leb
 
 Nun, an der Spitze der Vier Reiter, verteidigt Darion die Heimat des Argentumkreuzzugs gegen die Geißel, während sie Azeroths Champion bei der Zerstörung der Verschlingenden Brut unterstützen.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].zones = {"Östliche Pestländer"}
-IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].source = "Nebb - IMAGO Community"
+IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].source = "Nebb"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].timeline = IMAGOdb.timelines.DARION_MOGRAINE
 
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].name = "Thassarian"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].race = "Mensch"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].lore = [[Thassarian trat als junger Mann der Armee von Lordaeron bei, in der Hoffnung, in die Fußstapfen seines Vaters zu treten. Er folgte Prinz Arthas auf dessen Expedition nach Nordend. Dort wurde er erschlagen und als Todesritter wiedererweckt. Während er unter der Kontrolle des Lichkönigs stand, beging er viele Gräueltaten und tötete sogar seine eigene Mutter. Nachdem er aus der Kontrolle des Lichkönigs befreit worden war, schloss er sich den Rittern der Schwarzen Klinge an und wurde der erste Todesritter, der der Allianz diente. Damit bewies er der Menschheit einmal mehr seine unerschütterliche Loyalität. Trotz der Spaltung der Fraktionen pflegt Thassarian eine starke, komplizierte Bruderschaft mit dem Todesritter der Horde, Koltira Todesweber – ein im Tod geschmiedetes Band, das seinen weiteren Weg stark beeinflusst.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].zones = {"Östliche Pestländer"}
-IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].source = "druidian - IMAGO Community"
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].source = "druidian"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].timeline = IMAGOdb.timelines.THASSARIAN
 
 IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim_midnight"].name = "Nazgrim"
@@ -682,7 +682,7 @@ Als Älteste von zwei Geschwistern wurde Zul'jarra als Kriegerin erzogen. Als En
 
 Nun, Jahre später, versucht sie, die Stämme von Zul'Aman endlich wieder mit den Loa-Göttern zu verbinden — unterstützt, wenn auch gelegentlich bekämpft, von ihrem Bruder, Zul'jan.]]
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].zones = {"Atal'Aman", "Das Herz des Zorns", "Immersangwald", "Insel von Quel'Danas", "Nalorakks Bau", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].timeline = IMAGOdb.timelines.ZALJARRA
 
 -- NALORAKK --
@@ -699,14 +699,14 @@ IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].name = "Akil'zon"
 IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].race = "Troll"
 IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].lore = [[Akil'zon steht den Amani-Trollen seit langem als ihr Loa des Sieges zur Seite. Der große Adler ist eng mit dem Stamm der Amani verbunden und verkörpert ihren unsterblichen Geist sowie ihre Wildheit. Es heißt, dass ein von Akil'zon gesegneter Berserker der Amani ein ganzes Bataillon der Elfen zerfetzen und unversehrt zurückkehren könnte. Zurückgekehrt unter Hash'ey Zul'jarra, richtet Akil'zon ihren Blick nun auf die Zwielichtklinge die Krallen zum Angriff bereit.]]
 IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].source = "austin - IMAGO Community"
+IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].source = "austin"
 IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].timeline = IMAGOdb.timelines.AKILZON
 
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].name = "Jan'alai"
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].race = "Troll"
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].lore = [[Jedes Jahr feiern die Waldschattentrolle Fetna Alai-nazdo – das Fest der Feuerjahreszeit. Es ist ein Tribut an den Wechsel der Jahreszeiten, an den Sommer und an das Feuer – allesamt Domänen unter den großen, feurigen Schwingen von Jan'alai. Die mächtige Drachenfalkenloa ist die Patronin von Leben, Tod, Erneuerung, Feuer und Magie. Sie zieht mit der Sonne über den Himmel und entfacht ein Feuer in den Herzen der Amani. Wenn der Tod naht, heißen die Waldschattentrolle ihn mit offenen Armen willkommen und singen: "Jan'alai muss sterben. Wir alle müssen sterben. Und sie wird auferstehen! Und wir werden auferstehen!"]]
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].source = "Metrus & austin - IMAGO Community"
+IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].source = "Metrus & austin"
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].timeline = IMAGOdb.timelines.JANALAI
 
 IMAGOdb.npcs.CAT_AMANI["halazzi_midnight"].name = "Halazzi"
@@ -720,7 +720,7 @@ IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].name = "Zul'jan"
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].race = "Troll"
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].lore = [[Der impulsive Zul'jan ist der oberste Berater der derzeitigen Herrscherin der Amani-Stämme – seiner eigenen Schwester, Zul'jarra. Im Gegensatz zu ihr misstraut Zul'jan jedoch den Loa. Seiner Ansicht nach haben sie die Trolle in ihrer Stunde der größten Not im Stich gelassen. So sehr er in diesen Angelegenheiten auch uneins mit seiner älteren Schwester sein mag, so aufrichtig sorgt er sich um sie und würde sein Äußerstes tun, um sie zu beschützen. Nun schart Zul'jan die Amani um sich, damit sie aus eigener Kraft stark werden, ohne sich auf die Loa oder irgendjemand anderen verlassen zu müssen.]]
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].zones = {"Atal'Aman", "Immersangwald", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].timeline = IMAGOdb.timelines.ZULJAN
 
 -- LOASPRECHER KINDURU --
@@ -753,7 +753,7 @@ Als Späherin des geheimnisvollen Volkes der Haranir unterscheidet sich Orweyna 
     
 Sie hat eine besondere Verbindung zu ihrer Göttin Aln'hara, von der sie Visionen drohender Gefahren erhält, die dem „Strahlenden Gesang” ähneln. Sie weiß, dass es mehr als nur die Streitkräfte der Haranir brauchen wird, um die Leere zu besiegen, die Aln'hara bedroht.]]
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].zones = {"Das Blendende Tal", "Die Höhle", "Harandar", "Immersangwald", "Insel von Quel'Danas", "Silbermond"}
-IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].timeline = IMAGOdb.timelines.ORWEYNA
 
 IMAGOdb.npcs.CAT_HARATI["elder_hagar_midnight"].name = "Älteste Hagar"

@@ -582,6 +582,16 @@ function IMAGO.Chronicle.CreateFrame()
     f.loreBody:SetJustifyH("LEFT")
     f.loreBody:SetTextColor(IMAGO_COLORS.TEXT_PRIMARY[1], IMAGO_COLORS.TEXT_PRIMARY[2], IMAGO_COLORS.TEXT_PRIMARY[3])
     f.loreBody:SetSpacing(6)
+
+    f.loreSource = f.infoContent:CreateFontString(nil, "OVERLAY")
+    f.loreSource:SetFont(FONT_BODY, 12, "")
+    f.loreSource:SetPoint("BOTTOMRIGHT", f.infoContent, "BOTTOMRIGHT", -20, 8)
+    f.loreSource:SetWidth(420)
+    f.loreSource:SetJustifyH("RIGHT")
+    f.loreSource:SetWordWrap(false)
+    f.loreSource:SetTextColor(IMAGO_COLORS.GOLD_MUTED[1], IMAGO_COLORS.GOLD_MUTED[2], IMAGO_COLORS.GOLD_MUTED[3])
+    f.loreSource:Hide()
+
     f.infoContent:SetHyperlinksEnabled(true)
     f.infoContent:SetScript("OnHyperlinkClick", function(self, link, text, button)
         if IMAGO.TextLinker and IMAGO.TextLinker.OnHyperlinkClick then
@@ -598,12 +608,18 @@ function IMAGO.Chronicle.CreateFrame()
         f.loreBody:SetWidth(contentW - 40)
         f.loreBody:ClearAllPoints()
         f.loreBody:SetPoint("TOPLEFT", f.infoContent, "TOPLEFT", 20, 0)
+        if f.loreSource then
+            f.loreSource:SetWidth(contentW - 40)
+        end
         if f.timelineContainer then
             f.timelineContainer:SetWidth(contentW - 20)
         end
         local h = 1
         if f.loreBody:IsShown() then
             h = f.loreBody:GetStringHeight() + 20
+            if f.loreSource and f.loreSource:IsShown() then
+                h = h + f.loreSource:GetStringHeight()
+            end
         elseif f.timelineContainer and f.timelineContainer:IsShown() then
             h = f.timelineContainer:GetHeight() + 20
         end
@@ -1707,6 +1723,7 @@ function IMAGO.Chronicle.CreateFrame()
         f.tabLore:Hide()
         f.tabTime:Hide()
         f.infoScroll:Hide()
+        if f.loreSource then f.loreSource:Hide() end
         f.detailModel:Hide()
         f.hintPage:Hide() 
         f.factionIcon:Hide()
@@ -1719,6 +1736,7 @@ function IMAGO.Chronicle.CreateFrame()
 
     local function ShowTab(mode)
         f.loreBody:Hide()
+        if f.loreSource then f.loreSource:Hide() end
         if f.timelineContainer then f.timelineContainer:Hide() end
         if f.detailImage then f.detailImage:Hide() end
         if f.detailImageBorder then f.detailImageBorder:Hide() end
@@ -1736,6 +1754,9 @@ function IMAGO.Chronicle.CreateFrame()
 
         if mode == "lore" then
             f.loreBody:Show()
+            if f.loreSource and (f.loreSource:GetText() or "") ~= "" then
+                f.loreSource:Show()
+            end
             f.tabLore.text:SetTextColor(IMAGO_COLORS.GOLD_BRIGHT[1], IMAGO_COLORS.GOLD_BRIGHT[2], IMAGO_COLORS.GOLD_BRIGHT[3])
             f.tabLore.activeLine:Show()
         else
@@ -2351,6 +2372,15 @@ function IMAGO.Chronicle.UpdateList()
                                 )
                                 
                                 f.loreBody:SetText(linked)
+
+                                local source = npc.data.source
+                                if source and source ~= "" then
+                                    local fmt = IMAGO.L["LORE_AUTHOR"] or "Written by %s"
+                                    f.loreSource:SetText(string.format(fmt, source))
+                                else
+                                    f.loreSource:Hide()
+                                end
+
                                 f.detailModel:ClearModel()
                                 local modelID = GetValidModelID(npc.data)
                                 if modelID then 
@@ -2656,6 +2686,7 @@ function IMAGO.Chronicle.UpdateList()
                 f.loreBody:SetText(IMAGO.TextLinker.LinkNames(formattedLore, nil, mapID, nil, nil))
                 f.loreBody:SetJustifyH("LEFT")
                 f.loreBody:Show()
+                if f.loreSource then f.loreSource:Hide() end
 
                 local imgLeft = (f.detailFrame:GetWidth() - 760) / 2
                 f.infoScroll:ClearAllPoints()
@@ -2755,6 +2786,7 @@ function IMAGO.Chronicle.UpdateList()
                 f.loreBody:SetText(IMAGO.TextLinker.LinkNames(warningHeader .. descText, nil, mapID, nil, nil))
                 f.loreBody:SetJustifyH("CENTER")
                 f.loreBody:Show()
+                if f.loreSource then f.loreSource:Hide() end
 
                 local imgLeft = (f.detailFrame:GetWidth() - 760) / 2
                 f.infoScroll:ClearAllPoints()

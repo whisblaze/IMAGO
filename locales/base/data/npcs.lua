@@ -36,7 +36,7 @@ After the renewal of the Sunwell, her conviction was restored as well and she sw
 
 Sometimes she may still doubt her worthiness for what she did to M'uru, but her faith and devotion to her people never wavered.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].zones = {"Atal'Aman", "Dornogal", "Eversong Woods", "Isle of Quel'Danas", "Orgrimmar", "Parhelion Plaza", "Silvermoon City", "Stormwind City", "Zul'Aman"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].timeline = IMAGOdb.timelines.LADY_LIADRIN
 
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].name = "Grand Magister Rommath"
@@ -48,7 +48,7 @@ His loyalty was tested when Kael'thas allied himself with the Burning Legion; in
 
 With the Voidstorm encroaching on his homeland, Rommath will do what he has always done – protect Silvermoon at all costs, despite everything he and his people have endured.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].zones = {"Eversong Woods", "Orgrimmar", "Twilight Highlands", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].source = "Cadash & Austin - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].source = "Cadash & Austin"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].timeline = IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH
 
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing_midnight"].name = "Halduron Brightwing"
@@ -81,7 +81,7 @@ Shandris has led the night elven and Alliance forces as high general of the Sent
 
 Highly protective of the people she holds dear – even venturing into the realms of death itself to rescue her mother – Shandris nowadays wants peace most of all. ]]
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].zones = {"Amirdrassil", "Harandar", "Silvermoon City", "Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].timeline = IMAGOdb.timelines.SHANDRIS_FEATHERMOON
 
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].name = "Archmage Aethas Sunreaver"
@@ -89,7 +89,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].aliases = {"Aethas", "A
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].race = "Blood Elf"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].lore = "Archmage Aethas Sunreaver is a brilliant sin'dorei mage who rapidly ascended to the Kirin Tor's Council of Six despite his youth. An eternal optimist and a staunch proponent of neutrality, he dedicated much of his life to repairing the millennia old alliance between Silvermoon and Dalaran. His loyalties and ideals have been severely tested by factional warfare, leading to difficult choices, betrayal, and even imprisonment as he struggled to protect his people. Despite enduring immense hardships and the recurring destruction of his beloved city, Aethas remains deeply committed to the pursuit of knowledge, cooperation, and the enduring survival of the blood elves."
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].zones = {"Eversong Woods", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].source = "Lewi - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].source = "Lewi"
 IMAGOdb.npcs.CAT_QUELTHALAS["aethas_sunreaver_midnight"].timeline = IMAGOdb.timelines.AETHAS_SUNREAVER
 
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].name = "Salandria"
@@ -99,7 +99,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].lore = [[Salandria was orphane
 
 One thing looms over Salandria, promising a dark future: as a child, she was attacked on sight by a member of the Bronze Dragonflight for something vile she would do in her future. It is still a mystery what this ominous prophecy means for her and for the future of Azeroth.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["salandria_midnight"].timeline = IMAGOdb.timelines.SALANDRIA
 
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].name = "Magister Umbric"
@@ -111,7 +111,7 @@ He gathered quite a few acolytes practicing the forbidden arts in secret before 
 
 After joining the Alliance, Umbric and his ren'dorei have become a small but elite force of specialists and have been on the forefront in the efforts against Xal'atath multiple times by now.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].zones = {"Amirdrassil", "The Voidspire", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Twilight Highlands", "Silvermoon City", "Stormwind City", "Magister's Terrace"}
-IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["magister_umbric_midnight"].timeline = IMAGOdb.timelines.MAGISTER_UMBRIC
 
 -- LADY DARKGLEN --
@@ -145,7 +145,7 @@ Co-founder of the Blood Knights of Silvermoon, the mage Astalor Bloodsworn has a
     
 With the threat of the Voidstorm looming over Silvermoon, Astalor once again thinks of unusual methods to combat the threat: by hunting down dangerous individuals and harvesting their anguish to transform it into powerful energy. It's yet to be seen what results he will yield...]]
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].zones = {"Eversong Woods", "Harandar", "Voidstorm", "Atal'Aman", "Silvermoon City"}
-IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].timeline = IMAGOdb.timelines.ASTALOR_BLOODSWORN
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].name = "Lord Saltheril"
@@ -310,7 +310,7 @@ He used to wield the light like few others, healing entire battlefields and cons
 
 Now, with Xal'atath threatening everything he holds dear, Anduin has finally returned into the fray, slowly starting to gain back his confidence and his faith in the Light.]]
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].timeline = IMAGOdb.timelines.ANDUIN_WRYNN
 
 -- HIGH EXARCH TURALYON --
@@ -325,7 +325,7 @@ In the end, Draenor shattered and the couple were whisked away to fight for the 
 
 Now, with the Burning Legion defeated, Turalyon and Alleria are back on Azeroth, on a world changed. Trying to reconnect with a son they don't know, trying to come to terms with how they've drifted so far apart as lovers, and most of all, trying to save their world once again.]]
 IMAGOdb.npcs.CAT_LIGHT["turalyon_midnight"].zones = {"The Voidspire", "Eversong Woods", "Isle of Quel'Danas", "Voidstorm", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["turalyon_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["turalyon_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["turalyon_midnight"].timeline = IMAGOdb.timelines.TURALYON
 
 IMAGOdb.npcs.CAT_LIGHT["prophet_velen_midnight"].name = "Prophet Velen"
@@ -364,7 +364,7 @@ Taelia is an open-minded individual, being best friends with the former pirate F
 
 Now, the Sunwell has called Taelia to lend her strength to Silvermoon's defense.]]
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon_midnight"].zones = {"Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["taelia_fordragon_midnight"].timeline = IMAGOdb.timelines.TAELIA_FORDRAGON
 
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].name = "Moira Thaurissan"
@@ -471,7 +471,7 @@ When the Legion invaded, Alonsus could not stand by and watch. Now leading the C
 
 Now, Alonsus fights for the Sunwell and the Light, and to correct his mistake.]]
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].zones = {"Burning Steppes", "Arathi Highlands", "Isle of Quel'Danas", "Eastern Plaguelands", "Parhelion Plaza", "Silvermoon City", "Tirisfal Glades"}
-IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["alonsus_faol_midnight"].timeline = IMAGOdb.timelines.ALONSUS_FAOL
 
 -- TAHU SAGEWIND --
@@ -514,7 +514,7 @@ IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].lore = [[This young paladin is 
 
 Not having lived long in the Empire, Faerin is not interested in returning to her birthplace and instead wants to explore the rest of the world, especially the places important to her heritage as an Arathi and a Lothar. However, that endeavor will have to wait until after the Sunwell is secured.]]
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].zones = {"Isle of Quel'Danas", "Parhelion Plaza", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].timeline = IMAGOdb.timelines.FAERIN_LOTHAR
 
 -- GENERAL AMAIS BELLAMY --
@@ -576,7 +576,7 @@ IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].lore = [[Known as Mariella "the
 
 Now, having found forgiveness for her deeds, she has been summoned by the Sunwell to protect Silvermoon as a part of the Vanguard of the Light.]]
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].zones = {"Isle of Quel'Danas", "Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["mariella_ward_midnight"].timeline = IMAGOdb.timelines.MARIELLA_WARD
 
 -- HADWIN --
@@ -621,7 +621,7 @@ Chieftain of the Dawnchaser tribe, Sunwalker Dezco is a steadfast tauren who rev
     
 Dedicated to service, Dezco stands as a seasoned veteran and wise elder among the Sunwalkers. As conflict brews anew, he serves as a guiding mentor, teaching allies that walking the path of the Light requires not only fervent zeal, but deep compassion as well.]]
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].zones = {"Arathi Highlands"}
-IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].source = "Lewi - IMAGO Community"
+IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].source = "Lewi"
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].timeline = IMAGOdb.timelines.SUNWALKER_DEZCO
 
 -- AEONARA DAWNSHADE --
@@ -695,7 +695,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].race = "Murloc"
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].lore = "Behind King Mrgl-Mrgl's grand murloc facade lies a simple night elf researcher. Originally a part of a druidic research group, King Mrgl-Mrgl has grown far beyond his humble beginnings. After disguising himself as a murloc to observe their populations in Northrend, Mrgl-Mrgl was revered by the creatures and chosen as their king. Though originally reluctant, he accepted the role and never looked back. Ever since, King Mrgl-Mrgl has been found aiding the murlocs of Azeroth and protecting them from outside threats."
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].source = "austin - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].source = "austin"
 IMAGOdb.npcs.CAT_NEUTRAL["king_mrgl-mrgl_midnight"].timeline = IMAGOdb.timelines.KING_MRGL_MRGL
 
 -- MONTE GAZLOWE --
@@ -742,7 +742,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].race = "Orc"
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].lore = "A veteran of countless battles, he is one of the most important orcs in the history of the Horde, one of the few who remember the dark ages of the past when countless horrors were committed against the innocent. He fought for the Old Horde on Draenor and in the New Horde to this day on Azeroth, forging a bond with Tirion Fordring, a human, after years of war between the two races. He served as an advisor to Thrall and Garrosh as Warchiefs and rose up when necessary against the latter and Sylvanas Windrunner. He was eventually admitted into the Sons of Lothar as a symbol that honor can come from anyone."
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].zones = {"Burning Steppes", "Arcantina",  "Arathi Highlands", "Silvermoon City"}
-IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].source = "Karstan - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].source = "Karstan"
 IMAGOdb.npcs.CAT_NEUTRAL["eitrigg_midnight"].timeline = IMAGOdb.timelines.EITRIGG
 
 -- KURDRAN WILDHAMMER --
@@ -755,7 +755,7 @@ He returned to Azeroth after surviving two decades on the broken orcish world. K
 
 Now, reunited with his friends of old, Kurdran is ready once again to fight for the good of Azeroth.]]
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].zones = {"Burning Steppes", "Arcantina", "Silvermoon City"}
-IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["kurdran_wildhammer_midnight"].timeline = IMAGOdb.timelines.KURDRAN_WILDHAMMER
 
 -- LIRATH WINDRUNNER --
@@ -949,7 +949,7 @@ Darion Mograine was a paladin of the Argent Dawn who, after sacrificing his life
 
 Now leading the Four Horsemen, Darion defends the home of the Argent Crusade from the Scourge whilst they assist Azeroth's champion with the destruction of the Devouring Host.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].zones = {"Eastern Plaguelands"}
-IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].source = "Nebb - IMAGO Community"
+IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].source = "Nebb"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].timeline = IMAGOdb.timelines.DARION_MOGRAINE
 
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].name = "Thassarian"
@@ -960,7 +960,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].lore =
 
 Despite the faction divide, Thassarian maintains a powerful, complicated brotherhood with the Horde death knight Koltira Deathweaver, a bond forged in death that heavily influences his path.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].zones = {"Eastern Plaguelands"}
-IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].source = "druidian - IMAGO Community"
+IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].source = "druidian"
 IMAGOdb.npcs.CAT_EBON_BLADE["thassarian_midnight"].timeline = IMAGOdb.timelines.THASSARIAN
 
 IMAGOdb.npcs.CAT_EBON_BLADE["nazgrim_midnight"].name = "Nazgrim"
@@ -1069,7 +1069,7 @@ The eldest of two siblings, Zul'jarra was raised a warrior. The grand-daughter o
 
 Now years later, she attempts to finally reconnect the tribes of Zul'Aman to the loa gods, supported, though occasionally opposed, by her brother, Zul'jan.]]
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].zones = {"Atal'Aman", "The Heart of Rage", "Eversong Woods", "Isle of Quel'Danas", "Den of Nalorakk", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].timeline = IMAGOdb.timelines.ZALJARRA
 
 -- NALORAKK --
@@ -1088,7 +1088,7 @@ IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].aliases = {"loa of victory", "Eagle L
 IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].race = "Eagle (loa)"
 IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].lore = "Akil'zon has long stood behind the Amani trolls as their loa of victory. The great eagle has close ties to the Amani tribe itself, and represents their undying spirit and ferocity. It is said that an Amani berserker blessed by Akil'zon could tear apart an entire elven battalion and return unscathed. Having returned under hash'ey Zul'jarra, Akil'zon fixes her gaze on the Twilight's Blade, talons at the ready."
 IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].source = "austin - IMAGO Community"
+IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].source = "austin"
 IMAGOdb.npcs.CAT_AMANI["akilzon_midnight"].timeline = IMAGOdb.timelines.AKILZON
 
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].name = "Jan'alai"
@@ -1096,7 +1096,7 @@ IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].aliases = {"loa of fire", "Dragonhawk
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].race = "Dragonhawk (loa)"
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].lore = [[Every year the Shadowpine trolls celebrate Fetna Alai-nazdo - Festival of the Fire Season. It's a tribute to the changing of the season, of summer, and of fire - all domains under the great, fiery wings of Jan'alai. The mighty dragonhawk loa is the patron of life, death, renewal, fire, and magic. She traces the sun across the sky and ignites a fire in Amani hearts. As death draws near, Shadowpine trolls welcome it with open arms, chanting: "Jan'alai must die. We all must die. And she will rise! And we will rise!"]]
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].zones = {"Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].source = "Metrus & austin - IMAGO Community"
+IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].source = "Metrus & austin"
 IMAGOdb.npcs.CAT_AMANI["janalai_midnight"].timeline = IMAGOdb.timelines.JANALAI
 
 IMAGOdb.npcs.CAT_AMANI["halazzi_midnight"].name = "Halazzi"
@@ -1115,7 +1115,7 @@ IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].lore = [[The impulsive Zul'jan is chie
 
 Now, Zul'jan rallies the Amani to become strong by their own merits, not relying on loa or anybody else.]]
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].zones = {"Atal'Aman", "Eversong Woods", "Zul'Aman"}
-IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].timeline = IMAGOdb.timelines.ZULJAN
 
 -- Loa Speaker Kinduru --
@@ -1174,7 +1174,7 @@ A scout of the mysterious race called Haranir, Orweyna is quite different from m
     
 She has a special connection to her goddess, Aln'hara, receiving visions of impending dangers from her that resemble the Radiant Song, and she knows that the Void that threatens Aln'hara will require more than the forces of the Haranir to vanquish.]]
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].zones = {"The Blinding Vale", "The Den", "Harandar", "Eversong Woods", "Isle of Quel'Danas", "Silvermoon City"}
-IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].timeline = IMAGOdb.timelines.ORWEYNA
 
 -- ELDER HAGAR --
@@ -1489,7 +1489,7 @@ IMAGOdb.npcs.CAT_VOIDHUNTERS["anduin_wrynn_tww"].lore = [[The High King-in-absen
 
 When Xal'atath destroys Dalaran, Thrall tracks Anduin down and convinces him to fight once more. In the depths of Hallowfall, surrounded by the unshakeable faith of the Arathi and the warm light of their star Beledar, Anduin finally finds his way back to himself.]]
 IMAGOdb.npcs.CAT_VOIDHUNTERS["anduin_wrynn_tww"].zones = {}
-IMAGOdb.npcs.CAT_VOIDHUNTERS["anduin_wrynn_tww"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_VOIDHUNTERS["anduin_wrynn_tww"].source = "Cadash"
 IMAGOdb.npcs.CAT_VOIDHUNTERS["anduin_wrynn_tww"].timeline = IMAGOdb.timelines.ANDUIN_WRYNN
 
 -- CAT_HARBINGER
@@ -1509,7 +1509,7 @@ IMAGOdb.npcs.CAT_KIRIN_TOR["khadgar_tww"].lore = [[The Archmage of the Kirin Tor
 
 When Xal'atath unleashes the Dark Heart upon Dalaran, it is Khadgar who throws himself into the path of the blast. He survives, but loses the use of his legs. His legs may be gone, but his resolve — and his magic — remain perfectly intact.]]
 IMAGOdb.npcs.CAT_KIRIN_TOR["khadgar_tww"].zones = {"Isle of Dorn", "Dornogal", "Dalaran", "Hallowfall", "Valdrakken"}
-IMAGOdb.npcs.CAT_KIRIN_TOR["khadgar_tww"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_KIRIN_TOR["khadgar_tww"].source = "Cadash"
 IMAGOdb.npcs.CAT_KIRIN_TOR["khadgar_tww"].timeline = IMAGOdb.timelines.KHADGAR
 
 -- CAT_EARTHEN
@@ -1519,7 +1519,7 @@ IMAGOdb.npcs.CAT_EARTHEN["magni_bronzebeard_tww"].lore = [[Once turned to diamon
 
 Now, Azeroth has restored him to flesh. The world no longer needs its Speaker in the same way. And Magni, finally freed from his diamond prison and his overwhelming sense of duty, has a chance to be something he hasn't been in a very long time: a father. A grandfather. A dwarf, plain and simple.]]
 IMAGOdb.npcs.CAT_EARTHEN["magni_bronzebeard_tww"].zones = {"Dalaran", "Dornogal", "The Ringing Deeps", "Isle of Dorn", "Tanaris"}
-IMAGOdb.npcs.CAT_EARTHEN["magni_bronzebeard_tww"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_EARTHEN["magni_bronzebeard_tww"].source = "Cadash"
 IMAGOdb.npcs.CAT_EARTHEN["magni_bronzebeard_tww"].timeline = IMAGOdb.timelines.MAGNI_BRONZEBEARD
 
 -- CAT_ARATHI
@@ -1529,7 +1529,7 @@ IMAGOdb.npcs.CAT_ARATHI["faerin_lothar_tww"].lore = [[This young paladin is a be
 
 A descendant of Anduin Lothar, the great Lion of Azeroth, Faerin carries that legendary name into a new age — and carries it well. Her warmth and unshakeable faith proved strong enough to help a fallen High King find his way back to the Light.]]
 IMAGOdb.npcs.CAT_ARATHI["faerin_lothar_tww"].zones = {"Dornogal", "Hallowfall", "Azj-Kahet", "Arathi Highlands", "Khaz Algar"}
-IMAGOdb.npcs.CAT_ARATHI["faerin_lothar_tww"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_ARATHI["faerin_lothar_tww"].source = "Cadash"
 IMAGOdb.npcs.CAT_ARATHI["faerin_lothar_tww"].timeline = IMAGOdb.timelines.FAERIN_LOTHAR
 
 -- CAT_HARANIR
@@ -1539,5 +1539,5 @@ IMAGOdb.npcs.CAT_HARANIR["orweyna_tww"].lore = [[A scout of the mysterious and r
 
 She has a special connection to her goddess, Aln'hara, receiving visions of impending dangers that mirror the Radiant Song. The threat she has witnessed is unlike anything the Haranir can face alone — and so Orweyna has ventured out into a world she is only beginning to understand, carrying the weight of her people's fate on her shoulders.]]
 IMAGOdb.npcs.CAT_HARANIR["orweyna_tww"].zones = {"Azj-Kahet", "Hallowfall", "The Ringing Deeps", "Undermine", "Dornogal"}
-IMAGOdb.npcs.CAT_HARANIR["orweyna_tww"].source = "Cadash - IMAGO Community"
+IMAGOdb.npcs.CAT_HARANIR["orweyna_tww"].source = "Cadash"
 IMAGOdb.npcs.CAT_HARANIR["orweyna_tww"].timeline = IMAGOdb.timelines.ORWEYNA

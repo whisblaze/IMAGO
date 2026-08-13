@@ -294,7 +294,8 @@ function IMAGO.CreateProgressFooter(parent, width)
     footer.rankText:SetPoint("TOP", footer, "TOP", 0, -15)
 
     footer.progText = footer:CreateFontString(nil, "OVERLAY")
-    IMAGO.ApplyTextStyle(footer.progText, "NAV_META")
+    IMAGO.ApplyTextStyle(footer.progText, "NAV_ITEM")
+    footer.progText:SetTextColor(IMAGO_COLORS.TEXT_SECONDARY[1], IMAGO_COLORS.TEXT_SECONDARY[2], IMAGO_COLORS.TEXT_SECONDARY[3])
     footer.progText:SetPoint("TOP", footer.rankText, "BOTTOM", 0, -2)
 
     local barW = width - 40
@@ -308,7 +309,7 @@ function IMAGO.CreateProgressFooter(parent, width)
 
     footer.bar.bg = footer.bar:CreateTexture(nil, "BACKGROUND")
     footer.bar.bg:SetAllPoints()
-    footer.bar.bg:SetColorTexture(IMAGO_COLORS.BG_MAIN[1], IMAGO_COLORS.BG_MAIN[2], IMAGO_COLORS.BG_MAIN[3], 0.8)
+    footer.bar.bg:SetColorTexture(IMAGO_COLORS.BG_RAISED[1], IMAGO_COLORS.BG_RAISED[2], IMAGO_COLORS.BG_RAISED[3], 0.9)
 
     for i = 1, 9 do
         local tick = footer.bar:CreateTexture(nil, "OVERLAY")
