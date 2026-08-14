@@ -19,17 +19,17 @@ data/LoreSnippets_static.lua
 data/zones_static.lua
 data/eras_static.lua
 data/npcs/midnight.lua
-data/npcs/the_war_within.lua
+
 
 locales/base/data/timelines.lua
-locales/base/data/npcs.lua
+locales/base/data/npcs/midnight_npcs.lua
 locales/base/data/zones.lua
 locales/base/data/eras.lua
 locales/base/data/snippets.lua
 locales/base/chronicle.lua
 
 locales/[TextLocale]/data/timelines.lua
-locales/[TextLocale]/data/npcs.lua
+locales/[TextLocale]/data/npcs/midnight_npcs.lua
 locales/[TextLocale]/data/zones.lua
 locales/[TextLocale]/data/eras.lua
 locales/[TextLocale]/data/snippets.lua
