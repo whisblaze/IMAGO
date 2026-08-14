@@ -73,7 +73,7 @@ local L = L_DE
     -- ============================================================
     L["FOOTER_ZONES_PROGRESS"]      = "%d / %d Zonen entdeckt (%d%%)"
     L["STARTPAGE_ZONES_RANK"]       = "ERKUNDUNGS-STATUS"
-    L["STARTPAGE_ZONES_NEXT"]       = "KOMMENDE ENTDECKUNGEN:"
+    L["STARTPAGE_ZONES_NEXT"]       = "KOMMENDE MEILENSTEINE:"
     L["ZONE_UNKNOWN_NAME"]          = "Unbekannte Region"
     L["ZONE_UNEXPLORED_HEADER"]     = "GEBIET UNERKUNDET"
     L["ZONE_UNEXPLORED_DESC"]       = "Die Kartographie dieser Region ist noch unvollständig.\nReise dorthin, um ihre Geheimnisse zu offenbaren."
@@ -99,6 +99,8 @@ local L = L_DE
     L["VAL_DONE"]          = "Validierung beendet. %d NPCs geprüft. %d kritische Fehler, %d Warnungen."
 
     L["CINEMATIC_CONTINUE"] = "< Klicken, um das Schicksal zu entschlüsseln >"
+    L["FATES_CHOOSE_EXP"]    = "Erweiterung wählen"
+    L["COMING_SOON_SHORT"]   = "Bald verfügbar"
     L["FILTER_ALL"] = "Alle Echos"
     L["FILTER_HIST"] = "Zuletzt entdeckt"
     L["FILTER_FAV"] = "Favoriten"
@@ -117,15 +119,16 @@ local L = L_DE
     L["TAB_FATES"] = "Schicksale"
     L["TAB_ZONES"] = "Zonen"
     L["TAB_INSTANCES"] = "Instanzen"
-    L["STARTPAGE_RANK"] = "Dein Stand in der Chronik:"
+    L["STARTPAGE_RANK"] = "ERKUNDUNGS-STATUS"
     L["STARTPAGE_COMPLETED"] = "ERREICHTE MEILENSTEINE:"
-    L["STARTPAGE_NEXT"] = "KOMMENDE ENTDECKUNGEN:"
+    L["STARTPAGE_NEXT"] = "KOMMENDE MEILENSTEINE:"
     L["WORD_AT"] = "bei"
     L["STARTPAGE_NO_MILESTONES"] = "|cFF888888Noch keine Meilensteine erreicht.|r"
     L["STARTPAGE_MAX_REACHED"] = "|cFF00FF00MAXIMALRANG ERREICHT!|r"
     L["TAG_NEW"] = "[ NEU ]"
     L["HINT_SCOUTS"] = "Späher der Fraktionen berichten von jüngsten Sichtungen in folgenden Gebieten:\n\n|cFFFFD700%s|r"
     L["HINT_UNKNOWN_LOC"] = "Der Aufenthaltsort ist in den Archiven aktuell nicht verzeichnet. Suche in der Welt nach Hinweisen."
+    L["LORE_AUTHOR"] = "Geschrieben von %s"
     L["TAB_DETAIL_LORE"] = "Lore"
     L["TAB_DETAIL_TIMELINE"] = "Timeline"
     L["CMD_UNLOCKALL_SUCCESS"] = "Erfolg: Alle %d Echos der Vergangenheit wurden in der Chronik freigeschaltet!"
@@ -181,7 +184,7 @@ local L = L_DE
     -- ============================================================
     L["TAB_ERAS"]                 = "Ären"
     L["ERAS_DASHBOARD_TITLE"]     = "ZEITALTER VON AZEROTH"
-    L["ERAS_PROGRESS"]            = "%d / %d Ären dokumentiert"
+    L["ERAS_PROGRESS"]            = "%d / %d Ären dokumentiert (%d%%)"
     L["ERAS_COMING_SOON"]         = "DEMNÄCHST"
     L["ERAS_TAB_OVERVIEW"]        = "Überblick"
     L["ERAS_TAB_STORY"]           = "Story"
@@ -215,9 +218,9 @@ local L = L_DE
     L["ERAS_RANK_ARCHIVIST"]       = "Archivar"
     L["ERAS_RANK_LOREKEEPER"]      = "Hüter des Wissens"
     L["ERAS_RANK_MASTER"]          = "Meister der Chroniken"
-    L["ERAS_LORE_STATUS"]          = "LORE-STATUS"
-    L["ERAS_REACHED_RANKS"]        = "ERREICHTE RÄNGE:"
-    L["ERAS_NEXT_RANKS"]           = "KOMMENDE ENTDECKUNGEN:"
+    L["ERAS_LORE_STATUS"]          = "ERKUNDUNGS-STATUS"
+    L["ERAS_REACHED_RANKS"]        = "ERREICHTE MEILENSTEINE:"
+    L["ERAS_NEXT_RANKS"]           = "KOMMENDE MEILENSTEINE:"
     L["ERAS_LOCKED_TIP"]           = "Begegne der Schlüsselfigur dieser Ära, um sie freizuschalten."
     L["ERAS_DISC_BODY"]            = "Ich habe eine interessante Geschichte für dich. Möchtest du sie hören?"
     L["ERAS_DISC_ACCEPT"]          = "Erzähl mir mehr"
@@ -229,6 +232,24 @@ local L = L_DE
     L["ERAS_WIP_TITLE"]             = "In Entwicklung"
     L["ERAS_WIP_BODY"]              = "Der Inhalt für diese Ära wird noch entwickelt.\nSchau bald wieder vorbei!"
     L["ERAS_ORIGINAL_GAME"]         = "Original Game"
+
+    -- NPC-Kategorien (Midnight / The War Within)
+    L["CAT_QUELTHALAS"]  = "Verteidiger von Quel'Thalas"
+    L["CAT_LIGHT"]       = "Champions des Lichts"
+    L["CAT_AMANI"]       = "Die Amani"
+    L["CAT_HARATI"]      = "Die Harati"
+    L["CAT_EBON_BLADE"]  = "Ritter der Onyxklinge"
+    L["CAT_NEUTRAL"]     = "Neutrale Kräfte"
+    L["CAT_ARCANTINA"]   = "Die Arkantina"
+    L["CAT_VOIDHUNTERS"] = "Leerenjäger"
+    L["CAT_HARBINGER"]   = "Herolde der Leere"
+    L["CAT_KIRIN_TOR"]   = "Kirin Tor"
+    L["CAT_EARTHEN"]     = "Die Irden"
+    L["CAT_ARATHI"]      = "Kinder der Arathi"
+    L["CAT_HARANIR"]     = "Die Haraniir"
+
+    -- Expansion Grid Navigation
+    L["FATES_BACK_EXPANSIONS"] = "< Erweiterungen"
 
     -- Credits
     L["TAB_CREDITS"] = "Credits"
@@ -303,7 +324,7 @@ L = L_EN
     -- ============================================================
     L["FOOTER_ZONES_PROGRESS"]      = "%d / %d Zones discovered (%d%%)"
     L["STARTPAGE_ZONES_RANK"]       = "EXPLORATION STATUS"
-    L["STARTPAGE_ZONES_NEXT"]       = "UPCOMING DISCOVERIES:"
+    L["STARTPAGE_ZONES_NEXT"]       = "UPCOMING MILESTONES:"
     L["ZONE_UNKNOWN_NAME"]          = "Unknown Region"
     L["ZONE_UNEXPLORED_HEADER"]     = "AREA UNEXPLORED"
     L["ZONE_UNEXPLORED_DESC"]       = "The cartography of this region is still incomplete.\nTravel there to reveal its secrets."
@@ -330,6 +351,8 @@ L = L_EN
     L["VAL_DONE"]          = "Validation complete. %d NPCs checked. %d critical errors, %d warnings."
 
     L["CINEMATIC_CONTINUE"] = "< Click to uncover their fate >"
+    L["FATES_CHOOSE_EXP"]    = "Choose an Expansion"
+    L["COMING_SOON_SHORT"]   = "Coming Soon"
     L["FILTER_ALL"] = "All Echoes"
     L["FILTER_HIST"] = "Recently Discovered"
     L["FILTER_FAV"] = "Favorites"
@@ -348,15 +371,16 @@ L = L_EN
     L["TAB_FATES"] = "Fates"
     L["TAB_ZONES"] = "Zones"
     L["TAB_INSTANCES"] = "Instances"
-    L["STARTPAGE_RANK"] = "Your Standing in the Chronicle:"
+    L["STARTPAGE_RANK"] = "EXPLORATION STATUS"
     L["STARTPAGE_COMPLETED"] = "REACHED MILESTONES:"
-    L["STARTPAGE_NEXT"] = "HIDDEN MILESTONES:"
+    L["STARTPAGE_NEXT"] = "UPCOMING MILESTONES:"
     L["WORD_AT"] = "at"
     L["STARTPAGE_NO_MILESTONES"] = "|cFF888888No milestones reached yet.|r"
     L["STARTPAGE_MAX_REACHED"] = "|cFF00FF00Maximum reached!|r"
     L["TAG_NEW"] = "[ NEW ]"
     L["HINT_SCOUTS"] = "Faction scouts report recent sightings in the following areas:\n\n|cFFFFD700%s|r"
     L["HINT_UNKNOWN_LOC"] = "The location is currently not recorded in the archives. Search the world for clues."
+    L["LORE_AUTHOR"] = "Written by %s"
     L["TAB_DETAIL_LORE"] = "Lore"
     L["TAB_DETAIL_TIMELINE"] = "Timeline"
     L["CMD_UNLOCKALL_SUCCESS"] = "Success: All %d echoes of the past have been unlocked in the chronicle!"
@@ -406,13 +430,18 @@ L = L_EN
     L["CONFIRM_UNLOCK_TITLE"]     = "Unlock Content Preview"
     L["CONFIRM_UNLOCK_DESC"]      = "This entry will become readable but won't count toward your progress.\n\nUnlock?"
     L["BACK"]                     = "Back"
+    
+    -- TextLinker Color Ids
+    L["LINK_NPC"] = "c" .. IMAGO_HEX.GOLD_BRIGHT  -- Bright Gold
+    L["LINK_ZONE"] = "c" .. IMAGO_HEX.VOID        -- Muted Violet
+    L["LINK_EXPANSION"] = ""
 
     -- ============================================================
     -- TAB 5: ERAS (Expansion Chronicle)
     -- ============================================================
     L["TAB_ERAS"]                 = "Eras"
     L["ERAS_DASHBOARD_TITLE"]     = "AGE OF AZEROTH"
-    L["ERAS_PROGRESS"]            = "%d / %d Eras Documented"
+    L["ERAS_PROGRESS"]            = "%d / %d Eras Documented (%d%%)"
     L["ERAS_COMING_SOON"]         = "COMING SOON"
     L["ERAS_TAB_OVERVIEW"]        = "Overview"
     L["ERAS_TAB_STORY"]           = "Story"
@@ -446,9 +475,9 @@ L = L_EN
     L["ERAS_RANK_ARCHIVIST"]       = "Archivist"
     L["ERAS_RANK_LOREKEEPER"]      = "Lorekeeper"
     L["ERAS_RANK_MASTER"]          = "Chronicle Master"
-    L["ERAS_LORE_STATUS"]          = "LORE STATUS"
-    L["ERAS_REACHED_RANKS"]        = "REACHED RANKS:"
-    L["ERAS_NEXT_RANKS"]           = "UPCOMING DISCOVERIES:"
+    L["ERAS_LORE_STATUS"]          = "EXPLORATION STATUS"
+    L["ERAS_REACHED_RANKS"]        = "REACHED MILESTONES:"
+    L["ERAS_NEXT_RANKS"]           = "UPCOMING MILESTONES:"
     L["ERAS_LOCKED_TIP"]           = "Encounter the key figure of this era to unlock it."
     L["ERAS_DISC_BODY"]            = "I have an interesting story for you. Would you like to hear it?"
     L["ERAS_DISC_ACCEPT"]          = "Tell me more"
@@ -460,6 +489,24 @@ L = L_EN
     L["ERAS_WIP_TITLE"]             = "In Development"
     L["ERAS_WIP_BODY"]              = "Content for this era is still being developed.\nCheck back soon!"
     L["ERAS_ORIGINAL_GAME"]         = "Original Game"
+
+    -- NPC Categories (Midnight / The War Within)
+    L["CAT_QUELTHALAS"]  = "Defenders of Quel'Thalas"
+    L["CAT_LIGHT"]       = "Champions of the Light"
+    L["CAT_AMANI"]       = "The Amani"
+    L["CAT_HARATI"]      = "The Harati"
+    L["CAT_EBON_BLADE"]  = "Knights of the Ebon Blade"
+    L["CAT_NEUTRAL"]     = "Neutral Forces"
+    L["CAT_ARCANTINA"]   = "The Arcantina"
+    L["CAT_VOIDHUNTERS"] = "Void Hunters"
+    L["CAT_HARBINGER"]   = "Harbingers of the Void"
+    L["CAT_KIRIN_TOR"]   = "Kirin Tor"
+    L["CAT_EARTHEN"]     = "The Earthen"
+    L["CAT_ARATHI"]      = "Children of the Arathi"
+    L["CAT_HARANIR"]     = "The Haraniir"
+
+    -- Expansion Grid Navigation
+    L["FATES_BACK_EXPANSIONS"] = "< Expansions"
 
 -- ============================================================
 -- RUSSISCH (ruRU) - UI-Chrome nur (Lore bleibt EN/DE)
@@ -501,7 +548,7 @@ L["TAB_INSTANCES"] = "Instances"
 L["TAB_ERAS"] = "Eras"
 L["TAB_CREDITS"] = "Credits"
 L["ERAS_DASHBOARD_TITLE"] = "AGE OF AZEROTH"
-L["ERAS_PROGRESS"] = "%d / %d Eras Documented"
+L["ERAS_PROGRESS"] = "%d / %d Eras Documented (%d%%)"
 L["ERAS_COMING_SOON"] = "COMING SOON"
 L["ERAS_TAB_OVERVIEW"] = "Overview"
 L["ERAS_TAB_STORY"] = "Story"

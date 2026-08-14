@@ -1,7 +1,7 @@
--- ============================================================
+﻿-- ============================================================
 -- IMAGO — locales/base/data/eras.lua  (enUS fallback)
 -- 4-Tab-Schema: summary, fastFacts, campaigns, patches, keyFigures
--- NPC-Links via {npc:slug} in Texten (werden lila eingefärbt).
+-- NPC-Links via {npc:slug_midnight} in Texten (werden lila eingefärbt).
 -- ============================================================
 
 -- ============================================================
@@ -37,10 +37,10 @@ IMAGOdb.eras["midnight"].campaigns = {
         flavorTeaser = "Call of the Light",
         logoPath     = "Interface\\AddOns\\IMAGO\\media\\Eras\\Campaigns\\MN_CallOfTheLight.png",
         logo_w       = 1280, logo_h = 720,
-        npcLinks     = {"turalyon"},
+        npcLinks     = {"turalyon_midnight"},
         text         = "The Voidstorm was unleashed upon the Isle of Quel'Danas, forcing the blood elves of Silvermoon to fight " ..
                        "for survival against the full might of Xal'atath's army - the Devouring Host. The Sunwell itself aided " ..
-                       "its people when it summoned an army of paladins and priests, led by {npc:turalyon}, to wield " ..
+                       "its people when it summoned an army of paladins and priests, led by {npc:turalyon_midnight}, to wield " ..
                        "the Light against the Darkness. In the end, the Sunwell erupted in a beam of holy energy, holding the " ..
                        "encroaching Void at bay.",
         loreBits     =
@@ -77,12 +77,12 @@ IMAGOdb.eras["midnight"].campaigns = {
         flavorTeaser = "Lightblooms and Twilight Blades",
         logoPath     = "Interface\\AddOns\\IMAGO\\media\\Eras\\Campaigns\\MN_LightbloomsAndTwilightBlades.png",
         logo_w       = 1280, logo_h = 720,
-        npcLinks     = {"arator", "magister_umbric", "lord_antenorian", "zuljan"},
+        npcLinks     = {"arator_midnight", "magister_umbric_midnight", "lord_antenorian_midnight", "zuljan_midnight"},
         text         = "Regrouping in Silvermoon City, the blood elves and the Vanguard of the Light faced multiple challenges " ..
-                       "at once. {npc:arator} and {npc:magister_umbric} discovered that the Twilight's Blade cult had infiltrated " ..
-                       "Tranquilien and set out to kill the cult's leader – {npc:lord_antenorian}. Rampant plant growth fueled by " ..
+                       "at once. {npc:arator_midnight} and {npc:magister_umbric_midnight} discovered that the Twilight's Blade cult had infiltrated " ..
+                       "Tranquilien and set out to kill the cult's leader – {npc:lord_antenorian_midnight}. Rampant plant growth fueled by " ..
                        "the Light of the Sunwell began harming the lands around the capital. At the borders of Quel'Thalas and " ..
-                       "Zul'Aman, Amani trolls led by {npc:zuljan} clashed with the elves in a skirmish.",
+                       "Zul'Aman, Amani trolls led by {npc:zuljan_midnight} clashed with the elves in a skirmish.",
         loreBits     =
             "Even after achieving the small victory at the Isle of Quel'Danas together, tensions soon rose between Lor'themar and " ..
             "Turalyon as the Vanguard of the Light began to comport themselves not as guests in Silvermoon City, but as an authority. " ..
@@ -128,12 +128,12 @@ IMAGOdb.eras["midnight"].campaigns = {
         flavorTeaser = "De Amani never die",
         logoPath     = "Interface\\AddOns\\IMAGO\\media\\Eras\\Campaigns\\MN_DeAmaniNeverDie.png",
         logo_w       = 1280, logo_h = 720,
-        npcLinks     = {"lady_liadrin", "zaljarra", "zuljan"},
-        text         = "In need of allies rather than more enemies, {npc:lady_liadrin} and the Champion assisted the Amani " ..
-                       "trolls in combating their mutual enemy, the Twilight's Blade. They joined Chieftain {npc:zaljarra} in " ..
+        npcLinks     = {"lady_liadrin_midnight", "zaljarra_midnight", "zuljan_midnight"},
+        text         = "In need of allies rather than more enemies, {npc:lady_liadrin_midnight} and the Champion assisted the Amani " ..
+                       "trolls in combating their mutual enemy, the Twilight's Blade. They joined Chieftain {npc:zaljarra_midnight} in " ..
                        "her endeavor to become hash'ey and, in the process, successfully brought the loa back to Zul'Aman. As " ..
                        "allies, they drove the Void cult off troll lands and united the tribes under their new hash'ey. " ..
-                       "{npc:zuljan}, brother of Zul'jarra, disapproved of relying on the loa but fought alongside her nonetheless.",
+                       "{npc:zuljan_midnight}, brother of Zul'jarra, disapproved of relying on the loa but fought alongside her nonetheless.",
         loreBits     =
             "To avoid further bloodshed, Lady Liadrin attempted diplomacy with Zul'jan. Negotiations appeared to break down when " ..
             "they were ambushed by the Twilight's Blade cult under Mor'duun's command. Liadrin and the Champion joined the Amani " ..
@@ -185,11 +185,11 @@ IMAGOdb.eras["midnight"].campaigns = {
         flavorTeaser = "A goddess vanished",
         logoPath     = "Interface\\AddOns\\IMAGO\\media\\Eras\\Campaigns\\MN_AGoddessVanished.png",
         logo_w       = 1280, logo_h = 720,
-        npcLinks     = {"halduron_brightwing", "orweyna", "rootwarden_ruia"},
-        text         = "With the Lightbloom still threatening Quel'Thalas, {npc:halduron_brightwing} and the Champion accompany " ..
-                       "{npc:orweyna} to her homeland of Harandar, where the infection had also begun to spread. They gathered " ..
+        npcLinks     = {"halduron_brightwing_midnight", "orweyna_tww", "rootwarden_ruia_midnight"},
+        text         = "With the Lightbloom still threatening Quel'Thalas, {npc:halduron_brightwing_midnight} and the Champion accompany " ..
+                       "{npc:orweyna_tww} to her homeland of Harandar, where the infection had also begun to spread. They gathered " ..
                        "Alndust, magical remnants from the haranir's missing goddess' dreams, and managed to use it to combat " ..
-                       "the Lightbloom. {npc:rootwarden_ruia} betrayed the Hara'ti by willingly aiding the Light's infection and " ..
+                       "the Lightbloom. {npc:rootwarden_ruia_midnight} betrayed the Hara'ti by willingly aiding the Light's infection and " ..
                        "was defeated by an alliance of haranir and blood elves. The reclusive haranir took their first steps " ..
                        "outside their homeland and joined the fight against Xal'atath.",
         loreBits     =
@@ -236,11 +236,11 @@ IMAGOdb.eras["midnight"].campaigns = {
         flavorTeaser = "Arator's Journey",
         logoPath     = "Interface\\AddOns\\IMAGO\\media\\Eras\\Campaigns\\MN_AratorsJourney.png",
         logo_w       = 1280, logo_h = 720,
-        npcLinks     = {"alonsus_faol", "arator", "turalyon"},
-        text         = "{npc:alonsus_faol} tasked the Champion and {npc:arator} with gathering various relics of the Light to " ..
+        npcLinks     = {"alonsus_faol_midnight", "arator_midnight", "turalyon_midnight"},
+        text         = "{npc:alonsus_faol_midnight} tasked the Champion and {npc:arator_midnight} with gathering various relics of the Light to " ..
                        "reinvigorate the weakening defenders of the Sunwell. Arator was still reeling from his last clash with " ..
                        "his father, and Alonsus helped him understand what it meant to be a paladin. His faith renewed, the " ..
-                       "young Windrunner then accompanied the Sons of Lothar to reforge {npc:turalyon}'s shield. Hoping to " ..
+                       "young Windrunner then accompanied the Sons of Lothar to reforge {npc:turalyon_midnight}'s shield. Hoping to " ..
                        "connect with his father again, Arator kept the shield for himself when Turalyon rejected it.",
         loreBits     =
             "Archbishop Alonsus Faol had noticed Arator Windrunner's distress and waning faith in the Light and decided to " ..
@@ -282,10 +282,10 @@ IMAGOdb.eras["midnight"].campaigns = {
         flavorTeaser = "Breaching the Voidstorm",
         logoPath     = "Interface\\AddOns\\IMAGO\\media\\Eras\\Campaigns\\MN_BreachingTheVoidstorm.png",
         logo_w       = 1280, logo_h = 720,
-        npcLinks     = {"magister_umbric", "arator", "lothraxion", "alleria_windrunner", "decimus"},
-        text         = "{npc:magister_umbric} found a way to infiltrate the Voidstorm and the ren'dorei took the fight to " ..
-                       "Xal'atath directly. Accompanied by {npc:arator} and {npc:lothraxion}, they reunited with " ..
-                       "{npc:alleria_windrunner} and formed an uneasy alliance with the domanaar {npc:decimus}. They confronted " ..
+        npcLinks     = {"magister_umbric_midnight", "arator_midnight", "lothraxion_midnight", "alleria_windrunner_tww", "decimus_midnight"},
+        text         = "{npc:magister_umbric_midnight} found a way to infiltrate the Voidstorm and the ren'dorei took the fight to " ..
+                       "Xal'atath directly. Accompanied by {npc:arator_midnight} and {npc:lothraxion_midnight}, they reunited with " ..
+                       "{npc:alleria_windrunner_tww} and formed an uneasy alliance with the domanaar {npc:decimus_midnight}. They confronted " ..
                        "Xal'atath's minions and struck a heavy blow to her forces, but the oppressive darkness of the Voidstorm " ..
                        "made Lothraxion's zeal shine brighter than ever. When he turned against his own allies, the dreadlord was slain.",
         loreBits     =
@@ -335,11 +335,11 @@ IMAGOdb.eras["midnight"].campaigns = {
         flavorTeaser = "Behold, Midnight falls upon us",
         logoPath     = "Interface\\AddOns\\IMAGO\\media\\Eras\\Campaigns\\MN_BeholdMidnightFallsUponUs.png",
         logo_w       = 1280, logo_h = 720,
-        npcLinks     = {"alleria_windrunner", "turalyon", "arator", "lorthemar_theron"},
+        npcLinks     = {"alleria_windrunner_tww", "turalyon_midnight", "arator_midnight", "lorthemar_theron_midnight"},
         text         = "The Vanguard of the Light breached the Voidstorm and assaulted Xal'atath in her own stronghold – the " ..
-                       "Voidspire. Catastrophe ensued when {npc:alleria_windrunner} fell to the Harbinger's blade and the dark " ..
-                       "naaru L'ura was set free. With the Sunwell corrupted and Alleria and {npc:turalyon} lost to the darkness, " ..
-                       "it fell on {npc:arator} and {npc:lorthemar_theron} to unite the elven people and drive back the Void from " ..
+                       "Voidspire. Catastrophe ensued when {npc:alleria_windrunner_tww} fell to the Harbinger's blade and the dark " ..
+                       "naaru L'ura was set free. With the Sunwell corrupted and Alleria and {npc:turalyon_midnight} lost to the darkness, " ..
+                       "it fell on {npc:arator_midnight} and {npc:lorthemar_theron_midnight} to unite the elven people and drive back the Void from " ..
                        "Silvermoon. The Sunwell was cleansed and reborn as the Dawnwell – less powerful, but less dangerous as " ..
                        "well. Xal'atath, however, had moved through the well to depths unknown.",
         loreBits     =
@@ -388,11 +388,11 @@ IMAGOdb.eras["midnight"].patches = {
         logoPath = "Interface\\AddOns\\IMAGO\\media\\Eras\\Patches\\MN_Patch_12.0.7.png",
         logo_w   = 1280, logo_h = 720,
         newZones = {"Naigtal", "Val"},
-        npcLinks = {"orweyna", "zuljan", "loa_speaker_kinduru"},
-        text     = "{npc:orweyna} invited the leaders of Azeroth's elves and trolls to Harandar to reveal a " ..
-                   "controversial truth: elves and trolls used to be one people. Infuriated, {npc:zuljan} left " ..
+        npcLinks = {"orweyna_tww", "zuljan_midnight", "loa_speaker_kinduru_midnight"},
+        text     = "{npc:orweyna_tww} invited the leaders of Azeroth's elves and trolls to Harandar to reveal a " ..
+                   "controversial truth: elves and trolls used to be one people. Infuriated, {npc:zuljan_midnight} left " ..
                    "the meeting and set out to reclaim a weapon of old for the Amani, a creature called Ula'tek. " ..
-                   "Accompanied by his uncle, {npc:loa_speaker_kinduru}, and a mysterious spirit bound within a " ..
+                   "Accompanied by his uncle, {npc:loa_speaker_kinduru_midnight}, and a mysterious spirit bound within a " ..
                    "cursed mask, he descended ever deeper into rage. In an accident, he killed his uncle and " ..
                    "followed the spirit, who revealed himself as Hex Lord Malacrass, to find Ula'tek.",
         loreBits =
@@ -436,12 +436,12 @@ IMAGOdb.eras["midnight"].patches = {
 
 -- TAB 4: KEY FIGURES — Hybrid (slug + era-spezifischer Blurb)
 IMAGOdb.eras["midnight"].keyFigures = {
-    { slug="lorthemar_theron", arcLabel="Last Bastion of Defense",                    blurb="The leader of the blood elves was in charge of the defense of Quel'Thalas. He compromised and fought hard, and eventually saw his nation survive." },
-    { slug="lady_liadrin",     arcLabel="Mender of Bridges",                          blurb="Summoned the Vanguard of the Light and forged a tentative alliance with the Amani, breaking a cycle of hatred that lasted for thousands of years." },
-    { slug="arator",           arcLabel="The Redeemer",                               blurb="Stepped out of his parents' shadows as a beacon of hope in his own right, rather than simply the son of legends." },
-    { slug="turalyon",         arcLabel="Commander, Father, Light-blinded Paladin",   blurb="As commander of the Vanguard of the Light, Turalyon's unwavering faith became both his greatest strength and his greatest flaw. Trying to balance duty and family, he nearly lost both." },
-    { slug="xalatath",         arcLabel="Bringer of the End",                         blurb="She achieved everything she came for. With the Sunwell corrupted, Xal'atath moved one step closer to Azeroth's end." },
-    { slug="magister_umbric",  arcLabel="The Wayward Mage",                           blurb="Determined to get back into Silvermoon's good graces, Umbric used his mastery of the Void to take the battle to Xal'atath, fighting her at her own game." },
+    { slug="lorthemar_theron_midnight", arcLabel="Last Bastion of Defense",                    blurb="The leader of the blood elves was in charge of the defense of Quel'Thalas. He compromised and fought hard, and eventually saw his nation survive." },
+    { slug="lady_liadrin_midnight",     arcLabel="Mender of Bridges",                          blurb="Summoned the Vanguard of the Light and forged a tentative alliance with the Amani, breaking a cycle of hatred that lasted for thousands of years." },
+    { slug="arator_midnight",           arcLabel="The Redeemer",                               blurb="Stepped out of his parents' shadows as a beacon of hope in his own right, rather than simply the son of legends." },
+    { slug="turalyon_midnight",         arcLabel="Commander, Father, Light-blinded Paladin",   blurb="As commander of the Vanguard of the Light, Turalyon's unwavering faith became both his greatest strength and his greatest flaw. Trying to balance duty and family, he nearly lost both." },
+    { slug="xal_atath_midnight",        arcLabel="Bringer of the End",                         blurb="She achieved everything she came for. With the Sunwell corrupted, Xal'atath moved one step closer to Azeroth's end." },
+    { slug="magister_umbric_midnight",  arcLabel="The Wayward Mage",                           blurb="Determined to get back into Silvermoon's good graces, Umbric used his mastery of the Void to take the battle to Xal'atath, fighting her at her own game." },
 }
 
 -- ============================================================
@@ -476,11 +476,11 @@ IMAGOdb.eras["the_war_within"].campaigns = {
         heading      = "Farewell, City of Magic",
         zoneName     = "Visions of Azeroth",
         flavorTeaser = "Farewell, City of Magic",
-        npcLinks     = {"alleria_windrunner", "anduin_wrynn", "magni_bronzebeard", "khadgar"},
-        text         = "Veteran heroes of Azeroth, such as {npc:alleria_windrunner}, {npc:anduin_wrynn} and {npc:magni_bronzebeard} " ..
+        npcLinks     = {"alleria_windrunner_tww", "anduin_wrynn_tww", "magni_bronzebeard_tww", "khadgar_tww"},
+        text         = "Veteran heroes of Azeroth, such as {npc:alleria_windrunner_tww}, {npc:anduin_wrynn_tww} and {npc:magni_bronzebeard_tww} " ..
                        "assembled in Dalaran following the radiant visions that they have all been " ..
                        "witnessing. After following the visions to Khaz Algar, the heroes on the flying city were " ..
-                       "quickly besieged by Xal'atath and her nerubian allies. Archmage {npc:khadgar} tried to fight her " ..
+                       "quickly besieged by Xal'atath and her nerubian allies. Archmage {npc:khadgar_tww} tried to fight her " ..
                        "off but was consumed by the Dark Heart and the city was obliterated.",
         loreBits     = "[Placeholder] Lore notes for this campaign will appear here.",
     },
@@ -488,11 +488,11 @@ IMAGOdb.eras["the_war_within"].campaigns = {
         heading      = "New Earthen Allies",
         zoneName     = "The Isle of Dorn",
         flavorTeaser = "New Earthen Allies",
-        npcLinks     = {"moira_thaurissan"},
+        npcLinks     = {"moira_thaurissan_midnight"},
         text         = "The survivors washed up on the shores of the Isle of Dorn and made contact with the earthen " ..
                        "of Dornogal. Together, they fended off Xal'atath's invading forces. It became apparent that " ..
                        "the earthen were divided between the still-loyal followers of the Titans and the unbound, " ..
-                       "who didn't wish to follow their assigned edicts anymore. {npc:moira_thaurissan} was able to unite " ..
+                       "who didn't wish to follow their assigned edicts anymore. {npc:moira_thaurissan_midnight} was able to unite " ..
                        "the two factions again, earning their trust. Finally, they restored the collapsed Coreway — " ..
                        "a passage leading deep underground.",
         loreBits     = "[Placeholder] Lore notes for this campaign will appear here.",
@@ -501,12 +501,12 @@ IMAGOdb.eras["the_war_within"].campaigns = {
         heading      = "The Machine Speaker and the Void",
         zoneName     = "The Ringing Deeps",
         flavorTeaser = "The Machine Speaker and the Void",
-        npcLinks     = {"magni_bronzebeard", "dagran_thaurissan_ii"},
+        npcLinks     = {"magni_bronzebeard_tww", "dagran_thaurissan_ii_midnight"},
         text         = "Following the nerubians down to the workers' city of Gundargaz, the Champions witnessed the " ..
                        "great underground machines, most of which were now shut down due to neglect and an absent " ..
                        "workforce. They helped the kobolds of the Ringing Deeps rebel against the Candle King. " ..
-                       "{npc:magni_bronzebeard} and {npc:dagran_thaurissan_ii} uncovered that the High Speaker had been working with Xal'atath all along. " ..
-                       "They managed to stop him from corrupting the new earthen in the Awakening Machine and {npc:magni_bronzebeard} " ..
+                       "{npc:magni_bronzebeard_tww} and {npc:dagran_thaurissan_ii_midnight} uncovered that the High Speaker had been working with Xal'atath all along. " ..
+                       "They managed to stop him from corrupting the new earthen in the Awakening Machine and {npc:magni_bronzebeard_tww} " ..
                        "was turned back into flesh by Azeroth. The new earthen joined their kin.",
         loreBits     = "[Placeholder] Lore notes for this campaign will appear here.",
     },
@@ -514,12 +514,12 @@ IMAGOdb.eras["the_war_within"].campaigns = {
         heading      = "A Star of Light and Shadow",
         zoneName     = "Hallowfall",
         flavorTeaser = "A Star of Light and Shadow",
-        npcLinks     = {"anduin_wrynn", "faerin_lothar", "alleria_windrunner"},
-        text         = "{npc:anduin_wrynn} met {npc:faerin_lothar} and made contact with the Hallowfall Arathi. " ..
+        npcLinks     = {"anduin_wrynn_tww", "faerin_lothar_tww", "alleria_windrunner_tww"},
+        text         = "{npc:anduin_wrynn_tww} met {npc:faerin_lothar_tww} and made contact with the Hallowfall Arathi. " ..
                        "Besieged from all sides by nerubians and kobyss, the Arathi never lost hope in the light " ..
                        "of their star, Beledar, the crystal illuminating the cave, even when it switched to darkness " ..
                        "periodically. Anduin faced a personal crisis when he couldn't reconnect with the Light but " ..
-                       "helped defeat Xal'atath's forces nonetheless. {npc:alleria_windrunner} joined them, having " ..
+                       "helped defeat Xal'atath's forces nonetheless. {npc:alleria_windrunner_tww} joined them, having " ..
                        "picked up the Harbinger's trail once more. All three followed it further underground.",
         loreBits     = "[Placeholder] Lore notes for this campaign will appear here.",
     },
@@ -527,8 +527,8 @@ IMAGOdb.eras["the_war_within"].campaigns = {
         heading      = "Spiders, Spiders Everywhere",
         zoneName     = "Azj-Kahet",
         flavorTeaser = "Spiders, Spiders Everywhere",
-        npcLinks     = {"anduin_wrynn", "alleria_windrunner", "faerin_lothar", "orweyna"},
-        text         = "{npc:anduin_wrynn}, {npc:alleria_windrunner} and {npc:faerin_lothar} met {npc:orweyna} and " ..
+        npcLinks     = {"anduin_wrynn_tww", "alleria_windrunner_tww", "faerin_lothar_tww", "orweyna_tww"},
+        text         = "{npc:anduin_wrynn_tww}, {npc:alleria_windrunner_tww} and {npc:faerin_lothar_tww} met {npc:orweyna_tww} and " ..
                        "the haranir when they crash-landed in the spider kingdom of Azj-Kahet. Ruled by Queen " ..
                        "Ansurek under Xal'atath's influence, the kingdom was teeming with a dangerous substance " ..
                        "called the Black Blood. The Champions helped the renegade royal Weaver in her rebellion " ..
@@ -540,12 +540,12 @@ IMAGOdb.eras["the_war_within"].campaigns = {
         heading      = "A Dark Heart Left Broken",
         zoneName     = "The War Within",
         flavorTeaser = "A Dark Heart Left Broken",
-        npcLinks     = {"alleria_windrunner", "anduin_wrynn", "khadgar"},
+        npcLinks     = {"alleria_windrunner_tww", "anduin_wrynn_tww", "khadgar_tww"},
         text         = "The reinforcements of the Horde and the Alliance arrived in Dornogal and quickly went on " ..
                        "the offensive against the nerubians. With the earthen, kobolds and Arathi at their side, " ..
-                       "they made short work of the nerubians in Hallowfall. {npc:alleria_windrunner} confronted " ..
+                       "they made short work of the nerubians in Hallowfall. {npc:alleria_windrunner_tww} confronted " ..
                        "Xal'atath and managed to damage the Dark Heart, causing an enraged Xal'atath to retreat " ..
-                       "and freeing {npc:khadgar}. {npc:anduin_wrynn} found his faith again and healed the fallen " ..
+                       "and freeing {npc:khadgar_tww}. {npc:anduin_wrynn_tww} found his faith again and healed the fallen " ..
                        "archmage. The rebellion against Queen Ansurek was a success and the Weaver and Vizier " ..
                        "were left in charge of Azj-Kahet.",
         loreBits     = "[Placeholder] Lore notes for this campaign will appear here.",
@@ -561,11 +561,11 @@ IMAGOdb.eras["the_war_within"].patches = {
         logo_w   = 400, logo_h = 300,
         newZones = {"The Siren Isle"},
         loreBits = "More Radiant Visions",
-        npcLinks = {"orweyna"},
+        npcLinks = {"orweyna_tww"},
         text     = "Following the discovery of a new crystal, similar to Beledar, a team of Arathi, earthen and " ..
                    "goblins sailed to the Siren Isle. They found the inhabitants long dead and the island cursed " ..
                    "by an unnatural storm. On the Isle of Dorn, the surviving mages of the Kirin Tor honored the " ..
-                   "fallen of Dalaran. Meanwhile, {npc:orweyna} received new visions from her goddess, warning " ..
+                   "fallen of Dalaran. Meanwhile, {npc:orweyna_tww} received new visions from her goddess, warning " ..
                    "her of an impending threat from the Undermine.",
     },
     {
@@ -575,8 +575,8 @@ IMAGOdb.eras["the_war_within"].patches = {
         logo_w   = 400, logo_h = 300,
         newZones = {"Undermine"},
         loreBits = "Revolution down in Goblin Town",
-        npcLinks = {"orweyna"},
-        text     = "{npc:orweyna} followed Monte Gazlowe and Renzik 'the Shiv' into Undermine after her visions " ..
+        npcLinks = {"orweyna_tww"},
+        text     = "{npc:orweyna_tww} followed Monte Gazlowe and Renzik 'the Shiv' into Undermine after her visions " ..
                    "led them towards a goblin operation of Black Blood weaponry. They found out that Gallywix had " ..
                    "made a deal with Xal'atath, using the Black Blood in exchange for repairing the Dark Heart for " ..
                    "her. Gallywix succeeded in the repairs but gave the artifact to the Shadowguard ethereals, " ..
@@ -591,11 +591,11 @@ IMAGOdb.eras["the_war_within"].patches = {
         logo_w   = 400, logo_h = 300,
         newZones = {"Arathi Highlands"},
         loreBits = "Rise of the Red Dawn",
-        npcLinks = {"faerin_lothar"},
-        text     = "Excited to learn of her heritage, {npc:faerin_lothar} accompanied Danath Trollbane to his " ..
+        npcLinks = {"faerin_lothar_tww"},
+        text     = "Excited to learn of her heritage, {npc:faerin_lothar_tww} accompanied Danath Trollbane to his " ..
                    "kingdom of Stromgarde. They found themselves in the middle of a civil war, as Danath's " ..
                    "subjects were not happy living peacefully next to an orc stronghold and being subjected to " ..
-                   "food shortages due to the war effort. Danath, {npc:faerin_lothar} and Eitrigg managed to " ..
+                   "food shortages due to the war effort. Danath, {npc:faerin_lothar_tww} and Eitrigg managed to " ..
                    "quell the rebellion and exiled the main instigator, Marran Trollbane — Danath's niece.",
     },
     {
@@ -605,8 +605,8 @@ IMAGOdb.eras["the_war_within"].patches = {
         logo_w   = 400, logo_h = 300,
         newZones = {"Tazavesh", "K'aresh"},
         loreBits = "The All-Devouring Returns",
-        npcLinks = {"alleria_windrunner"},
-        text     = "Locus-Walker brought {npc:alleria_windrunner} to the broker city of Tazavesh with grave news: " ..
+        npcLinks = {"alleria_windrunner_tww"},
+        text     = "Locus-Walker brought {npc:alleria_windrunner_tww} to the broker city of Tazavesh with grave news: " ..
                    "The Shadowguard ethereals under Nexus-King Salhadaar planned to use the Dark Heart to bring " ..
                    "back the void lord Dimensius. With no other options, they allied with Xal'atath against their " ..
                    "common enemy. Helped by the ren'dorei, they managed to trap Dimensius in the Dark Heart, " ..
@@ -620,11 +620,11 @@ IMAGOdb.eras["the_war_within"].patches = {
         logo_w   = 400, logo_h = 300,
         newZones = {"Quel'Thalas"},
         loreBits = "[Placeholder] Lore notes for this patch will appear here.",
-        npcLinks = {"vereesa_windrunner", "alleria_windrunner", "sylvanas_windrunner"},
-        text     = "{npc:vereesa_windrunner} began to have horrible visions of her homeland of Quel'Thalas destroyed " ..
-                   "by the Void. Her nephew Arator believed her, and tried to rally his mother {npc:alleria_windrunner} " ..
-                   "and his aunt {npc:sylvanas_windrunner} to join them in the defense of Silvermoon. Even though he had ventured " ..
-                   "to K'aresh and even into the Maw to do so, he was denied by both. {npc:alleria_windrunner}, " ..
+        npcLinks = {"vereesa_windrunner_midnight", "alleria_windrunner_tww", "sylvanas_windrunner_midnight"},
+        text     = "{npc:vereesa_windrunner_midnight} began to have horrible visions of her homeland of Quel'Thalas destroyed " ..
+                   "by the Void. Her nephew Arator believed her, and tried to rally his mother {npc:alleria_windrunner_tww} " ..
+                   "and his aunt {npc:sylvanas_windrunner_midnight} to join them in the defense of Silvermoon. Even though he had ventured " ..
+                   "to K'aresh and even into the Maw to do so, he was denied by both. {npc:alleria_windrunner_tww}, " ..
                    "meanwhile, followed Xal'atath through the Void and witnessed her drain the Dark Heart of its " ..
                    "power, summoning a massive spire that tore open the skies over Silvermoon.",
     },
@@ -632,11 +632,11 @@ IMAGOdb.eras["the_war_within"].patches = {
 
 -- TAB 4: KEY FIGURES
 IMAGOdb.eras["the_war_within"].keyFigures = {
-    { slug="alleria_windrunner", arcLabel="The Obsessed Hunter",       blurb="Alleria hunted Xal'atath across Khaz Algar and far beyond. Her thirst for revenge bordered on dangerous obsession to the point of endangering herself and her allies." },
-    { slug="xalatath",           arcLabel="The Harbinger",             blurb="The Harbinger systematically empowered the Dark Heart with various energy sources while delaying the Champions repeatedly. She notably never attacked Alleria directly and managed to turn her losses into ultimate victory." },
-    { slug="anduin_wrynn",       arcLabel="Broken, Then Reforged",     blurb="Started out a broken man after the events of the war in the Shadowlands, but finally regained his faith in the Light and in himself." },
-    { slug="faerin_lothar",      arcLabel="Hope Against the Odds",     blurb="The young paladin hero inspired her people to not lose hope against the overwhelming odds. She herself was left disillusioned though after witnessing the civil unrest in Stromgarde." },
-    { slug="orweyna",            arcLabel="Reluctant Servant of Fate", blurb="The reclusive scout was hesitant to aid the Champions, but realized that she needed outside help to fulfill the will of her goddess." },
+    { slug="alleria_windrunner_tww", arcLabel="The Obsessed Hunter",       blurb="Alleria hunted Xal'atath across Khaz Algar and far beyond. Her thirst for revenge bordered on dangerous obsession to the point of endangering herself and her allies." },
+    { slug="xal_atath_tww",           arcLabel="The Harbinger",             blurb="The Harbinger systematically empowered the Dark Heart with various energy sources while delaying the Champions repeatedly. She notably never attacked Alleria directly and managed to turn her losses into ultimate victory." },
+    { slug="anduin_wrynn_tww",       arcLabel="Broken, Then Reforged",     blurb="Started out a broken man after the events of the war in the Shadowlands, but finally regained his faith in the Light and in himself." },
+    { slug="faerin_lothar_tww",      arcLabel="Hope Against the Odds",     blurb="The young paladin hero inspired her people to not lose hope against the overwhelming odds. She herself was left disillusioned though after witnessing the civil unrest in Stromgarde." },
+    { slug="orweyna_tww",            arcLabel="Reluctant Servant of Fate", blurb="The reclusive scout was hesitant to aid the Champions, but realized that she needed outside help to fulfill the will of her goddess." },
 }
 
 -- ============================================================
