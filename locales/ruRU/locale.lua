@@ -120,6 +120,11 @@ L["TAB_DETAIL_LORE"]                = "Лор"
 L["TAB_DETAIL_TIMELINE"]            = "Хронология"
 L["CMD_UNLOCKALL_SUCCESS"]          = "Успех: все отголоски прошлого открыты в Хрониках!"
 
+-- TextLinker Color Ids
+L["LINK_NPC"] = "c" .. IMAGO_HEX.GOLD_BRIGHT  -- Bright Gold
+L["LINK_ZONE"] = "c" .. IMAGO_HEX.VOID        -- Muted Violet
+L["LINK_EXPANSION"] = ""
+
 -- Подсказка на мини-карте
 L["MINIMAP_TOOLTIP_TITLE"]          = "IMAGO"
 L["MINIMAP_TOOLTIP_LEFTCLICK"]      = "ЛКМ: Открыть Хроники"

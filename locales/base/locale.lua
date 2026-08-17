@@ -126,6 +126,11 @@ L["TAB_DETAIL_LORE"]                = "Lore"
 L["TAB_DETAIL_TIMELINE"]            = "Timeline"
 L["CMD_UNLOCKALL_SUCCESS"]          = "Success: All %d echoes of the past have been unlocked in the chronicle!"
 
+-- TextLinker Color Ids
+L["LINK_NPC"] = "c" .. IMAGO_HEX.GOLD_BRIGHT  -- Bright Gold
+L["LINK_ZONE"] = "c" .. IMAGO_HEX.VOID        -- Muted Violet
+L["LINK_EXPANSION"] = ""
+
 -- Minimap Tooltip
 L["MINIMAP_TOOLTIP_TITLE"]          = "IMAGO"
 L["MINIMAP_TOOLTIP_LEFTCLICK"]      = "Left Click: Open Chronicle"

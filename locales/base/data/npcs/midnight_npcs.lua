@@ -392,7 +392,7 @@ IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure_midnight"].lore = [[A paladin and quarte
 He has since mostly been stationed in Northrend, but as any true paladin, he goes where the Light calls him.]]
 IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure_midnight"].zones = {"Parhelion Plaza"}
 IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure_midnight"].source = "Cadash"
-IMAGOdc.npcs.CAT_LIGHT["eadric_the_pure_midnight"].timeline = IMAGOdb.timelines.EADRIC_THE_PURE
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure_midnight"].timeline = IMAGOdb.timelines.EADRIC_THE_PURE
 
 -- YALIA SAGEWHISPER --
 IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper_midnight"].name = "Yalia Sagewhisper"
