@@ -34,7 +34,7 @@ IMAGO_COLORS = {
 
 IMAGO_HEX = {
     GOLD           = "FFD0AD4D",
-    GOLD_BRIGHT    = "FFE6C766",
+    GOLD_BRIGHT    = "FFE6C766", -- Used for Character Links
     GOLD_MUTED     = "FF9E8135",
 
     TEXT_PRIMARY   = "FFE9E2D3",
@@ -44,7 +44,7 @@ IMAGO_HEX = {
     SUCCESS = "FF8FB368",
     WARNING = "FFD69A4A",
     DANGER  = "FFC86A5A",
-    VOID    = "FFA88BD8",
+    VOID    = "FFA88BD8", -- Used for Zone Links
 }
 
 -- Shared geometry for Fates, Zones and Eras.
