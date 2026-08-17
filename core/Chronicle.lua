@@ -73,8 +73,18 @@ local navStack = {}
 local isNavigatingBack = false
 
 local EXPANSION_SUFFIX = {
-    ["midnight"]       = "_midnight",
-    ["the_war_within"] = "_tww",
+    ["midnight"]            = "_midnight",
+    ["the_war_within"]      = "_tww",
+    ["dragonflight"]        = "_df",
+    ["shadowlands"]         = "_sl",
+    ["battle_for_azeroth"]  = "_bfa",
+    ["legion"]              = "_legion",
+    ["warlords_of_draenor"] = "_wod",
+    ["mists_of_pandaria"]   = "_mop",
+    ["cataclysm"]           = "_cata",
+    ["wrath_of_the_lich_king"] = "_wotlk",
+    ["the_burning_crusade"] = "_tbc",
+    ["classic"]             = "_classic",
 }
 
 local function GetCrypticName(name)
