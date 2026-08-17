@@ -367,7 +367,6 @@ Da sie nicht lange im Imperium gelebt hat, hegt Faerin kein Interesse an einer R
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].zones = {"Insel von Quel'Danas", "Parhelionplatz", "Silbermond"}
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["faerin_lothar_midnight"].timeline = IMAGOdb.timelines.FAERIN_LOTHAR
-IMAGOdb.npcs.CAT_ARATHI["faerin_lothar_tww"].timeline    = IMAGOdb.timelines.FAERIN_LOTHAR
 
 IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy_midnight"].name = "Generalin Amias Bellamy"
 IMAGOdb.npcs.CAT_LIGHT["general_amias_bellamy_midnight"].aliases = {"Amias Bellamy"}
@@ -603,9 +602,9 @@ IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus_midnight"].race = "Mensch"
 IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus_midnight"].lore = [[Seit die Geißel die Östlichen Königreiche verheerte, hat Maxwell Tyrosus es sich zur Aufgabe gemacht, die Untoten zu bekämpfen und die Unschuldigen zu beschützen. Er wurde nicht nur zum Anführer der Argentumdämmerung, sondern auch zur Rechten Hand des Hochlords des Ordens der Silbernen Hand. Vielleicht trägt er keinen glanzvollen Titel und vollbrachte keine kriegsentscheidenden Heldentaten wie seine Mitstreiter Turalyon oder Uther Lichtbringer – dennoch ist Tyrosus zu einer unverzichtbaren Stütze geworden, wenn es darum geht, die Paladinorden diszipliniert und kampfbereit zu halten.
 
 Obwohl Tyrosus seit Jahrzehnten im Dienst des Lichts steht, wurde er nicht vom Sonnenbrunnen gerufen. Ohne sich von gekränktem Stolz oder Zweifeln entmutigen zu lassen, stellt er sich nun ohne Zögern neuen Bedrohungen außerhalb von Silbermond.]]
-IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].zones = {"Östliche Pestländer"}
-IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus"].timeline = IMAGOdb.timelines.LORD_MAXWELL_TYROSUS
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus_midnight"].zones = {"Östliche Pestländer"}
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["lord_maxwell_tyrosus_midnight"].timeline = IMAGOdb.timelines.LORD_MAXWELL_TYROSUS
 
 -- ALLERIA WINDRUNNER --
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].name = "Alleria Windläufer"
