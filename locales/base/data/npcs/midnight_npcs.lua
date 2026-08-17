@@ -392,7 +392,7 @@ IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure_midnight"].lore = [[A paladin and quarte
 He has since mostly been stationed in Northrend, but as any true paladin, he goes where the Light calls him.]]
 IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure_midnight"].zones = {"Parhelion Plaza"}
 IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure_midnight"].source = "Cadash"
-IMAGOdc.npcs.CAT_LIGHT["eadric_the_pure_midnight"].timeline = IMAGOdb.timelines.eadric_the_pure
+IMAGOdc.npcs.CAT_LIGHT["eadric_the_pure_midnight"].timeline = IMAGOdb.timelines.EADRIC_THE_PURE
 
 -- YALIA SAGEWHISPER --
 IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper_midnight"].name = "Yalia Sagewhisper"
@@ -1146,7 +1146,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].lore = [[One of the younger
 Despite her recklessness, Thisalee knows when she is out of her depth and can be counted on when it matters most.]]
 IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].zones = {"Arcantina"}
 IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].source = "Cadash"
-IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].timeline = IMAGOdb.timelines.THISALESS_CROW
+IMAGOdb.npcs.CAT_ARCANTINA["thisalee_crow_midnight"].timeline = IMAGOdb.timelines.THISALEE_CROW
 
 -- GARONA HALFORCEN --
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].name = "Garona Halforcen"

@@ -170,7 +170,7 @@ IMAGOdb.timelines.LORTHEMAR_THERON = {
     {era = "Midnight", text = "Led the blood elf forces in Silvermoon's defense against the Void."},
 }
 
-IMAGOdb.timelines.ERSTE_ARKANISTIN_THALYSSRA = {
+IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA = {
     {era = "Legion", text = "Thalyssra was exiled from Suramar for opposing the Legion and sent a magical distress signal that was intercepted by Khadgar, allowing her to establish a resistance in Shal'Aran. With  allies, she freed the nightborne from their dependence on the Nightwell, and led a joint assault with Horde and Alliance forces to liberate Suramar. After becoming leader, she chose to let the Nightwell fade and pledged the nightborne to the Horde."},
     {era = "BfA", text = "During the Fourth War, Thalyssra assisted the Horde in breaking the Zandalari out of Stormwind, assisted the Horde fleet in Nazjatar, and later supported the rebellion against Sylvanas Windrunner. After N'Zoth's defeat, she joined the Horde Council."},
     {era = "SL", text = "Thalyssra witnessed the ritual to open the doorway to the Maw at the Frozen Throne within Icecrown Citadel. Following the defeat of the Jailer, Thalyssra and Lor'themar briefly traveled to Oribos in the Shadowlands to attend Sylvanas' trial."},
@@ -415,41 +415,6 @@ IMAGOdb.timelines.ARCANIST_VALTROIS = {
     }
 }
 
-IMAGOdb.timelines.mehlar_dawnblade = {
-    {
-        era = "Pre-WC3",
-        text = [[Trained under Uther the Lightbringer as a Knight of the Silver Hand.]],
-    },
-    {
-        era = "WC3",
-        text = [[Fought the Scourge on many fronts and later joined the Blood Knights.]],
-    },
-    {
-        era = "TBC",
-        text = [[Defiled Uther's tomb and faced the spirit of his mentor. Realized that rage and violence were not the emotions he wanted to be guided by. He worked with Sylvanas Windrunner to create the Scourgebane trinket.]],
-    },
-    {
-        era = "WoD",
-        text = [[Followed Lady Liadrin to Draenor and helped her defend Auchindoun from the Shadow Council.]],
-    },
-    {
-        era = "Legion",
-        text = [[Journeyed to Uther's tomb again, this time to defend it against restless spirits. Later he briefly rejoined the Silver Hand when Lady Liadrin pledged her Blood Knights to the new Highlord.]],
-    },
-    {
-        era = "DF",
-        text = [[Was present at the reformation of Tyr and the founding of Tyr's Guard.]],
-    },
-    {
-        era = "TWW",
-        text = [[Helped train new earthen volunteers for the Horde.]],
-    },
-    {
-        era = "Midnight",
-        text = [[Injured during the initial assault on the Sunwell, Mehlar later rejoined the Vanguard of the Light in the fight against the Void.]],
-    }
-}
-
 IMAGOdb.timelines.DANATH_TROLLBANN = {
     {era = "WC2", text = "Served under General Turalyon as a commander and tactician of the Alliance of Lordaeron, repelling the orcish Horde that threatened the Eastern Kingdoms and pursuing them beyond the Dark Portal to their homeworld of Draenor."},
     {era = "TBC", text = "Led the forces of Honor Hold in staving off the demonic armies of Hellfire Peninsula."},
@@ -640,7 +605,7 @@ IMAGOdb.timelines.MOIRA_THAURISSAN = {
     }
 }
 
-IMAGOdb.timelines.HAUPTMANN_FAREEYA = {
+IMAGOdb.timelines.CAPTAIN_FAREEYA = {
     {
         era = "Ancient",
         text = [[Escaped Argus on the Genedar with Prophet Velen when the eredar joined the Burning Legion. Later commandeered another spaceship – the Xenedar – back into the Twisting Nether. Under command of the naaru Xe'ra, she became Lightforged and became a leader of the Army of the Light.]],
@@ -694,7 +659,7 @@ IMAGOdb.timelines.DELAS_MOONFANG = {
     }
 }
 
-IMAGOdb.timelines.LORD_GRAYSON_SCHATTENBRUCH = {
+IMAGOdb.timelines.LORD_GRAYSON_SHADOWBREAKER = {
     {
         era = "Pre-Classic",
         text = [[Was visited by his sister Jubeka who had become Forsaken after the Scourging of Lordaeron. Grayson chased her away in disgust, seeing her as nothing more than a monster.]],
@@ -729,7 +694,7 @@ IMAGOdb.timelines.LORD_GRAYSON_SCHATTENBRUCH = {
     }
 }
 
-IMAGOdb.timelines.eadric_the_pure = {
+IMAGOdb.timelines.EADRIC_THE_PURE = {
     {
         era = "WotLK",
         text = [[Served the Argent Crusade and Tirion Fordring as Grand Champion. Was in charge of organizing the Grand Argent Tournament in northern Icecrown by keeping the grounds safe and supplied and overseeing the combatants' training. He served as quartermaster and occasionally participated in the tournament as a fighter himself.]],
@@ -748,7 +713,7 @@ IMAGOdb.timelines.eadric_the_pure = {
     }
 }
 
-IMAGOdb.timelines.yalia_sagewhisper = {
+IMAGOdb.timelines.YALIA_SAGEWHISPER = {
     {
         era = "Pre-WC3",
         text = [[With two young pandaren boys getting into a ceaseless rivalry to gain her hand in future marriage, Yalia saw no other choice than to leave her home and family behind. She joined the Shado-Pan Order at five years old.]],
@@ -845,7 +810,7 @@ IMAGOdb.timelines.TAHU_SAGEWIND = {
     }
 }
 
-IMAGOdb.timelines.aponi_brightmane = {
+IMAGOdb.timelines.APONI_BRIGHTMANE = {
     {
         era = "WotLK",
         text = [[Fought as a warrior in Northrend against the armies of the Lich King but was gravely wounded and returned to Thunder Bluff. Here, she and Tahu Sagewind laid the foundations to the creations of the first tauren paladin and priestly orders. After being healed, Aponi returned to the war and now fought with An'she's light at her side.]],
@@ -1003,6 +968,117 @@ IMAGOdb.timelines.VINDICATOR_BOROS = {
     }
 }
 
+IMAGOdb.timelines.THE_GREAT_KYRON = {
+    {
+        era = "Pre-TWW",
+        text = [[Served as an overseer in the Arathi army. Joined the Arathi expedition to Hallowfall some time before the events in Khaz Algar.]],
+    },
+    {
+        era = "TWW",
+        text = [[Fought the Kaheti nerubians alongside Faerin Lothar, Anduin Wrynn, and an adventurer at the Aegis Wall. Shortly afterward, they assisted Anduin and Faerin in rekindling the Dawntower.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Kyron was part of the Vanguard of the Light that defended Parhelion Plaza during the Devouring Host's attack.]],
+    }
+}
+
+IMAGOdb.timelines.HIGH_PRELATE_RATA = {
+    {
+        era = "BfA",
+        text = [[Led the prelates during the Fourth War as the main protectors of King Rastakhan. The order was severely weakened after Rezan's death, with many members losing their connection to the Light. Rata pledged her support to Queen Talanji and joined the Zanchuli Council after the king's death.]],
+    },
+    {
+        era = "DF",
+        text = [[Traveled to the Dragon Isles after Tyr's reforging.]],
+    },
+    {
+        era = "TWW",
+        text = [[Joined the Horde forces on Khaz Algar and fought against the nerubians in Hallowfall. Learned about the Arathi's faith from Great Kyron.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Was summoned by the Sunwell and fought against the Void on the Isle of Quel'Danas.]],
+    }
+}
+
+IMAGOdb.timelines.GIDWIN_GOLDBRAIDS = {
+    {
+        era = "Cata",
+        text = [[Traveled with Tarenar on Fiona's caravan to become paladins at Light's Hope Chapel. Left to fight alone after Tarenar didn't take their mission seriously, but was caught and almost made a death knight by the Scourge. After being rescued, he forgave his friend and both were accepted into the Argent Crusade.]],
+    },
+    {
+        era = "WoD",
+        text = [[Accompanied Fiona and Tarenar to Draenor. Was poisoned and paralyzed during a botani attack, but Fiona nursed him back to health.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the reformed Knights of the Silver Hand and fought against the Burning Legion on the Broken Shore.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Celebrated the Legion's defeat with Tarenar by running up enormous bar tabs in Silvermoon City, Tarenar's home. Had to sneak out when the Fourth War erupted.]],
+    },
+    {
+        era = "DF",
+        text = [[Went traveling with Fiona once more on the Dragon Isles.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Answered the Sunwell's call to defend Silvermoon. Finally settled the mountain of drinking debts he and Tarenar had accumulated over the years. Since most inns in Quel'Thalas had long since banned them, the Arcantina became their new favorite establishment.]],
+    }
+}
+
+IMAGOdb.timelines.MEHLAR_DAWNBLADE = {
+    {
+        era = "Pre-WC3",
+        text = [[Trained under Uther the Lightbringer as a Knight of the Silver Hand.]],
+    },
+    {
+        era = "WC3",
+        text = [[Fought the Scourge on many fronts and later joined the Blood Knights.]],
+    },
+    {
+        era = "TBC",
+        text = [[Defiled Uther's tomb and faced the spirit of his mentor. Realized that rage and violence were not the emotions he wanted to be guided by. He worked with Sylvanas Windrunner to create the Scourgebane trinket.]],
+    },
+    {
+        era = "WoD",
+        text = [[Followed Lady Liadrin to Draenor and helped her defend Auchindoun from the Shadow Council.]],
+    },
+    {
+        era = "Legion",
+        text = [[Journeyed to Uther's tomb again, this time to defend it against restless spirits. Later he briefly rejoined the Silver Hand when Lady Liadrin pledged her Blood Knights to the new Highlord.]],
+    },
+    {
+        era = "DF",
+        text = [[Was present at the reformation of Tyr and the founding of Tyr's Guard.]],
+    },
+    {
+        era = "TWW",
+        text = [[Helped train new earthen volunteers for the Horde.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Injured during the initial assault on the Sunwell, Mehlar later rejoined the Vanguard of the Light in the fight against the Void.]],
+    }
+}
+
+IMAGOdb.timelines.BELATH_DAWNBLADE = {
+    {
+        era = "TBC",
+        text = [[Participated in the invasion of Mardum and briefly got captured by demons of the Burning Legion. Was later imprisoned alongside his fellow Illidari by Maiev Shadowsong.]],
+    },
+    {
+        era = "Legion",
+        text = [[After being freed to fight in the Third Invasion of the Burning Legion, he worked alongside the Wardens to track down any other demons that had escaped from the Vault of the Wardens. He coordinated scouting missions to the Black Temple, Stormheim, and Niskara and fought as the Slayer's Champion.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Stopped an illegal operation in Murder Row that supplied the frightened citizens of Silvermoon with Fel Magic. After Xal'atath's disappearance through the Darkwell, Belath tracked down the new ethereal and domanaar leaders of the Devouring Host to the formerly Legion-occupied worlds of Val and Naigtal. Joined Decimus' and Maella's strike teams on both worlds.]],
+    }
+}
+
 IMAGOdb.timelines.SUNWALKER_DEZCO = {
     {era = "Pre-MoP", text = "Fought against dragons, the undead, and Alliance forces on several Horde missions across multiple continents alongside his closest allies."},
     {era = "MoP", text = "Led the Dawnchaser tribe to Pandaria, enduring the tragic deaths of his wife and one of his infant sons. He became a staunch defender of the Vale of Eternal Blossoms and ultimately helped overthrow Garrosh Hellscream to stop his desecration of the sacred land."},
@@ -1079,7 +1155,7 @@ IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL = {
     }
 }
 
-IMAGOdb.timelines.ALLARI_DIE_SEELENFRESSERIN = {
+IMAGOdb.timelines.ALLARI_THE_SOULEATER = {
     {
         era = "TBC",
         text = [[Pledged her loyalty to Illidan Stormrage in Outland. Successfully retrieved the Sargerite Keystone artifact at his behest, but upon returning was captured and imprisoned alongside her fellow Illidari by Maiev Shadowsong.]],
@@ -1169,7 +1245,8 @@ IMAGOdb.timelines.VALEERA_SANGUINAR = {
     {
         era = "Pre-WotLK",
         text = [[Caught stealing in Horde territory and was sold to Rehgar Earthfury as a gladiator slave and was forced to fight alongside Varian Wrynn and Broll Bearmantle. The three became friends and escaped together, ultimately helping Varian reclaim the Throne of Stormwind.
-Valeera briefly struggled with addiction to fel magic and got possessed by the demon Kathra'natir.]],
+
+        Valeera briefly struggled with addiction to fel magic and got possessed by the demon Kathra'natir.]],
     },
     {
         era = "WotLK",
@@ -1237,6 +1314,41 @@ IMAGOdb.timelines.EITRIGG = {
     {era = "Pre-MN", text = "He was eventually named a member of the Sons of Lothar, and is called upon when they met to discuss the threats facing Azeroth."}
 }
 
+IMAGOdb.timelines.THISALEE_CROW = {
+    {
+        era = "Cata",
+        text = [[Fought and slew the harpies on Mount Hyjal by the dozen against Skylord Omnuron's orders when she uncovered they were working with the black dragonflight. Found and safeguarded the egg of Aviana. Later overestimated her own abilities fighting the Firelands' elementals and regrouped with the other druids under Malfurion Stormrage during the invasion.]],
+    },
+    {
+        era = "WoD",
+        text = [[Fought under the Alliance commander against the Iron Horde in Gorgrond. Sent for reinforcements to take the fight to Warchief Grommash Hellscream.]],
+    },
+    {
+        era = "Legion",
+        text = [[Joined the druids in the Dreamgrove in the fight against the Burning Legion. Defended the Shrine of Aviana and saved Goldrinn. Helped the Archdruid slay the eredar commander Katith'rax after uncovering his plot to vanquish the Ancients.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought in the Battle of Darkshore and kept watch over the Twilight's Hammer, who sought to exploit the chaos of the Fourth War.]],
+    },
+    {
+        era = "SL",
+        text = [[Remained in Bashal'Aran until the Alliance's final victory against the Horde invaders in Darkshore.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the green dragonflight in their defense of the Ancient Bough from the Primalists' attacks. Moved to Bel'ameth after Amirdrassil bloomed.]],
+    },
+    {
+        era = "TWW",
+        text = [[Joined the Alliance army in the fight against Xal'atath on the Isle of Dorn.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Shared a drink in the Arcantina with fellow druid Zen'tabra.]],
+    }
+}
+
 IMAGOdb.timelines.KURDRAN_WILDHAMMER = {
     {era = "WC2", text = "Battled and helped drive back the Old Horde. Later followed Turalyon's expedition to Outland to deal with the orcish threat once and for all. Chose to stay behind to ensure the Dark Portal was properly closed to safeguard Azeroth."},
     {era = "TBC", text = "Held a stronghold in Shadowmoon Valley and helped Alliance adventurers against Illidan Stormrage and the Burning Legion."},
@@ -1294,6 +1406,41 @@ IMAGOdb.timelines.LORD_MAXWELL_TYROSUS = {
     {
         era = "Midnight",
         text = [[Tyrosus paradoxically was not summoned to Quel'Thalas. He fought the emboldened Scourge in the Plaguelands and, with so few paladins now left in Light's Hope Chapel, recruited Darion Mograine's Ebon Blade to hold the lines at his side.]],
+    }
+}
+
+IMAGOdb.timelines.JAROD_SHADOWSONG = {
+    {
+        era = "Ancient",
+        text = [[Fought under Kur'talos Ravencrest and then Desdel Stareye during the War of the Ancients. Rose through the ranks and became the military leader of the Kaldorei resistance, with even Malfurion and Tyrande deferring to him. Burdened by survivor's guilt and disillusioned by how the Kaldorei moved on as a people, he left society with his wife Shalasyr after the war was won.]],
+    },
+    {
+        era = "WC3",
+        text = [[Heard rumors that the night elves, himself and his wife included, had become mortal.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[After living together for ten thousand years, Shalasyr fell ill and passed away. Distraught, Jarod rejoined the night elves in Darnassus and reconnected with his sister Maiev and former war companions. Uncovered Maiev's killing spree of Highborne and Worgen victims, and drove her off into exile.]],
+    },
+    {
+        era = "Cata",
+        text = [[Fought Ragnaros and the Twilight's Hammer on Mount Hyjal. Was captured by the cult and saved by an Adventurer. Commanded the night elven military and once more fought alongside dragons and Wild Gods.]],
+    },
+    {
+        era = "Legion",
+        text = [[Freed Maiev from Black Rook Hold and fought alongside her to defeat the ghost of Lord Desdel Stareye. Later, together with Cenarius, led the defense of Black Rook Hold when it came under assault from the Burning Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Fought under Maiev during the Battle of Darkshore against the Horde.]],
+    },
+    {
+        era = "DF",
+        text = [[Joined the united forces of Azeroth in the Emerald Dream to defeat Fyrakk the Blazing. Helped establish Bel'ameth and chose to remain there.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Fought on the Isle of Quel'Danas against the Devouring Host.]],
     }
 }
 
@@ -1542,6 +1689,25 @@ IMAGOdb.timelines.HIGH_INQUISITOR_WHITEMANE = {
     }
 }
 
+IMAGOdb.timelines.WARDRUID_LOTI = {
+    {
+        era = "Pre-BfA",
+        text = [[Earned her place in the Zanchuli Council as one of its younger members through the overwhelming support from Zandalar's hunters and warriors. Druidism saw a rise in popularity in the empire after she was appointed.]],
+    },
+    {
+        era = "BfA",
+        text = [[Investigated the use of illegal blood magic in Dazar'alor and frequently empowered the Horde Champion with Gonk's power. Remained loyal to Rastakhan when Yazma and Zul betrayed the crown and helped defend the kingdom against Mythrax the Unraveler. Fought against the Alliance in the Battle of Dazar'alor. Attended Queen Talanji's coronation and swore loyalty to her.]],
+    },
+    {
+        era = "DF",
+        text = [[Met with Zen'tabra of the Darkspear Tribe in the Ohn'ahran Plains and aided the green dragonflight to reclaim the portal on the Ancient Bough from the Primalists.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Accompanied Queen Talanji to Harandar.]],
+    }
+}
+
 IMAGOdb.timelines.DARION_MOGRAINE = {
     {era = "WC3", text = "Joined the Silver Hand and assisted with fighting the Scourge."},
     {era = "Classic", text = "Enlisted the aid of the Argent Dawn to attack Naxxramas, reclaiming the Ashbringer from his undead Father after defeating the Four Horsemen. Sacrificed himself to save the Argent Dawn, and was resurrected as a Death Knight."},
@@ -1653,7 +1819,7 @@ IMAGOdb.timelines.THORAS_TROLLBANE = {
     }
 }
 
-IMAGOdb.timelines.NEXUSKOENIG_SALHADAAR = {
+IMAGOdb.timelines.NEXUS_KING_SALHADAAR = {
     {
         era = "Ancient",
         text = [[Ruled as High Priest over the people of K'aresh and chose to ignore Locus Walker's warnings of the encroaching Void, ultimately blaming him for what would happen next. When Dimensius came, Salhadaar lost his physical body and K'aresh was destroyed. He fled with his people into the Twisting Nether.]],
