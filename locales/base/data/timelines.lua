@@ -171,11 +171,11 @@ IMAGOdb.timelines.LORTHEMAR_THERON = {
 }
 
 IMAGOdb.timelines.ERSTE_ARKANISTIN_THALYSSRA = {
-    {era = "Legion", text = "Thalyssra was exiled from Suramar for opposing the Legion and sent a magical distress signal that was intercepted by Khadgar, allowing her to establish a resistance in Shal’Aran. With  allies, she freed the nightborne from their dependence on the Nightwell, and led a joint assault with Horde and Alliance forces to liberate Suramar. After becoming leader, she chose to let the Nightwell fade and pledged the nightborne to the Horde."},
-    {era = "BfA", text = "During the Fourth War, Thalyssra assisted the Horde in breaking the Zandalari out of Stormwind, assisted the Horde fleet in Nazjatar, and later supported the rebellion against Sylvanas Windrunner. After N’Zoth’s defeat, she joined the Horde Council."},
+    {era = "Legion", text = "Thalyssra was exiled from Suramar for opposing the Legion and sent a magical distress signal that was intercepted by Khadgar, allowing her to establish a resistance in Shal'Aran. With  allies, she freed the nightborne from their dependence on the Nightwell, and led a joint assault with Horde and Alliance forces to liberate Suramar. After becoming leader, she chose to let the Nightwell fade and pledged the nightborne to the Horde."},
+    {era = "BfA", text = "During the Fourth War, Thalyssra assisted the Horde in breaking the Zandalari out of Stormwind, assisted the Horde fleet in Nazjatar, and later supported the rebellion against Sylvanas Windrunner. After N'Zoth's defeat, she joined the Horde Council."},
     {era = "SL", text = "Thalyssra witnessed the ritual to open the doorway to the Maw at the Frozen Throne within Icecrown Citadel. Following the defeat of the Jailer, Thalyssra and Lor'themar briefly traveled to Oribos in the Shadowlands to attend Sylvanas' trial."},
-    {era = "DF", text = "Thalyssra saw the Horde expedition depart to the Dragon Isles. She and her now-husband, Lor’themar Theron, mused on how they were fortunate to have had a brief respite and playfully bantered about who proposed to whom. Thalyssra eventually joined Alexstrasza and her allies to defend the growing Amirdrassil from Fyrakk the Blazing in the Emerald Dream."},
-    {era = "Midnight", text = "Thalyssra stayed in Sunfury Spire in Silvermoon until the Sunwell’s corruption. She requested aid from Suramar City, but when no response came, she went to investigate and uncovered Twilight’s Blade infiltrators. After restoring order, she led the nightborne army to Silvermoon to aid in the assault on the Devouring Host."},
+    {era = "DF", text = "Thalyssra saw the Horde expedition depart to the Dragon Isles. She and her now-husband, Lor'themar Theron, mused on how they were fortunate to have had a brief respite and playfully bantered about who proposed to whom. Thalyssra eventually joined Alexstrasza and her allies to defend the growing Amirdrassil from Fyrakk the Blazing in the Emerald Dream."},
+    {era = "Midnight", text = "Thalyssra stayed in Sunfury Spire in Silvermoon until the Sunwell's corruption. She requested aid from Suramar City, but when no response came, she went to investigate and uncovered Twilight's Blade infiltrators. After restoring order, she led the nightborne army to Silvermoon to aid in the assault on the Devouring Host."},
 }
 
 IMAGOdb.timelines.LADY_LIADRIN = {
@@ -453,9 +453,9 @@ IMAGOdb.timelines.mehlar_dawnblade = {
 IMAGOdb.timelines.DANATH_TROLLBANN = {
     {era = "WC2", text = "Served under General Turalyon as a commander and tactician of the Alliance of Lordaeron, repelling the orcish Horde that threatened the Eastern Kingdoms and pursuing them beyond the Dark Portal to their homeworld of Draenor."},
     {era = "TBC", text = "Led the forces of Honor Hold in staving off the demonic armies of Hellfire Peninsula."},
-    {era = "Legion", text = "Aided heroic warriors in acquiring Strom’kar, the Warbreaker. This legendary sword once belonged to King Thoradin, the first human king and ancestor of Danath Trollbane himself. After the fall of the Legion, Danath returned to a long-ruined Stromgarde to rebuild the city and claim his birthright as king."},
+    {era = "Legion", text = "Aided heroic warriors in acquiring Strom'kar, the Warbreaker. This legendary sword once belonged to King Thoradin, the first human king and ancestor of Danath Trollbane himself. After the fall of the Legion, Danath returned to a long-ruined Stromgarde to rebuild the city and claim his birthright as king."},
     {era = "BfA", text = "Fought in the Battle of Stromgarde, leading his forces in the defense of their city. The struggle for the Arathi Highlands raged between the Horde and Alliance, sowing chaos across the formerly tranquil farmland."},
-    {era = "TWW", text = "Joined the Alliance forces dispatched to Khaz Algar to combat the Harbinger, Xal’atath, and her nerubian forces. Routed a rebellion led by human supremacist Marran Trollbane, niece of Danath and regent of Stromgarde in his absence."},
+    {era = "TWW", text = "Joined the Alliance forces dispatched to Khaz Algar to combat the Harbinger, Xal'atath, and her nerubian forces. Routed a rebellion led by human supremacist Marran Trollbane, niece of Danath and regent of Stromgarde in his absence."},
     {era = "Midnight", text = "Helped Arator learn the history of his father, Turalyon, and his part in the events of the Second War. Introduced heroes to the Arcantina, a home away from home for adventurers from all over Azeroth."},
 }
 
@@ -1021,7 +1021,7 @@ IMAGOdb.timelines.AEONARA_DAWNSHADE = {
     },
     {
         era = "TWW",
-        text = [[Accompanied Alleria Windrunner and the void elves in K’aresh to fight Dimensius at Manaforge Omega.]],
+        text = [[Accompanied Alleria Windrunner and the void elves in K'aresh to fight Dimensius at Manaforge Omega.]],
     },
     {
         era = "Midnight",
@@ -1109,9 +1109,9 @@ IMAGOdb.timelines.DECIMUS = {
 
 IMAGOdb.timelines.KING_MRGL_MRGL = {
     {era = "WotLK", text = "Joined the D.E.H.T.A. expedition group in the Borean Tundra and began his research into murlocs using his unorthodox disguise. The murlocs chose him to be their king in a time of strife; King Mrgl-Mrgl defended the helpless tribe and cemented his place as king."},
-    {era = "Legion", text = "Alongside the young murloc hero Murky, King Mrgl-Mrgl attempted to turn the Swamprock murlocs of Highmountain from their violent ways. With the king’s help, Murky was able to establish himself as the more peaceful leader of his new “Murkloc” tribe."},
-    {era = "BfA", text = "King Mrgl-Mrgl can be found in Nazjatar as the proprietor of Mrgl’s Bar and Grill, an establishment catering exclusively to the murlocs of the area."},
-    {era = "Midnight", text = "After defending the murlocs of Zul’Aman from an attacking tribe of deep sea murlocs, King Mrgl-Mrgl was declared the Loa of Murlocs. His worshippers kept him trapped in their swamp-bound temple as their god and savior."},
+    {era = "Legion", text = "Alongside the young murloc hero Murky, King Mrgl-Mrgl attempted to turn the Swamprock murlocs of Highmountain from their violent ways. With the king's help, Murky was able to establish himself as the more peaceful leader of his new “Murkloc” tribe."},
+    {era = "BfA", text = "King Mrgl-Mrgl can be found in Nazjatar as the proprietor of Mrgl's Bar and Grill, an establishment catering exclusively to the murlocs of the area."},
+    {era = "Midnight", text = "After defending the murlocs of Zul'Aman from an attacking tribe of deep sea murlocs, King Mrgl-Mrgl was declared the Loa of Murlocs. His worshippers kept him trapped in their swamp-bound temple as their god and savior."},
 }
 
 IMAGOdb.timelines.MONTE_GAZLOWE = {
@@ -1250,11 +1250,11 @@ IMAGOdb.timelines.KURDRAN_WILDHAMMER = {
 IMAGOdb.timelines.LIRATH_WINDRUNNER = {
     {
         era = "Pre-WC2",
-        text = [[Appointed as Royal Musician by Prince Kael’thas Sunstrider. Began training as a ranger with his sister Vereesa after the death of their parents.]],
+        text = [[Appointed as Royal Musician by Prince Kael'thas Sunstrider. Began training as a ranger with his sister Vereesa after the death of their parents.]],
     },
     {
         era = "WC2",
-        text = [[Killed by the Horde during the Burning of Quel’thalas. His body was recovered by Sylvanas and buried alongside their parents in Eversong Woods.]],
+        text = [[Killed by the Horde during the Burning of Quel'thalas. His body was recovered by Sylvanas and buried alongside their parents in Eversong Woods.]],
     },
     {
         era = "Pre-BfA",
@@ -1534,31 +1534,31 @@ IMAGOdb.timelines.HIGH_INQUISITOR_WHITEMANE = {
     },
     {
         era = "SL",
-        text = [[Acted as the Ebon Blade’s emissary to the Alliance. Aided with the assault on the Sanctum of Domination. Returned to Azeroth to assist the Ebon Blade in holding back the Scourge.]],
+        text = [[Acted as the Ebon Blade's emissary to the Alliance. Aided with the assault on the Sanctum of Domination. Returned to Azeroth to assist the Ebon Blade in holding back the Scourge.]],
     },
     {
         era = "Midnight",
-        text = [[Defended Light’s Hope Chapel from the Scourge along with the rest of the Four Horsemen.]],
+        text = [[Defended Light's Hope Chapel from the Scourge along with the rest of the Four Horsemen.]],
     }
 }
 
 IMAGOdb.timelines.DARION_MOGRAINE = {
     {era = "WC3", text = "Joined the Silver Hand and assisted with fighting the Scourge."},
     {era = "Classic", text = "Enlisted the aid of the Argent Dawn to attack Naxxramas, reclaiming the Ashbringer from his undead Father after defeating the Four Horsemen. Sacrificed himself to save the Argent Dawn, and was resurrected as a Death Knight."},
-    {era = "WotLK", text = "Made the ruler of the Death Knights of Acherus. Broke free from the Lich King’s control and started the Ebon Blade. Assisted in the war against the scourge in Icecrown and Zul’Drak. Helped to defeat the Lich King at Icecrown Citadel. Found that Bolvar Fordragon has been crowned the new Lich King."},
-    {era = "WoD", text = "Journeyed to alternate Draenor to attempt to discover Ner’zhul’s secrets in an attempt to save Bolvar."},
+    {era = "WotLK", text = "Made the ruler of the Death Knights of Acherus. Broke free from the Lich King's control and started the Ebon Blade. Assisted in the war against the scourge in Icecrown and Zul'Drak. Helped to defeat the Lich King at Icecrown Citadel. Found that Bolvar Fordragon has been crowned the new Lich King."},
+    {era = "WoD", text = "Journeyed to alternate Draenor to attempt to discover Ner'zhul's secrets in an attempt to save Bolvar."},
     {era = "Legion", text = "Aided Bolvar and the chosen Death Knight in resurrecting the new Four Horsemen. Was fatally wounded when attempting to resurrect Tirion Fordring, but was raised by Bolvar to lead the horsemen."},
-    {era = "BfA", text = "Gathered fallen champions of the Horde and Alliance to be raised as the next generation of Death Knights. Personally sent the new generation to their faction’s capitals."},
-    {era = "SL", text = "Stepped down as leader of the Ebon Blade, relinquishing title to Bolvar following the destruction of the Helm of Domination. Summoned the champions of Azeroth to meet with Bolvar and adventure into the Maw. Helped attack the Sanctum of Domination. Returned to Azeroth following the Jailer’s defeat to hold back the Scourge."},
-    {era = "Midnight", text = "Defended Light’s Hope Chapel from the Scourge along with the rest of the Four Horsemen."},
+    {era = "BfA", text = "Gathered fallen champions of the Horde and Alliance to be raised as the next generation of Death Knights. Personally sent the new generation to their faction's capitals."},
+    {era = "SL", text = "Stepped down as leader of the Ebon Blade, relinquishing title to Bolvar following the destruction of the Helm of Domination. Summoned the champions of Azeroth to meet with Bolvar and adventure into the Maw. Helped attack the Sanctum of Domination. Returned to Azeroth following the Jailer's defeat to hold back the Scourge."},
+    {era = "Midnight", text = "Defended Light's Hope Chapel from the Scourge along with the rest of the Four Horsemen."},
 }
 
 IMAGOdb.timelines.THASSARIAN = {
     {era = "WC3", text = "Thassarian enlisted in the army and followed Prince Arthas to Northrend to hunt Mal'Ganis. There, he was killed by Falric and then converted into a death knight by Arthas.  As a soldier of the Scourge, he was forced to attack Lordaeron and Quel'Thalas."},
-    {era = "Pre-WotLK", text = "Thassarian was sent to Acherus to attack Light’s Hope Chapel. However, the death knights were defeated, with Thassarian himself being convinced by his father’s ghost to stand down. No longer under the control of the Lich King, Thassarian then traveled to Stormwind and met with King Varian Wrynn who accepted the Knights of the Ebon Blade as allies."},
+    {era = "Pre-WotLK", text = "Thassarian was sent to Acherus to attack Light's Hope Chapel. However, the death knights were defeated, with Thassarian himself being convinced by his father's ghost to stand down. No longer under the control of the Lich King, Thassarian then traveled to Stormwind and met with King Varian Wrynn who accepted the Knights of the Ebon Blade as allies."},
     {era = "WotLK", text = "Thassarian joined the Alliance in Northrend to fight against the Scourge and rescue his sister. He later aided the war effort in Icecrown by using his knowledge of the Scourge to weaken their defenses and help open a path to the Citadel. Fighting alongside the Knights of the Ebon Blade, he confronted the Lich King but was forced to withdraw."},
-    {era = "WoD", text = "Journeyed to alternate Draenor to attempt to discover Ner’zhul’s secrets in an attempt to save Bolvar."},
-    {era = "Cata", text = "Thassarian led Alliance forces at Andorhal against the Forsaken. He later fought in Mount Hyjal against Ragnaros’ forces."},
+    {era = "WoD", text = "Journeyed to alternate Draenor to attempt to discover Ner'zhul's secrets in an attempt to save Bolvar."},
+    {era = "Cata", text = "Thassarian led Alliance forces at Andorhal against the Forsaken. He later fought in Mount Hyjal against Ragnaros' forces."},
     {era = "Legion", text = "Thassarian aided the new Deathlord in raising the new Four Horsemen. Later, he fought at the Battle for the Exodar.  Rescued Koltira Deathweaver from the Undercity. "},
     {era = "SL", text = "Followed Bolvar Fordragon into the Shadowlands to stop Sylvanas Windrunner."},
     {era = "Midnight", text = "Helped defend Light's Hope Chapel in the Eastern Plaguelands."},
@@ -1649,7 +1649,7 @@ IMAGOdb.timelines.THORAS_TROLLBANE = {
     },
     {
         era = "Midnight",
-        text = [[Aided in the defense of Light’s Hope Chapel while the Argent Crusade was occupied with the defense of the Sunwell.]],
+        text = [[Aided in the defense of Light's Hope Chapel while the Argent Crusade was occupied with the defense of the Sunwell.]],
     }
 }
 
@@ -1694,15 +1694,15 @@ IMAGOdb.timelines.L_URA = {
 IMAGOdb.timelines.MOR_DUUN = {
     {
         era = "TWW",
-        text = [[Formed the Twilight’s Blade with the remnants of the Twilight’s Hammer, pledging himself to Xal’atath’s service.]],
+        text = [[Formed the Twilight's Blade with the remnants of the Twilight's Hammer, pledging himself to Xal'atath's service.]],
     },
     {
         era = "Pre-MN",
-        text = [[Ordered the Twilight’s Blade to recruit members in Stormwind and Orgrimmar, taking advantage of the hopelessness and confusion caused by the Radiant Song.]],
+        text = [[Ordered the Twilight's Blade to recruit members in Stormwind and Orgrimmar, taking advantage of the hopelessness and confusion caused by the Radiant Song.]],
     },
     {
         era = "Midnight",
-        text = [[Led the Twilight’s Blade’s assault on Zul’Aman, sacking Atal’Aman and commanding his armies from the Broken Throne before being struck down by Zul’Jarra, Liadrin, and an adventurer.]],
+        text = [[Led the Twilight's Blade's assault on Zul'Aman, sacking Atal'Aman and commanding his armies from the Broken Throne before being struck down by Zul'Jarra, Liadrin, and an adventurer.]],
     }
 }
 
@@ -1734,7 +1734,7 @@ IMAGOdb.timelines.AKILZON = {
     {era = "TBC", text = "Bound by Hex Lord Malacrass into the body of Man'ye, the father of Zul'jarra and Zul'jan. Man'ye was transformed into an eagle-headed mystic, falling to invading adventurers."},
     {era = "WotLK", text = "Aided the Zandalari in bringing an end to the Drakkari trolls and their consumption of loa for power."},
     {era = "Cata", text = "Once again subjected to Hex Lord Malacrass' dark magic. Her spirit was freed upon the death of her avatar at the hands of adventurers."},
-    {era = "BfA", text = "The Amani claimed a small section of Dazar’alor as their own, with shrines and disciples for each loa. Akil'zon was no exception."},
+    {era = "BfA", text = "The Amani claimed a small section of Dazar'alor as their own, with shrines and disciples for each loa. Akil'zon was no exception."},
     {era = "Midnight", text = "Returns to Zul'Aman to unleash the power of the storms against Xal'atath's forces."},
 }
 

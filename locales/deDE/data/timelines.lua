@@ -20,7 +20,7 @@ IMAGOdb.timelines.ERSTE_ARKANISTIN_THALYSSRA = {
     {era = "BfA", text = "Während des Vierten Krieges half Thalyssra der Horde dabei, die Zandalari aus Sturmwind zu befreien, unterstützte die Hordenflotte in Nazjatar und stellte sich später auf die Seite der Rebellion gegen Sylvanas Windläufer. Nach N'Zoths Niederlage trat sie dem Hordenrat bei."},
     {era = "SL", text = "Thalyssra war Zeugin des Rituals, das am Frostthron in der Eiskronenzitadelle das Tor zum Schlund öffnete. Nach der Niederlage des Kerkermeisters reisten Thalyssra und Lor'themar kurzzeitig nach Oribos in den Schattenlanden, um Sylvanas' Prozess beizuwohnen."},
     {era = "DF", text = "Thalyssra sah die Hordenexpedition zu den Dracheninseln aufbrechen. Sie und ihr inzwischen Ehemann Lor'themar Theron sinnierten darüber, wie glücklich sie waren, eine kurze Atempause gehabt zu haben, und neckten sich spielerisch darüber, wer wem den Antrag gemacht hatte. Später schloss sich Thalyssra Alexstrasza und ihren Verbündeten an, um das wachsende Amirdrassil im Smaragdgrünen Traum gegen Fyrakk den Brennenden zu verteidigen."},
-    {era = "Midnight", text = "Thalyssra blieb in der Sonnenzornspitze in Silbermond, bis die Verderbnis des Sonnenbrunnens einsetzte. Sie bat Suramar um Hilfe, doch als keine Antwort kam, ging sie der Sache nach und enttarnte Infiltratoren von Twilight’s Blade. Nachdem sie die Ordnung wiederhergestellt hatte, führte sie die Armee der Nachtgeborenen nach Silbermond, um beim Angriff auf die Verschlingende Horde zu helfen."},
+    {era = "Midnight", text = "Thalyssra blieb in der Sonnenzornspitze in Silbermond, bis die Verderbnis des Sonnenbrunnens einsetzte. Sie bat Suramar um Hilfe, doch als keine Antwort kam, ging sie der Sache nach und enttarnte Infiltratoren von Twilight's Blade. Nachdem sie die Ordnung wiederhergestellt hatte, führte sie die Armee der Nachtgeborenen nach Silbermond, um beim Angriff auf die Verschlingende Horde zu helfen."},
 }
 
 IMAGOdb.timelines.LADY_LIADRIN = {
@@ -217,7 +217,7 @@ IMAGOdb.timelines.LORD_SALTHERIL = {
     },
     {
         era = "Midnight",
-        text = [[Öffnete sein Anwesen für die Magister, die Weltenwanderer, die Blutritter und sogar die zwielichtigen Gestalten der Mördergasse für eine Veranstaltung, die er „Saltherils Soiree“ nennt. Diese Fraktionen buhlen dort um die Gunst und Förderung der Sin’dorei-Adligen und Abenteurer.]],
+        text = [[Öffnete sein Anwesen für die Magister, die Weltenwanderer, die Blutritter und sogar die zwielichtigen Gestalten der Mördergasse für eine Veranstaltung, die er „Saltherils Soiree“ nennt. Diese Fraktionen buhlen dort um die Gunst und Förderung der Sin'dorei-Adligen und Abenteurer.]],
     }
 }
 
@@ -316,7 +316,7 @@ IMAGOdb.timelines.PROPHET_VELEN = {
     },
     {
         era = "BfA",
-        text = [[Beteiligte sich an der Heilung von Azeroths Wunden, die Sargeras’ Schwert hinterlassen hatte. Versorgte persönlich die Flüchtlinge von Teldrassil.]],
+        text = [[Beteiligte sich an der Heilung von Azeroths Wunden, die Sargeras' Schwert hinterlassen hatte. Versorgte persönlich die Flüchtlinge von Teldrassil.]],
     },
     {
         era = "DF",
@@ -543,7 +543,7 @@ IMAGOdb.timelines.ALONSUS_FAOL = {
 IMAGOdb.timelines.TAHU_SAGEWIND = {
     {
         era = "WotLK",
-        text = [[Ergründete gemeinsam mit Aponi Lichtmähne die Natur An’shes in Donnerfels. Dort wurden die ersten Schritte zur Gründung der taurischen Orden der Seher und der Sonnenläufer unternommen.]],
+        text = [[Ergründete gemeinsam mit Aponi Lichtmähne die Natur An'shes in Donnerfels. Dort wurden die ersten Schritte zur Gründung der taurischen Orden der Seher und der Sonnenläufer unternommen.]],
     },
     {
         era = "Cata",
@@ -555,11 +555,11 @@ IMAGOdb.timelines.TAHU_SAGEWIND = {
     },
     {
         era = "TWW",
-        text = [[Unterstützte die Horde auf der Insel von Dorn im Kampf gegen Xal’atath.]],
+        text = [[Unterstützte die Horde auf der Insel von Dorn im Kampf gegen Xal'atath.]],
     },
     {
         era = "Midnight",
-        text = [[Wurde vom Sonnenbrunnen gerufen und kämpfte auf der Insel Quel’Danas gegen die Invasion der Leere.]],
+        text = [[Wurde vom Sonnenbrunnen gerufen und kämpfte auf der Insel Quel'Danas gegen die Invasion der Leere.]],
     }
 }
 
@@ -601,7 +601,7 @@ IMAGOdb.timelines.WAR_CHAPLAIN_SENN = {
     },
     {
         era = "Pre-SL",
-        text = [[Half Turalyon und Alleria Windläufer bei der Jagd auf Sylvanas Windläufer und arbeitete dabei nur äußerst widerwillig mit den Ren’dorei zusammen.]],
+        text = [[Half Turalyon und Alleria Windläufer bei der Jagd auf Sylvanas Windläufer und arbeitete dabei nur äußerst widerwillig mit den Ren'dorei zusammen.]],
     },
     {
         era = "Midnight",
@@ -638,7 +638,7 @@ IMAGOdb.timelines.ARATOR = {
 IMAGOdb.timelines.NOLAKI = {
     {
         era = "BfA",
-        text = [[Wurde in jungen Jahren unter dem Champion des Lichts Ra'wani Kanae zum Paladin ausgebildet. Nahm nicht an der Schlacht um Dazar’alor teil.]],
+        text = [[Wurde in jungen Jahren unter dem Champion des Lichts Ra'wani Kanae zum Paladin ausgebildet. Nahm nicht an der Schlacht um Dazar'alor teil.]],
     },
     {
         era = "DF",
@@ -692,7 +692,7 @@ IMAGOdb.timelines.HADWIN = {
 IMAGOdb.timelines.TALTHIS = {
     {
         era = "WC3",
-        text = [[Überlebte als Kind den Fall von Quel’Thalas.]],
+        text = [[Überlebte als Kind den Fall von Quel'Thalas.]],
     },
     {
         era = "Pre-DF",
@@ -783,7 +783,7 @@ Er konstruierte die Leerenschmiede – einen Fokuspunkt dunkler Energie –, die
 IMAGOdb.timelines.KING_MRGL_MRGL = {
     {era = "WotLK", text = "Schloss sich der Expeditionstruppe von D.E.H.T.A. in der Boreanischen Tundra an und begann mithilfe seiner unorthodoxen Verkleidung seine Forschungen über Murlocs. In einer Zeit der Not wählten die Murlocs ihn zu ihrem König; König Mrgl-Mrgl verteidigte den hilflosen Stamm und festigte seinen Platz als König."},
     {era = "Legion", text = "An der Seite des jungen Murloc-Helden Murky versuchte König Mrgl-Mrgl, die Swamprock-Murlocs in Hochberg von ihren gewalttätigen Wegen abzubringen. Mit der Hilfe des Königs konnte Murky sich als friedlicherer Anführer seines neuen „Murkloc“-Stammes etablieren."},
-    {era = "BfA", text = "In Nazjatar ist König Mrgl-Mrgl als Betreiber von Mrgl’s Bar and Grill anzutreffen, einem Etablissement, das ausschließlich die Murlocs der Gegend bewirtet."},
+    {era = "BfA", text = "In Nazjatar ist König Mrgl-Mrgl als Betreiber von Mrgl's Bar and Grill anzutreffen, einem Etablissement, das ausschließlich die Murlocs der Gegend bewirtet."},
     {era = "Midnight", text = "Nachdem er die Murlocs von Zul'Aman gegen einen angreifenden Stamm von Tiefsee-Murlocs verteidigt hatte, wurde König Mrgl-Mrgl zum Loa der Murlocs erklärt. Seine Verehrer hielten ihn in ihrem sumpfgebundenen Tempel gefangen — als ihren Gott und Retter."},
 }
 
@@ -797,7 +797,7 @@ IMAGOdb.timelines.MONTE_GAZLOWE = {
     { era = "BfA", text = "Half Prinz Erazmin und der Allianz dabei, Mechagon von der grausamen Herrschaft von König Mechagon zu befreien. Schloss sich außerdem Varok Saurfangs Rebellion gegen Sylvanas Windläufer an. Nachdem Handelsprinz Gallywix geflohen war, trat Gazlowe der Horde offiziell als neuer Handelsprinz des Bilgewasserkartells bei. Von Thrall wurde er in den Rat der Horde berufen und über die Jahre waren die beiden gute Freunde geworden." },
     { era = "Pre-SL", text = "Versuchte nach dem Vierten Krieg, die internen Probleme der Horde zu bewältigen, musste jedoch einsehen, dass die Jagd auf Sylvanas Windläufer Vorrang hatte." },
     { era = "Pre-TWW", text = "Traf eine Vereinbarung mit Marin Noggenfogger, um ihre Kartelle enger zusammenzuführen, und setzte bessere Arbeitsbedingungen für die Goblins des Dampfdruckkartells durch." },
-    { era = "TWW", text = "Unterstützte die Expedition von Heilsturz in Azj-Kahet und bemerkte dabei Goblins der Venture Company, die dort herumschnüffelten. Arbeitete gemeinsam mit Renzik „das Messer“ und Orweyna daran, Gallywix’ Abmachung mit Xal'atath aufzudecken, und befreite schließlich Lorenhall von Gallywix’ Tyrannei. Zusammen mit Mathias Shaw verstreute er Renziks Asche, nachdem dieser sich für Gazlowe geopfert hatte. Anschließend wurde Gazlowe Teil des neuen Rats von Lorenhall." },
+    { era = "TWW", text = "Unterstützte die Expedition von Heilsturz in Azj-Kahet und bemerkte dabei Goblins der Venture Company, die dort herumschnüffelten. Arbeitete gemeinsam mit Renzik „das Messer“ und Orweyna daran, Gallywix' Abmachung mit Xal'atath aufzudecken, und befreite schließlich Lorenhall von Gallywix' Tyrannei. Zusammen mit Mathias Shaw verstreute er Renziks Asche, nachdem dieser sich für Gazlowe geopfert hatte. Anschließend wurde Gazlowe Teil des neuen Rats von Lorenhall." },
     { era = "Midnight", text = "Nachdem Orweyna ihm in Lorenhall geholfen hatte, versprach Gazlowe ihr, nach Harandar zu kommen und ihre Kultur kennenzulernen. Er genoss es, mehr über die Hara'ti zu erfahren." },
 }
 
@@ -866,7 +866,7 @@ IMAGOdb.timelines.VALEERA_SANGUINAR = {
 IMAGOdb.timelines.FREYA = {
     {
         era = "Ancient",
-        text = [[Half dabei, das Schwarze Imperium zu besiegen, indem sie Therazane bezwang. Anschließend bevölkerte sie Azeroth erneut mit Pflanzenleben und experimentierte mit Lebensmagie im Krater von Un’Goro, im Sholazarbecken und im Tal der Ewigen Blüten. Titanenaufzeichnungen zufolge erschuf sie den Smaragdgrünen Traum und pflanzte dort den Weltenbaum G’Hanir. Aus den von ihr erschaffenen Tieren entwickelten sich später die Wilden Götter und die Loa. Außerdem half sie dabei, die Drachenaspekte mit ihrer Macht zu erfüllen.]],
+        text = [[Half dabei, das Schwarze Imperium zu besiegen, indem sie Therazane bezwang. Anschließend bevölkerte sie Azeroth erneut mit Pflanzenleben und experimentierte mit Lebensmagie im Krater von Un'Goro, im Sholazarbecken und im Tal der Ewigen Blüten. Titanenaufzeichnungen zufolge erschuf sie den Smaragdgrünen Traum und pflanzte dort den Weltenbaum G'Hanir. Aus den von ihr erschaffenen Tieren entwickelten sich später die Wilden Götter und die Loa. Außerdem half sie dabei, die Drachenaspekte mit ihrer Macht zu erfüllen.]],
     },
     {
         era = "Pre-WotLK",
@@ -1215,15 +1215,15 @@ IMAGOdb.timelines.NALORAKK = {
     },
     {
         era = "WotLK",
-        text = [[Half dem Hexendoktor Khufu dabei, die versklavten Loa der wahnsinnigen Drakkari in Zul’Drak zu befreien.]],
+        text = [[Half dem Hexendoktor Khufu dabei, die versklavten Loa der wahnsinnigen Drakkari in Zul'Drak zu befreien.]],
     },
     {
         era = "Cata",
-        text = [[Seine Essenz wurde erneut von Malacrass gestohlen und in den Körper von Daakara versiegelt, dem Kriegsherrn und Nachfolger Zul’jins persönlich. Sein Geist wurde befreit, als die Champions von Vol'jin Daakara töteten. Da er weder den Amani noch den Bruchhauern eine dritte Chance geben wollte, hörte Nalorakk auf, die Gebete der Trolle zu erhören, und ließ nur noch wenige verbliebene loyale Bruchhauer in seine Nähe.]],
+        text = [[Seine Essenz wurde erneut von Malacrass gestohlen und in den Körper von Daakara versiegelt, dem Kriegsherrn und Nachfolger Zul'jins persönlich. Sein Geist wurde befreit, als die Champions von Vol'jin Daakara töteten. Da er weder den Amani noch den Bruchhauern eine dritte Chance geben wollte, hörte Nalorakk auf, die Gebete der Trolle zu erhören, und ließ nur noch wenige verbliebene loyale Bruchhauer in seine Nähe.]],
     },
     {
         era = "Midnight",
-        text = [[Gewährte Zul'jarra in seinem mystischen Bau eine spirituelle Prüfung, um ihre Würdigkeit als Hash’ey zu beurteilen. Nachdem sie erfolgreich bestand, schloss sich Nalorakk den Amani erneut als Loa des Krieges an und führte die Bruchhauer in die Schlacht gegen die Zwielichtklinge am Zerschlagenen Thron.]],
+        text = [[Gewährte Zul'jarra in seinem mystischen Bau eine spirituelle Prüfung, um ihre Würdigkeit als Hash'ey zu beurteilen. Nachdem sie erfolgreich bestand, schloss sich Nalorakk den Amani erneut als Loa des Krieges an und führte die Bruchhauer in die Schlacht gegen die Zwielichtklinge am Zerschlagenen Thron.]],
     }
 }
 
@@ -1377,19 +1377,19 @@ IMAGOdb.timelines.GORGONNA = {
     },
     {
         era = "WotLK",
-        text = [[Diente unter Krennas Kommando als ihre Beraterin in Burg Siegeswall während des Feldzugs in Nordend. Untergrub die außergewöhnlich grausamen Befehle ihrer Schwester und wurde von ihr zu einem Mak’gora herausgefordert. Gorgonna gewann, bereute es jedoch zutiefst, ihr eigenes Blut getötet zu haben.]],
+        text = [[Diente unter Krennas Kommando als ihre Beraterin in Burg Siegeswall während des Feldzugs in Nordend. Untergrub die außergewöhnlich grausamen Befehle ihrer Schwester und wurde von ihr zu einem Mak'gora herausgefordert. Gorgonna gewann, bereute es jedoch zutiefst, ihr eigenes Blut getötet zu haben.]],
     },
     {
         era = "WoD",
-        text = [[Nach Garroshs Sturz kehrte Gorgonna zum Kriegshymnenclan im Eschental zurück. Gewann das Mak’gora um die Führung des Clans.]],
+        text = [[Nach Garroshs Sturz kehrte Gorgonna zum Kriegshymnenclan im Eschental zurück. Gewann das Mak'gora um die Führung des Clans.]],
     },
     {
         era = "DF",
-        text = [[Vertrat den Kriegshymnenclan beim ersten Kosh’harg-Fest auf Azeroth und sammelte neue Rekruten.]],
+        text = [[Vertrat den Kriegshymnenclan beim ersten Kosh'harg-Fest auf Azeroth und sammelte neue Rekruten.]],
     },
     {
         era = "TWW",
-        text = [[Schloss sich den Streitkräften der Horde in Khaz Algar im Krieg gegen Xal’atath an.]],
+        text = [[Schloss sich den Streitkräften der Horde in Khaz Algar im Krieg gegen Xal'atath an.]],
     },
     {
         era = "Midnight",
@@ -1400,11 +1400,11 @@ IMAGOdb.timelines.GORGONNA = {
 IMAGOdb.timelines.GARONA_HALFORCEN = {
     {
         era = "Pre-WC1",
-        text = [[Als Tochter einer gefangenen Draenei wurde Garona als Halborcin und Halbdraenei geboren. Sie überlebte als Mischling im grausamen Klingenwindclan und wurde später von Gul’dan aufgenommen, um zu seiner perfektesten Assassinin zu werden. Gul’dan überzeugte sie davon, halb Mensch zu sein, wodurch sie zur idealen Kandidatin wurde, um Sturmwind zu infiltrieren, sobald die Orcs in den Krieg ziehen würden.]],
+        text = [[Als Tochter einer gefangenen Draenei wurde Garona als Halborcin und Halbdraenei geboren. Sie überlebte als Mischling im grausamen Klingenwindclan und wurde später von Gul'dan aufgenommen, um zu seiner perfektesten Assassinin zu werden. Gul'dan überzeugte sie davon, halb Mensch zu sein, wodurch sie zur idealen Kandidatin wurde, um Sturmwind zu infiltrieren, sobald die Orcs in den Krieg ziehen würden.]],
     },
     {
         era = "WC1",
-        text = [[Kämpfte für die Horde in den ersten Gefechten auf Azeroth. Infiltrierte erfolgreich Sturmwind und spionierte den Wächter Medivh aus. Dabei freundete sie sich aufrichtig mit den Menschen an, und Gerüchten zufolge entwickelte sich zwischen ihr und Medivh sogar mehr als nur Freundschaft. Sie half der Allianz gegen die Horde, wurde jedoch durch Medivhs Verrat erschüttert und konnte sich Gul’dans Gedankenkontrolle nicht mehr widersetzen. Schließlich wurde sie gezwungen, König Llane Wrynn zu töten.]],
+        text = [[Kämpfte für die Horde in den ersten Gefechten auf Azeroth. Infiltrierte erfolgreich Sturmwind und spionierte den Wächter Medivh aus. Dabei freundete sie sich aufrichtig mit den Menschen an, und Gerüchten zufolge entwickelte sich zwischen ihr und Medivh sogar mehr als nur Freundschaft. Sie half der Allianz gegen die Horde, wurde jedoch durch Medivhs Verrat erschüttert und konnte sich Gul'dans Gedankenkontrolle nicht mehr widersetzen. Schließlich wurde sie gezwungen, König Llane Wrynn zu töten.]],
     },
     {
         era = "WC2",
@@ -1412,11 +1412,11 @@ IMAGOdb.timelines.GARONA_HALFORCEN = {
     },
     {
         era = "Pre-WotLK",
-        text = [[Stellte sich Cho’gall entgegen, unterlag jedoch dem Oger-Magier und geriet erneut unter Gedankenkontrolle. Sie erhielt den Auftrag, König Varian Wrynn während eines Friedensgipfels zwischen Horde und Allianz zu ermorden. Obwohl Varian den Anschlag abwehren konnte, betrachtete er ihn als einen Verrat der Horde, wodurch sich die Spannungen zwischen den Fraktionen erheblich verschärften.]],
+        text = [[Stellte sich Cho'gall entgegen, unterlag jedoch dem Oger-Magier und geriet erneut unter Gedankenkontrolle. Sie erhielt den Auftrag, König Varian Wrynn während eines Friedensgipfels zwischen Horde und Allianz zu ermorden. Obwohl Varian den Anschlag abwehren konnte, betrachtete er ihn als einen Verrat der Horde, wodurch sich die Spannungen zwischen den Fraktionen erheblich verschärften.]],
     },
     {
         era = "Cata",
-        text = [[Half dabei, Lirastrasza zu retten und dem Schattenhammerkult einen schweren Schlag zu versetzen. Auf Rache aus, infiltrierte sie gemeinsam mit einem Abenteurer die Bastion des Zwielichts und trug schließlich dazu bei, Cho’gall endgültig zu töten.]],
+        text = [[Half dabei, Lirastrasza zu retten und dem Schattenhammerkult einen schweren Schlag zu versetzen. Auf Rache aus, infiltrierte sie gemeinsam mit einem Abenteurer die Bastion des Zwielichts und trug schließlich dazu bei, Cho'gall endgültig zu töten.]],
     },
     {
         era = "Legion",
@@ -1428,7 +1428,7 @@ IMAGOdb.timelines.GARONA_HALFORCEN = {
     },
     {
         era = "DF",
-        text = [[Wurde von Thrall zum Kosh’harg-Fest eingeladen und erhielt ein Angebot, dem Clan der Zerschmetterten Hand beizutreten. Überrascht, als halbblütige Orcin und Außenseiterin akzeptiert zu werden, empfand sie Erleichterung und Freude darüber, wie sehr sich die Horde verändert hatte, und war geneigt, das Angebot anzunehmen.]],
+        text = [[Wurde von Thrall zum Kosh'harg-Fest eingeladen und erhielt ein Angebot, dem Clan der Zerschmetterten Hand beizutreten. Überrascht, als halbblütige Orcin und Außenseiterin akzeptiert zu werden, empfand sie Erleichterung und Freude darüber, wie sehr sich die Horde verändert hatte, und war geneigt, das Angebot anzunehmen.]],
     },
     {
         era = "TWW",
@@ -1443,7 +1443,7 @@ IMAGOdb.timelines.GARONA_HALFORCEN = {
 IMAGOdb.timelines.REXXAR = {
     {
         era = "WC1",
-        text = [[Schwor Kriegshäuptling Schwarzfaust die Treue, um ihn davon abzuhalten, den pazifistischen Mok’Nathal-Clan auszulöschen. Durchschritt das Dunkle Portal und kämpfte für die Alte Horde während des Ersten Krieges.]],
+        text = [[Schwor Kriegshäuptling Schwarzfaust die Treue, um ihn davon abzuhalten, den pazifistischen Mok'Nathal-Clan auszulöschen. Durchschritt das Dunkle Portal und kämpfte für die Alte Horde während des Ersten Krieges.]],
     },
     {
         era = "WC2",
@@ -1475,7 +1475,7 @@ IMAGOdb.timelines.REXXAR = {
     },
     {
         era = "Legion",
-        text = [[Forderte den Meisterjäger des Unsichtbaren Pfads heraus, eine Nacht in der Wildnis von Hochberg zu überleben. Dieser bestand die Prüfung und gewann Rexxars Vertrauen und Unterstützung, und der Mok’Nathal schloss sich dem Kampf gegen die Brennenden Legion an.]],
+        text = [[Forderte den Meisterjäger des Unsichtbaren Pfads heraus, eine Nacht in der Wildnis von Hochberg zu überleben. Dieser bestand die Prüfung und gewann Rexxars Vertrauen und Unterstützung, und der Mok'Nathal schloss sich dem Kampf gegen die Brennenden Legion an.]],
     },
     {
         era = "BfA",
@@ -1487,7 +1487,7 @@ IMAGOdb.timelines.REXXAR = {
     },
     {
         era = "DF",
-        text = [[Vereinigte sich mit alten Freunden Baine Bluthuf, Rokhan und Chen Sturmbräu, um das Dorf Toghusuq wiederaufzubauen. Kämpfte gegen Fyrakks Streitkräfte bei der Verteidigung von Amirdrassil. War überrascht, von Thrall zum orcischen Kosh’harg-Fest eingeladen zu werden, und versöhnte sich dort endlich wieder mit seinem Vater.]],
+        text = [[Vereinigte sich mit alten Freunden Baine Bluthuf, Rokhan und Chen Sturmbräu, um das Dorf Toghusuq wiederaufzubauen. Kämpfte gegen Fyrakks Streitkräfte bei der Verteidigung von Amirdrassil. War überrascht, von Thrall zum orcischen Kosh'harg-Fest eingeladen zu werden, und versöhnte sich dort endlich wieder mit seinem Vater.]],
     },
     {
         era = "Midnight",
@@ -1517,7 +1517,7 @@ IMAGOdb.timelines.FLYNN_FAIRWIND = {
     },
     {
         era = "BfA",
-        text = [[Befreite den Champion Azeroths aus Tol Dagor und half Taelia dabei, die Machenschaften von Priscilla Aschenwind aufzudecken. Stellte sich seiner alten Crew – den Eisenfluträubern unter der Führung seines ehemaligen Ersten Maaten Harlan dem Schmierigen – entgegen und stoppte sie. Arbeitete mit Mathias Shaw zusammen, um die Schatzkammer von Dazar’alor zu infiltrieren und das Abyssische Szepter zu stehlen.]],
+        text = [[Befreite den Champion Azeroths aus Tol Dagor und half Taelia dabei, die Machenschaften von Priscilla Aschenwind aufzudecken. Stellte sich seiner alten Crew – den Eisenfluträubern unter der Führung seines ehemaligen Ersten Maaten Harlan dem Schmierigen – entgegen und stoppte sie. Arbeitete mit Mathias Shaw zusammen, um die Schatzkammer von Dazar'alor zu infiltrieren und das Abyssische Szepter zu stehlen.]],
     },
     {
         era = "Pre-SL",

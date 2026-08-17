@@ -440,7 +440,7 @@ IMAGOdb.eras["midnight"].keyFigures = {
     { slug="lady_liadrin_midnight",     arcLabel="Mender of Bridges",                          blurb="Summoned the Vanguard of the Light and forged a tentative alliance with the Amani, breaking a cycle of hatred that lasted for thousands of years." },
     { slug="arator_midnight",           arcLabel="The Redeemer",                               blurb="Stepped out of his parents' shadows as a beacon of hope in his own right, rather than simply the son of legends." },
     { slug="turalyon_midnight",         arcLabel="Commander, Father, Light-blinded Paladin",   blurb="As commander of the Vanguard of the Light, Turalyon's unwavering faith became both his greatest strength and his greatest flaw. Trying to balance duty and family, he nearly lost both." },
-    { slug="xal_atath_tww",         arcLabel="Bringer of the End",                         blurb="She achieved everything she came for. With the Sunwell corrupted, Xal'atath moved one step closer to Azeroth's end." },
+    { slug="xal_atath_midnight",        arcLabel="Bringer of the End",                         blurb="She achieved everything she came for. With the Sunwell corrupted, Xal'atath moved one step closer to Azeroth's end." },
     { slug="magister_umbric_midnight",  arcLabel="The Wayward Mage",                           blurb="Determined to get back into Silvermoon's good graces, Umbric used his mastery of the Void to take the battle to Xal'atath, fighting her at her own game." },
 }
 

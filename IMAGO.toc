@@ -1,10 +1,10 @@
-## Interface: 120007
+## Interface: 120010
 ## Title: IMAGO
 ## Notes: The world has a story. IMAGO preserves it.
 ## Notes-deDE: Die Welt hat eine Geschichte. IMAGO bewahrt sie.
 ## Author: Whisblaze
 ## Co-Author: Silver_Wind809
-## Version: 1.4.0
+## Version: 1.4.1
 ## SavedVariables: IMAGOSaved
 ## IconTexture: 5341597
 
@@ -16,26 +16,59 @@ locales/base/locale.lua
 locales/[TextLocale]/locale.lua
 IMAGO.lua
 
+core/Theme.lua
+
 data/LoreSnippets_static.lua
 data/zones_static.lua
 data/eras_static.lua
 data/npcs/midnight.lua
+data/npcs/the_burning_crusade.lua
+data/npcs/wrath_of_the_lich_king.lua
+data/npcs/cataclysm.lua
+data/npcs/mists_of_pandaria.lua
+data/npcs/warlords_of_draenor.lua
+data/npcs/legion.lua
+data/npcs/battle_for_azeroth.lua
+data/npcs/shadowlands.lua
+data/npcs/dragonflight.lua
 data/npcs/the_war_within.lua
 
+
 locales/base/data/timelines.lua
-locales/base/data/npcs.lua
+locales/base/data/npcs/midnight_npcs.lua
+locales/base/data/npcs/the_burning_crusade_npcs.lua
+locales/base/data/npcs/wrath_of_the_lich_king_npcs.lua
+locales/base/data/npcs/cataclysm_npcs.lua
+locales/base/data/npcs/mists_of_pandaria_npcs.lua
+locales/base/data/npcs/warlords_of_draenor_npcs.lua
+locales/base/data/npcs/legion_npcs.lua
+locales/base/data/npcs/battle_for_azeroth_npcs.lua
+locales/base/data/npcs/shadowlands_npcs.lua
+locales/base/data/npcs/dragonflight_npcs.lua
+locales/base/data/npcs/the_war_within_npcs.lua
 locales/base/data/zones.lua
 locales/base/data/eras.lua
 locales/base/data/snippets.lua
 locales/base/chronicle.lua
 
 locales/[TextLocale]/data/timelines.lua
-locales/[TextLocale]/data/npcs.lua
+locales/[TextLocale]/data/npcs/midnight_npcs.lua
+locales/[TextLocale]/data/npcs/the_burning_crusade_npcs.lua
+locales/[TextLocale]/data/npcs/wrath_of_the_lich_king_npcs.lua
+locales/[TextLocale]/data/npcs/cataclysm_npcs.lua
+locales/[TextLocale]/data/npcs/mists_of_pandaria_npcs.lua
+locales/[TextLocale]/data/npcs/warlords_of_draenor_npcs.lua
+locales/[TextLocale]/data/npcs/legion_npcs.lua
+locales/[TextLocale]/data/npcs/battle_for_azeroth_npcs.lua
+locales/[TextLocale]/data/npcs/shadowlands_npcs.lua
+locales/[TextLocale]/data/npcs/dragonflight_npcs.lua
+locales/[TextLocale]/data/npcs/the_war_within_npcs.lua
 locales/[TextLocale]/data/zones.lua
 locales/[TextLocale]/data/eras.lua
 locales/[TextLocale]/data/snippets.lua
 locales/[TextLocale]/chronicle.lua
 
+core/TextLinker.lua
 core/MiniLorePopup.lua
 core/LoreSnippetSystem.lua
 core/Options.lua
