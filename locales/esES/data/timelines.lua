@@ -94,3 +94,53 @@ IMAGOdb.timelines.EITRIGG = {
     }
 }
 
+IMAGOdb.timelines.VEREESA_WINDRUNNER = {
+    {
+        era = "Ancient",
+        text = [[Vivió pacíficamente en la Aguja Brisaveloz, como parte de la familia Brisaveloz, uno de los apellidos más prestigiosos en Quel'Thalas.]],
+    },
+    {
+        era = "WC2",
+        text = [[Vereesa participó en la defensa de Quel'Thalas, ayudando a su hermana Alleria a viajar a Lunargenta. Su hermano menor, Lirath, murió a manos de la Horda luego de ser entrenado en secreto por ella, dañando su relación con Sylvanas, quien se rehusó a entrenarle para que estuviera a salvo en Lunargenta.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Luego de adoptar a Arator por solicitud de su hermana Alleria, Vereesa ayudó al humano Rhonin en su misión secreta para rescatar a la Aspecto del Vuelo Rojo Alextrasza de las garras del Clan orco Faucedraco, arruinando los planes de Alamuerte.]],
+    },
+    {
+        era = "WC3",
+        text = [[Ella se encontraba en Dalaran criando a Arator cuando Arthas invadió la ciudad con la Plaga. Logró sobrevivir y eventualmente se casó con Rhonin.]],
+    },
+    {
+        era = "Classic",
+        text = [[Vereesa tuvo dos hijos, Giramar y Galadin.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Participó en la guerra contra el Rey Exánime y fundó el Pacto de Plata. Fue testigo de la restauración de la Quel'Delar, la espada legendaria de Thalorien Buscalba, quien defendió Lunargenta de la invasión de la Plaga.]],
+    },
+    {
+        era = "Cata",
+        text = [[Ayudó a Halduron Alasol y al jefe Lanzanegra Vol'jin a detener al Imperio Amani, el cual amenazaba con alzarse nuevamente y destruir Quel'Thalas.]],
+    },
+    {
+        era = "MoP",
+        text = [[Vereesa no estaba presente en la destrucción de Theramore, la cual le costó la vida a Rhonin. Furiosa, se unió a Jaina Valiente en purgar Dalaran de los Atracasol, los elfos de sangre representantes de la Horda en Dalaran. Luego de eso, Vereesa se unió a la ofensiva del Kirin Tor, oponiéndose a la Horda en la Isla del Trueno.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[Luego de la caída de Garrosh Grito Infernal, Vereesa ideó un complot para asesinarle durante el juicio por sus crímenes con tal de vengar la muerte de su esposo. Sin embargo, se arrepintió y no llevó a cabo su plan.]],
+    },
+    {
+        era = "Legion",
+        text = [[Viajó a Niskara para buscar a Alleria. Sin embargo, solo encontró su arco, Thas'dorah. Luego, Vereesa lideró a los altos elfos en apoyo de los rebeldes Nocheterna en Suramar con tal de reclamar la ciudad. Finalmente, viajó a Argus para detener a la Legión, donde se reencontró con Alleria.]],
+    },
+    {
+        era = "TWW",
+        text = [[Luego de años de paz, Vereesa comenzó a recibir múltiples visiones de la Canción Radiante, la cual presagiaba un futuro oscuro para Quel'Thalas contra el Vacío.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Vereesa y el Pacto de Plata se unieron en el ataque a la Fuente Oscura en la Isla de Quel'danas. Luego de la batalla, ella disolvió el Pacto de Plata para formar el Pacto Solargenta junto con Aethas Atracasol. Estuvo presente en la purificación de la Fuente Oscura, ofreciendo la corona de Anasterian Caminante del Sol.]],
+    }
+}

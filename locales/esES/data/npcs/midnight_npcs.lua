@@ -5,6 +5,7 @@
 if GetLocale() ~= "esES" then return end
 
 -- === CAT_QUELTHALAS ===
+-- LOR'THEMAR THERON --
 IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].name = "Lor'themar Theron [es]"
 IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].race = "Elfo de sangre"
@@ -20,6 +21,15 @@ Ahora, con Quel'thalas en peligro una vez más, no se detendrá ante nada para d
 IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].zones = {"Ciudad de Lunargenta", "Bosque Canción Eterna", "Isla de Quel'Danas", "Harandar"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].source = "Karstan"
 IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].timeline = IMAGOdb.timelines.LORTHEMAR_THERON
+
+-- VAREESA WINDRUNNER --
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].name = "Vereesa Windrunner [es]"
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].race = "Alta elfa"
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].lore = [[Vereesa es la más joven de las hermanas Brisaveloz. Su vida cambió cuando la Horda llegó a Azeroth y no pudo evitar la muerte de su hermano menor, Lirath. Crió a Arathor, el hijo de su hermana Alleria, y ayudó al mago Rhonin en su misión para rescatar a la dragona aspecto Alextrasza. Sin embargo, su vida fue marcada por la tragedia cuando se encontró completamente sola luego de la muerte de todo lo que conocía a manos de Arthas y la muerte de su esposo Rhonin en la destrucción de Theramore. Esto la llevó a cometer actos que afectarían su reputación con los elfos de sangre para siempre.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].zones = {"Bosque Canción Eterna", "Isla de Quel'Danas", "Ciudad de Lunargenta"}
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].source = "Karstan"
+IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].timeline = IMAGOdb.timelines.VEREESA_WINDRUNNER
 -- === CAT_LIGHT ===
 
 -- === CAT_AMANI ===
