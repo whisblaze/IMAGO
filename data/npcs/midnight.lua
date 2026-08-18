@@ -22,8 +22,8 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"] = {
 }
 
 IMAGOdb.npcs.CAT_QUELTHALAS["first_arcanist_thalyssra_midnight"] = {
-    displayID = 256046,
-    ids = {256046, 254654, 240302, 244582, 240255, 250853, 253777, 245065, 254453, 248848, 253778, 253779, 244652, 248846, 240301, 239799},
+    displayID = 240255,
+    ids = {240255, 256046, 254453, 245065, 253658, 244652, 244582, 254654, 250853, 253778, 253779, 240301, 248848, 240302, 248846, 253777, 239799},
     zones = {},
     category = "CAT_QUELTHALAS",
 }

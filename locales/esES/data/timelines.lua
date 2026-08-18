@@ -144,3 +144,28 @@ IMAGOdb.timelines.VEREESA_WINDRUNNER = {
         text = [[Vereesa y el Pacto de Plata se unieron en el ataque a la Fuente Oscura en la Isla de Quel'danas. Luego de la batalla, ella disolvió el Pacto de Plata para formar el Pacto Solargenta junto con Aethas Atracasol. Estuvo presente en la purificación de la Fuente Oscura, ofreciendo la corona de Anasterian Caminante del Sol.]],
     }
 }
+
+IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA = {
+    {
+        era = "Legion",
+        text = [[Thalyssra fue exiliada de Suramar por oponerse a la Legión y envió un mensaje de auxilio que fue interceptado por Khadgar, permitiéndole establecer una resistencia en Shal'Aran. Con aliados, ella liberó a los nocheterna de su dependencia a la Fuente de la Noche, y asaltó Suramar. Luego de convertirse en líder, escogió dejar que la Fuente se desvaneciera y unió a sus elfos a la Horda.]],
+    },
+    {
+        era = "BfA",
+        text = [[Durante la Cuarta Guerra, Thalyssra ayudó a liberar a los Zandalari de Ventormenta, asistió a la flota de la Horda en Nazjatar y luego apoyó la rebelión contra Sylvanas Brisaveloz.
+
+        Luego de la derrota de N'Zoth, se unió al Consejo de la Horda.]],
+    },
+    {
+        era = "SL",
+        text = [[Thalyssra fue testigo del ritual que abrió el camino a las Fauces desde el Trono Helado en la Ciudadela de la Corona de Hielo. Luego de la derrota del Carcelero, Thalyssra y Lor'Themar viajaron brevemente a Oribos en las Tierras de las Sombras para asistir al juicio de Sylvanas.]],
+    },
+    {
+        era = "DF",
+        text = [[Thalyssra vio la partida de la Expedición de la Horda a las Islas Dragón. Ella y su ahora esposo, Lor'Themar Theron, reflexionaron sobre lo afortunados que eran al tener un breve respiro y juguetearon acerca de quién se propuso a quién. Thalyssra eventualmente se unió a Alextrasza y sus aliados para defender el creciente Amirdrassil de Fyrakk El Ardiente en el Sueño Esmeralda.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Thalyssra permaneció en la Aguja Furia del Sol en Lunargenta hasta la corrupción de la Fuente del Sol. Solicitó la ayuda de la ciudad de Suramar, pero cuando no hubo respuesta, fue a investigar y descubrió a los infiltrados de la Hoja del Crepúsculo. Luego de restaurar el orden, comandó al ejército de los Nocheterna a Lunargenta para ayudar en el asalto contra la Hueste Devoradora.]],
+    }
+}
