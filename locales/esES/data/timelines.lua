@@ -47,3 +47,50 @@ IMAGOdb.timelines.LORTHEMAR_THERON = {
     }
 }
 
+IMAGOdb.timelines.EITRIGG = {
+    {
+        era = "WC1",
+        text = [[Luchó por la Antigua Horda en contra de los Draenei en Draenor y luego, en Azeroth, contra los Humanos de Ventormenta.]],
+    },
+    {
+        era = "WC2",
+        text = [[Mantuvo su posición como uno de los tenientes de mayor confianza del nuevo jefe de guerra, Orgrim Martillo Maldito. Luego de la batalla en la Montaña Roca Negra, su fe en la Horda se derrumbó. Eitrigg desertó y vivió como un ermitaño en Lordaeron, escondido de los humanos.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Luchó contra Tirion Vadín.  A pesar de tener la oportunidad para matarlo, Eitrigg salvó su vida, creando una deuda de honor que el paladín pagaría previniendo la ejecución del orco en Stratholme. Luego, Eitrigg se unió a la Nueva Horda de Thrall, pero siguió viendo a Tirion como un hermano.]],
+    },
+    {
+        era = "Classic",
+        text = [[Sirvió como Guardia de Honor del Jefe de Guerra y fue encargado con la supervisión de nuevos reclutas.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Participó en la guerra contra el Rey Exánime, viajando a Rasganorte para ayudar a la Horda y la Cruzada Argenta, intentando descubrir el rol de la saronita en la Plaga.]],
+    },
+    {
+        era = "Cata",
+        text = [[Continuó siendo el consejero del Jefe de Guerra. Fue a las Estepas Ardientes con su hijo Ariok para detener la invasión de la Horda Oscura a las Montañas Crestagrana.]],
+    },
+    {
+        era = "MoP",
+        text = [[Se levantó en contra de Garrosh Grito Infernal y fue herido de gravedad.]],
+    },
+    {
+        era = "Legion",
+        text = [[Se convirtió en un campeón de los Valarjar, ayudando al Señor de la Batalla en la Prueba de la Ira.]],
+    },
+    {
+        era = "BfA",
+        text = [[Ayudó al Príncipe Mercante Gallywix a establecer una base de la Horda en Drustvar. En un punto, viajó con el Campeón al Draenor Alternativo para reclutar a los orcos Mag'har. Luego, participó en la Batalla por Stromgarde en contra de los líderes de la Alianza.]],
+    },
+    {
+        era = "DF",
+        text = [[Ahora, como jefe del clan Roca Negra, fue instrumental en el resurgimiento del Kosh'harg, un festival anual donde se reúnen los orcos de todos los clanes.]],
+    },
+    {
+        era = "TWW",
+        text = [[Sirviendo como consejero de la Señora suprema Geya'rah, líder de los Mag'har, desempeño un papel activo en el descubrimiento del verdadero enemigo de las Tierras Altas de Arathi: El Amanecer Rojo, derrotando a su líder, Marran Aterratrols.]],
+    }
+}
+
