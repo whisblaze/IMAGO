@@ -11,9 +11,9 @@ IMAGO.Eras = IMAGO.Eras or {}
 -- KONSTANTEN & FARBEN  (HTML-Mockup → WoW 0-1 Range)
 -- ============================================================
 
-local FONT_TITLE = "Fonts\\MORPHEUS.TTF"
-local FONT_BODY  = "Fonts\\FRIZQT__.TTF"
 
+local FONT_TITLE = IMAGO.FONT_TITLE
+local FONT_BODY = IMAGO.FONT_BODY
 local C_GOLD        = IMAGO_COLORS.GOLD           -- #D0AD4D  Antique Gold
 local C_GOLD_DIM    = IMAGO_COLORS.GOLD_MUTED     -- #9E8135  Old Gold
 local C_GOLD_BRIGHT = IMAGO_COLORS.GOLD_BRIGHT    -- #E6C766  Bright Gold

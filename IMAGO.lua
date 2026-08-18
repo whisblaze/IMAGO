@@ -3,10 +3,13 @@
 -- IMAGO.lua — Hauptdatei: Init, Events, Koordination & Scanner
 -- ============================================================
 
-IMAGO = {}
+IMAGO = IMAGO or {}
 IMAGO.VERSION = "1.0.0" 
 
 IMAGO.UI = IMAGO.UI or {}
+IMAGO.L = IMAGO.L or {}
+IMAGO.Locale = IMAGO.Locale or {}
+IMAGO.LocaleData = IMAGO.LocaleData or {}
 
 local defaults = {
     enabled       = true,
@@ -1080,4 +1083,32 @@ function IMAGO.Init()
             end
         end
     end
+end
+
+-- ============================================================
+-- LOCALE INIT (moved here from core/Locale.lua)
+-- Resolves the active locale and applies its strings onto IMAGO.L,
+-- falling back to enUS for any missing key.
+-- ============================================================
+function IMAGO.Locale.Init()
+    local function ResolveLocale()
+        if IMAGOSaved and IMAGOSaved.language then return IMAGOSaved.language end
+        local c = GetLocale()
+        if c == "deDE" then return "deDE" end
+        if c == "ruRU" then return "ruRU" end
+        return "enUS"
+    end
+    local locale = ResolveLocale()
+    local L_EN = IMAGO.LocaleData.enUS or {}
+    local L_DE = IMAGO.LocaleData.deDE or {}
+    local L_RU = IMAGO.LocaleData.ruRU or {}
+    local targetL = L_EN
+    if locale == "deDE" then targetL = L_DE
+    elseif locale == "ruRU" then targetL = L_RU
+    end
+    -- Fallback: Wenn Schlüssel fehlen, aus EN holen
+    for k, v in pairs(L_EN) do
+        IMAGO.L[k] = targetL[k] or v
+    end
+    IMAGO.currentLocale = locale
 end

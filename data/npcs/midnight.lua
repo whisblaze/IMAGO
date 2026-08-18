@@ -21,7 +21,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"] = {
     category = "CAT_QUELTHALAS",
 }
 
-IMAGOdb.npcs.CAT_QUELTHALAS["erste_arkanistin_thalyssra_midnight"] = {
+IMAGOdb.npcs.CAT_QUELTHALAS["first_arcanist_thalyssra_midnight"] = {
     displayID = 256046,
     ids = {256046, 254654, 240302, 244582, 240255, 250853, 253777, 245065, 254453, 248848, 253778, 253779, 244652, 248846, 240301, 239799},
     zones = {},
@@ -162,7 +162,28 @@ IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["mehlar_daemmerklinge_midnight"] = {
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"] = {
+    displayID = 237120,
+    ids = {237120},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
+IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"] = {
+    displayID = 259879,
+    ids = {259879, 239705, 251933, 251947, 253190, 247924},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
+IMAGOdb.npcs.CAT_LIGHT["gidwin_goldbraids_midnight"] = {
+    displayID = 250402,
+    ids = {250402, 238748, 239486, 238834, 238764, 238732, 238749, 240462, 240596, 256041, 242362},
+    zones = {},
+    category = "CAT_LIGHT",
+}
+
+IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"] = {
     displayID = 248321,
     ids = {248321, 239858, 240769, 242611},
     zones = {},
@@ -218,7 +239,7 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["hauptmann_fareeya_midnight"] = {
+IMAGOdb.npcs.CAT_LIGHT["captain_fareeya_midnight"] = {
     displayID = 248318,
     ids = {248318, 242614, 245605, 242507, 263563, 268330},
     zones = {},
@@ -232,21 +253,21 @@ IMAGOdb.npcs.CAT_LIGHT["delas_moonfang_midnight"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["lord_grayson_schattenbruch_midnight"] = {
+IMAGOdb.npcs.CAT_LIGHT["lord_grayson_shadowbreaker_midnight"] = {
     displayID = 247929,
     ids = {247929, 239494, 246779, 246657},
     zones = {},
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["eadric_der_reine_midnight"] = {
+IMAGOdb.npcs.CAT_LIGHT["eadric_the_pure_midnight"] = {
     displayID = 247159,
     ids = {247159, 239508, 241708},
     zones = {},
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["yalia_weisenwisper_midnight"] = {
+IMAGOdb.npcs.CAT_LIGHT["yalia_sagewhisper_midnight"] = {
     displayID = 240646,
     ids = {240646, 241705, 247161, 239503},
     zones = {},
@@ -283,7 +304,7 @@ IMAGOdb.npcs.CAT_LIGHT["tahu_sagewind_midnight"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["aponi_lichtmaehne_midnight"] = {
+IMAGOdb.npcs.CAT_LIGHT["aponi_brightmane_midnight"] = {
     displayID = 247925,
     ids = {247925, 239483, 238277, 240777, 243432, 246672, 267749},
     zones = {},
@@ -495,7 +516,7 @@ IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"] = {
 
 -- === CAT_VOID ===
 
-IMAGOdb.npcs.CAT_VOID["nexuskoenig_salhadaar_midnight"] = {
+IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar_midnight"] = {
     displayID = 240432,
     ids = {240432, 235475},
     zones = {},
@@ -572,7 +593,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver_midnight"] = {
 }
 -- === CAT_NEUTRAL ===
 
-IMAGOdb.npcs.CAT_NEUTRAL["allari_die_seelenfresserin_midnight"] = {
+IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"] = {
     displayID = 256285,
     ids = {256285, 252109, 252617, 252623, 252628, 253430, 253581, 254315, 254748, 266828, 265958, 265957, 263985, 266829, 265956, 263989, 263524},
     zones = {},

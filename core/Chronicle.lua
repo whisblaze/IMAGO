@@ -5,10 +5,31 @@
 
 IMAGO.Chronicle = IMAGO.Chronicle or {}
 
-local LAYOUT = IMAGO.LAYOUT
+-- ============================================================
+-- LOCALE-AWARE FONTS
+-- ============================================================
+local FONT_TITLE, FONT_BODY
+local locale = GetLocale()
+if locale == "ruRU" then
+    -- Cyrillic
+    FONT_TITLE = "Fonts\\FRIZQT___CYR.TTF"
+    FONT_BODY  = "Fonts\\FRIZQT___CYR.TTF"
+elseif locale == "koKR" then
+    FONT_TITLE = "Fonts\\2002.TTF"
+    FONT_BODY  = "Fonts\\2002.TTF"
+elseif locale == "zhCN" then
+    FONT_TITLE = "Fonts\\ARKai_T.TTF"
+    FONT_BODY  = "Fonts\\ARKai_C.TTF"
+elseif locale == "zhTW" then
+    FONT_TITLE = "Fonts\\blei00d.TTF"
+    FONT_BODY  = "Fonts\\blei00d.TTF"
+else
+    -- Default Latin (deDE, enUS, frFR, esES, etc.)
+    FONT_TITLE = "Fonts\\MORPHEUS.TTF"
+    FONT_BODY  = "Fonts\\FRIZQT__.TTF"
+end
 
-local FONT_TITLE = "Fonts\\MORPHEUS.TTF"
-local FONT_BODY  = "Fonts\\FRIZQT__.TTF"
+local LAYOUT = IMAGO.LAYOUT
 
 local eraColors = {
     ["Ancient"]   = {0.85, 0.65, 0.13},     -- Titanen-Bronze (Schöpfung/Alte Götter)
@@ -1169,22 +1190,18 @@ function IMAGO.Chronicle.CreateFrame()
     -- NEU: HAUPT-REITER (BOTTOM TABS) LOKALISIERT
     -- ==========================================
     f.numTabs = 5
-    local locale = GetLocale()
     local tabNames = {IMAGO.L["TAB_FATES"], IMAGO.L["TAB_ZONES"], IMAGO.L["TAB_ERAS"], IMAGO.L["TAB_INSTANCES"], IMAGO.L["TAB_CREDITS"]}
-    
-    for i, name in ipairs(tabNames) do
+    for i = 1, f.numTabs do
+        -- Fallback so a missing/mistimed locale string can never break tab creation
+        local name = tabNames[i] or ("Tab " .. i)
         local tab = CreateFrame("Button", f:GetName().."Tab"..i, f, "PanelTabButtonTemplate")
         tab:SetText(name)
-        
-        -- Zwingt das Tab, sich elegant an die Textlänge anzupassen
         PanelTemplates_TabResize(tab, 0)
-        
         if i == 1 then
             tab:SetPoint("TOPLEFT", f, "BOTTOMLEFT", 15, 2)
         else
-            tab:SetPoint("LEFT", _G[f:GetName().."Tab"..(i-1)], "RIGHT", 0, 0) 
+            tab:SetPoint("LEFT", _G[f:GetName().."Tab"..(i-1)], "RIGHT", 0, 0)
         end
-        
         tab:SetScript("OnClick", function()
             IMAGO.Chronicle.SelectMainTab(i)
             if SOUNDKIT and SOUNDKIT.IG_CHARACTER_INFO_TAB then PlaySound(SOUNDKIT.IG_CHARACTER_INFO_TAB) end
@@ -2373,8 +2390,10 @@ function IMAGO.Chronicle.UpdateList()
                                 f.detailTitle:SetText(name)
 
                                 local lore = npc.data.lore or ""
-                                local firstLetter = lore:sub(1,1)
-                                local restLore = lore:sub(2)
+                                local firstByte = string.byte(lore, 1)
+                                local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
+                                local firstLetter = lore:sub(1, charLen)
+                                local restLore = lore:sub(charLen + 1)
                                 -- Pass selfSlug so the NPC doesn't link their own name,
                                 local linked = IMAGO.TextLinker.LinkNames("|cffc8a84b" .. firstLetter .. "|r" .. restLore,
                                     npc.slug,
@@ -2431,7 +2450,12 @@ function IMAGO.Chronicle.UpdateList()
                                         onClick = function()
                                             f:Hide()
                                             local name, desc, jEncID, rootSectionID, journalLink, journalInstanceID, _, _ = EJ_GetEncounterInfo(encounterID)
-                                            LoadAddOn("Blizzard_EncounterJournal")
+
+                                            if C_AddOns and C_AddOns.LoadAddOn then
+                                                C_AddOns.LoadAddOn("Blizzard_EncounterJournal")
+                                            elseif LoadAddOn then
+                                                LoadAddOn("Blizzard_EncounterJournal")
+                                            end
                                             local _, _, _, _, _, _, _, _, _, _, _, isRaid = EJ_GetInstanceInfo(journalInstanceID)
                                             local difficulty = isRaid and 15 or 2
                                             if EncounterJournal_OpenJournal then
@@ -2678,12 +2702,15 @@ function IMAGO.Chronicle.UpdateList()
                     if f.detailSeparator then f.detailSeparator:Show() end
                 end
 
-                local firstLetter = lore:sub(1,1)
-                local restLore = lore:sub(2)
-                local formattedLore = "|c" .. IMAGO_HEX.GOLD .. firstLetter .. "|r" .. restLore .. "\n\n"
+                -- Some languages take 2 bytes for their characters
+                local firstByte = string.byte(lore, 1)
+                local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
+                local firstLetter = lore:sub(1, charLen)
+                local restLore = lore:sub(charLen + 1)
+                local formattedLore = "|c" .. IMAGO_HEX.GOLD .. firstLetter .. "|r" .. restLore
 
                 if zoneData.pointsOfInterest and next(zoneData.pointsOfInterest) then
-                    formattedLore = formattedLore .. "|c" .. IMAGO_HEX.GOLD .. (IMAGO.L["ZONE_POI_HEADER"] or "INTERESSANTE ORTE") .. "|r\n_________________________________\n\n"
+                    formattedLore = formattedLore .. "|c" .. IMAGO_HEX.GOLD .. (IMAGO.L["ZONE_POI_HEADER"] or "POINTS OF INTEREST") .. "|r\n_________________________________\n\n"
                     for _, poi in ipairs(zoneData.pointsOfInterest) do
                         local pName = poi.name or ""
                         local pLore = poi.lore or ""

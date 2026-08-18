@@ -131,7 +131,7 @@ function IMAGO.TextLinker.LinkNames(text, selfSlug, selfMapID, sharedNPCLinks, s
     for _, entry in ipairs(npcList or {}) do
         local slug = entry.slug
         if slug ~= selfSlug and not linkedNPCSlugs[slug] then
-            local link = "|Himago-npc:" .. slug .. "|h|" .. IMAGO.L["LINK_NPC"] .. entry.name .. "|r|h"
+            local link = "|Himago-npc:" .. slug .. "|h|" .. "c" .. IMAGO_HEX.GOLD_BRIGHT .. entry.name .. "|r|h"
             local newText, ok = InjectFirstLink(text, entry.name, link)
             if ok then
                 text = newText
@@ -146,7 +146,7 @@ function IMAGO.TextLinker.LinkNames(text, selfSlug, selfMapID, sharedNPCLinks, s
     for _, entry in ipairs(zoneList or {}) do
         local mapID = entry.mapID
         if mapID ~= selfMapID and not linkedZoneIDs[mapID] then
-            local link = "|Himago-zone:" .. tostring(mapID) .. "|h|" .. IMAGO.L["LINK_ZONE"] .. entry.name .. "|r|h"
+            local link = "|Himago-zone:" .. tostring(mapID) .. "|h|" .. "c" .. IMAGO_HEX.VOID .. entry.name .. "|r|h"
             local newText, ok = InjectFirstLink(text, entry.name, link)
             if ok then
                 text = newText

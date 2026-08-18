@@ -11,9 +11,11 @@
 
 data/quest_unlocks.lua
 
+locales/base/locale.lua
+locales/[TextLocale]/locale.lua
 IMAGO.lua
+
 core/Theme.lua
-core/Locale.lua
 
 data/LoreSnippets_static.lua
 data/zones_static.lua

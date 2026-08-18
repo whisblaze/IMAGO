@@ -15,7 +15,7 @@ IMAGOdb.timelines.LORTHEMAR_THERON = {
     {era = "Midnight", text = "Führte die Verteidigung von Silbermond gegen die vordringende Leere an."},
 }
 
-IMAGOdb.timelines.ERSTE_ARKANISTIN_THALYSSRA = {
+IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA = {
     {era = "Legion", text = "Thalyssra wurde aus Suramar verbannt, weil sie sich der Legion widersetzte, und sandte ein magisches Notsignal, das von Khadgar abgefangen wurde, wodurch sie in Shal'Aran einen Widerstand aufbauen konnte. Mit Verbündeten befreite sie die Nachtgeborenen von ihrer Abhängigkeit vom Nachtbrunnen und führte einen gemeinsamen Angriff mit Streitkräften von Horde und Allianz an, um Suramar zu befreien. Nachdem sie Anführerin geworden war, ließ sie den Nachtbrunnen verblassen und verpflichtete die Nachtgeborenen der Horde."},
     {era = "BfA", text = "Während des Vierten Krieges half Thalyssra der Horde dabei, die Zandalari aus Sturmwind zu befreien, unterstützte die Hordenflotte in Nazjatar und stellte sich später auf die Seite der Rebellion gegen Sylvanas Windläufer. Nach N'Zoths Niederlage trat sie dem Hordenrat bei."},
     {era = "SL", text = "Thalyssra war Zeugin des Rituals, das am Frostthron in der Eiskronenzitadelle das Tor zum Schlund öffnete. Nach der Niederlage des Kerkermeisters reisten Thalyssra und Lor'themar kurzzeitig nach Oribos in den Schattenlanden, um Sylvanas' Prozess beizuwohnen."},
@@ -221,7 +221,7 @@ IMAGOdb.timelines.LORD_SALTHERIL = {
     }
 }
 
-IMAGOdb.timelines.MEHLAR_DAEMMERKLINGE = {
+IMAGOdb.timelines.MEHLAR_DAWNBLADE = {
     {era = "Pre-WC3", text = "Wurde von Uther Lichtbringer als Ritter der Silbernen Hand ausgebildet."},
     {era = "WC3", text = "Er kämpfte an vielen Fronten gegen die Geißel und schloss sich später den Blutrittern an."},
     {era = "Classic", text = "Er entweihte Uthers Grab und stellte sich dem Geist seines Mentors. Dabei erkannte er, dass Zorn und Gewalt nicht die Gefühle waren, von denen er sich leiten lassen wollte. Gemeinsam mit Sylvanas Windläufer arbeitete er an der Herstellung des Schmuckstücks „Geißelbann“."},
@@ -405,7 +405,7 @@ IMAGOdb.timelines.MOIRA_THAURISSAN = {
     }
 }
 
-IMAGOdb.timelines.HAUPTMANN_FAREEYA = {
+IMAGOdb.timelines.CAPTAIN_FAREEYA = {
     {
         era = "Ancient",
         text = [[Sie entkam gemeinsam mit Prophet Velen an Bord der Genedar von Argus, als sich die Eredar der Brennenden Legion anschlossen. Später übernahm sie ein weiteres Raumschiff - die Xenedar - und kehrte damit in den Wirbelnden Nether zurück. Unter dem Kommando des Naaru Xe'ra wurde sie lichtgeschmiedet und zu einer Anführerin der Armee des Lichts.]],
@@ -459,7 +459,7 @@ IMAGOdb.timelines.DELAS_MOONFANG = {
     }
 }
 
-IMAGOdb.timelines.LORD_GRAYSON_SCHATTENBRUCH = {
+IMAGOdb.timelines.LORD_GRAYSON_SHADOWBREAKER = {
     {era = "Pre-Classic", text = "Wurde von seiner Schwester Jubeka besucht, die nach der Geißelung von Lordaeron zu einer Verlassenen geworden war. Grayson jagte sie voller Abscheu fort, da er in ihr nichts weiter als ein Monster sah."},
     {era = "Classic", text = "In Sturmwind stationiert überwachte er Bedrohungen in ganz Azeroth und vergab Aufträge sowohl an neue als auch erfahrene Paladine. Er half anderen Paladinen dabei, ihre heiligen Streitrosse zu erhalten – treue Reittiere, die jedem Ritter des Ordens als loyale Gefährten dienen."},
     {era = "TBC", text = "Er schloss sich der Expedition in die Scherbenwelt an, mit Arator Windläufer als seinem Knappen, und kämpfte gegen die Höllenorcs in der Höllenfeuerzitadelle."},
@@ -470,7 +470,7 @@ IMAGOdb.timelines.LORD_GRAYSON_SCHATTENBRUCH = {
     {era = "Midnight", text = "Er wurde vom Sonnenbrunnen gerufen und verteidigte Silbermond gegen den Leerensturm."},
 }
 
-IMAGOdb.timelines.EADRIC_DER_REINE = {
+IMAGOdb.timelines.EADRIC_THE_PURE = {
     {
         era = "WotLK",
         text = [[Diente dem Argentumkreuzzug und Tirion Fordring als Großchampion. Er war für die Organisation des Argentumturniers im nördlichen Teil von Eiskrone verantwortlich, indem er das Turniergelände sicherte und mit Vorräten versorgte sowie das Training der Kämpfer überwachte. Er diente als Quartiermeister und nahm gelegentlich selbst als Kämpfer am Turnier teil.]],
@@ -489,7 +489,7 @@ IMAGOdb.timelines.EADRIC_DER_REINE = {
     }
 }
 
-IMAGOdb.timelines.YALIA_WEISENWISPER = {
+IMAGOdb.timelines.YALIA_SAGEWHISPER = {
     {
         era = "Pre-WC3",
         text = [[Da zwei Pandarenjungen in eine gefährliche Rivalität verfielen, um eines Tages ihre Hand zu gewinnen, sah Yalia keinen anderen Ausweg, als ihre Heimat und ihre Familie hinter sich zu lassen. Bereits im Alter von fünf Jahren schloss sie sich dem Orden der Shado-Pan an.]],
@@ -563,7 +563,7 @@ IMAGOdb.timelines.TAHU_SAGEWIND = {
     }
 }
 
-IMAGOdb.timelines.APONI_LICHTMAEHNE = {
+IMAGOdb.timelines.APONI_BRIGHTMANE = {
     {
         era = "WotLK",
         text = [[Kämpfte als Kriegerin in Nordend gegen die Armeen des Lichkönigs, wurde jedoch schwer verwundet und kehrte nach Donnerfels zurück. Dort legten sie und Tahu Weisenwind den Grundstein für die ersten taurischen Paladin- und Priesterorden. Nachdem sie geheilt worden war, kehrte Aponi in den Krieg zurück und kämpfte nun mit dem Licht An'shes an ihrer Seite.]],
@@ -753,7 +753,7 @@ IMAGOdb.timelines.AEONARA_DAWNSHADE = {
     }
 }
 
-IMAGOdb.timelines.ALLARI_DIE_SEELENFRESSERIN = {
+IMAGOdb.timelines.ALLARI_THE_SOULEATER = {
     {
         era = "TBC",
         text = [[Schwor Illidan Sturmgrimm in der Scherbenwelt ihre Loyalität. Holte auf seinen Befehl hin erfolgreich das Artefakt Sargeritschlüsselstein zurück, wurde nach ihrer Rückkehr jedoch gemeinsam mit ihren Mitstreitern der Illidari von Maiev Schattensang gefangen genommen und eingesperrt.]],
@@ -1150,7 +1150,7 @@ IMAGOdb.timelines.THORAS_TROLLBANE = {
     }
 }
 
-IMAGOdb.timelines.NEXUSKOENIG_SALHADAAR = {
+IMAGOdb.timelines.NEXUS_KING_SALHADAAR = {
     {
         era = "Ancient",
         text = [[Herrschte als Hohepriester über die Bewohner K'areshs und entschied sich, die Warnungen von Raumgänger vor der herannahenden Leere zu ignorieren. Letztlich machte er ihn sogar für das verantwortlich, was folgen sollte. Als Dimensius der alles Verschlingende erschien, verlor Salhadaar seinen physischen Körper und K'aresh wurde zerstört. Gemeinsam mit seinem Volk floh er in den Wirbelnden Nether.]],
