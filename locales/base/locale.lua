@@ -61,6 +61,17 @@ L["CAT_EBON_BLADE"]                 = "Knights of the Ebon Blade"
 L["CAT_NEUTRAL"]                    = "Independent & Enigmatic"
 L["CAT_ARCANTINA"]                  = "The Arcantina"
 
+-- Categories (The War Within Factions)
+L["CAT_DALARAN_SURVIVORS"]           = "Survivors of Dalaran"
+L["CAT_KHAZ_ALGAR_NATIVES"]          = "Natives of Khaz Algar"
+L["CAT_HALLOWFALL_ARATHI"]           = "Hallowfall Arathi"
+L["CAT_SEVERED_THREADS"]             = "Severed Threads"
+L["CAT_XALATATHS_FORCES"]            = "Xal'atath's Forces"
+L["CAT_AZEROTHS_ARMIES"]             = "Azeroth's Armies"
+L["CAT_UNDERMINE_KARTELS"]           = "Undermine Kartels"
+L["CAT_CAT_KARESH_REMNANTS"]         = "Remnants of Ka'resh"
+L["CAT_SHANDORAH_OUTPOST"]           = "Shan'dorah Outpost"
+
 -- ============================================================
 -- TAB 2: ZONES (DASHBOARD & DETAILS)
 -- ============================================================

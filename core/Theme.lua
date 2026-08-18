@@ -77,8 +77,27 @@ IMAGO.LAYOUT = {
 }
 
 -- Shared font assets.
-IMAGO.FONT_TITLE = "Fonts\\MORPHEUS.TTF"
-IMAGO.FONT_BODY  = "Fonts\\FRIZQT__.TTF"
+IMAGO.FONT_TITLE = IMAGO.FONT_TITLE or ""
+IMAGO.FONT_BODY = IMAGO.FONT_BODY or ""
+
+local locale = GetLocale()
+if locale == "ruRU" then
+    IMAGO.FONT_TITLE = "Fonts\\FRIZQT___CYR.TTF"
+    IMAGO.FONT_BODY  = "Fonts\\FRIZQT___CYR.TTF"
+elseif locale == "koKR" then
+    IMAGO.FONT_TITLE = "Fonts\\2002.TTF"
+    IMAGO.FONT_BODY  = "Fonts\\2002.TTF"
+elseif locale == "zhCN" then
+    IMAGO.FONT_TITLE = "Fonts\\ARKai_T.TTF"
+    IMAGO.FONT_BODY  = "Fonts\\ARKai_C.TTF"
+elseif locale == "zhTW" then
+    IMAGO.FONT_TITLE = "Fonts\\blei00d.TTF"
+    IMAGO.FONT_BODY  = "Fonts\\blei00d.TTF"
+else
+    -- Default Latin (deDE, enUS, frFR, esES, etc.)
+    IMAGO.FONT_TITLE = "Fonts\\MORPHEUS.TTF"
+    IMAGO.FONT_BODY  = "Fonts\\FRIZQT__.TTF"
+end
 
 -- Centralized typography roles for Fates, Zones and Eras navigation.
 IMAGO.TYPOGRAPHY = {
@@ -136,7 +155,8 @@ IMAGO.TYPOGRAPHY = {
 function IMAGO.ApplyTextStyle(fontString, role, color)
     if not fontString or not IMAGO.TYPOGRAPHY[role] then return end
     local s = IMAGO.TYPOGRAPHY[role]
-    fontString:SetFont(s.font, s.size, s.flags)
+    local font = s.font or IMAGO.FONT_BODY
+    fontString:SetFont(font, s.size, s.flags)
     local c = color or s.color
     fontString:SetTextColor(c[1], c[2], c[3])
     if s.shadowColor then

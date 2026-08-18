@@ -2450,7 +2450,12 @@ function IMAGO.Chronicle.UpdateList()
                                         onClick = function()
                                             f:Hide()
                                             local name, desc, jEncID, rootSectionID, journalLink, journalInstanceID, _, _ = EJ_GetEncounterInfo(encounterID)
-                                            LoadAddOn("Blizzard_EncounterJournal")
+
+                                            if C_AddOns and C_AddOns.LoadAddOn then
+                                                C_AddOns.LoadAddOn("Blizzard_EncounterJournal")
+                                            elseif LoadAddOn then
+                                                LoadAddOn("Blizzard_EncounterJournal")
+                                            end
                                             local _, _, _, _, _, _, _, _, _, _, _, isRaid = EJ_GetInstanceInfo(journalInstanceID)
                                             local difficulty = isRaid and 15 or 2
                                             if EncounterJournal_OpenJournal then
