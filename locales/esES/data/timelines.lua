@@ -169,3 +169,34 @@ IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA = {
         text = [[Thalyssra permaneció en la Aguja Furia del Sol en Lunargenta hasta la corrupción de la Fuente del Sol. Solicitó la ayuda de la ciudad de Suramar, pero cuando no hubo respuesta, fue a investigar y descubrió a los infiltrados de la Hoja del Crepúsculo. Luego de restaurar el orden, comandó al ejército de los Nocheterna a Lunargenta para ayudar en el asalto contra la Hueste Devoradora.]],
     }
 }
+
+IMAGOdb.timelines.DANATH_TROLLBANE = {
+    {
+        era = "WC2",
+        text = [[Sirvió bajo el mando del general Turalyon como comandante y estratega de la Alianza de Lordaeron, repeliendo a la Horda orca que amenazaba los Reinos del Este y persiguiéndoles más allá del Portal Oscuro a su mundo natal Draenor.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Luego de que Khadgar cortara la conexión entre Draenor y Azeroth destruyendo el Portal Oscuro, Danath y los Hijos de Lothar quedaron atrapados en el mundo alienígena por décadas. Fueron testigos de los eventos que devastaron Draenor, creando la ruinosa Terrallende.]],
+    },
+    {
+        era = "TBC",
+        text = [[Lideró a las fuerzas del Fuerte de Honor, repeliendo las fuerzas demoniacas de la Península del Fuego Infernal.]],
+    },
+    {
+        era = "Legion",
+        text = [[Ayudó a los heroicos guerreros a obtener Strom'kar, la Belicista. Esta espada legendaria perteneció al Rey Thoradin, el primer rey humano y ancestro del mismo Danath Aterratrols. Luego de la caída de la Legión, Danath regresó a la arruinada Stromgarde para reconstruirla y reclamar su derecho de nacimiento como rey.]],
+    },
+    {
+        era = "BfA",
+        text = [[Luchó en la Batalla por Stromgarde, liderando a sus fuerzas en la defensa de su ciudad. El conflicto por las Tierras Altas de Arathi sembró el caos en las anteriormente tranquilas tierras de cultivo.]],
+    },
+    {
+        era = "TWW",
+        text = [[Se unió a las fuerzas de la Alianza despachadas a Khaz Algar para combatir a la Heraldo, Xal'atath, y sus fuerzas nerubianas. Rechazó la rebelión liderada por la humana supremacista Marran Aterratrols, sobrina de Danath y regente de Stromgarde en su ausencia.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Ayudó a Arator a aprender la historia de su padre, Turalyon, y su participación en los eventos de la Segunda Guerra. Introdujo a los héroes a la Arcantina, un hogar lejos de casa para aventureros de todo Azeroth.]],
+    }
+}

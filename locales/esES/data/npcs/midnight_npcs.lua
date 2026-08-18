@@ -6,10 +6,10 @@ if GetLocale() ~= "esES" then return end
 
 -- === CAT_QUELTHALAS ===
 -- LOR'THEMAR THERON --
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].name = "Lor'themar Theron"
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].aliases = {"Lor'themar"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].race = "Elfo de sangre"
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].lore = [[
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].name = "Lor'themar Theron"
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].aliases = {"Lor'themar"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].race = "Elfo de sangre"
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].lore = [[
 Siendo un Forestal de corazón, Lor'themar Theron no eligió liderar a los elfos de sangre. Cuando Quel'thalas cayó por la Plaga en la Tercera Guerra, fue nombrado como regente por el Príncipe Kael'thas, en parte debido a la falta de otros candidatos supervivientes. 
 
 Fue forzado a tomar decisiones difíciles, como aliar a los elfos de sangre con la Horda, exiliar a los altos elfos para combatir los disturbios y liderar la batalla contra Kael'thas luego de la traición del príncipe. El pragmatismo de Lor'themar y su astucia estratégica lo convirtieron, no obstante, en un líder inspirador, ganándole el respeto de amigos y enemigos por igual. 
@@ -18,9 +18,9 @@ Un firme defensor de la paz, Lor'themar ahora sirve como regente de Quel'thalas 
 
 Ahora, con Quel'thalas en peligro una vez más, no se detendrá ante nada para defender a su gente y su ciudad en contra de las fuerzas invasoras del Vacío.
 ]]
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].zones = {"Ciudad de Lunargenta", "Bosque Canción Eterna", "Isla de Quel'Danas", "Harandar"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].source = "Karstan"
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].timeline = IMAGOdb.timelines.LORTHEMAR_THERON
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].zones = {"Ciudad de Lunargenta", "Bosque Canción Eterna", "Isla de Quel'Danas", "Harandar"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].source = "Karstan"
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].timeline = IMAGOdb.timelines.LORTHEMAR_THERON
 
 -- VAREESA WINDRUNNER --
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].name = "Vereesa Windrunner"
@@ -43,6 +43,15 @@ IMAGOdb.npcs.CAT_QUELTHALAS["first_arcanist_thalyssra_midnight"].source = "Karst
 IMAGOdb.npcs.CAT_QUELTHALAS["first_arcanist_thalyssra_midnight"].timeline = IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA
 
 -- === CAT_LIGHT ===
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].name = "Danath Trollbane"
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].race = "Humano"
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].lore = [[name="Danath Aterratrols"
+
+El legítimo gobernante del reino de Stromgarde y antiguo héroe de la Alianza. Danath Aterratrols ha luchado y sangrado por la humanidad desde los días de la Segunda Guerra. Miembro de los Hijos de Lothar, Danath forjó estrechos lazos con sus compatriotas en su estancia más allá del Portal Oscuro. Tras regresar a Azeroth para asumir su título como Rey de Stromgarde, Danath busca guiar a su pueblo de vuelta a su antigua gloria.]]
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].zones = {"Arcantina", "Estepas Ardientes"}
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].source = "Karstan"
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].timeline = IMAGOdb.timelines.DANATH_TROLLBANE
 
 -- === CAT_AMANI ===
 

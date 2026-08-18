@@ -190,7 +190,7 @@ IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"] = {
     category = "CAT_LIGHT",
 }
 
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"] = {
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"] = {
     displayID = 250415,
     ids = {250415, 242120, 253124, 258967, 242583},
     zones = {},
