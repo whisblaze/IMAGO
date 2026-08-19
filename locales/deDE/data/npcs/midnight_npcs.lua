@@ -152,6 +152,16 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].zones = {"Immersangwald"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].timeline = IMAGOdb.timelines.LORD_SALTHERIL_DE
 
+-- LORD ANTENORIAN --
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].name = "Lord Antenorian"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].race = "Blutelf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].lore = [[Ursprünglich war Antenorian ein Magister aus Silbermond, doch schon immer zog er die Ruhe des treffend benannten Tristessa vor. Als er von Magister Umbrics Forschungen über die Bedrohung durch den Leerensturm erfuhr, lud er die Ren'dorei in die Stadt ein.
+
+Als Statthalter von Tristessa fühlt er sich seinen Bürgern zutiefst verpflichtet und beschützt sie mit aller Entschlossenheit. Jetzt, da die Leere den Himmel verdunkelt und darauf wartet, sie alle zu verschlingen, ist Antenorian bereit, jeden Preis zu zahlen, um ihre Sicherheit zu gewährleisten.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].zones = {"Immersangwald", "Die Schattenenklave"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].timeline = IMAGOdb.timelines.LORD_ANTENORIAN_DE
 
 -- CAT_LIGHT
 IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"].name = "Mehlar Dämmerklinge"

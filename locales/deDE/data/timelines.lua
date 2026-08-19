@@ -1588,3 +1588,12 @@ IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL_DE = {
         text = [[Sie genoss Speis und Trank in der Arkantine.]],
     }
 }
+
+IMAGOdb.timelines.LORD_ANTENORIAN_DE = {
+    {
+        era = "Midnight",
+        text = [[Als Xal'atath Silbermond angriff, verfiel er der Verzweiflung und schloss sich heimlich der Zwielichtklinge an. Versuchte Magister Umbric zu töten, und konnte dessen Forschungen zerstören.
+
+        Sein Plan, den Immersangwald unter die Kontrolle des Kults zu bringen, wurde von Umbric, Arator und dem Champion vereitelt. Von seinen Verbündeten der Leere im Stich gelassen, wurde er schließlich getötet.]],
+    }
+}
