@@ -1816,3 +1816,26 @@ IMAGOdb.timelines.XAL_ATATH_DE = {
         text = [[Überwältigte die Verteidiger von Quel'Thalas, wurde jedoch durch den plötzlichen Ausbruch des Sonnenbrunnens aufgehalten. Auf der Leerenspitze besiegte sie Alleria und trennte den Naaru L'ura von ihr, um den Sonnenbrunnen endgültig zu verderben. Wurde Zeugin von L'uras Niederlage, verschwand jedoch wie geplant im Dunkelbrunnen.]],
     }
 }
+
+IMAGOdb.timelines.CHIEF_TELEMANCER_OCULETH_DE = {
+    {
+        era = "Ancient",
+        text = [[Vor dem Krieg der Ahnen errichtete und unterhielt Oculeth das Teleportationsnetzwerk von Suramar und experimentierte mit neuen Zaubern. Während der Großen Teilung fand er unter dem schützenden Schild Suramars Zuflucht.]],
+    },
+    {
+        era = "Legion",
+        text = [[Oculeth weigerte sich, sich der Brennenden Legion zu unterwerfen, und wurde daraufhin von Großmagistrix Elisande aus Suramar verbannt. Durch den Entzug arkaner Magie stand er kurz davor, den Verstand zu verlieren und zu verdorren, wurde jedoch von Thalyssra und dem Champion gerettet. Anschließend schloss er sich der Rebellion gegen seine frühere Herrscherin an.]],
+    },
+    {
+        era = "BfA",
+        text = [[Nachdem sich die Nachtgeborenen der Horde angeschlossen hatten, verbesserte Oculeth die Portalnetzwerke der Hauptstädte der Horde. Während des Vierten Krieges transportierte er Truppen und kämpfte für die Horde in Nazjatar. Dank seines Könnens gelang es ihm, ein Portal nach Draenor aus der Zeitlinie der Eisernen Horde zu öffnen und den Mag'har den Zutritt nach Azeroth zu ermöglichen.]],
+    },
+    {
+        era = "DF",
+        text = [[Oculeth besuchte die Akademie von Algeth'ar und war fasziniert von der Art und Weise, wie die Drachen Magie einsetzen. Seine Freizeit verbrachte er beim Angeln im Azurblauen Gebirge.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Er stellte Portale von Silbermond nach Bel'ameth, Suramar und zur Silberwiesenzuflucht bereit, um die vereinten Elfenarmeen in großer Zahl nach Quel'Thalas zu teleportieren. Anschließend beteiligte er sich auf der Insel von Quel'Danas am Kampf gegen die Leere.]],
+    }
+}

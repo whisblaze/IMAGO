@@ -163,6 +163,17 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].zones = {"Immersangwald"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].timeline = IMAGOdb.timelines.LORD_ANTENORIAN_DE
 
+-- CHIEF TELEMANDER OCULETH --
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].name = "Großtelemant Oculeth"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].race = "Nachtgeborener"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].lore = [[Jedes Mitglied der Horde hat wahrscheinlich schon einmal eines von Oculeths Portalen benutzt. Der suramarische Magier ist ein Meister der Telemagie und errichtete die Teleportationsnetzwerke der Hauptstädte wie Orgrimmar und Dazar'alor. Seine Fähigkeiten erwiesen sich sowohl während Thalyssras Rebellion gegen die Großmagistrix Elisande als auch im Vierten Krieg als äußerst wertvoll – für sein Volk ebenso wie für die Horde.
+
+Mitunter mag er seltsam oder zerstreut wirken, doch es wäre töricht, seine Eigenheiten mit Unbedachtheit zu verwechseln. Obwohl Oculeth eher ein Gelehrter als ein Kämpfer ist, hat er Schlachten gegen Magier gewonnen, die ihm im direkten Kampf überlegen waren – einfach indem er unkonventionell dachte und kreative Wege fand, die Magie zu seinen Gunsten zu beeinflussen.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].zones = {"Silbermond", "Suramar", "Amirdrassil", "Insel von Quel'Danas"}
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].timeline = IMAGOdb.timelines.CHIEF_TELEMANCER_OCULETH_DE
+
 -- CAT_LIGHT
 IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"].name = "Mehlar Dämmerklinge"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"].aliases = {"Mehlar"}
