@@ -865,6 +865,13 @@ IMAGOdb.npcs.CAT_AMANI["filo_midnight"].zones = {"Zul'Aman", "Atal'Aman"}
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].timeline = IMAGOdb.timelines.FILO_DE
 
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].name = "Torundo der Ergraute"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].race = "Waldtroll"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].lore = [[Als Torundo noch ein kleines Kind war, wurde seine Heimat Zen'tamani von den Weltenwanderern aus Quel'Thalas niedergebrannt, und die wenigen Überlebenden blieben hilflos und verbittert zurück. Torundo floh nach Amani'Zar und wuchs dort zu einem gefürchteten Krieger heran. Er war dem Amani-Kriegsherrn Zul'jin treu ergeben, der seinem Volk Rache und Ruhm versprochen hatte. Selbst nach Zul'jins Niederlage blieb Torundo im Dienst seiner Sippe. Jetzt dient er Häuptlingin Zul'jarra als ihr Kriegsberater und verteidigt Zul'Aman gegen die Zwielichtklinge. Auch wenn er mit den Jahren etwas milder geworden ist, zaubert der Anblick eines toten Feindes immer noch ein Lächeln auf sein grauhaariges Gesicht.]]
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].zones = {"Zul'Aman", "Atal'Aman", "die Höhle"}
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].source = "Quill"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].timeline = IMAGOdb.timelines.TORUNDO_THE_GRIZZLED
+
 -- CAT_HARATI
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].name = "Orweyna"
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].aliases = {}
@@ -1060,3 +1067,4 @@ Da Furorion bereits seit seiner Zeit als Drachenwelpe gejagt wurde, hatte er wed
 IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].zones = {"Arkantine"}
 IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].timeline = IMAGOdb.timelines.WRATHION_DE
+

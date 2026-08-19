@@ -1882,3 +1882,18 @@ IMAGOdb.timelines.WRATHION_DE = {
         text = [[In der Arkantine gönnte sich Furorion mehr als nur ein alkoholisches Getränk.]],
     }
 }
+
+IMAGOdb.timelines.TORUNDO_THE_GRIZZLED = {
+    {
+        era = "Pre-WC1",
+        text = [[Wuchs im Dorf Zen'tamani auf und lebte dort, als es von den Weltenwanderern unter Waldläufergeneralin Lireesa Windläufer dem Erdboden gleichgemacht wurde, und musste als Kind nach Amani'Zar fliehen.]],
+    },
+    {
+        era = "TBC",
+        text = [[Kämpfte unter Zul'jin während dessen Schlachten gegen Quel'Thalas. Nach dessen Tod diente Torundo Zul'jins Schwiegertochter Zarama.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Verteidigte Zivilisten während des Angriffs der Zwielichtklinge auf Atal’Aman und kümmerte sich später um die Flüchtlinge in Amani’Zar. Half dabei, die Kultisten zu besiegen, und war für die Reinigung Atal’Amans von schädlichen Energien verantwortlich. Geriet mit Lor’themar Theron aneinander, nachdem Hagar die gemeinsame Abstammung der Trolle und Elfen enthüllte.]],
+    }
+}
