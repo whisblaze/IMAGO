@@ -1736,3 +1736,38 @@ IMAGOdb.timelines.KELSEY_STEELSPARK_DE = {
         text = [[Noch immer als Mitglied der Ungekrönten, besprach Kelsey lautstark eine Mission mit Taoshi.]],
     }
 }
+
+IMAGOdb.timelines.ZEN_TABRA_DE = {
+    {
+        era = "WotLK",
+        text = [[Als Hexendoktorin spürte sie, dass sich die Loa aus der Gesellschaft der Dunkelspeere zurückzogen, erkannte jedoch nicht, dass der verräterische Zalazane die Verbindung kappte. Als Zalazane die Echoinseln eroberte, floh sie nach Süden und wurde von Gonk kontaktiert. Sie erlernte das Druidentum im Smaragdgrünen Traum und schloss sich Vol'jin im Kampf um die Rückeroberung der Inseln an.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Verhandelte erfolgreich die Aufnahme der Dunkelspeertrolle in den Zirkel des Cenarius.]],
+    },
+    {
+        era = "Cata",
+        text = [[Als Mitglied des Zirkels kämpfte sie am Hyjal gegen die Streitkräfte von Ragnaros. Zudem begann sie, neue Druiden der Dunkelspeere auszubilden.]],
+    },
+    {
+        era = "MoP",
+        text = [[Schloss sich Vol'jins Rebellion gegen Kriegshäuptling Garrosh Höllschrei an und geriet in Kriegsgefangenschaft. Sie wurde von SI:7 gerettet und brachte den Champion der Allianz mit der Rebellion zusammen.]],
+    },
+    {
+        era = "Legion",
+        text = [[Kämpfte gemeinsam mit den anderen Mitgliedern des Zirkels des Cenarius in Val'sharah gegen die Brennende Legion. Beschützte den Brunnen der Ewigkeit und half dabei, Destromath zu töten. Reinigte einen Zweig von G'Hanir, damit der Erzdruide ihn als mächtige Waffe einsetzen konnte. Später verteidigte sie die Exodar gegen die Dämonen.]],
+    },
+    {
+        era = "BfA",
+        text = [[Verteidigte die Echoinseln erneut gegen Zalazane, als dieser als untoter Lich zurückkehrte.]],
+    },
+    {
+        era = "DF",
+        text = [[Unterstützte den Grünen Drachenschwarm in den Ebenen von Ohn'ahra und bekämpfte Fyrakks Streitkräfte im Smaragdgrünen Traum, indem sie die Ausbreitung der Flammen eindämmte und Flammenportale schloss.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Stieß in der Arkantine mit ihrer druidischen Kameradin Thisalee Krähe auf ruhigere Zeiten an.]],
+    }
+}

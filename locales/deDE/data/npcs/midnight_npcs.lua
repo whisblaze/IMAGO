@@ -1011,3 +1011,13 @@ IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].lore = [[Agentin Stahlf
 IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].zones = {"Arkantine"}
 IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].timeline = IMAGOdb.timelines.KELSEY_STEELSPARK_DE
+
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].name = "Zen'tabra"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].race = "Troll"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].lore = [[Zen'tabra gehörte zu den ersten Trollen des Dunkelspeerstammes, die die Kunst des Druidentums erlernten, nachdem der Raptorloa Gonk über den Smaragdgrünen Traum Kontakt zu ihr aufgenommen hatte. Mit dieser neu gewonnenen Macht half sie mehrfach dabei, die Echoinseln vor ihren Feinden zu schützen und setzte sich dafür ein, dass die Druiden des Dunkelspeerstammes in den Zirkel des Cenarius aufgenommen wurden. 
+
+Nachdem sie während der Geburt Amirdrassils im Smaragdgrünen Traum dazu beigetragen hatte, Fyrakks Streitkräfte aufzuhalten, lässt Zen'tabra es nun etwas ruhiger angehen – bis unweigerlich die nächste Bedrohung für die Natur sich zeigt.]]
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].timeline = IMAGOdb.timelines.ZEN_TABRA_DE
