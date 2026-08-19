@@ -640,17 +640,6 @@ IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].zones = {"Die Leerenspit
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].timeline = IMAGOdb.timelines.ALLERIA_WINDRUNNER_DE
 
--- SCALECOMMANDER EMBERTHAL --
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].name = "Schuppenkommandantin Glutthal"
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].aliases = {}
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].race = "Dracthyr"
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].lore = [[Glutthal ist die Anführerin der Schwarzschuppen, der Schar der Dracthyr, die mit der Magie des schwarzen Drachenschwarms gestärkt wurden. Wie ihre Mitstreiter wurde sie von Neltharion erschaffen, bevor dieser der Verderbnis verfiel. Selbst nachdem er sie für Jahrtausende eingesperrt hatte, konnte sie angesichts des Schicksals ihres Vaters nicht anders, als Trauer und Verwirrung zu empfinden.
-
-Anders als ihr einstiger Freund Sarkareth wies Glutthal das Vermächtnis von Todesschwinge zurück. Stattdessen vereinte sie die Dracthyr in Eintracht und in dem Wunsch, in Frieden auf Azeroth zu leben.]]
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].zones = {"Arkantine"}
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].timeline = IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL_DE
-
 -- MARIUS FELBANE --
 IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].name = "Marius Teufelsbann"
 IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].aliases = {}
@@ -991,3 +980,25 @@ Als Azeroth durch die Rückkehr der Brennenden Legion bedroht wurde, half Taoshi
 IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].zones = {"Arkantine"}
 IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].timeline = IMAGOdb.timelines.TAOSHI_DE
+
+-- SCALECOMMANDER EMBERTHAL --
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].name = "Schuppenkommandantin Glutthal"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].lore = [[Glutthal ist die Anführerin der Schwarzschuppen, der Schar der Dracthyr, die mit der Magie des schwarzen Drachenschwarms gestärkt wurden. Wie ihre Mitstreiter wurde sie von Neltharion erschaffen, bevor dieser der Verderbnis verfiel. Selbst nachdem er sie für Jahrtausende eingesperrt hatte, konnte sie angesichts des Schicksals ihres Vaters nicht anders, als Trauer und Verwirrung zu empfinden.
+
+Anders als ihr einstiger Freund Sarkareth wies Glutthal das Vermächtnis von Todesschwinge zurück. Stattdessen vereinte sie die Dracthyr in Eintracht und in dem Wunsch, in Frieden auf Azeroth zu leben.]]
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].timeline = IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL_DE
+
+-- SCALECOMMANDER AZURATHEL --
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].name = "Schuppenkommandant Azurathel"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].lore = [[Azurathel war einer der ersten von Neltharion erschaffenen Dracthyr und wurde von seinem Schöpfer persönlich ausgewählt, die Obsidianwächter anzuführen – den Schutzschild an der Frontlinie, der die anderen Dracthyr verteidigt. Nach seinem Erwachen aus der Stasis während des Aufstiegs der Inkarnationen führte er seinen Weyrn in die Reihen der Allianz.
+
+Obwohl er geschworen hat, Azeroth vor jeder Gefahr zu schützen, hat er sich entschieden, Neltharion in guter Erinnerung zu behalten und ihn als Vaterfigur zu sehen, statt als den Tyrannen, zu dem er als Todesschwinge wurde.]]
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].timeline = IMAGOdb.timelines.SCALECOMMANDER_AZURATHEL_DE

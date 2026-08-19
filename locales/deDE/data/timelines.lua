@@ -1694,3 +1694,13 @@ IMAGOdb.timelines.TAOSHI_DE = {
         text = [[Traf Kelsey Stahlfunken in der Arkantine zu einer Mission.]],
     }
 }
+
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].name = "Scalecommander Azurathel [de]"
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].lore = [[Azurathel war einer der ersten von Neltharion erschaffenen Dracthyr und wurde von seinem Schöpfer persönlich ausgewählt, die Obsidianwächter anzuführen – den Schutzschild an der Frontlinie, der die anderen Dracthyr verteidigt. Nach seinem Erwachen aus der Stasis während des Aufstiegs der Inkarnationen führte er seinen Weyrn in die Reihen der Allianz.
+
+Obwohl er geschworen hat, Azeroth vor jeder Gefahr zu schützen, hat er sich entschieden, Neltharion in guter Erinnerung zu behalten und ihn als Vaterfigur zu sehen, statt als den Tyrannen, zu dem er als Todesschwinge wurde.]]
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].timeline = IMAGOdb.timelines.SCALECOMMANDER_AZURATHEL_DE
