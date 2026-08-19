@@ -1616,3 +1616,54 @@ IMAGOdb.timelines.MARIUS_FELBANE_DE = {
         text = [[Widerwillig gab er Tehds Bitte nach, sich eine Auszeit zu gönnen und in der Arkantine etwas zu entspannen.]],
     }
 }
+
+IMAGOdb.timelines.LILLIAN_VOSS_DE = {
+    {
+        era = "Pre-Cata",
+        text = [[Von ihrem Vater, dem Hochpriester Benedictus Voss, zu einer effizienten Tötungsmaschine für den Scharlachroten Kreuzzug erzogen. Irgendwann vor dem Kataklysmus starb Lillian und wurde in einem Massengrab beigesetzt.]],
+    },
+    {
+        era = "Cata",
+        text = [[Wurde als Verlassene wiedererweckt, floh jedoch voller Entsetzen vor dem, was aus ihr geworden war. Sie versuchte, zum Kreuzzug zurückzukehren, wurde jedoch gefangen genommen und zur Hinrichtung verurteilt. Sie entwickelte einen tiefen Hass auf ihre ehemaligen Freunde und ihre Familie und begann einen blutigen Rachefeldzug, dem auch ihr Vater zum Opfer fiel.]],
+    },
+    {
+        era = "MoP",
+        text = [[Vernichtete den wiedererstarkenden Scharlachroten Kreuzzug im Scharlachroten Kloster. Bekämpfte Dunkelmeister Gandling in Scholomance.]],
+    },
+    {
+        era = "WoD",
+        text = [[Unterstützte die Streitkräfte von Horde und Allianz im Kampf gegen die Untoten von Draenor.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich den Ungekrönten in Dalaran an und kämpfte an der Seite der Schattenklinge an der Verheerten Küste. Schaltete gefährliche untote Homunkuli der Legion aus.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Da Sylvanas immer mehr Verlassene auferstehen ließ und die Allianz weiterhin Hass auf ihre gefallenen ehemaligen Mitmenschen hegte, schloss sich Lillian offiziell der Horde an.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kämpfte auf Kul Tiras gegen die Allianz und half neuen Truppen der Verlassenen dabei, sich mit ihrem Schicksal als Untote in der Horde abzufinden. Nach Sylvanas' Verrat trat Voss dem neuen Hordenrat als Vertreterin der Verlassenen bei. Sie begegnete Calia Menethil und hielt sie für eine würdige Herrscherin von Lordaeron.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Als Interimsanführerin der Verlassenen begann Lillian, Pläne zu schmieden, um die Zukunft ihres Volkes zu sichern.]],
+    },
+    {
+        era = "SL",
+        text = [[Es gelang ihr, die Unterstadt von der Seuche des Vierten Krieges zurückzuerobern. Sie schlug die Gründung des trostlosen Rats – des neuen Regierungsorgans der Verlassenen – vor und wurde selbst Mitglied. Zudem überzeugte sie erfolgreich Calia Menethil davon, ebenfalls die Rolle einer Mitregentin zu übernehmen.]],
+    },
+    {
+        era = "DF",
+        text = [[Führte die Angriffstruppe der Verlassenen gegen den Scharlachroten Kreuzzug an, eroberte Insel Fenris zurück und tötete Kommandant Forsythe. Später lenkte sie den Scharlachroten Kreuzzug in Gilneas ab, um den Worgen die Rückeroberung ihrer Stadt zu ermöglichen. Gemeinsam mit Shandris Mondfeder half sie bei der Verteidigung Amirdrassils gegen Fyrakks Streitkräfte.]],
+    },
+    {
+        era = "TWW",
+        text = [[Spionierte die aufgestiegenen Neruber von Azj-Kahet aus und deckte das wahre Schicksal von Königin Neferess auf. Kämpfte gegen Y'tekhi und rettete sie schließlich, nachdem sie von Xal'atath geistig kontrolliert worden war.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Hielt sich eine Zeit in der Arkantine auf.]],
+    }
+}

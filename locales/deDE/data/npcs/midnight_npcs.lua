@@ -967,3 +967,16 @@ Seit dem Ende des Krieges genießt Finn nun ein ruhigeres Leben, lebt in der Sta
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind_midnight"].zones = {"Die Arkantine"}
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_ARCANTINA["flynn_fairwind_midnight"].timeline = IMAGOdb.timelines.FLYNN_FAIRWIND_DE
+
+-- LILLIAN VOSS -- 
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].name = "Lillian Voss"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].race = "Untote"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].lore = [[Als sie noch lebte, gehörte Lillian Voss dem Scharlachroten Kreuzzug an. Ihre Feinde waren die Untoten, und sie machte keinen Unterschied zwischen den Verlassenen und der Geißel. Sie jagte sie, sie hasste sie. Und dann wurde sie selbst zu einer von ihnen. 
+
+Es dauerte lange, bis sie akzeptieren konnte, was aus ihr geworden war, und ihren Selbsthass hinter sich ließ. Schließlich fand sie unter den Reihen der Verlassenen der Horde eine neue Gemeinschaft und spendete frisch Erhobenen Trost, indem sie ihnen half, ihr neues Dasein als Untote anzunehmen. 
+
+Sie setzt ihre beachtlichen Fähigkeiten zum Wohl ihres Volkes ein und scheut sich nicht davor, zu unlauteren Methoden zu greifen. Obwohl sie ihr Leben lang ans Kämpfen gewöhnt war, befürwortet sie inzwischen den Frieden zwischen den Fraktionen.]]
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].timeline = IMAGOdb.timelines.LILLIAN_VOSS_DE
