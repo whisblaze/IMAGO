@@ -1597,3 +1597,22 @@ IMAGOdb.timelines.LORD_ANTENORIAN_DE = {
         Sein Plan, den Immersangwald unter die Kontrolle des Kults zu bringen, wurde von Umbric, Arator und dem Champion vereitelt. Von seinen Verbündeten der Leere im Stich gelassen, wurde er schließlich getötet.]],
     }
 }
+
+IMAGOdb.timelines.MARIUS_FELBANE_DE = {
+    {
+        era = "TBC",
+        text = [[In der Scherbenwelt schwor Marius Teufelsbann Illidan Sturmgrimm seine Treue. Auf dessen Befehl hin nahm er an der Invasion von Mardum teil. Nach seiner Rückkehr wurde er zusammen mit seinen Illidari-Gefährten von Maiev Schattensang gefangen genommen und eingekerkert.]],
+    },
+    {
+        era = "Legion",
+        text = [[Nachdem er sechs Jahre lang in Stasis gefangen gewesen war, wurden Marius und die anderen Dämonenjäger von ihrer einstigen Kerkermeisterin im Kampf gegen Gul'dan befreit. Er schloss sich dem Kampf gegen die Brennende Legion an, arbeitete mit Tehd Shumaker zusammen und tötete oder bezwang zahlreiche Dämonen,  gelegentlich mit Unterstützung vom Champion von Azeroth.]],
+    },
+    {
+        era = "BfA",
+        text = [[Gemeinsam mit Tehd setzte er auf Zuldazar die Jagd auf die verbliebenen Dämonen fort.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Widerwillig gab er Tehds Bitte nach, sich eine Auszeit zu gönnen und in der Arkantine etwas zu entspannen.]],
+    }
+}

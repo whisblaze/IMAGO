@@ -651,6 +651,16 @@ IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].zones = {"Arkantin
 IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].timeline = IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL_DE
 
+-- MARIUS FELBANE --
+IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].name = "Marius Teufelsbann"
+IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].race = "Nachtelf"
+IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].lore = [[Der Dämonenjäger Marius Teufelsbann hegt einen Hass auf die Brennende Legion, der von nur wenigen übertroffen wird. Seine Abscheu sitzt so tief, dass er bereit war, sich mit dem Hexenmeister Tehd Shumaker zusammenzutun – obwohl er alles verachtet, wofür sein untoter Gefährte steht. Anfangs betrachtete er Tehd kaum als Person, doch widerwillig musste er eingestehen, dass sie außergewöhnlich gut miteinander kämpfen. 
+
+Nachdem die beiden seit der Invasion der Legion an der Verheerten Küste mehr als einhundertfünfzig Dämonen besiegt haben, richten sie ihren Blick nun auf neue Feinde.]]
+IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].timeline = IMAGOdb.timelines.MARIUS_FELBANE_DE
 
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].name = "Hochlord Darion Mograine"
