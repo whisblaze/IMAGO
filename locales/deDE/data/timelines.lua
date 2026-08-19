@@ -1839,3 +1839,46 @@ IMAGOdb.timelines.CHIEF_TELEMANCER_OCULETH_DE = {
         text = [[Er stellte Portale von Silbermond nach Bel'ameth, Suramar und zur Silberwiesenzuflucht bereit, um die vereinten Elfenarmeen in großer Zahl nach Quel'Thalas zu teleportieren. Anschließend beteiligte er sich auf der Insel von Quel'Danas am Kampf gegen die Leere.]],
     }
 }
+
+IMAGOdb.timelines.WRATHION_DE = {
+    {
+        era = "Cata",
+        text = [[Furorions Ei entstand durch ein Experiment mit korrumpierten schwarzen Dracheneiern und titanischer Magie. Als erster unverdorbener Schwarzer Drache seit Jahrtausenden wurde er vom Roten Drachenschwarm bewacht. Noch im Ei heuerte er Attentäter an, schlüpfte in der Rabenholdt und ließ den schwarzen Drachenschwarm systematisch auslöschen. Er half schließlich, Todesschwinge zu besiegen.]],
+    },
+    {
+        era = "MoP",
+        text = [[Furorion hatte eine Vision von der Brennenden Legion und entwickelte den Plan, die Allianz die Horde unterwerfen zu lassen, um die Welt im Kampf gegen die Dämonen zu vereinen. Er ließ sich in der Taverne im Nebel nieder und freundete sich mit Anduin Wrynn an. Entsandte eigene Champions, um Garrosh Höllschrei zu stürzen. Erzürnte, als König Varian die Horde nicht zunichte machte.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[Mit der Hilfe des bronzenen Drachen Kairozdormu befreite Furorion Garrosh während dessen Gerichtsverhandlung und schickte ihn in eine alternative Zeitlinie von Draenor. Als Anduin versuchte ihn aufzuhalten  schlug Wrathion seinen einzigen Freund bewusstlos.]],
+    },
+    {
+        era = "WoD",
+        text = [[Er blieb in der alternativen Version Draenors und hielt sich zeitweise in der Garnison von Admiral Taylor auf.]],
+    },
+    {
+        era = "Legion",
+        text = [[Während der Invasion der Brennenden Legion hielt sich Furorion in Nordend auf. Dort wurde er kurzzeitig von Chromie aufgesucht, die auf der Suche nach ihrem zukünftigen Mörder war.]],
+    },
+    {
+        era = "BfA",
+        text = [[Nachdem N'Zoth aus seinem Gefängnis befreit wurde, wurde Furorion Berater von König Anduin. Er führte den Champion durch die Verstörenden Visionen, um dessen Geist gegen den Wahnsinn der Alten Götter zu stärken. Anschließend heilte er seinen Bruder Ebyssian von der Verderbnis und drang schließlich bis nach Ny'alotha vor. Dort führte er Xal'atath und half N'zoth zu töten.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Furorion war überrascht zur Hochzeit von Lor'themar Theron und Thalyssra eingeladen zu werden und wurde dort von Kurog Grimmtotem als „Abscheulichkeit“ angegriffen. Gemeinsam mit den anderen Drachen vernahm er den Ruf der Dracheninseln und verspürte zum ersten Mal das Gefühl der Zugehörigkeit.]],
+    },
+    {
+        era = "DF",
+        text = [[Er half beim Wiederaufbau des schwarzen Drachenschwarms und kämpfte gegen die Inkarnationen. Er traf seinen älteren Bruder Sabellian, stellte sich Todesschwinges Vermächtnis in Aberrus und überließ Ebyssian schließlich die Führung als Aspekt und Erdwächter. Kämpfte gegen Fyrakk im Smaragdgrünen Traum und schwor, Iridikron zu jagen.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Furorion führte seine Freunde Thalyssra und Lor'themar über die Dracheninseln. Als er den Strahlenden Gesang vernahm, versetzte ihn dessen Klang in große Unruhe.]],
+    },
+    {
+        era = "Midnight",
+        text = [[In der Arkantine gönnte sich Furorion mehr als nur ein alkoholisches Getränk.]],
+    }
+}

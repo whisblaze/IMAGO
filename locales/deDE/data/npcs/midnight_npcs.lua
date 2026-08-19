@@ -1047,3 +1047,16 @@ Nachdem sie während der Geburt Amirdrassils im Smaragdgrünen Traum dazu beiget
 IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].zones = {"Arkantine"}
 IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_ARCANTINA["zen_tabra_midnight"].timeline = IMAGOdb.timelines.ZEN_TABRA_DE
+
+-- WRATHION --
+IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].name = "Furorion"
+IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].race = "Schwarzer Drache"
+IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].lore = [[Sohn von Todesschwinge, Erbe eines verdorbenen Drachenschwarms - Furorion hörte schon vor dem Schlüpfen aus seinem Ei von seinem düsteren Vermächtnis. Da er jedoch frei vom Einfluss der Alten Götter geboren wurde, entschied sich der junge Drache bewusst dafür, Azeroth vor bösartigen Mächten zu beschützen, anstatt – wie der Rest seines Schwarms – ihre Zerstörung anzustreben.
+
+Seine ehrgeizigen Pläne umfassten unter anderem, der Allianz zum vollständigen Sieg über die Horde zu verhelfen, um die Welt gegen die Brennende Legion zu vereinen, sich mit dem Ewigen Drachenschwarm zu verbünden, um Armeen aus anderen Zeitlinien zu erschaffen, sowie ein Netzwerk von Spionen aufzubauen, das systematisch korrumpierte schwarze Drachen ausschalten sollte. Heute bereut er viele seiner früheren Entscheidungen. Mit zunehmender Reife gelang es ihm jedoch, Azeroth vor dem Alten Gott N'Zoth zu retten und sich gemeinsam mit den übrigen Drachenschwärmen den Inkarnationen entgegenzustellen. Die meisten Bewohner Azeroths betrachten ihn inzwischen als Verbündeten und Helden – doch die Schatten seiner Vergangenheit und das Erbe Todesschwinges verfolgen ihn bis heute.
+
+Da Furorion bereits seit seiner Zeit als Drachenwelpe gejagt wurde, hatte er weder Freunde noch Familie, auf die er sich verlassen konnte. Ein Teil von ihm wird wohl niemals das Gefühl loswerden, allein und unwürdig der Liebe zu sein. Er verriet den einzigen Freund, den er je hatte – Anduin Wrynn – und seine drakonischen Verwandten fanden den Tod. Erst auf den Dracheninseln fand er schließlich einen Ort, an dem er Akzeptanz und Frieden erlebte. Dort knüpfte er enge Bande zu seinen älteren Brüdern und half dabei, den schwarzen Drachenschwarm wieder in den Dienst Azeroths zu führen.]]
+IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["wrathion_midnight"].timeline = IMAGOdb.timelines.WRATHION_DE
