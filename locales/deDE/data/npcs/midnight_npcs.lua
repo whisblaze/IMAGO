@@ -630,6 +630,18 @@ IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].zones = {"Die Leerenspit
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].timeline = IMAGOdb.timelines.ALLERIA_WINDRUNNER_DE
 
+-- SCALECOMMANDER EMBERTHAL --
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].name = "Schuppenkommandantin Glutthal"
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].race = "Dracthyr"
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].lore = [[Glutthal ist die Anführerin der Schwarzschuppen, der Schar der Dracthyr, die mit der Magie des schwarzen Drachenschwarms gestärkt wurden. Wie ihre Mitstreiter wurde sie von Neltharion erschaffen, bevor dieser der Verderbnis verfiel. Selbst nachdem er sie für Jahrtausende eingesperrt hatte, konnte sie angesichts des Schicksals ihres Vaters nicht anders, als Trauer und Verwirrung zu empfinden.
+
+Anders als ihr einstiger Freund Sarkareth wies Glutthal das Vermächtnis von Todesschwinge zurück. Stattdessen vereinte sie die Dracthyr in Eintracht und in dem Wunsch, in Frieden auf Azeroth zu leben.]]
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_emberthal_midnight"].timeline = IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL_DE
+
+
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].name = "Hochlord Darion Mograine"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].aliases = {"Darion Mograine"}

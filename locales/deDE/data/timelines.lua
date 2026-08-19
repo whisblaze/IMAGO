@@ -1563,3 +1563,28 @@ IMAGOdb.timelines.TARENAR_SUNSTRIKE_DE = {
         text = [[Wurde vom Sonnenbrunnen gerufen, um seine Heimat zu verteidigen. Beglich seine eigenen und Gidwins Trinkschulden. Da die beiden Freunde aus den meisten Gasthäusern in Quel’Thalas verbannt worden waren, verbrachten sie ihre Zeit umso lieber in der magischen Arkantine.]],
     }
 }
+
+IMAGOdb.timelines.SCALECOMMANDER_EMBERTHAL_DE = {
+    {
+        era = "Ancient",
+        text = [[Als Schuppenkommandantin kämpfte Glutthal gegen die Feinde ihres Schöpfers Neltharion. Als Raszageth das Titanenrelikt Schwurbinder zerstörte, das von Neltharion zur Gedankenkontrolle der Dracthyr genutzt wurde, wurden Glutthal und ihre Gefährten gefangen gesetzt.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Tausende Jahre später erwachte sie in einer veränderten Welt. Sie wurde Zeugin von Raszageths Erwachen, war jedoch nicht in der Lage, es zu verhindern. Auf Bitten der schwarzen Drachen Furorion und Ebyssian teilten sich die Dracthyr auf, um sich der Horde und der Allianz anzuschließen, während Glutthal als neutrale Anführerin auf den Dracheninseln verblieb.]],
+    },
+    {
+        era = "DF",
+        text = [[Von Nozdormu wurde sie über Neltharions Vermächtnis und den Zustand der Welt unterrichtet und half dabei, mehr über die Verderbnis ihres Schöpfers aufzudecken. Glutthal geriet mit Sarkareth in Konflikt, welcher den Pfad Todesschwinges beschritt und die Leere annahm. Nachdem sie ihn getötet hatte, formte sie die Schwarzschuppen neu.
+
+        Später kämpfte sie im Smaragdgrünen Traum gegen Fyrakks Armee.]],
+    },
+    {
+        era = "TWW",
+        text = [[Sie kehrte zur Verbotenen Insel zurück, um den wenigen verbliebenen schlafenden Dracthyr dabei zu helfen, ihr neues Leben auf Azeroth zu beginnen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Sie genoss Speis und Trank in der Arkantine.]],
+    }
+}
