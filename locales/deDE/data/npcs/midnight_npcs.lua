@@ -518,6 +518,18 @@ IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike_midnight"].zones = {"Silbermond", "Ark
 IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike_midnight"].timeline = IMAGOdb.timelines.TARENAR_SUNSTRIKE_DE
 
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].name = "Großkonstrukteur Romuul"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].race = "Draenei"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].lore = [[Als Anführer der Konstrukteure – der Ingenieure und Architekten der Draenei – und Velens wichtigstem Vertrauten in den organisatorischen Angelegenheiten der Exodar, steht Romuul Velen seit ihrer Flucht von Argus treu zur Seite. Während der dritten Invasion der Brennenden Legion war er für die Reparatur, Wartung und Steuerung der Vindikaar verantwortlich und stattete das Schiff auch nach dem Krieg als Operationsbasis der Armee des Lichts aus.
+
+Während des Tishamaat verkündeten Velen und Romuul ihre Pläne zum Bau einer neuen Stadt auf Azeroth, damit die Draenei sich endlich auf einer Welt niederlassen konnten, die sie wieder ihr Zuhause nennen konnten. 
+
+Die Arbeiten müssen jedoch vorerst eingestellt werden, da der Großkonstrukteur vom Sonnenbrunnen gerufen wurde, um den Kampf gegen die Leere aufzunehmen.
+Bereit, seinem Volk zu dienen, tauscht er seinen Meißel gegen seinen heiligen Hammer und kämpft für das Licht, für einen neuen Anfang seines Volkes und für ganz Azeroth.]]
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].zones = {"Parhelionplaza", "Insel Quel'Danas", "Leerensturm"}
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].timeline = IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL_DE
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].name = "Allari die Seelenfresserin"

@@ -1897,3 +1897,26 @@ IMAGOdb.timelines.TORUNDO_THE_GRIZZLED = {
         text = [[Verteidigte Zivilisten während des Angriffs der Zwielichtklinge auf Atal’Aman und kümmerte sich später um die Flüchtlinge in Amani’Zar. Half dabei, die Kultisten zu besiegen, und war für die Reinigung Atal’Amans von schädlichen Energien verantwortlich. Geriet mit Lor’themar Theron aneinander, nachdem Hagar die gemeinsame Abstammung der Trolle und Elfen enthüllte.]],
     }
 }
+
+IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL_DE = {
+    {
+        era = "Ancient",
+        text = [[Arbeitete als Konstrukteur auf Argus und war ein Schüler Exarch Hataarus. Schloss sich Velen an und floh aus seiner Heimat, als die Brennende Legion die Kontrolle übernahm.]],
+    },
+    {
+        era = "Legion",
+        text = [[Reparierte die Vindikaar und steuerte sie durch den Wirbelnden Nether und  erreichte Argus. Half auf Argus mit der Teleportationstechnik und verbesserte die Verteidigungs- und Waffensysteme der Vindikaar. Nutzte das Schiff, um Antorus' Schilde zu umgehen, und verschaffte so die Möglichkeit, Sargeras anzugreifen. Steuerte die Vindikaar zurück nach Azeroth.]],
+    },
+    {
+        era = "BfA",
+        text = [[Kümmerte sich weiterhin um die Wartung der Vindikaar, als sie zur wichtigsten Operationsbasis der Armee des Lichts wurde.]],
+    },
+    {
+        era = "DF",
+        text = [[Verschickte offizielle Einladungen zum Tishamaat in der Exodar. Gemeinsam mit Velen verkündete er die Pläne zum Bau einer neuen Draenei-Stadt auf Azeroth.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde nach Silbermond gerufen und kämpfte als Teil der Vorhut des Lichts auf der Insel Quel'Danas. Half den Ren'dorei dabei, den Singularitätsanker im Leerensturm zu stabilisieren und verhinderte so eine zerstörerische Implosion.]],
+    }
+}
