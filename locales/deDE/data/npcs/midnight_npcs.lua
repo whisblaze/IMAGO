@@ -725,6 +725,21 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane_midnight"].timeline = IMAGOdb.timelines.THORAS_TROLLBANE_DE
 
 -- CAT_VOID
+
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].name = "Xal'atath"
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].race = "Unbekannt"
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].lore = [[Ihr Lächeln ist eine Drohung, ihr Flüstern eine Warnung und ihre Versprechen sind falsche Wahrheiten. Die Vorbotin der Leere hat die Bewohner Azeroths über Jahrtausende hinweg manipuliert. Und ebenso leicht, wie sie ihre Verbündeten zu großer Macht erhob, überließ sie sie schließlich ihrem Untergang.
+
+Lange Zeit war sie in der Klinge des Schwarzen Imperiums gefangen – eine Strafe, die ihr die Alten Götter auferlegten, nachdem sie sich gegen sie gestellt hatte. Mit der Hilfe der Champions von Azeroth ist sie nun erneut frei.
+
+Xal'atath sucht nach der Weltenseele. Nun, da das Dunkle Herz mit Macht erfüllt wurde, greift sie den Sonnenbrunnen an, um sie zu erreichen. Warum sie die Weltenseele verfolgt, bleibt ein Rätsel, und selbst ihre Herkunft liegt im ungeklärten Dunkeln. Sicher ist nur eines: Sie muss um jeden Preis aufgehalten werden.
+
+Das Schicksal des Universums könnte von den Champions von Azeroth abhängen.]]
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].zones = {"Insel von Quel'Danas", "Leerensturm"}
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].timeline = IMAGOdb.timelines.XAL_ATATH_DE
+
 IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar_midnight"].name = "Nexuskönig Salhadaar"
 IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar_midnight"].aliases = {"Salhadaar"}
 IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar_midnight"].race = "Leerenastraler"

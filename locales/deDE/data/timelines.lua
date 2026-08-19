@@ -1771,3 +1771,48 @@ IMAGOdb.timelines.ZEN_TABRA_DE = {
         text = [[Stieß in der Arkantine mit ihrer druidischen Kameradin Thisalee Krähe auf ruhigere Zeiten an.]],
     }
 }
+
+IMAGOdb.timelines.XAL_ATATH_DE = {
+    {
+        era = "Ancient",
+        text = [[Xal'atath behauptet, einst sterblich gewesen zu sein, bevor ihre Welt zerstört und sie zu einem Wesen der Leere gemacht wurde. Sie kündigte das Kommen von Dimensius an, bevor dieser eine Welt nach der anderen verschlang - darunter auch K'aresh. Stellte sich den Alten Göttern auf Azeroth entgegen, unterlag jedoch im Kampf und wurde in der Klinge des Schwarzen Imperiums gefangen.]],
+    },
+    {
+        era = "Pre-WC1",
+        text = [[Während des Krieges der Drei Hämmer gelangte die Klinge in den Besitz von Königin Modgud. Die Königin verfiel der Waffe und nutzte Xal'atath, um in Grim Batol ein Ritual durchzuführen, mit dem sie den Wildhammerklan besiegte. Xal'atath ließ Modgud anschließend ihrem Tod über und die Magie der Königin verfluchte Grim Batol.]],
+    },
+    {
+        era = "WC2",
+        text = [[Später gelangte die Klinge in den Besitz der menschlichen Bischöfin Natalie Seline und verdarb die einst fromme Frau beinahe augenblicklich. Xal'atath lehrte Seline den Umgang mit Leerenmagie und stachelte ihre Anhänger dazu an, sie aus Machtgier zu ermorden.]],
+    },
+    {
+        era = "Cata",
+        text = [[Erzbischof Benedictus kam irgendwann danach in den Besitz der Klinge, wagte es jedoch nicht, sie zu führen.]],
+    },
+    {
+        era = "Legion",
+        text = [[Benedictus' Nachfolger, Zwielichtdiakon Heller, setzte die Klinge ein, um Zakajz den Verderber wiederzuerwecken. Er wurde vom Hohepriester aufgehalten, der Xal'atath dann im Kampf gegen die Brennende Legion führte. Sie wurde Zeugin von Alleria Windläufers Verwandlung zur Leerenelfe und war davon fasziniert. Später entzog der Hohepriester ihr die Macht, um die Welt von Sargeras' Wunde zu heilen.]],
+    },
+    {
+        era = "BfA",
+        text = [[Durch lebende Opfer, die der Hohepriester darbrachte, gewann Xal'atath ihre Macht zurück und konnte den Körper einer verstorbenen Hochelfe übernehmen. Sie überredete den Priester, zum Schrein der Stürme zu reisen, wo sie ihren Verbündeten verriet und mit N'Zoth einen Pakt schloss, um ihre Freiheit zurückzuerlangen.]],
+    },
+    {
+        era = "DF",
+        text = [[Sie verbündete sich mit Iridikron und erhielt von ihm das Dunkle Herz. Anschließend griff sie den Telogrusriss an und zog den Zorn Alleria Windläufers auf sich. Mit sichtlichem Vergnügen spielte sie mit Alleria, indem sie ihr verzerrte Visionen ihrer Vergangenheit zeigte.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Xal'atath verbündete sich mit den Nerubern von Azj-Kahet, indem sie Ansurek dazu manipulierte, ihre eigene Mutter – die Königin – zu ermorden.]],
+    },
+    {
+        era = "TWW",
+        text = [[Zerstörte Dalaran und verletzte Khadgar schwer.  Alleria verfolgte sie unermüdlich und konnte das Dunkle Herz beschädigen. Xal'atath ging ein Bündnis mit Gallywix ein, ließ ihn jedoch zum Sterben zurück, nachdem er das Dunkle Herz an die Astralen der Schattenwacht übergeben hatte.
+
+        Verbündete sich mit Alleria, um die Rückkehr von Dimensius zu verhindern – und riss dessen Macht anschließend an sich.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Überwältigte die Verteidiger von Quel'Thalas, wurde jedoch durch den plötzlichen Ausbruch des Sonnenbrunnens aufgehalten. Auf der Leerenspitze besiegte sie Alleria und trennte den Naaru L'ura von ihr, um den Sonnenbrunnen endgültig zu verderben. Wurde Zeugin von L'uras Niederlage, verschwand jedoch wie geplant im Dunkelbrunnen.]],
+    }
+}
