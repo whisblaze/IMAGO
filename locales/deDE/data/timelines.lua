@@ -1667,3 +1667,30 @@ IMAGOdb.timelines.LILLIAN_VOSS_DE = {
         text = [[Hielt sich eine Zeit in der Arkantine auf.]],
     }
 }
+
+IMAGOdb.timelines.TAOSHI_DE = {
+    {
+        era = "MoP",
+        text = [[Hielt die Mantis in der Tonlongsteppe auf und besiegte gemeinsam mit Taran Zhu und dem Champion den Sha des Hasses. Auf der Insel des Donners kämpfte sie gegen die Streitkräfte von Lei Shen und unterstützte dabei sowohl die Horde als auch die Allianz, welche sich im Krieg miteinander befanden.]],
+    },
+    {
+        era = "WoD",
+        text = [[Wurde von den Shado-Pan nach Draenor entsandt, um gegen die Eiserne Horde zu kämpfen.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich in Dalaran den Ungekrönten als eine der Schatten an. Sie entwickelte und führte den Plan zur Rettung von Mathias Shaw aus der Gefangenschaft der Legion aus und infiltrierte später gemeinsam mit Shaw und der Schattenklinge Sturmwind, um Detheroc zu töten.]],
+    },
+    {
+        era = "BfA",
+        text = [[Verteidigte das Tal der Ewigen Blüten gegen N’Zoths Diener und half dabei, die Verderbnis des Landes durch die Leere zu bekämpfen.]],
+    },
+    {
+        era = "TWW",
+        text = [[Überlebte die Zerstörung Dalarans und konnte die Archive der Ungekrönten während des Absturzes retten. Anschließend ließ sie sich gemeinsam mit den anderen Ungekrönten in Dornogal nieder.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Traf Kelsey Stahlfunken in der Arkantine zu einer Mission.]],
+    }
+}

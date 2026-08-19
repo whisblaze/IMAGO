@@ -980,3 +980,14 @@ Sie setzt ihre beachtlichen Fähigkeiten zum Wohl ihres Volkes ein und scheut si
 IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].zones = {"Arkantine"}
 IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_ARCANTINA["lillian_voss_midnight"].timeline = IMAGOdb.timelines.LILLIAN_VOSS_DE
+
+-- TAOSHI --
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].name = "Taoshi"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].race = "Pandaren"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].lore = [[Als Nummer zwei der Shado-Pan gehört diese verschlagene Pandaren zu den tödlichsten Spionen und Assassinen, die das Land im Nebel hervorgebracht hat. Taoshi spielte eine zentrale Rolle bei der Verteidigung Pandarias gegen die Mantis, die Sha, den Donnerkönig und die Streitkräfte von N'Zoth. Sie schreckt nur selten vor riskanten Plänen zurück, und manchmal scheint es, als würde ein Teil von ihr geradezu für die Gefahren leben, die ihr Beruf mit sich bringt. Die einzige Person, die sie im Zaum halten kann, ist der Anführer der Shado-Pan, Taran Zhu, dem Taoshi mit unerschütterlicher Loyalität dient.
+
+Als Azeroth durch die Rückkehr der Brennenden Legion bedroht wurde, half Taoshi auch außerhalb ihrer Heimat bei der Verteidigung der Welt und diente als hochrangiges Mitglied der Ungekrönten in Dalaran. Sowohl Horde als auch Allianz können auf ihre Unterstützung zählen, wenn sie gebraucht wird, denn sie wissen, dass sie ihren Verbündeten den Rücken freihält – ganz gleich, welcher Feind sich ihnen entgegenstellt.]]
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].timeline = IMAGOdb.timelines.TAOSHI_DE
