@@ -1002,3 +1002,12 @@ Obwohl er geschworen hat, Azeroth vor jeder Gefahr zu schützen, hat er sich ent
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].zones = {"Arkantine"}
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].timeline = IMAGOdb.timelines.SCALECOMMANDER_AZURATHEL_DE
+
+-- KELSEY STEELSPARK --
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].name = "Kelsey Stahlfunken"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].race = "Gnomin"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].lore = [[Agentin Stahlfunken ist das bekannteste Mitglied des Geheimdienstes von Gnomeregan und von Beruf Erfinderin. Obwohl sie eine Messersammlung besitzt und der Schurkenorganisation der Ungekrönten angehört, ist sie im Nahkampf nicht besonders geschickt und zieht es vor, ihre Gegner mit technischen Geräten und Sprengstoffen auszuschalten.]]
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["kelsey_steelspark_midnight"].timeline = IMAGOdb.timelines.KELSEY_STEELSPARK_DE

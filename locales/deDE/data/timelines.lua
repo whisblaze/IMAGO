@@ -1695,12 +1695,44 @@ IMAGOdb.timelines.TAOSHI_DE = {
     }
 }
 
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].name = "Scalecommander Azurathel [de]"
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].aliases = {}
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].race = "Dracthyr"
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].lore = [[Azurathel war einer der ersten von Neltharion erschaffenen Dracthyr und wurde von seinem Schöpfer persönlich ausgewählt, die Obsidianwächter anzuführen – den Schutzschild an der Frontlinie, der die anderen Dracthyr verteidigt. Nach seinem Erwachen aus der Stasis während des Aufstiegs der Inkarnationen führte er seinen Weyrn in die Reihen der Allianz.
+IMAGOdb.timelines.SCALECOMMANDER_AZURATHEL_DE = {
+    {
+        era = "Ancient",
+        text = [[Von Neltharion erschaffen, um als Beschützer der Dracthyr zu dienen. Er war verantwortlich für die Verteidigung der Festungen des Schwarzen Drachenschwarms auf den Dracheninseln. Als Raszageth das Titanenartefakt Schwurbinder zerstörte, das Neltharion zur Gedankenkontrolle der Dracthyr nutzte, wurde Azurathel zusammen mit seinen Gefährten gefangen genommen.]],
+    },
+    {
+        era = "Pre-DF",
+        text = [[Erwachte Tausende Jahre später in einer veränderten Welt. Er wurde Zeuge von Raszageths Wiedererweckung und war nicht in der Lage, sie aufzuhalten. Auf Anraten der schwarzen Drachen Furorion und Ebyssian teilten sich die Dracthyr auf, um sich der Horde und der Allianz anzuschließen. Azurathel führte die Obsidianwächter nach Sturmwind und trat der Allianz bei.]],
+    },
+    {
+        era = "DF",
+        text = [[Er stimmte Hochexarch Turalyon zu, Allianzkräfte zur Unterstützung der Drachenaspekte auf die Dracheninseln zu entsenden, jedoch gleichzeitig einen friedlichen Umgang mit der Horde zu wahren. Er kämpfte gegen die Inkarnationen auf den Inseln und später im Smaragdgrünen Traum.]],
+    },
+    {
+        era = "TWW",
+        text = [[Begrüßte neu erwachte Dracthyr, die sich entschieden, sich ihm in den Reihen der Allianz anzuschließen.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Gemeinsam mit Schuppenkommandantin Glutthal trank er etwas in der Arkantine.]],
+    }
+}
 
-Obwohl er geschworen hat, Azeroth vor jeder Gefahr zu schützen, hat er sich entschieden, Neltharion in guter Erinnerung zu behalten und ihn als Vaterfigur zu sehen, statt als den Tyrannen, zu dem er als Todesschwinge wurde.]]
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].zones = {"Arkantine"}
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["scalecommander_azurathel_de_midnight"].timeline = IMAGOdb.timelines.SCALECOMMANDER_AZURATHEL_DE
+IMAGOdb.timelines.KELSEY_STEELSPARK_DE = {
+    {
+        era = "Cata",
+        text = [[War in ziviler Tarnung in Gadgetzan stationiert, um ein Handelsabkommen zwischen Marin Noggenfogger und Gnomeregan auszuhandeln.]],
+    },
+    {
+        era = "Legion",
+        text = [[Verteidigte Tanaris gegen die Invasionen der Legion. Diente den Ungekrönten in Dalaran als Rüstmeisterin und half später dabei, die Bergbauoperationen der Goblins in Silithus zu sabotieren.]],
+    },
+    {
+        era = "BfA",
+        text = [[Diente während des Vierten Krieges unter Halford Wyrmbann als verdeckte Agentin der Allianz in feindlichem Gebiet. Schwächte die Hafenverteidigung der Zandalari erheblich, indem sie versteckte Bomben auf ihren Kriegsschiffen platzierte. Sicherte die Unterstützung der Mechagnome, um nach der Schlacht von Dazar'alor das Leben von König Mekkadrill zu retten.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Noch immer als Mitglied der Ungekrönten, besprach Kelsey lautstark eine Mission mit Taoshi.]],
+    }
+}
