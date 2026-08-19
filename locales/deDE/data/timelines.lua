@@ -1,6 +1,6 @@
 ﻿if GetLocale() ~= "deDE" then return end
 
-IMAGOdb.timelines.LORTHEMAR_THERON = {
+IMAGOdb.timelines.LORTHEMAR_THERON_DE = {
     {era = "WC2", text = "Wurde nach der Verteidigung von Silbermond zum Waldläuferlord befördert."},
     {era = "WC3", text = "Von Kael'thas zum Regenten ernannt; befreite Silbermond von der Geißel."},
     {era = "TBC", text = "Schloss sich der Horde an; setzte den verräterischen Kael'thas ab; blieb Regent-Lord."},
@@ -15,7 +15,7 @@ IMAGOdb.timelines.LORTHEMAR_THERON = {
     {era = "Midnight", text = "Führte die Verteidigung von Silbermond gegen die vordringende Leere an."},
 }
 
-IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA = {
+IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA_DE = {
     {era = "Legion", text = "Thalyssra wurde aus Suramar verbannt, weil sie sich der Legion widersetzte, und sandte ein magisches Notsignal, das von Khadgar abgefangen wurde, wodurch sie in Shal'Aran einen Widerstand aufbauen konnte. Mit Verbündeten befreite sie die Nachtgeborenen von ihrer Abhängigkeit vom Nachtbrunnen und führte einen gemeinsamen Angriff mit Streitkräften von Horde und Allianz an, um Suramar zu befreien. Nachdem sie Anführerin geworden war, ließ sie den Nachtbrunnen verblassen und verpflichtete die Nachtgeborenen der Horde."},
     {era = "BfA", text = "Während des Vierten Krieges half Thalyssra der Horde dabei, die Zandalari aus Sturmwind zu befreien, unterstützte die Hordenflotte in Nazjatar und stellte sich später auf die Seite der Rebellion gegen Sylvanas Windläufer. Nach N'Zoths Niederlage trat sie dem Hordenrat bei."},
     {era = "SL", text = "Thalyssra war Zeugin des Rituals, das am Frostthron in der Eiskronenzitadelle das Tor zum Schlund öffnete. Nach der Niederlage des Kerkermeisters reisten Thalyssra und Lor'themar kurzzeitig nach Oribos in den Schattenlanden, um Sylvanas' Prozess beizuwohnen."},
@@ -23,7 +23,7 @@ IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA = {
     {era = "Midnight", text = "Thalyssra blieb in der Sonnenzornspitze in Silbermond, bis die Verderbnis des Sonnenbrunnens einsetzte. Sie bat Suramar um Hilfe, doch als keine Antwort kam, ging sie der Sache nach und enttarnte Infiltratoren von Twilight's Blade. Nachdem sie die Ordnung wiederhergestellt hatte, führte sie die Armee der Nachtgeborenen nach Silbermond, um beim Angriff auf die Verschlingende Horde zu helfen."},
 }
 
-IMAGOdb.timelines.LADY_LIADRIN = {
+IMAGOdb.timelines.LADY_LIADRIN_DE = {
     {era = "WC2", text = "Kämpfte gegen die Amani-Trolle und half bei der Gefangennahme von Zul'jin, nachdem sie zuvor selbst von ihm gefangen genommen worden war. Sie empfand tiefe Schuldgefühle, als sie die exzessive Folter am Kriegsfürsten der Feinde miterlebte, und hielt die Waldtrolle zum ersten Mal für würdig, Mitgefühl zu erfahren."},
     {era = "WC3", text = "Überlebte nur knapp den Fall von Silbermond. Gab das Priestertum auf, nachdem sie ihren Glauben und ihre Familie verloren hatte."},
     {era = "Pre-Classic", text = "Wurde zum ersten Blutritter-Paladin und zur Anführerin des Ordens."},
@@ -39,7 +39,7 @@ IMAGOdb.timelines.LADY_LIADRIN = {
     {era = "Midnight", text = "Liadrin kämpfte an vorderster Front bei der Verteidigung des Sonnenbrunnens, rekrutierte externe Hilfe von Zul'jarras Amani und half bei der Erschaffung des Düsterbrunnens."},
 }
 
-IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH = {
+IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH_DE = {
     {era = "Pre-WC1", text = "Studierte das Arkanum in der Magierhauptstadt Dalaran an der Seite seiner Freunde Umbric und Dar'khan Drathir."},
     {era = "WC3", text = "Überlebte die Zerstörung von Silbermond und schloss sich Kael'thas Sonnenwanderer bei der Verteidigung von Dalaran an. Er folgte dem Prinzen in die Scherbenwelt, nachdem er aus den Verliesen der Kirin Tor entkommen war, und lernte von Illidan Sturmgrimm, wie man den Magiedurst der Blutelfen bekämpft. Er kehrte als Großmagister nach Silbermond zurück."},
     {era = "Pre-TBC", text = "Rommath half bei der Gründung des Ordens der Blutritter und gewann mit Kael'thas Sonnenwanderers Zustimmung zunehmend politischen Einfluss. Er überwachte den Umgang der Blutelfen mit ihrer Sucht nach Magie und sorgte dafür, dass möglichst wenige von ihnen ihrer Abhängigkeit erlagen."},
@@ -53,7 +53,7 @@ IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH = {
     {era = "Midnight", text = "Rommath führte die Magister von Silbermond bei ihrer Verteidigung gegen die Verschlingende Schar an. Er steht Umbrics Einsatz von Leerenmagie zwar immer noch skeptisch gegenüber, stimmte jedoch widerstrebend zu, dass dessen Expertise notwendig ist, um ihren gemeinsamen Feind zu besiegen."},
 }
 
-IMAGOdb.timelines.HALDURON_BRIGHTWING = {
+IMAGOdb.timelines.HALDURON_BRIGHTWING_DE = {
     {era = "WC2", text = "Kämpfte gegen die Amani-Trolle und schaffte es, ihren Anführer Zul'jin gefangen zu nehmen."},
     {era = "WC3", text = "Überlebte den Angriff der Geißel und wurde nach Sylvanas' Tod zum Waldläufergeneral ernannt. Begann damit, die verbliebenen Streitkräfte der Geißel aus der zerstörten Stadt Silbermond zu vertreiben."},
     {era = "TBC", text = "Stellte sich entschieden gegen die Gründung der Blutritter. Verhandelte als Gesandter in Orgrimmar erfolgreich die Aufnahme der Blutelfen in die Horde."},
@@ -65,7 +65,7 @@ IMAGOdb.timelines.HALDURON_BRIGHTWING = {
     {era = "Midnight", text = "Halduron war der Erste, der die Bedrohung durch die Lichtblüte bemerkte und sich mit Orweyna auf die Reise nach Harandar begab. Durch ein vorläufiges Bündnis mit den Haranir gelang es Halduron, die Lichtblüte in Schach zu halten und die Verteidigung von Silbermond zu stärken."},
 }
 
-IMAGOdb.timelines.VEREESA_WINDRUNNER = {
+IMAGOdb.timelines.VEREESA_WINDRUNNER_DE = {
     {
         era = "Pre-WC2", 
         text = [[Vereesa lebte einst friedlich auf dem Windläuferturm als Teil der Familie Windläufer, einem der angesehensten Namen in Quel'Thalas.]]
@@ -114,7 +114,7 @@ Nach dem Sturz von Garrosh Höllschrei schmiedete Vereesa einen Plan, ihn währe
     }
 }
 
-IMAGOdb.timelines.SHANDRIS_FEATHERMOON = {
+IMAGOdb.timelines.SHANDRIS_FEATHERMOON_DE = {
     {era = "Ancient", text = "Wurde während der ersten Invasion der Brennenden Legion zur Waise und von Tyrande Wisperwind adoptiert."},
     {era = "WC3", text = "Kämpfte im Eschental und am Berg Hyjal gegen die Brennende Legion und Archimonde selbst."},
     {era = "Classic", text = "Wurde zur Hochgeneralin der Schildwachen befördert."},
@@ -128,7 +128,7 @@ IMAGOdb.timelines.SHANDRIS_FEATHERMOON = {
     {era = "Midnight", text = "Shandris unterstützte die Blutelfen gegen die Bedrohung durch die Leere und half bei der Erschaffung des Dämmerbrunnens."},
 }
 
-IMAGOdb.timelines.AETHAS_SUNREAVER = {
+IMAGOdb.timelines.AETHAS_SUNREAVER_DE = {
     {era = "WotLK", text = "Verteidigte Dalaran gegen den Blauen Drachenschwarm und setzte sich erfolgreich für die Wiederaufnahme der Blutelfen in die Kirin Tor ein, um gegen den Lichkönig zu kämpfen. Zudem gründete er offiziell die Fraktion der Sonnenhäscher in Dalaran, um seine Anhänger und die Horde innerhalb der Stadt zu repräsentieren."},
     {era = "Pre-MoP", text = "Stimmte dafür, Hilfe der Kirin Tor zur Verteidigung von Theramore gegen die Horde zu entsenden. Später lehnte er jedoch Jaina Prachtmeers Ersuch ab, Dalaran für einen Vergeltungsschlag zu mobilisieren, nachdem die Stadt durch eine Manabombe vernichtet worden war."},
     {era = "MoP", text = "Wurde während der Säuberung von Dalaran inhaftiert, nachdem er mit Kriegsverbrechen der Horde in Verbindung gebracht worden war. Nach seiner Rettung unterstützte er Quel'Thalas beim Feldzug auf der Insel des Donners und bei der Rebellion gegen Garrosh Höllschrei."},
@@ -139,14 +139,14 @@ IMAGOdb.timelines.AETHAS_SUNREAVER = {
     {era = "Midnight", text = "Führte die Sonnenhäscher bei der Verteidigung von Silbermond gegen die vordringende Leere an und duldete dabei die Präsenz des Silberbunds, um den Fall der Stadt zu verhindern. Nach einem erfolgreichen Angriff gegen die Leere auf Quel'Danas stimmte er dem Silbersonnenabkommen zu – einer mühsamen Übereinkunft mit dem Silberbund, Differenzen in Zeiten großer Not beiseitezulegen."},
 }
 
-IMAGOdb.timelines.SALANDRIA = {
+IMAGOdb.timelines.SALANDRIA_DE = {
     {era = "TBC", text = "Wurde während der Kinderwoche von einem Champion der Horde auf ein Abenteuer mitgenommen und sah zum ersten Mal die Welt außerhalb von Shattrath. Sie wurde bei Sichtkontakt von einem bronzenen Drachen angegriffen, und zwar für etwas, das sie in ihrer Zukunft tun oder zu tun versäumen wird. Später wurde Salandria von Lady Liadrin adoptiert."},
     {era = "SL", text = "Begab sich auf ihre erste Mission als Blutritteranwärterin und begleitete Champions der Horde in die Schattenlande, um eine Waffe gegen die neu erhobene Geißel in Quel'Thalas zu ermächtigen. Half gemeinsam mit Liadrin dabei den San'layn Vorath zu besiegen und die Bedrohung durch die Geißel vorerst zu beenden."},
     {era = "TWW", text = "Begleitete ihre Adoptivmutter nach Heilsturz, um Xal'ataths Streitkräfte zu bekämpfen. Erfuhr dort von der Heiligen Flamme der Arathi."},
     {era = "Midnight", text = "Verteidigte den Sonnenbrunnen gegen den vordringenden Leerensturm. Gemeinsam mit Taelia Fordragon rettete sie gefangene Paladine vor den Kultisten der Zwielichtsklinge und schaffte es, deren Anführer zur Strecke zu bringen."},
 }
 
-IMAGOdb.timelines.MAGISTER_UMBRIC = {
+IMAGOdb.timelines.MAGISTER_UMBRIC_DE = {
     {era = "Pre-WC1", text = "Studierte das Arkane in Dalaran an der Seite seiner Freunde Rommath und Dar'Khan Drathir."},
     {era = "Pre-WotLK", text = "Wurde wegen des Praktizierens verbotener Leerenmagie aus Silbermond verbannt."},
     {era = "Legion", text = "Entdeckte den Telogrusriss und wurde zusammen mit seinen Anhängern in Ren'dorei verwandelt. Schloss sich Alleria Windläufer an, nachdem sie ihnen einen Platz in der Allianz angeboten hatte."},
@@ -157,7 +157,7 @@ IMAGOdb.timelines.MAGISTER_UMBRIC = {
     {era = "Midnight", text = "Da Silbermond in Gefahr war, kehrte Umbric in seine alte Heimat zurück, um die Leere zu bekämpfen. Es gelang ihm, einen Durchgang in den Leerensturm zu öffnen, und später half er bei der Erschaffung des Dämmerbrunnens. Für seine Verdienste wurde er vollständig begnadigt und wieder in Silbermond aufgenommen."},
 }
 
-IMAGOdb.timelines.LADY_DARKGLEN = {
+IMAGOdb.timelines.LADY_DARKGLEN_DE = {
     {
         era = "DF",
         text = [[Half dabei, den Telogrusriss gegen die Astralen der Schattenwache zu verteidigen.]],
@@ -172,7 +172,7 @@ IMAGOdb.timelines.LADY_DARKGLEN = {
     }
 }
 
-IMAGOdb.timelines.RIFTBLADE_MAELLA = {
+IMAGOdb.timelines.RIFTBLADE_MAELLA_DE = {
     {
         era = "Pre-WotLK",
         text = [[Wurde bei dem Versuch entdeckt, ein Leerenritual durchzuführen, und daraufhin aus Quel'Thalas durch Großmagister Rommath und Lor'themar Theron verbannt.]],
@@ -199,14 +199,14 @@ IMAGOdb.timelines.RIFTBLADE_MAELLA = {
     }
 }
 
-IMAGOdb.timelines.ASTALOR_BLOODSWORN = {
+IMAGOdb.timelines.ASTALOR_BLOODSWORN_DE = {
     {era = "WC3", text = "Mitbegründer des Paladinordens der Blutritter, indem er einen Weg fand, wie die Elfen das heilige Licht wieder nutzen konnten – indem sie es einem gefangenen Naaru entzogen."},
     {era = "TBC", text = "Half bei der Verteidigung von Silbermond gegen ihren verräterischen Anführer Kael'thas."},
     {era = "WoD", text = "Versorgte die Streitkräfte der Blutelfen mit Golems, die durch Blutmagie angetrieben wurden, um Lady Liadrins Kreuzzug gegen die Eiserne Horde zu verstärken."},
     {era = "Midnight", text = "Experimentierte mit einer neuen Art von Magie – Qual – um die Verteidigung der Stadt zu stärken und das Überleben sowie den Wohlstand der Blutelfen zu sichern."},
 }
 
-IMAGOdb.timelines.LORD_SALTHERIL = {
+IMAGOdb.timelines.LORD_SALTHERIL_DE = {
     {
         era = "Pre-WC2",
         text = [[Verbannte Sylvanas Windläufer von seinem Anwesen, nachdem sie auf einer seiner Feiern einen Skandal ausgelöst hatte, indem sie heimlich Kräuter in Getränke mischte und ihm vorübergehend die Zunge lähmte.]],
@@ -221,7 +221,7 @@ IMAGOdb.timelines.LORD_SALTHERIL = {
     }
 }
 
-IMAGOdb.timelines.MEHLAR_DAWNBLADE = {
+IMAGOdb.timelines.MEHLAR_DAWNBLADE_DE = {
     {era = "Pre-WC3", text = "Wurde von Uther Lichtbringer als Ritter der Silbernen Hand ausgebildet."},
     {era = "WC3", text = "Er kämpfte an vielen Fronten gegen die Geißel und schloss sich später den Blutrittern an."},
     {era = "Classic", text = "Er entweihte Uthers Grab und stellte sich dem Geist seines Mentors. Dabei erkannte er, dass Zorn und Gewalt nicht die Gefühle waren, von denen er sich leiten lassen wollte. Gemeinsam mit Sylvanas Windläufer arbeitete er an der Herstellung des Schmuckstücks „Geißelbann“."},
@@ -232,7 +232,7 @@ IMAGOdb.timelines.MEHLAR_DAWNBLADE = {
     {era = "Midnight", text = "Während des ersten Angriffs auf den Sonnenbrunnen wurde Mehlar verletzt, schloss sich später jedoch erneut der Vorhut des Lichts im Kampf gegen die Leere an."},
 }
 
-IMAGOdb.timelines.DANATH_TROLLBANE = {
+IMAGOdb.timelines.DANATH_TROLLBANE_DE = {
     {era = "WC2", text = "Diente unter General Turalyon als Kommandant und Stratege der Allianz von Lordaeron, schlug die orkische Horde zurück, die die Östlichen Königreiche bedrohte, und verfolgte sie jenseits des Dunklen Portals bis in ihre Heimatwelt Draenor."},
     {era = "TBC", text = "Führte die Streitkräfte der Ehrenfeste an und hielt die dämonischen Armeen der Höllenfeuerhalbinsel in Schach."},
     {era = "Legion", text = "Unterstützte heldenhafte Krieger beim Erwerb von Strom'kar, dem Kriegsbrecher. Dieses legendäre Schwert gehörte einst König Thoradin, dem ersten Menschenkönig und einem Vorfahren Danath Trollbanns. Nach dem Fall der Legion kehrte Danath in das lange zerstörte Stromgarde zurück, um die Stadt wiederaufzubauen und sein Geburtsrecht als König einzufordern."},
@@ -241,7 +241,7 @@ IMAGOdb.timelines.DANATH_TROLLBANE = {
     {era = "Midnight", text = "Half Arator, die Geschichte seines Vaters Turalyon und dessen Anteil an den Ereignissen des Zweiten Krieges zu verstehen. Führte Helden in die Arcantina ein – ein Zuhause fern der Heimat für Abenteurer aus ganz Azeroth."},
 }
 
-IMAGOdb.timelines.ANDUIN_WRYNN = {
+IMAGOdb.timelines.ANDUIN_WRYNN_DE = {
     {era = "Pre-WC3",  text = "Verlor seine Mutter als Kleinkind beim Aufstand der Steinmetzgilde."},
     {era = "Classic",  text = "Wurde während des Verschwindens seines Vaters kurzzeitig zum König von Sturmwind gekrönt. Wurde von Onyxia gefangen genommen, aber nach der Rückkehr seines Vaters, König Varian, von diesem gerettet."},
     {era = "WotLK",    text = "Rettete das Leben seines Vaters während der Geißelinvasion von Sturmwind."},
@@ -257,7 +257,7 @@ IMAGOdb.timelines.ANDUIN_WRYNN = {
     {era = "Midnight", text = "Verhinderte Umbrics Hinrichtung und half dabei, den Sonnenbrunnen gegen die Leere zu verteidigen."},
 }
 
-IMAGOdb.timelines.TURALYON = {
+IMAGOdb.timelines.TURALYON_DE = {
     {era = "Pre-WC1", text = "Wurde als Waisenkind der Kirche des Heiligen Lichts übergeben, um Priester zu werden."},
     {era = "Pre-WC2", text = "Wurde einer der ersten fünf Paladine des Ordens der Silbernen Hand. Kämpfte als General von Anduin Lothar und entschied den Zweiten Krieg, indem er die Horde zurückdrängte. Lernte Alleria Windläufer kennen, bekam mit ihr einen Sohn und reiste in die Scherbenwelt, wo beide schließlich strandeten."},
     {era = "Pre-WC3", text = "Reiste mit Alleria durch den Wirbelnden Nether und wurde in die Armee des Lichts eingezogen, um gegen die Brennende Legion zu kämpfen. Was auf Azeroth nur wenige Jahrzehnte dauern würde, bedeutete für sie tausend Jahre Krieg. Turalyon wurde lichtgeschmiedet."},
@@ -273,7 +273,7 @@ IMAGOdb.timelines.TURALYON = {
     {era = "Midnight", text = "Vom Sonnenbrunnen gerufen, um Silbermond gegen die Leere zu verteidigen, führte Turalyon erneut die Streitkräfte des Lichts an. Sein religiöser Eifer geriet außer Kontrolle, und in einem schrecklichen Unfall verletzte er seinen Sohn schwer, verlor jedoch dennoch nicht den Glauben an das Licht. Er stellte sich Xal'atath in ihrer Leerenspitze entgegen und ging gemeinsam mit Alleria im Dunkelbrunnen verloren."},
 }
 
-IMAGOdb.timelines.PROPHET_VELEN = {
+IMAGOdb.timelines.PROPHET_VELEN_DE = {
     {
         era = "Ancient",
         text = [[Herrschte vor Jahrtausenden als Teil des Triumvirats über Argus. Als Sargeras den Eredar Macht und einen Platz in der Brennenden Legion anbot, lehnte Velen ab und sammelte so viele Anhänger wie möglich, bevor er dem Planeten entfloh. Kil'jaeden, einst Velen so nah wie ein Bruder, schwor, ihn für diesen Verrat zu jagen.]],
@@ -328,7 +328,7 @@ IMAGOdb.timelines.PROPHET_VELEN = {
     }
 }
 
-IMAGOdb.timelines.CALIA_MENETHIL = {
+IMAGOdb.timelines.CALIA_MENETHIL_DE = {
     {era = "WC2", text = "Wurde gegen ihren Willen im Alter von nur 16 Jahren von ihrem Vater mit dem Adligen Lord Daval Prestor aus Alterac verlobt. Prestor, der in Wahrheit der Drache Todesschwinge war, verschwand nach dem Krieg, und Calia war erleichtert, unverheiratet zu bleiben."},
     {era = "Pre-WC3", text = "Verliebte sich in einen einfachen Fußsoldaten der Armee Lordaerons und wurde mit seinem Kind schwanger."},
     {era = "WC3", text = "Sie überlebte den Fall Lordaerons durch pures Glück und konnte gemeinsam mit ihrem Ehemann und gemeinsamer Tochter nach Süderstade fliehen, wo die drei eine Zeit lang heimlich glücklich zusammenlebten. Nach einem Angriff auf die Stadt wurde Calia von ihrer Familie getrennt."},
@@ -342,7 +342,7 @@ IMAGOdb.timelines.CALIA_MENETHIL = {
     {era = "Midnight", text = "Sie wurde vom Sonnenbrunnen gerufen und verteidigte Silbermond gegen den Leerensturm."},
 }
 
-IMAGOdb.timelines.TAELIA_FORDRAGON = {
+IMAGOdb.timelines.TAELIA_FORDRAGON_DE = {
     {era = "WC2", text = "Wurde als kleines Kind nach Kul Tiras geschickt, um dem Zweiten Krieg zu entkommen. Sie wurde in die Obhut von Cyrus Wappenfall übergeben, der sie zu einer Paladinin erzog."},
     {era = "WotLK", text = "Die Briefe ihres Vaters blieben plötzlich aus und Taelia erfuhr, dass er im Krieg gegen den Lichkönig \"gestorben\" sei."},
     {era = "BfA", text = "Deckte Priscilla Aschenwinds Verrat an Haus Prachtmeer auf. Half dabei, den verderbten und wahnsinnigen Lord Sturmsang zu besiegen. Nach dem Vierten Krieg dankte König Anduin ihr persönlich für ihre Dienste."},
@@ -350,7 +350,7 @@ IMAGOdb.timelines.TAELIA_FORDRAGON = {
     {era = "Midnight", text = "Verteidigte den Sonnenbrunnen gegen den vordringenden Leerensturm. Gemeinsam mit Salandria rettete sie gefangene Paladine vor den Kultisten der Zwielichtsklinge und schaffte es, deren Anführer zur Strecke zu bringen."},
 }
 
-IMAGOdb.timelines.MOIRA_THAURISSAN = {
+IMAGOdb.timelines.MOIRA_THAURISSAN_DE = {
     {
         era = "Pre-Classic",
         text = [[Geboren als einzige Erbin von König Magni und Königin Eimear von Eisenschmiede. Ihre Mutter starb bei einem Angriff der Trolle, als Moira noch ein Kind war, wodurch ein Zerwürfnis zwischen ihr und ihrem Vater entstand. Er hätte lieber einen Sohn als eine Tochter gehabt und machte dies sowohl ihr als auch seinen Untertanen deutlich.]],
@@ -405,7 +405,7 @@ IMAGOdb.timelines.MOIRA_THAURISSAN = {
     }
 }
 
-IMAGOdb.timelines.CAPTAIN_FAREEYA = {
+IMAGOdb.timelines.CAPTAIN_FAREEYA_DE = {
     {
         era = "Ancient",
         text = [[Sie entkam gemeinsam mit Prophet Velen an Bord der Genedar von Argus, als sich die Eredar der Brennenden Legion anschlossen. Später übernahm sie ein weiteres Raumschiff - die Xenedar - und kehrte damit in den Wirbelnden Nether zurück. Unter dem Kommando des Naaru Xe'ra wurde sie lichtgeschmiedet und zu einer Anführerin der Armee des Lichts.]],
@@ -432,7 +432,7 @@ IMAGOdb.timelines.CAPTAIN_FAREEYA = {
     }
 }
 
-IMAGOdb.timelines.DELAS_MOONFANG = {
+IMAGOdb.timelines.DELAS_MOONFANG_DE = {
     {
         era = "Ancient",
         text = [[Während des Krieges der Ahnen wuchs sie in Val'sharah auf und trat der Schwesternschaft von Elune bei.]],
@@ -459,7 +459,7 @@ IMAGOdb.timelines.DELAS_MOONFANG = {
     }
 }
 
-IMAGOdb.timelines.LORD_GRAYSON_SHADOWBREAKER = {
+IMAGOdb.timelines.LORD_GRAYSON_SHADOWBREAKER_DE = {
     {era = "Pre-Classic", text = "Wurde von seiner Schwester Jubeka besucht, die nach der Geißelung von Lordaeron zu einer Verlassenen geworden war. Grayson jagte sie voller Abscheu fort, da er in ihr nichts weiter als ein Monster sah."},
     {era = "Classic", text = "In Sturmwind stationiert überwachte er Bedrohungen in ganz Azeroth und vergab Aufträge sowohl an neue als auch erfahrene Paladine. Er half anderen Paladinen dabei, ihre heiligen Streitrosse zu erhalten – treue Reittiere, die jedem Ritter des Ordens als loyale Gefährten dienen."},
     {era = "TBC", text = "Er schloss sich der Expedition in die Scherbenwelt an, mit Arator Windläufer als seinem Knappen, und kämpfte gegen die Höllenorcs in der Höllenfeuerzitadelle."},
@@ -470,7 +470,7 @@ IMAGOdb.timelines.LORD_GRAYSON_SHADOWBREAKER = {
     {era = "Midnight", text = "Er wurde vom Sonnenbrunnen gerufen und verteidigte Silbermond gegen den Leerensturm."},
 }
 
-IMAGOdb.timelines.EADRIC_THE_PURE = {
+IMAGOdb.timelines.EADRIC_THE_PURE_DE = {
     {
         era = "WotLK",
         text = [[Diente dem Argentumkreuzzug und Tirion Fordring als Großchampion. Er war für die Organisation des Argentumturniers im nördlichen Teil von Eiskrone verantwortlich, indem er das Turniergelände sicherte und mit Vorräten versorgte sowie das Training der Kämpfer überwachte. Er diente als Quartiermeister und nahm gelegentlich selbst als Kämpfer am Turnier teil.]],
@@ -489,7 +489,7 @@ IMAGOdb.timelines.EADRIC_THE_PURE = {
     }
 }
 
-IMAGOdb.timelines.YALIA_SAGEWHISPER = {
+IMAGOdb.timelines.YALIA_SAGEWHISPER_DE = {
     {
         era = "Pre-WC3",
         text = [[Da zwei Pandarenjungen in eine gefährliche Rivalität verfielen, um eines Tages ihre Hand zu gewinnen, sah Yalia keinen anderen Ausweg, als ihre Heimat und ihre Familie hinter sich zu lassen. Bereits im Alter von fünf Jahren schloss sie sich dem Orden der Shado-Pan an.]],
@@ -508,7 +508,7 @@ IMAGOdb.timelines.YALIA_SAGEWHISPER = {
     }
 }
 
-IMAGOdb.timelines.LOTHRAXION = {
+IMAGOdb.timelines.LOTHRAXION_DE = {
     {
         era = "Ancient",
         text = [[Half dabei, als Dämon der Brennenden Legion zahllose Welten in den Großen Dunklen Weiten zu vernichten. Verließ die Dämonen und seine Mitstreiter der Nathrezim, nachdem er den Draenei begegnet war. Schloss sich schließlich der Armee des Lichts an, schwor Xe'ra, der Mutter des Lichts, die Treue und wurde selbst vom Licht durchdrungen.]],
@@ -527,7 +527,7 @@ IMAGOdb.timelines.LOTHRAXION = {
     }
 }
 
-IMAGOdb.timelines.ALONSUS_FAOL = {
+IMAGOdb.timelines.ALONSUS_FAOL_DE = {
     {era = "Pre-WC1", text = "Führte die Kirche des Heiligen Lichts als Erzbischof an und nahm Uther als seinen Lehrling auf."},
     {era = "WC2", text = "Gründete den Orden der Silbernen Hand und bildete die ersten Paladine persönlich aus."},
     {era = "Pre-WC3", text = "Sammelte Spenden für den Wiederaufbau von Sturmwind sowie verschiedener Siedlungen im Königreich Lordaeron. Erbaute gemeinsam mit seinem neuen Lehrling Benediktus die Kathedrale von Sturmwind. Kurze Zeit später starb Alonsus eines natürlichen Todes."},
@@ -540,7 +540,7 @@ IMAGOdb.timelines.ALONSUS_FAOL = {
     {era = "Midnight", text = "Überwachte die Verteidigung des Sonnenbrunnens und stärkte die erschöpften Verteidiger mit heiliger Magie. Half Arator dabei, seine Zweifel an seinem Vater und dem Licht zu überwinden."},
 }
 
-IMAGOdb.timelines.TAHU_SAGEWIND = {
+IMAGOdb.timelines.TAHU_SAGEWIND_DE = {
     {
         era = "WotLK",
         text = [[Ergründete gemeinsam mit Aponi Lichtmähne die Natur An'shes in Donnerfels. Dort wurden die ersten Schritte zur Gründung der taurischen Orden der Seher und der Sonnenläufer unternommen.]],
@@ -563,7 +563,7 @@ IMAGOdb.timelines.TAHU_SAGEWIND = {
     }
 }
 
-IMAGOdb.timelines.APONI_BRIGHTMANE = {
+IMAGOdb.timelines.APONI_BRIGHTMANE_DE = {
     {
         era = "WotLK",
         text = [[Kämpfte als Kriegerin in Nordend gegen die Armeen des Lichkönigs, wurde jedoch schwer verwundet und kehrte nach Donnerfels zurück. Dort legten sie und Tahu Weisenwind den Grundstein für die ersten taurischen Paladin- und Priesterorden. Nachdem sie geheilt worden war, kehrte Aponi in den Krieg zurück und kämpfte nun mit dem Licht An'shes an ihrer Seite.]],
@@ -594,7 +594,7 @@ IMAGOdb.timelines.APONI_BRIGHTMANE = {
     }
 }
 
-IMAGOdb.timelines.WAR_CHAPLAIN_SENN = {
+IMAGOdb.timelines.WAR_CHAPLAIN_SENN_DE = {
     {
         era = "Legion",
         text = [[Kämpfte auf Argus gegen die Brennende Legion.]],
@@ -609,13 +609,13 @@ IMAGOdb.timelines.WAR_CHAPLAIN_SENN = {
     }
 }
 
-IMAGOdb.timelines.FAERIN_LOTHAR = {
+IMAGOdb.timelines.FAERIN_LOTHAR_DE = {
     {era = "Pre-Legion", text = "Schlich sich an Bord eines der Luftschiffe der Heilsturz-Expedition und erlitt bei der Ankunft schwere körperliche Verletzungen. Wurde unter Generalin Stahlstoß zur Lampenanzünderin ausgebildet."},
     {era = "TWW",        text = "Verteidigte Heilsturz gegen die Neruber und kämpfte an vorderster Front, um Xal'atath zurückzuschlagen. Freundete sich mit Anduin Wrynn an und half ihm, seinen Glauben an das Licht wiederzufinden. Half später dabei, Maran Trollbanns Rebellion in Stromgarde zu verhindern."},
     {era = "Midnight",   text = "Wurde vom Sonnenbrunnen gerufen und half dabei, ihn gegen die Leere zu verteidigen."},
 }
 
-IMAGOdb.timelines.GENERAL_AMIAS_BELLAMY = {
+IMAGOdb.timelines.GENERAL_AMIAS_BELLAMY_DE = {
     {
         era = "Pre-Legion",
         text = [[Schloss sich der Arathi-Expedition auf Geheiß der Vision ihres Kaisers an. Überlebte die Reise und strandete in Heilsturz, wo sie fortan als Paladin kämpfte, um den Kristall Beledar zu beschützen und jeden Feind zu vernichten, der ihre neue Heimat bedrohte.]],
@@ -626,7 +626,7 @@ IMAGOdb.timelines.GENERAL_AMIAS_BELLAMY = {
     }
 }
 
-IMAGOdb.timelines.ARATOR = {
+IMAGOdb.timelines.ARATOR_DE = {
     {era = "WC2", text = "Wurde während des Zweiten Krieges geboren und auf Azeroth zurückgelassen, um von seiner Tante Vereesa Windläufer aufgezogen zu werden."},
     {era = "WC3", text = "Nachdem er den Dritten Krieg überlebt hatte, brachte Vereesa ihn nach Silbermond, wo er von Lor'themar und Liadrin in den Lehren des Lichts unterwiesen wurde."},
     {era = "TBC", text = [[Schloss sich der Expedition in die Scherbenwelt an, um nach seinen Eltern zu suchen. Diente unter dem Banner der Allianz als Paladin. Er erhielt den Beinamen "Arator der Retter".]]},
@@ -635,7 +635,7 @@ IMAGOdb.timelines.ARATOR = {
     {era = "Midnight", text = "Nachdem er vom Sonnenbrunnen gerufen wurde, kämpfte Arator an vorderster Front gegen die Leere. Er organisierte die Wiedervereinigung der Elfenmächte Azeroths, um einen gemeinsamen Feind zu bekämpfen."},
 }
 
-IMAGOdb.timelines.NOLAKI = {
+IMAGOdb.timelines.NOLAKI_DE = {
     {
         era = "BfA",
         text = [[Wurde in jungen Jahren unter dem Champion des Lichts Ra'wani Kanae zum Paladin ausgebildet. Nahm nicht an der Schlacht um Dazar'alor teil.]],
@@ -650,7 +650,7 @@ IMAGOdb.timelines.NOLAKI = {
     }
 }
 
-IMAGOdb.timelines.VALUNEI = {
+IMAGOdb.timelines.VALUNEI_DE = {
     {
         era = "Ancient",
         text = [[Schloss sich der Armee des Lichts an, wurde lichtgeschmiedet und kämpfte auf Argus gegen die Brennende Legion. Wurde von ihrer besten Freundin und Kommandantin, Verteidiger Iriska, zum Paladin ausgebildet. Valunei war zutiefst erschüttert, als Iriska starb.]],
@@ -665,12 +665,12 @@ IMAGOdb.timelines.VALUNEI = {
     }
 }
 
-IMAGOdb.timelines.MARIELLA_WARD = {
+IMAGOdb.timelines.MARIELLA_WARD_DE = {
     {era = "Legion", text = "Sagte sich vom Scharlachroten Ansturm los und entkam nur knapp dem darauf folgenden Todesurteil. Schloss sich dem Konklave der Priester im Netherlichttempel an."},
     {era = "Midnight", text = "Wurde nach Silbermond gerufen, um den Sonnenbrunnen zu verteidigen, und blieb an seinen heiligen Wassern, um ihre Magie gegen den vordringenden Leerensturm einzusetzen."},
 }
 
-IMAGOdb.timelines.HADWIN = {
+IMAGOdb.timelines.HADWIN_DE = {
     {
         era = "BfA",
         text = [[Meldete sich freiwillig beim Glutorden unter Luzilla Kronsteig, um die Hexen von Drustvar zu bekämpfen. Dort begann er, eine Verbindung zum Licht zu spüren.]],
@@ -689,7 +689,7 @@ IMAGOdb.timelines.HADWIN = {
     }
 }
 
-IMAGOdb.timelines.TALTHIS = {
+IMAGOdb.timelines.TALTHIS_DE = {
     {
         era = "WC3",
         text = [[Überlebte als Kind den Fall von Quel'Thalas.]],
@@ -708,7 +708,7 @@ IMAGOdb.timelines.TALTHIS = {
     }
 }
 
-IMAGOdb.timelines.VINDICATOR_BOROS = {
+IMAGOdb.timelines.VINDICATOR_BOROS_DE = {
     {
         era = "TBC",
         text = [[Besiegte den Verräter Sironas und bewahrte die draenischen Flüchtlinge auf der Blutmythosinsel davor, der dämonischen Verderbnis anheimzufallen. Später half er dabei, die Landschaft rund um die Absturzstelle der Exodar wiederherzustellen.]],
@@ -727,7 +727,7 @@ IMAGOdb.timelines.VINDICATOR_BOROS = {
     }
 }
 
-IMAGOdb.timelines.SUNWALKER_DEZCO = {
+IMAGOdb.timelines.SUNWALKER_DEZCO_DE = {
     {era = "Pre-MoP", text = "Kämpfte auf mehreren Hordenmissionen über verschiedene Kontinente hinweg an der Seite seiner engsten Verbündeten gegen Drachen, Untote und Streitkräfte der Allianz."},
     {era = "MoP", text = "Führte den Stamm der Morgenwandler nach Pandaria und durchlebte den tragischen Tod seiner Frau und eines seiner neugeborenen Söhne. Er wurde zu einem unerbittlichen Verteidiger des Tals der Ewigen Blüten und half letztendlich dabei, Garrosh Höllschrei zu stürzen, um dessen Entweihung des heiligen Landes zu stoppen."},
     {era = "WoD", text = "Reiste auf der Suche nach Frieden nach Draenor, wo er vorübergehend mit einer Sucht nach dem beruhigenden, warmen Licht eines Sonnenkristalls der Arakkoa kämpfte, um seine immense Trauer zu bewältigen."},
@@ -738,7 +738,7 @@ IMAGOdb.timelines.SUNWALKER_DEZCO = {
     {era = "Midnight", text = "Fungiert als anleitender Mentor für die Sonnenläufer und ihre Verbündeten und lehrt eine neue Generation, dass das Führen des Lichts viel mehr bedeutet als bloße Gewalt."},
 }
 
-IMAGOdb.timelines.AEONARA_DAWNSHADE = {
+IMAGOdb.timelines.AEONARA_DAWNSHADE_DE = {
     {
         era = "DF",
         text = [[Verteidigte Leerenelfenlager im Telogrusriss gegen Angriffe der Schattenwache.]],
@@ -753,7 +753,7 @@ IMAGOdb.timelines.AEONARA_DAWNSHADE = {
     }
 }
 
-IMAGOdb.timelines.ALLARI_THE_SOULEATER = {
+IMAGOdb.timelines.ALLARI_THE_SOULEATER_DE = {
     {
         era = "TBC",
         text = [[Schwor Illidan Sturmgrimm in der Scherbenwelt ihre Loyalität. Holte auf seinen Befehl hin erfolgreich das Artefakt Sargeritschlüsselstein zurück, wurde nach ihrer Rückkehr jedoch gemeinsam mit ihren Mitstreitern der Illidari von Maiev Schattensang gefangen genommen und eingesperrt.]],
@@ -772,7 +772,7 @@ IMAGOdb.timelines.ALLARI_THE_SOULEATER = {
     }
 }
 
-IMAGOdb.timelines.DECIMUS = {
+IMAGOdb.timelines.DECIMUS_DE = {
     {
         era = "Midnight",
         text = [[Schmiedete ein Bündnis mit den Leerenelfen, bot ihnen einen sicheren Stützpunkt und unterstützte sie bei ihren Unternehmungen im Leerensturm. Praktischerweise entledigte er sich dabei ganz nebenbei rivalisierender Domanaar.
@@ -780,14 +780,14 @@ Er konstruierte die Leerenschmiede – einen Fokuspunkt dunkler Energie –, die
     }
 }
 
-IMAGOdb.timelines.KING_MRGL_MRGL = {
+IMAGOdb.timelines.KING_MRGL_MRGL_DE = {
     {era = "WotLK", text = "Schloss sich der Expeditionstruppe von D.E.H.T.A. in der Boreanischen Tundra an und begann mithilfe seiner unorthodoxen Verkleidung seine Forschungen über Murlocs. In einer Zeit der Not wählten die Murlocs ihn zu ihrem König; König Mrgl-Mrgl verteidigte den hilflosen Stamm und festigte seinen Platz als König."},
     {era = "Legion", text = "An der Seite des jungen Murloc-Helden Murky versuchte König Mrgl-Mrgl, die Swamprock-Murlocs in Hochberg von ihren gewalttätigen Wegen abzubringen. Mit der Hilfe des Königs konnte Murky sich als friedlicherer Anführer seines neuen „Murkloc“-Stammes etablieren."},
     {era = "BfA", text = "In Nazjatar ist König Mrgl-Mrgl als Betreiber von Mrgl's Bar and Grill anzutreffen, einem Etablissement, das ausschließlich die Murlocs der Gegend bewirtet."},
     {era = "Midnight", text = "Nachdem er die Murlocs von Zul'Aman gegen einen angreifenden Stamm von Tiefsee-Murlocs verteidigt hatte, wurde König Mrgl-Mrgl zum Loa der Murlocs erklärt. Seine Verehrer hielten ihn in ihrem sumpfgebundenen Tempel gefangen — als ihren Gott und Retter."},
 }
 
-IMAGOdb.timelines.MONTE_GAZLOWE = {
+IMAGOdb.timelines.MONTE_GAZLOWE_DE = {
     { era = "Pre-WC3", text = "Schwer desillusioniert verließ Gazlowe Lorenhall mit dem Gedanken nie wieder zurückzukehren. Er schloss sich gemeinsam mit seinem alten Freund Marin Noggenfogger dem Dampfdruckkartell an." },
     { era = "WC3", text = "Wurde von Kriegshäuptling Thrall beauftragt, den Bau von Orgrimmar zu überwachen." },
     { era = "Classic", text = "Gründete mit dem Geld, das er nach der Fertigstellung Orgrimmars verdiente, die Hafenstadt Ratschet im Brachland. Aus Dankbarkeit gegenüber Thrall unterstützte er weiterhin die Orcs in Durotar, blieb offiziell jedoch neutral und erlaubte sowohl Horde als auch Allianz Zugang zu seiner Stadt. Er hielt die Küste des Hordengebiets frei von Piraten." },
@@ -801,7 +801,7 @@ IMAGOdb.timelines.MONTE_GAZLOWE = {
     { era = "Midnight", text = "Nachdem Orweyna ihm in Lorenhall geholfen hatte, versprach Gazlowe ihr, nach Harandar zu kommen und ihre Kultur kennenzulernen. Er genoss es, mehr über die Hara'ti zu erfahren." },
 }
 
-IMAGOdb.timelines.FIONA = {
+IMAGOdb.timelines.FIONA_DE = {
     {
         era = "Cata",
         text = [[Reiste gemeinsam mit Tarenar Sonnenhieb und Gidwin Goldzopf durch die Östlichen Pestländer. Sie legten mehrfach Halt ein, um den Paladinen der Kapelle des hoffnungsvollen Lichts zu helfen, bevor sie sich vorerst in dem Heiligtum niederließen. Unterwegs schloss Fiona mehrere Freundschaften und Bekanntschaften, darunter mit Argus Leuchtfeuer, dem Geist von Pamela Rotpfad und Vex'tul.]],
@@ -824,7 +824,7 @@ IMAGOdb.timelines.FIONA = {
     }
 }
 
-IMAGOdb.timelines.VALEERA_SANGUINAR = {
+IMAGOdb.timelines.VALEERA_SANGUINAR_DE = {
     {
         era = "Pre-WC3",
         text = [[Wurde als Kind zur Waise, nachdem ihre gesamte Familie von Banditen ermordet wurde. Überlebte als Diebin auf den Straßen.]],
@@ -863,7 +863,7 @@ IMAGOdb.timelines.VALEERA_SANGUINAR = {
     }
 }
 
-IMAGOdb.timelines.FREYA = {
+IMAGOdb.timelines.FREYA_DE = {
     {
         era = "Ancient",
         text = [[Half dabei, das Schwarze Imperium zu besiegen, indem sie Therazane bezwang. Anschließend bevölkerte sie Azeroth erneut mit Pflanzenleben und experimentierte mit Lebensmagie im Krater von Un'Goro, im Sholazarbecken und im Tal der Ewigen Blüten. Titanenaufzeichnungen zufolge erschuf sie den Smaragdgrünen Traum und pflanzte dort den Weltenbaum G'Hanir. Aus den von ihr erschaffenen Tieren entwickelten sich später die Wilden Götter und die Loa. Außerdem half sie dabei, die Drachenaspekte mit ihrer Macht zu erfüllen.]],
@@ -882,7 +882,7 @@ IMAGOdb.timelines.FREYA = {
     }
 }
 
-IMAGOdb.timelines.EITRIGG = {
+IMAGOdb.timelines.EITRIGG_DE = {
     {era = "WC1", text = "Kämpfte für die Alte Horde gegen die Draenei und später auf Azeroth gegen die Menschen von Sturmwind."},
     {era = "WC2", text = "Behauptete seine Position als einer der vertrautesten Leutnants des neuen Kriegshäuptlings Orgrim Schicksalshammer. Nach der Schlacht am Schwarzfels zerbrach sein Glaube an die Horde. Eitrigg desertierte und lebte fortan als Einsiedler in Lordaeron, verborgen vor den Menschen."},
     {era = "Pre-WC3", text = "Kämpfte gegen Tirion Fordring. Obwohl er die Gelegenheit hatte, ihn zu töten, rettete Eitrigg Tirion das Leben. Damit begründete er eine Ehrenschuld, die der Paladin beglich, indem er Eitriggs Hinrichtung in Stratholme verhinderte. Der Orc schloss sich daraufhin Thralls Neuer Horde an, betrachtete Tirion jedoch weiterhin als seinen Bruder."},
@@ -897,7 +897,7 @@ IMAGOdb.timelines.EITRIGG = {
     {era = "Pre-MN", text = "Wurde schließlich zum Mitglied der Söhne Lothars ernannt und wird seither zu deren Versammlungen herbeigerufen, um über die Bedrohungen für Azeroth zu beraten."}
 }
 
-IMAGOdb.timelines.KURDRAN_WILDHAMMER = {
+IMAGOdb.timelines.KURDRAN_WILDHAMMER_DE = {
     {era = "WC2", text = "Kämpfte gegen die Horde und half dabei, sie zurückzuschlagen. Folgte später Turalyons Expedition nach Draenor, um die Bedrohung durch die Orcs endgültig zu beenden. Entschied sich, dort zurückzubleiben, und stellte sicher, dass das Dunkle Portal geschlossen wurde und Azeroth geschützt blieb."},
     {era = "TBC", text = "Verteidigte eine Festung im Schattenmondtal und unterstützte Allianz-Abenteurer im Kampf gegen Illidan Sturmgrimm und die Brennende Legion."},
     {era = "Pre-Cata", text = "Vertrat kurzzeitig den Wildhammerklan im Rat der drei Hämmer in Eisenschmiede, überließ seinen Platz jedoch schließlich Falstad Wildhammer."},
@@ -907,7 +907,7 @@ IMAGOdb.timelines.KURDRAN_WILDHAMMER = {
     {era = "Midnight", text = "Half Arator dabei, mehr über die Geschichte seines Vaters Turalyon und dessen Rolle im Zweiten Krieg zu erfahren. Führte Helden zur Arkantine, einem Zuhause fern der Heimat für Abenteurer aus ganz Azeroth."}
 }
 
-IMAGOdb.timelines.LIRATH_WINDRUNNER = {
+IMAGOdb.timelines.LIRATH_WINDRUNNER_DE = {
     {
         era = "Pre-WC2",
         text = [[Wurde zum königlichen Musiker von Prinz Kael'thas Sonnenwanderer ernannt. Nach dem Tod ihrer Eltern begann er gemeinsam mit seiner Schwester Vereesa mit der Ausbildung zum Waldläufer.]],
@@ -926,7 +926,7 @@ IMAGOdb.timelines.LIRATH_WINDRUNNER = {
     }
 }
 
-IMAGOdb.timelines.LORD_MAXWELL_TYROSUS = {
+IMAGOdb.timelines.LORD_MAXWELL_TYROSUS_DE = {
     {
         era = "Pre-Classic",
         text = [[Schloss sich Alexandros Mograine bei dessen Mission an, Lordaeron von der Geißel zu befreien. Nach Mograines Tod stellte sich Lord Maxwell Tyrosus entschieden gegen die fanatischen Ideale des Scharlachroten Kreuzzuges und trat der neu gegründeten Argentumdämmerung bei, deren Anführer er rasch wurde. Später half er Darion Mograine dabei, die Seele seines Vaters zu retten.]],
@@ -957,7 +957,7 @@ IMAGOdb.timelines.LORD_MAXWELL_TYROSUS = {
     }
 }
 
-IMAGOdb.timelines.ALLERIA_WINDRUNNER = {
+IMAGOdb.timelines.ALLERIA_WINDRUNNER_DE = {
     {
         era = "Pre-WC2",
         text = [[Sie lehnte den Titel der zukünftigen Waldläufergeneralin von Silbermond ab und verließ ihre Heimat, um die Welt jenseits davon kennenzulernen. Dabei knüpfte sie Kontakte und Bündnisse innerhalb der Allianz von Lordaeron. Während ihrer Abwesenheit wurden ihre Eltern von der orcischen Horde ermordet.]],
@@ -1008,7 +1008,7 @@ IMAGOdb.timelines.ALLERIA_WINDRUNNER = {
     },
 }
 
-IMAGOdb.timelines.DARION_MOGRAINE = {
+IMAGOdb.timelines.DARION_MOGRAINE_DE = {
     {era = "WC3", text = "Schloss sich der Silbernen Hand an und half im Kampf gegen die Geißel."},
     {era = "Classic", text = "Rief die Hilfe der Argentumdämmerung für einen Angriff auf Naxxramas an, eroberte den Aschenbringer von seinem untoten Vater zurück, nachdem er die Vier Reiter besiegt hatte. Opferte sich, um die Argentumdämmerung zu retten, und wurde als Todesritter wiedererweckt."},
     {era = "WotLK", text = "Wurde zum Anführer der Todesritter von Acherus ernannt. Befreite sich aus der Kontrolle des Lichkönigs und gründete die Schwarze Klinge. Unterstützte den Krieg gegen die Geißel in Eiskrone und Zul'Drak. Half dabei, den Lichkönig in der Eiskronenzitadelle zu besiegen. Erfuhr, dass Bolvar Fordragon zum neuen Lichkönig gekrönt wurde."},
@@ -1019,7 +1019,7 @@ IMAGOdb.timelines.DARION_MOGRAINE = {
     {era = "Midnight", text = "Verteidigte gemeinsam mit den übrigen Vier Reitern die Kapelle des hoffnungsvollen Lichts gegen die Geißel."},
 }
 
-IMAGOdb.timelines.THASSARIAN = {
+IMAGOdb.timelines.THASSARIAN_DE = {
     {era = "WC3", text = "Thassarian trat der Armee bei und folgte Prinz Arthas nach Nordend, um Mal'Ganis zu jagen. Dort wurde er von Falric getötet und anschließend von Arthas in einen Todesritter verwandelt. Als Soldat der Geißel wurde er gezwungen, Lordaeron und Quel'Thalas anzugreifen."},
     {era = "Pre-WotLK", text = "Thassarian wurde nach Acherus entsandt, um die Kapelle des Hoffnungsvollen Lichts anzugreifen. Die Todesritter wurden jedoch besiegt und Thassarian selbst vom Geist seines Vaters davon überzeugt, die Waffen niederzulegen. Da er nicht länger unter der Kontrolle des Lichkönigs stand, reiste Thassarian nach Sturmwind und traf sich mit König Varian Wrynn, der die Ritter der Schwarzen Klinge als Verbündete akzeptierte."},
     {era = "WotLK", text = "Thassarian schloss sich der Allianz in Nordend an, um gegen die Geißel zu kämpfen und seine Schwester zu retten. Später unterstützte er die Kriegsanstrengungen in Eiskrone, indem er sein Wissen über die Geißel nutzte, um ihre Verteidigung zu schwächen und einen Weg zur Zitadelle zu öffnen. An der Seite der Ritter der Schwarzen Klinge trat er dem Lichkönig entgegen, war jedoch gezwungen, sich zurückzuziehen."},
@@ -1030,7 +1030,7 @@ IMAGOdb.timelines.THASSARIAN = {
     {era = "Midnight", text = "Half bei der Verteidigung der Kapelle des Hoffnungsvollen Lichts in den Östlichen Pestländern."},
 }
 
-IMAGOdb.timelines.NAZGRIM = {
+IMAGOdb.timelines.NAZGRIM_DE = {
     {
         era = "Pre-WC3",
         text = [[Wurde von der Allianz gefangen genommen und in den Internierungslagern festgehalten. Nachdem er von der Horde befreit wurde, schloss er sich der Armee von Thrall an.]],
@@ -1065,7 +1065,7 @@ IMAGOdb.timelines.NAZGRIM = {
     }
 }
 
-IMAGOdb.timelines.HIGH_INQUISITOR_WHITEMANE = {
+IMAGOdb.timelines.HIGH_INQUISITOR_WHITEMANE_DE = {
     {
         era = "Pre-Classic",
         text = [[Wurde Zeugin, wie ihre Familie in Lordaeron der Plage des Untods erlag, und musste sie eigenhändig vernichten, als sie als Mitglieder der Geißel wiederauferstanden. Schloss sich dem Scharlachroten Kreuzzug an, um die Bedrohung durch die Untoten zu beenden.]],
@@ -1096,7 +1096,7 @@ IMAGOdb.timelines.HIGH_INQUISITOR_WHITEMANE = {
     }
 }
 
-IMAGOdb.timelines.KOLTIRA_DEATHWEAVER = {
+IMAGOdb.timelines.KOLTIRA_DEATHWEAVER_DE = {
     {
         era = "WC3",
         text = [[Starb bei der Verteidigung von Silbermond durch Thassarians Schwert. Wurde anschließend als Todesritter wiedererweckt und gezwungen, für die Geißel zu kämpfen.]],
@@ -1123,7 +1123,7 @@ IMAGOdb.timelines.KOLTIRA_DEATHWEAVER = {
     }
 }
 
-IMAGOdb.timelines.THORAS_TROLLBANE = {
+IMAGOdb.timelines.THORAS_TROLLBANE_DE = {
     {
         era = "Pre-WC2",
         text = [[Führte die Armeen von Stromgarde in mehreren Kriegen gegen das Königreich Alterac in die Schlacht.]],
@@ -1150,7 +1150,7 @@ IMAGOdb.timelines.THORAS_TROLLBANE = {
     }
 }
 
-IMAGOdb.timelines.NEXUS_KING_SALHADAAR = {
+IMAGOdb.timelines.NEXUS_KING_SALHADAAR_DE = {
     {
         era = "Ancient",
         text = [[Herrschte als Hohepriester über die Bewohner K'areshs und entschied sich, die Warnungen von Raumgänger vor der herannahenden Leere zu ignorieren. Letztlich machte er ihn sogar für das verantwortlich, was folgen sollte. Als Dimensius der alles Verschlingende erschien, verlor Salhadaar seinen physischen Körper und K'aresh wurde zerstört. Gemeinsam mit seinem Volk floh er in den Wirbelnden Nether.]],
@@ -1173,7 +1173,7 @@ IMAGOdb.timelines.NEXUS_KING_SALHADAAR = {
     }
 }
 
-IMAGOdb.timelines.L_URA = {
+IMAGOdb.timelines.L_URA_DE = {
     {
         era = "Ancient",
         text = [[Blieb auf Argus zurück, um Velens Flucht vor der Brennenden Legion zu sichern. Wurde von Kil'jaeden besiegt und eingesperrt.]],
@@ -1188,7 +1188,7 @@ IMAGOdb.timelines.L_URA = {
     }
 }
 
-IMAGOdb.timelines.MOR_DUUN = {
+IMAGOdb.timelines.MOR_DUUN_DE = {
     {
         era = "TWW",
         text = [[Gründete die Zwielichtklinge aus den Überresten des Schattenhammers und verschrieb sich dem Dienste Xal'ataths.]],
@@ -1203,12 +1203,12 @@ IMAGOdb.timelines.MOR_DUUN = {
     }
 }
 
-IMAGOdb.timelines.ZALJARRA = {
+IMAGOdb.timelines.ZALJARRA_DE = {
     {era = "TBC", text = "Verlor ihren Vater Man'ye und ihren Großvater Zul'jin, als sie noch ein kleines Kind war. Später wurde ihre Mutter in einem rituellen Kampf getötet. Nachdem sie sie gerächt hatte, nahm Zul'jarra ihren rechtmäßigen Platz als neue Anführerin ein."},
     {era = "Midnight", text = "Entschied sich, sich Lady Liadrin anzuschließen und ihre Hilfe anzunehmen, um hash'ey zu werden. Zul'jarra vereinte die Stämme von Zul'Aman und gewann das Vertrauen der Loa zurück. Danach führte sie die Schlacht gegen die Klinge der Dämmerung an und verteidigte ihr Volk erfolgreich gegen die Leere."},
 }
 
-IMAGOdb.timelines.NALORAKK = {
+IMAGOdb.timelines.NALORAKK_DE = {
     {
         era = "TBC",
         text = [[Wurde von Hexlord Malacrass an einen der stärksten Krieger Zul'jins gebunden. Als der Krieger von Abenteurern getötet wurde, wurde Nalorakk erneut befreit.]],
@@ -1227,7 +1227,7 @@ IMAGOdb.timelines.NALORAKK = {
     }
 }
 
-IMAGOdb.timelines.AKILZON = {
+IMAGOdb.timelines.AKILZON_DE = {
     {era = "TBC", text = "Wurde vom Hexlord Malacrass in den Körper von Man'ye gebunden, dem Vater von Zul'jarra und Zul'jan. Man'ye wurde in einen Mystiker mit Adlerkopf verwandelt und fiel den eindringenden Abenteurern zum Opfer."},
     {era = "WotLK", text = "Unterstützte die Zandalari dabei, den Drakkari-Trollen und ihrem Verzehr von Loa zur Machtgewinnung ein Ende zu setzen."},
     {era = "Cata", text = "Wurde erneut der dunklen Magie von Hexlord Malacrass unterworfen. Ihr Geist wurde nach dem Tod ihres Avatars durch die Hände von Abenteurern befreit."},
@@ -1235,14 +1235,14 @@ IMAGOdb.timelines.AKILZON = {
     {era = "Midnight", text = "Kehrt nach Zul'Aman zurück, um die Macht der Stürme gegen Xal'ataths Streitkräfte zu entfesseln."},
 }
 
-IMAGOdb.timelines.JANALAI = {
+IMAGOdb.timelines.JANALAI_DE = {
     {era = "TBC", text = "Litt durch die Hand von Hexlord Malacrass, der ihre Essenz stahl und sie in einen der tödlichsten Schurken der Amani band. Ihr Geist wurde mit dem Fall von Zul'jin befreit."},
     {era = "WotLK", text = "Wurde von Hexendoktor Khufu in Zul'Drak angerufen, um sie um Rat bei der Rettung der Drakkari-Loa vor ihrem eigenen Volk zu bitten."},
     {era = "Cata", text = "Jan'alai wurde erneut den Schrecken von Hexlord Malacrass ausgesetzt. Ihre Essenz wurde in einen weiteren Champion der Amani eingeflößt, um einen verdrehten Avatar zu erschaffen. Ihr Geist wurde befreit, als die Abenteurer „Daakara”, den Nachfolger von Zul'jin, besiegten."},
     {era = "Midnight", text = "Jan'alai kehrte nach Jahrzehnten des Schweigens zum Volk der Amani zurück. Der Verrat durch Zul'jin und Malacrass hatte die Loa dazu veranlasst, sich von den Trollen abzuwenden. Sie kehrte erst zurück, nachdem Hash'ey Zul'jarra für die Verbrechen ihres Volkes gebüßt hatte."},
 }
 
-IMAGOdb.timelines.HALAZZI = {
+IMAGOdb.timelines.HALAZZI_DE = {
     {
         era = "TBC",
         text = [[Seine Essenz wurde von Hexlord Malacrass gestohlen und in "Kurinje the Shadow" eingeflößt. Sein Geist wurde befreit, als Champions der Horde Zul'jin besiegten.]],
@@ -1261,12 +1261,12 @@ IMAGOdb.timelines.HALAZZI = {
     }
 }
 
-IMAGOdb.timelines.ZULJAN = {
+IMAGOdb.timelines.ZULJAN_DE = {
     {era = "TBC", text = "Verlor seinen Vater Man'ye und seinen Großvater Zul'jin, als er noch ein kleines Kind war. Später wurde seine Mutter im Ritualkampf getötet und seine Schwester Zul'jarra übernahm die Führung der Amani-Stämme."},
     {era = "Midnight", text = "Sicherte Lichtholzwaffen für sein Volk und kämpfte sowohl gegen die Blutelfen als auch gegen die Zwielichtklinge. Später beugte er sich widerstrebend den Befehlen seiner Schwester, sich mit den Elfen zu verbünden."},
 }
 
-IMAGOdb.timelines.LOA_SPEAKER_KINDURU = {
+IMAGOdb.timelines.LOA_SPEAKER_KINDURU_DE = {
     {
         era = "TBC",
         text = [[Nach der Niederlage und dem Tod von Zul'jin wurde Kinduru Berater des Häuptlings Zarama, der Ehefrau seines verstorbenen Bruders Man'ye. Nachdem Zarama in einem rituellen Kampf getötet worden war, trat Kinduru in den Dienst ihrer Tochter Zul'jarra.]],
@@ -1277,20 +1277,20 @@ IMAGOdb.timelines.LOA_SPEAKER_KINDURU = {
     }
 }
 
-IMAGOdb.timelines.FILO = {
+IMAGOdb.timelines.FILO_DE = {
     {
         era = "Midnight",
         text = [[Er wachte über Kanza, ein Kind der Amani, das ihn aufsuchte, um den Geist ihrer Zwillingsschwester wiederzufinden. Filo verlieh dem Abenteurer, der bei der Vorbereitung des Rituals half, einen Teil seiner Macht - solange seine Kinder ungestört blieben.]],
     }
 }
 
-IMAGOdb.timelines.ORWEYNA = {
+IMAGOdb.timelines.ORWEYNA_DE = {
     {era = "Pre-BfA", text = "Bemerkte die Bedrohung durch das Schwarze Blut in Azj-Kahet und wagte sich zum ersten Mal aus Harandar heraus, um dessen Ausbreitung zu bekämpfen."},
     {era = "TWW", text = "Rettete die Expedition von Alleria und Faerin in Azj-Kahet vor den Nerubern. Setzte ihre Untersuchung des Schwarzen Blutes fort, folgte ihm nach Undermine und half folglich Gazlowe bei seiner Rebellion gegen Gallywix."},
     {era = "Midnight", text = "Half dabei, die Lichtblüte sowohl in Harandar als auch in Quel'Thalas einzudämmen. Verhandelte ein vorläufiges Bündnis zwischen ihrem Volk und den Elfen von Quel'Thalas, was dazu führte, dass die Haranir zum ersten Mal die Außenwelt erkundeten."},
 }
 
-IMAGOdb.timelines.ELDER_HAGAR = {
+IMAGOdb.timelines.ELDER_HAGAR_DE = {
     {
         era = "Pre-BfA",
         text = [[Während ihrer routinemäßigen Arbeit als Wurzelhüterin gingen die Wurzeln von Teldrassil plötzlich in Flammen auf, und Hagar konnte nichts weiter tun, als mit anzusehen, wie sie verdorrten. Ohne ihren einstigen Lebenszweck schloss sie sich daraufhin dem Ältestenrat im Bau an.]],
@@ -1301,7 +1301,7 @@ IMAGOdb.timelines.ELDER_HAGAR = {
     }
 }
 
-IMAGOdb.timelines.AMARAKK = {
+IMAGOdb.timelines.AMARAKK_DE = {
     {
         era = "Pre-TWW",
         text = [[Er wurde ein Shul'ka und damit zum Ausgestoßenen seines Volkes. Er begann, die erträumten Monster im Riss von Aln zu bekämpfen.]],
@@ -1312,7 +1312,7 @@ IMAGOdb.timelines.AMARAKK = {
     }
 }
 
-IMAGOdb.timelines.VANESSA_VANCLEEF = {
+IMAGOdb.timelines.VANESSA_VANCLEEF_DE = {
     {
         era = "Classic",
         text = [[Wurde Zeugin des Todes ihres Vaters Edwin van Cleef durch angeheuerte Abenteurer. Sie wurde von den Saldeans adoptiert, nahm den Namen Hope - wie die Hoffnung - an, blieb jedoch verbittert.]],
@@ -1343,7 +1343,7 @@ IMAGOdb.timelines.VANESSA_VANCLEEF = {
     }
 }
 
-IMAGOdb.timelines.TEHD_SHOEMAKER = {
+IMAGOdb.timelines.TEHD_SHOEMAKER_DE = {
     {
         era = "Pre-Legion",
         text = [[Irgendwann vor der Rückkehr der Brennenden Legion wurde der damals menschliche Hexenmeister von einem Paladin getötet.]],
@@ -1362,7 +1362,7 @@ IMAGOdb.timelines.TEHD_SHOEMAKER = {
     }
 }
 
-IMAGOdb.timelines.GORGONNA = {
+IMAGOdb.timelines.GORGONNA_DE = {
     {
         era = "WC2",
         text = [[Wurde gemeinsam mit ihrer Schwester Krenna als Kind von ihren Eltern nach Azeroth gebracht. Häuptling Grommash Höllschrei verbannte die Familie daraufhin. Gorgonnas Eltern wurden danach von Menschen getötet, und die jungen Schwestern wuchsen in Burg Durnholde auf.]],
@@ -1397,7 +1397,7 @@ IMAGOdb.timelines.GORGONNA = {
     }
 }
 
-IMAGOdb.timelines.GARONA_HALFORCEN = {
+IMAGOdb.timelines.GARONA_HALFORCEN_DE = {
     {
         era = "Pre-WC1",
         text = [[Als Tochter einer gefangenen Draenei wurde Garona als Halborcin und Halbdraenei geboren. Sie überlebte als Mischling im grausamen Klingenwindclan und wurde später von Gul'dan aufgenommen, um zu seiner perfektesten Assassinin zu werden. Gul'dan überzeugte sie davon, halb Mensch zu sein, wodurch sie zur idealen Kandidatin wurde, um Sturmwind zu infiltrieren, sobald die Orcs in den Krieg ziehen würden.]],
@@ -1440,7 +1440,7 @@ IMAGOdb.timelines.GARONA_HALFORCEN = {
     }
 }
 
-IMAGOdb.timelines.REXXAR = {
+IMAGOdb.timelines.REXXAR_DE = {
     {
         era = "WC1",
         text = [[Schwor Kriegshäuptling Schwarzfaust die Treue, um ihn davon abzuhalten, den pazifistischen Mok'Nathal-Clan auszulöschen. Durchschritt das Dunkle Portal und kämpfte für die Alte Horde während des Ersten Krieges.]],
@@ -1495,7 +1495,7 @@ IMAGOdb.timelines.REXXAR = {
     }
 }
 
-IMAGOdb.timelines.CECILIA_CLESSINGTON = {
+IMAGOdb.timelines.CECILIA_CLESSINGTON_DE = {
     {
         era = "DF",
         text = [[Wurde von Vanessa van Cleef entführt, um Druckmittel zu haben, nachdem Cecilias Vater die Kontrolle über die Bruderschaft der Defias übernommen hatte, um Sturmwind auszurauben. Sie freundete sich mit der Schurkin an und half ihr sowie SI:7 dabei, ihren Vater, Graf Clessington, aufzuhalten und zu töten. Als einzige Erbin ihres Namens übernahm sie den Titel der Gräfin und trat dem Adelshaus von Sturmwind bei. Sie gründete die Brotkorb-Gilde, um den Menschen in Westfall zu helfen.]],
@@ -1506,7 +1506,7 @@ IMAGOdb.timelines.CECILIA_CLESSINGTON = {
     }
 }
 
-IMAGOdb.timelines.FLYNN_FAIRWIND = {
+IMAGOdb.timelines.FLYNN_FAIRWIND_DE = {
     {
         era = "Pre-Classic",
         text = [[Wurde als Kind zur Waise, nachdem seine Mutter öffentlich wegen Diebstahls gehängt wurde. Wurde gezwungen, sich einer Straßengang anzuschließen, und wandte sich schließlich der Piraterie zu.]],
@@ -1537,3 +1537,29 @@ IMAGOdb.timelines.FLYNN_FAIRWIND = {
     }
 }
 
+IMAGOdb.timelines.TARENAR_SUNSTRIKE_DE = {
+    {
+        era = "Cata",
+        text = [[Reiste mit Gidwin in Fionas Karawane zur Kapelle des Hoffnungsvollen Lichts, um Paladine zu werden. Rettete Gidwin davor, in einen Todesritter verwandelt zu werden, woraufhin beide in den Argentumkreuzzug aufgenommen wurden.]],
+    },
+    {
+        era = "WoD",
+        text = [[Begleitete Fiona und Gidwin nach Draenor. Half der Allianzarmee im Kampf gegen die wütenden Botani, trotz seiner Zugehörigkeit zur Horde als Blutelf.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich den neu formierten Rittern der Silbernen Hand an und kämpfte an der Verheerten Küste gegen die Brennende Legion.]],
+    },
+    {
+        era = "BfA",
+        text = [[Feierte gemeinsam mit Gidwin den Sieg über die Legion, indem sie in Silbermond eine stattliche Anzahl offener Zechen anhäuften. Als der Vierte Krieg ausbrach, mussten sie sich heimlich davonmachen.]],
+    },
+    {
+        era = "DF",
+        text = [[Begab sich erneut mit Fiona auf Reisen, diesmal zu den Dracheninseln.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Wurde vom Sonnenbrunnen gerufen, um seine Heimat zu verteidigen. Beglich seine eigenen und Gidwins Trinkschulden. Da die beiden Freunde aus den meisten Gasthäusern in Quel’Thalas verbannt worden waren, verbrachten sie ihre Zeit umso lieber in der magischen Arkantine.]],
+    }
+}
