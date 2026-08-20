@@ -1927,3 +1927,42 @@ IMAGOdb.timelines.ROOTWARDEN_RUIA_DE = {
         text = [[Als die Lichtblüte sein Dorf Har'alnor verseuchte, scheiterte er dabei sie aufzuhalten. Wurde verdorben, und seine Liebe zu seinem Volk schlug in Hass um. Als Lichthüter Ruia verbreitete er die Verseuchung absichtlich im Immersangwald und setzte sie als Waffe gegen die Blutelfen ein. Wurde von einem Bündnis aus Elfen und den Hara'ti aufgehalten und von Orweyna und dem Champion getötet.]],
     }
 }
+
+IMAGOdb.timelines.MISHA_DE = {
+    {
+        era = "Pre-WC3",
+        text = [[Wurde von Rexxar als Jungtier neben ihrer toten Mutter gefunden. Rexxar gab ihr den Namen Misha, und schon bald begann sie, ihrem neuen Freund überallhin zu folgen.]],
+    },
+    {
+        era = "WC3",
+        text = [[Kämpfte an Rexxars Seite gegen Daelin Prachtmeer nach dem Dritten Krieg.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Trug den verwundeten Orcspäher Byrok auf ihrem Rücken bis nach Orgrimmar.]],
+    },
+    {
+        era = "Classic",
+        text = [[Durchstreifte gemeinsam mit Rexxar die Wildnis von Desolace.]],
+    },
+    {
+        era = "TBC",
+        text = [[Half Rexxar dabei, die Donnerfeste im Schergrat zu verteidigen.]],
+    },
+    {
+        era = "Legion",
+        text = [[Schloss sich gemeinsam mit Rexxar offiziell dem Unsichtbaren Pfad an und unterstützte den Meisterjäger gelegentlich bei Missionen.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Zog gemeinsam mit Rexxar und Zekhan durch Kalimdor und trauerte um Huelo, Rexxars verstorbenen Wolfsgefährten.]],
+    },
+    {
+        era = "DF",
+        text = [[Kämpfte an Rexxars Seite in den Ebenen von Ohn'ahra und im Smaragdgrünen Traum. Nahm am ersten Kosh'harg der Orcs auf Azeroth teil.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Entspannte sich vor dem Kamin in der Arkantine und ließ sich sogar vom Champion streicheln.]],
+    }
+}
