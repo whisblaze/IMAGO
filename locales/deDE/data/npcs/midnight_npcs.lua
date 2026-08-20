@@ -30,7 +30,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["first_arcanist_thalyssra_midnight"].source = ""
 IMAGOdb.npcs.CAT_QUELTHALAS["first_arcanist_thalyssra_midnight"].timeline = IMAGOdb.timelines.FIRST_ARCANIST_THALYSSRA_DE
 
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].name = "Lady Liadrin"
-IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].aliases = {"Liadrin"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].race = "Blutelfe"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].lore = [[Lady Liadrin verlor ihren Glauben an das Licht, als die Geißel Silbermond dezimierte. Sie durchstreifte die Geisterlande und erschlug Untote in den Ruinen ihrer einstigen Heimat. Schließlich traten die Magister mit dem Angebot an sie heran, die Energien des Naaru M'uru zu nutzen, um als Paladin erneut das Licht führen zu können. Auf diese Weise wurde Liadrin zum ersten Blutritter. Nach der Läuterung des Sonnenbrunnens kehrte auch ihre Überzeugung zurück, und sie schwor, ihn fortan zu beschützen.
 
@@ -42,7 +42,11 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_liadrin_midnight"].timeline = IMAGOdb.timeline
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].name = "Großmagister Rommath"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].aliases = {"Rommath"}
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].race = "Blutelf"
-IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].lore = [[Kompromisslos und streitlustig – der Großmagister von Silbermond ist ein Mann, dessen Loyalität seinem Volk gegenüber unerschütterlich ist. Als treuester Unterstützer von Kael'thas nach dem Dritten Krieg tat Rommath alles, was er für das Überleben der Blutelfen als notwendig erachtete. Selbst wenn dies bedeutete, Teufelsmagie einzusetzen oder einen Naaru für dessen heilige Macht zu foltern, war Rommath bereit und entschlossen dazu. Seine Treue wurde auf die Probe gestellt, als Kael'thas sich mit der Brennenden Legion verbündete; letztendlich entschied er sich für sein Volk und gegen seinen ehemaligen Prinzen. Nachdem er bereits zweimal verraten worden war – zuerst von seinem einstigen Freund Dar'khan Drathir und danach von den Kirin Tor von Dalaran –, verhärtete Kael'thas' Verrat das Herz des Elfen noch weiter. Während nun der Leerensturm sein Heimatland bedroht, wird Rommath das tun, was er schon immer getan hat: Silbermond um jeden Preis schützen, trotz allem, was er und sein Volk erlitten haben.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].lore = [[Kompromisslos und streitlustig – der Großmagister von Silbermond ist ein Mann, dessen Loyalität seinem Volk gegenüber unerschütterlich ist. Als treuester Unterstützer von Kael'thas nach dem Dritten Krieg tat Rommath alles, was er für das Überleben der Blutelfen als notwendig erachtete. Selbst wenn dies bedeutete, Teufelsmagie einzusetzen oder einen Naaru für dessen heilige Macht zu foltern, war Rommath bereit und entschlossen dazu.
+
+Seine Treue wurde auf die Probe gestellt, als Kael'thas sich mit der Brennenden Legion verbündete; letztendlich entschied er sich für sein Volk und gegen seinen ehemaligen Prinzen. Nachdem er bereits zweimal verraten worden war – zuerst von seinem einstigen Freund Dar'khan Drathir und danach von den Kirin Tor von Dalaran –, verhärtete Kael'thas' Verrat das Herz des Elfen noch weiter.
+
+Während nun der Leerensturm sein Heimatland bedroht, wird Rommath das tun, was er schon immer getan hat: Silbermond um jeden Preis schützen, trotz allem, was er und sein Volk erlitten haben.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].zones = {"Immersangwald", "Orgrimmar", "Schattenhochland", "Silbermond"}
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].source = "Cadash & Austin"
 IMAGOdb.npcs.CAT_QUELTHALAS["grand_magister_rommath_midnight"].timeline = IMAGOdb.timelines.GRAND_MAGISTER_ROMMATH_DE
@@ -165,7 +169,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].timeline = IMAGOdb.timel
 
 -- CHIEF TELEMANDER OCULETH --
 IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].name = "Großtelemant Oculeth"
-IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].aliases = {"Oculeth"}
 IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].race = "Nachtgeborener"
 IMAGOdb.npcs.CAT_QUELTHALAS["chief_telemancer_oculeth_midnight"].lore = [[Jedes Mitglied der Horde hat wahrscheinlich schon einmal eines von Oculeths Portalen benutzt. Der suramarische Magier ist ein Meister der Telemagie und errichtete die Teleportationsnetzwerke der Hauptstädte wie Orgrimmar und Dazar'alor. Seine Fähigkeiten erwiesen sich sowohl während Thalyssras Rebellion gegen die Großmagistrix Elisande als auch im Vierten Krieg als äußerst wertvoll – für sein Volk ebenso wie für die Horde.
 
@@ -519,7 +523,7 @@ IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike_midnight"].timeline = IMAGOdb.timelines.TARENAR_SUNSTRIKE_DE
   
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].name = "Großkonstrukteur Romuul"
-IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].aliases = {"Romuul"}
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].race = "Draenei"
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].lore = [[Als Anführer der Konstrukteure – der Ingenieure und Architekten der Draenei – und Velens wichtigstem Vertrauten in den organisatorischen Angelegenheiten der Exodar, steht Romuul Velen seit ihrer Flucht von Argus treu zur Seite. Während der dritten Invasion der Brennenden Legion war er für die Reparatur, Wartung und Steuerung der Vindikaar verantwortlich und stattete das Schiff auch nach dem Krieg als Operationsbasis der Armee des Lichts aus.
 
@@ -546,6 +550,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["decimus_midnight"].name = "Decimus"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_NEUTRAL["decimus_midnight"].race = "Domanaar"
 IMAGOdb.npcs.CAT_NEUTRAL["decimus_midnight"].lore = [[Charismatisch, gefährlich, arglistig – all diese Adjektive beschreiben Decimus treffend.
+
 Wie alle Domanaar des Leerensturms wurde er Xal'atath unterworfen und erkannte ihre Überlegenheit an. Doch sich dauerhaft dem Willen einer anderen Entität zu beugen, entsprach nicht Decimus' Plänen. Und so beginnt er nun ein riskantes Spiel – mit den Champions von Azeroth als seinen Spielfiguren.]]
 IMAGOdb.npcs.CAT_NEUTRAL["decimus_midnight"].zones = {"Leerensturm"}
 IMAGOdb.npcs.CAT_NEUTRAL["decimus_midnight"].source = "Cadash"
@@ -662,17 +667,6 @@ Im Kampf gegen die Brennende Legion fand Alleria eine Waffe in der Leere. Sie wu
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].zones = {"Die Leerenspitze", "Leerensturm"}
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["alleria_windrunner_midnight"].timeline = IMAGOdb.timelines.ALLERIA_WINDRUNNER_DE
-
--- MARIUS FELBANE --
-IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].name = "Marius Teufelsbann"
-IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].aliases = {}
-IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].race = "Nachtelf"
-IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].lore = [[Der Dämonenjäger Marius Teufelsbann hegt einen Hass auf die Brennende Legion, der von nur wenigen übertroffen wird. Seine Abscheu sitzt so tief, dass er bereit war, sich mit dem Hexenmeister Tehd Shumaker zusammenzutun – obwohl er alles verachtet, wofür sein untoter Gefährte steht. Anfangs betrachtete er Tehd kaum als Person, doch widerwillig musste er eingestehen, dass sie außergewöhnlich gut miteinander kämpfen. 
-
-Nachdem die beiden seit der Invasion der Legion an der Verheerten Küste mehr als einhundertfünfzig Dämonen besiegt haben, richten sie ihren Blick nun auf neue Feinde.]]
-IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].zones = {"Arkantine"}
-IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["marius_felbane_midnight"].timeline = IMAGOdb.timelines.MARIUS_FELBANE_DE
 
 -- CAT_EBON_BLADE
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].name = "Hochlord Darion Mograine"
@@ -849,7 +843,9 @@ IMAGOdb.npcs.CAT_AMANI["halazzi_midnight"].timeline = IMAGOdb.timelines.HALAZZI_
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].name = "Zul'jan"
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].race = "Troll"
-IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].lore = [[Der impulsive Zul'jan ist der oberste Berater der derzeitigen Herrscherin der Amani-Stämme – seiner eigenen Schwester, Zul'jarra. Im Gegensatz zu ihr misstraut Zul'jan jedoch den Loa. Seiner Ansicht nach haben sie die Trolle in ihrer Stunde der größten Not im Stich gelassen. So sehr er in diesen Angelegenheiten auch uneins mit seiner älteren Schwester sein mag, so aufrichtig sorgt er sich um sie und würde sein Äußerstes tun, um sie zu beschützen. Nun schart Zul'jan die Amani um sich, damit sie aus eigener Kraft stark werden, ohne sich auf die Loa oder irgendjemand anderen verlassen zu müssen.]]
+IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].lore = [[Der impulsive Zul'jan ist der oberste Berater der derzeitigen Herrscherin der Amani-Stämme – seiner eigenen Schwester, Zul'jarra. Im Gegensatz zu ihr misstraut Zul'jan jedoch den Loa. Seiner Ansicht nach haben sie die Trolle in ihrer Stunde der größten Not im Stich gelassen. So sehr er in diesen Angelegenheiten auch uneins mit seiner älteren Schwester sein mag, so aufrichtig sorgt er sich um sie und würde sein Äußerstes tun, um sie zu beschützen.
+
+Nun schart Zul'jan die Amani um sich, damit sie aus eigener Kraft stark werden, ohne sich auf die Loa oder irgendjemand anderen verlassen zu müssen.]]
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].zones = {"Atal'Aman", "Immersangwald", "Zul'Aman"}
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["zuljan_midnight"].timeline = IMAGOdb.timelines.ZULJAN_DE
@@ -878,8 +874,11 @@ IMAGOdb.npcs.CAT_AMANI["filo_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].timeline = IMAGOdb.timelines.FILO_DE
 
 IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].name = "Torundo der Ergraute"
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].aliases = {"Torundo"}
 IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].race = "Waldtroll"
-IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].lore = [[Als Torundo noch ein kleines Kind war, wurde seine Heimat Zen'tamani von den Weltenwanderern aus Quel'Thalas niedergebrannt, und die wenigen Überlebenden blieben hilflos und verbittert zurück. Torundo floh nach Amani'Zar und wuchs dort zu einem gefürchteten Krieger heran. Er war dem Amani-Kriegsherrn Zul'jin treu ergeben, der seinem Volk Rache und Ruhm versprochen hatte. Selbst nach Zul'jins Niederlage blieb Torundo im Dienst seiner Sippe. Jetzt dient er Häuptlingin Zul'jarra als ihr Kriegsberater und verteidigt Zul'Aman gegen die Zwielichtklinge. Auch wenn er mit den Jahren etwas milder geworden ist, zaubert der Anblick eines toten Feindes immer noch ein Lächeln auf sein grauhaariges Gesicht.]]
+IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].lore = [[Als Torundo noch ein kleines Kind war, wurde seine Heimat Zen'tamani von den Weltenwanderern aus Quel'Thalas niedergebrannt, und die wenigen Überlebenden blieben hilflos und verbittert zurück. Torundo floh nach Amani'Zar und wuchs dort zu einem gefürchteten Krieger heran. Er war dem Amani-Kriegsherrn Zul'jin treu ergeben, der seinem Volk Rache und Ruhm versprochen hatte. Selbst nach Zul'jins Niederlage blieb Torundo im Dienst seiner Sippe.
+
+Jetzt dient er Häuptlingin Zul'jarra als ihr Kriegsberater und verteidigt Zul'Aman gegen die Zwielichtklinge. Auch wenn er mit den Jahren etwas milder geworden ist, zaubert der Anblick eines toten Feindes immer noch ein Lächeln auf sein grauhaariges Gesicht.]]
 IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].zones = {"Zul'Aman", "Atal'Aman", "die Höhle"}
 IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].source = "Quill"
 IMAGOdb.npcs.CAT_AMANI["torundo_the_grizzled_midnight"].timeline = IMAGOdb.timelines.TORUNDO_THE_GRIZZLED
@@ -1038,7 +1037,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["taoshi_midnight"].timeline = IMAGOdb.timelines.TAOSH
 
 -- SCALECOMMANDER EMBERTHAL --
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].name = "Schuppenkommandantin Glutthal"
-IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].aliases = {"Glutthal"}
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].race = "Dracthyr"
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].lore = [[Glutthal ist die Anführerin der Schwarzschuppen, der Schar der Dracthyr, die mit der Magie des schwarzen Drachenschwarms gestärkt wurden. Wie ihre Mitstreiter wurde sie von Neltharion erschaffen, bevor dieser der Verderbnis verfiel. Selbst nachdem er sie für Jahrtausende eingesperrt hatte, konnte sie angesichts des Schicksals ihres Vaters nicht anders, als Trauer und Verwirrung zu empfinden.
 
@@ -1049,7 +1048,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_emberthal_midnight"].timeline = IMAGO
 
 -- SCALECOMMANDER AZURATHEL --
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].name = "Schuppenkommandant Azurathel"
-IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].aliases = {"Azurathel"}
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].race = "Dracthyr"
 IMAGOdb.npcs.CAT_ARCANTINA["scalecommander_azurathel_midnight"].lore = [[Azurathel war einer der ersten von Neltharion erschaffenen Dracthyr und wurde von seinem Schöpfer persönlich ausgewählt, die Obsidianwächter anzuführen – den Schutzschild an der Frontlinie, der die anderen Dracthyr verteidigt. Nach seinem Erwachen aus der Stasis während des Aufstiegs der Inkarnationen führte er seinen Weyrn in die Reihen der Allianz.
 
@@ -1101,3 +1100,13 @@ IMAGOdb.npcs.CAT_ARCANTINA["wrathion_midnight"].zones = {"Arkantine"}
 IMAGOdb.npcs.CAT_ARCANTINA["wrathion_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_ARCANTINA["wrathion_midnight"].timeline = IMAGOdb.timelines.WRATHION_DE
 
+-- MARIUS FELBANE --
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane_midnight"].name = "Marius Teufelsbann"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane_midnight"].race = "Nachtelf"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane_midnight"].lore = [[Der Dämonenjäger Marius Teufelsbann hegt einen Hass auf die Brennende Legion, der von nur wenigen übertroffen wird. Seine Abscheu sitzt so tief, dass er bereit war, sich mit dem Hexenmeister Tehd Shumaker zusammenzutun – obwohl er alles verachtet, wofür sein untoter Gefährte steht. Anfangs betrachtete er Tehd kaum als Person, doch widerwillig musste er eingestehen, dass sie außergewöhnlich gut miteinander kämpfen. 
+
+Nachdem die beiden seit der Invasion der Legion an der Verheerten Küste mehr als einhundertfünfzig Dämonen besiegt haben, richten sie ihren Blick nun auf neue Feinde.]]
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane_midnight"].zones = {"Arkantine"}
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_ARCANTINA["marius_felbane_midnight"].timeline = IMAGOdb.timelines.MARIUS_FELBANE_DE
