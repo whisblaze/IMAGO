@@ -517,7 +517,7 @@ Durch seine Unbekümmertheit und seine Neigung, die Dinge nicht immer ernst zu n
 IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike_midnight"].zones = {"Silbermond", "Arkantine", "Parhelionplaza", "Insel Quel'Danas"}
 IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["tarenar_sunstrike_midnight"].timeline = IMAGOdb.timelines.TARENAR_SUNSTRIKE_DE
-
+  
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].name = "Großkonstrukteur Romuul"
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].race = "Draenei"
@@ -918,6 +918,16 @@ Den Weg eines Shul'ka zu wählen bedeutet, sich für immer vom Lied der Göttin 
 IMAGOdb.npcs.CAT_HARATI["amarakk_midnight"].zones = {"Insel von Quel'Danas", "Harandar", "Der Traumriss"}
 IMAGOdb.npcs.CAT_HARATI["amarakk_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_HARATI["amarakk_midnight"].timeline = IMAGOdb.timelines.AMARAKK_DE
+
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"].name = "Wurzelhüter Ruia"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"].race = "Haranir"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"].lore = [[Als Wurzelhüter von Shaladrassil hat Ruia die Auswirkungen der Lichtblüte nur allzu deutlich erlebt, als sich die Verseuchung von den Wurzeln seines Weltenbaums nach Harandar ausbreitete. Da sein Dorf Har'alnor in großer Gefahr schwebt, erwägt er, zu verzweifelten Maßnahmen zu greifen. 
+
+Der Älteste war schon immer eher barsch, doch nun gibt er den Elfen und ihrem Eingreifen in die Kräfte des Sonnenbrunnens die Schuld an der Seuche der Lichtblüte. Eine Zusammenarbeit mit Außenstehenden lehnt er entschieden ab.]]
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"].zones = {"Harandar", "Das Blendende Tal", "Immersangwald"}
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_HARATI["rootwarden_ruia_midnight"].timeline = IMAGOdb.timelines.ROOTWARDEN_RUIA_DE
 
 -- CAT_ARCANTINA --
 -- VANESSA VANCLEEF --

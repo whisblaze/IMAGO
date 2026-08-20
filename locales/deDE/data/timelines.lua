@@ -1920,3 +1920,10 @@ IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL_DE = {
         text = [[Wurde nach Silbermond gerufen und kämpfte als Teil der Vorhut des Lichts auf der Insel Quel'Danas. Half den Ren'dorei dabei, den Singularitätsanker im Leerensturm zu stabilisieren und verhinderte so eine zerstörerische Implosion.]],
     }
 }
+
+IMAGOdb.timelines.ROOTWARDEN_RUIA_DE = {
+    {
+        era = "Midnight",
+        text = [[Als die Lichtblüte sein Dorf Har'alnor verseuchte, scheiterte er dabei sie aufzuhalten. Wurde verdorben, und seine Liebe zu seinem Volk schlug in Hass um. Als Lichthüter Ruia verbreitete er die Verseuchung absichtlich im Immersangwald und setzte sie als Waffe gegen die Blutelfen ein. Wurde von einem Bündnis aus Elfen und den Hara'ti aufgehalten und von Orweyna und dem Champion getötet.]],
+    }
+}
