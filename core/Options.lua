@@ -210,6 +210,7 @@ function IMAGO.Options.Init()
 
     local languages = {
         { code = "enUS", label = "English" },
+        { code = "esES", label = "Español" },
         { code = "deDE", label = "Deutsch" },
         { code = "ruRU", label = "\208\160\209\131\209\129\209\129\208\186\208\184\208\185" },
     }
