@@ -21,7 +21,7 @@ IMAGOdb.zones[2405].pointsOfInterest = {
 }
 
 IMAGOdb.zones[2413].name = "Harandar"
-IMAGOdb.zones[2413].aliases = {"Den", "Rift of Aln", "Roots of the World Trees"}
+IMAGOdb.zones[2413].aliases = {"the Den", "Rift of Aln", "Roots of the World Trees"}
 IMAGOdb.zones[2413].lore = [[Hidden deep within Azeroth, the mysterious home of the haranir has been a secret to the outside world until now. Here, the roots of the world trees converge to form the Cradle of the goddess Aln'hara. The deity has been gone for a long time, but the roots remain, and the haranir have made it their sacred charge to guard and nurture them. Not all is peaceful here, despite first appearances. The eruption of the Sunwell has sparked rapid plant life growth even this far away from the font, and the presence of outsiders in Harandar might just threaten the political stability of the Hara'ti that they have maintained for generations. ]]
 IMAGOdb.zones[2413].pointsOfInterest = {
     {
