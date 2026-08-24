@@ -968,7 +968,7 @@ IMAGOdb.timelines.VINDICATOR_BOROS = {
     }
 }
 
-IMAGOdb.timelines.THE_GREAT_KYRON = {
+IMAGOdb.timelines.GREAT_KYRON = {
     {
         era = "Pre-TWW",
         text = [[Served as an overseer in the Arathi army. Joined the Arathi expedition to Hallowfall some time before the events in Khaz Algar.]],

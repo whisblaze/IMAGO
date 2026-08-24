@@ -1967,7 +1967,7 @@ IMAGOdb.timelines.MISHA_DE = {
     }
 }
 
-IMAGOdb.timelines.THE_GREAT_KYRON_DE = {
+IMAGOdb.timelines.GREAT_KYRON_DE = {
     {
         era = "WoD",
         text = [[Diente als Aufseher in der Armee der Arathi. Schloss sich einige Zeit vor den Ereignissen in Khaz Algar der Expedition der Arathi nach Heilsturz an.]],

@@ -214,13 +214,13 @@ IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"].timeline = IMAGOdb.tim
 
 -- CAT_LIGHT
 -- THE GREAT KYRON --
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].name = "The Great Kyron"
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].aliases = {"Kyron"}
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].race = "Arathi"
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].lore = [[The Great Kyron is the leader of the Arathi Lamplighters of Hallowfall. Before the Arathi expedition to Hallowfall, Kyron served as an overseer in the Arathi army. When they aren't fending off the increasingly frequent attacks by the nerubians of the Kaheti, they can often be found in Mereldar.]]
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].zones = {"Parhelion Plaza"}
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].source = "Wylariâ"
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].timeline = IMAGOdb.timelines.THE_GREAT_KYRON
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].name = "Great Kyron"
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].aliases = {"Kyron"}
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].race = "Arathi"
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].lore = [[The Great Kyron is the leader of the Arathi Lamplighters of Hallowfall. Before the Arathi expedition to Hallowfall, Kyron served as an overseer in the Arathi army. When they aren't fending off the increasingly frequent attacks by the nerubians of the Kaheti, they can often be found in Mereldar.]]
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].zones = {"Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].timeline = IMAGOdb.timelines.GREAT_KYRON
 
 -- HIGH PRELATE RATA --
 IMAGOdb.npcs.CAT_LIGHT["high_prelate_rata_midnight"].name = "High Prelate Rata"

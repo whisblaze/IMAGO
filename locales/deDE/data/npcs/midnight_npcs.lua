@@ -158,7 +158,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].timeline = IMAGOdb.timeli
 
 -- LORD ANTENORIAN --
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].name = "Lord Antenorian"
-IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].aliases = {"Antenorian"}
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].race = "Blutelf"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_antenorian_midnight"].lore = [[Ursprünglich war Antenorian ein Magister aus Silbermond, doch schon immer zog er die Ruhe des treffend benannten Tristessa vor. Als er von Magister Umbrics Forschungen über die Bedrohung durch den Leerensturm erfuhr, lud er die Ren'dorei in die Stadt ein.
 
@@ -266,6 +266,7 @@ IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].name = "Moira Thaurissan"
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].race = "Zwergin"
 IMAGOdb.npcs.CAT_LIGHT["moira_thaurissan_midnight"].lore = [[Als langjährige und respektierte Anführerin der Bronzebart- und der Dunkeleisenklane war Königin Moira nicht immer in einer so angesehenen Position innerhalb der Reihen der Allianz. Die Zeiten, in denen sie sich in Bürgerkriege einmischte, liegen inzwischen jedoch hinter ihr.
+
 Geboren als einzige Erbin des ehemaligen Königs Magni und als Witwe des verstorbenen Imperators Dagran Thaurissan vom Schwarzfels, gehört sie zwei der drei herrschenden Zwergenklans an. Ihr Sohn, Dagran II., ist dazu bestimmt, der nächste König aller Klane zu werden, sobald er volljährig ist.
 
 Da sie sich mit ihrem Vater nie wirklich verstand, haben die beiden erst vor Kurzem die ersten Schritte zur Versöhnung unternommen. Die gemeinsame Familienzeit wurde jedoch rasch durch Xal'ataths Angriff unterbrochen – zuerst auf Dalaran und nun auf Silbermond.]]
@@ -537,13 +538,13 @@ IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].timeline = IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL_DE
 
 -- THE GREAT KYRON --
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].name = "The Great Kyron [de]"
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].aliases = {}
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].race = "Arathi"
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].lore = [[Der große Kyron ist der Anführer der Lampenanzünder der Heilsturz Arathi. Vor der Expedition der Arathi nach Heilsturz diente Kyron als Aufseher in der Armee der Arathi. Wenn er nicht die vermehrt auftretenden Attacken der Kaheti Neruber abwehrt, ist er häufig in Mereldar zu finden.]]
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].zones = {"Parhelionplaza"}
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].source = "Wylariâ"
-IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].timeline = IMAGOdb.timelines.THE_GREAT_KYRON_DE
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].name = "Großer Kyron"
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].aliases = {"Kyron"}
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].race = "Arathi"
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].lore = [[Der große Kyron ist der Anführer der Lampenanzünder der Heilsturz Arathi. Vor der Expedition der Arathi nach Heilsturz diente Kyron als Aufseher in der Armee der Arathi. Wenn er nicht die vermehrt auftretenden Attacken der Kaheti Neruber abwehrt, ist er häufig in Mereldar zu finden.]]
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].zones = {"Parhelionplaza"}
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].timeline = IMAGOdb.timelines.GREAT_KYRON_DE
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].name = "Allari die Seelenfresserin"
