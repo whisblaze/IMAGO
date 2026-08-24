@@ -530,10 +530,20 @@ IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].lore = [[Als Anführer
 Während des Tishamaat verkündeten Velen und Romuul ihre Pläne zum Bau einer neuen Stadt auf Azeroth, damit die Draenei sich endlich auf einer Welt niederlassen konnten, die sie wieder ihr Zuhause nennen konnten. 
 
 Die Arbeiten müssen jedoch vorerst eingestellt werden, da der Großkonstrukteur vom Sonnenbrunnen gerufen wurde, um den Kampf gegen die Leere aufzunehmen.
+
 Bereit, seinem Volk zu dienen, tauscht er seinen Meißel gegen seinen heiligen Hammer und kämpft für das Licht, für einen neuen Anfang seines Volkes und für ganz Azeroth.]]
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].zones = {"Parhelionplaza", "Insel Quel'Danas", "Leerensturm"}
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].timeline = IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL_DE
+
+-- THE GREAT KYRON --
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].name = "The Great Kyron [de]"
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].race = "Arathi"
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].lore = [[Der große Kyron ist der Anführer der Lampenanzünder der Heilsturz Arathi. Vor der Expedition der Arathi nach Heilsturz diente Kyron als Aufseher in der Armee der Arathi. Wenn er nicht die vermehrt auftretenden Attacken der Kaheti Neruber abwehrt, ist er häufig in Mereldar zu finden.]]
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].zones = {"Parhelionplaza"}
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_LIGHT["the_great_kyron_midnight"].timeline = IMAGOdb.timelines.THE_GREAT_KYRON_DE
 
 -- CAT_NEUTRAL
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].name = "Allari die Seelenfresserin"

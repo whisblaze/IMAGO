@@ -1966,3 +1966,18 @@ IMAGOdb.timelines.MISHA_DE = {
         text = [[Entspannte sich vor dem Kamin in der Arkantine und ließ sich sogar vom Champion streicheln.]],
     }
 }
+
+IMAGOdb.timelines.THE_GREAT_KYRON_DE = {
+    {
+        era = "WoD",
+        text = [[Diente als Aufseher in der Armee der Arathi. Schloss sich einige Zeit vor den Ereignissen in Khaz Algar der Expedition der Arathi nach Heilsturz an.]],
+    },
+    {
+        era = "TWW",
+        text = [[Bekämpfte gemeinsam mit Faerin Lothar, Anduin Wrynn und einem Abenteurer Kaheti Neruber an der Aegismauer. Kurze Zeit später unterstützte er Anduin und Faerin bei der Wiederentzündung des Dämmerturms.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Kyron war Teil der Vorhut des Lichts, die während des Angriffs der Verschlingenden Schar den Parhelionplaza verteidigte.]],
+    }
+}
