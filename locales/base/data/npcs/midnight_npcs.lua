@@ -258,13 +258,13 @@ IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"].timeline = IMAGOdb.timelines.MEHLAR_DAWNBLADE
 
 -- DANATH TROLLBANE --
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].name = "Danath Trollbane"
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].aliases = {"Danath"}
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].race = "Human"
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].lore = "The rightful ruler of the kingdom of Stromgarde and longtime hero of the Alliance. Danath Trollbane has fought and bled for humankind since the days of the Second War. A member of the Sons of Lothar, Danath built close ties with his compatriots in their time beyond the Dark Portal. Having returned to Azeroth to take up the mantle of King of Stromgarde, Danath seeks to lead his people back to their former glory."
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].zones = {"Arcantina", "Burning Steppes", "Silvermoon City"}
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].source = ""
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].timeline = IMAGOdb.timelines.DANATH_TROLLBANN
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].name = "Danath Trollbane"
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].aliases = {"Danath"}
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].race = "Human"
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].lore = "The rightful ruler of the kingdom of Stromgarde and longtime hero of the Alliance. Danath Trollbane has fought and bled for humankind since the days of the Second War. A member of the Sons of Lothar, Danath built close ties with his compatriots in their time beyond the Dark Portal. Having returned to Azeroth to take up the mantle of King of Stromgarde, Danath seeks to lead his people back to their former glory."
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].zones = {"Arcantina", "Burning Steppes", "Silvermoon City"}
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].source = ""
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].timeline = IMAGOdb.timelines.DANATH_TROLLBANE
 
 -- ANDUIN WRYNN --
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].name = "Anduin Wrynn"

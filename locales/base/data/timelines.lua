@@ -415,7 +415,7 @@ IMAGOdb.timelines.ARCANIST_VALTROIS = {
     }
 }
 
-IMAGOdb.timelines.DANATH_TROLLBANN = {
+IMAGOdb.timelines.DANATH_TROLLBANE = {
     {era = "WC2", text = "Served under General Turalyon as a commander and tactician of the Alliance of Lordaeron, repelling the orcish Horde that threatened the Eastern Kingdoms and pursuing them beyond the Dark Portal to their homeworld of Draenor."},
     {era = "TBC", text = "Led the forces of Honor Hold in staving off the demonic armies of Hellfire Peninsula."},
     {era = "Legion", text = "Aided heroic warriors in acquiring Strom'kar, the Warbreaker. This legendary sword once belonged to King Thoradin, the first human king and ancestor of Danath Trollbane himself. After the fall of the Legion, Danath returned to a long-ruined Stromgarde to rebuild the city and claim his birthright as king."},
