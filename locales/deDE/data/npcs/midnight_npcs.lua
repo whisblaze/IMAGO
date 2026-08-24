@@ -164,13 +164,13 @@ IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"].zones = {"Insel von Quel'Dan
 IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["mehlar_dawnblade_midnight"].timeline = IMAGOdb.timelines.MEHLAR_DAWNBLADE
 
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].name = "Danath Trollbann"
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].aliases = {}
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].race = "Mensch"
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].lore = "Der rechtmäßige Herrscher des Königreichs Stromgarde und langjähriger Held der Allianz. Danath Trollbann hat seit den Tagen des Zweiten Krieges für die Menschheit gekämpft und geblutet. Als Mitglied der Söhne Lothars knüpfte Danath während ihrer Zeit jenseits des Dunklen Portals enge Bande zu seinen Gefährten. Nachdem er nach Azeroth zurückgekehrt war, um den Mantel des Königs von Stromgarde anzunehmen, sucht Danath danach, sein Volk zu alter Größe zurückzuführen."
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].zones = {"Arcantina", "Brennende Steppe", "Silbermond"}
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].source = ""
-IMAGOdb.npcs.CAT_LIGHT["danath_trollbann_midnight"].timeline = IMAGOdb.timelines.DANATH_TROLLBANN
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].name = "Danath Trollbann"
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].race = "Mensch"
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].lore = "Der rechtmäßige Herrscher des Königreichs Stromgarde und langjähriger Held der Allianz. Danath Trollbann hat seit den Tagen des Zweiten Krieges für die Menschheit gekämpft und geblutet. Als Mitglied der Söhne Lothars knüpfte Danath während ihrer Zeit jenseits des Dunklen Portals enge Bande zu seinen Gefährten. Nachdem er nach Azeroth zurückgekehrt war, um den Mantel des Königs von Stromgarde anzunehmen, sucht Danath danach, sein Volk zu alter Größe zurückzuführen."
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].zones = {"Arcantina", "Brennende Steppe", "Silbermond"}
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].source = ""
+IMAGOdb.npcs.CAT_LIGHT["danath_trollbane_midnight"].timeline = IMAGOdb.timelines.DANATH_TROLLBANE
 
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].name = "Anduin Wrynn"
 IMAGOdb.npcs.CAT_LIGHT["anduin_wrynn_midnight"].aliases = {}

@@ -232,7 +232,7 @@ IMAGOdb.timelines.MEHLAR_DAWNBLADE = {
     {era = "Midnight", text = "Während des ersten Angriffs auf den Sonnenbrunnen wurde Mehlar verletzt, schloss sich später jedoch erneut der Vorhut des Lichts im Kampf gegen die Leere an."},
 }
 
-IMAGOdb.timelines.DANATH_TROLLBANN = {
+IMAGOdb.timelines.DANATH_TROLLBANE = {
     {era = "WC2", text = "Diente unter General Turalyon als Kommandant und Stratege der Allianz von Lordaeron, schlug die orkische Horde zurück, die die Östlichen Königreiche bedrohte, und verfolgte sie jenseits des Dunklen Portals bis in ihre Heimatwelt Draenor."},
     {era = "TBC", text = "Führte die Streitkräfte der Ehrenfeste an und hielt die dämonischen Armeen der Höllenfeuerhalbinsel in Schach."},
     {era = "Legion", text = "Unterstützte heldenhafte Krieger beim Erwerb von Strom'kar, dem Kriegsbrecher. Dieses legendäre Schwert gehörte einst König Thoradin, dem ersten Menschenkönig und einem Vorfahren Danath Trollbanns. Nach dem Fall der Legion kehrte Danath in das lange zerstörte Stromgarde zurück, um die Stadt wiederaufzubauen und sein Geburtsrecht als König einzufordern."},
