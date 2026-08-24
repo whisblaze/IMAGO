@@ -55,8 +55,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing_midnight"].name = "Halduron Wol
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing_midnight"].aliases = {"Halduron"}
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing_midnight"].race = "Blutelf"
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing_midnight"].lore =
-[[
-Halduron Wolkenglanz ist der amtierende Waldläufergeneral von Silbermond, der beste Freund von Lor'themar Theron und Schützer der Grenzen seiner Heimat. Er dient seinem Volk seit Jahrzehnten und stellt sich jeder Bedrohung mit unerschütterlichem Mut entgegen – von einfallenden Amani-Trollen bis hin zu den grauenvollen Untoten der Geißel.
+[[Halduron Wolkenglanz ist der amtierende Waldläufergeneral von Silbermond, der beste Freund von Lor'themar Theron und Schützer der Grenzen seiner Heimat. Er dient seinem Volk seit Jahrzehnten und stellt sich jeder Bedrohung mit unerschütterlichem Mut entgegen – von einfallenden Amani-Trollen bis hin zu den grauenvollen Untoten der Geißel.
     
 Trotz seines tödlichen Eifers, den er seinen Feinden auf dem Schlachtfeld entgegenbringt, ist Halduron bei seinen Freunden als toleranter und lebensfroher Mann mit einem guten Auge für Details bekannt.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["halduron_brightwing_midnight"].zones = {"Die Höhle", "Harandar", "Immersangwald", "Silbermond"}
@@ -68,6 +67,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].name = "Vereesa Windl
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].aliases = {"Vareesa"}
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].race = "Hochelfe"
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].lore = [[Vereesa Windläufer ist die jüngste der Windläuferschwestern. Ihr Leben veränderte sich grundlegend, als die Horde nach Azeroth kam und sie den Tod ihres jüngeren Bruders Lirath nicht verhindern konnte. Sie zog Arator, den Sohn ihrer Schwester Alleria Windläufer, groß und unterstützte den Magier Rhonin bei seiner Mission, den Drachen Alexstrasza zu retten. 
+
 Doch ihr Leben war von Tragödien geprägt: Erst verlor sie durch Arthas Menethil nahezu alles und jeden, den sie kannte, und später starb auch ihr Ehemann Rhonin infolge der Zerstörung von Theramore. Diese Ereignisse führten dazu, dass Vereesa Taten beging, die ihren Ruf unter den Blutelfen für immer beeinträchtigen sollten.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].zones = {"Immersangwald", "Insel von Quel'Danas", "Silbermond"}
 IMAGOdb.npcs.CAT_QUELTHALAS["vereesa_windrunner_midnight"].source = "Karstan"
@@ -77,7 +77,9 @@ IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].name = "Shandris Mo
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].aliases = {"Shandris"}
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].race = "Nachtelfe"
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].lore = [[Shandris wurde während des Krieges der Ahnen zur Waise und hat daher Kriegserfahrungen aus erster Hand. Sie wurde von Tyrande Wisperwind und Malfurion Sturmgrimm adoptiert, zur Jägerin ausgebildet und hat sich seitdem zu einer der furchterregendsten Bogenschützinnen auf Azeroth entwickelt.
+
 Shandris hat die Streitkräfte der Nachtelfen und der Allianz bereits mehrfach als Hochgeneralin der Armee der Schildwachen angeführt. Nachdem sie bei der Verteidigung des neuen Weltenbaums Amirdrassil an vorderster Front stand, führt sie die Nachtelfen nun als deren Anführerin.
+
 Sie setzt sich mit großer Hingabe für die Menschen ein, die ihr am Herzen liegen. So hat sie sich sogar in die Reiche des Todes gewagt, um ihre Mutter zu retten. Heutzutage ist Shandris vor allem eines wichtig: Frieden.]]
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].zones = {"Amirdrassil", "Harandar", "Silbermond", "Insel von Quel'Danas"}
 IMAGOdb.npcs.CAT_QUELTHALAS["shandris_feathermoon_midnight"].source = "Cadash"
@@ -138,8 +140,7 @@ IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].name = "Astalor Bluts
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].aliases = {"Astalor"}
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].race = "Blutelf"
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].lore =
-[[
-Der Magier Astalor Blutschwur, Mitbegründer der Blutritter von Silbermond, suchte schon immer nach kreativen Wegen, seinem Volk zu helfen. Als Kael'thas den gefangenen Naaru M'uru nach Silbermond schickte, war es Astalor, der dazu riet, sich nicht einfach an dem heiligen Wesen zu laben, sondern stattdessen seine Energie abzuzapfen und zu nutzen, um die Blutelfen zu Paladinen zu machen. 
+[[Der Magier Astalor Blutschwur, Mitbegründer der Blutritter von Silbermond, suchte schon immer nach kreativen Wegen, seinem Volk zu helfen. Als Kael'thas den gefangenen Naaru M'uru nach Silbermond schickte, war es Astalor, der dazu riet, sich nicht einfach an dem heiligen Wesen zu laben, sondern stattdessen seine Energie abzuzapfen und zu nutzen, um die Blutelfen zu Paladinen zu machen. 
 
 Angesichts der Bedrohung durch den Leerensturm, die über Silbermond schwebt, ersinnt Astalor erneut ungewöhnliche Methoden, um der Gefahr zu begegnen: Er jagt gefährliche Individuen und erntet ihre Qualen, um diese in mächtige Energie umzuwandeln. Es bleibt abzuwarten, welche Ergebnisse er erzielen wird...]]
 IMAGOdb.npcs.CAT_QUELTHALAS["astalor_bloodsworn_midnight"].zones = {"Immersangwald", "Harandar", "Leerensturm", "Atal'Aman", "Silbermond"}
@@ -414,8 +415,7 @@ IMAGOdb.npcs.CAT_LIGHT["arator_midnight"].name = "Arator der Retter"
 IMAGOdb.npcs.CAT_LIGHT["arator_midnight"].aliases = {"Arator", "Arator Windläufer"}
 IMAGOdb.npcs.CAT_LIGHT["arator_midnight"].race = "Halbelf"
 IMAGOdb.npcs.CAT_LIGHT["arator_midnight"].lore =
-[[
-Als Alleria Windläufer und Turalyon nach Draenor aufbrachen, um Azeroth zu retten, ließen sie ihr neugeborenes Kind zurück. Arator wuchs bei Verwandten auf und kannte seine Eltern nur aus Legenden. Als Sohn zweier der berühmtesten Kriegshelden der Allianz hatte er stets damit zu kämpfen, aus ihrem Schatten herauszutreten und seine eigene Bestimmung zu finden. 
+[[Als Alleria Windläufer und Turalyon nach Draenor aufbrachen, um Azeroth zu retten, ließen sie ihr neugeborenes Kind zurück. Arator wuchs bei Verwandten auf und kannte seine Eltern nur aus Legenden. Als Sohn zweier der berühmtesten Kriegshelden der Allianz hatte er stets damit zu kämpfen, aus ihrem Schatten herauszutreten und seine eigene Bestimmung zu finden. 
     
 In dem Entschluss seinem Vater nachzueifern, wurde er Paladin der Allianz und stieg in den Rängen auf, indem er wahre Stärke und Glauben an das Licht bewies. Nun, da er wieder mit seinen Eltern vereint ist, kämpft Arator darum, seine Familie zusammenzuhalten, während sie in verschiedene Richtungen gezogen werden.]]
 IMAGOdb.npcs.CAT_LIGHT["arator_midnight"].zones = {"Die Leerenspitze", "Arkantine", "Brennende Steppe", "Das Arathihochland", "Hort der Meister", "Immersangwald", "Insel von Quel'Danas", "Leerensturm", "Östliche Pestländer", "Parhelionplaza", "Silbermond", "Zul'Aman"}
@@ -494,8 +494,7 @@ IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].name = "Sonnenläufer Dezco"
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].aliases = {"Dezco"}
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].race = "Tauren"
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].lore =
-[[
-Als Häuptling des Stammes der Morgenwandler ist der standhafte Taure Sonnenläufer Dezco ein Verehrer von An'she, der Sonne, und schöpft seine gewaltige Macht aus ihrem Licht. Nachdem er unvorstellbare persönliche Tragödien erlitten hatte, die einen schwächeren Geist gebrochen hätten, reiste Dezco auf der Suche nach seiner Bestimmung in ferne Länder. Obwohl ihn seine Reisen über ferne Kontinente und sogar in die Reiche des Jenseits führten, fühlte er sich unter dem einfachen Volk von Azeroth am wohlsten.
+[[Als Häuptling des Stammes der Morgenwandler ist der standhafte Taure Sonnenläufer Dezco ein Verehrer von An'she, der Sonne, und schöpft seine gewaltige Macht aus ihrem Licht. Nachdem er unvorstellbare persönliche Tragödien erlitten hatte, die einen schwächeren Geist gebrochen hätten, reiste Dezco auf der Suche nach seiner Bestimmung in ferne Länder. Obwohl ihn seine Reisen über ferne Kontinente und sogar in die Reiche des Jenseits führten, fühlte er sich unter dem einfachen Volk von Azeroth am wohlsten.
 
 Dezco, der sich dem Dienst verschrieben hat, gilt unter den Sonnenläufern als erfahrener Veteran und weiser Ältester. Da sich erneut ein Konflikt anbahnt, übernimmt er die Rolle des anleitenden Mentors und lehrt seine Verbündeten, dass das Beschreiten des Pfades des Lichts nicht nur inbrünstigen Eifer, sondern auch tiefes Mitgefühl erfordert.]]
 IMAGOdb.npcs.CAT_LIGHT["sunwalker_dezco_midnight"].zones = {"Arathihochland"}
@@ -684,8 +683,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].name = "Hochlord Darion 
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].aliases = {"Darion Mograine"}
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].race = "Mensch"
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].lore =
-[[
-Darion Mograine war ein Paladin der Argentumdämmerung, der, nachdem er sein Leben geopfert hatte, um die Seele seines Vaters zu retten, als Todesritter wiedererweckt wurde, um als einer der mächtigsten Kommandanten des Lichkönigs zu dienen. Nachdem er sich in der Schlacht um die Kapelle des hoffnungsvollen Lichts aus der Kontrolle des Lichkönigs befreit hatte, gründete er die Schwarze Klinge, eine Gruppe von Todesrittern, die sich dem Schutz Azeroths vor allen Bedrohungen verschrieben hat, die ihm begegnen.
+[[Darion Mograine war ein Paladin der Argentumdämmerung, der, nachdem er sein Leben geopfert hatte, um die Seele seines Vaters zu retten, als Todesritter wiedererweckt wurde, um als einer der mächtigsten Kommandanten des Lichkönigs zu dienen. Nachdem er sich in der Schlacht um die Kapelle des hoffnungsvollen Lichts aus der Kontrolle des Lichkönigs befreit hatte, gründete er die Schwarze Klinge, eine Gruppe von Todesrittern, die sich dem Schutz Azeroths vor allen Bedrohungen verschrieben hat, die ihm begegnen.
 
 Nun, an der Spitze der Vier Reiter, verteidigt Darion die Heimat des Argentumkreuzzugs gegen die Geißel, während sie Azeroths Champion bei der Zerstörung der Verschlingenden Brut unterstützen.]]
 IMAGOdb.npcs.CAT_EBON_BLADE["darion_mograine_midnight"].zones = {"Östliche Pestländer"}
@@ -731,6 +729,7 @@ IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver_midnight"].race = "Untoter Hoch
 IMAGOdb.npcs.CAT_EBON_BLADE["koltira_deathweaver_midnight"].lore = [[Koltira Todesweber kämpfte und starb für Silbermond, als Arthas Menethil und die Geißel durch ihre Tore marschierten. Der Tod bedeutete jedoch nicht das Ende für ihn, denn schon bald wurde er als Todesritter wiedererweckt.
 
 Unter Arthas' Kontrolle war er gezwungen, für genau jene Armee zu töten, die alles zerstört hatte, was er einst gekannt und geliebt hatte. Trotz ihrer grausamen Umstände entwickelte er eine echte Freundschaft zu Thassarian – dem Mann, der ihn getötet hatte. Beide wurden schließlich von der Gedankenkontrolle des Lichkönigs befreit und entschieden sich, für die neu gegründeten Ritter der schwarzen Klinge zu kämpfen, und schworen, ganz Azeroth vor den Untoten zu beschützen.
+
 Koltira schloss sich der Horde an und fungierte als Gesandter seiner Mitstreiter, den Todesrittern.
 
 Obwohl sie sich im Verlauf der Fraktionskriege zeitweise auf gegnerischen Seiten wiederfanden, blieben Koltira Todesweber und Thassarian enge Freunde.]]
@@ -808,8 +807,7 @@ IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].name = "Zul'jarra"
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].race = "Waldtroll"
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].lore =
-[[
-Als Älteste von zwei Geschwistern wurde Zul'jarra als Kriegerin erzogen. Als Enkelin des berüchtigten Zul'jin wurde sie in den traditionellen Bräuchen unterwiesen, die Loa zu verehren und ihren künftigen Stamm mit Ehre zu führen. Die Zeit zu führen kam früher, als irgendjemand erwartet hätte, denn sie war noch ein Kind, als sowohl ihr Großvater als auch ihr Vater in der Tempelstadt Zul-Aman erschlagen wurden. Da man sie für zu jung zum Herrschen hielt, regierte ihre Mutter, Zarama, die Amani jahrzehntelang. Als die verkrüppelte Zarama schließlich versuchte, den Titel an ihre Tochter zu übergeben, focht ein rivalisierender Häuptling Zul'jarras Recht zu herrschen an. Weil sie verspätet zum Duell zurückkehrte, traf Zul'jarra nur ein, um zu sehen, wie ihre Mutter an ihrer Stelle fiel, was sie zwang, Zarama zu rächen und ihr Geburtsrecht im Blut zu beanspruchen.
+[[Als Älteste von zwei Geschwistern wurde Zul'jarra als Kriegerin erzogen. Als Enkelin des berüchtigten Zul'jin wurde sie in den traditionellen Bräuchen unterwiesen, die Loa zu verehren und ihren künftigen Stamm mit Ehre zu führen. Die Zeit zu führen kam früher, als irgendjemand erwartet hätte, denn sie war noch ein Kind, als sowohl ihr Großvater als auch ihr Vater in der Tempelstadt Zul-Aman erschlagen wurden. Da man sie für zu jung zum Herrschen hielt, regierte ihre Mutter, Zarama, die Amani jahrzehntelang. Als die verkrüppelte Zarama schließlich versuchte, den Titel an ihre Tochter zu übergeben, focht ein rivalisierender Häuptling Zul'jarras Recht zu herrschen an. Weil sie verspätet zum Duell zurückkehrte, traf Zul'jarra nur ein, um zu sehen, wie ihre Mutter an ihrer Stelle fiel, was sie zwang, Zarama zu rächen und ihr Geburtsrecht im Blut zu beanspruchen.
 
 Nun, Jahre später, versucht sie, die Stämme von Zul'Aman endlich wieder mit den Loa-Göttern zu verbinden — unterstützt, wenn auch gelegentlich bekämpft, von ihrem Bruder, Zul'jan.]]
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].zones = {"Atal'Aman", "Das Herz des Zorns", "Immersangwald", "Insel von Quel'Danas", "Nalorakks Bau", "Zul'Aman"}
@@ -899,8 +897,7 @@ IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].name = "Orweyna"
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].race = "Haran'ir"
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].lore =
-[[
-Als Späherin des geheimnisvollen Volkes der Haranir unterscheidet sich Orweyna stark von den meisten ihrer Artgenossen. Fasziniert von der Welt und ihren Bewohnern außerhalb ihrer Heimat widersetzte sie sich den Eiden der Geheimhaltung und Isolation. Zunächst nahm sie Kontakt mit dem Champion von Azeroth in Azj-Kahet auf, nun bittet sie die Elfen von Quel'Thalas um Hilfe.
+[[Als Späherin des geheimnisvollen Volkes der Haranir unterscheidet sich Orweyna stark von den meisten ihrer Artgenossen. Fasziniert von der Welt und ihren Bewohnern außerhalb ihrer Heimat widersetzte sie sich den Eiden der Geheimhaltung und Isolation. Zunächst nahm sie Kontakt mit dem Champion von Azeroth in Azj-Kahet auf, nun bittet sie die Elfen von Quel'Thalas um Hilfe.
     
 Sie hat eine besondere Verbindung zu ihrer Göttin Aln'hara, von der sie Visionen drohender Gefahren erhält, die dem „Strahlenden Gesang” ähneln. Sie weiß, dass es mehr als nur die Streitkräfte der Haranir brauchen wird, um die Leere zu besiegen, die Aln'hara bedroht.]]
 IMAGOdb.npcs.CAT_HARATI["orweyna_midnight"].zones = {"Das Blendende Tal", "Die Höhle", "Harandar", "Immersangwald", "Insel von Quel'Danas", "Silbermond"}
@@ -980,6 +977,7 @@ IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].race = "Halborc, Halbdra
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].lore = [[Garona wird für immer dafür bekannt sein, König Llane Wrynn von Sturmwind ermordet und damit den Ersten Krieg zugunsten der Alten Horde entschieden zu haben. Sie selbst erinnert sich daran vor allem als eine Zeit, in der sie Gul'dan als nahezu willenlose Marionette diente und die Menschen verriet, die ihr mehr Freundlichkeit entgegengebracht hatten, als die unbarmherzige Horde es je getan hatte.
 
 Wie ihr Name bereits andeutet, wurde Garona als Tochter einer Draeneimutter und eines orcischen Vaters geboren, was sie zu einer ungewöhnlichen Persönlichkeit macht.
+
 Ihre angespannte Beziehung zur Horde heilte im Laufe der Jahre allmählich. Heute dient sie ihrem Volk erneut als Assassinin und Spionin, arbeitet jedoch gelegentlich auch mit der Allianz zusammen, wenn dies ihren Zielen dienlich ist.]]
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].zones = {"Die Arkantine"}
 IMAGOdb.npcs.CAT_ARCANTINA["garona_halforcen_midnight"].source = "Cadash"
