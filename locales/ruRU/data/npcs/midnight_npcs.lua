@@ -5,6 +5,19 @@
 if GetLocale() ~= "ruRU" then return end
 
 -- === CAT_QUELTHALAS ===
+IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].name = "Lor'themar Theron [ru]"
+IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].race = "Эльф крови"
+IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].lore = [[Следопыт по призванию, Лор'темар Терон не выбирал роль предводителя. Когда Кель'Талас пал от рук Плети в годы Третьей войны, он принял бремя регентства по необходимости - среди выживших не нашлось иного кандидата, способного занять место принца Кель'Таса.
+
+На его долю выпало немало тяжёлых решений: вступление эльфов крови в Орду, вынужденное изгнание высших эльфов во избежание внутренних распрей, и противостояние принцу-предателю Кель'Тасу. Прагматизм и стратегический ум сделали Лор'темара выдающимся лидером, снискавшим уважение как у союзников, так и у врагов. 
+
+Убеждённый сторонник мира, Лор'темар Терон носит титул лорда-регента Кель'Таласа и заседает в Совете Орды. Он всецело предан своему народу.
+
+Теперь, когда Кель'талас вновь оказался в опасности, он не остановится ни перед чем, чтобы защитить свой народ и свой город от наступающих сил Бездны.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].zones = {"Луносвет", "Леса Вечной Песни", "Остров Кель'Данас", "Харандар"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].timeline = IMAGOdb.timelines.LORTHEMAR_THERON
+
 -- LORD SALTHERIL --
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].name = "Лорд Салтерил"
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].race = "Эльф крови"
