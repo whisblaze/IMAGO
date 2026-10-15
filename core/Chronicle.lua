@@ -29,6 +29,27 @@ else
     FONT_BODY  = "Fonts\\FRIZQT__.TTF"
 end
 
+-- ============================================================
+-- UTF-8-SAFE FIRST CHARACTER SPLIT (drop caps)
+-- UTF-8 lead byte ranges: 1 byte (< 0x80), 2 bytes (0xC0-0xDF),
+-- 3 bytes (0xE0-0xEF, e.g. CJK/Korean), 4 bytes (>= 0xF0).
+-- The old `>= 192 and 2 or 1` logic split 3-byte characters
+-- (koKR, zhCN, zhTW) into invalid byte fragments (tofu boxes).
+-- ============================================================
+local function SplitFirstChar(text)
+    if not text or text == "" then return "", "" end
+    local firstByte = string.byte(text, 1) or 0
+    local charLen = 1
+    if firstByte >= 240 then
+        charLen = 4
+    elseif firstByte >= 224 then
+        charLen = 3
+    elseif firstByte >= 192 then
+        charLen = 2
+    end
+    return text:sub(1, charLen), text:sub(charLen + 1)
+end
+
 local LAYOUT = IMAGO.LAYOUT
 
 local eraColors = {
@@ -356,7 +377,7 @@ function IMAGO.Chronicle.CreateFrame()
     f.title:SetTextColor(IMAGO_COLORS.GOLD[1], IMAGO_COLORS.GOLD[2], IMAGO_COLORS.GOLD[3])
     f.title:SetShadowColor(0, 0, 0, 1) -- NEW: The drop shadow
     f.title:SetShadowOffset(2, -2)
-    f.title:SetText("IMAGO — " .. (IMAGO.L["WINDOW_TITLE"] or "Chronik der Unvergessenen"))
+    f.title:SetText("IMAGO - " .. (IMAGO.L["WINDOW_TITLE"] or "Chronik der Unvergessenen"))
 
     f.settingsBtn = CreateFrame("Button", nil, f)
     f.settingsBtn:SetSize(18, 18)
@@ -2151,7 +2172,7 @@ function IMAGO.Chronicle.RenderTimeline()
             local spoilerCol = eraColors[spoilerEra] or IMAGO_COLORS.VOID
             local spoilerTitle = L["SPOILER_" .. spoilerEra .. "_TITLE"] or L["SPOILER_MIDNIGHT_TITLE"]
             local spoilerHint  = L["SPOILER_" .. spoilerEra .. "_HINT"]  or L["SPOILER_MIDNIGHT_HINT"]
-            txt:SetText("[" .. spoilerTitle .. "] — " .. spoilerHint)
+            txt:SetText("[" .. spoilerTitle .. "] - " .. spoilerHint)
             txt:SetTextColor(unpack(spoilerCol))
             txt.realText = linkedEntryText
             txt.npcSlug = npcSlug
@@ -2650,10 +2671,7 @@ function IMAGO.Chronicle.UpdateList()
                                 f.detailTitle:SetText(name)
 
                                 local lore = npc.data.lore or ""
-                                local firstByte = string.byte(lore, 1)
-                                local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
-                                local firstLetter = lore:sub(1, charLen)
-                                local restLore = lore:sub(charLen + 1)
+                                local firstLetter, restLore = SplitFirstChar(lore)
                                 -- Pass selfSlug so the NPC doesn't link their own name,
                                 local linked = IMAGO.TextLinker.LinkNames("|cffc8a84b" .. firstLetter .. "|r" .. restLore,
                                     npc.slug,
@@ -2972,11 +2990,8 @@ function IMAGO.Chronicle.UpdateList()
                     end
                 end
 
-                -- Some languages take 2 bytes for their characters
-                local firstByte = string.byte(lore, 1)
-                local charLen = firstByte >= 192 and 2 or 1  -- UTF-8: 2 bytes if >= 0xC0
-                local firstLetter = lore:sub(1, charLen)
-                local restLore = lore:sub(charLen + 1)
+                -- Drop cap: first character highlighted (UTF-8 safe, see SplitFirstChar)
+                local firstLetter, restLore = SplitFirstChar(lore)
                 local formattedLore = "|c" .. IMAGO_HEX.GOLD .. firstLetter .. "|r" .. restLore
 
                 if zoneData.pointsOfInterest and next(zoneData.pointsOfInterest) then

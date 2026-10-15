@@ -1190,9 +1190,9 @@ function IMAGO.Eras.RenderOverview(data)
     -- --------------------------------------------------------
     local KF_W = math.floor((INNER - GAP * 2) / 3)
     local kfDefs = {
-        { key="kf1", lbl=IMAGO.L["ERAS_STAT_REGION"]     or "Region",     val=data.region     or "—" },
-        { key="kf2", lbl=IMAGO.L["ERAS_STAT_ANTAGONIST"] or "Antagonist", val=data.antagonist or "—" },
-        { key="kf3", lbl=IMAGO.L["ERAS_STAT_CONFLICT"]   or "Conflict",   val=data.conflict   or "—" },
+        { key="kf1", lbl=IMAGO.L["ERAS_STAT_REGION"]     or "Region",     val=data.region     or "-" },
+        { key="kf2", lbl=IMAGO.L["ERAS_STAT_ANTAGONIST"] or "Antagonist", val=data.antagonist or "-" },
+        { key="kf3", lbl=IMAGO.L["ERAS_STAT_CONFLICT"]   or "Conflict",   val=data.conflict   or "-" },
     }
     local KF_LBL_H  = 14    -- approx. line height at 11px
     local KF_GAP_LV = 8     -- label→value spacing
