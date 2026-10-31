@@ -775,7 +775,7 @@ IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"] = {
     category = "CAT_NEUTRAL",
 }
 
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"] = {
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"] = {
     displayID = 254413,
     ids = {254413, 240337, 244116},
     zones = {},

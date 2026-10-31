@@ -893,15 +893,15 @@ IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"].zones = {"The Den"}
 IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"].timeline = IMAGOdb.timelines.ZEKHAN
 
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].name = "Commander Jarod Shadowsong"
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].aliases = {"Jarod Shadowsong"}
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].race = "Night elf"
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].lore = [[Jarod Shadowsong was once called “the Hope of the Elves” during the War of the Ancients. As one superior after another fell in battle, due to his sheer skill and determination, he could have become the leader of the Kaldorei after the war was won. Never one to crave power or seek that kind of responsibility, he left his people and lived in self-exile with his wife, Shalasyr, for ten thousand years.
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].name = "Commander Jarod Shadowsong"
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].aliases = {"Jarod Shadowsong"}
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].race = "Night elf"
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].lore = [[Jarod Shadowsong was once called “the Hope of the Elves” during the War of the Ancients. As one superior after another fell in battle, due to his sheer skill and determination, he could have become the leader of the Kaldorei after the war was won. Never one to crave power or seek that kind of responsibility, he left his people and lived in self-exile with his wife, Shalasyr, for ten thousand years.
 
 He rejoined night elven society when Shalasyr passed away and repaired his relationship with his sister, Maiev. He has since served as an army commander again during the Fourth War and the war against Fyrakk in the Emerald Dream.]]
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].zones = {"Amirdrassil", "Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].timeline = IMAGOdb.timelines.COMMANDER_JAROD_SHADOWSONG
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].zones = {"Amirdrassil", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].timeline = IMAGOdb.timelines.JAROD_SHADOWSONG
 
 -- BELATH_DAWNBLADE --
 IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"].name = "Belath Dawnblade"

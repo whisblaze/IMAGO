@@ -1641,7 +1641,7 @@ IMAGOdb.timelines.LORD_MAXWELL_TYROSUS = {
     }
 }
 
-IMAGOdb.timelines.COMMANDER_JAROD_SHADOWSONG = {
+IMAGOdb.timelines.JAROD_SHADOWSONG = {
     {
         era = "Ancient",
         text = [[Fought under Kur'talos Ravencrest and then Desdel Stareye during the War of the Ancients. Rose through the ranks and became the military leader of the Kaldorei resistance, with even Malfurion and Tyrande deferring to him. Burdened by survivor's guilt and disillusioned by how the Kaldorei moved on as a people, he left society with his wife Shalasyr after the war was won.]],
