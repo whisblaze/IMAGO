@@ -200,3 +200,170 @@ IMAGOdb.timelines.DANATH_TROLLBANE = {
         text = [[Ayudó a Arator a aprender la historia de su padre, Turalyon, y su participación en los eventos de la Segunda Guerra. Introdujo a los héroes a la Arcantina, un hogar lejos de casa para aventureros de todo Azeroth.]],
     }
 }
+
+IMAGOdb.timelines.ASTALOR_BLOODSWORN = {
+    {
+        era = "WC3",
+        text = [[Cofundó la orden de los Caballeros de Sangre al encontrar una forma de que los elfos volvieran a utilizar la Luz Sagrada: drenándola de un naaru cautivo.]],
+    },
+    {
+        era = "TBC",
+        text = [[Ayudó a defender Lunargenta de su traicionero líder, Kael'thas.]],
+    },
+    {
+        era = "WoD",
+        text = [[Proporcionó a las fuerzas de los elfos de sangre gólems potenciados mediante magia de sangre para reforzar la cruzada de Lady Liadrin contra la Horda de Hierro.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Experimentó con un nuevo tipo de magia, la angustia, para fortalecer las defensas de la ciudad y garantizar la supervivencia y prosperidad de los elfos de sangre.]],
+    }
+}
+
+IMAGOdb.timelines.DECIMUS = {
+    {
+        era = "Midnight",
+        text = [[Formó una alianza con los elfos del Vacío, ofreciéndoles una base segura en la Tormenta del Vacío y ayudándolos en sus planes. Aprovechó la alianza para eliminar a varios domanaar rivales y construyó la forja del Vacío para sus nuevos aliados. Lideró los equipos de asalto en Val y Naigtal junto a Maella, fortaleciendo su influencia entre los domanaar restantes.]],
+    }
+}
+
+IMAGOdb.timelines.XAL_ATATH = {
+    {
+        era = "Ancient",
+        text = [[Era mortal antes de que su mundo fuera destruido y ella se convirtiera en un ser del Vacío. Anunció la llegada de Dimensius antes de que este devorara mundo tras mundo, incluido K'aresh. Se enfrentó a los Dioses Antiguos en Azeroth durante el dominio del Imperio Negro, pero fue derrotada y encerrada en la Daga del Imperio Negro. Todo aquel que empuñaba la hoja  sucumbió a la locura.]],
+    },
+    {
+        era = "Pre-WC1",
+        text = [[Fue entregada a la reina Modgud durante la Guerra de los Tres Martillos. La reina quedó fascinada por la hoja y utilizó a Xal'atath para realizar un ritual en Grim Batol con el fin de derrotar al clan Martillo Salvaje. Xal'atath abandonó a Modgud, dejándola morir, y la maldición de la reina cayó sobre Grim Batol.]],
+    },
+    {
+        era = "WC2",
+        text = [[Fue reclamada por la obispa humana Natalie Seline y corrompió rápidamente a aquella mujer, antaño piadosa. Enseñó a Seline a utilizar la magia del Vacío e instigó a sus seguidores a asesinarla para obtener poder.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[El arzobispo Benedictus llegó a poseer la hoja algún tiempo después, pero no se atrevió a empuñarla.]],
+    },
+    {
+        era = "Legion",
+        text = [[El Diácono Crepuscular Lontananza, sucesor de Benedictus, utilizó la hoja para resucitar a Zakajz el Corruptor. El Sumo Sacerdote lo detuvo y empuñó a Xal'atath contra la Legión Ardiente. Fue testigo de la transformación de Alleria Brisaveloz en elfa del Vacío y quedó intrigada. Más tarde, el Sumo Sacerdote drenó su poder para sanar el mundo de la herida infligida por la espada de Sargeras.]],
+    },
+    {
+        era = "BfA",
+        text = [[El Sumo Sacerdote restauró su poder mediante sacrificios de seres vivos, lo que le permitió obtener el cuerpo físico de una elfa noble muerta. Convenció al sacerdote para que viajara al Crisol de Tormentas, donde lo traicionó y llegó a un pacto con N'Zoth para recuperar su libertad.]],
+    },
+    {
+        era = "DF",
+        text = [[Se alió con Iridikron y obtuvo de él el Corazón Oscuro. Atacó la Falla de Telogrus, provocando la ira de Alleria Brisaveloz. Disfrutó jugando con las emociones de Alleria al enviarle visiones retorcidas de su pasado.]],
+    },
+    {
+        era = "Pre-TWW",
+        text = [[Se alió con los nerubianos de Azj-Kahet, manipulando a Ansurek para que asesinara a su propia madre, la reina.]],
+    },
+    {
+        era = "TWW",
+        text = [[Destruyó Dalaran y dejó a Khadgar incapacitado. Comenzó su misión de imbuir el Corazón Oscuro con diversas energías cósmicas. Alleria la persiguió y consiguió dañar el Corazón Oscuro. Xal'atath se alió con Gallywix y lo abandonó después de que este entregara el Corazón Oscuro la Guardia de las Sombras. Se alió con Alleria para impedir el regreso de Dimensius y se apropió de su poder.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Con los poderes de un Señor del Vacío, unió bajo su mando a las fuerzas del Vacío, eternamente enfrentadas entre sí, incluido el rey-nexo Salhadaar y los domanaar. Drenó el Corazón Oscuro para crear la Aguja del Vacío y llevar la Tormenta del Vacío hasta los cielos sobre Lunargenta.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Abrumó a los defensores de Quel'Thalas, pero fue detenida por la repentina erupción de la Fuente del Sol. Derrotó a Alleria en la Aguja del Vacío y separó a la naaru L'ura de ella para finalmente corromper la Fuente del Sol. Fue testigo de la derrota de L'ura, pero desapareció en la Fuente de la Oscuridad.]],
+    }
+}
+
+IMAGOdb.timelines.ALONSUS_FAOL = {
+    {
+        era = "Pre-WC1",
+        text = [[Lideró la Iglesia de la Luz Sagrada como arzobispo. Acogió a Uther como aprendiz.]],
+    },
+    {
+        era = "WC2",
+        text = [[Fundó la Mano de Plata y entrenó personalmente a los primeros paladines.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Recaudó fondos para ayudar a reconstruir la ciudad de Ventormenta y diversos asentamientos del reino de Lordaeron. Construyó la Catedral de Ventormenta junto a su nuevo aprendiz, Benedictus. Poco después, Alonsus murió por causas naturales.]],
+    },
+    {
+        era = "WC3",
+        text = [[Fue resucitado por Arthas Menethil y obligado a luchar para la Plaga. Recuperó su libertad junto con los demás Renegados, pero se negó a unirse a sus filas y desapareció.]],
+    },
+    {
+        era = "Legion",
+        text = [[Lideró el Cónclave, unificando las distintas órdenes sacerdotales en la lucha contra la Legión Ardiente. Ayudó a recuperar diversas armas poderosas para la causa, entre ellas Xal'atath. Reunió a los paladines para que ayudaran a defender el Templo de la Luz Abisal.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Reintrodujo a Calia Menethil ante el mundo. A petición del rey Anduin, ayudó a organizar el Encuentro para acercar a los Renegados y a los humanos como pueblo. Durante las negociaciones, Alonsus se negó a unirse a la Horda. Después de que Calia muriera en la masacre del Encuentro, ayudó a resucitarla como una no-muerta imbuida de Luz.]],
+    },
+    {
+        era = "BfA",
+        text = [[Ayudó a los refugiados elfos de la noche de Teldrassil, proporcionando alojamiento temporal y enviando sacerdotes para atender a los heridos.]],
+    },
+    {
+        era = "SL",
+        text = [[Ayudó a los Renegados a recuperar Entrañas de la corrupción de la Cuarta Guerra y estuvo presente durante la formación del Consejo Desolado.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Reunió a los sacerdotes en Lunargenta a petición de Lady Liadrin, anticipándose al ataque de Xal'atath contra la Fuente de la Luz.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Supervisó la defensa de la Fuente de la Luz y proporcionó magia sagrada a sus agotados defensores. Ayudó a Arator a superar sus dudas sobre su padre y sobre la Luz.]],
+    }
+}
+
+IMAGOdb.timelines.ALLERIA_WINDRUNNER = {
+    {
+        era = "Pre-WC2",
+        text = [[Rechazó el título de futura General Forestal de Lunargenta y abandonó su tierra natal para conocer el mundo más allá de sus fronteras. Entró en contacto con la Alianza de Lordaeron y forjó contactos entre sus filas. Durante su ausencia, sus padres fueron asesinados por la Horda.]],
+    },
+    {
+        era = "WC2",
+        text = [[Con los ejércitos de Lordaeron a su lado, defendió con éxito Quel'Thalas de la Horda. Durante los combates, su hermano Lirath murió y Alleria se culpó por su muerte. Permaneció junto a las fuerzas de la Alianza y ayudó a lograr la victoria definitiva en la guerra. Conoció a Turalyon, tuvo un hijo y se aventuró en Terrallende, donde finalmente quedó atrapada.]],
+    },
+    {
+        era = "Pre-WC3",
+        text = [[Viajó por el Vacío Abisal junto a Turalyon y fue reclutada por el Ejército de la Luz para luchar contra la Legión Ardiente. Lo que en Azeroth habría supuesto unas pocas décadas se convirtió para ellos en mil años de guerra. Alleria conoció al Peregrino y aprendió a utilizar la magia del Vacío. Xe'ra y el Ejército de la Luz la mantuvieron brevemente prisionera por ello.]],
+    },
+    {
+        era = "Legion",
+        text = [[Aprendió más sobre el Vacío y sobre cómo resistirse a sus susurros. Fue imbuida con la esencia de la naaru L'ura. Luchó en la batalla final contra la Legión en su bastión de Antorus y logró salir victoriosa. Con la cruzada finalmente terminada, ella y Turalyon se reunieron con su hijo, Arator. Encontró y reclutó a los ren'dorei exiliados para la Alianza.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Regresó a Lunargenta, pero fue exiliada de inmediato cuando su mera presencia oscura estuvo a punto de corromper la Fuente del Sol. Se reunió con sus hermanas, Vereesa y Sylvanas, pero el encuentro terminó en un enfrentamiento.]],
+    },
+    {
+        era = "BfA",
+        text = [[Luchó en el asedio de Lordaeron contra Sylvanas y posteriormente combatió por la Alianza durante la Cuarta Guerra.]],
+    },
+    {
+        era = "Pre-SL",
+        text = [[Lideró la cacería de Sylvanas Brisaveloz. Recurrió a la tortura para obtener información de civiles de la Horda.]],
+    },
+    {
+        era = "SL",
+        text = [[Asistió al juicio de Sylvanas en Oribos.]],
+    },
+    {
+        era = "DF",
+        text = [[A petición de Khadgar, comenzó a perseguir a «la Presagista», quien resultó ser Xal'atath. Defendió la Falla de Telogrus junto a Peregrino y Magister Umbric de la Guardia de las Sombras de Xal'atath.]],
+    },
+    {
+        era = "TWW",
+        text = [[Sobrevivió a la destrucción de Dalaran y persiguió temerariamente a Xal'atath por todo Khaz Algar y las profundidades bajo sus tierras. Consiguió dañar el Corazón Oscuro. Trabajó, muy a regañadientes, junto a Xal'atath y Peregrino para derrotar a Dimensius el Devoratodo.]],
+    },
+    {
+        era = "Pre-MN",
+        text = [[Frustró el resurgimiento de la Legión junto a Turalyon y Arator, estrechando de nuevo los lazos como familia. Aceptó una propuesta de matrimonio de Turalyon, pero no se sentia cómoda con la idea. Con el corazón apenado, dejó a Turalyon ante el altar y no asistió a la ceremonia de ascenso de su hijo. Más tarde, se negó a viajar a Lunargenta con Arator y, en su lugar, persiguió a Xal'atath.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Lideró la lucha contra las fuerzas de Xal'atath en la Tormenta del Vacío. Se enfrentó a la Presagista en la Aguja del Vacío y sucumbió a la locura provocada por los susurros que atormentaban su mente, volviéndose contra sus propios aliados. Xal'atath entonces arrancó a L'ura del interior de Alleria, y la elfa, apenas consciente, quedó perdida junto a Turalyon en la Fuente de la Oscuridad.]],
+    }
+}

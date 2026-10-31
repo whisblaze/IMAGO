@@ -5,18 +5,19 @@
 if GetLocale() ~= "ruRU" then return end
 
 -- === CAT_QUELTHALAS ===
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].name = "Lor'themar Theron [ru]"
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].race = "Эльф крови"
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].lore = [[Следопыт по призванию, Лор'темар Терон не выбирал роль предводителя. Когда Кель'Талас пал от рук Плети в годы Третьей войны, он принял бремя регентства по необходимости - среди выживших не нашлось иного кандидата, способного занять место принца Кель'Таса.
+-- LOR'THEMAR THERON --
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].name = "Лор'темар Терон"
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].race = "Эльф крови"
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].lore = [[Следопыт по призванию, Лор'темар Терон не выбирал роль предводителя. Когда Кель'Талас пал от рук Плети в годы Третьей войны, он принял бремя регентства по необходимости - среди выживших не нашлось иного кандидата, способного занять место принца Кель'Таса.
 
 На его долю выпало немало тяжёлых решений: вступление эльфов крови в Орду, вынужденное изгнание высших эльфов во избежание внутренних распрей, и противостояние принцу-предателю Кель'Тасу. Прагматизм и стратегический ум сделали Лор'темара выдающимся лидером, снискавшим уважение как у союзников, так и у врагов. 
 
 Убеждённый сторонник мира, Лор'темар Терон носит титул лорда-регента Кель'Таласа и заседает в Совете Орды. Он всецело предан своему народу.
 
 Теперь, когда Кель'талас вновь оказался в опасности, он не остановится ни перед чем, чтобы защитить свой народ и свой город от наступающих сил Бездны.]]
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].zones = {"Луносвет", "Леса Вечной Песни", "Остров Кель'Данас", "Харандар"}
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].source = "Metrus"
-IMAGOdb.npcs.CAT_QUELTHALAS["lor_themar_theron_midnight"].timeline = IMAGOdb.timelines.LORTHEMAR_THERON
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].zones = {"Луносвет", "Леса Вечной Песни", "Остров Кель'Данас", "Харандар"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_QUELTHALAS["lorthemar_theron_midnight"].timeline = IMAGOdb.timelines.LORTHEMAR_THERON
 
 -- LORD SALTHERIL --
 IMAGOdb.npcs.CAT_QUELTHALAS["lord_saltheril_midnight"].name = "Лорд Салтерил"
@@ -38,7 +39,41 @@ IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen_midnight"].zones = {"Луносвет
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen_midnight"].source = "Metrus"
 IMAGOdb.npcs.CAT_QUELTHALAS["lady_darkglen_midnight"].timeline = IMAGOdb.timelines.LADY_DARKGLEN
 
+-- RIFTBLADE MAELIA --
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].name = "Клинок Бездны Маэлла"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].aliases = {"Маэлла"}
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].race = "Эльф Бездны"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].lore = [[Когда Маэлла ещё жила в Луносвете, она была «разрушительницей чар» - воином, обученным сражаться с магами. Она тайно изучала Бездну с магистром Умбриком, полагая, что в запретной магии кроется ответ, который поможет страдающим эльфам крови. Когда ее секрет раскрыли, Умбрик, вместо того, чтобы отречься от неё, взял вину на себя, в результате чего магистр и его последователи были изгнаны из родных земель.
+
+Теперь, будучи преданной ему до глубины души, Маэлла последовала за Умбриком в Телогрус, где она невольно прониклась силой Бездны. Не имея иного выхода, она стала Клинком Бездны и теперь служит делу рен'дорай, куда бы оно их ни привело.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].zones = {"Остров Кель'Данас", "Луносвет", "Святилище Солнцеубийцы", "Шпиль Бездны", "Буря Бездны"}
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_QUELTHALAS["riftblade_maella_midnight"].timeline = IMAGOdb.timelines.RIFTBLADE_MAELLA
+
+
 -- === CAT_LIGHT ===
+-- TALTHIS --
+IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].name = "Талтис"
+IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].race = "Эльф крови"
+IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].lore = [[Выросший во время Третьей войны в Кель'Таласе, Талтис был лишён беззаботного детства и с самых юных лет встретился лицом к лицу с жестокостью этого мира. Осознав, что в мире царит хаос, он решил, что силы зла и разрушения, такие как Король-лич и Пылающий Легион, необходимо уничтожить, чтобы в мир вернулись порядок и гармония.
+
+Он присоединился к Рыцарям Крови, чтобы искоренить остатки Плети на Тропе Мёртвых, а позже отправился на Драконьи острова, чтобы остановить хаос, вызванный стихиями. Его приняли в Стражу Тира, и он проникся глубоким уважением к философии титанов, проповедующей мир через порядок. Так он стал Образцом Порядка и осознал свою роль в общем замысле вселенной.]]
+IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].zones = {"Остров Кель'Данас"}
+IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_LIGHT["talthis_midnight"].timeline = IMAGOdb.timelines.TALTHIS
+
+-- NOLAKI --
+IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].name = "Нолаки"
+IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].race = "Зандалар"
+IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].lore = [[Жизнерадостная Нолаки была паладином под предводительством Ра'вани Кана. Во время осады Дазар'Алора Альянсом юная Нолаки осталась позади, посчитав, что отсутствие одного воина не повлияет на битву. Однако смерть её наставника и короля изменила её.
+
+С тех пор Нолаки повзрослела и посвятила свою жизнь служению окружающим - именно в этом, по её мнению, и заключается сама суть паладинов. Вступив в Стражу Тира в качестве Образца Самопожертвования, она всегда готова встать на защиту любого, кто в этом нуждается.]]
+IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].zones = {"Остров  Кель'Данас"}
+IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_LIGHT["nolaki_midnight"].timeline = IMAGOdb.timelines.NOLAKI
+
 -- VINDICATOR BOROS --
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros_midnight"].name = "Воздаятель Борос"
 IMAGOdb.npcs.CAT_LIGHT["vindicator_boros_midnight"].race = "Дреней"
@@ -160,6 +195,40 @@ IMAGOdb.npcs.CAT_LIGHT["captain_fareeya_midnight"].source = "Metrus"
 IMAGOdb.npcs.CAT_LIGHT["captain_fareeya_midnight"].timeline = IMAGOdb.timelines.CAPTAIN_FAREEYA
 
 
+-- AEONARA DAWNSHADE --
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].name = "Эонара Тень Рассвета"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].race = "Эльф бездны"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].lore = [[Будучи единственным паладином среди эльфов Бездны, Эонара Тень Рассвета сражается с армиями Бездны. Она защищала Телогрус от эфериалов Тёмной Стражи, а позже сражалась с войсками Пространствуса у Манагорна Омега в К'ареше.
+
+Теперь она призвана в состав Передовых сил Света для защиты Солнечного Колодца от войск Ксал'атат.]]
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].zones = {"Площадь Паргелия"}
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_LIGHT["aeonara_dawnshade_midnight"].timeline = IMAGOdb.timelines.AEONARA_DAWNSHADE
+
+-- VALUNEI --
+IMAGOdb.npcs.CAT_LIGHT["valunei_midnight"].name = "Валунэй"
+IMAGOdb.npcs.CAT_LIGHT["valunei_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["valunei_midnight"].race = "Озаренный дреней"
+IMAGOdb.npcs.CAT_LIGHT["valunei_midnight"].lore = [[Валунэй всегда была против войн. Однако, когда Пылающий Легион завоевал её родную планету, у неё не осталось выбора. В конце концов война была выиграна, но Валунэй потеряла свою лучшую подругу, погибшую от рук демонов, и сражалась так долго, что уже не помнила, кем была до того, как всё это началось.
+
+Присоединившись к своим соплеменникам на Азероте, Валунэй почувствовала себя лишённой цели. Она бродила по этому новому миру, стараясь помочь как можно большему количеству людей, и постепенно вновь обретала надежду. Её доброта привлекла внимание Травара, и так Валунэй была принята в возрождённую Стражу Тира в качестве Образца Сострадания.]]
+IMAGOdb.npcs.CAT_LIGHT["valunei_midnight"].zones = {"Остров Кель'Данас"}
+IMAGOdb.npcs.CAT_LIGHT["valunei_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_LIGHT["valunei_midnight"].timeline = IMAGOdb.timelines.VALUNEI
+
+-- HADWIN
+IMAGOdb.npcs.CAT_LIGHT["hadwin_midnight"].name = "Гэдвин"
+IMAGOdb.npcs.CAT_LIGHT["hadwin_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["hadwin_midnight"].race = "Человек"
+IMAGOdb.npcs.CAT_LIGHT["hadwin_midnight"].lore = [[Гэдвин - крепкий простолюдин с прямолинейным характером -  никогда и не думал о том, чтобы стать паладином. Как и большинство жителей Кул-Тираса, он вырос, поклоняясь Матери волн. С самого детства он видел, как лавку его матери снова и снова грабили, когда отец уходил в море, и это пробудило в нем жгучее стремление к справедливости.
+
+Он поклялся встать на защиту тех, кому она была нужна, и добровольно вступил в ряды инквизиторов Ордена Пылающих Углей в Друствере. Там он начал ощущать странную связь со Светом - связь, которую до сих пор не может до конца объяснить. Он начал обучаться пути паладина из простого любопытства, но очень скоро это стало целью его жизни. Теперь он стал Образцом Справедливости в Страже Тира, а Солнечный Колодец признал его доблесное сердце и призвал его в Луносвет.]]
+IMAGOdb.npcs.CAT_LIGHT["hadwin_midnight"].zones = {"Остров Кель'Данас", "Площадь Паргелия"}
+IMAGOdb.npcs.CAT_LIGHT["hadwin_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_LIGHT["hadwin_midnight"].timeline = IMAGOdb.timelines.HADWIN
+
+
 -- === CAT_AMANI ===
 -- HALAZZI --
 IMAGOdb.npcs.CAT_AMANI["halazzi_midnight"].name = "Халаззи"
@@ -178,6 +247,19 @@ IMAGOdb.npcs.CAT_AMANI["filo_midnight"].lore = [[Фило, почитаемый 
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].zones = {"Зул'Аман"}
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].source = "Metrus"
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].timeline = IMAGOdb.timelines.FILO
+
+-- LOA SPEAKER KINDURU --
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].name = "Говорящий с лоа Киндуру"
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].aliases = {"Киндуру"}
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].race = "Лесной тролль"
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].lore = [[Киндуру, сын Зул'джина, не любит вспоминать печально известные подвиги своего отца. Будучи последователем лоа и даже Говорящим с самой Акил'зон, события, произошедшие во время последней битвы Зул'джина, он воспринял как зверство, а последующая утрата лоа глубоко его опечалила.
+
+Теперь, когда боги покинули их, Киндуру служит советником лидера амани Зул'джарры. Но что ещё важнее - он является её дядей и очень любит как свою племянницу, так и её брата Зул'джана.
+
+Он пытался привить им обоим традиции поклонения лоа и, даже спустя столько лет, всё ещё не теряет надежды, что однажды их боги вернутся.]]
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].zones = {"Атал'Аман", "Зул'Аман"}
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].timeline = IMAGOdb.timelines.LOA_SPEAKER_KINDURU
 
 -- === CAT_HARATI ===
 -- AMARAKK --
@@ -346,5 +428,15 @@ IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].zones = {"Буря Б�
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].source = "Metrus"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].timeline = IMAGOdb.timelines.ALLARI_THE_SOULEATER
 
+-- LIRATH WINDRUNNER --
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].name = "Лират Ветрокрылый"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].race = "Высший эльф"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].lore = [[Самый младший из четырёх детей семьи Ветрокрылых и единственный брат среди них. Лират был блестящим певцом, который прославился благодаря выступлениям при дворе лорда Салтерила и впоследствии был удостоен звания королевского музыканта Кель'тасом Солнечным Скитальцем.
+
+После смерти родителей Лират потребовал, чтобы сёстры обучили его ремеслу следопытов. Лират погиб, защищая деревню Ветрокрылых от орков во время пожара в Кель'Таласе.]]
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].zones = {"Шпили Ветрокрылых"}
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].source = "Metrus"
+IMAGOdb.npcs.CAT_NEUTRAL["lirath_windrunner_midnight"].timeline = IMAGOdb.timelines.LIRATH_WINDRUNNER
 
 -- === CAT_ARCANTINA ===

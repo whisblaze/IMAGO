@@ -101,7 +101,7 @@ IMAGOdb.zones[2600] = {
 
 IMAGOdb.zones[2248] = {
     id = 2248,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\isle_of_dorn.tga",
     factionControl = "CAT_CONTESTED",
     name = "",
@@ -111,7 +111,7 @@ IMAGOdb.zones[2248] = {
 
 IMAGOdb.zones[2339] = {
     id = 2339,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\dornogal.tga",
     factionControl = "CAT_NEUTRAL",
     name = "",
@@ -121,7 +121,7 @@ IMAGOdb.zones[2339] = {
 
 IMAGOdb.zones[2214] = {
     id = 2214,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\ringing_deeps.tga",
     factionControl = "CAT_CONTESTED",
     name = "",
@@ -131,7 +131,7 @@ IMAGOdb.zones[2214] = {
 
 IMAGOdb.zones[2215] = {
     id = 2215,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\hallowfall.tga",
     factionControl = "CAT_CONTESTED",
     name = "",
@@ -141,7 +141,7 @@ IMAGOdb.zones[2215] = {
 
 IMAGOdb.zones[2255] = {
     id = 2255,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\azjkahet.tga",
     factionControl = "CAT_VOID",
     name = "",
@@ -151,7 +151,7 @@ IMAGOdb.zones[2255] = {
 
 IMAGOdb.zones[2213] = {
     id = 2213,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\city_of_threads.tga",
     factionControl = "CAT_VOID",
     name = "",
@@ -161,7 +161,7 @@ IMAGOdb.zones[2213] = {
 
 IMAGOdb.zones[2346] = {
     id = 2346,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\undermine.tga",
     factionControl = "CAT_CONTESTED",
     name = "",
@@ -171,7 +171,7 @@ IMAGOdb.zones[2346] = {
 
 IMAGOdb.zones[2369] = {
     id = 2369,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\siren_isle.tga",
     factionControl = "CAT_CONTESTED",
     name = "",
@@ -181,7 +181,7 @@ IMAGOdb.zones[2369] = {
 
 IMAGOdb.zones[2371] = {
     id = 2371,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\karesh.tga",
     factionControl = "CAT_VOID",
     name = "",
@@ -191,10 +191,21 @@ IMAGOdb.zones[2371] = {
 
 IMAGOdb.zones[2472] = {
     id = 2472,
-    expansion = "the_war_within",
+    expansion = "tww",
     texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\tazavesh.tga",
     factionControl = "CAT_NEUTRAL",
     name = "",
     lore = "",
     pointsOfInterest = {},
 }
+
+IMAGOdb.zones[2372] = {
+    id = 2372,
+    expansion = "tww",
+    texturePath = "Interface\\AddOns\\IMAGO\\media\\Zones\\the_war_within\\arathi_highlands.tga",
+    factionControl = "CAT_NEUTRAL",
+    name = "",
+    lore = "",
+    pointsOfInterest = {},
+}
+

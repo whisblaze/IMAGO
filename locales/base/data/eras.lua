@@ -447,23 +447,23 @@ IMAGOdb.eras["midnight"].keyFigures = {
 -- ============================================================
 -- THE WAR WITHIN  (complete data)
 -- ============================================================
-IMAGOdb.eras["the_war_within"].name       = "World of Warcraft: The War Within"
-IMAGOdb.eras["the_war_within"].logoPath   = "Interface\\AddOns\\IMAGO\\Media\\Eras\\Logos\\the_war_within_logo.tga"
-IMAGOdb.eras["the_war_within"].bgPath     = "Interface\\AddOns\\IMAGO\\Media\\Eras\\Backgrounds\\the_war_within_bg.tga"
-IMAGOdb.eras["the_war_within"].region     = "Khaz Algar"
-IMAGOdb.eras["the_war_within"].antagonist = "Xal'atath, Harbinger of the Void"
-IMAGOdb.eras["the_war_within"].conflict   = "The Radiant Song's Warnings"
-IMAGOdb.eras["the_war_within"].year       = 2024
+IMAGOdb.eras["tww"].name       = "World of Warcraft: The War Within"
+IMAGOdb.eras["tww"].logoPath   = "Interface\\AddOns\\IMAGO\\Media\\Eras\\Logos\\the_war_within_logo.tga"
+IMAGOdb.eras["tww"].bgPath     = "Interface\\AddOns\\IMAGO\\Media\\Eras\\Backgrounds\\the_war_within_bg.tga"
+IMAGOdb.eras["tww"].region     = "Khaz Algar"
+IMAGOdb.eras["tww"].antagonist = "Xal'atath, Harbinger of the Void"
+IMAGOdb.eras["tww"].conflict   = "The Radiant Song's Warnings"
+IMAGOdb.eras["tww"].year       = 2024
 
 -- TAB 1: OVERVIEW
-IMAGOdb.eras["the_war_within"].summary =
+IMAGOdb.eras["tww"].summary =
     "The Radiant Song has been heard all across Azeroth, calling her champions to the remote shores of " ..
     "Khaz Algar. There, beneath the ancient earthen city of Dornogal, Xal'atath, Harbinger of the Void, " ..
     "gathers a formidable army in the depths below. The mysterious Dark Heart rests in her possession, " ..
     "and the Champions of Azeroth, alongside their allies, follow her to the deep places of the earth " ..
     "to seize the artifact before her plans come to fruition."
 
-IMAGOdb.eras["the_war_within"].fastFacts = {
+IMAGOdb.eras["tww"].fastFacts = {
     bigQuestion  = "Can Xal'atath be stopped before her mysterious plan comes to fruition?",
     cosmicForces = "The Void seeking to topple the cosmic balance",
     casualties   = "- Renzik \"the Shiv\": Gave his life for a better Undermine\n- Locus-Walker: Betrayed and killed by Xal'atath\n- Jastor Gallywix: Died after the goblins of Undermine rose up against his tyranny",
@@ -471,7 +471,7 @@ IMAGOdb.eras["the_war_within"].fastFacts = {
 }
 
 -- TAB 2: CAMPAIGNS & REGIONS
-IMAGOdb.eras["the_war_within"].campaigns = {
+IMAGOdb.eras["tww"].campaigns = {
     {
         heading      = "Farewell, City of Magic",
         zoneName     = "Visions of Azeroth",
@@ -653,7 +653,7 @@ General Anub'azal confronted his nemesis and usurper, General Zev'kall, in a due
 }
 
 -- TAB 3: PATCHES
-IMAGOdb.eras["the_war_within"].patches = {
+IMAGOdb.eras["tww"].patches = {
     {
         version  = "11.0.7",
         title    = "Siren Isle",
@@ -803,7 +803,7 @@ Meanwhile, Alleria Windrunner managed to find Xal'atath. Following her enemy thr
 }
 
 -- TAB 4: KEY FIGURES
-IMAGOdb.eras["the_war_within"].keyFigures = {
+IMAGOdb.eras["tww"].keyFigures = {
     { slug="alleria_windrunner_tww", arcLabel="The Obsessed Hunter",   blurb="Alleria hunted Xal'atath across Khaz Algar and far beyond. Her thirst for revenge bordered on dangerous obsession to the point of endangering herself and her allies." },
     { slug="xal_atath_tww",          arcLabel="The Harbinger",         blurb="The Harbinger systematically empowered the Dark Heart with various energy sources while delaying the Champions repeatedly. She notably never attacked Alleria directly and managed to turn her losses into ultimate victory." },
     { slug="anduin_wrynn_tww",       arcLabel="Broken, Then Reforged", blurb="Started out a broken man after the events of the war in the Shadowlands, but finally regained his faith in the Light and in himself." },
@@ -816,26 +816,26 @@ IMAGOdb.eras["the_war_within"].keyFigures = {
 -- ============================================================
 -- DRAGONFLIGHT — stub
 -- ============================================================
-IMAGOdb.eras["dragonflight"].name       = "Dragonflight"
-IMAGOdb.eras["dragonflight"].region     = "Dragon Isles"
-IMAGOdb.eras["dragonflight"].antagonist = "Fyrakk / The Incarnates"
-IMAGOdb.eras["dragonflight"].conflict   = "The Reawakening of the Dragon Isles"
+IMAGOdb.eras["df"].name       = "Dragonflight"
+IMAGOdb.eras["df"].region     = "Dragon Isles"
+IMAGOdb.eras["df"].antagonist = "Fyrakk / The Incarnates"
+IMAGOdb.eras["df"].conflict   = "The Reawakening of the Dragon Isles"
 
 -- ============================================================
 -- SHADOWLANDS — stub
 -- ============================================================
-IMAGOdb.eras["shadowlands"].name       = "Shadowlands"
-IMAGOdb.eras["shadowlands"].region     = "The Shadowlands"
-IMAGOdb.eras["shadowlands"].antagonist = "The Jailer (Zovaal)"
-IMAGOdb.eras["shadowlands"].conflict   = "Death Unbound"
+IMAGOdb.eras["sl"].name       = "Shadowlands"
+IMAGOdb.eras["sl"].region     = "The Shadowlands"
+IMAGOdb.eras["sl"].antagonist = "The Jailer (Zovaal)"
+IMAGOdb.eras["sl"].conflict   = "Death Unbound"
 
 -- ============================================================
 -- BATTLE FOR AZEROTH — stub
 -- ============================================================
-IMAGOdb.eras["battle_for_azeroth"].name       = "Battle for Azeroth"
-IMAGOdb.eras["battle_for_azeroth"].region     = "Kul Tiras & Zandalar"
-IMAGOdb.eras["battle_for_azeroth"].antagonist = "N'Zoth the Corruptor"
-IMAGOdb.eras["battle_for_azeroth"].conflict   = "Alliance vs. Horde — and the Old Gods' Return"
+IMAGOdb.eras["bfa"].name       = "Battle for Azeroth"
+IMAGOdb.eras["bfa"].region     = "Kul Tiras & Zandalar"
+IMAGOdb.eras["bfa"].antagonist = "N'Zoth the Corruptor"
+IMAGOdb.eras["bfa"].conflict   = "Alliance vs. Horde — and the Old Gods' Return"
 
 -- ============================================================
 -- LEGION — stub
@@ -848,42 +848,42 @@ IMAGOdb.eras["legion"].conflict   = "The Third Invasion of the Burning Legion"
 -- ============================================================
 -- WARLORDS OF DRAENOR — stub
 -- ============================================================
-IMAGOdb.eras["warlords_of_draenor"].name       = "Warlords of Draenor"
-IMAGOdb.eras["warlords_of_draenor"].region     = "Draenor (Alternate)"
-IMAGOdb.eras["warlords_of_draenor"].antagonist = "Gul'dan / The Iron Horde"
-IMAGOdb.eras["warlords_of_draenor"].conflict   = "The Iron Horde's Crusade"
+IMAGOdb.eras["wod"].name       = "Warlords of Draenor"
+IMAGOdb.eras["wod"].region     = "Draenor (Alternate)"
+IMAGOdb.eras["wod"].antagonist = "Gul'dan / The Iron Horde"
+IMAGOdb.eras["wod"].conflict   = "The Iron Horde's Crusade"
 
 -- ============================================================
 -- MISTS OF PANDARIA — stub
 -- ============================================================
-IMAGOdb.eras["mists_of_pandaria"].name       = "Mists of Pandaria"
-IMAGOdb.eras["mists_of_pandaria"].region     = "Pandaria"
-IMAGOdb.eras["mists_of_pandaria"].antagonist = "Garrosh Hellscream / The Sha"
-IMAGOdb.eras["mists_of_pandaria"].conflict   = "War on Pandaria's Soul"
+IMAGOdb.eras["mop"].name       = "Mists of Pandaria"
+IMAGOdb.eras["mop"].region     = "Pandaria"
+IMAGOdb.eras["mop"].antagonist = "Garrosh Hellscream / The Sha"
+IMAGOdb.eras["mop"].conflict   = "War on Pandaria's Soul"
 
 -- ============================================================
 -- CATACLYSM — stub
 -- ============================================================
-IMAGOdb.eras["cataclysm"].name       = "Cataclysm"
-IMAGOdb.eras["cataclysm"].region     = "Azeroth (Shattered)"
-IMAGOdb.eras["cataclysm"].antagonist = "Deathwing the Destroyer"
-IMAGOdb.eras["cataclysm"].conflict   = "The Shattering of the World"
+IMAGOdb.eras["cata"].name       = "Cataclysm"
+IMAGOdb.eras["cata"].region     = "Azeroth (Shattered)"
+IMAGOdb.eras["cata"].antagonist = "Deathwing the Destroyer"
+IMAGOdb.eras["cata"].conflict   = "The Shattering of the World"
 
 -- ============================================================
 -- WRATH OF THE LICH KING — stub
 -- ============================================================
-IMAGOdb.eras["wrath_of_the_lich_king"].name       = "Wrath of the Lich King"
-IMAGOdb.eras["wrath_of_the_lich_king"].region     = "Northrend"
-IMAGOdb.eras["wrath_of_the_lich_king"].antagonist = "Arthas Menethil, the Lich King"
-IMAGOdb.eras["wrath_of_the_lich_king"].conflict   = "War Against the Scourge"
+IMAGOdb.eras["wotlk"].name       = "Wrath of the Lich King"
+IMAGOdb.eras["wotlk"].region     = "Northrend"
+IMAGOdb.eras["wotlk"].antagonist = "Arthas Menethil, the Lich King"
+IMAGOdb.eras["wotlk"].conflict   = "War Against the Scourge"
 
 -- ============================================================
 -- THE BURNING CRUSADE — stub
 -- ============================================================
-IMAGOdb.eras["the_burning_crusade"].name       = "The Burning Crusade"
-IMAGOdb.eras["the_burning_crusade"].region     = "Outland"
-IMAGOdb.eras["the_burning_crusade"].antagonist = "Illidan Stormrage / Kil'jaeden"
-IMAGOdb.eras["the_burning_crusade"].conflict   = "The Dark Portal's Reopening"
+IMAGOdb.eras["tbc"].name       = "The Burning Crusade"
+IMAGOdb.eras["tbc"].region     = "Outland"
+IMAGOdb.eras["tbc"].antagonist = "Illidan Stormrage / Kil'jaeden"
+IMAGOdb.eras["tbc"].conflict   = "The Dark Portal's Reopening"
 
 -- ============================================================
 -- CLASSIC / VANILLA — stub

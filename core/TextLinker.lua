@@ -5,73 +5,94 @@
 
 IMAGO.TextLinker = IMAGO.TextLinker or {}
 
-local npcList  = nil
-local zoneList = nil
+local npcListByEra  = nil
+local zoneListByEra = nil
+local flatByEra = nil
+
+-- Gets the era from the key of an NPC
+local function EraFromSlug(slug)
+    local suffix = slug:match("_([^_]+)$")
+    return suffix
+end
+
+-- One sorted list per era, longest name first so "Alleria Windrunner"
+-- matches before a bare "Alleria" alias.
+local function byLengthDesc(a, b)
+    if #a.name ~= #b.name then return #a.name > #b.name end
+    return a.name < b.name
+end
+
+-- flatByEra[era][zoneOrNPCname] = slug
+local function addEntry(name, slug, era)
+    if type(name) == "string" and name ~= "" then
+        flatByEra[era] = flatByEra[era] or {}
+        flatByEra[era][name] = slug
+    end
+end
 
 -- ============================================================
 -- BUILD NPC LOOKUP
 -- ============================================================
 function IMAGO.TextLinker.BuildNameLookup()
-    npcList = nil
-
     if not IMAGOdb or not IMAGOdb.npcs then return end
-
-    local flat = {}   -- name (as written) → slug
+    npcListByEra = {}
+    flatByEra = {}
 
     for _, entries in pairs(IMAGOdb.npcs) do
         if type(entries) == "table" then
             for slug, data in pairs(entries) do
-                if type(data.name) == "string" and data.name ~= "" then
-                    flat[data.name] = slug
-                end
+                local era = EraFromSlug(slug)
+                addEntry(data.name, slug, era)
                 if type(data.aliases) == "table" then
                     for _, alias in ipairs(data.aliases) do
-                        if type(alias) == "string" and alias ~= "" then
-                            flat[alias] = slug
-                        end
+                        addEntry(alias, slug, era)
                     end
                 end
             end
         end
     end
 
-    -- Convert to a sorted list, longest name first, so "Alleria Windrunner"
-    -- is matched before a bare "Alleria" alias.
-    npcList = {}
-    for name, slug in pairs(flat) do
-        npcList[#npcList + 1] = { name = name, slug = slug }
+    npcListByEra = {}
+    for era, flat in pairs(flatByEra) do
+        local list = {}
+        for name, slug in pairs(flat) do
+            list[#list + 1] = { name = name, slug = slug }
+        end
+        table.sort(list, byLengthDesc)
+        npcListByEra[era] = list
     end
-    table.sort(npcList, function(a, b) return #a.name > #b.name end)
 end
 
 -- ============================================================
 -- BUILD ZONE LOOKUP
 -- ============================================================
 function IMAGO.TextLinker.BuildZoneLookup()
-    zoneList = nil
-
     if not IMAGOdb or not IMAGOdb.zones then return end
-
-    local flat = {}   -- name → mapID
+    zoneListByEra = {}
+    flatByEra = {}
 
     for mapID, data in pairs(IMAGOdb.zones) do
-        if type(data.name) == "string" and data.name ~= "" then
-            flat[data.name] = mapID
-        end
-        if type(data.aliases) == "table" then
-            for _, alias in ipairs(data.aliases) do
-                if type(alias) == "string" and alias ~= "" then
-                    flat[alias] = mapID
+        local era = data.expansion
+        if era then
+            addEntry(data.name, mapID, era)
+            if type(data.aliases) == "table" then
+                for _, alias in ipairs(data.aliases) do
+                    addEntry(alias, mapID, era)
                 end
             end
         end
     end
 
-    zoneList = {}
-    for name, mapID in pairs(flat) do
-        zoneList[#zoneList + 1] = { name = name, mapID = mapID }
+    -- Longest name first so "Isle of Dorn" matches before a bare "Dorn" alias.
+    zoneListByEra = {}
+    for era, flat in pairs(flatByEra) do
+        local list = {}
+        for name, mapID in pairs(flat) do
+            list[#list + 1] = { name = name, mapID = mapID }
+        end
+        table.sort(list, byLengthDesc)
+        zoneListByEra[era] = list
     end
-    table.sort(zoneList, function(a, b) return #a.name > #b.name end)
 end
 
 -- ============================================================
@@ -125,32 +146,45 @@ end
 function IMAGO.TextLinker.LinkNames(text, selfSlug, selfMapID, sharedNPCLinks, sharedZoneLinks)
     if not text or text == "" then return text end
 
+    -- Resolve the era of the text being linked from whoever owns it.
+    local era
+    if selfSlug then
+        era = EraFromSlug(selfSlug)
+    elseif selfMapID then
+        local zone = IMAGOdb.zones[selfMapID]   -- direct lookup by mapID
+        era = zone.expansion
+    end
+    if not era then return text end  
     -- ---- 1. NPC links ----------------------------------------
     local linkedNPCSlugs = sharedNPCLinks or {}
-
-    for _, entry in ipairs(npcList or {}) do
-        local slug = entry.slug
-        if slug ~= selfSlug and not linkedNPCSlugs[slug] then
-            local link = "|Himago-npc:" .. slug .. "|h|" .. "c" .. IMAGO_HEX.GOLD_BRIGHT .. entry.name .. "|r|h"
-            local newText, ok = InjectFirstLink(text, entry.name, link)
-            if ok then
-                text = newText
-                linkedNPCSlugs[slug] = true
+    local npcList = npcListByEra[era]
+    if npcList then
+        for _, entry in ipairs(npcList or {}) do
+            local slug = entry.slug
+            if slug ~= selfSlug and not linkedNPCSlugs[slug] then
+                local link = "|Himago-npc:" .. slug .. "|h|" .. "c" .. IMAGO_HEX.GOLD_BRIGHT .. entry.name .. "|r|h"
+                local newText, ok = InjectFirstLink(text, entry.name, link)
+                if ok then
+                    text = newText
+                    linkedNPCSlugs[slug] = true
+                end
             end
         end
     end
 
     -- ---- 2. Zone links ----------------------------------------
     local linkedZoneIDs = sharedZoneLinks or {}
-
-    for _, entry in ipairs(zoneList or {}) do
-        local mapID = entry.mapID
-        if mapID ~= selfMapID and not linkedZoneIDs[mapID] then
-            local link = "|Himago-zone:" .. tostring(mapID) .. "|h|" .. "c" .. IMAGO_HEX.VOID .. entry.name .. "|r|h"
-            local newText, ok = InjectFirstLink(text, entry.name, link)
-            if ok then
-                text = newText
-                linkedZoneIDs[mapID] = true
+    local zoneList = zoneListByEra[era]
+    if zoneList then
+        for _, entry in ipairs(zoneList or {}) do
+            local mapID = entry.mapID
+            if mapID ~= selfMapID and not linkedZoneIDs[mapID] then
+                local link = "|Himago-zone:" .. tostring(mapID) .. "|h|" .. "c" .. IMAGO_HEX.VOID .. entry.name .. "|r|h"
+                local newText, ok = InjectFirstLink(text, entry.name, link)
+                if ok then
+                    text = newText
+                    linkedZoneIDs[mapID] = true
+                end
             end
         end
     end

@@ -24,6 +24,11 @@ local defaults = {
     showOnceOnlyZone = true,
     noMainLoreTimerClose = false,
     enableIdleFlashcards = true,
+    flashcardTypes = {
+        ["dead"]    = true,
+        ["fishing"] = true,
+        ["taxi"]    = true,
+    },
     keepSnippetOpen = false,
     enableMotD = true,
     opaqueUI = false,
@@ -1108,15 +1113,18 @@ function IMAGO.Locale.Init()
         local c = GetLocale()
         if c == "deDE" then return "deDE" end
         if c == "ruRU" then return "ruRU" end
+        if c == "koKR" then return "koKR" end
         return "enUS"
     end
     local locale = ResolveLocale()
     local L_EN = IMAGO.LocaleData.enUS or {}
     local L_DE = IMAGO.LocaleData.deDE or {}
     local L_RU = IMAGO.LocaleData.ruRU or {}
+    local L_KO = IMAGO.LocaleData.koKR or {}
     local targetL = L_EN
     if locale == "deDE" then targetL = L_DE
     elseif locale == "ruRU" then targetL = L_RU
+    elseif locale == "koKR" then targetL = L_KO
     end
     -- Fallback: pull missing keys from EN
     for k, v in pairs(L_EN) do

@@ -3,7 +3,8 @@ IMAGO.Snippets = IMAGO.Snippets or {}
 local COOLDOWN_SECONDS = 15
 local lastAutoAt = 0
 
-local CATEGORIES = { "FUN_FACT", "DID_YOU_KNOW", "HISTORICAL_FACT", "BEHIND_THE_SCENES"}
+local CATEGORIES = { "FUN_FACT", "DID_YOU_KNOW", "HISTORICAL_FACT", "BEHIND_THE_SCENES" }
+IMAGO.Snippets.CATEGORIES = CATEGORIES
 
 local FISHING_SPELL_IDS = {
     [51294] = true,
@@ -28,44 +29,82 @@ end
 
 local function GetLocalizedSnippetText(entry)
     if type(entry) == "string" then return entry end
-    if type(entry) ~= "table" then return nil end
-
-    return entry.text
+    if type(entry) == "table" then return entry.text end
+    return nil
 end
 
-local function PickRandom()
-    if type(IMAGO.LoreSnippets) ~= "table" then return nil, nil end
+---------------------------------------------------------------------
+-- Snippet pool
+-- Flat pool of every usable snippet in every enabled category, stored as
+-- parallel arrays of resolved text and category key. Entries with no text
+-- are dropped here, once, so picking is a single random index.
+---------------------------------------------------------------------
+local poolTexts, poolCats = nil, nil
 
-    local available = {}
-    for i = 1, #CATEGORIES do
-        local k = CATEGORIES[i]
-        local list = IMAGO.LoreSnippets[k]
-        if type(list) == "table" and #list > 0 then
-            available[#available + 1] = k
+local function BuildPool()
+    local texts, cats = {}, {}
+    local n = 0
+    local saved = IMAGOSaved and IMAGOSaved.flashcardCategories
+    local snippets = IMAGO.LoreSnippets
+
+    if type(snippets) == "table" then
+        for i = 1, #CATEGORIES do
+            local cat = CATEGORIES[i]
+            -- A missing entry counts as enabled, so existing users need no migration.
+            if not saved or saved[cat] ~= false then
+                local list = snippets[cat]
+                if type(list) == "table" then
+                    for j = 1, #list do
+                        local text = GetLocalizedSnippetText(list[j])
+                        if text and text ~= "" then
+                            n = n + 1
+                            texts[n] = text
+                            cats[n]  = cat
+                        end
+                    end
+                end
+            end
         end
     end
-    if #available == 0 then return nil, nil end
 
-    local categoryKey = available[math.random(1, #available)]
-    local list = IMAGO.LoreSnippets[categoryKey]
-    local entry = list[math.random(1, #list)]
-    local text = GetLocalizedSnippetText(entry)
-    if not text or text == "" then return nil, nil end
-
-    return categoryKey, text
+    -- Only cache a non-empty pool, so an early call before the localized
+    -- entries have loaded doesn't leave a stale empty pool behind.
+    if n > 0 then
+        poolTexts, poolCats = texts, cats
+    end
+    return texts, cats, n
 end
 
+-- Called by the options checkboxes, and after locale data (re)loads.
+function IMAGO.Snippets.RefreshCategories()
+    poolTexts, poolCats = nil, nil
+end
+
+-- Returns text, categoryKey for a random snippet from ALL enabled categories,
+-- or nil, nil if every category is disabled or there is nothing to show.
+function IMAGO.Snippets.PickSnippet()
+    local texts, cats, n = poolTexts, poolCats, poolTexts and #poolTexts or 0
+    if n == 0 then
+        texts, cats, n = BuildPool()
+        if n == 0 then return nil, nil end
+    end
+    local i = math.random(n)
+    return texts[i], cats[i]
+end
+
+---------------------------------------------------------------------
+-- Showing
+---------------------------------------------------------------------
 function IMAGO.Snippets.ShowRandom(ignoreCooldown)
     if not IMAGOSaved or not IMAGOSaved.enabled then return false end
     if not IMAGOSaved.enableIdleFlashcards then return false end
 
     if not ignoreCooldown then
-        local now = GetNow()
-        if (now - lastAutoAt) < COOLDOWN_SECONDS then return false end
+        if (GetNow() - lastAutoAt) < COOLDOWN_SECONDS then return false end
     end
 
-    local categoryKey, text = PickRandom()
-    if not categoryKey or not text then return false end
+    local text, categoryKey = IMAGO.Snippets.PickSnippet()
+    if not text then return false end
 
     if IMAGO.UI and IMAGO.UI.ShowSnippetPopup then
         IMAGO.UI.ShowSnippetPopup(text, categoryKey)
@@ -81,30 +120,31 @@ function IMAGO.Snippets.ShowRandom(ignoreCooldown)
     return true
 end
 
+---------------------------------------------------------------------
+-- Events
+-- ShowRandom already checks enabled / enableIdleFlashcards, so this only
+-- checks the per-type toggle.
+---------------------------------------------------------------------
 function IMAGO.Snippets.HandleEvent(event, ...)
-    if not IMAGOSaved or not IMAGOSaved.enabled then return end
-    if not IMAGOSaved.enableIdleFlashcards then return end
+    local types = IMAGOSaved and IMAGOSaved.flashcardTypes
+    if not types then return end
 
     if event == "PLAYER_DEAD" then
-        IMAGO.Snippets.ShowRandom(false)
-        return
-    end
+        if types.dead then IMAGO.Snippets.ShowRandom(false) end
 
-    if event == "UNIT_SPELLCAST_CHANNEL_START" then
-        local unitTarget = ...
-        local spellID = select(3, ...)
-        if unitTarget == "player" and spellID and FISHING_SPELL_IDS[spellID] then
+    elseif event == "UNIT_SPELLCAST_CHANNEL_START" then
+        if not types.fishing then return end
+        local unitTarget, _, spellID = ...
+        if unitTarget == "player" and FISHING_SPELL_IDS[spellID] then
             IMAGO.Snippets.ShowRandom(false)
         end
-        return
-    end
 
-    if event == "PLAYER_CONTROL_LOST" then
+    elseif event == "PLAYER_CONTROL_LOST" then
+        if not types.taxi then return end
         C_Timer.After(0.1, function()
             if UnitOnTaxi and UnitOnTaxi("player") then
                 IMAGO.Snippets.ShowRandom(false)
             end
         end)
-        return
     end
 end

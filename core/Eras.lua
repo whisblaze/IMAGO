@@ -41,32 +41,32 @@ local BANNER_H  = 120
 
 local ERA_VERSION = {
     midnight               = "12.x",
-    the_war_within         = "11.x",
-    dragonflight           = "10.x",
-    shadowlands            = "9.x",
-    battle_for_azeroth     = "8.x",
+    tww         = "11.x",
+    df           = "10.x",
+    sl            = "9.x",
+    bfa     = "8.x",
     legion                 = "7.x",
-    warlords_of_draenor    = "6.x",
-    mists_of_pandaria      = "5.x",
-    cataclysm              = "4.x",
-    wrath_of_the_lich_king = "3.x",
-    the_burning_crusade    = "2.x",
+    wod    = "6.x",
+    mop      = "5.x",
+    cata              = "4.x",
+    wotlk = "3.x",
+    tbc    = "2.x",
     classic                = "1.x",
 }
 
 local ERA_ROMAN = {
-    midnight               = "XII",
-    the_war_within         = "XI",
-    dragonflight           = "X",
-    shadowlands            = "IX",
-    battle_for_azeroth     = "VIII",
-    legion                 = "VII",
-    warlords_of_draenor    = "VI",
-    mists_of_pandaria      = "V",
-    cataclysm              = "IV",
-    wrath_of_the_lich_king = "III",
-    the_burning_crusade    = "II",
-    classic                = "I",
+    midnight                = "XII",
+    tww                     = "XI",
+    df                      = "X",
+    sl                      = "IX",
+    bfa                     = "VIII",
+    legion                  = "VII",
+    wod                     = "VI",
+    mop                     = "V",
+    cata                    = "IV",
+    wotlk                   = "III",
+    tbc                     = "II",
+    classic                 = "I",
 }
 
 -- order <= MODERN_CUTOFF → "Modern Era", otherwise "Classic Era"
@@ -1190,9 +1190,9 @@ function IMAGO.Eras.RenderOverview(data)
     -- --------------------------------------------------------
     local KF_W = math.floor((INNER - GAP * 2) / 3)
     local kfDefs = {
-        { key="kf1", lbl=IMAGO.L["ERAS_STAT_REGION"]     or "Region",     val=data.region     or "—" },
-        { key="kf2", lbl=IMAGO.L["ERAS_STAT_ANTAGONIST"] or "Antagonist", val=data.antagonist or "—" },
-        { key="kf3", lbl=IMAGO.L["ERAS_STAT_CONFLICT"]   or "Conflict",   val=data.conflict   or "—" },
+        { key="kf1", lbl=IMAGO.L["ERAS_STAT_REGION"]     or "Region",     val=data.region     or "-" },
+        { key="kf2", lbl=IMAGO.L["ERAS_STAT_ANTAGONIST"] or "Antagonist", val=data.antagonist or "-" },
+        { key="kf3", lbl=IMAGO.L["ERAS_STAT_CONFLICT"]   or "Conflict",   val=data.conflict   or "-" },
     }
     local KF_LBL_H  = 14    -- approx. line height at 11px
     local KF_GAP_LV = 8     -- label→value spacing

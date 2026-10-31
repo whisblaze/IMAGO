@@ -12,7 +12,7 @@ IMAGOdb.eras = IMAGOdb.eras or {}
 IMAGOdb.eras["midnight"] = {
     order              = 1,
     coming_soon        = false,
-    unlock_npc = "lorthemar_theron_midnight",
+    unlock_npc         = "lorthemar_theron_midnight",
     release_date       = "March 2, 2026",
     logoPath           = "Interface\\AddOns\\IMAGO\\Media\\Eras\\Logos\\midnight_logo.tga",
     logo_w             = 288,
@@ -28,9 +28,10 @@ IMAGOdb.eras["midnight"] = {
 -- ------------------------------------------------------------
 -- THE WAR WITHIN
 -- ------------------------------------------------------------
-IMAGOdb.eras["the_war_within"] = {
+IMAGOdb.eras["tww"] = {
     order              = 2,
     coming_soon        = false,
+    unlock_npc         = "alleria_windrunner_tww",
     release_date       = "August 26, 2024",
     logoPath           = "Interface\\AddOns\\IMAGO\\Media\\Eras\\Logos\\the_war_within_logo.tga",
     logo_w             = 288,
@@ -46,7 +47,7 @@ IMAGOdb.eras["the_war_within"] = {
 -- ------------------------------------------------------------
 -- DRAGONFLIGHT
 -- ------------------------------------------------------------
-IMAGOdb.eras["dragonflight"] = {
+IMAGOdb.eras["df"] = {
     order              = 3,
     coming_soon        = true,
     release_date       = "November 28, 2022",
@@ -64,7 +65,7 @@ IMAGOdb.eras["dragonflight"] = {
 -- ------------------------------------------------------------
 -- SHADOWLANDS
 -- ------------------------------------------------------------
-IMAGOdb.eras["shadowlands"] = {
+IMAGOdb.eras["sl"] = {
     order              = 4,
     coming_soon        = true,
     release_date       = "November 23, 2020",
@@ -82,7 +83,7 @@ IMAGOdb.eras["shadowlands"] = {
 -- ------------------------------------------------------------
 -- BATTLE FOR AZEROTH
 -- ------------------------------------------------------------
-IMAGOdb.eras["battle_for_azeroth"] = {
+IMAGOdb.eras["bfa"] = {
     order              = 5,
     coming_soon        = true,
     release_date       = "August 13, 2018",
@@ -118,7 +119,7 @@ IMAGOdb.eras["legion"] = {
 -- ------------------------------------------------------------
 -- WARLORDS OF DRAENOR
 -- ------------------------------------------------------------
-IMAGOdb.eras["warlords_of_draenor"] = {
+IMAGOdb.eras["wod"] = {
     order              = 7,
     coming_soon        = true,
     release_date       = "November 13, 2014",
@@ -136,7 +137,7 @@ IMAGOdb.eras["warlords_of_draenor"] = {
 -- ------------------------------------------------------------
 -- MISTS OF PANDARIA
 -- ------------------------------------------------------------
-IMAGOdb.eras["mists_of_pandaria"] = {
+IMAGOdb.eras["mop"] = {
     order              = 8,
     coming_soon        = true,
     release_date       = "September 25, 2012",
@@ -154,7 +155,7 @@ IMAGOdb.eras["mists_of_pandaria"] = {
 -- ------------------------------------------------------------
 -- CATACLYSM
 -- ------------------------------------------------------------
-IMAGOdb.eras["cataclysm"] = {
+IMAGOdb.eras["cata"] = {
     order              = 9,
     coming_soon        = true,
     release_date       = "December 7, 2010",
@@ -172,7 +173,7 @@ IMAGOdb.eras["cataclysm"] = {
 -- ------------------------------------------------------------
 -- WRATH OF THE LICH KING
 -- ------------------------------------------------------------
-IMAGOdb.eras["wrath_of_the_lich_king"] = {
+IMAGOdb.eras["wotlk"] = {
     order              = 10,
     coming_soon        = true,
     release_date       = "November 13, 2008",
@@ -190,7 +191,7 @@ IMAGOdb.eras["wrath_of_the_lich_king"] = {
 -- ------------------------------------------------------------
 -- THE BURNING CRUSADE
 -- ------------------------------------------------------------
-IMAGOdb.eras["the_burning_crusade"] = {
+IMAGOdb.eras["tbc"] = {
     order              = 11,
     coming_soon        = true,
     release_date       = "January 16, 2007",

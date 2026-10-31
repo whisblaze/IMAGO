@@ -377,3 +377,29 @@ IMAGOdb.zones[2371].pointsOfInterest = {
         lore = "Under Magister Umbric, the forces of Azeroth have joined the K'aresh Trust in the defense of the known universe. Amidst the ruins of a long-forgotten settlement, they have made their meager base. It is not built to be defended or inhabited - for the time to strike at Dimensius and the Shadowguard is now.",
     },
 }
+
+
+
+IMAGOdb.zones[2372].name = "Arathi Highlands"
+IMAGOdb.zones[2372].aliases = {"Stromgarde Keep", "Hammerfall", "Ar'gorok"}
+IMAGOdb.zones[2372].lore = [[
+The Fourth War ended with the Alliance victorious in the Eastern Kingdoms, and once more, the banners of Stromgarde fly over the Arathi Highlands. The kingdom is now, for the first time in decades, firmly in the hands of its rightful rulers. King Danath Trollbane saw fit to honor the armistice between Horde and Alliance by granting the Mag'har orcs residence in the remote settlement of Hammerfall. In return, the Horde agreed to abandon all remaining military outposts in his kingdom. So far, the agreement has been upheld. The orcs have focused mostly on farming and hunting, and Stromgarde has become a place of peaceful coexistence... or so one might assume.
+
+Both the war against Xal'atath and the aftermath of the Fourth War have left the human kingdom's capital in dire need of food and monetary resources, as the army fighting on foreign shores takes precedence. Meanwhile, many veterans and victims of the Fourth War remain, forced to share what little they have with people who had been their enemies only a few years ago. Marran Trollbane, Danath's niece, had already tried to incite a new war that culminated in the Battle of Go'shek Farm - a battle that fortunately remained without bloodshed.
+
+With peace and shortages forced upon the toiling populace, discontent and the desire for rebellion grow ever stronger in the ancient land of the Arathi.
+]]
+IMAGOdb.zones[2372].pointsOfInterest = {
+    {
+        name = "Stromgarde Keep",
+        lore = "The walled-off capital of the human kingdom has struggled in the aftermath of the Fourth War, even though the conflict was decided in its favor. Marran Trollbane remains imprisoned here, while her followers remain vocal about restoring the empire to its former glory. Some even call the city by its original name once again - Strom. Members of the Horde are allowed inside, but should tread carefully in this fragile time of peace."},
+    {
+        name = "Hammerfall",
+        lore = "The main Horde settlement in the Highlands is now under the leadership of Overlord Geya'rah and her advisor Eitrigg. Having lost almost all other strongholds in the region over the course of many wars, the orcs now mostly keep to themselves, keeping their interactions with their human neighbors brief but amicable."
+    },
+    {
+        name = "Ar'gorok",
+        lore = "After losing the Fourth War, the fearsome orcish fortress of Ar'gorok was left in ruins. The Horde abandoned it for good when the faction truce was declared. What remains would still serve as a well-fortified base should any group choose to claim it."
+    },
+}
+

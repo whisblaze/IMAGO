@@ -125,13 +125,113 @@ function IMAGO.Options.Init()
 
     local flashcardsHeader = CreateSectionHeader(IMAGO.L["SETTINGS_SEC_IDLE_FLASHCARDS"], sliderDistance, 0, -22)
 
+    -- Make sure the saved table exists and every type has a value (default: on).
+    IMAGOSaved.flashcardTypes = IMAGOSaved.flashcardTypes or {}
+    IMAGOSaved.flashcardCategories = IMAGOSaved.flashcardCategories or {}
+
     local cbEnableFlashcards = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
     cbEnableFlashcards:SetPoint("TOPLEFT", flashcardsHeader, "BOTTOMLEFT", 0, -10)
     cbEnableFlashcards.Text:SetText(IMAGO.L["OPT_ENABLE_IDLE_FLASHCARDS"])
     cbEnableFlashcards:SetChecked(IMAGOSaved.enableIdleFlashcards)
+
+    local function SetCheckEnabled(cb, enabled)
+        cb:SetEnabled(enabled)
+        if enabled then
+            cb.Text:SetTextColor(1, 1, 1)
+        else
+            cb.Text:SetTextColor(0.5, 0.5, 0.5)
+        end
+    end
+
+    -- Builds an indented column of checkboxes inside a container frame.
+    -- Optional header text is shown above the boxes, at the same indent as the boxes.
+    -- Returns the container (anchor things below it) and checks[key] = CheckButton.
+    local HEADER_HEIGHT = 20
+
+    local function BuildCheckGroup(anchor, defs, isChecked, onChange, headerText)
+        local headerSpace = headerText and HEADER_HEIGHT or 0
+
+        local container = CreateFrame("Frame", nil, content)
+        container:SetPoint("TOPLEFT", anchor, "BOTTOMLEFT", 0, -4)
+        container:SetSize(1, headerSpace + #defs * 32)
+
+        local header
+        if headerText then
+            header = container:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+            header:SetPoint("TOPLEFT", container, "TOPLEFT", 20, -4)   -- same indent as the boxes
+            header:SetText(headerText)
+        end
+
+        local checks, previous = {}, nil
+        for _, def in ipairs(defs) do
+            local cb = CreateFrame("CheckButton", nil, container, "InterfaceOptionsCheckButtonTemplate")
+            if previous then
+                cb:SetPoint("TOPLEFT", previous, "BOTTOMLEFT", 0, -4)
+            else
+                cb:SetPoint("TOPLEFT", container, "TOPLEFT", 20, -headerSpace)   -- the only indent
+            end
+            cb.Text:SetText(def.label)
+            cb:SetChecked(isChecked(def.key))
+            cb:SetScript("OnClick", function(self)
+                onChange(def.key, self:GetChecked() and true or false)
+            end)
+            checks[def.key] = cb
+            previous = cb
+        end
+        return container, checks, header
+    end
+
+    -- Group 1: flashcard types (dead / fishing / taxi)
+    local typeDefs = {
+        { key = "dead",    label = IMAGO.L["OPT_FLASHCARD_TYPE_DEAD"]    or "Show while dead" },
+        { key = "fishing", label = IMAGO.L["OPT_FLASHCARD_TYPE_FISHING"] or "Show while fishing" },
+        { key = "taxi",    label = IMAGO.L["OPT_FLASHCARD_TYPE_TAXI"]    or "Show while on a flight path" },
+    }
+
+    local typeContainer, typeChecks, typeHeader = BuildCheckGroup(
+        cbEnableFlashcards, typeDefs,
+        function(key) return IMAGOSaved.flashcardTypes[key] end,
+        function(key, value) IMAGOSaved.flashcardTypes[key] = value end,
+        IMAGO.L["OPT_FLASHCARD_TYPES_HEADER"] or "Snippet Activities"
+    )
+
+
+    -- Group 2: which kinds of flashcards may appear
+    local CATEGORY_LABELS = {
+        FUN_FACT          = IMAGO.L["OPT_FLASHCARD_CAT_FUN_FACT"]          or "Fun Facts",
+        DID_YOU_KNOW      = IMAGO.L["OPT_FLASHCARD_CAT_DID_YOU_KNOW"]      or "Did You Know?",
+        HISTORICAL_FACT   = IMAGO.L["OPT_FLASHCARD_CAT_HISTORICAL_FACT"]   or "Historical Facts",
+        BEHIND_THE_SCENES = IMAGO.L["OPT_FLASHCARD_CAT_BEHIND_THE_SCENES"] or "Behind the Scenes",
+    }
+
+    local categoryDefs = {}
+    for i, cat in ipairs(IMAGO.Snippets.CATEGORIES) do
+        categoryDefs[i] = { key = cat, label = CATEGORY_LABELS[cat] or cat }
+    end
+
+    local categoryContainer, categoryChecks, categoryHeader = BuildCheckGroup(
+        typeContainer, categoryDefs,
+        function(key) return IMAGOSaved.flashcardCategories[key] ~= false end,   -- nil = enabled
+        function(key, value)
+            IMAGOSaved.flashcardCategories[key] = value
+            IMAGO.Snippets.RefreshCategories()
+        end,
+        IMAGO.L["OPT_FLASHCARD_CATEGORIES_HEADER"] or "Snippet Types"
+    )
+
+    -- Grey out / enable both groups together.
+    local function ApplyEnabledState(enabled)
+        for _, cb in pairs(typeChecks) do SetCheckEnabled(cb, enabled) end
+        for _, cb in pairs(categoryChecks) do SetCheckEnabled(cb, enabled) end
+    end
+
+    ApplyEnabledState(IMAGOSaved.enableIdleFlashcards and true or false)
+
     cbEnableFlashcards:SetScript("OnClick", function(self)
         local enabled = self:GetChecked() and true or false
         IMAGOSaved.enableIdleFlashcards = enabled
+        ApplyEnabledState(enabled)
+
         if not enabled and IMAGO.UI and IMAGO.UI.HideSnippetPopup then
             IMAGO.UI.HideSnippetPopup()
         end
@@ -139,7 +239,7 @@ function IMAGO.Options.Init()
 
     -- Checkbox: Keep idle flashcards open (no timer)
     local cbKeepSnippetOpen = CreateFrame("CheckButton", nil, content, "InterfaceOptionsCheckButtonTemplate")
-    cbKeepSnippetOpen:SetPoint("TOPLEFT", cbEnableFlashcards, "BOTTOMLEFT", 0, -10)
+    cbKeepSnippetOpen:SetPoint("TOPLEFT", categoryContainer, "BOTTOMLEFT", 0, -10)
     cbKeepSnippetOpen.Text:SetText(IMAGO.L["OPT_SNIPPET_NO_TIMER"])
     cbKeepSnippetOpen:SetChecked(IMAGOSaved.keepSnippetOpen)
     cbKeepSnippetOpen:SetScript("OnClick", function(self)
@@ -213,6 +313,7 @@ function IMAGO.Options.Init()
         { code = "esES", label = "Español" },
         { code = "deDE", label = "Deutsch" },
         { code = "ruRU", label = "\208\160\209\131\209\129\209\129\208\186\208\184\208\185" },
+        { code = "koKR", label = "한국어" },
     }
 
     local currentLang = IMAGOSaved.language or IMAGO.currentLocale or "enUS"
