@@ -74,7 +74,7 @@ IMAGOdb.timelines.ROMMATH = {
     }
 }
 
-IMAGOdb.timelines.COMMANDER_JAROD_SHADOWSONG = {
+IMAGOdb.timelines.JAROD_SHADOWSONG = {
     {
         era = "Ancient",
         text = [[Il a combattu aux côtés de Kur'talos Corvaltus, puis de Desdel Astrevue, pendant la Guerre des Anciens. Il gravit les échelons et devint le chef militaire de la résistance des Kaldorei, à tel point que même Malfurion et Tyrande s’en remettaient à lui. Accablé par la culpabilité du survivant et désabusé par la façon dont les Kaldorei avaient tourné la page en tant que peuple, il quitta la société a]],

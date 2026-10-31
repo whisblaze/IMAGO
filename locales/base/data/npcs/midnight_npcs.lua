@@ -212,7 +212,55 @@ IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"].zones = {"Isle of Quel
 IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_QUELTHALAS["arcanist_valtrois_midnight"].timeline = IMAGOdb.timelines.ARCANIST_VALTROIS
 
+-- LILATHA --
+IMAGOdb.npcs.CAT_QUELTHALAS["lilatha_midnight"].name = "Lilatha"
+IMAGOdb.npcs.CAT_QUELTHALAS["lilatha_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_QUELTHALAS["lilatha_midnight"].race = "Blood elf"
+IMAGOdb.npcs.CAT_QUELTHALAS["lilatha_midnight"].lore = [[Lilatha is a Ranger Captain of the Farstriders. Like all Farstriders, she sees herself as a steadfast defender of Quel’Thalas and defends her homeland against all external threats.]]
+IMAGOdb.npcs.CAT_QUELTHALAS["lilatha_midnight"].zones = {"Silvermoon City", "Eversong Woods"}
+IMAGOdb.npcs.CAT_QUELTHALAS["lilatha_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_QUELTHALAS["lilatha_midnight"].timeline = IMAGOdb.timelines.LILATHA
+
+
 -- CAT_LIGHT
+-- REGALD HORNFYRE --
+IMAGOdb.npcs.CAT_LIGHT["regald_hornfyre_midnight"].name = "Regald Hornfyre"
+IMAGOdb.npcs.CAT_LIGHT["regald_hornfyre_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["regald_hornfyre_midnight"].race = "Arathi"
+IMAGOdb.npcs.CAT_LIGHT["regald_hornfyre_midnight"].lore = [[Regald Hornfyre is an Arathi paladin who repeatedly ventures into the unknown to battle the enemies of the Sacred Flame. As a lamplighter, he not only protects the residents of Hallowfall, but was also part of the expedition into the depths of Azj-Kahet, and a little later, he joined the expedition to Siren Island.]]
+IMAGOdb.npcs.CAT_LIGHT["regald_hornfyre_midnight"].zones = {"Parhelion Plaza", "Isle of Quel‘Danas"}
+IMAGOdb.npcs.CAT_LIGHT["regald_hornfyre_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_LIGHT["regald_hornfyre_midnight"].timeline = IMAGOdb.timelines.REGALD_HORNFYRE
+
+-- YSIDA HARMON --
+IMAGOdb.npcs.CAT_LIGHT["ysida_harmon_midnight"].name = "Ysida Harmon"
+IMAGOdb.npcs.CAT_LIGHT["ysida_harmon_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["ysida_harmon_midnight"].race = "Human"
+IMAGOdb.npcs.CAT_LIGHT["ysida_harmon_midnight"].lore = [[Ysida is an upright priestess who has long been a member of the Argent Dawn—against the wishes of her late husband.]]
+IMAGOdb.npcs.CAT_LIGHT["ysida_harmon_midnight"].zones = {"Parhelion Plaza", "Isle of Quel’Danas"}
+IMAGOdb.npcs.CAT_LIGHT["ysida_harmon_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_LIGHT["ysida_harmon_midnight"].timeline = IMAGOdb.timelines.YSIDA_HARMON
+
+-- GRAND ANCHORITE ALMONEN --
+IMAGOdb.npcs.CAT_LIGHT["grand_anchorite_almonen_midnight"].name = "Grand Anchorite Almonen"
+IMAGOdb.npcs.CAT_LIGHT["grand_anchorite_almonen_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["grand_anchorite_almonen_midnight"].race = "Draenei"
+IMAGOdb.npcs.CAT_LIGHT["grand_anchorite_almonen_midnight"].lore = [[Grand Anchorite Almonen is a senior draenei priest who has devoted himself entirely to the Holy Light. As a priest, he is concerned not only with combating the enemies of the Light, but also with embodying and sharing the blessings and virtues it bestows: hope, faith, charity, and unity.]]
+IMAGOdb.npcs.CAT_LIGHT["grand_anchorite_almonen_midnight"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_LIGHT["grand_anchorite_almonen_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_LIGHT["grand_anchorite_almonen_midnight"].timeline = IMAGOdb.timelines.GRAND_ANCHORITE_ALMONEN
+
+-- HIGH PRIESTESS ISHANAH --
+IMAGOdb.npcs.CAT_LIGHT["high_priestess_ishanah_midnight"].name = "High Priestess Ishanah"
+IMAGOdb.npcs.CAT_LIGHT["high_priestess_ishanah_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_LIGHT["high_priestess_ishanah_midnight"].race = "Draenei"
+IMAGOdb.npcs.CAT_LIGHT["high_priestess_ishanah_midnight"].lore = [[Many draenei revere the naaru above all else, and for none is this truer than Ishanah. She lives by the holy teachings, believing that the willingness to sacrifice for others is the greatest virtue a priest can possess. In matters of war, she is certain that the ends never justify the means, and that to combat the darkness, one should never turn to it, however tempting it may be.
+
+Second only to Prophet Velen himself as an authority on the Light among her people, she has taught many priests herself, and even more turn to her for guidance. Firmly loyal to Velen for centuries, Ishana leads the Aldor of Shattrath City, represents the draenei as a secondary leader in Alliance matters, and now, of course, fights to protect the Sunwell.]]
+IMAGOdb.npcs.CAT_LIGHT["high_priestess_ishanah_midnight"].zones = {"Parhelion Plaza"}
+IMAGOdb.npcs.CAT_LIGHT["high_priestess_ishanah_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_LIGHT["high_priestess_ishanah_midnight"].timeline = IMAGOdb.timelines.HIGH_PRIESTESS_ISHANAH
+
 -- THE GREAT KYRON --
 IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].name = "Great Kyron"
 IMAGOdb.npcs.CAT_LIGHT["great_kyron_midnight"].aliases = {"Kyron"}
@@ -634,6 +682,28 @@ IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_LIGHT["grand_artificer_romuul_midnight"].timeline = IMAGOdb.timelines.GRAND_ARTIFICER_ROMUUL
 
 -- CAT_NEUTRAL
+-- KIFAAN --
+IMAGOdb.npcs.CAT_NEUTRAL["kifaan_midnight"].name = "Kifaan"
+IMAGOdb.npcs.CAT_NEUTRAL["kifaan_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_NEUTRAL["kifaan_midnight"].race = "Ethereal"
+IMAGOdb.npcs.CAT_NEUTRAL["kifaan_midnight"].lore = [[Kifaan is a loyal Ethereal who values his family above all else. As is customary among the Ethereals, his oath to his family and his sister Veraan is of inestimable value. That is also why he sets out to search for his sister in the Voidstorm with the help of an adventurer.]]
+IMAGOdb.npcs.CAT_NEUTRAL["kifaan_midnight"].zones = {"Val", "Naigtal", "Voidstorm"}
+IMAGOdb.npcs.CAT_NEUTRAL["kifaan_midnight"].source = "Wylariâ"
+IMAGOdb.npcs.CAT_NEUTRAL["kifaan_midnight"].timeline = IMAGOdb.timelines.KIFAAN
+
+-- SYLVANAS WINDRUNNER --
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner_midnight"].name = "Sylvanas Windrunner"
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner_midnight"].aliases = {"Sylvanas", "Banshee Queen", "Dark Lady"}
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner_midnight"].race = "Darkfallen"
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner_midnight"].lore = [[Sylvanas Windrunner fought and died for Silvermoon as Ranger-General, but her heroic sacrifice is not what she made her legacy. 
+
+Resurrected as the Banshee Queen, her soul torn in half, she soon rose to power in the Horde and made a pact with the Jailer in the Shadowlands. Bitter and saddened over the suffering inflicted on her and her loved ones, and faced with the prospect of eternal torment, she began a bloody war on Azeroth to shatter the cycle of life and death. 
+
+It took a betrayal and the reclamation of the other part of her soul for her to fully grasp the horrors she had committed. She is now bound to the Maw, the place of suffering she condemned her victims to, to fulfill her penance. While helping the trapped souls find respite, she can no longer shake the feeling that something about the Shadowlands is deeply wrong.]]
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner_midnight"].zones = {"Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["sylvanas_windrunner_midnight"].timeline = IMAGOdb.timelines.SYLVANAS_WINDRUNNER
+
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].name = "Allari the Souleater"
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].aliases = {"Allari"}
 IMAGOdb.npcs.CAT_NEUTRAL["allari_the_souleater_midnight"].race = "Blood Elf"
@@ -823,15 +893,15 @@ IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"].zones = {"The Den"}
 IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_NEUTRAL["zekhan_midnight"].timeline = IMAGOdb.timelines.ZEKHAN
 
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].name = "Commander Jarod Shadowsong"
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].aliases = {"Jarod Shadowsong"}
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].race = "Night elf"
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].lore = [[Jarod Shadowsong was once called “the Hope of the Elves” during the War of the Ancients. As one superior after another fell in battle, due to his sheer skill and determination, he could have become the leader of the Kaldorei after the war was won. Never one to crave power or seek that kind of responsibility, he left his people and lived in self-exile with his wife, Shalasyr, for ten thousand years.
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].name = "Commander Jarod Shadowsong"
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].aliases = {"Jarod Shadowsong"}
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].race = "Night elf"
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].lore = [[Jarod Shadowsong was once called “the Hope of the Elves” during the War of the Ancients. As one superior after another fell in battle, due to his sheer skill and determination, he could have become the leader of the Kaldorei after the war was won. Never one to crave power or seek that kind of responsibility, he left his people and lived in self-exile with his wife, Shalasyr, for ten thousand years.
 
 He rejoined night elven society when Shalasyr passed away and repaired his relationship with his sister, Maiev. He has since served as an army commander again during the Fourth War and the war against Fyrakk in the Emerald Dream.]]
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].zones = {"Amirdrassil", "Isle of Quel'Danas"}
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].source = "Cadash"
-IMAGOdb.npcs.CAT_NEUTRAL["commander_jarod_shadowsong_midnight"].timeline = IMAGOdb.timelines.JAROD_SHADOWSONG
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].zones = {"Amirdrassil", "Isle of Quel'Danas"}
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_NEUTRAL["jarod_shadowsong_midnight"].timeline = IMAGOdb.timelines.JAROD_SHADOWSONG
 
 -- BELATH_DAWNBLADE --
 IMAGOdb.npcs.CAT_NEUTRAL["belath_dawnblade_midnight"].name = "Belath Dawnblade"
@@ -930,6 +1000,19 @@ IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane_midnight"].source = "Travanoid"
 IMAGOdb.npcs.CAT_EBON_BLADE["thoras_trollbane_midnight"].timeline = IMAGOdb.timelines.THORAS_TROLLBANE
 
 -- CAT_VOID
+
+-- KITH'IX --
+IMAGOdb.npcs.CAT_VOID["kith_ix_midnight"].name = "Kith'ix"
+IMAGOdb.npcs.CAT_VOID["kith_ix_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_VOID["kith_ix_midnight"].race = "C'Thrax"
+IMAGOdb.npcs.CAT_VOID["kith_ix_midnight"].lore = [[During the reign of the Black Empire and long after its fall, Kith'ix served the Old Gods as one of their most ruthless generals. The mighty Titan Keeper Tyr fell in no small part due to this C'Thraxxi creature, whose psychic powers are strong enough to control entire armies of aqir as if it were child's play.
+
+The Amani Empire was on the brink of extinction during the centuries-long Aqir and Troll Wars. Once again, it was Kith'ix who led the forces of the Void. It was finally stopped by the Amani priestess Nek'zali, who summoned forth a monstrosity to rival the C'Thrax: Ula'tek. The darkest of all loa severely wounded Kith'ix, and both creatures were entombed beneath Atal'Utek.]]
+IMAGOdb.npcs.CAT_VOID["kith_ix_midnight"].zones = {"The Coiled Isle", "The Unbinding of Kith'ix"}
+IMAGOdb.npcs.CAT_VOID["kith_ix_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_VOID["kith_ix_midnight"].timeline = IMAGOdb.timelines.KITH_IX
+
+-- NEXUS KING SALHADAAR --
 IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar_midnight"].name = "Nexus-King Salhadaar"
 IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar_midnight"].aliases = {"Salhadaar"}
 IMAGOdb.npcs.CAT_VOID["nexus_king_salhadaar_midnight"].race = "Void Ethereal"
@@ -987,6 +1070,18 @@ IMAGOdb.npcs.CAT_VOID["xal_atath_midnight"].timeline = IMAGOdb.timelines.XAL_ATA
 
 
 -- CAT_AMANI
+-- HEX LORD MALACRASS --
+IMAGOdb.npcs.CAT_AMANI["hex_lord_malacrass_midnight"].name = "Hex Lord Malacrass"
+IMAGOdb.npcs.CAT_AMANI["hex_lord_malacrass_midnight"].aliases = {"Malacrass"}
+IMAGOdb.npcs.CAT_AMANI["hex_lord_malacrass_midnight"].race = "Forest Troll"
+IMAGOdb.npcs.CAT_AMANI["hex_lord_malacrass_midnight"].lore = [[Few names in recent Amani history are remembered as bitterly as Hex-Lord Malacrass'. The witch doctor was responsible for enabling the warlord Zul'jin to capture the loa and drain them of their powers to strengthen their warriors. If it hadn't been for Zul'jin and Malacrass, the loa would never have left the Amani.
+
+Even though he was killed many years ago, his spirit has survived, and his goal remains the same: to return the Amani Empire to its former might, even at the cost of Amani lives.]]
+IMAGOdb.npcs.CAT_AMANI["hex_lord_malacrass_midnight"].zones = {"Zul'Aman", "The Coiled Isle", "The Venomous Abyss"}
+IMAGOdb.npcs.CAT_AMANI["hex_lord_malacrass_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_AMANI["hex_lord_malacrass_midnight"].timeline = IMAGOdb.timelines.HEX_LORD_MALACRASS
+
+-- ZUL'JARRA --
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].name = "Zul'jarra"
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].aliases = {}
 IMAGOdb.npcs.CAT_AMANI["zaljarra_midnight"].race = "Forest Troll"
@@ -1056,6 +1151,19 @@ He tried to instill the traditions of loa worship in both of them and, even afte
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].zones = {"Atal'Aman", "Zul'Aman"}
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].timeline = IMAGOdb.timelines.LOA_SPEAKER_KINDURU
+
+-- ULA'TEK --
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].name = "Ula'tek"
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].race = "Unknown"
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].lore = [[Unlike other loa, Ula'tek isn't a spirit of nature or an entity to be appeased for aid. She is a nightmare born of the Rift of Aln and knows only madness and destruction. 
+
+When their empire was on the brink of extinction during the Aqir and Troll War, the Amani summoned forth Ula'tek, and the great snake battled and defeated the Old God general, Kith'ix. Their greatest weapon became their most horrible curse as Ula'tek could not be controlled. The skies themselves became poisonous, and her fangs claimed foe and friend alike. 
+
+On the Coiled Isle, Ula'tek was buried alive in the temple of Atal'Utek, and all records of her existence were destroyed. For millennia, the Amani have not tried to claim her power again, but now, Zul'jan and Hex Lord Malacrass seek to reawaken her.]]
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].zones = {"The Coiled Isle", "The Venomous Abyss"}
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].timeline = IMAGOdb.timelines.ULA_TEK
 
 -- FILO --
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].name = "Filo"

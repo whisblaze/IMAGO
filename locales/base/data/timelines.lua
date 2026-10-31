@@ -147,6 +147,238 @@ IMAGOdb.timelines.XAL_ATATH = {
 }
 
 -- ============================================================
+-- REGALD HORNFYRE
+-- ============================================================
+IMAGOdb.timelines.REGALD_HORNFYRE = {
+    {
+        era = "TWW",
+        text = [[Defended the fortifications of Hallowfall against attacks by the Kaheti nerubians. Was also part of the group that joined the expedition to Azj-Kahet, where he cared for nerubian prisoners who had been freed. Helped eliminate the threat posed by the siren on Siren Island.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Fought alongside many other defenders of the light against the Devouring Host at the Sunwell.]],
+    }
+}
+
+-- ============================================================
+-- KIFAAN
+-- ============================================================
+IMAGOdb.timelines.KIFAAN = {
+    {
+        era = "Midnight",
+        text = [[Rescued his sister from a shadowguard's camp. Convinced her and her rebels to join the Void Elves. Served as an advisor during the counterattacks on Val and Naigtal.]],
+    }
+}
+
+-- ============================================================
+-- YSIDA HARMON
+-- ============================================================
+IMAGOdb.timelines.YSIDA_HARMON = {
+    {
+        era = "Classic",
+        text = [[After joining the Argent Dawn, she was held captive by Baron Rivendare in Stratholme. However, adventurers managed to rescue her before her execution.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Served as a healer for the Vanguard of Light during the Devouring Host’s attack on the Sunwell. Her healing support was crucial to the survival of Mehlar Dawnblade and Kyros Warstone during Xal’atath’s attack on the Sunwell.]],
+    }
+}
+
+-- ============================================================
+-- HEX LORD MALACRASS
+-- ============================================================
+IMAGOdb.timelines.HEX_LORD_MALACRASS = {
+    {
+        era = "Pre-TBC",
+        text = [[Hailed from the Vilebranch Tribe and became Zul'jin's advisor. Devised the plan to capture and drain the loa after observing the Magisters of Silvermoon's treatment of M'uru. Was obsessed with the legends of Ula'tek.]],
+    },
+    {
+        era = "TBC",
+        text = [[After countless experiments, he succeeded in stealing the powers of Jan'alai, Nalorakk, Akil'zon, and Halazzi and bound their powers into the Amani's strongest warriors. Imbued himself with a fraction of Ula'tek's powers and fought at Zul'jin's side against the blood elves. Zul'jin's army lost the battle and Malacrass was the sole survivor.]],
+    },
+    {
+        era = "Cata",
+        text = [[When Daakara took over as the strongest warlord of Zul'Aman and pledged the Amani to the Zandalari Empire, Malacrass joined him. Imprisoned and drained the loa once more and fought in another raid on Silvermoon. The Amani lost once again and Malacrass perished as well.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Survived as a spirit inside an enchanted tiki mask. Resumed his plan to summon Ula'tek for the Amani and convinced Zul'jan to follow him. Unsealed the Vaults of Atal'Utek and guided the children of Ula'tek's invasion of Zul'Aman. Twisted Zul'jan into a snake abomination. Was destroyed for good by adventurers before he could reach Ula'tek.]],
+    }
+}
+
+-- ============================================================
+-- LILATHA
+-- ============================================================
+IMAGOdb.timelines.LILATHA = {
+    {
+        era = "TBC",
+        text = [[An adventurer rescued Lilatha from the Amani catacombs after she was trapped there by Shadowpine trolls.]],
+    },
+    {
+        era = "Legion",
+        text = [[She served as one representative of the Farstriders at the Trueshot Lodge during the Burning Legion's third invasion of the Broken Isles.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Following her promotion to Ranger Captain, Lilatha organized the defense of Quel’Thalas and Silvermoon at the behest of Ranger General Halduron Brightwing.]],
+    }
+}
+
+
+-- ============================================================
+-- GRAND ANCHORITE ALMONEN
+-- ============================================================
+IMAGOdb.timelines.GRAND_ANCHORITE_ALMONEN = {
+    {
+        era = "TBC",
+        text = [[Oversaw the forces of the Aldor, and later those of the Shattered Sun Offensive, as they prepared for the campaigns against Illidan Stormrage and subsequently Kil’jaeden. He instructed new recruits in the nature and teachings of the Holy Light.]],
+    },
+    {
+        era = "DF",
+        text = [[Participated in the Tishamaat within the Exodar and received the memory stones of the Tishataan.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Has been summoned to Quel’Danas as part of the vanguard of the Light to aid in the defense of the Sunwell.]],
+    }
+}
+
+-- ============================================================
+-- HIGH PRIESTESS ISHANAH
+-- ============================================================
+IMAGOdb.timelines.HIGH_PRIESTESS_ISHANAH = {
+    {
+        era = "Pre-TBC",
+        text = [[Was approached by Maiev Shadowsong who asked the Aldor for aid against Illidan Stormrage. Not trusting Maiev's motives to be pure, Ishanah denied her aid.]],
+    },
+    {
+        era = "TBC",
+        text = [[Accepted many new adventurers into the Aldor and cleansed many artifacts of fel corruption. Confronted Socrethar in the Netherstorm and gave her life to protect her former pupil, Kaylaan. Moved by her sacrifice, Kaylaan resurrected her at the cost of his own life, and Ishanah lived to end Socrethar's existence.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[Served as representative of the draenei in Velen's absence and gave her vote to allow the worgen of Gilneas into the Alliance.]],
+    },
+    {
+        era = "Legion",
+        text = [[Helped cleanse the naaru Saa'ra and joined the Conclave as the High Priest's champion. Fought against the Legion during the Battle of the Exodar and when defending the Netherlight Temple. Traveled to Argus aboard the Vindicaar to aid in the last battle against the demons.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Stayed at Saa'ra's side and aided in the resurrection of Calia Menethil.]],
+    },
+    {
+        era = "DF",
+        text = [[Participated in the Tishamaat on the Exodar and performed religious services for many attendees who wished to receive them. Was still grieving Kaylaan's sacrifice.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Fought the Devouring Host on Parhelion Plaza.]],
+    }
+}
+
+-- ============================================================
+-- KITH'IX
+-- ============================================================
+IMAGOdb.timelines.KITH_IX = {
+    {
+        era = "Ancient",
+        text = [[Served the Old Gods as a general and was imprisoned alongside his masters following the fall of the Black Empire. Was reawakened by the Void-corrupted Loken to kill Tyr, and succeeded. Allied with Xal'atath and waged war on the united troll empire of Zul. Fell to the Amani when they summoned Ula'tek from the Rift of Aln and was imprisoned alongside the serpent.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Freed itself from its prison beneath Atal'Utek when Ula'tek was slain. Reached out with its mind to countless aqir from its former army and promptly began a merciless invasion of Zul'Aman and Quel'Thalas. Was opposed by a small group of unlikely troll and blood elf allies. It took Lady Liadrin's heroic sacrifice to kill Kith'ix once and for all.]],
+    }
+}
+
+-- ============================================================
+-- SYLVANAS WINDRUNNER
+-- ============================================================
+IMAGOdb.timelines.SYLVANAS_WINDRUNNER = {
+    {
+        era = "Pre-WC2",
+        text = [[Lived in Windrunner Spire with her family and trained as a ranger with her friends, Lor'themar and Halduron. Against protests from even Prince Kael'thas, she elevated the human archer Nathanos Marris to the rank of Ranger-Lord of the Farstriders and began a romantic relationship with him.]],
+    },
+    {
+        era = "WC2",
+        text = [[Took up the mantle of Ranger-General of Quel'Thalas when her mother, Lireesa, was killed by Amani trolls. Successfully defended Quel'Thalas against the Old Horde with help from the Alliance of Lordaeron, but lost her younger brother, Lirath, in the attack. Inaugurated Alleria's statue in Stormwind City when her older sister vanished beyond the Dark Portal.]],
+    },
+    {
+        era = "WC3",
+        text = [[Failed to stop the Scourge and was slain by Arthas Menethil. Was raised as a banshee by her killer and was forced to aid in the destruction of her homeland. Regained free will when the Lich King grew weaker and almost managed to kill Arthas. Stayed in ruined Lordaeron and became the ruler of the freed undead, now called the Forsaken. Defended the Undercity against the Scourge and the Scarlet Crusade.]],
+    },
+    {
+        era = "Pre-Classic",
+        text = [[Attempted to ally with the Alliance and Quel'Thalas, but was left disillusioned when her messengers were killed on sight repeatedly. Realizing her former kin and allies saw the Forsaken as monsters, she made contact with the Horde and officially joined the faction when they proved less narrow-minded.]],
+    },
+    {
+        era = "Classic",
+        text = [[Firmly established her hold over Lordaeron and drove back the Scarlet Crusade from her new kingdom. As the Banshee Queen, she freed more undead from the Lich King's control, and ordered her apothecaries to devise a new kind of plague that would be capable of killing the living as well as the dead.]],
+    },
+    {
+        era = "TBC",
+        text = [[Helped the Scourge-besieged blood elves in Quel'Thalas and offered them a place in the Horde. Was taken aback when an adventurer delivered her old necklace to her and was briefly overcome by a horrible sadness thinking about her former life and her family.]],
+    },
+    {
+        era = "Pre-WotLK",
+        text = [[When Arthas overtook Ner'zhul as the dominant Lich King, Sylvanas felt the old connection flicker back to life and met with the other leaders of the Horde in Orgrimmar. Defended the capital when the Lich King's forces attacked. Threatened to withdraw support from Quel'Thalas if the blood elves wouldn't join the war in Northrend, forcing Lor'themar to do her bidding.]],
+    },
+    {
+        era = "WotLK",
+        text = [[Was betrayed by Varimathras and Putress and had to retake the Undercity from the usurpers with Warchief Thrall's support. Fought against the Scourge and Arthas personally in Northrend, hell-bent on revenge. Couldn't defeat her tormentor and did not witness his eventual defeat.]],
+    },
+    {
+        era = "Pre-Cata",
+        text = [[With Arthas' death, Sylvanas felt no more reason to continue her undead existence. She threw herself from Icecrown Citadel and was brought into the Maw, and found herself before the Jailer of the damned. Made a pact with him after witnessing the fate awaiting her in death, and was brought back to life and given the Val'kyr to serve her.]],
+    },
+    {
+        era = "Cata",
+        text = [[Conquered Gilneas and killed Prince Liam Greymane. Was killed by Vincent Godfrey but revived through the sacrifice of one of her Val'kyr. Later won the Battle for Andorhal and started taking over the Arathi Highlands.]],
+    },
+    {
+        era = "MoP",
+        text = [[Joined Vol'jin's rebellion against Garrosh Hellscream and seized Bladefist Bay alongside the blood elves during the Siege of Orgrimmar.]],
+    },
+    {
+        era = "Pre-WoD",
+        text = [[Reconnected with her sister, Vereesa, and both formulated a plan to kill Garrosh. Sylvanas planned to raise Vereesa into undeath to be together as a family again, but when her sister abandoned the assassination plot in regret, Sylvanas remained alone.]],
+    },
+    {
+        era = "Pre-Legion",
+        text = [[Seeing Nathanos' body decay over time, she ordered him to kill his cousin and undertake a ritual to gain his strength. She didn't understand why she wasted precious resources doing so, as she couldn't feel love anymore.]],
+    },
+    {
+        era = "Legion",
+        text = [[Fought on the Broken Shore and made the decision to recall Horde troops when the Burning Legion overwhelmed them, thus leaving King Varian to die. Became Warchief of the Horde upon Vol'jin's death. Tried to enslave Odyn's Val'kyr to raise new Forsaken, but was stopped by a vengeful Genn Greymane.]],
+    },
+    {
+        era = "Pre-BfA",
+        text = [[Tried to reconnect with her sisters but ended up fighting with them. Agreed to host the Gathering with King Anduin Wrynn, allowing her subjects to meet their living relatives. When some Forsaken defected, Sylvanas ordered both the humans and her fleeing subjects shot. She then started the Fourth War by invading Darkshore, burning down Teldrassil, and committing night elf genocide.]],
+    },
+    {
+        era = "BfA",
+        text = [[Blighted the Undercity when it was besieged by the Alliance in retaliation for Teldrassil. Allied with the Zandalari. Branded Baine Bloodhoof a traitor after he disagreed with her destructive leadership and was challenged to Mak'gora by Varok Saurfang. She won, but admitted that the Fourth War was merely the first step of a greater plan. She escaped, leaving a shattered Horde behind.]]
+    },
+    {
+        era = "SL",
+        text = [[Opened the veil between Azeroth and the Shadowlands. Worked with the Jailer to break the cycle of life and death and helped enslave Anduin Wrynn. Turned on Zovaal, regained her soul, and was horrified by what she had become in undeath. Helped defeat the Jailer, free Anduin and submitted to the judgment of Tyrande Whisperwind. Was sent to the Maw to serve her penance.]]
+    },
+    {
+        era = "DF",
+        text = [[Sent a message to her still-loyal followers in the Horde, expressing regret for the suffering she had caused.]],
+    },
+    {
+        era = "TWW",
+        text = [[Refused to accompany Arator to defend Quel'Thalas, as her penance in the Maw was not yet complete. Started to suspect that something was wrong with the Shadowlands.]],
+    },
+    {
+        era = "Midnight",
+        text = [[Came to the aid of Silvermoon's defenders and prevented Xal'atath from killing Arator and Vereesa. Returned to the Maw shortly after.]]
+    }
+}
+
+
+-- ============================================================
 -- ORWEYNA
 -- ============================================================
 IMAGOdb.timelines.ORWEYNA = {
@@ -1943,6 +2175,17 @@ IMAGOdb.timelines.LOA_SPEAKER_KINDURU = {
     {
         era = "Midnight",
         text = [[Guided Zul'jarra on her path to become hash'ey. Witnessed the return of the loa to Zul'aman and took up his old role as Speaker of Akil'zon. Helped the hash'ura gain various blessings of the loa at the altar in Amani'zar village.]],
+    }
+}
+
+IMAGOdb.timelines.ULA_TEK = {
+    {
+        era = "Ancient",
+        text = [[Was dreamed into existence as a monster in the Rift of Aln and was summoned by Nek'zali the Soulcoiler to Zul'Aman during the Aqir and Troll War. Defeated Kith'ix but began poisoning the land itself, proving as great a threat as the Black Empire invaders. Was imprisoned in Atal'Utek alongside her followers.]],
+    },
+    {
+        era = "Midnight",
+        text = [[When Zul'jan opened Atal'Utek, Ula'tek's children were unleashed upon Zul'Aman. Ula'tek was awakened and slain in her prison, breaking the curse of the Coiled Isle.]],
     }
 }
 
