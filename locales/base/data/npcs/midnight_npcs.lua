@@ -1152,6 +1152,19 @@ IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].zones = {"Atal'Aman", "Zu
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].source = "Cadash"
 IMAGOdb.npcs.CAT_AMANI["loa_speaker_kinduru_midnight"].timeline = IMAGOdb.timelines.LOA_SPEAKER_KINDURU
 
+-- ULA'TEK --
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].name = "Ula'tek"
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].aliases = {}
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].race = "Unknown"
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].lore = [[Unlike other loa, Ula'tek isn't a spirit of nature or an entity to be appeased for aid. She is a nightmare born of the Rift of Aln and knows only madness and destruction. 
+
+When their empire was on the brink of extinction during the Aqir and Troll War, the Amani summoned forth Ula'tek, and the great snake battled and defeated the Old God general, Kith'ix. Their greatest weapon became their most horrible curse as Ula'tek could not be controlled. The skies themselves became poisonous, and her fangs claimed foe and friend alike. 
+
+On the Coiled Isle, Ula'tek was buried alive in the temple of Atal'Utek, and all records of her existence were destroyed. For millennia, the Amani have not tried to claim her power again, but now, Zul'jan and Hex Lord Malacrass seek to reawaken her.]]
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].zones = {"The Coiled Isle", "The Venomous Abyss"}
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].source = "Cadash"
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"].timeline = IMAGOdb.timelines.ULA_TEK
+
 -- FILO --
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].name = "Filo"
 IMAGOdb.npcs.CAT_AMANI["filo_midnight"].aliases = {"loa of children", "Kapara Loa"}

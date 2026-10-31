@@ -2178,6 +2178,17 @@ IMAGOdb.timelines.LOA_SPEAKER_KINDURU = {
     }
 }
 
+IMAGOdb.timelines.ULA_TEK = {
+    {
+        era = "Ancient",
+        text = [[Was dreamed into existence as a monster in the Rift of Aln and was summoned by Nek'zali the Soulcoiler to Zul'Aman during the Aqir and Troll War. Defeated Kith'ix but began poisoning the land itself, proving as great a threat as the Black Empire invaders. Was imprisoned in Atal'Utek alongside her followers.]],
+    },
+    {
+        era = "Midnight",
+        text = [[When Zul'jan opened Atal'Utek, Ula'tek's children were unleashed upon Zul'Aman. Ula'tek was awakened and slain in her prison, breaking the curse of the Coiled Isle.]],
+    }
+}
+
 IMAGOdb.timelines.FILO = {
     {
         era = "Midnight",

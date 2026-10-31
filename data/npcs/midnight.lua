@@ -448,6 +448,13 @@ IMAGOdb.npcs.CAT_LIGHT["high_priestess_ishanah_midnight"] = {
 
 -- === CAT_AMANI ===
 
+IMAGOdb.npcs.CAT_AMANI["ula_tek_midnight"] = {
+    displayID = 268956,
+    ids = {268956, 268029, 257758, 268863, 269329},
+    zones = {},
+    category = "CAT_AMANI",
+}
+
 IMAGOdb.npcs.CAT_AMANI["hex_lord_malacrass_midnight"] = {
     displayID = 259854,
     ids = {259854, 263589, 262022, 270405, 259969, 257424, 261938, 259140, 261875, 261873, 259133, 259167, 261869, 265015, 265036, 259279, 259304, 259227},
